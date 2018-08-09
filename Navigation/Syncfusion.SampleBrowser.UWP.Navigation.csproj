@@ -1,0 +1,850 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{55694D0F-07E4-4B35-B0E4-939EF98E1014}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Syncfusion.SampleBrowser.UWP.Navigation</RootNamespace>
+    <AssemblyName>Syncfusion.SampleBrowser.UWP.Navigation</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.10586.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>Syncfusion.SampleBrowser.UWP.Navigation_TemporaryKey.pfx</PackageCertificateKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>;2008;CS0108</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>;2008;CS0108</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008;CS0108</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008;CS0108</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <PlatformTarget>ARM</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008;CS0108</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <PlatformTarget>ARM</PlatformTarget>
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008;CS0108</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008;CS0108</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008;CS0108</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release-Xml|AnyCPU'">
+    <OutputPath>bin\Release-Xml\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>bin\Release-Xml\Syncfusion.SampleBrowser.UWP.Navigation.XML</DocumentationFile>
+    <NoWarn>;2008;CS0108</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release-Xml|x86'">
+    <OutputPath>bin\x86\Release-Xml\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008;CS0108</NoWarn>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release-Xml|ARM'">
+    <OutputPath>bin\ARM\Release-Xml\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008;CS0108</NoWarn>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release-Xml|x64'">
+    <OutputPath>bin\x64\Release-Xml\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008;CS0108</NoWarn>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Menu\Assets\About.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Menu\Assets\Align.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Menu\Assets\Bold.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Menu\Assets\Center.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Menu\Assets\Clipboard.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Menu\Assets\color.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Menu\Assets\Copy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Menu\Assets\Cut.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Menu\Assets\Exit.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Menu\Assets\Fonts.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Menu\Assets\Help.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Menu\Assets\Highlights.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Menu\Assets\Italic.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Menu\Assets\Left.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Menu\Assets\new.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Menu\Assets\Paste.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Menu\Assets\Right.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Menu\Assets\Save.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Menu\Assets\SaveAs.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Menu\Assets\Underline.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RadialMenu\Assets\a_inverte.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RadialMenu\Assets\bullet.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RadialMenu\Assets\camera.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RadialMenu\Assets\Color.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RadialMenu\Assets\Copy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RadialMenu\Assets\Cut.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RadialMenu\Assets\Font.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RadialMenu\Assets\Highlighted.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RadialMenu\Assets\Paint Bucket.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RadialMenu\Assets\Paste.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RadialMenu\Assets\radial-menu.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RadialMenu\Assets\radial-slider.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RadialMenu\Assets\Redo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RadialMenu\Assets\subscript.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RadialMenu\Assets\superscript.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RadialMenu\Assets\Text Edit.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RadialMenu\Assets\Text Italic.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RadialMenu\Assets\Text-Bold.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RadialMenu\Assets\text.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RadialMenu\Assets\Underline.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RadialMenu\Assets\Undo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="SyncfusionLicense.txt" />
+    <Content Include="TabControl\Assets\1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TabControl\Assets\2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TabControl\Assets\3.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TabControl\Assets\4.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TabControl\Assets\5.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TabControl\Assets\Emp_02.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TabControl\Assets\Emp_04.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TabControl\Assets\Emp_06.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TabControl\Assets\Emp_11.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TabControl\Assets\Emp_13.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TabControl\Assets\Emp_16.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TabControl\Assets\Emp_21.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TabControl\Assets\Emp_23.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TabControl\Assets\Emp_25.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="project.json" />
+    <None Include="Syncfusion.SampleBrowser.UWP.Navigation_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusyIndicator\BusyIndicatorView.xaml.cs">
+      <DependentUpon>BusyIndicatorView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusyIndicator\Views\ArrowTrackDemo.xaml.cs">
+      <DependentUpon>ArrowTrackDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusyIndicator\Views\BallDemo.xaml.cs">
+      <DependentUpon>BallDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusyIndicator\Views\BatteryDemo.xaml.cs">
+      <DependentUpon>BatteryDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusyIndicator\Views\BoxDemo.xaml.cs">
+      <DependentUpon>BoxDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusyIndicator\Views\BulbDemo.xaml.cs">
+      <DependentUpon>BulbDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusyIndicator\Views\DeleteDemo.xaml.cs">
+      <DependentUpon>DeleteDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusyIndicator\Views\DoubleCircleDemo.xaml.cs">
+      <DependentUpon>DoubleCircleDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusyIndicator\Views\DropDemo.xaml.cs">
+      <DependentUpon>DropDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusyIndicator\Views\ECGDemo.xaml.cs">
+      <DependentUpon>ECGDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusyIndicator\Views\FlightDemo.xaml.cs">
+      <DependentUpon>FlightDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusyIndicator\Views\FlowerDemo.xaml.cs">
+      <DependentUpon>FlowerDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusyIndicator\Views\GearDemo.xaml.cs">
+      <DependentUpon>GearDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusyIndicator\Views\GlobeDemo.xaml.cs">
+      <DependentUpon>GlobeDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusyIndicator\Views\GPSDemo.xaml.cs">
+      <DependentUpon>GPSDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusyIndicator\Views\HorizontalPulsingBoxDemo.xaml.cs">
+      <DependentUpon>HorizontalPulsingBoxDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusyIndicator\Views\LiquidDemo.xaml.cs">
+      <DependentUpon>LiquidDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusyIndicator\Views\PenDemo.xaml.cs">
+      <DependentUpon>PenDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusyIndicator\Views\PrintDemo.xaml.cs">
+      <DependentUpon>PrintDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusyIndicator\Views\RainyDemo.xaml.cs">
+      <DependentUpon>RainyDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusyIndicator\Views\RectangleDemo.xaml.cs">
+      <DependentUpon>RectangleDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusyIndicator\Views\RotationDemo.xaml.cs">
+      <DependentUpon>RotationDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusyIndicator\Views\SingleCircleDemo.xaml.cs">
+      <DependentUpon>SingleCircleDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusyIndicator\Views\SliceBoxDemo.xaml.cs">
+      <DependentUpon>SliceBoxDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusyIndicator\Views\SlicedCircleDemo.xaml.cs">
+      <DependentUpon>SlicedCircleDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusyIndicator\Views\SnowDemo.xaml.cs">
+      <DependentUpon>SnowDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusyIndicator\Views\SunnyDemo.xaml.cs">
+      <DependentUpon>SunnyDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusyIndicator\Views\SunriseDemo.xaml.cs">
+      <DependentUpon>SunriseDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusyIndicator\Views\TemperatureDemo.xaml.cs">
+      <DependentUpon>TemperatureDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusyIndicator\Views\ThunderDemo.xaml.cs">
+      <DependentUpon>ThunderDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusyIndicator\Views\UmbrellaDemo.xaml.cs">
+      <DependentUpon>UmbrellaDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BusyIndicator\Views\WindmillDemo.xaml.cs">
+      <DependentUpon>WindmillDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GridSplitter\GridSplitterDemo.xaml.cs">
+      <DependentUpon>GridSplitterDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GroupBar\Converters\BoolToBrushConverter.cs" />
+    <Compile Include="GroupBar\GroupBarView.xaml.cs">
+      <DependentUpon>GroupBarView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GroupBar\Model\Contact.cs" />
+    <Compile Include="GroupBar\Model\MailCategory.cs" />
+    <Compile Include="GroupBar\Model\MailItem.cs" />
+    <Compile Include="GroupBar\Model\Note.cs" />
+    <Compile Include="GroupBar\Model\SortedMailCollection.cs" />
+    <Compile Include="GroupBar\ViewModel\ContactViewModel.cs" />
+    <Compile Include="GroupBar\ViewModel\MailViewModel.cs" />
+    <Compile Include="GroupBar\ViewModel\NoteViewModel.cs" />
+    <Compile Include="GroupBar\Views\ContactView.xaml.cs">
+      <DependentUpon>ContactView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GroupBar\Views\MailView.xaml.cs">
+      <DependentUpon>MailView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GroupBar\Views\NoteView.xaml.cs">
+      <DependentUpon>NoteView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GroupBar\Views\TaskView.xaml.cs">
+      <DependentUpon>TaskView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HubTiles\HubTileProperties.cs" />
+    <Compile Include="HubTiles\HubTileView.xaml.cs">
+      <DependentUpon>HubTileView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HubTiles\MosaicTileView.xaml.cs">
+      <DependentUpon>MosaicTileView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HubTiles\PulsingTileView.xaml.cs">
+      <DependentUpon>PulsingTileView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HubTiles\SplitMosaicTileView.xaml.cs">
+      <DependentUpon>SplitMosaicTileView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\MenuView.xaml.cs">
+      <DependentUpon>MenuView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressBar\Custom\ProgressBarCustomObjects.cs" />
+    <Compile Include="ProgressBar\Custom\ProgressBarCustomProperties.cs" />
+    <Compile Include="ProgressBar\DelegateCommand.cs" />
+    <Compile Include="ProgressBar\Getting Started\GettingStartedProperties.cs" />
+    <Compile Include="ProgressBar\Progress Types\ProgressTypesProperties.cs" />
+    <Compile Include="ProgressBar\ProgressBarCustomView.xaml.cs">
+      <DependentUpon>ProgressBarCustomView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressBar\ProgressBarGettingStartedView.xaml.cs">
+      <DependentUpon>ProgressBarGettingStartedView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressBar\ProgressBarProgressTypesView.xaml.cs">
+      <DependentUpon>ProgressBarProgressTypesView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RadialMenu\RadialMenuView.xaml.cs">
+      <DependentUpon>RadialMenuView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RadialMenu\RadialSliderProperties.cs" />
+    <Compile Include="RadialMenu\RadialSliderView.xaml.cs">
+      <DependentUpon>RadialSliderView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SamplesConfiguration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TabControl\Tab.xaml.cs">
+      <DependentUpon>Tab.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TabControl\View\TabControlProperties.cs" />
+    <Compile Include="TreeNavigator\View\TreeModel.cs" />
+    <Compile Include="TreeNavigator\View\TreeNavigatorView.xaml.cs">
+      <DependentUpon>TreeNavigatorView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TreeNavigator\View\TreeViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HubTiles\Assets\emp1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HubTiles\Assets\emp10.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HubTiles\Assets\emp11.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HubTiles\Assets\emp12.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HubTiles\Assets\emp13.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HubTiles\Assets\emp2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HubTiles\Assets\emp3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HubTiles\Assets\emp4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HubTiles\Assets\emp5.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HubTiles\Assets\emp6.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HubTiles\Assets\emp7.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HubTiles\Assets\emp8.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HubTiles\Assets\emp9.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HubTiles\Assets\HubTile.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HubTiles\Assets\New Mail.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HubTiles\Assets\PulsingTile.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Properties\Default.rd.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\LockScreenLogo.scale-200.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SplashScreen.scale-200.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Square150x150Logo.scale-200.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Square44x44Logo.scale-200.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\StoreLogo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Wide310x150Logo.scale-200.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="BusyIndicator\BusyIndicatorView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BusyIndicator\Views\ArrowTrackDemo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BusyIndicator\Views\BallDemo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BusyIndicator\Views\BatteryDemo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BusyIndicator\Views\BoxDemo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BusyIndicator\Views\BulbDemo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BusyIndicator\Views\DeleteDemo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BusyIndicator\Views\DoubleCircleDemo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BusyIndicator\Views\DropDemo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BusyIndicator\Views\ECGDemo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BusyIndicator\Views\FlightDemo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BusyIndicator\Views\FlowerDemo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BusyIndicator\Views\GearDemo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BusyIndicator\Views\GlobeDemo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BusyIndicator\Views\GPSDemo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BusyIndicator\Views\HorizontalPulsingBoxDemo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BusyIndicator\Views\LiquidDemo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BusyIndicator\Views\PenDemo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BusyIndicator\Views\PrintDemo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BusyIndicator\Views\RainyDemo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BusyIndicator\Views\RectangleDemo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BusyIndicator\Views\RotationDemo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BusyIndicator\Views\SingleCircleDemo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BusyIndicator\Views\SliceBoxDemo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BusyIndicator\Views\SlicedCircleDemo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BusyIndicator\Views\SnowDemo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BusyIndicator\Views\SunnyDemo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BusyIndicator\Views\SunriseDemo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BusyIndicator\Views\TemperatureDemo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BusyIndicator\Views\ThunderDemo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BusyIndicator\Views\UmbrellaDemo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BusyIndicator\Views\WindmillDemo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GridSplitter\DeviceFamily-Mobile\GridSplitterDemo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GridSplitter\GridSplitterDemo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GroupBar\DeviceFamily-Mobile\GroupBarView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GroupBar\GroupBarView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GroupBar\Views\ContactView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GroupBar\Views\MailView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GroupBar\Views\NoteView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GroupBar\Views\TaskView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="HubTiles\HubTileView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="HubTiles\MosaicTileView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="HubTiles\PulsingTileView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="HubTiles\SplitMosaicTileView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\DeviceFamily-Mobile\MenuView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Menu\MenuView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ProgressBar\Custom\ProgressBarCustomTemplates.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ProgressBar\DeviceFamily-Mobile\ProgressBarCustomView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ProgressBar\DeviceFamily-Mobile\ProgressBarGettingStartedView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ProgressBar\DeviceFamily-Mobile\ProgressBarProgressTypesView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ProgressBar\ProgressBarCustomView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ProgressBar\ProgressBarGettingStartedView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ProgressBar\ProgressBarProgressTypesView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="RadialMenu\DeviceFamily-Mobile\RadialSliderView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="RadialMenu\RadialMenuView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="RadialMenu\RadialSliderView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TabControl\DeviceFamily-Mobile\Tab.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TabControl\Tab.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TreeNavigator\View\DeviceFamily-Mobile\TreeNavigatorView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TreeNavigator\View\TreeNavigatorView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    
+  </ItemGroup>
+  <ItemGroup>
+    
+    
+  </ItemGroup>
+</Project>

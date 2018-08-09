@@ -1,0 +1,947 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{55694D0F-07E4-4B35-B0E4-939EF98E1014}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Syncfusion.SampleBrowser.UWP.Diagram</RootNamespace>
+    <AssemblyName>Syncfusion.SampleBrowser.UWP.Diagram</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.10586.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>Syncfusion.SampleBrowser.UWP.Diagram_TemporaryKey.pfx</PackageCertificateKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <PlatformTarget>ARM</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <PlatformTarget>ARM</PlatformTarget>
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release-Xml|AnyCPU'">
+    <OutputPath>bin\Release-Xml\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>bin\Release-Xml\Syncfusion.SampleBrowser.UWP.Diagram.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release-Xml|x86'">
+    <OutputPath>bin\x86\Release-Xml\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release-Xml|ARM'">
+    <OutputPath>bin\ARM\Release-Xml\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release-Xml|x64'">
+    <OutputPath>bin\x64\Release-Xml\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\cards_03.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\cards_05.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\cards_07.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\cards_09.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\cards_100.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\cards_101.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\cards_102.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\cards_103.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\cards_104.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\cards_105.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\cards_106.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\cards_107.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\cards_108.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\cards_109.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\cards_11.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\cards_14.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\cards_16.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\cards_18.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\cards_20.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\cards_23.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\cards_25.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\diagram.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\image43.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\LockScreenLogo.scale-200.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SplashScreen.scale-200.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Square150x150Logo.scale-200.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Square44x44Logo.scale-200.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\StoreLogo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Wide310x150Logo.scale-200.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ShowcaseImage\Diagrambuilder.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ShowcaseImage\FloorPlanner.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ShowcaseImage\MindMap.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ShowcaseImage\Mockup.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ShowcaseImage\OrganizationalChart.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ShowcaseImage\uml.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ShowcaseImage\WorkFlowEditor.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Showcase\CommonUtility\CommonResource\bg_grid_texture.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Showcase\CommonUtility\CommonResource\fp1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Showcase\CommonUtility\CommonResource\mindmap.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Showcase\CommonUtility\CommonResource\umllogo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Showcase\CommonUtility\CommonResource\Work-flow1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Showcase\FloorPlannerDemo\PresavedFloorPlan\FloorPlan.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Showcase\FloorPlannerDemo\PresavedFloorPlan\FloorPlan1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Showcase\MindMapDemo\PreSavedMindMap\ElementTree.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Showcase\MindMapDemo\PreSavedMindMap\Feelings.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Showcase\MindMapDemo\PreSavedMindMap\MindMap.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Showcase\Organizational Layout\Employee.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Assets\Clayton.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\eric.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\female.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\image12.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\image2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\image3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\image50.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\image51.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\image53.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\image54.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\image55.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\image56.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\image57.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\images7.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\images9.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Jenny.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\John.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\male.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Maria.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Paul.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Robin.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\smith.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Thomas.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Showcase\UMLDiagramDesigner\PreSavedUML\Diagram.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Showcase\UMLDiagramDesigner\PreSavedUML\Hospital.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Showcase\UMLDiagramDesigner\PreSavedUML\University.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Showcase\UMLDiagramDesigner\Resource\bg_grid_texture.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Showcase\UMLDiagramDesigner\Resource\info_icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Showcase\UMLDiagramDesigner\Resource\umllogo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Showcase\WorkFlowEditor\PreSavedWorkFlow\Doctor appointment.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Showcase\WorkFlowEditor\PreSavedWorkFlow\Make ice cream.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Showcase\WorkFlowEditor\PreSavedWorkFlow\Support Workflow.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="project.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SamplesConfiguration.cs" />
+    <Compile Include="Showcase\CommonUtility\CommonViewModel\DiagramCommonviewModel.cs" />
+    <Compile Include="Showcase\CommonUtility\CommonView\DiagramFrontPage.xaml.cs">
+      <DependentUpon>DiagramFrontPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\CommonUtility\Utility\DelegateCommand.cs" />
+    <Compile Include="Showcase\CommonUtility\Utility\TileBrush.cs" />
+    <Compile Include="Showcase\DiagramBuilder\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\DiagramBuilder\Utility\BooleanToVisibility.cs" />
+    <Compile Include="Showcase\DiagramBuilder\Utility\Command.cs" />
+    <Compile Include="Showcase\DiagramBuilder\ViewModel\ConnectorVM.cs" />
+    <Compile Include="Showcase\DiagramBuilder\ViewModel\DiagramBuilderVM.cs" />
+    <Compile Include="Showcase\DiagramBuilder\ViewModel\DiagramVM.cs" />
+    <Compile Include="Showcase\DiagramBuilder\ViewModel\GroupableVM.cs" />
+    <Compile Include="Showcase\DiagramBuilder\ViewModel\GroupVM.cs" />
+    <Compile Include="Showcase\DiagramBuilder\ViewModel\NodePortVM.cs" />
+    <Compile Include="Showcase\DiagramBuilder\ViewModel\NodeVM.cs" />
+    <Compile Include="Showcase\DiagramBuilder\ViewModel\PageVM.cs" />
+    <Compile Include="Showcase\DiagramBuilder\ViewModel\PropertyEditorVM.cs" />
+    <Compile Include="Showcase\DiagramBuilder\ViewModel\SelectorVM.cs" />
+    <Compile Include="Showcase\DiagramBuilder\ViewModel\StencilVM.cs" />
+    <Compile Include="Showcase\DiagramBuilder\ViewModel\SymbolVM.cs" />
+    <Compile Include="Showcase\DiagramBuilder\View\ConnectorView.cs" />
+    <Compile Include="Showcase\DiagramBuilder\View\Diagram.cs" />
+    <Compile Include="Showcase\DiagramBuilder\View\DiagramBuilder.xaml.cs">
+      <DependentUpon>DiagramBuilder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\DiagramBuilder\View\DiagramContainer.xaml.cs">
+      <DependentUpon>DiagramContainer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\DiagramBuilder\View\NodeView.cs" />
+    <Compile Include="Showcase\DiagramBuilder\View\Property\BrushPicker.xaml.cs">
+      <DependentUpon>BrushPicker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\DiagramBuilder\View\Property\PageView.xaml.cs">
+      <DependentUpon>PageView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\DiagramBuilder\View\Property\PropertyEditor.xaml.cs">
+      <DependentUpon>PropertyEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\DiagramBuilder\View\Property\PropertyPanel.xaml.cs">
+      <DependentUpon>PropertyPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\DiagramBuilder\View\Property\SelectionCommands.xaml.cs">
+      <DependentUpon>SelectionCommands.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\DiagramBuilder\View\Property\StencilView.xaml.cs">
+      <DependentUpon>StencilView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\DiagramBuilder\View\SelectorView.xaml.cs">
+      <DependentUpon>SelectorView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\DiagramBuilder\View\TabbedDiagrams.xaml.cs">
+      <DependentUpon>TabbedDiagrams.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\FloorPlannerDemo\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\FloorPlannerDemo\Utility\FloorPlanNode.cs" />
+    <Compile Include="Showcase\FloorPlannerDemo\Utility\FloorPlanSymbolItem.cs" />
+    <Compile Include="Showcase\FloorPlannerDemo\Utility\ShapeHelpercs.cs" />
+    <Compile Include="Showcase\FloorPlannerDemo\ViewModel\FloorPlannerViewModel.cs" />
+    <Compile Include="Showcase\FloorPlannerDemo\View\AddAnnotation.xaml.cs">
+      <DependentUpon>AddAnnotation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\FloorPlannerDemo\View\CreateStencil.xaml.cs">
+      <DependentUpon>CreateStencil.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\FloorPlannerDemo\View\FloorPlanAppBarView.xaml.cs">
+      <DependentUpon>FloorPlanAppBarView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\FloorPlannerDemo\View\FloorPlannerDiagram.xaml.cs">
+      <DependentUpon>FloorPlannerDiagram.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\FloorPlannerDemo\View\ShapesStencil.xaml.cs">
+      <DependentUpon>ShapesStencil.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\FloorPlannerDemo\View\ShapeStencil.xaml.cs">
+      <DependentUpon>ShapeStencil.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\MindMapDemo\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\MindMapDemo\Model\MapModel.cs" />
+    <Compile Include="Showcase\MindMapDemo\ViewModel\MapViewModel.cs" />
+    <Compile Include="Showcase\MindMapDemo\View\ColorPicker.xaml.cs">
+      <DependentUpon>ColorPicker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\MindMapDemo\View\MindAppBarView.xaml.cs">
+      <DependentUpon>MindAppBarView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\MindMapDemo\View\MindMapDiagram.xaml.cs">
+      <DependentUpon>MindMapDiagram.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\Organizational Layout\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\Organizational Layout\Model\Employee.cs" />
+    <Compile Include="Showcase\Organizational Layout\Utilities\Conveters.cs" />
+    <Compile Include="Showcase\Organizational Layout\Utilities\OrgChartDiagram.cs" />
+    <Compile Include="Showcase\Organizational Layout\Utilities\OrgNodeViewModel.cs" />
+    <Compile Include="Showcase\Organizational Layout\Utilities\Predicatelogic.cs" />
+    <Compile Include="Showcase\Organizational Layout\Utilities\SearchViewModel.cs" />
+    <Compile Include="Showcase\Organizational Layout\ViewModel\ChartViewModel.cs" />
+    <Compile Include="Showcase\Organizational Layout\View\OrgDiagram.xaml.cs">
+      <DependentUpon>OrgDiagram.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\UMLDiagramDesigner\Dialog\DeleteFileDialog.xaml.cs">
+      <DependentUpon>DeleteFileDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\UMLDiagramDesigner\Dialog\RenameFileDialog.xaml.cs">
+      <DependentUpon>RenameFileDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\UMLDiagramDesigner\Dialog\ReplaceFilesDialog.xaml.cs">
+      <DependentUpon>ReplaceFilesDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\UMLDiagramDesigner\EditingOptions\EditNode.cs" />
+    <Compile Include="Showcase\UMLDiagramDesigner\EditingOptions\NewNode.cs" />
+    <Compile Include="Showcase\UMLDiagramDesigner\Interface\IDialog.cs" />
+    <Compile Include="Showcase\UMLDiagramDesigner\Interface\ILine.cs" />
+    <Compile Include="Showcase\UMLDiagramDesigner\Interface\INode.cs" />
+    <Compile Include="Showcase\UMLDiagramDesigner\Line\Enums.cs" />
+    <Compile Include="Showcase\UMLDiagramDesigner\Line\EnumTypeConverter.cs" />
+    <Compile Include="Showcase\UMLDiagramDesigner\Line\LineProperties.cs" />
+    <Compile Include="Showcase\UMLDiagramDesigner\Line\PathStyle.cs" />
+    <Compile Include="Showcase\UMLDiagramDesigner\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\UMLDiagramDesigner\Node\ClassNode.cs" />
+    <Compile Include="Showcase\UMLDiagramDesigner\Node\InterfaceNode.cs" />
+    <Compile Include="Showcase\UMLDiagramDesigner\Node\NoteNode.cs" />
+    <Compile Include="Showcase\UMLDiagramDesigner\Node\Property.cs" />
+    <Compile Include="Showcase\UMLDiagramDesigner\Node\TextNode.cs" />
+    <Compile Include="Showcase\UMLDiagramDesigner\Serializer\UMLDataSerializer.cs" />
+    <Compile Include="Showcase\UMLDiagramDesigner\Utility\DelegateCommand.cs" />
+    <Compile Include="Showcase\UMLDiagramDesigner\Utility\Extension.cs" />
+    <Compile Include="Showcase\UMLDiagramDesigner\Utility\PathHelper.cs" />
+    <Compile Include="Showcase\UMLDiagramDesigner\Utility\TileBrush.cs" />
+    <Compile Include="Showcase\UMLDiagramDesigner\ViewModel\UMLViewModel.cs" />
+    <Compile Include="Showcase\UMLDiagramDesigner\View\AppBarView.xaml.cs">
+      <DependentUpon>AppBarView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\UMLDiagramDesigner\View\Diagram.xaml.cs">
+      <DependentUpon>Diagram.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\UMLDiagramDesigner\View\LineEditor.xaml.cs">
+      <DependentUpon>LineEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\UMLDiagramDesigner\View\NodeEditor.xaml.cs">
+      <DependentUpon>NodeEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\UMLDiagramDesigner\View\PropertyEditor.xaml.cs">
+      <DependentUpon>PropertyEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\WorkFlowEditor\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\WorkFlowEditor\Utility\AutomationDiagram.cs" />
+    <Compile Include="Showcase\WorkFlowEditor\Utility\Converter.cs" />
+    <Compile Include="Showcase\WorkFlowEditor\Utility\ProcessAutomationNode.cs" />
+    <Compile Include="Showcase\WorkFlowEditor\Utility\ShapeHelpercs.cs" />
+    <Compile Include="Showcase\WorkFlowEditor\ViewModel\ProcessAutomationViewModel.cs" />
+    <Compile Include="Showcase\WorkFlowEditor\View\AppBarView.xaml.cs">
+      <DependentUpon>AppBarView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\WorkFlowEditor\View\ProcessAutomationDiagram.xaml.cs">
+      <DependentUpon>ProcessAutomationDiagram.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\WorkFlowEditor\View\PropertyEditor.xaml.cs">
+      <DependentUpon>PropertyEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\WorkFlowEditor\View\ValueEditor.xaml.cs">
+      <DependentUpon>ValueEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Template\NodeDataTemplateSelector.cs" />
+    <Compile Include="Tutorial\CircuitDiagram.xaml.cs">
+      <DependentUpon>CircuitDiagram.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tutorial\DeviceFamily-Mobile\FlowDiagram.xaml.cs">
+      <DependentUpon>FlowDiagram.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tutorial\DeviceFamily-Mobile\HierarchicalTree.xaml.cs">
+      <DependentUpon>HierarchicalTree.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tutorial\DeviceFamily-Mobile\IshikawaDiagram.xaml.cs">
+      <DependentUpon>IshikawaDiagram.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tutorial\DeviceFamily-Mobile\RadialTree.xaml.cs">
+      <DependentUpon>RadialTree.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tutorial\DeviceFamily-Mobile\RulerandUnit.xaml.cs">
+      <DependentUpon>RulerandUnit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tutorial\DeviceFamily-Mobile\SequenceDiagram.xaml.cs">
+      <DependentUpon>SequenceDiagram.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tutorial\FlowDiagram.xaml.cs">
+      <DependentUpon>FlowDiagram.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tutorial\HierarchicalTree.xaml.cs">
+      <DependentUpon>HierarchicalTree.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tutorial\IshikawaDiagram.xaml.cs">
+      <DependentUpon>IshikawaDiagram.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tutorial\NodeContent.xaml.cs">
+      <DependentUpon>NodeContent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tutorial\OrganizationChart.xaml.cs">
+      <DependentUpon>OrganizationChart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tutorial\Overview.xaml.cs">
+      <DependentUpon>Overview.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tutorial\RadialTree.xaml.cs">
+      <DependentUpon>RadialTree.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tutorial\RulerAndUnit.xaml.cs">
+      <DependentUpon>RulerAndUnit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tutorial\Selector.xaml.cs">
+      <DependentUpon>Selector.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tutorial\SequenceDiagram.xaml.cs">
+      <DependentUpon>SequenceDiagram.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tutorial\Stencil.xaml.cs">
+      <DependentUpon>Stencil.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tutorial\Virtualization.xaml.cs">
+      <DependentUpon>Virtualization.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <PRIResource Include="Showcase\Resources\en-US\Syncfusion.SfDiagram.Universal.Resources.resw" />
+    <None Include="Syncfusion.SampleBrowser.UWP.Diagram_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\Syncfusion.SampleBrowser.UWP.Diagram.rd.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Common\StandardStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Showcase\CommonUtility\CommonView\DiagramFrontPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Showcase\DiagramBuilder\MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Showcase\DiagramBuilder\Theme\DiagramBuilderUI.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Showcase\DiagramBuilder\View\DiagramBuilder.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Showcase\DiagramBuilder\View\DiagramContainer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Showcase\DiagramBuilder\View\Property\BrushPicker.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Showcase\DiagramBuilder\View\Property\PageView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Showcase\DiagramBuilder\View\Property\PropertyEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Showcase\DiagramBuilder\View\Property\PropertyPanel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Showcase\DiagramBuilder\View\Property\SelectionCommands.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Showcase\DiagramBuilder\View\Property\StencilView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Showcase\DiagramBuilder\View\SelectorView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Showcase\DiagramBuilder\View\TabbedDiagrams.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Showcase\FloorPlannerDemo\MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Showcase\FloorPlannerDemo\View\AddAnnotation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Showcase\FloorPlannerDemo\View\CreateStencil.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Showcase\FloorPlannerDemo\View\FloorPlanAppBarView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Showcase\FloorPlannerDemo\View\FloorPlannerDiagram.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Showcase\FloorPlannerDemo\View\ShapesStencil.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Showcase\FloorPlannerDemo\View\ShapeStencil.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Showcase\MindMapDemo\MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Showcase\MindMapDemo\View\ColorPicker.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Showcase\MindMapDemo\View\MindAppBarView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Showcase\MindMapDemo\View\MindMapDiagram.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Showcase\Organizational Layout\MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Showcase\Organizational Layout\View\OrgDiagram.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Showcase\UMLDiagramDesigner\Dialog\DeleteFileDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Showcase\UMLDiagramDesigner\Dialog\RenameFileDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Showcase\UMLDiagramDesigner\Dialog\ReplaceFilesDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Showcase\UMLDiagramDesigner\MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Showcase\UMLDiagramDesigner\View\AppBarView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Showcase\UMLDiagramDesigner\View\Diagram.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Showcase\UMLDiagramDesigner\View\LineEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Showcase\UMLDiagramDesigner\View\NodeEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Showcase\UMLDiagramDesigner\View\PropertyEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Showcase\WorkFlowEditor\MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Showcase\WorkFlowEditor\View\AppBarView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Showcase\WorkFlowEditor\View\ProcessAutomationDiagram.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Showcase\WorkFlowEditor\View\PropertyEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Showcase\WorkFlowEditor\View\ValueEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Template\DarkTheme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Template\DiagramBasicShapes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Template\FloorPlanDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Template\NodeTypeTemplates.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Template\OrgNodeContentTemplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Template\ProcessNodeEditorTemplate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tutorial\CircuitDiagram.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Tutorial\DeviceFamily-Mobile\FlowDiagram.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tutorial\DeviceFamily-Mobile\HierarchicalTree.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tutorial\DeviceFamily-Mobile\IshikawaDiagram.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tutorial\DeviceFamily-Mobile\RadialTree.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tutorial\DeviceFamily-Mobile\RulerandUnit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tutorial\DeviceFamily-Mobile\SequenceDiagram.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tutorial\FlowDiagram.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Tutorial\HierarchicalTree.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Tutorial\IshikawaDiagram.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Tutorial\NodeContent.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Tutorial\OrganizationChart.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Tutorial\Overview.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Tutorial\RadialTree.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Tutorial\RulerAndUnit.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Tutorial\Selector.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Tutorial\SequenceDiagram.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Tutorial\Stencil.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Tutorial\Virtualization.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Showcase\DiagramBuilder\Model\" />
+    <Folder Include="Showcase\WorkFlowEditor\Model\" />
+  </ItemGroup>
+  <ItemGroup>
+    
+  </ItemGroup>
+  <ItemGroup>
+    
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SyncfusionLicense.txt" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,589 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{55694D0F-07E4-4B35-B0E4-939EF98E1014}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Syncfusion.SampleBrowser.UWP.XlsIO</RootNamespace>
+    <AssemblyName>Syncfusion.SampleBrowser.UWP.XlsIO</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.10586.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>Syncfusion.SampleBrowser.UWP.XlsIO_TemporaryKey.pfx</PackageCertificateKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008;CS0108</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008;CS0108</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <PlatformTarget>ARM</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008;CS0108</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <PlatformTarget>ARM</PlatformTarget>
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008;CS0108</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008;CS0108</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008;CS0108</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release-Xml|AnyCPU'">
+    <OutputPath>bin\Release-Xml\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>bin\Release-Xml\Syncfusion.SampleBrowser.UWP.XlsIO.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release-Xml|x86'">
+    <OutputPath>bin\x86\Release-Xml\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008;CS0108</NoWarn>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release-Xml|ARM'">
+    <OutputPath>bin\ARM\Release-Xml\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008;CS0108</NoWarn>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release-Xml|x64'">
+    <OutputPath>bin\x64\Release-Xml\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008;CS0108</NoWarn>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <None Include="project.json" />
+    <EmbeddedResource Include="XlsIO\Tutorials\Samples\Assets\Resources\Templates\CFTemplate.xlsx">
+      <CopyToOutputDirectory>False</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XlsIO\Tutorials\Samples\Assets\Resources\Templates\PivotCodeData.xlsx">
+      <CopyToOutputDirectory>False</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XlsIO\Tutorials\Samples\Assets\Resources\Templates\PivotTable.xlsx">
+      <CopyToOutputDirectory>False</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XlsIO\Tutorials\Samples\Assets\Resources\Templates\SortingData.xlsx">
+      <CopyToOutputDirectory>False</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XlsIO\Tutorials\Samples\Assets\Resources\Templates\Sparkline.xlsx">
+      <CopyToOutputDirectory>False</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XlsIO\Tutorials\Samples\Assets\Resources\Templates\TemplateMarker.xlsx">
+      <CopyToOutputDirectory>False</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XlsIO\Tutorials\Samples\Assets\Resources\Templates\RangeManipulation.xls">
+      <CopyToOutputDirectory>False</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XlsIO\Tutorials\Samples\Assets\Resources\Templates\RangeManipulation.xlsx">
+      <CopyToOutputDirectory>False</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XlsIO\Tutorials\Samples\Assets\Resources\Templates\FilterData.xlsx">
+      <CopyToOutputDirectory>False</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XlsIO\Tutorials\Samples\Assets\Resources\Templates\ExportSales.xlsx">
+      <CopyToOutputDirectory>False</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XlsIO\Tutorials\Samples\Assets\Resources\Templates\ReplaceOptions.xlsx">
+      <CopyToOutputDirectory>False</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XlsIO\Tutorials\Samples\Assets\Resources\Templates\FunnelChartTemplate.xlsx">
+      <CopyToOutputDirectory>False</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XlsIO\Tutorials\Samples\Assets\Resources\Templates\BoxAndWhiskerTemplate.xlsx">
+      <CopyToOutputDirectory>False</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XlsIO\Tutorials\Samples\Assets\Resources\Templates\SunburstTemplate.xlsx">
+      <CopyToOutputDirectory>False</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XlsIO\Tutorials\Samples\Assets\Resources\Templates\TreemapTemplate.xlsx">
+      <CopyToOutputDirectory>False</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XlsIO\Tutorials\Samples\Assets\Resources\Templates\ExcelToODS.xlsx">
+      <CopyToOutputDirectory>False</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XlsIO\Tutorials\Samples\Assets\Resources\Templates\AdvancedFilterTemplate.xlsx">
+      <CopyToOutputDirectory>False</CopyToOutputDirectory>
+    </EmbeddedResource>
+	<EmbeddedResource Include="XlsIO\Tutorials\Samples\Assets\Resources\Templates\FilterData_Color.xlsx">
+	  <CopyToOutputDirectory>False</CopyToOutputDirectory>
+    </EmbeddedResource>
+	<EmbeddedResource Include="XlsIO\Tutorials\Samples\Assets\Resources\Templates\IconFilterData.xlsx" >
+	  <CopyToOutputDirectory>False</CopyToOutputDirectory>
+    </EmbeddedResource>
+	<EmbeddedResource Include="XlsIO\Tutorials\Samples\Assets\Resources\Templates\GroupShapes.xlsx">
+      <CopyToOutputDirectory>False</CopyToOutputDirectory>
+    </EmbeddedResource>
+	<Content Include="XlsIO\Tutorials\Samples\Controls\Filters\Images\CF_IS_GreenCheckSymbol.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XlsIO\Tutorials\Samples\Controls\Filters\Images\CF_IS_YellowUpInclineArrow.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XlsIO\Tutorials\Samples\Controls\Filters\Images\CF_IS_YellowSideArrow.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XlsIO\Tutorials\Samples\Controls\Filters\Images\CF_IS_YellowExclamationSymbol.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XlsIO\Tutorials\Samples\Controls\Filters\Images\CF_IS_YellowDownInclineArrow.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XlsIO\Tutorials\Samples\Controls\Filters\Images\CF_IS_SignalWithTwoFillBars.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XlsIO\Tutorials\Samples\Controls\Filters\Images\CF_IS_SignalWithThreeFillBars.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XlsIO\Tutorials\Samples\Controls\Filters\Images\CF_IS_SignalWithOneFillBar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XlsIO\Tutorials\Samples\Controls\Filters\Images\CF_IS_SignalWithFourFillBars.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XlsIO\Tutorials\Samples\Controls\Filters\Images\CF_IS_RedDownArrow.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XlsIO\Tutorials\Samples\Controls\Filters\Images\CF_IS_RedCrossSymbol.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XlsIO\Tutorials\Samples\Controls\Filters\Images\CF_IS_GreenUpArrow.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SamplesConfiguration.cs" />
+    <Compile Include="XlsIO\Tutorials\Samples\Controls\AutoShapes\AutoShapes.xaml.cs">
+      <DependentUpon>AutoShapes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XlsIO\Tutorials\Samples\Controls\Charts\Chart.xaml.cs">
+      <DependentUpon>Chart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XlsIO\Tutorials\Samples\Controls\ChartWorksheet\ChartWorksheet.xaml.cs">
+      <DependentUpon>ChartWorksheet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XlsIO\Tutorials\Samples\Controls\CondFormat\CondFormat.xaml.cs">
+      <DependentUpon>CondFormat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XlsIO\Tutorials\Samples\Controls\DataSort\DataSort.xaml.cs">
+      <DependentUpon>DataSort.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XlsIO\Tutorials\Samples\Controls\DataValidation\DataValidation.xaml.cs">
+      <DependentUpon>DataValidation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XlsIO\Tutorials\Samples\Controls\FindAndReplace\FindAndReplace.xaml.cs">
+      <DependentUpon>FindAndReplace.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XlsIO\Tutorials\Samples\Controls\FormattingCells\FormattingCells.xaml.cs">
+      <DependentUpon>FormattingCells.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XlsIO\Tutorials\Samples\Controls\Formulas\Formulas.xaml.cs">
+      <DependentUpon>Formulas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XlsIO\Tutorials\Samples\Controls\GettingStarted\CreateSpreadsheet.xaml.cs">
+      <DependentUpon>CreateSpreadsheet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XlsIO\Tutorials\Samples\Controls\ImportBusinessObject\ImportBusinessObject.xaml.cs">
+      <DependentUpon>ImportBusinessObject.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XlsIO\Tutorials\Samples\Controls\ImportXML\Extensions.cs" />
+    <Compile Include="XlsIO\Tutorials\Samples\Controls\ImportXML\ImportXML.xaml.cs">
+      <DependentUpon>ImportXML.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XlsIO\Tutorials\Samples\Controls\Performance\Performance.xaml.cs">
+      <DependentUpon>Performance.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XlsIO\Tutorials\Samples\Controls\PivotChart\PivotChart.xaml.cs">
+      <DependentUpon>PivotChart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XlsIO\Tutorials\Samples\Controls\PivotTable\PivotTable.xaml.cs">
+      <DependentUpon>PivotTable.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XlsIO\Tutorials\Samples\Controls\RangeManipulation\RangeManipulation.xaml.cs">
+      <DependentUpon>RangeManipulation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XlsIO\Tutorials\Samples\Controls\Sparklines\Sparklines.xaml.cs">
+      <DependentUpon>Sparklines.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XlsIO\Tutorials\Samples\Controls\TableFormula\TableFormula.xaml.cs">
+      <DependentUpon>TableFormula.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XlsIO\Tutorials\Samples\Controls\Tables\Tables.xaml.cs">
+      <DependentUpon>Tables.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XlsIO\Tutorials\Samples\Controls\TemplateMarker\Customer.cs" />
+    <Compile Include="XlsIO\Tutorials\Samples\Controls\TemplateMarker\TemplateMarker.xaml.cs">
+      <DependentUpon>TemplateMarker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XlsIO\Tutorials\Samples\Controls\Filters\Filters.xaml.cs">
+      <DependentUpon>Filters.xaml</DependentUpon>
+    </Compile>    
+    <Compile Include="XlsIO\Tutorials\Samples\Controls\BoxAndWhisker\BoxAndWhisker.xaml.cs">
+      <DependentUpon>BoxAndWhisker.xaml</DependentUpon>
+    </Compile>
+     <Compile Include="XlsIO\Tutorials\Samples\Controls\FunnelChart\FunnelChart.xaml.cs">
+      <DependentUpon>FunnelChart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XlsIO\Tutorials\Samples\Controls\Sunburst\Sunburst.xaml.cs">
+      <DependentUpon>Sunburst.xaml</DependentUpon>
+    </Compile>
+     <Compile Include="XlsIO\Tutorials\Samples\Controls\Treemap\Treemap.xaml.cs">
+      <DependentUpon>Treemap.xaml</DependentUpon>
+    </Compile>
+	<Compile Include="XlsIO\Tutorials\Samples\Controls\ExcelToODS\ExcelToODS.xaml.cs">
+      <DependentUpon>ExcelToODS.xaml</DependentUpon>
+    </Compile>
+	<Compile Include="XlsIO\Tutorials\Samples\Controls\GroupShapes\GroupShapes.xaml.cs">
+      <DependentUpon>GroupShapes.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="Syncfusion.SampleBrowser.UWP.XlsIO_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\BoxAndWhisker.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\BoxAndWhiskerMobile.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Funnel.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\FunnelMobile.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Treemap.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\TreemapMobile.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Sunburst.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\SunburstMobile.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+	<Content Include="Images\exceltoods.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\exceltoodsMobile.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\filter.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\filterMobile.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\replace.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\replaceMobile.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\table.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\tableMobile.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Properties\Default.rd.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\LockScreenLogo.scale-200.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SplashScreen.scale-200.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Square150x150Logo.scale-200.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Square44x44Logo.scale-200.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\StoreLogo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Wide310x150Logo.scale-200.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Samples\Samples.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="XlsIO\Tutorials\Samples\Assets\Logo.scale-100.png">
+      <CopyToOutputDirectory>False</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XlsIO\Tutorials\Samples\Assets\Resources\Templates\BusinessObjects.xml">
+      <CopyToOutputDirectory>False</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XlsIO\Tutorials\Samples\Assets\Resources\Templates\customers.xml">
+      <CopyToOutputDirectory>False</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XlsIO\Tutorials\Samples\Assets\Resources\Templates\EMPID1.png">
+      <CopyToOutputDirectory>False</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XlsIO\Tutorials\Samples\Assets\SmallLogo.scale-100.png">
+      <CopyToOutputDirectory>False</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XlsIO\Tutorials\Samples\Assets\SplashScreen.scale-100.png">
+      <CopyToOutputDirectory>False</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XlsIO\Tutorials\Samples\Assets\StoreLogo.scale-100.png">
+      <CopyToOutputDirectory>False</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XlsIO\Tutorials\Samples\Assets\WideLogo.scale-100.png">
+      <CopyToOutputDirectory>False</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Common\StandardStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="XlsIO\Tutorials\Samples\Controls\AutoShapes\AutoShapes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="XlsIO\Tutorials\Samples\Controls\Charts\Chart.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="XlsIO\Tutorials\Samples\Controls\ChartWorksheet\ChartWorksheet.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="XlsIO\Tutorials\Samples\Controls\CondFormat\CondFormat.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="XlsIO\Tutorials\Samples\Controls\DataSort\DataSort.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="XlsIO\Tutorials\Samples\Controls\BoxAndWhisker\BoxAndWhisker.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="XlsIO\Tutorials\Samples\Controls\FunnelChart\FunnelChart.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+      <Page Include="XlsIO\Tutorials\Samples\Controls\Sunburst\Sunburst.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+      <Page Include="XlsIO\Tutorials\Samples\Controls\Treemap\Treemap.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+	<Page Include="XlsIO\Tutorials\Samples\Controls\ExcelToODS\ExcelToODS.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="XlsIO\Tutorials\Samples\Controls\DataValidation\DataValidation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="XlsIO\Tutorials\Samples\Controls\FindAndReplace\FindAndReplace.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="XlsIO\Tutorials\Samples\Controls\FormattingCells\FormattingCells.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="XlsIO\Tutorials\Samples\Controls\Formulas\Formulas.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="XlsIO\Tutorials\Samples\Controls\GettingStarted\CreateSpreadsheet.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="XlsIO\Tutorials\Samples\Controls\ImportBusinessObject\ImportBusinessObject.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="XlsIO\Tutorials\Samples\Controls\ImportXML\ImportXML.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="XlsIO\Tutorials\Samples\Controls\Performance\Performance.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="XlsIO\Tutorials\Samples\Controls\PivotChart\PivotChart.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="XlsIO\Tutorials\Samples\Controls\PivotTable\PivotTable.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="XlsIO\Tutorials\Samples\Controls\RangeManipulation\RangeManipulation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="XlsIO\Tutorials\Samples\Controls\Sparklines\Sparklines.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="XlsIO\Tutorials\Samples\Controls\TableFormula\TableFormula.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="XlsIO\Tutorials\Samples\Controls\Tables\Tables.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="XlsIO\Tutorials\Samples\Controls\TemplateMarker\TemplateMarker.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="XlsIO\Tutorials\Samples\Controls\Filters\Filters.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+	<Page Include="XlsIO\Tutorials\Samples\Controls\GroupShapes\GroupShapes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    
+  </ItemGroup>
+  <ItemGroup>
+    
+  </ItemGroup>
+  <ItemGroup>
+   	<EmbeddedResource Include="SyncfusionLicense.txt" />
+  </ItemGroup>
+</Project>

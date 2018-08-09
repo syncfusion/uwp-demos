@@ -1,0 +1,82 @@
+﻿<layout:SampleLayout x:Class="BI.PivotClient.PivotClientConfiguration"
+                     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                     xmlns:syncfusion="using:Syncfusion.UI.Xaml.PivotClient"
+                     xmlns:notification="using:Syncfusion.UI.Xaml.Controls.Notification"
+                     xmlns:converter="using:BI.PivotClient.PivotClientSamples.Converters"
+                     xmlns:layout="using:Common" Header="PivotClient" mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <converter:BooleanVisibilityConverter x:Key="VisibleToBoolConverter"/>
+    </UserControl.Resources>
+
+    <layout:SampleLayout.Sample>
+        <ContentControl>
+            <Grid x:Name="RootLayout">
+                <syncfusion:SfPivotClient x:Name="pivotClient1" Grid.Column="0" PagerButtonVisibility="Collapsed" />
+                <Grid Height="482" Width="900">
+                    <notification:SfBusyIndicator x:Name="busyIndicator" Foreground="#1685D4" AnimationType="SingleCircle" IsBusy="False" ViewboxHeight="80" ViewboxWidth="80" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
+            </Grid>
+        </ContentControl>
+    </layout:SampleLayout.Sample>
+    
+    <layout:SampleLayout.Setting>
+        <ContentControl>
+            <StackPanel Width="300">
+                <StackPanel Margin="10 7">
+                    <TextBlock Text="Data Source" Margin="10 7" FontWeight="SemiBold" FontSize="13"/>
+                    <RadioButton x:Name="rdBtn_Olap" GroupName="DataSource" Content="OLAP" Margin="10 7" FontSize="12" Click="OlapDataSource_Click"/>
+                    <RadioButton x:Name="rdBtn_Relational" GroupName="DataSource" Content="Relational" FontSize="12" Margin="10 7" IsChecked="True" Click="RelationalDataSource_Click"/>
+                </StackPanel>
+
+                <StackPanel Margin="10 7">
+                    <TextBlock Text="Display Mode" Margin="10 7" FontWeight="SemiBold" FontSize="13" VerticalAlignment="Center"/>
+                    <ComboBox x:Name="cmb_DisplayMode" Margin="10 7" FontSize="12" HorizontalAlignment="Stretch"/>
+                </StackPanel>
+                <StackPanel Margin="10 7">
+                    <TextBlock Text="Toolbar Option's Visibility" FontSize="13" Margin="10 7" FontWeight="SemiBold"/>
+
+                    <CheckBox x:Name="chk_ShowClientToolbar" Content="Show Client Toolbar" Margin="10 7" FontSize="13" IsChecked="True"/>
+
+                    <CheckBox x:Name="chk_ShowGridToolbar" Content="Show Grid Toolbar" Margin="10 7" FontSize="13" IsChecked="True"/>
+
+                    <CheckBox x:Name="chk_ShowChartToolBar" Content="Show Chart Toolbar" Margin="10 7" FontSize="13" IsChecked="True"/>
+
+                    <CheckBox x:Name="chk_ShowTogglePivotButton" Content="Show Toggle Pivot Button" Margin="10 7" FontSize="13"
+                          IsEnabled="{Binding ToolBarVisibility, ElementName=pivotClient1, Converter={StaticResource VisibleToBoolConverter}, Mode=TwoWay}" IsChecked="True"/>
+
+                    <CheckBox x:Name="chk_ShowExpanderButton" Content="Show Expander Button" Margin="10 7" FontSize="13"
+                          IsEnabled="{Binding ToolBarVisibility, ElementName=pivotClient1, Converter={StaticResource VisibleToBoolConverter}, Mode=TwoWay}" IsChecked="True"/>
+
+                    <CheckBox x:Name="chk_ShowMDXButton" Content="Show MDX Query Button" Margin="10 7" FontSize="13"
+                          IsEnabled="{Binding IsChecked, ElementName=rdBtn_Olap, Mode=TwoWay}"/>
+
+                    <CheckBox x:Name="chk_ShowReportList" Content="Show Report List" Margin="10 7" FontSize="13"
+                          IsEnabled="{Binding IsChecked, ElementName=rdBtn_Olap, Mode=TwoWay}"/>
+
+                    <CheckBox x:Name="chk_ShowReportMenuButton" Content="Show Report Menu Button" Margin="10 7" FontSize="13"
+                          IsEnabled="{Binding IsChecked, ElementName=rdBtn_Olap, Mode=TwoWay}"></CheckBox>
+
+                    <TextBlock Text="PivotTableField Component's Visibility" FontSize="13" Margin="10 7" FontWeight="SemiBold"/>
+
+                    <CheckBox x:Name="chk_ShowCubeDimensionBrowser" Content="Show Cube Dimension Browser" Margin="10 7" FontSize="13" IsChecked="True"/>
+
+                    <CheckBox x:Name="chk_ShowSearchBox" Content="Show Search Box" Margin="10 7" FontSize="13"
+                          IsEnabled="{Binding CubeDimensionBrowserVisibility, ElementName=pivotClient1, Converter={StaticResource VisibleToBoolConverter}, Mode=TwoWay}" IsChecked="True"/>
+
+                    <CheckBox x:Name="chk_ShowSlicerAxis" Content="Show Slicer Axis Element Builder" Margin="10 7" FontSize="13" IsChecked="True"/>
+
+                    <CheckBox x:Name="chk_ShowColumnAxis" Content="Show Column Axis Element Builder" Margin="10 7" FontSize="13" IsChecked="True"/>
+
+                    <CheckBox x:Name="chk_ShowRowAxis" Content="Show Row Axis Element Builder" Margin="10 7" FontSize="13" IsChecked="True"/>
+
+                    <CheckBox x:Name="chk_ShowValueAxis" Content="Show Value Axis Element Builder" Margin="10 7" FontSize="13" IsChecked="True"/>
+                </StackPanel>
+            </StackPanel>
+        </ContentControl>
+    </layout:SampleLayout.Setting>
+    
+</layout:SampleLayout>

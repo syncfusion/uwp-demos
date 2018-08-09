@@ -1,0 +1,17 @@
+Syncfusion.Data.UWP.dll
+Syncfusion.Olap.UWP.dll
+Syncfusion.PivotAnalysis.UWP.dll
+Syncfusion.SampleBrowser.UWP.Common.dll
+Syncfusion.SfBusyIndicator.UWP.dll
+Syncfusion.SfCellGrid.UWP.dll
+Syncfusion.SfChart.UWP.dll
+Syncfusion.SfColorPickers.UWP.dll
+Syncfusion.SfGrid.UWP.dll
+Syncfusion.SfGridCommon.UWP.dll
+Syncfusion.SfPivotChart.UWP.dll
+Syncfusion.SfPivotChartConverter.UWP.dll
+Syncfusion.SfPivotClient.UWP.dll
+Syncfusion.SfPivotGrid.UWP.dll
+Syncfusion.SfPivotGridConverter.UWP.dll
+Syncfusion.SfPivotShared.UWP.dll
+Syncfusion.SfShared.UWP.dll

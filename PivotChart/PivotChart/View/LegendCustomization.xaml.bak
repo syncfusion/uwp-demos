@@ -1,0 +1,57 @@
+﻿<layout:SampleLayout x:Class="BI.PivotChart.LegendCustomization"
+                     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                     xmlns:syncfusion="using:Syncfusion.UI.Xaml.PivotChart" 
+                     mc:Ignorable="d" xmlns:layout="using:Common" Header="PivotChart">
+
+    <layout:SampleLayout.Sample>
+        <syncfusion:SfPivotChart x:Name="PivotChart" ShowToolTip="True">
+            <syncfusion:SfPivotChart.Legend>
+                <syncfusion:PivotChartLegend x:Name="Legend" Margin="0 10" DockPosition="Top" ColumnCount="3" RowCount="3"/>
+            </syncfusion:SfPivotChart.Legend>
+            <syncfusion:SfPivotChart.PrimaryAxisStyle>
+                <syncfusion:PivotChartAxisStyle LabelFontFamily="Segoe UI" LabelFontSize="12" LabelForeground="Black">
+                </syncfusion:PivotChartAxisStyle>
+            </syncfusion:SfPivotChart.PrimaryAxisStyle>
+            <syncfusion:SfPivotChart.SecondaryAxisStyle>
+                <syncfusion:PivotChartAxisStyle LabelFontFamily="Segoe UI" LabelFormat="$ #" LabelFontSize="12" LabelForeground="Black">
+                </syncfusion:PivotChartAxisStyle>
+            </syncfusion:SfPivotChart.SecondaryAxisStyle>
+        </syncfusion:SfPivotChart>
+    </layout:SampleLayout.Sample>
+
+    <layout:SampleLayout.Setting>
+        <ContentControl>
+            <StackPanel Width="300">
+                <StackPanel Margin="10 7">
+                    <TextBlock Text="Orientation" Margin="10 7" FontFamily="Segoe UI" FontSize="12"/>
+                    <ComboBox x:Name="cmb_Orientation" Margin="10 7" FontFamily="Segoe UI" FontSize="12" HorizontalAlignment="Stretch"
+                              SelectionChanged="cmb_Orientation_SelectionChanged" 
+                              SelectedItem="{Binding Orientation, ElementName=Legend, Mode=TwoWay}">
+                    </ComboBox>
+                </StackPanel>
+                
+                <StackPanel Margin="10 7">
+                    <TextBlock Text="Text Overflow" Margin="10 7" FontFamily="Segoe UI" FontSize="12"/>
+                    <ComboBox x:Name="cmb_TextOverflow" Margin="10 7" FontFamily="Segoe UI" FontSize="12" HorizontalAlignment="Stretch"
+                              DisplayMemberPath="Key" SelectedValuePath="Value"
+                              SelectedValue="{Binding TextOverflow, ElementName=Legend, Mode=TwoWay}"/>
+                </StackPanel>
+
+                <StackPanel Margin="10 7">
+                    <TextBlock Text="Column Count" Margin="10 7" FontFamily="Segoe UI" FontSize="12"/>
+                    <TextBox x:Name="txt_ColumnCount" Margin="10 7" FontFamily="Segoe UI" FontSize="12" KeyDown="Txt_Count_OnKeyDown"
+                             Text="{Binding ElementName=Legend,Path=ColumnCount,Mode=TwoWay}"/>
+                </StackPanel>
+
+                <StackPanel Margin="10 7">
+                    <TextBlock Text="Row Count" Margin="10 7" FontFamily="Segoe UI" FontSize="12"/>
+                    <TextBox x:Name="txt_RowCount" Margin="10 7" FontFamily="Segoe UI" FontSize="12" KeyDown="Txt_Count_OnKeyDown"
+                             Text="{Binding ElementName=Legend,Path=RowCount,Mode=TwoWay}"/>
+                </StackPanel>
+            </StackPanel>
+        </ContentControl>
+    </layout:SampleLayout.Setting>
+</layout:SampleLayout>

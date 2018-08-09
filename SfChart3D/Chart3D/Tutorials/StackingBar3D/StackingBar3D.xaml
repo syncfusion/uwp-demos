@@ -1,0 +1,83 @@
+﻿<common:SampleLayout
+    x:Class="Syncfusion.SampleBrowser.UWP.SfChart3D.StackingBar3D"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Syncfusion.SampleBrowser.UWP.SfChart3D"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:common="using:Common"
+    xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+    <common:SampleLayout.Sample>
+        <ContentControl>
+            <Grid x:Name="grid">
+                <Grid.DataContext>
+                    <local:CategoryDataViewModel/>
+                </Grid.DataContext>
+
+                <Grid.Resources>
+                    <local:ColorConverter x:Key="colorConv"/>
+
+                    <local:TextConverter x:Key="txtconv"/>
+
+                    <!--Template for series data labels-->
+                    <DataTemplate x:Key="labelTemplate1">
+                        <Grid>
+                            <Rectangle Stroke="White" Fill="{Binding Converter={StaticResource colorConv}}" 
+                               StrokeThickness="1"/>
+                            <TextBlock Margin="4" HorizontalAlignment="Center" VerticalAlignment="Top"
+                               FontSize="10" Foreground="White" Text="{Binding Converter={StaticResource txtconv}}" />
+                        </Grid>
+                    </DataTemplate>
+                </Grid.Resources>
+
+                <chart:SfChart3D x:Name="columnChart" PerspectiveAngle="125" Rotation="29" SideBySideSeriesPlacement="True"
+                         EnableRotation="True"  Depth="150" 
+                         VerticalAlignment="Bottom">
+
+                    <!--PrimaryAxis customized with styles-->
+                    <chart:SfChart3D.PrimaryAxis>
+                        <chart:CategoryAxis3D TickLineSize="2">
+                            <chart:CategoryAxis3D.AxisLineStyle>
+                                <Style TargetType="Line">
+                                    <Setter Property="Stroke" Value="Transparent"/>
+                                </Style>
+                            </chart:CategoryAxis3D.AxisLineStyle>
+                        </chart:CategoryAxis3D>
+                    </chart:SfChart3D.PrimaryAxis>
+
+                    <!--SecondaryAxis with style and range customization-->
+                    <chart:SfChart3D.SecondaryAxis>
+                        <chart:NumericalAxis3D TickLineSize="2" OpposedPosition="False" RangePadding="None" Interval="10">
+                            <chart:NumericalAxis3D.AxisLineStyle>
+                                <Style TargetType="Line">
+                                    <Setter Property="Stroke" Value="Transparent"/>
+                                </Style>
+                            </chart:NumericalAxis3D.AxisLineStyle>
+                        </chart:NumericalAxis3D>
+                    </chart:SfChart3D.SecondaryAxis>
+
+                    <!--StackingBarSeries3D with data labels-->
+                    <chart:StackingBarSeries3D Interior="#34495e"  ItemsSource="{Binding CategoricalDatas}" 
+                                       XBindingPath="Year" YBindingPath="Plastic" Label="First" 
+                                       >
+                        <chart:StackingBarSeries3D.AdornmentsInfo>
+                            <chart:ChartAdornmentInfo3D x:Name="sbsChartAdornmentInfo3D1" />
+                        </chart:StackingBarSeries3D.AdornmentsInfo>
+                    </chart:StackingBarSeries3D>
+
+                    <chart:StackingBarSeries3D Interior="#e67e22" ItemsSource="{Binding CategoricalDatas}" 
+                                       XBindingPath="Year" YBindingPath="Metal" Label="First" 
+                                       >
+                        <chart:StackingBarSeries3D.AdornmentsInfo>
+                            <chart:ChartAdornmentInfo3D x:Name="sbsChartAdornmentInfo3D2" />
+                        </chart:StackingBarSeries3D.AdornmentsInfo>
+                    </chart:StackingBarSeries3D>
+                </chart:SfChart3D>
+            </Grid>
+        </ContentControl>
+    </common:SampleLayout.Sample>
+</common:SampleLayout>

@@ -1,0 +1,83 @@
+﻿<View:SampleLayout
+    x:Class="DataGrid.CellMerge"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"    
+    xmlns:local="using:DataGrid"   
+    xmlns:View="using:Common"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Grid"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <View:SampleLayout.Resources>
+        <ResourceDictionary>
+            <local:CurrencyFormatConverter x:Key="currencyFormatConverter" />            
+            <local:CategoryRepository x:Key="categoryComboBox" />
+            <local:MergedCellImageConverter x:Key="ImageConverter" />
+        </ResourceDictionary>
+    </View:SampleLayout.Resources>
+
+    <View:SampleLayout.Sample>
+        <syncfusion:SfDataGrid x:Name="sfGrid" 
+                               AllowEditing="False"
+                               AutoGenerateColumns="False"
+                               SelectionUnit="Cell"
+                               Margin="10,13,10,15"
+                               ColumnSizer="Star"
+                               AutoExpandGroups="True"
+                               NavigationMode="Cell"                                     
+                               >
+            <syncfusion:SfDataGrid.GroupColumnDescriptions>
+                <syncfusion:GroupColumnDescription ColumnName="CustomerID"/>
+            </syncfusion:SfDataGrid.GroupColumnDescriptions>
+            <syncfusion:SfDataGrid.Columns>
+                <syncfusion:GridTemplateColumn HeaderText="Customer ID" MappingName="CustomerID" AllowFocus="False" Width="200">
+                    <syncfusion:GridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Image Source="{Binding Path=CustomerID, Converter={StaticResource ImageConverter}}" />
+                        </DataTemplate>
+                    </syncfusion:GridTemplateColumn.CellTemplate>
+                </syncfusion:GridTemplateColumn>
+                <syncfusion:GridTextColumn HeaderText="Order ID" MappingName="OrderID" />
+                <syncfusion:GridTextColumn HeaderText="Employee ID"
+                                           MappingName="EmployeeID"
+                                           TextAlignment="Center" />
+                <syncfusion:GridDateTimeColumn Width="150"
+                                               FormatString="d"
+                                               HeaderText="Shipping Date"
+                                               MappingName="Shipping"
+                                               Padding="5"
+                                               TextAlignment="Right" />
+                <syncfusion:GridComboBoxColumn HeaderText="Ship Country"
+                                               ItemsSource="{StaticResource categoryComboBox}"
+                                               MappingName="ShipCountry"
+                                               Padding="5" />
+                <syncfusion:GridNumericColumn DisplayBinding="{Binding Freight,Converter={StaticResource currencyFormatConverter}}"
+                                              MappingName="Freight"
+                                              Padding="5">
+                    <syncfusion:GridNumericColumn.CellTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <ProgressBar x:Name="progressBar"
+                                             Width="120"
+                                             Height="40" 
+                                             Margin="5,0,0,0"
+                                             HorizontalAlignment="Left"
+                                             Background="Transparent"
+                                             BorderThickness="0"
+                                             Foreground="#FF8F4DFC"
+                                             Maximum="1000"
+                                             Visibility="Visible"
+                                             Value="{Binding Freight}" />
+                                <TextBlock HorizontalAlignment="Right"
+                                           VerticalAlignment="Center"
+                                           Text="{Binding Freight}"
+                                           TextAlignment="Right" />
+                            </Grid>
+                        </DataTemplate>
+                    </syncfusion:GridNumericColumn.CellTemplate>
+                </syncfusion:GridNumericColumn>
+            </syncfusion:SfDataGrid.Columns>
+        </syncfusion:SfDataGrid>
+    </View:SampleLayout.Sample>
+</View:SampleLayout>

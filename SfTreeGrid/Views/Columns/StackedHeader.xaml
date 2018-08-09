@@ -1,0 +1,43 @@
+﻿<View:SampleLayout x:Class="Syncfusion.SampleBrowser.UWP.SfTreeGrid.StackedHeader"
+                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                   xmlns:View="using:Common"
+                   xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                   xmlns:local="using:Syncfusion.SampleBrowser.UWP.SfTreeGrid"
+                   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                   xmlns:syncfusion="using:Syncfusion.UI.Xaml.TreeGrid"
+                   xmlns:syncfusion1="using:Syncfusion.UI.Xaml.Grid"
+                   mc:Ignorable="d">
+    <UserControl.DataContext>
+            <local:OrderInfoRepository></local:OrderInfoRepository>
+    </UserControl.DataContext>
+    <View:SampleLayout.Sample>
+        <syncfusion:SfTreeGrid Name="treeGrid"
+                                       AllowEditing="True"
+                                       AllowSorting="True"
+                                       AutoExpandMode="RootNodesExpanded"
+                                       AutoGenerateColumns="False"
+                                       ChildPropertyName="Children"
+                                       ColumnSizer="Star"
+                                       ItemsSource="{Binding EmployeeDetails}"
+                                       LiveNodeUpdateMode="AllowDataShaping">
+            <syncfusion:SfTreeGrid.StackedHeaderRows>
+                <syncfusion1:StackedHeaderRow>
+                    <syncfusion1:StackedHeaderRow.StackedColumns>
+                        <syncfusion1:StackedColumn ChildColumns="OrderID,OrderDate" HeaderText="Order Details" />
+                        <syncfusion1:StackedColumn ChildColumns="CustomerID,CustomerArea" HeaderText="Customer Details" />
+                        <syncfusion1:StackedColumn ChildColumns="UnitPrice,Discount" HeaderText="Price Details" />
+                    </syncfusion1:StackedHeaderRow.StackedColumns>
+                </syncfusion1:StackedHeaderRow>
+            </syncfusion:SfTreeGrid.StackedHeaderRows>
+            <syncfusion:SfTreeGrid.Columns>
+                <syncfusion:TreeGridTextColumn HeaderText="Order ID" MappingName="OrderID" />
+                <syncfusion:TreeGridDateTimeColumn HeaderText="Order Date" MappingName="OrderDate" />
+                <syncfusion:TreeGridTextColumn HeaderText="Customer ID" MappingName="CustomerID" />
+                <syncfusion:TreeGridTextColumn HeaderText="Customer Area" MappingName="CustomerArea" />
+                <syncfusion:TreeGridNumericColumn HeaderText="Price" MappingName="UnitPrice" FormatString="C"/>
+                <syncfusion:TreeGridNumericColumn MappingName="Discount" FormatString="C"/>
+            </syncfusion:SfTreeGrid.Columns>
+        </syncfusion:SfTreeGrid>
+    </View:SampleLayout.Sample>
+</View:SampleLayout>

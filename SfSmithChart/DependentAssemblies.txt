@@ -1,0 +1,6 @@
+Syncfusion.SampleBrowser.UWP.Common.dll
+Syncfusion.SfSmithChart.UWP.dll
+Syncfusion.SfBusyIndicator.UWP.dll
+Syncfusion.SfHubTile.UWP.dll
+Syncfusion.SfInput.UWP.dll
+Syncfusion.SfShared.UWP.dll

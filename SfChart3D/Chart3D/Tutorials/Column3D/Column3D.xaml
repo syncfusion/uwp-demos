@@ -1,0 +1,59 @@
+﻿<common:SampleLayout
+    x:Class="Syncfusion.SampleBrowser.UWP.SfChart3D.Column3D"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Syncfusion.SampleBrowser.UWP.SfChart3D"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:common="using:Common"
+    xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+    <common:SampleLayout.Sample>
+        <ContentControl>
+            <Grid x:Name="grid">
+                <Grid.DataContext>
+                    <local:CategoryDataViewModel/>
+                </Grid.DataContext>
+
+                <chart:SfChart3D x:Name="columnChart" Rotation="-39" PerspectiveAngle="115.6404494382023" 
+                         SideBySideSeriesPlacement="False" EnableRotation="True" Depth="150" 
+                         VerticalAlignment="Bottom">
+
+                    <!--PrimarySeries customized with styles-->
+                    <chart:SfChart3D.PrimaryAxis>
+                        <chart:CategoryAxis3D TickLineSize="2" Foreground="#7f8c8d" FontSize="20">
+                            <chart:CategoryAxis3D.AxisLineStyle>
+                                <Style TargetType="Line">
+                                    <Setter Property="Stroke" Value="Transparent"/>
+                                </Style>
+                            </chart:CategoryAxis3D.AxisLineStyle>
+                        </chart:CategoryAxis3D>
+                    </chart:SfChart3D.PrimaryAxis>
+
+                    <!--SecondaryAxis with range customization-->
+                    <chart:SfChart3D.SecondaryAxis>
+                        <chart:NumericalAxis3D TickLineSize="2" OpposedPosition="True" RangePadding="Normal"
+                                       FontSize="20" Minimum="0" Maximum="25" Interval="5" Foreground="Black">
+                            <chart:NumericalAxis3D.AxisLineStyle>
+                                <Style TargetType="Line">
+                                    <Setter Property="Stroke" Value="Transparent"/>
+                                </Style>
+                            </chart:NumericalAxis3D.AxisLineStyle>
+                        </chart:NumericalAxis3D>
+                    </chart:SfChart3D.SecondaryAxis>
+
+                    <chart:ColumnSeries3D Interior="#3498db" ItemsSource="{Binding CategoricalDatas}"  
+                                  XBindingPath="Year" YBindingPath="Plastic" 
+                                  Label="First" />
+
+                    <chart:ColumnSeries3D Interior="#2c3e50" ItemsSource="{Binding CategoricalDatas}"  
+                                  XBindingPath="Year" YBindingPath="Metal" Label="First" 
+                                  />
+                </chart:SfChart3D>
+            </Grid>
+        </ContentControl>
+    </common:SampleLayout.Sample>
+</common:SampleLayout>

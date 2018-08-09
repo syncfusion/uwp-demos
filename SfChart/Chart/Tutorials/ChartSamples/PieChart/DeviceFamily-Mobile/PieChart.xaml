@@ -1,0 +1,237 @@
+﻿<common:SampleLayout
+    x:Class="Syncfusion.SampleBrowser.UWP.SfChart.PieChart"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Syncfusion.SampleBrowser.UWP.SfChart"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:common="using:Common"
+    xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
+    mc:Ignorable="d">
+
+    <common:SampleLayout.Sample>
+        <ContentControl>
+            <Grid x:Name="MainGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                <Grid.Resources>
+                    <DataTemplate x:Key="labeltemplate">
+                        <TextBlock Text="{Binding}" FontSize="14" Foreground="White" 
+                               HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                    </DataTemplate>
+                </Grid.Resources>
+
+                <Grid.DataContext>
+                    <local:PieChartViewModel/>
+                </Grid.DataContext>
+
+                <Hub>
+                    <HubSection Header="Pie" Width="330">
+                        <DataTemplate>
+                            <chart:SfChart AreaBorderThickness="0">
+
+                                <chart:PieSeries x:Name="pieSeries" ConnectorType="Bezier" PieCoefficient="0.7"
+                                                 EnableSmartLabels="True" LabelPosition="OutsideExtended" 
+                                                 ItemsSource="{Binding Expenditure}" XBindingPath="Expense"
+                                                 Label="Expenditures" YBindingPath="Amount" ShowTooltip="True"
+                                                 AdornmentsInfo="{Binding AdornmentInfo}">
+                                </chart:PieSeries>
+                            </chart:SfChart>
+                        </DataTemplate>
+                    </HubSection>
+
+                    <HubSection Header="Multiple Pie" Width="330">
+                        <DataTemplate>
+                            <chart:SfChart AreaBorderThickness="0">
+                                <chart:SfChart.DataContext>
+                                    <local:PieChartViewModel />
+                                </chart:SfChart.DataContext>
+
+                                <chart:PieSeries Palette="Custom" XBindingPath="Continent" YBindingPath="PopulationinContinents" LabelPosition="Inside"
+                                                 ItemsSource="{Binding Population}" EnableSmartLabels="False" Stroke="White" 
+                                                 PieCoefficient="1" AdornmentsInfo="{Binding AdornmentInfo1}">
+                                    <chart:PieSeries.ColorModel>
+                                        <chart:ChartColorModel>
+                                            <chart:ChartColorModel.CustomBrushes>
+                                                <SolidColorBrush Color="#E94649"/>
+                                                <SolidColorBrush Color="#0FB954"/>
+                                                <SolidColorBrush Color="#005277"/>
+                                            </chart:ChartColorModel.CustomBrushes>
+                                        </chart:ChartColorModel>
+                                    </chart:PieSeries.ColorModel>
+                                </chart:PieSeries>
+
+                                <chart:PieSeries Palette="Custom" XBindingPath="Countries"  YBindingPath="PopulationinCountries" LabelPosition="Inside"
+                                                 ItemsSource="{Binding Population}" EnableSmartLabels="False" Stroke="White" 
+                                                 PieCoefficient="1" AdornmentsInfo="{Binding AdornmentInfo2}">
+                                    <chart:PieSeries.ColorModel>
+                                        <chart:ChartColorModel>
+                                            <chart:ChartColorModel.CustomBrushes>
+                                                <SolidColorBrush Color="#E94649"/>
+                                                <SolidColorBrush Color="#E94649"/>
+                                                <SolidColorBrush Color="#0FB954"/>
+                                                <SolidColorBrush Color="#0FB954"/>
+                                                <SolidColorBrush Color="#005277"/>
+                                                <SolidColorBrush Color="#005277"/>
+                                            </chart:ChartColorModel.CustomBrushes>
+                                        </chart:ChartColorModel>
+                                    </chart:PieSeries.ColorModel>
+                                </chart:PieSeries>
+
+                                <chart:PieSeries Palette="Custom" XBindingPath="States" YBindingPath="PopulationinStates" LabelPosition="Inside"
+                                                 ItemsSource="{Binding Population}" EnableSmartLabels="False" Stroke="White" 
+                                                 PieCoefficient="1" AdornmentsInfo="{Binding AdornmentInfo3}">
+                                    <chart:PieSeries.ColorModel>
+                                        <chart:ChartColorModel>
+                                            <chart:ChartColorModel.CustomBrushes>
+                                                <SolidColorBrush Color="#E94649"/>
+                                                <SolidColorBrush Color="#E94649"/>
+                                                <SolidColorBrush Color="#E94649"/>
+                                                <SolidColorBrush Color="#E94649"/>
+                                                <SolidColorBrush Color="#0FB954"/>
+                                                <SolidColorBrush Color="#0FB954"/>
+                                                <SolidColorBrush Color="#0FB954"/>
+                                                <SolidColorBrush Color="#0FB954"/>
+                                                <SolidColorBrush Color="#005277"/>
+                                                <SolidColorBrush Color="#005277"/>
+                                                <SolidColorBrush Color="#005277"/>
+                                                <SolidColorBrush Color="#005277"/>
+                                            </chart:ChartColorModel.CustomBrushes>
+                                        </chart:ChartColorModel>
+                                    </chart:PieSeries.ColorModel>
+                                </chart:PieSeries>
+                            </chart:SfChart>
+                        </DataTemplate>
+                    </HubSection>
+
+                    <HubSection Header="Semi Pie" Width="330">
+                        <DataTemplate>
+                            <chart:SfChart AreaBorderThickness="0">
+                                <chart:PieSeries x:Name="pieSeries" StartAngle="180" EndAngle ="360" ConnectorType="Bezier" PieCoefficient="0.7"
+                                                 EnableSmartLabels="True" LabelPosition="OutsideExtended" 
+                                                 ItemsSource="{Binding Metric}" XBindingPath="Utilization"
+                                                 YBindingPath="ResponseTime" AdornmentsInfo="{Binding AdornmentInfo4}">
+                                </chart:PieSeries>
+                            </chart:SfChart>
+                        </DataTemplate>
+                    </HubSection>
+                    
+                    <HubSection Header="Doughnut" Width="330">
+                        <DataTemplate>
+                            <chart:SfChart x:Name="Accumulation_charts" AreaBorderThickness="0" >
+
+                                <chart:DoughnutSeries ItemsSource="{Binding CompanyDetails}" AdornmentsInfo="{Binding AdornmentInfo5}"
+                                                  XBindingPath="CompanyName" Label="Expenditures" DoughnutSize="0.9"
+                                                  YBindingPath="CompanyTurnover" ShowTooltip="True" >
+                                </chart:DoughnutSeries>
+                            </chart:SfChart>
+                        </DataTemplate>
+                    </HubSection>
+
+                    <HubSection Header="Multiple Doughnut" Width="330">
+                        <DataTemplate>
+                            <chart:SfChart AreaBorderThickness="0" chart:DoughnutSeries.DoughnutHoleSize="0.2">
+                                <chart:SfChart.DataContext>
+                                    <local:PieChartViewModel />
+                                </chart:SfChart.DataContext>
+                                
+                                <chart:DoughnutSeries DoughnutSize="1" Palette="Custom"
+                                                      EnableSmartLabels="False" Stroke="White" DoughnutCoefficient="1"
+                                                      LabelPosition="Inside" XBindingPath="Continent" AdornmentsInfo="{Binding AdornmentInfo6}"
+                                                      YBindingPath="PopulationinContinents" ItemsSource="{Binding Population}">
+                                    <chart:DoughnutSeries.ColorModel>
+                                        <chart:ChartColorModel>
+                                            <chart:ChartColorModel.CustomBrushes>
+                                                <SolidColorBrush Color="#E94649"/>
+                                                <SolidColorBrush Color="#0FB954"/>
+                                                <SolidColorBrush Color="#005277"/>
+                                            </chart:ChartColorModel.CustomBrushes>
+                                        </chart:ChartColorModel>
+                                    </chart:DoughnutSeries.ColorModel>
+                                </chart:DoughnutSeries>
+
+                                <chart:DoughnutSeries DoughnutCoefficient="1" DoughnutSize="1" Palette="Custom"
+                                                      EnableSmartLabels="False" Stroke="White" LabelPosition="Inside" XBindingPath="Countries"
+                                                      YBindingPath="PopulationinCountries" ItemsSource="{Binding Population}"
+                                                      AdornmentsInfo="{Binding AdornmentInfo7}">
+                                    <chart:DoughnutSeries.ColorModel>
+                                        <chart:ChartColorModel>
+                                            <chart:ChartColorModel.CustomBrushes>
+                                                <SolidColorBrush Color="#E94649"/>
+                                                <SolidColorBrush Color="#E94649"/>
+                                                <SolidColorBrush Color="#0FB954"/>
+                                                <SolidColorBrush Color="#0FB954"/>
+                                                <SolidColorBrush Color="#005277"/>
+                                                <SolidColorBrush Color="#005277"/>
+                                            </chart:ChartColorModel.CustomBrushes>
+                                        </chart:ChartColorModel>
+                                    </chart:DoughnutSeries.ColorModel>
+                                </chart:DoughnutSeries>
+
+                                <chart:DoughnutSeries XBindingPath="States" YBindingPath="PopulationinStates" ItemsSource="{Binding Population}"
+                                                      DoughnutSize="1" Palette="Custom" EnableSmartLabels="False" Stroke="White" DoughnutCoefficient="1"
+                                                      LabelPosition="Inside" Label="Medal in 2015" 
+                                                      AdornmentsInfo="{Binding AdornmentInfo8}">
+                                    <chart:DoughnutSeries.ColorModel>
+                                        <chart:ChartColorModel>
+                                            <chart:ChartColorModel.CustomBrushes>
+                                                <SolidColorBrush Color="#E94649"/>
+                                                <SolidColorBrush Color="#E94649"/>
+                                                <SolidColorBrush Color="#E94649"/>
+                                                <SolidColorBrush Color="#E94649"/>
+                                                <SolidColorBrush Color="#0FB954"/>
+                                                <SolidColorBrush Color="#0FB954"/>
+                                                <SolidColorBrush Color="#0FB954"/>
+                                                <SolidColorBrush Color="#0FB954"/>
+                                                <SolidColorBrush Color="#005277"/>
+                                                <SolidColorBrush Color="#005277"/>
+                                                <SolidColorBrush Color="#005277"/>
+                                                <SolidColorBrush Color="#005277"/>
+                                            </chart:ChartColorModel.CustomBrushes>
+                                        </chart:ChartColorModel>
+                                    </chart:DoughnutSeries.ColorModel>
+                                </chart:DoughnutSeries>
+                            </chart:SfChart>
+                        </DataTemplate>
+                    </HubSection>
+                    
+                    <HubSection Header="Semi Doughnut" Width="330">
+                        <DataTemplate>
+                            <chart:SfChart x:Name="Accumulation_charts" AreaBorderThickness="0" >
+
+                                <chart:DoughnutSeries  StartAngle="180" EndAngle="360" AdornmentsInfo="{Binding AdornmentInfo9}"
+                                                  ConnectorType="Bezier" EnableSmartLabels="True" 
+                                                  LabelPosition="Outside" XBindingPath="Utilization" 
+                                                  YBindingPath="ResponseTime" ItemsSource="{Binding Metric}">
+                                </chart:DoughnutSeries>
+                            </chart:SfChart>
+                        </DataTemplate>
+                    </HubSection>
+                    
+                    <HubSection Header="Pyramid" Width="330">
+                        <DataTemplate>
+                            <chart:SfChart AreaBorderThickness="0" Margin="5">
+                                <chart:PyramidSeries ItemsSource="{Binding CompanyDetails}" 
+                                             XBindingPath="CompanyName" Label="Expenditures" 
+                                             YBindingPath="CompanyTurnover" ShowTooltip="True"
+                                             AdornmentsInfo="{Binding AdornmentInfo10}">
+                                </chart:PyramidSeries>
+                            </chart:SfChart>
+                        </DataTemplate>
+                    </HubSection>
+                    
+                    <HubSection Header="Funnel" Width="330">
+                        <DataTemplate>
+                            <chart:SfChart AreaBorderThickness="0" Margin="5">
+
+                                <chart:FunnelSeries ItemsSource="{Binding CompanyDetails}" 
+                                                XBindingPath="CompanyName" Label="Expenditures" 
+                                                YBindingPath="CompanyTurnover" ShowTooltip="True"
+                                                AdornmentsInfo="{Binding AdornmentInfo11}">
+                                </chart:FunnelSeries>
+                            </chart:SfChart>
+                        </DataTemplate>
+                    </HubSection>
+                </Hub>
+            </Grid>
+        </ContentControl>
+    </common:SampleLayout.Sample>
+</common:SampleLayout>
