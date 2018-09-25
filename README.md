@@ -1,6 +1,6 @@
 # Syncfusion UWP samples
 
-This repository contains the demos of [Syncfusion UWP UI controls](https://www.syncfusion.com/products/uwp). This is the best place to check our controls to get more insight about the usage of APIs. You can also check our controls by installing our sample browser from [Microsoft Store](https://www.microsoft.com/en-us/p/syncfusion-essential-studio-for-uwp/9nblggh5wngv), in which you can browse the demo for all the controls and view the source code of each sample within the app itself. 
+This repository contains the demos of [Syncfusion UWP UI controls](https://www.syncfusion.com/products/uwp?utm_source=github&utm_medium=listing). This is the best place to check our controls to get more insight about the usage of APIs. You can also check our controls by installing our sample browser from [Microsoft Store](https://www.microsoft.com/en-us/p/syncfusion-essential-studio-for-uwp/9nblggh5wngv), in which you can browse the demo for all the controls and view the source code of each sample within the app itself. 
 
 This section guides you to use the Syncfusion UWP samples in your applications.
 
@@ -17,7 +17,7 @@ The samples requires Windows 10 and Visual Studio 2015 or higher to build, test 
 
 ## <a name="documentation"></a>Documentation ##
 
-All controls documentation for the Syncfusion UWP controls can be found on [Syncfusion Help](https://help.syncfusion.com/uwp/overview). All API documentation can be found at the [API Reference](https://help.syncfusion.com/cr/uwp).
+All controls documentation for the Syncfusion UWP controls can be found on [Syncfusion Help](https://help.syncfusion.com/uwp/overview?utm_source=github&utm_medium=listing). All API documentation can be found at the [API Reference](https://help.syncfusion.com/cr/uwp?utm_source=github&utm_medium=listing).
 
 ## <a name="license"></a>License ##
 
@@ -33,7 +33,7 @@ The easiest way to use these samples without using Git is to download the zip fi
    * Before you unzip the archive, right-click it, select **Properties**, and then select **Unblock**.
    * Be sure to unzip the entire archive, and not just individual samples. The samples all depend on the SharedContent folder in the archive.  
 
-**To use the Syncfusion UWP samples, Syncfusion license key should be registered in SyncfusionLicense.txt file. Refer [this](https://www.syncfusion.com/kb/9002) link for more information.**
+**To use the Syncfusion UWP samples, Syncfusion license key should be registered in SyncfusionLicense.txt file. Refer [this](https://www.syncfusion.com/kb/9002?utm_source=github&utm_medium=listing) link for more information.**
 
 
 
@@ -409,7 +409,7 @@ The easiest way to use these samples without using Git is to download the zip fi
 
 ## <a name="support-and-feedback"></a>Support and Feedback ##
 
-* For any other queries, reach our [Syncfusion support team](https://www.syncfusion.com/support/directtrac/incidents/newincident) or post the queries through the [community forums](https://www.syncfusion.com/forums).
+* For any other queries, reach our [Syncfusion support team](https://www.syncfusion.com/support/directtrac/incidents/newincident?utm_source=github&utm_medium=listing) or post the queries through the [community forums](https://www.syncfusion.com/forums?utm_source=github&utm_medium=listing).
 
-* To renew the subscription, click [here](https://www.syncfusion.com/sales/products) or contact our sales team at <salessupport@syncfusion.com>.
+* To renew the subscription, click [here](https://www.syncfusion.com/sales/products?utm_source=github&utm_medium=listing) or contact our sales team at <salessupport@syncfusion.com>.
   
