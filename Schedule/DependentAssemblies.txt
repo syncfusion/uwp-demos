@@ -1,7 +1,0 @@
-Syncfusion.SampleBrowser.UWP.Common.dll
-Syncfusion.SfSchedule.UWP.dll
-Syncfusion.SfInput.UWP.dll
-Syncfusion.SfRadialMenu.UWP.dll
-Syncfusion.SfShared.UWP.dll
-Syncfusion.SfTabControl.UWP.dll
-Syncfusion.Licensing.UWP.dll
