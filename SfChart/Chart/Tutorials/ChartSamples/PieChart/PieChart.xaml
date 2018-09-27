@@ -1,0 +1,92 @@
+﻿<common:SampleLayout
+    x:Class="Syncfusion.SampleBrowser.UWP.SfChart.PieChart"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Syncfusion.SampleBrowser.UWP.SfChart"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:common="using:Common"
+    xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+    <common:SampleLayout.Sample>
+        <ContentControl Margin="50,50,50,25" >
+            <Grid x:Name="MainGrid" HorizontalAlignment="Left" VerticalAlignment="Top" >
+                <Grid.Resources>
+                    <local:LabelConverter x:Key="labelconverter"/>
+
+                    <local:ColorConverter x:Key="colorConv"/>
+                    
+                    <local:PopulationLabelConverter1 x:Key="populationLabelConverter1"/>
+
+                    <local:PopulationLabelConverter2 x:Key="populationLabelConverter2"/>
+
+                    <local:PopulationLabelConverter3 x:Key="populationLabelConverter3"/>
+                    
+                    <DataTemplate x:Key="labeltemplate">
+                        <TextBlock Text="{Binding}" FontSize="12" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                    </DataTemplate>
+
+                    <DataTemplate x:Key="labelTemplate">
+                        <Grid>
+                            <Rectangle Stroke="White" Fill="{Binding Converter={StaticResource colorConv}}" StrokeThickness="1"/>
+                            <TextBlock Margin="6,3,6,3" HorizontalAlignment="Center" VerticalAlignment="Top"
+                                   FontSize="12" Foreground="White" Text="{Binding Converter={StaticResource labelconverter}}"/>
+                        </Grid>
+                    </DataTemplate>
+
+                    <DataTemplate x:Key="populationLabelTemplate1">
+                        <TextBlock Margin="5" FontSize="11" Foreground="White" 
+                               Text="{Binding Converter={StaticResource populationLabelConverter1}}"/>
+                    </DataTemplate>
+
+                    <DataTemplate x:Key="populationLabelTemplate2">
+                        <TextBlock Margin="5" FontSize="11" Foreground="White" 
+                               Text="{Binding Converter={StaticResource populationLabelConverter2}}"/>
+                    </DataTemplate>
+
+                    <DataTemplate x:Key="populationLabelTemplate3">
+                        <TextBlock Margin="5" FontSize="11" Foreground="White" 
+                               Text="{Binding Converter={StaticResource populationLabelConverter3}}"/>
+                    </DataTemplate>
+                </Grid.Resources>
+
+                <Grid.DataContext>
+                    <local:PieChartViewModel/>
+                </Grid.DataContext>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <chart:SfChart x:Name="Accumulation_charts" AreaBorderThickness="0" Grid.RowSpan="2" VerticalAlignment="Center"
+                       FontSize="20" Header="Agriculture Expenses Comparison" HorizontalAlignment="Center" Loaded="Accumulation_charts_Loaded">
+
+                    <chart:SfChart.Legend>
+                        <chart:ChartLegend x:Name="ChartLegend1" CornerRadius="0" FontSize="15" DockPosition="Right" BorderThickness="1" />
+                    </chart:SfChart.Legend>
+
+                    <chart:PieSeries x:Name="pieSeries" ConnectorType="Bezier" PieCoefficient="0.7"
+                             EnableSmartLabels="True" LabelPosition="OutsideExtended" 
+                             ItemsSource="{Binding Expenditure}" XBindingPath="Expense"
+                             Label="Expenditures" YBindingPath="Amount" ShowTooltip="True"
+                             />
+                </chart:SfChart>
+
+                <ComboBox x:Name="ChartTypes" Width="200" Grid.Row="0" SelectedIndex="0" 
+                      HorizontalAlignment="Right" SelectionChanged="OnChartTypeSelectionChanged1">
+                    <ComboBoxItem>Pie</ComboBoxItem>
+                    <ComboBoxItem>Multiple Pie</ComboBoxItem>
+                    <ComboBoxItem>Semi Pie</ComboBoxItem>
+                    <ComboBoxItem>Doughnut</ComboBoxItem>
+                    <ComboBoxItem>Multiple Doughnut</ComboBoxItem>
+                    <ComboBoxItem>Semi Doughnut</ComboBoxItem>
+                    <ComboBoxItem>Pyramid</ComboBoxItem>
+                    <ComboBoxItem>Funnel</ComboBoxItem>
+                </ComboBox>
+            </Grid>
+        </ContentControl>
+    </common:SampleLayout.Sample>
+</common:SampleLayout>
