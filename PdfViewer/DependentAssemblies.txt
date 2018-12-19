@@ -1,0 +1,9 @@
+Syncfusion.SampleBrowser.UWP.Common.dll
+Syncfusion.PDF.UWP.dll
+Syncfusion.SfPdfViewer.UWP.dll
+Syncfusion.SfInput.UWP.dll
+Syncfusion.SfRadialMenu.UWP.dll
+Syncfusion.SfColorPickers.UWP.dll
+Syncfusion.SfShared.UWP.dll
+Syncfusion.SfTreeNavigator.UWP.dll
+Syncfusion.Licensing.dll
