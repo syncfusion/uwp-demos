@@ -1,4 +1,4 @@
-# Syncfusion UWP samples
+# Syncfusion UWP samples 
 
 This repository contains the demos of [Syncfusion UWP UI controls](https://www.syncfusion.com/products/uwp?utm_source=github&utm_medium=listing). This is the best place to check our controls to get more insight about the usage of APIs. You can also check our controls by installing our sample browser from [Microsoft Store](https://www.microsoft.com/en-us/p/syncfusion-essential-studio-for-uwp/9nblggh5wngv), in which you can browse the demo for all the controls and view the source code of each sample within the app itself. 
 
