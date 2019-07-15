@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Roots >
+  <Roots.RootTypes>
+    <RootType FullName="Windows.UI.Xaml.Application">
+      <RootProperty Name="RequestedTheme" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
+      <RootProperty Name="Resources" />
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.HeatMap.ColorMappingCollection" />
+    <RootType FullName="Syncfusion.UI.Xaml.HeatMap.HeatMapCell" />
+    <RootType FullName="Windows.UI.Xaml.FrameworkElement">
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="MinWidth" />
+      <RootProperty Name="MinHeight" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.HeatMap.RowHeader" />
+    <RootType FullName="Syncfusion.UI.Xaml.HeatMap.ColumnHeader" />
+    <RootType FullName="Syncfusion.UI.Xaml.HeatMap.TableMapping">
+      <RootProperty Name="HeaderMapping" />
+      <RootProperty Name="ColumnMapping" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.HeatMap.ColumnMapping">
+      <RootProperty Name="PropertyName" />
+      <RootProperty Name="DisplayName" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Setter">
+      <RootProperty Name="Property" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.HeatMap.ColorMapping">
+      <RootProperty Name="Value" />
+      <RootProperty Name="Color" />
+      <RootProperty Name="Label" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="ColumnDefinitions" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
+      <RootMethod Name="GetColumn" />
+      <RootMethod Name="SetColumn" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="TextAlignment" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="Inlines" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="Text" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.HeatMap.SfHeatMap">
+      <RootProperty Name="ColorMappingCollection" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="ItemsMapping" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.HeatMap.SfHeatMapLegend">
+      <RootProperty Name="Width" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="ColorMappingCollection" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Data.Binding" />
+    <RootType FullName="Windows.UI.Xaml.Documents.LineBreak" />
+    <RootType FullName="HeatMap.GettingStarted" />
+    <RootType FullName="Common.SampleLayout">
+      <RootProperty Name="Resources" />
+      <RootProperty Name="Sample" />
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ContentControl">
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="HeatMap.GettingStarted1" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RadioButton">
+      <RootProperty Name="GroupName" />
+      <RootProperty Name="IsChecked" />
+      <RootProperty Name="Margin" />
+      <RootEvent Name="Checked" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Documents.Run" />
+    <RootType FullName="Windows.UI.Xaml.Documents.Bold">
+      <RootProperty Name="Inlines" />
+    </RootType>
+    <RootType FullName="HeatMap.ItemsMapping" />
+    <RootType FullName="HeatMap.ItemsMapping_Mobile" />
+    <RootType FullName="HeatMap.Legend" />
+    <RootType FullName="HeatMap.Legend_Mobile" />
+    <RootType FullName="HeatMap.Virtualization" />
+  </Roots.RootTypes>
+</Roots>

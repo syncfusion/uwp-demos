@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfPivotChartConverter.UWP</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.UI.Xaml.PivotChartConverter.ExportingChartEventHandler">
+            <summary>
+            Represents the method that will handle the <see cref="E:Syncfusion.UI.Xaml.PivotChartConverter.ExportChartToPdf" /> event.
+            </summary>
+            <param name="sender">The <see cref="T:Syncfusion.UI.Xaml.PivotChartConverter.ExportPivotChartToPdf"/> control.</param>
+            <param name="e">The <see cref="T:Syncfusion.UI.Xaml.PivotChartConverter.ExportingChartEventArgs"/> contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotChartConverter.ExportingChartEventArgs">
+            <summary>
+            Provides event data for the <see cref="E:Syncfusion.UI.Xaml.PivotChartConverter.ExportChartToPdf" /> event.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotChartConverter.ExportingChartEventArgs.Document">
+            <summary>
+            Gets or sets the document to which the chart is going to export.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotChartConverter.ExportPivotChartToPdf">
+            <summary>
+            Represents a class that transfers the chart content to PDF document.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotChartConverter.ExportPivotChartToPdf.#ctor(Syncfusion.UI.Xaml.PivotChart.SfPivotChart)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotChartConverter.ExportPivotChartToPdf"/> class.
+            </summary>
+            <param name="pivotChart">The Pivot Chart control that is to be exported.</param>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.PivotChartConverter.ExportPivotChartToPdf.Exporting">
+            <summary>
+            Occurs when pivotchart exports into PDF document.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotChartConverter.ExportPivotChartToPdf.ExportPivotChartWithZoomFactor">
+            <summary>
+            Gets or sets a value indicating whether to export the PivotChart with zoom factor or not
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotChartConverter.ExportPivotChartToPdf.ExportToDocument(System.String)">
+            <summary>
+            Exports the chart to PDF document.
+            </summary>
+            <param name="fileName">The file name for exported PDF document. </param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotChartConverter.ExportPivotChartToWord">
+            <summary>
+            Represents a class that transfers the chart content to word document.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotChartConverter.ExportPivotChartToWord.#ctor(Syncfusion.UI.Xaml.PivotChart.SfPivotChart)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotChartConverter.ExportPivotChartToWord"/> class.
+            </summary>
+            <param name="pivotChart">The Pivot Chart control that is to be exported.</param>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.PivotChartConverter.ExportPivotChartToWord.Exporting">
+            <summary>
+            Occurs when pivotchart exports into word document.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotChartConverter.ExportPivotChartToWord.ExportPivotChartWithZoomFactor">
+            <summary>
+            Gets or sets a value indicating whether to export the PivotChart with zoom factor or not
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotChartConverter.ExportPivotChartToWord.ExportToDocument(System.String)">
+            <summary>
+            Exports the chart to word document.
+            </summary>
+            <param name="fileName">The file name for exported word document. </param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotChartConverter.NamespaceDoc">
+            <summary>
+            The Syncfusion.UI.Xaml.PivotChartConverter namespace contains classes for exporting the Pivot Chart control to a Word or PDF document.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotChartConverter.ClassReferenceAttribute">
+            <summary>
+            Represents the class that defines the attribute for class reference.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotChartConverter.ClassReferenceAttribute.IsReviewed">
+            <summary>
+            Gets or sets a value indicating whether the attribute is reviewed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotChartConverter.ClassReferenceAttribute.ShouldInclude">
+            <summary>
+            Gets or sets a value indicating whether the attribute should be included.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotChartConverter.ResourceWrapper">
+            <summary>
+            ResourceWrapper is used to apply the static resource to UWP Components
+            </summary>
+        </member>
+    </members>
+</doc>
