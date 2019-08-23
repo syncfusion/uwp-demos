@@ -1,0 +1,79 @@
+﻿<common:SampleLayout
+    x:Class="Syncfusion.SampleBrowser.UWP.SfChart.TrackBallDemo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Syncfusion.SampleBrowser.UWP.SfChart"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:common="using:Common"
+    xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+    <common:SampleLayout.Sample>
+        <ContentControl Margin="50,50,50,25">
+            <Grid x:Name="grid" HorizontalAlignment="Left" VerticalAlignment="Top" >
+
+                <chart:SfChart x:Name="trackBall" FontSize="20" AreaBorderThickness="0,0.5,0.5,0" Loaded="trackBall_Loaded">
+                    <chart:SfChart.Resources>
+                        <local:TrackConverter x:Key="track" />
+
+                        <Style x:Key="axisLineStyle" TargetType="Line">
+                            <Setter Property="Stroke" Value="#FFD1D3D4"/>
+                            <Setter Property="StrokeThickness" Value="1"/>
+                        </Style>
+
+                        <DataTemplate x:Key="headerTemplate">
+                            <TextBlock Text="{Binding}" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                        </DataTemplate>
+
+                        <DataTemplate x:Key="labelTemplate">
+                            <TextBlock Text="{Binding LabelContent}" FontSize="12"/>
+                        </DataTemplate>
+
+                        <DataTemplate x:Key="adornmentTemplate">
+                            <Grid>
+                                <Ellipse Fill="White" Stroke="SeaGreen" StrokeThickness="2" Height="25" Width="25"/>
+                                <TextBlock Text="{Binding}" Foreground="SeaGreen" FontFamily="Segoe UI" FontSize="12" 
+                                               VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            </Grid>
+                        </DataTemplate>
+                    </chart:SfChart.Resources>
+
+                    <chart:SfChart.DataContext>
+                        <local:CommoditiesPrices />
+                    </chart:SfChart.DataContext>
+
+                    <chart:SfChart.Header>
+                        <TextBlock FontSize="20" Margin="0,0,0,20" Text="Commodities Changing Price For US Dollar"/>
+                    </chart:SfChart.Header>
+
+                    <chart:SfChart.Behaviors>
+                        <chart:ChartTrackBallBehavior />
+                    </chart:SfChart.Behaviors>
+
+                    <chart:SfChart.PrimaryAxis>
+                        <chart:CategoryAxis FontSize="12" PlotOffset="20" ShowTrackBallInfo="True" Header="Currency"
+                                    LabelTemplate="{StaticResource labelTemplate}"
+                                    HeaderTemplate="{StaticResource headerTemplate}"
+                                    AxisLineStyle="{StaticResource axisLineStyle}" 
+                                    MajorTickLineStyle="{StaticResource axisLineStyle}"/>
+                    </chart:SfChart.PrimaryAxis>
+
+                    <chart:SfChart.SecondaryAxis >
+                        <chart:NumericalAxis Minimum="-50" Maximum="50" Interval="10" FontSize="12" Header="Price In Dollars"
+                                     LabelTemplate="{StaticResource labelTemplate}" ShowTrackBallInfo="True" 
+                                     HeaderTemplate="{StaticResource headerTemplate}"
+                                     AxisLineStyle="{StaticResource axisLineStyle}" 
+                                     MajorTickLineStyle="{StaticResource axisLineStyle}">
+                        </chart:NumericalAxis>
+                    </chart:SfChart.SecondaryAxis>
+
+                    <chart:SplineAreaSeries x:Name="splineAreaSeries" ItemsSource="{Binding CommodityDetails}" EnableAnimation="True" 
+                                    Interior="#A2C139" XBindingPath="Commodity" YBindingPath="ChangingPrice" />
+                </chart:SfChart>
+            </Grid>
+        </ContentControl>
+    </common:SampleLayout.Sample>
+</common:SampleLayout>
