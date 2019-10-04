@@ -1,0 +1,176 @@
+﻿<common:SampleLayout
+    x:Class="Syncfusion.SampleBrowser.UWP.SfChart.FastChartDemo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Syncfusion.SampleBrowser.UWP.SfChart"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:common="using:Common"
+    xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+    <common:SampleLayout.Sample>
+        <ContentControl Margin="50,50,50,25">
+            <Grid x:Name="grid" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Grid.Resources>
+
+                    <Style x:Key="axisLineStyle" TargetType="Line">
+                        <Setter Property="Stroke" Value="#FFD1D3D4"/>
+                        <Setter Property="StrokeThickness" Value="1"/>
+                    </Style>
+
+                    <DataTemplate x:Key="headerTemplate">
+                        <TextBlock Text="{Binding}" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    </DataTemplate>
+
+                    <DataTemplate x:Key="tooltipTemplate">
+                        <Border BorderBrush="Black" CornerRadius="3" BorderThickness="1" Margin="10" Background="White">
+                            <StackPanel Padding="5" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="High: " HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <TextBlock Text="{Binding Item.Y}" Margin="5,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Open: " HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <TextBlock Text="{Binding Item.Y2}" Margin="5,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Close: " HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <TextBlock Text="{Binding Item.Y3}" Margin="5,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Low: " HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <TextBlock Text="{Binding Item.Y1}" Margin="5,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </Border>
+                    </DataTemplate>
+
+                    <DataTemplate x:Key="tooltipTemplate1">
+                        <Border BorderBrush="Black" CornerRadius="3" BorderThickness="1" Margin="10" Background="White">
+                            <StackPanel Padding="5" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="High: " HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <TextBlock Text="{Binding Item.Y}" Margin="5,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Open: " HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <TextBlock Text="{Binding Item.Y1}" Margin="5,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </Border>
+                    </DataTemplate>
+
+                    <local:DecimalFormatConverter x:Key="decimalFormatConverter"/>
+
+                    <DataTemplate x:Key="rangeSeriesTrackBallLabel">
+                        <Grid>
+                            <Border BorderThickness="1" BorderBrush="{Binding BorderBrush}" Background="{Binding Interior}" >
+                                <StackPanel Margin="4" Orientation="Vertical">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock Foreground="{Binding Foreground}" FontSize="13" Text="High" >
+                        <Run Text=" :"></Run>
+                                        </TextBlock>
+                                        <TextBlock Padding="3,0,0,0" Foreground="{Binding Foreground}" FontSize="13" Grid.Column="1" Text="{Binding High, Converter={StaticResource decimalFormatConverter}}"/>
+                                    </Grid>
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock Foreground="{Binding Foreground}" FontSize="13" Text="Low"   >
+                        <Run Text="  :"></Run>
+                                        </TextBlock>
+                                        <TextBlock Padding="3,0,0,0" Foreground="{Binding Foreground}" FontSize="13" Grid.Column="1" Text="{Binding Low,  Converter={StaticResource decimalFormatConverter}}"/>
+                                    </Grid>
+                                </StackPanel>
+                            </Border>
+                        </Grid>
+                    </DataTemplate>
+
+                </Grid.Resources>
+                
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                
+                <Grid.DataContext>
+                    <local:ViewModel/>
+                </Grid.DataContext>
+
+                <chart:SfChart x:Name="financialChart" AreaBorderThickness="0,0.5,0.5,0" VerticalAlignment="Center">
+                    
+                    <chart:SfChart.Header>
+                        <TextBlock FontSize="20" Margin="0,0,0,20" FontFamily="Segoe UI" Text="Therapeutics Inc. Stock Details" />
+                    </chart:SfChart.Header>
+
+                    <chart:SfChart.Behaviors>
+                        <chart:ChartZoomPanBehavior/>
+                    </chart:SfChart.Behaviors>
+
+                    <chart:SfChart.PrimaryAxis>
+                        <chart:CategoryAxis  x:Name="Primary" LabelFormat="MMM/dd" Header="Date"
+                                     HeaderTemplate="{StaticResource headerTemplate}"
+                                     AxisLineStyle="{StaticResource axisLineStyle}" 
+                                     MajorTickLineStyle="{StaticResource axisLineStyle}" />
+                    </chart:SfChart.PrimaryAxis>
+
+                    <chart:SfChart.SecondaryAxis>
+                        <chart:NumericalAxis RangePadding="Round" Header="Stock Price"
+                                     HeaderTemplate="{StaticResource headerTemplate}"
+                                     AxisLineStyle="{StaticResource axisLineStyle}" 
+                                     MajorTickLineStyle="{StaticResource axisLineStyle}" />
+                    </chart:SfChart.SecondaryAxis>
+
+                    <chart:FastHiLoOpenCloseBitmapSeries x:Name="OHLCBitXAML" ItemsSource="{Binding HiloViewModel}"
+                                                 High="High" Low="Low" Open="Open" Close="Last" XBindingPath="TimeStamp"
+                                                 BullFillColor="Green" BearFillColor="Red" ShowTooltip="True" >
+                    </chart:FastHiLoOpenCloseBitmapSeries>
+                </chart:SfChart>
+
+                <chart:SfChart x:Name="BarSeries" AreaBorderThickness="0,0.5,0.5,0" Visibility="Collapsed" VerticalAlignment="Center">
+                    <chart:SfChart.Header>
+                        <TextBlock  FontSize="20" Margin="0,0,0,20" FontFamily="Segoe UI" Text="Therapeutics Inc. Stock Details" />
+                    </chart:SfChart.Header>
+
+                    <chart:SfChart.PrimaryAxis>
+                        <chart:CategoryAxis LabelFormat="MMM/dd" Header="Date"
+                                    HeaderTemplate="{StaticResource headerTemplate}"
+                                    AxisLineStyle="{StaticResource axisLineStyle}" 
+                                    MajorTickLineStyle="{StaticResource axisLineStyle}" />
+                    </chart:SfChart.PrimaryAxis>
+
+                    <chart:SfChart.SecondaryAxis>
+                        <chart:NumericalAxis RangePadding="Round" Header="Stock Price"
+                                     HeaderTemplate="{StaticResource headerTemplate}"
+                                     AxisLineStyle="{StaticResource axisLineStyle}" 
+                                     MajorTickLineStyle="{StaticResource axisLineStyle}" />
+                    </chart:SfChart.SecondaryAxis>
+
+                    <chart:FastBarBitmapSeries x:Name="FBitMapXAML" ItemsSource="{Binding List}" XBindingPath="Date" YBindingPath="Price" ShowTooltip="True" />
+                </chart:SfChart>
+
+                <StackPanel HorizontalAlignment="Right">
+                    <ComboBox Name="comboBox" Width="200" SelectedIndex="0" SelectionChanged="OnComboBoxSelectionChanged" >
+                        <ComboBoxItem Content="FastHiLoOpenCloseBitmapSeries" />
+                        <ComboBoxItem Content="FastLineBitmapSeries" />
+                        <ComboBoxItem Content="FastRangeAreaBitmapSeries"/>
+                        <ComboBoxItem Content="FastColumnBitmapSeries" />
+                        <ComboBoxItem Content="FastBarBitmapSeries" />
+                        <ComboBoxItem Content="FastStepLineBitmapSeries" />
+                        <ComboBoxItem Content="FastScatterBitmapSeries" />
+                        <ComboBoxItem Content="FastCandleBitmapSeries" />
+                        <ComboBoxItem Content="FastHiLoBitmapSeries" />
+                        <ComboBoxItem Content="FastStackingColumnBitmapSeries" />
+                    </ComboBox>
+                </StackPanel>
+            </Grid>
+        </ContentControl>
+    </common:SampleLayout.Sample>
+</common:SampleLayout>

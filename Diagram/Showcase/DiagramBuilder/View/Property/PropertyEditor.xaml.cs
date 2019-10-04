@@ -1,0 +1,54 @@
+#region Copyright Syncfusion Inc. 2001-2019.
+// Copyright Syncfusion Inc. 2001-2019. All rights reserved.
+// Use of this code is subject to the terms of our license.
+// A copy of the current license can be obtained at any time by e-mailing
+// licensing@syncfusion.com. Any infringement will be prosecuted under
+// applicable laws. 
+#endregion
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.Foundation;
+using Windows.Foundation.Collections;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Controls.Primitives;
+using Windows.UI.Xaml.Data;
+using Windows.UI.Xaml.Input;
+using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Navigation;
+
+// The User Control item template is documented at http://go.microsoft.com/fwlink/?LinkId=234236
+
+namespace DiagramBuilder.View
+{
+    public sealed partial class PropertyEditor : UserControl
+    {
+        public PropertyEditor()
+        {
+            this.InitializeComponent();
+        }
+
+        public Visibility TextEditing
+        {
+            get { return (Visibility)GetValue(TextEditingProperty); }
+            set { SetValue(TextEditingProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for TextEditing.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty TextEditingProperty =
+            DependencyProperty.Register("TextEditing", typeof(Visibility), typeof(PropertyEditor), new PropertyMetadata(Visibility.Visible));
+
+        public Visibility PropertyEditing
+        {
+            get { return (Visibility)GetValue(PropertyEditingProperty); }
+            set { SetValue(PropertyEditingProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for PropertyEditing.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty PropertyEditingProperty =
+            DependencyProperty.Register("PropertyEditing", typeof(Visibility), typeof(PropertyEditor), new PropertyMetadata(Visibility.Visible));
+    }
+}

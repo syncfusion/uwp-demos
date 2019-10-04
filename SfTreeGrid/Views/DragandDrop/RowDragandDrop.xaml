@@ -1,0 +1,78 @@
+﻿<View:SampleLayout
+    x:Class="Syncfusion.SampleBrowser.UWP.SfTreeGrid.RowDragandDrop"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Syncfusion.SampleBrowser.UWP.SfTreeGrid"
+    xmlns:View="using:Common"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.TreeGrid"
+    mc:Ignorable="d">
+
+    <UserControl.DataContext>
+        <local:EmployeeDetailsRepository />
+    </UserControl.DataContext>
+
+    <UserControl.Resources>
+        <syncfusion:TreeGridColumns x:Key="desktopView">
+            <syncfusion:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
+            <syncfusion:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
+            <syncfusion:TreeGridTextColumn HeaderText="Employee ID"
+                                                       MappingName="ID"
+                                                       TextAlignment="Left" />
+            <syncfusion:TreeGridTextColumn MappingName="Title" />
+            <syncfusion:TreeGridNumericColumn FormatString="C0" MappingName="Salary" />
+            <syncfusion:TreeGridTextColumn MappingName="ReportsTo" />
+        </syncfusion:TreeGridColumns>
+
+        <syncfusion:TreeGridColumns x:Key="phoneView">
+            <syncfusion:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
+            <syncfusion:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
+            <syncfusion:TreeGridTextColumn HeaderText="Employee ID"
+                                                       MappingName="ID"
+                                                       TextAlignment="Left" />           
+        </syncfusion:TreeGridColumns>
+    </UserControl.Resources>
+
+    <View:SampleLayout.Sample>
+        <UserControl>
+            <Grid Margin="10,5,5,5">
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroup x:Name="Screen">
+                        <VisualState>
+                            <VisualState.StateTriggers>
+                                <AdaptiveTrigger MinWindowWidth="400"/>
+                            </VisualState.StateTriggers>
+                            <VisualState.Setters>
+                                <Setter Target="treeGrid.Columns" Value="{StaticResource desktopView}"/>
+                            </VisualState.Setters>
+                        </VisualState>
+
+                        <VisualState>
+                            <VisualState.StateTriggers>
+                                <AdaptiveTrigger MinWindowWidth="0"/>
+                            </VisualState.StateTriggers>
+                            <VisualState.Setters>
+                                <Setter Target="treeGrid.Columns" Value="{StaticResource phoneView}"/>  
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateManager.VisualStateGroups>
+                
+                <syncfusion:SfTreeGrid Name="treeGrid"
+                                       AllowDraggingRows="True"
+                                       AllowDraggingColumns="True"
+		       AllowDrop="True"
+                                       AutoExpandMode="RootNodesExpanded"
+                                       AutoGenerateColumns="False"
+                                       ChildPropertyName="ReportsTo"                                       
+                                       ColumnSizer="Star"
+                                       ParentPropertyName="ID"                                       
+                                       ItemsSource="{Binding EmployeeDetails}"
+                                       SelfRelationRootValue="-1">
+
+                </syncfusion:SfTreeGrid>
+            </Grid>
+        </UserControl>
+    </View:SampleLayout.Sample>
+</View:SampleLayout>
