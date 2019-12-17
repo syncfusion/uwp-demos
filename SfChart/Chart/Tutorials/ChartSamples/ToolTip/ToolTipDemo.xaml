@@ -1,0 +1,152 @@
+﻿<common:SampleLayout
+    x:Class="Syncfusion.SampleBrowser.UWP.SfChart.ToolTipDemo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Syncfusion.SampleBrowser.UWP.SfChart"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:common="using:Common"
+    xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+    <common:SampleLayout.Sample>
+        <ContentControl Margin="50,50,50,25">
+            <Grid x:Name="grid">
+                <Grid.Resources>
+                    <DataTemplate x:Key="labelTemplate">
+                        <TextBlock Text="{Binding LabelContent}" Foreground="Black" FontSize="12"/>
+                    </DataTemplate>
+
+                    <DataTemplate x:Key="tooltipTemplate">
+                        <Border BorderBrush="Black" BorderThickness="1">
+                            <Grid  Height="50">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="0.5*"/>
+                                    <RowDefinition Height="0.5*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Rectangle Fill="White" Grid.RowSpan="2" Grid.ColumnSpan="3" />
+                                <Image Grid.RowSpan="2" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Source="{Binding Item.Imagepath}" />
+                                <TextBlock Margin="3,3,6,3" Text="{Binding Item.CompanyName }" Grid.Column="1" 
+                                       Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" 
+                                       TextAlignment="Center"  Foreground="Black" FontSize="12"/>
+                                <TextBlock VerticalAlignment="Center" Grid.Column="1" Grid.Row="1" 
+                                       TextAlignment="Left" Text="Rank :" HorizontalAlignment="Left" Foreground="Black" FontSize="12"/>
+                                <TextBlock VerticalAlignment="Center" Margin="3,3,6,3" Grid.Column="2" Grid.Row="1" 
+                                       TextAlignment="Left" Text="{Binding Item.Rank}" HorizontalAlignment="Left" Foreground="Black" FontSize="12"/>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+
+                    <Style x:Key="axisLineStyle" TargetType="Line">
+                        <Setter Property="Stroke" Value="#FFD1D3D4"/>
+                        <Setter Property="StrokeThickness" Value="1"/>
+                    </Style>
+
+                    <DataTemplate x:Key="headerTemplate">
+                        <TextBlock Text="{Binding}" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    </DataTemplate>
+                </Grid.Resources>
+
+                <chart:SfChart x:Name="tooltipChart" FontSize="20" AreaBorderThickness="0,0.5,0.5,0">
+                    <chart:SfChart.Header>
+                        <TextBlock FontSize="20" FontFamily="Seoge UI" Margin="0,0,0,20" Text="Top brand cars YTD in 2013"/>
+                    </chart:SfChart.Header>
+
+                    <chart:SfChart.PrimaryAxis>
+                        <chart:CategoryAxis  Header="Cars" FontSize="12" 
+                                         HeaderTemplate="{StaticResource headerTemplate}"
+                                         AxisLineStyle="{StaticResource axisLineStyle}" 
+                                         MajorTickLineStyle="{StaticResource axisLineStyle}"
+                                         LabelTemplate="{StaticResource labelTemplate}" />
+                    </chart:SfChart.PrimaryAxis>
+
+                    <chart:SfChart.SecondaryAxis>
+                        <chart:NumericalAxis FontSize="12" Minimum="0" Maximum="1400" Header="YTD"
+                                         LabelTemplate="{StaticResource labelTemplate}"
+                                         HeaderTemplate="{StaticResource headerTemplate}"
+                                         AxisLineStyle="{StaticResource axisLineStyle}" 
+                                         MajorTickLineStyle="{StaticResource axisLineStyle}" />
+                    </chart:SfChart.SecondaryAxis>
+
+                    <chart:BarSeries EnableAnimation="True" ItemsSource="{Binding}"  
+                                 XBindingPath="CompanyName"  YBindingPath="YTD"  Palette="Metro" 
+                                 ShowTooltip="True" TooltipTemplate="{StaticResource tooltipTemplate}"
+                                 >
+                    </chart:BarSeries>
+                </chart:SfChart>
+            </Grid>
+        </ContentControl>
+    </common:SampleLayout.Sample>
+
+    <common:SampleLayout.Setting>
+        <ContentControl Margin="0,55,0,0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Text="Horizontal Alignment" FontSize="12" Grid.Column="0" Margin="7,5,7,3" VerticalAlignment="Center"/>
+                <ComboBox x:Name="horizontalAlign" FontSize="12" Grid.Column="1" Margin="7,5,7,3" VerticalAlignment="Center"
+                          SelectionChanged="OnHorizontalAlignChange" SelectedIndex="1" Width="150">
+                    <ComboBoxItem Content="Left"/>
+                    <ComboBoxItem Content="Center"/>
+                    <ComboBoxItem Content="Right"/>
+                </ComboBox>
+
+                <TextBlock Text="Vertical Alignment" FontSize="12" Grid.Column="0" Grid.Row="1" Margin="7,5,7,3" VerticalAlignment="Center"/>
+                <ComboBox x:Name="verticalAlign" FontSize="12" Grid.Column="1" Grid.Row="1" Margin="7,5,7,3" Width="150"
+                          SelectionChanged="OnVerticalAlignChange" SelectedIndex="0" VerticalAlignment="Center">
+                    <ComboBoxItem Content="Top"/>
+                    <ComboBoxItem Content="Center"/>
+                    <ComboBoxItem Content="Bottom"/>
+                </ComboBox>
+
+                <TextBlock Text="Initial Show Delay" FontSize="12" Grid.Row="2" Grid.Column="0" Margin="7,5,7,3" VerticalAlignment="Center"/>
+                <TextBlock x:Name="initialShowDelay" FontSize="12" Grid.Row="2" Grid.Column="1" Margin="7,5,7,3" 
+                           Text="{Binding ElementName=initialDelaySlider,Path=Value}" VerticalAlignment="Center"/>
+
+                <Slider x:Name="initialDelaySlider" Grid.Row="3" Grid.ColumnSpan="2" TickPlacement="TopLeft" 
+                        Minimum="0" Maximum="10000" Height="40" Width="250" HorizontalAlignment="Stretch" 
+                        VerticalAlignment="Stretch" ValueChanged="OnInitialDelaySliderValueChanged"/>
+
+                <TextBlock Text="Show Duration" FontSize="12" Grid.Row="4" Grid.Column="0" Margin="7,5,7,3" VerticalAlignment="Center"/>
+                <TextBlock x:Name="showDuration" FontSize="12" Grid.Row="4" Grid.Column="1" Margin="7,5,7,3"
+                           Text="{Binding ElementName=showDurationSlider, Path=Value}" VerticalAlignment="Center"/>
+
+                <Slider x:Name="showDurationSlider" Grid.Row="5" Grid.ColumnSpan="2" TickPlacement="TopLeft" 
+                        Minimum="0" Maximum="10000" Height="40" Width="250" ValueChanged="OnShowDurationSliderValueChanged"
+                        Value="1000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+
+                <TextBlock Text="Horizontal Offset" FontSize="12" Grid.Row="6" Grid.Column="0" Margin="7,5,7,3" VerticalAlignment="Center"/>
+                <TextBox x:Name="horizOffset" FontSize="12" Grid.Row="6" Grid.Column="1" Margin="7,5,7,3" 
+                         TextChanged="OnHorizontalOffsetChange" VerticalAlignment="Center" Text="0"/>
+
+                <TextBlock Text="Vertical Offset" FontSize="12" Grid.Row="7" Grid.Column="0" Margin="7,5,7,3" VerticalAlignment="Center"/>
+                <TextBox x:Name="VerizOffset" FontSize="12" Grid.Row="7" Grid.Column="1" Margin="7,5,7,3"
+                         TextChanged="OnVerticalOffsetChange" VerticalAlignment="Center" Text="0"/>
+
+               
+            </Grid>
+        </ContentControl>
+    </common:SampleLayout.Setting>
+</common:SampleLayout>

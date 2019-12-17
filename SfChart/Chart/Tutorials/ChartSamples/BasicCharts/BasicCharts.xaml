@@ -1,0 +1,441 @@
+﻿<common:SampleLayout
+    x:Class="Syncfusion.SampleBrowser.UWP.SfChart.BasicCharts"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:common="using:Common"
+    xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
+    xmlns:local="using:Syncfusion.SampleBrowser.UWP.SfChart"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+    
+    <common:SampleLayout.Sample>
+        <ContentControl Margin="50,50,50,25">
+            <Grid x:Name="MainGrid" HorizontalAlignment="Left" VerticalAlignment="Top" >
+                <Grid.Resources>
+                    <local:LineChartLabelConverter x:Key="labelConverter"/>
+
+                    <Style x:Key="axisLineStyle" TargetType="Line">
+                        <Setter Property="Stroke" Value="#FFD1D3D4"/>
+                        <Setter Property="StrokeThickness" Value="1"/>
+                    </Style>
+
+                    <DataTemplate x:Key="splineRangeAreaAdornment">
+                        <Grid>
+                            <Ellipse Stroke="#FF1BA1E2" Fill="White" 
+                                                         StrokeThickness="2" Height="30" Width="30" 
+                                                         HorizontalAlignment="Left"
+                                                         VerticalAlignment="Top"/>
+                            <TextBlock  HorizontalAlignment="Center"
+                                                            VerticalAlignment="Center" 
+                                                            TextWrapping="Wrap" Text="{Binding}" 
+                                                            FontSize="12" 
+                                                            Foreground="#FF585858"
+                                                            FontFamily="Segoe UI" />
+                        </Grid>
+                    </DataTemplate>
+
+                    <DataTemplate x:Key="headerTemplate">
+                        <TextBlock Text="{Binding}" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    </DataTemplate>
+
+                    <DataTemplate x:Key="labelTemplate">
+                        <Grid>
+                            <TextBlock Text="{Binding Converter={StaticResource labelConverter}}"
+                                   Foreground="White" FontFamily="Segoe UI" Margin="0,50,0,0" FontSize="12"/>
+                        </Grid>
+                    </DataTemplate>
+
+                    <DataTemplate x:Key="labelTemplateStepArea">
+                        <Grid>
+                            <Ellipse Fill="#FF3366CC" Height="25" Width="25" StrokeThickness="0" />
+                            <TextBlock Text="{Binding Converter={StaticResource labelConverter}}" 
+                                       Foreground="White" FontFamily="Segoe UI" FontSize="12" 
+                                       VerticalAlignment="Center" HorizontalAlignment="Center" />
+                        </Grid>
+                    </DataTemplate>
+
+                    <DataTemplate x:Key="labelTemplateStepArea1">
+                        <Grid>
+                            <Ellipse Fill="SeaGreen" Height="25" Width="25" StrokeThickness="0" />
+                            <TextBlock Text="{Binding Converter={StaticResource labelConverter}}" 
+                                       Foreground="White" FontFamily="Segoe UI" FontSize="12" 
+                                       VerticalAlignment="Center" HorizontalAlignment="Center" />
+                        </Grid>
+                    </DataTemplate>
+
+                    <DataTemplate x:Key="labelTemplate1">
+                        <Grid>
+                            <Ellipse Fill="#FF1BA1E2" Height="18" Width="18" StrokeThickness="3"  Stroke="White" IsHitTestVisible="False" />
+                        </Grid>
+                    </DataTemplate>
+
+                    <DataTemplate x:Key="labelTemplate2">
+                        <Grid>
+                            <Ellipse Fill="#A05000" Height="18" Width="18" StrokeThickness="3" Stroke="White" IsHitTestVisible="False" />
+                        </Grid>
+                    </DataTemplate>
+
+                    <DataTemplate x:Key="labelTemplate3">
+                        <Grid>
+                            <Ellipse Fill="#FF339933" Height="18" Width="18" StrokeThickness="3" Stroke="White" IsHitTestVisible="False" />
+                        </Grid>
+                    </DataTemplate>
+
+                    <DataTemplate x:Key="labelTemplate4">
+                        <Border>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="$"/>
+                                <TextBlock Text="{Binding LabelContent}"/>
+                                <TextBlock Text="M"/>
+                            </StackPanel>
+                        </Border>
+                    </DataTemplate>
+
+                    <DataTemplate x:Key="tooltipTemplate">
+                        <Border BorderBrush="Black" BorderThickness="1"  Background="White">
+                            <Border.Resources>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="Foreground" Value="Black"/>
+                                    <Setter Property="FontSize" Value="16"/>
+                                </Style>
+                            </Border.Resources>
+                            <StackPanel Orientation="Horizontal" Margin="5">
+                                <TextBlock Text="{Binding Item.Category}"/>
+                                <TextBlock Text=" : "/>
+                                <TextBlock Text="$"/>
+                                <TextBlock Text="{Binding YData}"/>
+                                <TextBlock Text="M"/>
+                            </StackPanel>
+                        </Border>
+                    </DataTemplate>
+
+                    <DataTemplate x:Key="histogramLabelTemplate">
+                        <Grid>
+                            <Ellipse Height="25" Width="25"  Stroke="#FF1BA1E2" Fill="White" 
+                                                     StrokeThickness="1"  HorizontalAlignment="Center"/>
+                            <TextBlock Text="{Binding}" Foreground="Black"  HorizontalAlignment="Center" 
+                                                       VerticalAlignment="Center"  FontFamily="Segoe UI"  FontSize="12"/>
+                        </Grid>
+                    </DataTemplate>
+
+                    <DataTemplate x:Key="waterfallAdornment">
+                        <Grid IsHitTestVisible="False">
+                            <TextBlock Foreground="White" 
+					       FontFamily="Segoe UI" FontSize="16">
+                                        <Run Text="{Binding Mode=OneWay}"/>
+                                        <Run Text="M"/>
+                            </TextBlock>
+                        </Grid>
+                    </DataTemplate>
+                </Grid.Resources>
+                
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                
+                <Grid>
+                    <chart:SfChart x:Name="Basic_Chart" AreaBorderThickness="0,0.5,0.5,0" VerticalAlignment="Center">
+                        <chart:SfChart.DataContext>
+                            <local:LineChartViewModel/>
+                        </chart:SfChart.DataContext>
+
+                        <chart:SfChart.Header>
+                            <TextBlock x:Name="header" FontSize="20" FontFamily="Segoe UI" Margin="0,0,0,20" 
+                                   Text="Efficiency of Oil-fired Power Production" />
+                        </chart:SfChart.Header>
+
+                        <chart:SfChart.Legend>
+                            <chart:ChartLegend x:Name="legend" />
+                        </chart:SfChart.Legend>
+
+                        <chart:SfChart.PrimaryAxis>
+                            <chart:CategoryAxis x:Name="primaryAxis" PlotOffset="70" LabelFormat="yyyy" 
+                                            Header="Power Production Year" FontSize="12"
+                                            HeaderTemplate="{StaticResource headerTemplate}"
+                                            AxisLineStyle="{StaticResource axisLineStyle}" 
+                                            MajorTickLineStyle="{StaticResource axisLineStyle}" />
+                        </chart:SfChart.PrimaryAxis>
+
+                        <chart:SfChart.SecondaryAxis>
+                            <chart:NumericalAxis x:Name="secondaryAxis" Minimum="20" Maximum="50" RangePadding="Round"
+                                             Header="Efficiency(%)" FontSize="12"
+                                             AxisLineStyle="{StaticResource axisLineStyle}"
+                                             HeaderTemplate="{StaticResource headerTemplate}"
+                                             MajorTickLineStyle="{StaticResource axisLineStyle}" />
+                        </chart:SfChart.SecondaryAxis>
+
+                        <chart:LineSeries EnableAnimation="True" ShowTooltip="True" Label="India" XBindingPath="Year" 
+                                      YBindingPath="IND" ItemsSource="{Binding power}">
+                            <chart:LineSeries.AdornmentsInfo>
+                                <chart:ChartAdornmentInfo x:Name="ls1ChartAdornmentInfo" />
+                            </chart:LineSeries.AdornmentsInfo>
+                        </chart:LineSeries>
+
+                        <chart:LineSeries EnableAnimation="True" Label="Germany" ShowTooltip="True" XBindingPath="Year" 
+                                      YBindingPath="GER" ItemsSource="{Binding power}">
+                            <chart:LineSeries.AdornmentsInfo>
+                                <chart:ChartAdornmentInfo x:Name="ls2ChartAdornmentInfo" />
+                            </chart:LineSeries.AdornmentsInfo>
+                        </chart:LineSeries>
+
+                        <chart:LineSeries EnableAnimation="True" Label="France" ShowTooltip="True" XBindingPath="Year" 
+                                      YBindingPath="FRA" ItemsSource="{Binding power}">
+                            <chart:LineSeries.AdornmentsInfo>
+                                <chart:ChartAdornmentInfo x:Name="ls3ChartAdornmentInfo" />
+                            </chart:LineSeries.AdornmentsInfo>
+                        </chart:LineSeries>
+                    </chart:SfChart>
+
+                    <chart:SfChart x:Name="Column_Chart" AreaBorderThickness="0,0.5,0.5,0" 
+                                   Visibility="Collapsed"
+                                   VerticalAlignment="Center">
+                        <chart:SfChart.DataContext>
+                            <local:LineChartViewModel/>
+                        </chart:SfChart.DataContext>
+
+                        <chart:SfChart.Header>
+                            <TextBlock  FontSize="20" FontFamily="Segoe UI" Margin="0,0,0,20" 
+                                   Text="Efficiency of Oil-fired Power Production" />
+                        </chart:SfChart.Header>
+
+                        <chart:SfChart.Legend>
+                            <chart:ChartLegend />
+                        </chart:SfChart.Legend>
+
+                        <chart:SfChart.PrimaryAxis>
+                            <chart:CategoryAxis PlotOffset="70" LabelFormat="yyyy" 
+                                            Header="Power Production Year" FontSize="12"
+                                                ZoomFactor="1"
+                                            HeaderTemplate="{StaticResource headerTemplate}"
+                                            AxisLineStyle="{StaticResource axisLineStyle}" 
+                                            MajorTickLineStyle="{StaticResource axisLineStyle}" />
+                        </chart:SfChart.PrimaryAxis>
+
+                        <chart:SfChart.SecondaryAxis>
+                            <chart:NumericalAxis  Minimum="20" RangePadding="Round"
+                                             Header="Efficiency(%)" FontSize="12"
+                                                 ZoomFactor="1"
+                                             AxisLineStyle="{StaticResource axisLineStyle}"
+                                             HeaderTemplate="{StaticResource headerTemplate}"
+                                             MajorTickLineStyle="{StaticResource axisLineStyle}" />
+                        </chart:SfChart.SecondaryAxis>
+
+                        <chart:ColumnSeries EnableAnimation="True" ShowTooltip="True" Label="India" XBindingPath="Year" 
+                                      YBindingPath="IND" ItemsSource="{Binding power}" VisibilityOnLegend="Collapsed"
+                                            Palette="Metro">
+                            <chart:ColumnSeries.AdornmentsInfo>
+                                <chart:ChartAdornmentInfo x:Name="columnSeriesAdornmentInfo"/>
+                            </chart:ColumnSeries.AdornmentsInfo>
+                        </chart:ColumnSeries>
+
+                       </chart:SfChart>
+
+                    
+                    <chart:SfChart x:Name="Scatter_Chart" AreaBorderThickness="0,0.5,0.5,0" Visibility="Collapsed" VerticalAlignment="Center">
+                        <chart:SfChart.DataContext>
+                            <local:ScatterViewModel/>
+                        </chart:SfChart.DataContext>
+
+                        <chart:SfChart.Header>
+                            <TextBlock x:Name="scatterHeader" FontSize="20" FontFamily="Segoe UI" Margin="0,0,0,20" Text="Old Faithful Eruptions" />
+                        </chart:SfChart.Header>
+
+                        <chart:SfChart.PrimaryAxis>
+                            <chart:NumericalAxis x:Name="scatterprimaryAxis" Interval="0.5" Minimum="1.5" Maximum="5.5"
+                                             Header="Eruption Duration(Min)" FontSize="12"
+                                             AxisLineStyle="{StaticResource axisLineStyle}" 
+                                             HeaderTemplate="{StaticResource headerTemplate}"
+                                             MajorTickLineStyle="{StaticResource axisLineStyle}" />
+                        </chart:SfChart.PrimaryAxis>
+
+                        <chart:SfChart.SecondaryAxis >
+                            <chart:NumericalAxis x:Name="scattersecondaryAxis" Minimum="40" Maximum="100" Interval="10"
+                                             Header="Waiting Time Between Eruptions(Min)" FontSize="12"
+                                             AxisLineStyle="{StaticResource axisLineStyle}" 
+                                             HeaderTemplate="{StaticResource headerTemplate}"
+                                             MajorTickLineStyle="{StaticResource axisLineStyle}" />
+                        </chart:SfChart.SecondaryAxis>
+
+                        <chart:ScatterSeries EnableAnimation="True" XBindingPath="Eruptions" ShowTooltip="True" YBindingPath="WaitingTime" 
+                                         ItemsSource="{Binding DataPoints}" ScatterHeight="9" ScatterWidth="9">
+                        </chart:ScatterSeries>
+                    </chart:SfChart>
+
+                    <chart:SfChart x:Name="Histogram_Chart" AreaBorderThickness="0,0.5,0.5,0" Visibility="Collapsed" VerticalAlignment="Center" >
+
+                        <chart:SfChart.DataContext>
+                            <local:HistogramViewModel/>
+                        </chart:SfChart.DataContext>
+
+                        <chart:SfChart.Header>
+                            <TextBlock x:Name="HistogramHeader" FontSize="20" FontFamily="Segoe UI" Margin="0,0,0,20"
+                                   Text="Analysis of Average Call Handling Time" />
+                        </chart:SfChart.Header>
+
+                        <chart:SfChart.PrimaryAxis>
+                            <chart:NumericalAxis Minimum="0" Maximum="45" FontSize="12" Header="Minutes"
+                                             HeaderTemplate="{StaticResource headerTemplate}"
+                                             AxisLineStyle="{StaticResource axisLineStyle}"
+                                             MajorTickLineStyle="{StaticResource axisLineStyle}" />
+                        </chart:SfChart.PrimaryAxis>
+
+                        <chart:SfChart.SecondaryAxis >
+                            <chart:NumericalAxis Minimum="0" Maximum="8" FontSize="12" Header="Frequency"
+                                             HeaderTemplate="{StaticResource headerTemplate}"
+                                             AxisLineStyle="{StaticResource axisLineStyle}"
+                                             MajorTickLineStyle="{StaticResource axisLineStyle}" />
+                        </chart:SfChart.SecondaryAxis>
+
+                        <chart:HistogramSeries x:Name="histogramSeries" 
+                                           Label="Average Call Handling Time"
+                                           HistogramInterval="5" ShowTooltip="True"
+                                           ItemsSource="{Binding Product}"
+                                           XBindingPath="Price" 
+                                           YBindingPath="Value"
+                                           Palette="Metro">
+                            <chart:HistogramSeries.AdornmentsInfo>
+                                <chart:ChartAdornmentInfo x:Name="hsChartAdornmentInfo" />
+                            </chart:HistogramSeries.AdornmentsInfo>
+                        </chart:HistogramSeries>
+                    </chart:SfChart>
+
+                    <chart:SfChart x:Name="Waterfall_Chart" Grid.Row="1" Margin="0,10,0,0" Visibility="Collapsed">
+
+                        <chart:SfChart.DataContext>
+                            <local:WaterfallViewModel/>
+                        </chart:SfChart.DataContext>
+
+                        <chart:SfChart.Legend>
+                            <chart:ChartLegend >
+                            </chart:ChartLegend>
+                        </chart:SfChart.Legend>
+
+                        <chart:SfChart.Header>
+                            <TextBlock FontSize="22"   Foreground="Black" FontFamily="Segoe UI" 
+                           Margin="0,0,0,10">Company Revenue and Profit</TextBlock>
+                        </chart:SfChart.Header>
+
+                        <chart:SfChart.PrimaryAxis>
+                            <chart:CategoryAxis LabelRotationAngle="48" ShowGridLines="False"
+                                                AxisLineStyle="{StaticResource axisLineStyle}" 
+                                             MajorTickLineStyle="{StaticResource axisLineStyle}">
+                            </chart:CategoryAxis>
+                        </chart:SfChart.PrimaryAxis>
+
+                        <chart:SfChart.SecondaryAxis>
+                            <chart:NumericalAxis LabelTemplate="{StaticResource labelTemplate4}"
+                                                 AxisLineStyle="{StaticResource axisLineStyle}" 
+                                             MajorTickLineStyle="{StaticResource axisLineStyle}"/>
+                        </chart:SfChart.SecondaryAxis>
+
+                        <chart:WaterfallSeries EnableAnimation="True" NegativeSegmentBrush="#93C952"
+                                   Interior="#C64E4A" SummarySegmentBrush="#4E81BC"
+                                   ItemsSource="{Binding RevenueDetails}"  XBindingPath="Category" 
+                                   SummaryBindingPath="IsSummary" 
+                                   YBindingPath="Value"  ShowTooltip="True" 
+                                   TooltipTemplate="{StaticResource tooltipTemplate}">
+
+                            <chart:WaterfallSeries.AdornmentsInfo>
+                                <chart:ChartAdornmentInfo x:Name="waterfallAdornmentInfo" >
+                                </chart:ChartAdornmentInfo>
+                            </chart:WaterfallSeries.AdornmentsInfo>
+                        </chart:WaterfallSeries>
+
+                    </chart:SfChart>
+
+                    <chart:SfChart x:Name="boxWhiskerChart" Grid.Row="1" Margin="0,10,0,0" Visibility="Collapsed">
+
+                        <chart:SfChart.DataContext>
+                            <local:BoxWhiskerViewModel />
+                        </chart:SfChart.DataContext>
+                        
+                        <chart:SfChart.Header>
+                            <TextBlock FontSize="22"  Foreground="Black" FontFamily="Segoe UI" 
+                           Margin="0,0,0,10">Employees age group in various departments</TextBlock>
+                        </chart:SfChart.Header>
+
+                        <chart:SfChart.PrimaryAxis>
+                            <chart:CategoryAxis AxisLineStyle="{StaticResource axisLineStyle}" 
+                                                MajorTickLineStyle="{StaticResource axisLineStyle}"
+                                                LabelPlacement="BetweenTicks" FontSize="14" >
+                                <chart:CategoryAxis.Header>
+                                    <TextBlock FontSize="16" FontFamily="Segoe UI" >Department</TextBlock>
+                                </chart:CategoryAxis.Header>
+                            </chart:CategoryAxis>
+                        </chart:SfChart.PrimaryAxis>
+
+                        <chart:SfChart.SecondaryAxis>
+                            <chart:NumericalAxis AxisLineStyle="{StaticResource axisLineStyle}" 
+                                                 MajorTickLineStyle="{StaticResource axisLineStyle}"
+                                                 Interval="10" Minimum="10"  FontSize="14"
+                                                 >
+                            <chart:NumericalAxis.Header>
+                                <TextBlock FontSize="16" FontFamily="Segoe UI" Margin="0,0,10,0" Text="Age"/>
+                            </chart:NumericalAxis.Header>
+                            </chart:NumericalAxis>
+                        </chart:SfChart.SecondaryAxis>
+                        
+                        <chart:BoxAndWhiskerSeries ItemsSource="{Binding BoxWhiskerData}" XBindingPath="Department"
+                                                   YBindingPath="Age" x:Name="boxWhiskerSeries" ShowTooltip="True"
+                                                   ShowMedian="True" Palette="Metro" />
+
+                    </chart:SfChart>
+
+                    <chart:SfChart x:Name="SplineRangeArea_Chart" AreaBorderThickness="0,0.5,0.5,0"
+                                   Visibility="Collapsed" VerticalAlignment="Center">
+                        
+                        <chart:SfChart.DataContext>
+                            <local:WheatProductionViewModel/>
+                        </chart:SfChart.DataContext>
+
+                        <chart:SfChart.Header>
+                            <TextBlock FontSize="20" FontFamily="Segoe UI" Margin="0,0,0,20" 
+                                       Text="Wheat Production - 2017" />
+                        </chart:SfChart.Header>
+
+                        <chart:SfChart.PrimaryAxis>
+                            <chart:CategoryAxis Header="Month"
+                                                PlotOffset="30"
+                                                ShowGridLines="False"
+                                                AxisLineStyle="{StaticResource axisLineStyle}" 
+                                                HeaderTemplate="{StaticResource headerTemplate}"
+                                                MajorTickLineStyle="{StaticResource axisLineStyle}" />
+                        </chart:SfChart.PrimaryAxis>
+
+                        <chart:SfChart.SecondaryAxis >
+                            <chart:NumericalAxis Header="Production in Metric tons"
+                                                 Minimum="10" Interval="30" Maximum="100"
+                                                 ShowGridLines="False"
+                                                 AxisLineStyle="{StaticResource axisLineStyle}" 
+                                                 HeaderTemplate="{StaticResource headerTemplate}"
+                                                 MajorTickLineStyle="{StaticResource axisLineStyle}" />
+                        </chart:SfChart.SecondaryAxis>
+
+                        <chart:SplineRangeAreaSeries EnableAnimation="True" XBindingPath="Month"
+                                                     ShowTooltip="True" High="HighMetric" 
+                                                     Low="LowMetric" ItemsSource="{Binding Products}" 
+                                                     Interior="#781ba1e2" Stroke="#1ba1e2"/>
+                    </chart:SfChart>
+
+                    <StackPanel HorizontalAlignment="Right">
+                        <ComboBox x:Name="ChartTypes" Width="200" SelectedIndex="0" SelectionChanged="OnChartTypeSelectionChanged1">
+                            <ComboBoxItem>Line</ComboBoxItem>
+                            <ComboBoxItem>Spline</ComboBoxItem>
+                            <ComboBoxItem>SplineRangeArea</ComboBoxItem>
+                            <ComboBoxItem>Scatter</ComboBoxItem>
+                            <ComboBoxItem>Box And Whisker</ComboBoxItem>
+                            <ComboBoxItem>Column</ComboBoxItem>
+                            <ComboBoxItem>StepLine</ComboBoxItem>
+                            <ComboBoxItem>StepArea</ComboBoxItem>
+                            <ComboBoxItem>Histogram</ComboBoxItem>
+                            <ComboBoxItem>Waterfall</ComboBoxItem>
+                        </ComboBox>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+        </ContentControl>
+    </common:SampleLayout.Sample>
+</common:SampleLayout>
