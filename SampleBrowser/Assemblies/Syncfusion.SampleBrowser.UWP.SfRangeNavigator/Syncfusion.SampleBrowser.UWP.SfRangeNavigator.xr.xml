@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Roots >
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="StockPriceDetails" />
+    <RootPropertyPathName Name="ZoomPosition" />
+    <RootPropertyPathName Name="ZoomFactor" />
+  </Roots.PropertyPathNames>
+  <Roots.RootTypes>
+    <RootType FullName="Windows.UI.Xaml.Application">
+      <RootProperty Name="RequestedTheme" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Page">
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="Background" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="Resources" />
+      <RootProperty Name="DataContext" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="Margin" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfRangeNavigator.MainPage" />
+    <RootType FullName="Common.SampleLayout">
+      <RootProperty Name="Sample" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ContentControl">
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Text" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="ElementName" />
+      <RootProperty Name="Path" />
+      <RootProperty Name="Mode" />
+    </RootType>
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfRangeNavigator.Model" />
+    <RootType FullName="Syncfusion.UI.Xaml.Charts.SfChart">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Behaviors" />
+      <RootProperty Name="PrimaryAxis" />
+      <RootProperty Name="SecondaryAxis" />
+      <RootProperty Name="Series" />
+      <RootProperty Name="AreaBorderThickness" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="XBindingPath" />
+      <RootProperty Name="ViewRangeStart" />
+      <RootProperty Name="ViewRangeEnd" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Charts.DateTimeAxis">
+      <RootProperty Name="ShowGridLines" />
+      <RootProperty Name="LabelFormat" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="HeaderTemplate" />
+      <RootProperty Name="Header" />
+      <RootProperty Name="ZoomPosition" />
+      <RootProperty Name="ZoomFactor" />
+      <RootProperty Name="AxisLineStyle" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="MajorTickLineStyle" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="Syncfusion.UI.Xaml.Charts.NumericalAxis">
+      <RootProperty Name="ShowGridLines" />
+      <RootProperty Name="StartRangeFromZero" />
+      <RootProperty Name="Minimum" />
+      <RootProperty Name="Maximum" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Header" />
+      <RootProperty Name="HeaderTemplate" />
+      <RootProperty Name="TickLineSize" />
+      <RootProperty Name="AxisLineStyle" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="MajorTickLineStyle" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Charts.LineSeries">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="XBindingPath" />
+      <RootProperty Name="YBindingPath" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior" />
+    <RootType FullName="Syncfusion.UI.Xaml.Charts.HiLoOpenCloseSeries">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="XBindingPath" />
+      <RootProperty Name="High" />
+      <RootProperty Name="Low" />
+      <RootProperty Name="Open" />
+      <RootProperty Name="Close" />
+    </RootType>
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfRangeNavigator.RangeNavigatorDemo" />
+    <RootType FullName="Windows.UI.Xaml.Shapes.Line" />
+    <RootType FullName="Windows.UI.Xaml.Shapes.Shape">
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="StrokeThickness" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Setter">
+      <RootProperty Name="Property" />
+      <RootProperty Name="Value" />
+    </RootType>
+  </Roots.RootTypes>
+</Roots>
