@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Roots >
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="Trace2" />
+    <RootPropertyPathName Name="Trace1" />
+    <RootPropertyPathName Name="LegendPosition" />
+    <RootPropertyPathName Name="Radius" />
+    <RootPropertyPathName Name="SelectedValue" />
+  </Roots.PropertyPathNames>
+  <Roots.RootTypes>
+    <RootType FullName="Windows.UI.Xaml.Application">
+      <RootProperty Name="RequestedTheme" />
+    </RootType>
+    <RootType FullName="Common.SampleLayout">
+      <RootProperty Name="DataContext" />
+      <RootProperty Name="Sample" />
+      <RootProperty Name="Setting" />
+    </RootType>
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfSmithChart.ViewModel" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ContentControl">
+      <RootProperty Name="Content" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="Children" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="ColumnDefinitions" />
+      <RootMethod Name="GetColumn" />
+      <RootMethod Name="SetColumn" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.SmithChart.SfSmithChart">
+      <RootProperty Name="Header" />
+      <RootProperty Name="Series" />
+      <RootProperty Name="Legend" />
+      <RootProperty Name="HorizontalAxis" />
+      <RootProperty Name="RadialAxis" />
+      <RootProperty Name="RenderingType" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.SmithChart.LineSeries">
+      <RootProperty Name="Label" />
+      <RootProperty Name="ShowToolTip" />
+      <RootProperty Name="ShowMarker" />
+      <RootProperty Name="ResistancePath" />
+      <RootProperty Name="ReactancePath" />
+      <RootProperty Name="ItemsSource" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="ElementName" />
+      <RootProperty Name="Mode" />
+      <RootProperty Name="Path" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.SmithChart.SmithChartLegend">
+      <RootProperty Name="LegendIcon" />
+      <RootProperty Name="DockPosition" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.SmithChart.HorizontalAxis">
+      <RootProperty Name="ShowMinorGridlines" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.SmithChart.RadialAxis">
+      <RootProperty Name="ShowMinorGridlines" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Width" />
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Text" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.CheckBox">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="IsChecked" />
+      <RootProperty Name="Margin" />
+      <RootEvent Name="Click" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="Margin" />
+      <RootEvent Name="Loaded" />
+      <RootEvent Name="SelectionChanged" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Slider">
+      <RootProperty Name="Minimum" />
+      <RootProperty Name="Maximum" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Value" />
+      <RootProperty Name="StepFrequency" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfSmithChart.Customization" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfSmithChart.GettingStarted" />
+  </Roots.RootTypes>
+</Roots>

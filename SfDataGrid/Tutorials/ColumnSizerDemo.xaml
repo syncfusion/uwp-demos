@@ -1,0 +1,77 @@
+﻿<View:SampleLayout x:Class="DataGrid.ColumnSizerDemo"
+                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"                   
+                   xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                   xmlns:local="using:DataGrid"
+               xmlns:View="using:Common"
+                   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                   xmlns:syncfusion="using:Syncfusion.UI.Xaml.Grid"
+                   mc:Ignorable="d">
+    <View:SampleLayout.Resources>
+        <ResourceDictionary>
+            <local:CategoryRepository x:Key="categoryComboBox" />
+            <local:GridColumnSizerConverter x:Key="ColumnSizerConverter" />
+            <local:CurrencyFormatConverter x:Key="currencyFormatConverter" />
+        </ResourceDictionary>
+    </View:SampleLayout.Resources>
+
+    <View:SampleLayout.Sample>
+        <syncfusion:SfDataGrid x:Name="sfGrid"
+                               AllowEditing="False"
+                               AutoGenerateColumns="False"
+                               ColumnSizer="{Binding SelectedIndex,
+                                                     ElementName=columnsizerCombo,
+                                                     Converter={StaticResource ColumnSizerConverter}}"
+                               Margin="10,13,10,15"
+                               EditTrigger="OnTap"                               
+                               ShowRowHeader="True">
+            <syncfusion:SfDataGrid.Columns>
+                <syncfusion:GridTextColumn HeaderText="Order ID" MappingName="OrderID" />
+                <syncfusion:GridTextColumn HeaderText="Customer ID"
+                                           MappingName="EmployeeID"
+                                           TextAlignment="Center" />
+                <syncfusion:GridUpDownColumn AutoReverse="True"
+                                             MappingName="Quantity"
+                                             MaxValue="60"
+                                             MinValue="0" />
+                <syncfusion:GridDateTimeColumn FormatString="d"
+                                               HeaderText="Shipping Date"
+                                               MappingName="Shipping"
+                                               TextAlignment="Right" />
+                <syncfusion:GridNumericColumn DisplayBinding="{Binding Freight,Converter={StaticResource currencyFormatConverter}}"
+                                              MappingName="Freight"
+                                              TextAlignment="Right" />
+                <syncfusion:GridTextColumn HeaderText="Ship Postal Code" MappingName="ShipPostalCode" />
+                <syncfusion:GridTextColumn     HeaderText="Ship City Name"
+                                               MappingName="ShipCity"
+                                               />
+                <syncfusion:GridComboBoxColumn HeaderText="Ship Country"
+                                               ItemsSource="{StaticResource categoryComboBox}"
+                                               MappingName="ShipCountry" />
+            </syncfusion:SfDataGrid.Columns>
+
+        </syncfusion:SfDataGrid>
+    </View:SampleLayout.Sample>
+    <View:SampleLayout.Setting>
+        <UserControl>
+            <StackPanel   Margin="10,10,10,10">
+                <TextBlock Margin="0,5,0,0"
+                       FontSize="12"
+                       FontWeight="Bold"
+                       Text="ColumnSizer Options" />
+                <ComboBox x:Name="columnsizerCombo"
+                      Height="35" Width="150"
+                      Margin="5,5,0,0"
+                      SelectedIndex="6">
+                    <ComboBoxItem>Auto</ComboBoxItem>
+                    <ComboBoxItem>AutoLastColumnFill</ComboBoxItem>
+                    <ComboBoxItem>AutoWithLastColumnFill</ComboBoxItem>
+                    <ComboBoxItem>None</ComboBoxItem>
+                    <ComboBoxItem>SizeToCells</ComboBoxItem>
+                    <ComboBoxItem>SizeToHeader</ComboBoxItem>
+                    <ComboBoxItem>Star</ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+        </UserControl>
+    </View:SampleLayout.Setting>
+</View:SampleLayout>
