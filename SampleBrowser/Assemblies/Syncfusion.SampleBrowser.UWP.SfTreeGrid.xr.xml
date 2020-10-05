@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Roots >
+  <Roots.Interfaces>
+    <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
+  </Roots.Interfaces>
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="Salary" />
+    <RootPropertyPathName Name="PersonDetails" />
+    <RootPropertyPathName Name="EmployeeDetails" />
+    <RootPropertyPathName Name="SelectedIndex" />
+    <RootPropertyPathName Name="SelectedItem" />
+    <RootPropertyPathName Name="FirstName" />
+    <RootPropertyPathName Name="EmpID" />
+    <RootPropertyPathName Name="Title" />
+    <RootPropertyPathName Name="EmployeeInfo" />
+    <RootPropertyPathName Name="SelectedColor" />
+    <RootPropertyPathName Name="ComboChanged" />
+    <RootPropertyPathName Name="FilterComboChanged" />
+    <RootPropertyPathName Name="FilterText" />
+    <RootPropertyPathName Name="Tag" />
+    <RootPropertyPathName Name="IsChecked" />
+    <RootPropertyPathName Name="HasChildNodes" />
+    <RootPropertyPathName Name="CityCollection" />
+    <RootPropertyPathName Name="EmployeeID" />
+    <RootPropertyPathName Name="LastName" />
+    <RootPropertyPathName Name="Columns" />
+    <RootPropertyPathName Name="AllowSorting" />
+    <RootPropertyPathName Name="Value" />
+  </Roots.PropertyPathNames>
+  <Roots.RootTypes>
+    <RootType FullName="Windows.UI.Xaml.Application">
+      <RootProperty Name="RequestedTheme" />
+    </RootType>
+    <RootType FullName="Common.SampleLayout">
+      <RootProperty Name="DataContext" />
+      <RootProperty Name="Resources" />
+      <RootProperty Name="Sample" />
+      <RootProperty Name="Setting" />
+    </RootType>
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfTreeGrid.PersonInfoRepository" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfTreeGrid.CurrencyFormatConverter" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfTreeGrid.StyleConverter" />
+    <RootType FullName="Syncfusion.UI.Xaml.TreeGrid.TreeGridRowControl" />
+    <RootType FullName="Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper">
+      <RootProperty Name="Binding" />
+      <RootProperty Name="Property" />
+      <RootMethod Name="GetPropertyBinding" />
+      <RootMethod Name="SetPropertyBinding" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.TreeGrid.TreeGridColumns" />
+    <RootType FullName="Syncfusion.UI.Xaml.TreeGrid.TreeGridTextColumn">
+      <RootProperty Name="HeaderText" />
+      <RootProperty Name="MappingName" />
+      <RootProperty Name="TextAlignment" />
+      <RootProperty Name="AllowSorting" />
+      <RootProperty Name="DisplayBinding" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="SetCellBoundValue" />
+      <RootProperty Name="CellTemplate" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn">
+      <RootProperty Name="MappingName" />
+      <RootProperty Name="CellTemplate" />
+      <RootProperty Name="AllowSorting" />
+      <RootProperty Name="FormatString" />
+      <RootProperty Name="HeaderText" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="Children" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="DataContext" />
+      <RootProperty Name="ColumnDefinitions" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
+      <RootMethod Name="GetColumn" />
+      <RootMethod Name="SetColumn" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ProgressBar">
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Maximum" />
+      <RootProperty Name="Minimum" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="TextAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="FontStyle" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Padding" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Path" />
+      <RootProperty Name="Converter" />
+      <RootProperty Name="Mode" />
+      <RootProperty Name="ElementName" />
+      <RootProperty Name="ConverterParameter" />
+      <RootProperty Name="UpdateSourceTrigger" />
+      <RootProperty Name="RelativeSource" />
+      <RootProperty Name="Source" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="Syncfusion.UI.Xaml.TreeGrid.TreeGridCheckBoxColumn">
+      <RootProperty Name="HeaderText" />
+      <RootProperty Name="MappingName" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.TreeGrid.TreeGridDateTimeColumn">
+      <RootProperty Name="FormatString" />
+      <RootProperty Name="MappingName" />
+      <RootProperty Name="TextAlignment" />
+      <RootProperty Name="HeaderText" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Setter">
+      <RootProperty Name="Property" />
+      <RootProperty Name="Value" />
+      <RootProperty Name="Target" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
+      <RootProperty Name="Content" />
+      <RootProperty Name="Resources" />
+      <RootProperty Name="DataContext" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.VisualStateManager">
+      <RootMethod Name="GetVisualStateGroups" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.VisualStateGroup">
+      <RootProperty Name="States" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.VisualState">
+      <RootProperty Name="StateTriggers" />
+      <RootProperty Name="Setters" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.AdaptiveTrigger">
+      <RootProperty Name="MinWindowWidth" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid">
+      <RootProperty Name="AllowDraggingColumns" />
+      <RootProperty Name="AutoExpandMode" />
+      <RootProperty Name="AutoGenerateColumns" />
+      <RootProperty Name="ChildPropertyName" />
+      <RootProperty Name="ColumnSizer" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="Name" />
+      <RootProperty Name="FrozenColumnCount" />
+      <RootProperty Name="FooterColumnCount" />
+      <RootProperty Name="ParentPropertyName" />
+      <RootProperty Name="SelfRelationRootValue" />
+      <RootProperty Name="Columns" />
+      <RootProperty Name="AllowEditing" />
+      <RootProperty Name="AllowSorting" />
+      <RootProperty Name="LiveNodeUpdateMode" />
+      <RootProperty Name="StackedHeaderRows" />
+      <RootProperty Name="AllowDraggingRows" />
+      <RootProperty Name="AllowDrop" />
+      <RootProperty Name="NavigationMode" />
+      <RootProperty Name="SelectionMode" />
+      <RootProperty Name="SelectionBackground" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="FilterLevel" />
+      <RootProperty Name="AllowTriStateChecking" />
+      <RootProperty Name="CheckBoxMappingName" />
+      <RootProperty Name="CheckBoxSelectionMode" />
+      <RootProperty Name="EnableRecursiveChecking" />
+      <RootProperty Name="RowIndentMode" />
+      <RootProperty Name="ShowCheckBox" />
+      <RootProperty Name="DataContext" />
+      <RootProperty Name="ExpanderColumn" />
+      <RootProperty Name="SortComparers" />
+      <RootProperty Name="SortColumnDescriptions" />
+      <RootProperty Name="AllowResizingColumns" />
+      <RootProperty Name="AllowResizingHiddenColumns" />
+      <RootProperty Name="EditTrigger" />
+      <RootProperty Name="AllowTriStateSorting" />
+      <RootProperty Name="ShowSortNumbers" />
+      <RootProperty Name="SortClickAction" />
+      <RootProperty Name="AllowSelectionOnExpanderClick" />
+      <RootProperty Name="HeaderRowHeight" />
+      <RootProperty Name="RowHeight" />
+      <RootProperty Name="ShowRowHeader" />
+      <RootProperty Name="GridValidationMode" />
+    </RootType>
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfTreeGrid.ConditionalFormatting" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfTreeGrid.EmployeeDetailsRepository" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfTreeGrid.FreezeColumns" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfTreeGrid.TreeGridColumnSizerConverter" />
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="MinWidth" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="SelectedIndex" />
+      <RootProperty Name="Items" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Name" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBoxItem">
+      <RootProperty Name="Content" />
+      <RootProperty Name="Tag" />
+    </RootType>
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfTreeGrid.ColumnSizer" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfTreeGrid.OrderInfoRepository" />
+    <RootType FullName="Syncfusion.UI.Xaml.Grid.StackedHeaderRow">
+      <RootProperty Name="StackedColumns" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Grid.StackedColumn">
+      <RootProperty Name="ChildColumns" />
+      <RootProperty Name="HeaderText" />
+    </RootType>
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfTreeGrid.StackedHeader" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfTreeGrid.RowDragandDrop" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Page">
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfTreeGrid.MainPage" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfTreeGrid.SelectionViewModel" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfTreeGrid.NavigationModeConverter" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfTreeGrid.SelectionModeConverter" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfTreeGrid.SelectionImageConverter" />
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Border" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="Name" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Source" />
+      <RootProperty Name="Stretch" />
+      <RootProperty Name="MinWidth" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
+      <RootProperty Name="Color" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Controls.Media.SfColorPicker">
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="MinWidth" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="SelectedColor" />
+    </RootType>
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfTreeGrid.SelectionDemo" />
+    <RootType FullName="Syncfusion.UI.Xaml.TreeGrid.TreeGridHyperlinkColumn">
+      <RootProperty Name="MappingName" />
+      <RootProperty Name="HeaderText" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ContentControl">
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.CheckBox">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="IsChecked" />
+      <RootProperty Name="DataContext" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Width" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Height" />
+      <RootEvent Name="Click" />
+    </RootType>
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfTreeGrid.ExcelExporting" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="VerticalScrollBarVisibility" />
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfTreeGrid.PdfExporting" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfTreeGrid.EmployeeRepository" />
+    <RootType FullName="Windows.UI.Xaml.ResourceDictionary" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfTreeGrid.SearchConditionVisibilityConverter" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfTreeGrid.FilterLevelConverter" />
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="Width" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="FontStyle" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="Padding" />
+    </RootType>
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfTreeGrid.FilteringComboBox">
+      <RootMethod Name="GetCommand" />
+      <RootMethod Name="SetCommand" />
+    </RootType>
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfTreeGrid.Filtering" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfTreeGrid.CheckBoxSelectionModeConverter" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfTreeGrid.CheckBoxSelection" />
+    <RootType FullName="Syncfusion.UI.Xaml.TreeGrid.TreeGridExpanderCell" />
+    <RootType FullName="Windows.UI.Xaml.Data.RelativeSource">
+      <RootProperty Name="Mode" />
+    </RootType>
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfTreeGrid.ConditionalCheckBox" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfTreeGrid.CustomSortComparer" />
+    <RootType FullName="Syncfusion.Data.SortComparer">
+      <RootProperty Name="Comparer" />
+      <RootProperty Name="PropertyName" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Grid.SortColumnDescription">
+      <RootProperty Name="ColumnName" />
+      <RootProperty Name="SortDirection" />
+    </RootType>
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfTreeGrid.CustomSorting" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfTreeGrid.EditTriggerOptionConverter" />
+    <RootType FullName="Syncfusion.UI.Xaml.TreeGrid.TreeGridTemplateColumn">
+      <RootProperty Name="HeaderText" />
+      <RootProperty Name="MappingName" />
+      <RootProperty Name="CellTemplate" />
+      <RootProperty Name="EditTemplate" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.TreeGrid.TreeGridComboBoxColumn">
+      <RootProperty Name="HeaderText" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="MappingName" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Grid.FocusManagerHelper">
+      <RootMethod Name="GetFocusedElement" />
+      <RootMethod Name="SetFocusedElement" />
+    </RootType>
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfTreeGrid.EditingDemo" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfTreeGrid.NestedCollection" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfTreeGrid.OnDemandLoading" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfTreeGrid.SelfRelational" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfTreeGrid.SortClickActionConveter" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfTreeGrid.SortingDemo" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfTreeGrid.TreeViewModel" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Control">
+      <RootProperty Name="BorderThickness" />
+    </RootType>
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfTreeGrid.ImageConverter" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfTreeGrid.TreeViewDemo" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfTreeGrid.GridValidationConverter" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfTreeGrid.ValidationDemo" />
+  </Roots.RootTypes>
+</Roots>

@@ -1,0 +1,2499 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfTabControl.UWP</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Navigation.CloseButtonType">
+            <summary>
+            Represents the close button type for TabControl
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.CloseButtonType.Common">
+            <summary>
+            Set common as the close button type
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.CloseButtonType.Individual">
+            <summary>
+            Set as Individual as the close button type
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.CloseButtonType.Both">
+            <summary>
+            Set Both as the close button type
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.CloseButtonType.IndividualOnMouseOver">
+            <summary>
+            Set IndividualOnMouseOver as the close button type
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.CloseButtonType.Hide">
+            <summary>
+            Set Hide as the close button type
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.CloseButtonType.Extended">
+            <summary>
+            Set Extended as the close button type
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Navigation.SelectionStyle">
+            <summary>
+            Represents a mode for selecting items
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SelectionStyle.HeaderText">
+            <summary>
+            In this mode, the foreground of the item's header is highlighted
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SelectionStyle.CompleteHeader">
+            <summary>
+            In this mode, the background of the item's header is highlighted
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Navigation.TabIconPosition">
+            <summary>
+            Defines the IconPosition of Tab
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.TabIconPosition.Left">
+            <summary>
+            Set Tab Icon position at left side
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.TabIconPosition.Right">
+            <summary>
+            Set Tab Icon position at Right side
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Navigation.TabScrollButtonVisibility">
+            <summary>
+            Defines the scroll navigation button for <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.TabScrollButtonVisibility.Visible">
+            <summary>
+            Scroll Navigation button has been made visible for <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.TabScrollButtonVisibility.Collapsed">
+            <summary>
+            Scroll Navigation button has been collapsed for <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.TabScrollButtonVisibility.Auto">
+            <summary>
+            Scroll Navigation button will be made visible only when tab headers exceeds the visible viewport in <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl"/>.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Navigation.TabStripPlacement">
+            <summary>
+            Defines the different placement options that a <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl"/>  can arrange the
+            tab strip.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.TabStripPlacement.Left">
+            <summary>
+            A child element that is positioned on the left side of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.TabStripPlacement.Top">
+            <summary>
+            A child element that is positioned on the top of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.TabStripPlacement.Right">
+            <summary>
+            A child element that is positioned on the right side of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.TabStripPlacement.Bottom">
+            <summary>
+            A child element that is positioned on the bottom of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl"/>.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Navigation.SR">
+            <summary>
+            Initialize new instance for SR class
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SR.loader">
+            <summary>
+            Field to store loader
+            </summary>                  
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SR.resources">
+            <summary>
+            Field to store resource loader
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SR.assemblyresources">
+            <summary>
+            Field to store resource loader
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SR.#ctor">
+            <summary>
+            Prevents a default instance of the <see cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SR" /> class from being created.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SR.GetString(System.Globalization.CultureInfo,System.String)">
+            <summary>
+            Returns the value for resource name
+            </summary>
+            <param name="culture">culture for localization</param>
+            <param name="name">string to be localized</param>
+            <returns>Localized string</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SR.GetLocalizedResourceManager">
+            <summary>
+            Get the localized string from Resource manager
+            </summary>
+            <returns>Resource loader</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SR.GetLoader">
+            <summary>
+            Get the resource loader
+            </summary>
+            <returns>Loaded of SR</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Navigation.TabControlResourceWrapper">
+            <summary>
+            TabControlResourceWrapper class for TabControl control
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.TabControlResourceWrapper.Closemenuitemtext">
+            <summary>
+            Close Menu Item text
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.TabControlResourceWrapper.Closeallmenuitemtext">
+            <summary>
+            Close All Menu Item text
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.TabControlResourceWrapper.Closeallbutthismenuitemtext">
+            <summary>
+            Close All But this Menu Item text
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.TabControlResourceWrapper.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.Controls.Navigation.TabControlResourceWrapper" /> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.TabControlResourceWrapper.CloseMenuItemText">
+            <summary>
+            Gets or sets value of Text for CloseMenuItem
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.TabControlResourceWrapper.CloseAllMenuItemText">
+            <summary>
+            Gets or sets the value of Text for CloseAllMenuItem
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.TabControlResourceWrapper.CloseAllButThisMenuItemText">
+            <summary>
+            Gets or sets the value of Text for CloseAllButThisMenuItem
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Navigation.CancelingEventArgs">
+            <summary>
+            Represents a class for defining the TabClosed event arguments
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.CancelingEventArgs.targetbabitem">
+            <summary>
+            Represents the target tab item
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.CancelingEventArgs.cancel">
+            <summary>
+            Flag to indicate whether the tab item can be closed or not
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.CancelingEventArgs.#ctor(Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.Controls.Navigation.CancelingEventArgs"/> class.
+            </summary>
+            <param name="targetTabItem">the target tab item</param>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.CancelingEventArgs.TargetTabItem">
+            <summary>
+            Gets or sets a value of the TabItem to be closed
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.CancelingEventArgs.Cancel">
+            <summary>
+            Gets or sets a value indicating whether the tab item can be closed or not.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Navigation.CloseTabEventArgs">
+            <summary>
+            Represents a class for defining the TabClosed event arguments
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.CloseTabEventArgs.targettabitem">
+            <summary>
+            Field to store the target tab item
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.CloseTabEventArgs.#ctor(Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.Controls.Navigation.CloseTabEventArgs"/> class.
+            </summary>
+            <param name="targetTabItem">The target tab item</param>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.CloseTabEventArgs.TargetTabItem">
+            <summary>
+            Gets or sets a value of the TabItem to be closed
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Navigation.ScrollTabEventArgs">
+            <summary>
+            Represents a class for defining the NextTab/PreviousTab event arguments
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.ScrollTabEventArgs.targettabitem">
+            <summary>
+            Field to store target tab item
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.ScrollTabEventArgs.#ctor(Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.Controls.Navigation.ScrollTabEventArgs"/> class.
+            </summary>
+            <param name="targetTabItem">the target tab item</param>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.ScrollTabEventArgs.TargetTabItem">
+            <summary>
+            Gets or sets a value of TabItem navigated
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl">
+            <summary>
+            Represents a control that contains multiple items that share the same space for
+            content on the screen.
+            </summary>
+            <remarks>
+            TabControl is a <see cref="N:Syncfusion.UI.Xaml.Primitives.Selector"/> which
+            means it can contain a collection of objects of any type (such as string, image,
+            or panel) and it is selectable.
+            </remarks>
+            <seealso cref="N:Syncfusion.UI.Xaml.Controls">Syncfusion.UI.Xaml.Controls
+            Namespace</seealso>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.ShowCustomContextMenuProperty">
+            <summary>
+             Using a DependencyProperty as the backing store for MyProperty.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.ShowContextMenuProperty">
+            <summary>
+             Using a DependencyProperty as the backing store for MyProperty.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.LeftHeaderProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for LeftHeader.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.RightHeaderProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for RightHeader.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.DisableTabItemContentUnloadProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DisableTabItemContentUnload.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.HeaderFontSizeProperty">
+            <summary>
+             Using a DependencyProperty as the backing store for HeaderFontSize.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.ShowIconProperty">
+            <summary>
+             Using a DependencyProperty as the backing store for ShowIcon.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.HighlightOnSelectionProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for HighlightOnSelection.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.HeaderTemplateProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for HeaderTemplate.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.HeaderTemplateSelectorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for HeaderTemplateSelector.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.TabStripPlacementProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for TabStripPlacement.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.ContentTemplateProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ContentTemplate.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.ContentTransitionsProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for MyProperty.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.SelectedContentProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SelectedContent.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.SelectedContentTemplateProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SelectedContentTemplate.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.ContentTemplateSelectorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for MyProperty.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.TabScrollButtonVisibilityProperty">
+            <summary>
+             Represents the TabScrollButtonVisibilityProperty
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.PinnedTabScrollButtonVisibilityProperty">
+            <summary>
+             Represents the PinnedTabScrollButtonVisibilityProperty
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.CloseButtonTypeProperty">
+            <summary>
+             Represents the CloseButtonTypeProperty
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.SelectionStyleProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SelectionStyle.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.ShowTabstripMenuProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Show Tab strip Menu.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.TabstripMenuItemsProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Tab Strip Menu Items.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.TabstripMenuItemTemplateProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Tab strip Menu Item Template.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.TabControlHorizontalTemplateProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for TabControlHorizontalTemplate.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.TabControlVerticalTemplateProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for TabControlVerticalTemplate.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.EnableSwipeGesturesProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Enable Swipe Gestures.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.CustomContextMenuItemsProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for CustomContextMenuItems.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.internalremove">
+            <summary>
+            Flag to indicate whether the item is removable from pinned items collection or not
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.index">
+            <summary>
+            Stores the index of the tab item.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.isHeaderScroll">
+            <summary>
+            Flag to indicate whether the Header contains scroll viewer or not
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.scrollSwipeTimer">
+            <summary>
+            Stores the ScrollSwipeTimer value.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.swipeInterval">
+            <summary>
+            Stores the swipe interval value.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.scrollSwipeDuration">
+            <summary>
+            Stores the scroll swipe duration value.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.gestureStartPoint">
+            <summary>
+             Stores the gesture start Point value.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.gestureEndPoint">
+            <summary>
+             Stores the gesture end point value.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.isSwipe">
+            <summary>
+            Flag to indicate whether the content is swiped or not.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.isCloseButtonBoth">
+            <summary>
+            Flag to indicate whether the close button type is both or not
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.listborder">
+            <summary>
+            Represents the border of tab strip menu list
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.#ctor">
+            <summary>
+            Initializes a new instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl"/> class.
+            </summary>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl"/>
+            <seealso cref="N:Syncfusion.UI.Xaml.Controls">Syncfusion.UI.Xaml.Controls
+            Namespace</seealso>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.TabClosedEventHandler">
+            <summary>
+            Represents an Event handler for handling TabClosed event.
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="args">The event arguments</param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.CancelingEventHandler">
+            <summary>
+            Represents an Event handler for handling TabClosing event.
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="args">The event arguments</param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.TabScrollEventHandler">
+            <summary>
+            Represents an Event handler for handling NextTab/PreviousTab event.
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="args">The event arguments</param>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.TabClosed">
+            <summary>
+            This event will be raised after the tab item is closed in TabControl.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.NextTab">
+            <summary>
+            This event will be raised after the tab item is navigated to Right/Bottom.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.PreviousTab">
+            <summary>
+            This event will be raised after the tab item is navigated to Left/Top.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.TabClosing">
+            <summary>
+            This cancellable event will be raised before the tab item is closed in TabControl.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.ShowCustomContextMenu">
+            <summary>
+            Gets or sets a value indicating whether the custom context menu is showable or not
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.ShowContextMenu">
+            <summary>
+            Gets or sets a value indicating whether the ContextMenu to be shown or not
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.LeftHeader">
+            <summary>
+            Gets or sets a value of header at left side of control
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.RightHeader">
+            <summary>
+            Gets or sets a value of the content for header at right side of control
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.DisableTabItemContentUnload">
+            <summary>
+            Gets or sets a value indicating whether single or individual ContentPresenters to be used to show selected item content.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.HeaderFontSize">
+            <summary>
+            Gets or sets a value of FontSize to be set common for all tab item
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.ShowIcon">
+            <summary>
+            Gets or sets a value indicating whether the Icon to be visible or not in in tab item
+            default value is false
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.HighlightOnSelection">
+            <summary>
+            Gets or sets a value indicating whether the HighlightOnSelection is used to High light the tab item
+            Default value is false
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.HeaderTemplate">
+            <summary>
+            Gets or sets a value of the template for the data used as header for <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl"/>.
+            </summary>
+            <value>
+            The default is null.
+            </value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem"/>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl"/>
+            <seealso cref="N:Syncfusion.UI.Xaml.Controls">Syncfusion.UI.Xaml.Controls
+            Namespace</seealso>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.HeaderTemplateSelector">
+            <summary>
+            Gets or sets a value of Template Selector for the data used as header for <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl"/>.
+            </summary>
+            <value>
+            The default is null.
+            </value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem"/>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl"/>
+            <seealso cref="N:Syncfusion.UI.Xaml.Controls">Syncfusion.UI.Xaml.Controls
+            Namespace</seealso>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.TabStripPlacement">
+            <summary>
+            Gets or sets a value of the placement option to place the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl"/>.
+            </summary>
+            <remarks>
+            Tab strip can be placed around the control using <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.TabStripPlacement"/> property. It
+            has the following options. Default option is Top.
+            </remarks>
+            <value>
+            <para>Default value is <see
+            cref="F:Syncfusion.UI.Xaml.Controls.Navigation.TabStripPlacement.Top"/>.</para>
+            </value>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.ContentTemplate">
+            <summary>
+            Gets or sets a value of the data used to display the content of the selected <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem"/>.
+            </summary>
+            <value>
+            The Default value is null.
+            </value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl"/>
+            <seealso cref="N:Syncfusion.UI.Xaml.Controls">Syncfusion.UI.Xaml.Controls
+            Namespace</seealso>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.ContentTransitions">
+            <summary>
+            Gets or sets a value of the collection of transitions that apply to the content area of
+            <see cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl"/>.
+            </summary>
+            <value>
+            <see cref="N:Windows.UI.Xaml.Media.Animation.">Transition</see>.
+            </value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl"/>
+            <seealso cref="N:Syncfusion.UI.Xaml.Controls">Syncfusion.UI.Xaml.Controls
+            Namespace</seealso>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.ContentTemplateSelector">
+            <summary>
+            Gets or sets a value of the Template Selector for the data used to display the content of the selected <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem"/>.
+            </summary>
+            <value>
+            The Default value is null.
+            </value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl"/>
+            <seealso cref="N:Syncfusion.UI.Xaml.Controls">Syncfusion.UI.Xaml.Controls
+            Namespace</seealso>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.TabScrollButtonVisibility">
+            <summary>
+            Gets or sets a value of the TabScrollButtonVisibility dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.PinnedTabScrollButtonVisibility">
+            <summary>
+            Gets or sets a value of the PinnedTabScrollButtonVisibility dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.CloseButtonType">
+            <summary>
+            Gets or sets a value of the CloseButtonType dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.SelectionStyle">
+            <summary>
+            Gets or sets the value for the SelectionStyle
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.ShowTabstripMenu">
+            <summary>
+            Gets or sets a value indicating whether the TabStripMenu with Tab Item headers for switching tab items on selection can be displayed or not.
+            </summary>
+            <value>
+            <c>true</c> if this instance is selected; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.TabstripMenuItems">
+            <summary>
+            Gets or sets a value of the Menu items for Tab strip Menu
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.TabstripMenuItemTemplate">
+            <summary>
+            Gets or sets the value to set the template for the Tab strip Menu Items
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.TabControlHorizontalTemplate">
+            <summary>
+            Gets or sets a value of the tab control horizontal template
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.TabControlVerticalTemplate">
+            <summary>
+            Gets or sets a value of the tab control Vertical template
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.EnableSwipeGestures">
+            <summary>
+            Gets or sets a value indicating whether the Enable Gesture
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.ItemsChanged">
+            <summary>
+            Gets or sets a value indicating whether the Items of the TabControl is changed or not
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.ContentPanel">
+            <summary>
+            Gets or sets a value of the Content panel
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.PartRightHeader">
+            <summary>
+            Gets or sets a value of the Right side header
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.PartLeftHeader">
+            <summary>
+            Gets or sets a value of the Left side header
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.InternalRemove">
+            <summary>
+            Gets or sets a value indicating whether the Item can be removable from pinned items collection or not
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.MainGrid">
+            <summary>
+            Gets or sets a value of Main Grid 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.CommonButtonGrid">
+            <summary>
+            Gets or sets a value of Common button grid
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.ScrollViewer">
+            <summary>
+            Gets or sets a value of scroll viewer
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.ItemsPresenter">
+            <summary>
+            Gets or sets a value of Items Presenter
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.PinnedItemsGrid">
+            <summary>
+            Gets or sets a value of Pinned items grid
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.PinnedSeperator">
+            <summary>
+            Gets or sets a value of pinned rectangle
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.PinnedPanel">
+            <summary>
+            Gets or sets a value of Pinned panel
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.PinnedScrollViewer">
+            <summary>
+            Gets or sets a value of Pinned scroll viewer
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.PinnedCommonButtonBorder">
+            <summary>
+            Gets or sets a value of Pinned common button border
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.PinnedCommonButtonGrid">
+            <summary>
+            Gets or sets a value of pinned common button grid
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.PinnedPreviousTabButton">
+            <summary>
+            Gets or sets a value of previous tab button in pinned panel
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.PinnedNextTabButton">
+            <summary>
+            Gets or sets a value of next tab button in pinned panel
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.ContentPresenter">
+            <summary>
+            Gets or sets a value of content of tab item
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.PreviousItem">
+            <summary>
+            Gets or sets a value of previous tab item
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.PreviousTabButton">
+            <summary>
+            Gets or sets a value of previous tab button in tab panel
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.NextTabButton">
+            <summary>
+            Gets or sets a value of next tab button in tab panel
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.TabStripMenu">
+            <summary>
+            Gets or sets a value of Tab strip menu
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.TabStripMenuList">
+            <summary>
+            Gets or sets a value of Tab strip menu list
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.Index">
+            <summary>
+            Gets or sets a value of index of the tab item
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.ListBorder">
+            <summary>
+            Gets or sets a value of border
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.CommonCloseButton">
+            <summary>
+            Gets or sets a value of Common close button
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.TabStripMenuButton">
+            <summary>
+            Gets or sets a value of button in Tab strip menu
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.CommonCloseBorder">
+            <summary>
+            Gets or sets a value of button in Tab strip menu
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.CommonButtonGridBorder">
+            <summary>
+            Gets or sets a value of button in common grid border
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.Transform">
+            <summary>
+            Gets or sets a value of composite transform for Tab strip menu button
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.SelectedContent">
+            <summary>
+            Gets or sets a value content to the selected tab item
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.SelectedContentTemplate">
+            <summary>
+            Gets or sets a value to the content template of the selected tab item
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.PinnedItems">
+            <summary>
+            Gets or sets a collection of pinned items
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.Dispose">
+            <summary>
+            Disposes the control while unloading.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.GetCustomContextMenuItems(Windows.UI.Xaml.DependencyObject)">
+            <summary>
+            Gets the CustomContextMenuItem
+            </summary>
+            <param name="obj">The method argument</param>
+            <returns>returns collection of custom context menu items</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.SetCustomContextMenuItem(Windows.UI.Xaml.DependencyObject,System.Collections.ObjectModel.ObservableCollection{System.Object})">
+            <summary>
+            Sets to the CustomContextMenuItem
+            </summary>
+            <param name="obj">The source of the event</param>
+            <param name="value">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.ValidateDefinitionCount(System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Validating the row or column definition count
+            </summary>
+            <param name="navigationbuttonVisible">checking whether the navigation button is visible or not</param>
+            <param name="closebuttonVisible">checking whether the close button is visible or not</param>
+            <param name="tabstripmenubuttonVisible">checking whether the tab strip menu button is visible or not</param>
+            <returns>definition count</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.IsPinnedItemsPanelHasSelectedItems">
+            <summary>
+            Method to check whether the pinned items panel has selected items or not
+            </summary>
+            <returns>returns true if the pinned items panel has selected item else returns false</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.ClosingTab(Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem)">
+            <summary>
+            Method to check whether the tab item can be closed or not
+            </summary>
+            <param name="tabItem">item to be closed</param>
+            <returns>returns true if the tab item can be closed else returns false</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.ClosedTab(Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem)">
+            <summary>
+            Method to close the tab item
+            </summary>
+            <param name="tabItem">item to be closed</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.AnimateSlideContent(System.Double,System.Double,System.TimeSpan,Windows.UI.Xaml.Media.Animation.EasingFunctionBase)">
+            <summary>
+            Animating Slide content
+            </summary>
+            <param name="slidefromvalue">parameter to set animation from which point</param>
+            <param name="slidetovalue">parameter to set animation to which point</param>
+            <param name="duration">animation duration</param>
+            <param name="easing">Easing function</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.UpdateScrollViewerMaxWidth(System.Double)">
+            <summary>
+            Method to update the max width of the scroll viewer
+            </summary>
+            <param name="autoScrollButtonsWidth">Width of the scroll button</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.UpdateScrollViewerMaxHeight">
+            <summary>
+            Method to update the max height of the scroll viewer
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.GetContentPresenter(Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem)">
+            <summary>
+            Method to get the current content presenter of the tab item
+            </summary>
+            <param name="item">current tab item</param>
+            <returns>content presenter</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.PopulateItems">
+            <summary>
+            Method to populate the items for tab strip menu
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.CheckCommonCloseButtonVisibilityOnLoad(Windows.UI.Xaml.Controls.Primitives.RepeatButton)">
+            <summary>
+            Checks the close button visibility on load.
+            </summary>
+            <param name="commonclosebutton">The close button.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.GetTabPanel">
+            <summary>
+            Get the tab panel
+            </summary>
+            <returns>returns the tab panel if ItemsPresenter is not null</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.GetTabItem(System.Object)">
+            <summary>
+            Gets the tab item
+            </summary>
+            <param name="item">corresponding tab item</param>
+            <returns>returns tab item</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.GetPinnedTabPanel">
+            <summary>
+            Gets the pinned tab panel
+            </summary>
+            <returns>returns the pinned tab panel</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.CheckPinnedNavigationButtonVisibility(System.Boolean,System.Double)">
+            <summary>
+            Checking the visibility of the pinned navigation button
+            </summary>
+            <param name="needScrollButtonsShow">whether the scroll buttons are showable or not</param>
+            <param name="panelwidth">width of the pinned tab panel</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.CheckNavigationButtonVisibility(System.Boolean,System.Double)">
+            <summary>
+            Checking the navigation button visibility
+            </summary>
+            <param name="needScrollButtonsShow">whether the scroll buttons are showable or not</param>
+            <param name="panelwidth">width of the tab panel</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.ValidateScrollBarVisibility">
+            <summary>
+            Validating the Scroll bar visibility
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.CheckPinnedCommonButtonGridAlignment(System.Double)">
+            <summary>
+            Updating the grid alignment of the pinned common button
+            </summary>
+            <param name="width">width of the grid</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.CheckCommonButtonGridAlignment(System.Double)">
+            <summary>
+            Updating the grid alignment of the common button
+            </summary>
+            <param name="width">width of the grid</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.ScrollToSelectedTabHeader">
+            <summary>
+            Method to change the view of the scroll viewer
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.AdjustScrollViewer">
+            <summary>
+            Method to the scroll viewer 
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.Dispose(System.Boolean)">
+            <summary>
+            Disposing unused objects
+            </summary>
+            <param name="disposing">Argument to dispose the unused object</param> 
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.OnApplyTemplate">
+            <summary>
+            Initializes all the child elements of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl"/> TabControl control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.OnPointerPressed(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Invoked when the pointer is pressed on the control
+            </summary>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.OnPointerCaptureLost(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Invoked when the pointer is capture lost on the control
+            </summary>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.OnPointerReleased(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Invoked when the pointer is released on the control
+            </summary>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.OnPointerMoved(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Invoked when the pointer is moved on the control
+            </summary>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.OnSelectionChanged(Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Occurs when the selected Tab item <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem"/> is changed.
+            </summary>
+            <param name="args">the event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.IsItemItsOwnContainerOverride(System.Object)">
+            <summary>
+            Checks if the item is a <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem"/>
+            </summary>
+            <param name="item">corresponding tab item</param>
+            <returns>
+            <c>true</c> if this instance is selected; otherwise, <c>false</c>
+            </returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.GetContainerForItemOverride">
+            <summary>
+            Checks if the item is a <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem"/>
+            </summary>
+            <returns>Dependency Object</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.PrepareContainerForItemOverride(Windows.UI.Xaml.DependencyObject,System.Object)">
+            <summary>
+            Arranges the container for overridden items
+            </summary>
+            <param name="element">The Tab Item</param>
+            <param name="item">Items to be overridden</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.OnItemsChanged(System.Object)">
+            <summary>
+            Called whenever item is added or removed
+            </summary>
+            <param name="e">the event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.OnTabStripPlacementChanged(Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Invoked when the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.TabStripPlacement"/> TabStripPlacement is changed.
+            </summary>
+            <param name="args">the event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.GetVisualChild``1(Windows.UI.Xaml.DependencyObject)">
+            <summary>
+            Gets the Visual child of the parent
+            </summary>
+            <typeparam name="T">Generic type</typeparam>
+            <param name="parent">parent of visual child</param>
+            <returns>returns the parent of the visual child</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.FindScrollViewerInChildren``1(Windows.UI.Xaml.DependencyObject)">
+            <summary>
+            Gets the scroll viewer of selected content 
+            </summary>
+            <typeparam name="T">Generic type</typeparam>
+            <param name="parent">parent of visual child</param>
+            <returns>>returns the parent of the visual child</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.HeaderFontSizeChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Called HeaderFontSize property is changed
+            </summary>
+            <param name="d">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.OnTabStripPlacementChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Invokes when Tab strip placement is changed
+            </summary>
+            <param name="obj">The source of the event</param>
+            <param name="args">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.OnTabScrollButtonVisibilityChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Calls OnTabScrollButtonVisibilityChanged method of the instance, notifies of the dependency property value changes.
+            </summary>
+            <param name="d">Dependency object, the change occurs on.</param>
+            <param name="e">Property change details, such as old value and new value.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.OnPinnedTabScrollButtonVisibilityChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Calls OnPinnedTabScrollButtonVisibilityChanged method of the instance, notifies of the dependency property value changes.
+            </summary>
+            <param name="d">Dependency object, the change occurs on.</param>
+            <param name="e">Property change details, such as old value and new value.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.OnShowTabStripMenuChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Invokes when the tab strip menu is changed
+            </summary>
+            <param name="d">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.ShowIconPropertyChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Invokes when Show icon property is changed
+            </summary>
+            <param name="d">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.OnDisableTabItemContentUnloadChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Invokes when the property DisableTabItemContentUnload is changed
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="args">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.OnCloseButtonTypeChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Calls OnCloseButtonTypeChanged method of the instance, notifies of the dependency property value changes.
+            </summary>
+            <param name="d">Dependency object, the change occurs on.</param>
+            <param name="e">Property change details, such as old value and new value.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.OnTabControlVerticalTemplateChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Invokes when the Vertical template of tab control is changed
+            </summary>
+            <param name="d">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.OnTabControlHorizontalTemplateChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Invokes when the horizontal template of tab control is changed
+            </summary>
+            <param name="d">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.OnSelectionStyleChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Invokes when the selection style is changed
+            </summary>
+            <param name="d">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.BuildTimeLine(System.Double,System.Double,System.TimeSpan,Windows.UI.Xaml.Media.Animation.EasingFunctionBase)">
+            <summary>
+            Handling animations
+            </summary>
+            <param name="from">parameter to set animation from which point</param>
+            <param name="to">parameter to set animation to which point</param>
+            <param name="duration">animation duration</param>
+            <param name="easing">Easing function</param>
+            <returns>Build double animation</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.UpdateHeaderTemplate(Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem)">
+            <summary>
+            Update the HeaderTemplate for TabItem
+            </summary>
+            <param name="tabItem">Represents a selectable item inside</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.UpdateContentTemplate(Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem)">
+            <summary>
+            Update the ContentTemplate for TabItem
+            </summary>
+            <param name="tabItem">Represents a selectable item inside</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.UpdateHeaderTemplateSelector(System.Object,Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem)">
+             <summary>
+             Update the HeaderTemplateSelector for TabItem
+             </summary>
+             <param name="item">Represents a selectable item inside</param>
+            <param name="tabItem">Represents a selectable item inside</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.PreviousTabButton_PointerMoved(System.Object,Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Invokes when the pointer moves over the previous tab button
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.PreviousTabButton_PointerExited(System.Object,Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Invokes when the pointer is exited from previous tab button
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.NextTabButton_PointerMoved(System.Object,Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Invokes when the pointer moves over the next tab button
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.ScrollSwipeTimer_Tick(System.Object,System.Object)">
+            <summary>
+            Invokes when the pointer capture lost of the control
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The object</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.SelectedContent_Loaded(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Invokes when the selected Content is loaded
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.View_ViewChanged(System.Object,Windows.UI.Xaml.Controls.ScrollViewerViewChangedEventArgs)">
+            <summary>
+            Invokes when scroll viewer view changed
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.NextTabButton_PointerExited(System.Object,Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Invokes when the pointer exited from the next tab button
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.TabStripMenu_Closed(System.Object,System.Object)">
+            <summary>
+            Invokes when tab strip menu popup is closed
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.TabStripMenu_Opened(System.Object,System.Object)">
+            <summary>
+            Invokes when the tab strip menu popup is opened
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.ScrollViewer_PointerPressed(System.Object,Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Invokes when pointer was pressed in the scroll viewer
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.ScrollViewer_ViewChanged(System.Object,Windows.UI.Xaml.Controls.ScrollViewerViewChangedEventArgs)">
+            <summary>
+            Invokes when view of the scroll viewer is changed
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.TabStripMenuList_SelectionChanged(System.Object,Windows.UI.Xaml.Controls.SelectionChangedEventArgs)">
+            <summary>
+            Invokes when the selection of the tab strip menu is changed
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.TabStripMenu_LostFocus(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Occurs when the Pointer is pressed on the screen.
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.CommonCloseButton_PointerCaptureLost(System.Object,Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Occurs when the captured pointer is lost from common close button
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.TabStripMenuButton_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Occurs when the tab strip menu button is clicked
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.TabStripMenuButton_PointerCaptureLost(System.Object,Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Occurs when the captured pointer is lost from tab strip menu button
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.TabStripMenuButton_PointerExited(System.Object,Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Occurs when the pointer is exited from tab strip menu button
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.TabStripMenuButton_PointerMoved(System.Object,Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Occurs when the pointer is moves over the tab strip menu button
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.AddContentPresenters">
+            <summary>
+            Method to add content presenter
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.PreviousTabButton_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Invokes when previous tab button is clicked
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.NextTabButton_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Invokes when the next tab button is clicked
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.CommonCloseButton_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Invokes when the common close button is clicked
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.CommonCloseButton_PointerMoved(System.Object,Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Occurs when the pointer is moves over the common close button
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.CommonCloseButton_PointerExited(System.Object,Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Occurs when the pointer is exited from the common close button
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.PreviousTabButton_PointerCaptureLost(System.Object,Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Occurs when the pointer is lost from the previous tab button
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.NextTabButton_PointerCaptureLost(System.Object,Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Occurs when the pointer is lost from the next tab button
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.SfTabControl_Unloaded(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Handles unloaded event of Tab Control
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.SfTabControl_LayoutUpdated(System.Object,System.Object)">
+            <summary>
+            Invokes when layout of the Tab control is updated
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.Content_PointerCaptureLost(System.Object,Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Occurs when the pointer over the content is lost
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.Content_PointerPressed(System.Object,Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Occurs when the pointer is pressed
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.SfTabControl_Loaded(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Handles the loaded event of the Tab Control
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.SfTabControl_SizeChanged(System.Object,Windows.UI.Xaml.SizeChangedEventArgs)">
+            <summary>
+            Handles the Size changed event of the Tab control
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.SfTabControl_IsEnabledChanged(System.Object,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Occurs when the IsEnabled property of TabControl is changed
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.SfTabControl_CollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            Invokes when the collection of the tab items are changed
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.ChangeTabStripPlacement">
+            <summary>
+            Method to create a pinned item panels when the tab strip placement is changed
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.CreatePinnedPanelItems">
+            <summary>
+            Method to add the items to the pinned tab panel
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.ShowTabStripPopupMenu(System.Double,System.Double)">
+            <summary>
+            Method to calculate the point to display the Tab strip menu popup
+            </summary>
+            <param name="left">Horizontal offset</param>
+            <param name="top">Vertical offset</param>
+            <returns>returns the point to display the tab strip menu popup</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.ListBorder_Loaded(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Invokes when the border of the tab strip menu button is loaded
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem">
+            <summary>
+            Represents a selectable item inside <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl"/>.
+            </summary>
+            <remarks>
+            <b>TabItem </b> is a <see
+            cref="N:Windows.UI.Xaml.Controls.ContentControl.">ContentControl</see>.
+            </remarks>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl"/>
+            <seealso cref="N:Syncfusion.UI.Xaml.Controls">Syncfusion.UI.Xaml.Controls
+            Namespace</seealso>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.SelectedForegroundProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SelectedForeground.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.ShowPinnableButtonProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Show Pin Button.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.CanCloseProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for CanClose.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.SelectedBackgroundProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for AccentBrush.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.IsSelectedProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for IsSelected.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.HeaderTemplateSelectorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for HeaderTemplateSelector.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.HeaderProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Header.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.HeaderTemplateProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for HeaderTemplate.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.IconPositionProperty">
+            <summary>
+             Using a DependencyProperty as the backing store for IconPosition.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.IconProperty">
+            <summary>
+             Using a DependencyProperty as the backing store for Icon.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.ShowCloseAllButThisMenuItemProperty">
+            <summary>
+             Using a DependencyProperty as the backing store for ShowCloseAllButThisMenuItem.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.CustomContextMenuItemsProperty">
+            <summary>
+            Gets or Sets the ContextMenu
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.ShowCloseAllMenuItemProperty">
+            <summary>
+             Using a DependencyProperty as the backing store for ShowCloseAllMenuItem.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.ShowCloseMenuItemProperty">
+            <summary>
+             Using a DependencyProperty as the backing store for ShowCloseMenuItem.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.customcollection">
+            <summary>
+            Field to store the context menu collections
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.isPointerPressed">
+            <summary>
+            Flag to represents whether the pointer is pressed or not
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.originalitem">
+            <summary>
+            Represents the value of original tab item
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.isinternalupdate">
+            <summary>
+             Flag to represents whether the internal item is updatable or not
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.ispointerover">
+            <summary>
+            Flag to represents whether the pointer is over the tab item
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.#ctor">
+            <summary>
+            Initializes a new instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem"/> class.
+            </summary>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem"/>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl"/>
+            <seealso cref="N:Syncfusion.UI.Xaml.Controls">Syncfusion.UI.Xaml.Controls
+            Namespace</seealso>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.CustomContextMenuItems">
+            <summary>
+            Gets the collection CustomContextMenuItems
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.ShowCloseMenuItem">
+            <summary>
+            Gets or sets a value indicating whether the Close context menu item is showable or not
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.ShowCloseAllMenuItem">
+            <summary>
+            Gets or sets a value indicating whether the Close All context menu item is showable or not
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.ShowCloseAllButThisMenuItem">
+            <summary>
+            Gets or sets a value indicating whether the Close All But this context menu item is showable or not
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.Icon">
+            <summary>
+            Gets or sets the icon in tab item
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.IconPosition">
+            <summary>
+            Gets or sets icon position left or right in tab item
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.Header">
+            <summary>
+            Gets or sets the data used as header for <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem"/>.
+            </summary>
+            <value>
+            The default is null.
+            </value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem"/>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl"/>
+            <seealso cref="N:Syncfusion.UI.Xaml.Controls">Syncfusion.UI.Xaml.Controls
+            Namespace</seealso>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.HeaderTemplate">
+            <summary>
+            Gets or sets the template for the data used as header for <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem"/>.
+            </summary>
+            <value>
+            The default is null.
+            </value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem"/>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl"/>
+            <seealso cref="N:Syncfusion.UI.Xaml.Controls">Syncfusion.UI.Xaml.Controls
+            Namespace</seealso>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.HeaderTemplateSelector">
+            <summary>
+            Gets or sets Template Selector for the data used as header for <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem"/>.
+            </summary>
+            <value>
+            The default is null.
+            </value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem"/>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl"/>
+            <seealso cref="N:Syncfusion.UI.Xaml.Controls">Syncfusion.UI.Xaml.Controls
+            Namespace</seealso>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.IsSelected">
+            <summary>
+            Gets or sets a value indicating whether this instance is selected.
+            </summary>
+            <value>
+            <c>true</c> if this instance is selected; otherwise, <c>false</c>.
+            </value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem"/>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl"/>
+            <seealso cref="N:Syncfusion.UI.Xaml.Controls">Syncfusion.UI.Xaml.Controls
+            Namespace</seealso>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.SelectedBackground">
+            <summary>
+            Gets or sets the selected background for <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem"/>.
+            </summary>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem"/>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl"/>
+            <seealso cref="N:Syncfusion.UI.Xaml.Controls">Syncfusion.UI.Xaml.Controls
+            Namespace</seealso>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.CanClose">
+            <summary>
+            Gets or sets a value indicating whether the tab item can be closed or not.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.ShowPinnableButton">
+            <summary>
+            Gets or sets a value indicating whether the tab item can be pinned or not.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.SelectedForeground">
+            <summary>
+            Gets or sets the selected foreground for <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem"/>.
+            </summary>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem"/>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl"/>
+            <seealso cref="N:Syncfusion.UI.Xaml.Controls">Syncfusion.UI.Xaml.Controls
+            Namespace</seealso>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.ParentTabControl">
+            <summary>
+            Gets or sets a value to the Parent TabControl
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.ItemScroll">
+            <summary>
+            Gets or sets a value to the content scroll viewer
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.Point">
+            <summary>
+            Gets or sets a value to the Point
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.CloseButton">
+            <summary>
+            Gets or sets a value to the Close button of the Tab Item
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.PinnableButton">
+            <summary>
+            Gets or sets a value to the Pin button of the Tab Item
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.IsInternalUpdate">
+            <summary>
+            Gets or sets a value indicating whether the internal values are updatable or not
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.IsPointerOver">
+            <summary>
+            Gets or sets a value indicating whether the Mouse pointer is over the tab item
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.PartLeftIcon">
+            <summary>
+            Gets or sets a value of the Left side Icon
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.PartRightIcon">
+            <summary>
+            Gets or sets a value of the Right side Icon
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.PartContentPresenter">
+            <summary>
+            Gets or sets a value of the Content Presenter
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.PartContextMenu">
+            <summary>
+            Gets or sets a value of the Context Menu of the Tab Item.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.PartContextMenuItems">
+            <summary>
+            Gets or sets a value of the context menu items
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.Dispose">
+            <summary>
+            Disposes the control while unloading.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.GetCustomContextMenuItems(Windows.UI.Xaml.DependencyObject)">
+            <summary>
+            Gets the CustomContextMenuItems
+            </summary>
+            <param name="obj">tab item</param>
+            <returns>collection of custom context menu items</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.SetCustomContextMenuItems(Windows.UI.Xaml.DependencyObject,System.Collections.ObjectModel.ObservableCollection{System.Object})">
+            <summary>
+            sets the CustomContextMenuItems
+            </summary>
+            <param name="obj">The source of the event</param>
+            <param name="value">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.AddItemstoMenu(Syncfusion.UI.Xaml.Controls.Navigation.TabItemContextMenu,Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem)">
+            <summary>
+            Adding items to the context menu
+            </summary>
+            <param name="customContextMenu">Context menu of the tab item</param>
+            <param name="item">corresponding tab item</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.CheckCloseButtonVisibilityOnLoad(Windows.UI.Xaml.Controls.Primitives.RepeatButton)">
+            <summary>
+            Checks the close button visibility on load.
+            </summary>
+            <param name="closeButton">The close button.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.CloseTab">
+            <summary>
+            Closing the Tab Item
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.PinTab">
+            <summary>
+            Pinning the Tab in the panel
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.Cloning(Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem)">
+            <summary>
+            Cloning the Tab Item
+            </summary>
+            <param name="newItem">variable to save the cloned item</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.OnApplyTemplate">
+            <summary>
+            Initializes the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem"/> control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.Dispose(System.Boolean)">
+            <summary>
+            Disposing unused objects
+            </summary>
+            <param name="disposing">Argument to dispose the unused object</param> 
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.OnPointerPressed(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Invoked when the pointer is pressed
+            </summary>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.OnPointerReleased(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Invoked when the pointer is released
+            </summary>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.OnContentChanged(System.Object,System.Object)">
+            <summary>
+            Defines the Selected content when the content is changed.
+            </summary>
+            <param name="oldContent">old content of the tab item</param>
+            <param name="newContent">new content of the tab item</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.OnPointerMoved(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Occurs when the pointer is over the tab items
+            </summary>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.OnPointerExited(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Occurs when the pointer leaves the tab items
+            </summary>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.ShowCloseMenuItemChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Called ShowCloseMenuItem Property changed
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.ShowCloseAllMenuItemChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Called ShowCloseAllMenuItem Property Changed
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.ShowCloseAllButThisMenuItemChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Called ShowCloseAllButThisMenuItem Property changed
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.CustomContextMenuItemsChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Called when Custom Context Menu Items changed
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.OnSelectedForegroundChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Invokes when Foreground of the selected item is changed
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="args">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.OnSelectedBackgroundChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Invokes when Background of the selected item is changed
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="args">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.OnIsSelectedChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Invokes when IsSelected property is changed
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="args">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.OnCanCloseChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Invokes when CanClose of the tab item is changed
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="args">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.OnShowPinnableButtonChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Invokes when Show pin button property of the tab item is changed
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="args">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.Sftabitem_Loaded(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Handles loaded event of the Tab Item
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.SfTabItem_RightTapped(System.Object,Windows.UI.Xaml.Input.RightTappedRoutedEventArgs)">
+            <summary>
+            Handles the right tabbed event of the tab item
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.SfTabItem_Unloaded(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Handles unloaded event of the tab item
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.SfTabItem_IsEnabledChanged(System.Object,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Invokes when the IsEnabled property of the tab item is changed
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.SfTabItem_LayoutUpdated(System.Object,System.Object)">
+            <summary>
+            Handles the layout update the tab item
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.CloseButton_PointerCaptureLost(System.Object,Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Invokes when the pointer is lost from close button
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.CloseButton_PointerEntered(System.Object,Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Invokes when the pointer is entered to the close button
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.CloseButton_PointerExited(System.Object,Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Invokes when the pointer is exited to the close button
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.PinnableButton_PointerEntered(System.Object,Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Invokes when the pointer is entered to the pin button
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.PinnableButton_PointerCaptureLost(System.Object,Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Invokes when the pointer is lost from pin button
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.CloseButton_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Occurs when the close button is clicked
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem.PinnableButton_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Occurs when the pin button is clicked
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel">
+            <summary>
+            Represents a panel for displaying the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabItem"/> elements.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.ScrollOffsetProperty">
+            <summary>
+            Represents the ScrollOffset Dependency Property
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.TabPanelScrollInfo">
+            <summary>
+            Stores the scroll information.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.prevSize">
+            <summary>
+            Previous size of the panel
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.parentItemsControl">
+            <summary>
+            Represents parent Items control
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.previouswidth">
+            <summary>
+            Represents previous width of the panel
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.previousheight">
+            <summary>
+            Represents previous height of the panel
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.updatescrollinfo">
+            <summary>
+            Flag to indicate whether the scroll info is updated or not
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.updatetabindex">
+            <summary>
+            Flag to indicate whether the index of the tab panel is updated or not
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.prevheight">
+            <summary>
+            Represents the previous height of the panel
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.ParentItemsControl">
+            <summary>
+            Gets or sets the value for Parent Items Control
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.PrevHeight">
+            <summary>
+            Gets or sets the previous value of height for the Tab panel
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.PanelWidth">
+            <summary>
+            Gets or sets the previous value of width for the Tab panel
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.UpdateTabIndex">
+            <summary>
+            Gets or sets a value indicating whether the Tab Index of the panel is updated or not.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.UpdateScrollInfo">
+            <summary>
+            Gets or sets a value indicating whether the Scroll info of the panel is updated or not.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.ScrollOffset">
+            <summary>
+            Gets or sets the scroll offset.
+            </summary>
+            <value>The scroll offset.</value>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.Dispose">
+            <summary>
+            Disposes the control while unloading.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.DisableNextPart">
+            <summary>
+            Disables Next part of navigation buttons.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.EnableNextPart">
+            <summary>
+            Enables Next part of navigation buttons.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.DisablePrevPart">
+            <summary>
+            Disables Previous part of navigation buttons.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.EnablePrevPart">
+            <summary>
+            Enables Previous part of scrolling buttons.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.GetHeaderSize(Windows.UI.Xaml.UIElement)">
+            <summary>
+            Get the individual header size
+            </summary>
+            <param name="element">Corresponding element to get the size of the header</param>
+            <returns>Individual header size</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.GetHeadersSize">
+            <summary>
+            Get the header size of each tab.
+            </summary>
+            <returns>returns an array of double value</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.GetTotalHeadersSize(System.Int32)">
+            <summary>
+            Get the Total header size in the panel
+            </summary>
+            <param name="count">count of the tab items</param>
+            <returns>Total size of the panel</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.ScrollToNextTab">
+            <summary>
+            Launch scroll into the next tab.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.ScrollToPrevTab">
+            <summary>
+            Launch scroll into the previous tab.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.ValidateScrollOffset(System.Boolean)">
+            <summary>
+            Validating the Scroll offset of the Tab panel
+            </summary>
+            <param name="horizontalplacement">value to update the offset of the panel</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.Dispose(System.Boolean)">
+            <summary>
+            Disposes the control while unloading.
+            </summary>
+            <param name="disposing">Argument to dispose the unused object</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.MeasureOverride(Windows.Foundation.Size)">
+            <summary>
+            Called to measure the available size to arrange a control.
+            </summary>
+            <param name="availableSize">Measurement constraints, a control cannot return a size larger than the constraint.</param>
+            <returns>The size of the control.</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.ArrangeOverride(Windows.Foundation.Size)">
+            <summary>
+            Called to arrange and size tabs of a TabControlExt object.
+            </summary>
+            <param name="finalSize">The computed size that is used to arrange tabs.</param>
+            <returns>The size of the control.</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.OnScrollOffsetChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Invokes when Scroll offset is changed
+            </summary>
+            <param name="d">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.GetDesiredSize(Windows.UI.Xaml.UIElement)">
+            <summary>
+            Returns desired size for specified element.
+            </summary>
+            <param name="element">Value of the element</param>
+            <returns>required size</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.GetVisualChild``1(Windows.UI.Xaml.DependencyObject)">
+            <summary>
+            Get the child of the visual parent
+            </summary>
+            <typeparam name="T">Template child</typeparam>
+            <param name="child">Visual child </param>
+            <returns>Parent of the child</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.SfTabPanel_Loaded(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Handles loaded event of TabPanel
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.SfTabPanel_LayoutUpdated(System.Object,System.Object)">
+            <summary>
+            Handles the layout update in TabPane;
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.ChangePrevPart">
+            <summary>
+            Changes the Previous part.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.UpdateIndex(Windows.Foundation.Size[],System.Int32,System.Int32,System.Double@,System.Boolean,System.Boolean,System.Boolean,System.Double)">
+            <summary>
+            Update the Index of the Tab Items
+            </summary>
+            <param name="headersSize">Size of the header</param>
+            <param name="index">Index of the item</param>
+            <param name="nextindex">Next index of the item</param>
+            <param name="trimmedsize">Trimmed size of the header</param>
+            <param name="horizontalplacement">Horizontal placement of the panel</param>
+            <param name="updateLast">field to represents whether the trimmed size is reset to zero or not</param>
+            <param name="updatenext">field to represents whether the trimmed size is to be updated or not</param>
+            <param name="offset">Offset of the panel</param>
+            <returns>value to check whether the index is updated or not</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.UpdateScrollOffset(System.Boolean,System.Double)">
+            <summary>
+            Updating scroll offset of the panel
+            </summary>
+            <param name="next">field to represents whether the trimmed size is to be updated or not</param>
+            <param name="offset">offset of the panel</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.ArrangeSingleLine(System.Double,System.Double)">
+            <summary>
+             Positions tabs in SingleLine mode.
+            </summary>
+            <param name="availiableWidth">The width of the final area within the TabControlExt that this element should use to arrange itself and its children.</param>
+            <param name="availableheight">The height of the final area within the TabControlExt that this element should use to arrange itself and its children.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.ArrangeElements(Windows.Foundation.Size)">
+            <summary>
+            Positions tabs in SingleLine mode.
+            </summary>
+            <param name="arrangeSize">The final area within the TabControlExt that this element should use to arrange itself and its children.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.MeasureElements(Windows.Foundation.Size)">
+            <summary>
+            Measure all elements.
+            </summary>
+            <param name="availableSize">Value of the availableSize</param>
+            <returns>returns a double value</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.ValidateFirstTrimmedTab(System.Double,System.Boolean)">
+            <summary>
+            Validating the size of the first tab
+            </summary>
+            <param name="totalSize">total size of the panel</param>
+            <param name="horizontalplacement">placement of the panel is horizontal or not</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.ValidateLastTrimmedTab(System.Double,System.Boolean)">
+            <summary>
+            Validating the size of the last tab
+            </summary>
+            <param name="totalSize">total size of the panel</param>
+            <param name="horizontalplacement">placement of the panel is horizontal or not</param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.ScrollInfo">
+            <summary>
+            Structure for ScrollInfo.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.ScrollInfo.NeedScrollButtonsShow">
+            <summary>
+            Stores value based on whether the Scroll button should be displayed
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.ScrollInfo.FirstTrimmedTabIndex">
+            <summary>
+            Stores the first trimmed tab index.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.ScrollInfo.LastTrimmedTabIndex">
+            <summary>
+            Stores the last trimmed tab index.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.ScrollInfo.DesiredWidth">
+            <summary>
+            Stores the desired width.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.ScrollInfo.DesiredHeight">
+            <summary>
+            Stores the desired height.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.ScrollInfo.LastTabTrimmedWidth">
+            <summary>
+            Stores the last tab trimmed width.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.ScrollInfo.FirstTabTrimmedWidth">
+            <summary>
+            Stores the first tab trimmed width.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.ScrollInfo.AllTrimmedWidth">
+            <summary>
+            Stores the AllTrimmed width.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.ScrollInfo.LastTabTrimmedHeight">
+            <summary>
+            Stores the last tab trimmed height.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.ScrollInfo.FirstTabTrimmedHeight">
+            <summary>
+            Stores the first tab trimmed height.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.ScrollInfo.AllTrimmedHeight">
+            <summary>
+            Stores the AllTrimmed height.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfTabPanel.ScrollInfo.Offset">
+            <summary>
+            Stores the offset.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Navigation.TabItemContextMenu">
+            <summary>
+            TabItemContextMenu represents the fly out for TabItem which will open on right tap
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.TabItemContextMenu.wrapper">
+            <summary>
+            Resource wrapper
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.TabItemContextMenu.closeTab">
+            <summary>
+            Field to store the value of close tab command
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.TabItemContextMenu.closeAll">
+            <summary>
+            Field to store the value of close all command
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.TabItemContextMenu.closeAllButThis">
+            <summary>
+            Field to store the value of close all but this command
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.TabItemContextMenu.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.Controls.Navigation.TabItemContextMenu" /> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.TabItemContextMenu.PartTabitem">
+            <summary>
+            Gets or sets a value of Parent Tab Item
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.TabItemContextMenu.CloseTab">
+            <summary>
+            Gets a value of Tab Item to Close
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.TabItemContextMenu.CloseAll">
+            <summary>
+            Gets a value of all Tab Items to Close
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.TabItemContextMenu.CloseAllButThis">
+            <summary>
+            Gets a value of Tab Item which is not to Close
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.TabItemContextMenu.Dispose">
+            <summary>
+            Disposes the instance of TabItemContextMenu
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.TabItemContextMenu.ShowContext(System.Object,Windows.UI.Xaml.Input.RightTappedRoutedEventArgs)">
+            <summary>
+            Displaying the context menu of the tab item
+            </summary>
+            <param name="sender">The source of the event</param>
+            <param name="e">The event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.TabItemContextMenu.CloseTabItem(System.Object)">
+            <summary>
+            Close the current tab item
+            </summary>
+            <param name="obj">corresponding tab item</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.TabItemContextMenu.CloseAllButCurrent(System.Object)">
+            <summary>
+            Close the all the tab item other than the current item
+            </summary>
+            <param name="obj">corresponding tab item</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.TabItemContextMenu.CloseAllItem(System.Object)">
+            <summary>
+            Close the all the tab item
+            </summary>
+            <param name="obj">corresponding tab item</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.TabItemContextMenu.Dispose(System.Boolean)">
+            <summary>
+            Disposing unused objects
+            </summary>
+            <param name="disposing">Argument to dispose the unused object</param> 
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Navigation.TabMenuItem">
+            <summary>
+            Represents the item of ContextMenu
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.TabMenuItem.CommandParameterProperty">
+            <summary>
+             Using a DependencyProperty as the backing store for MyProperty.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.TabMenuItem.CommandProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Command.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.TabMenuItem.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.Controls.Navigation.TabMenuItem"/> class.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.Controls.Navigation.TabMenuItem.Click">
+            <summary>
+            Perform event on TabStripMenuItem
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.TabMenuItem.Command">
+            <summary>
+            Gets or sets a value of the the command
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.TabMenuItem.CommandParameter">
+            <summary>
+            Gets or sets a value of the command parameter
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.TabMenuItem.OnPointerReleased(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Called before the <see cref="E:Windows.UI.Xaml.Controls.OnPointerReleased"/> event occurs.
+            </summary>
+            <param name="e">The data for the event.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.TabMenuItem.OnPointerEntered(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Called before the <see cref="E:Windows.UI.Xaml.Controls.OnPointerEntered"/> event occurs.
+            </summary>
+            <param name="e">The data for the event.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.TabMenuItem.OnPointerExited(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Called before the <see cref="E:Windows.UI.Xaml.Controls.OnPointerExited"/> event occurs.
+            </summary>
+            <param name="e">The data for the event.</param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Navigation.Syncfusion_SfTabControl_UWP_2017_XamlTypeInfo.XamlMetaDataProvider">
+            <summary>
+            Main class for providing metadata for the app or library
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.Syncfusion_SfTabControl_UWP_2017_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.Type)">
+            <summary>
+            GetXamlType(Type)
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.Syncfusion_SfTabControl_UWP_2017_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.String)">
+            <summary>
+            GetXamlType(String)
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.Syncfusion_SfTabControl_UWP_2017_XamlTypeInfo.XamlMetaDataProvider.GetXmlnsDefinitions">
+            <summary>
+            GetXmlnsDefinitions()
+            </summary>
+        </member>
+    </members>
+</doc>

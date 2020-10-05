@@ -1,0 +1,2967 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfShared.UWP</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.UI.Xaml.Controls.State">
+            <summary>
+            Defines the different states options that a <see
+            cref="T:Syncfusion.UI.Xaml.Controls.LoopingSelector"/> can be animated.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.State.Normal">
+            <summary>
+            Looping is in Normal state
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.State.Expanded">
+            <summary>
+            Looping is in Expanded state
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.State.Dragging">
+            <summary>
+            Looping is in Dragging state
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.State.Snapping">
+            <summary>
+            Looping is in Snapping state
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.State.Flicking">
+            <summary>
+            Looping is in Flicking state
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.SnappedEventArgs">
+            <summary>
+             Represent a class that contains <see cref="T:System.DateTime"/> object as event data 
+             which provides information about all kind of DateTime changes.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.SnappedEventArgs.DateTime">
+            <summary>
+            Gets or sets the DateTime
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.LoopingSelector">
+            <summary>
+             LoopingSelector is a <see cref="N:Windows.UI.Xaml.Controls.Control"/>, that
+            allow the user to select the items based the the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.State"/>. It is touch friendly and resembles
+            the Windows phone looping selector.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.LoopingSelector._state">
+            <summary>
+            Represents a variable for the <see cref="T:Syncfusion.UI.Xaml.Controls.State"/>
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.LoopingSelector.isBeginInvoked">
+            <summary>
+            Used to specify the StoryBoard IsBegin method is ivnoked or not.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.LoopingSelector.targetCount">
+            Increment the count until getting the Enable Item
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.LoopingSelector.isDraggingManually">
+            Specify whether or not the user is dragging Programmatically
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.LoopingSelector.#ctor">
+            <summary>
+            Initializes a new instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.LoopingSelector"/> class.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.Controls.LoopingSelector.IsExpandedChanged">
+            <summary>
+            Occurs when the <see
+            cref="P:Syncfusion.UI.Xaml.Controls.LoopingSelector.IsExpanded"/> is changed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.LoopingSelector.DataSource">
+            <summary>
+            Gets or sets the data source that the control is displaying data for.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.LoopingSelector.DataSourceProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DataSource.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.LoopingSelector.SelectedForeground">
+            <summary>
+            Gets or sets the background for <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Input.LoopingSelector"/>.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Input.LoopingSelector"/>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.LoopingSelector.SelectedForegroundProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for AccentBrush.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.LoopingSelector.ItemTemplate">
+            <summary>
+            Gets or sets the <see cref="N:Windows.UI.Xaml.Controls.DataTemplate"/> used to
+            display each item.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.LoopingSelector.ItemHeight"/>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.LoopingSelector.ItemMargin"/>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.LoopingSelector.ItemWidth"/>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.LoopingSelector.ItemTemplateProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ItemTemplate.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.LoopingSelector.ItemTemplateSelector">
+            <summary>
+            Gets or sets the Template selector for the item
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.LoopingSelector.ItemTemplateSelectorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ItemTemplateSelector.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.LoopingSelector.ItemHeight">
+            <summary>
+            Gets or sets the height of the items.
+            </summary>
+            <value>
+            The default value is zero.
+            </value>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.LoopingSelector.ItemMargin"/>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.LoopingSelector.ItemTemplate"/>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.LoopingSelector.ItemWidth"/>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.LoopingSelector.ItemHeightProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ItemHeight.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.LoopingSelector.ItemWidth">
+            <summary>
+            Gets or sets the width of the items.
+            </summary>
+            <value>
+            The default value is zero.
+            </value>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.LoopingSelector.ItemHeight"/>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.LoopingSelector.ItemMargin"/>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.LoopingSelector.ItemTemplate"/>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.LoopingSelector.ItemWidthProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ItemWidth.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.LoopingSelector.ItemMargin">
+            <summary>
+            Gets or sets margin around the items, to be a part of the touchable area.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.LoopingSelector.ItemHeight"/>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.LoopingSelector.ItemWidth"/>
+            <seealso cref="P:Syncfusion.UI.Xaml.Controls.LoopingSelector.ItemTemplate"/>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.LoopingSelector.ItemMarginProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ItemMargin.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.LoopingSelector.ItemContainerStyle">
+            <summary>
+            Gets or sets the style that is applied to the container element generated for
+            each item.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.LoopingSelector.ItemContainerStyleProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ItemContainerStyle.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.LoopingSelector.AccentBrush">
+            <summary>
+            Gets or sets the background for the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.LoopingSelector"/>.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.LoopingSelector.AccentBrushProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for AccentBrush.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.LoopingSelector.IsExpanded">
+            <summary>
+            Gets or sets a value indicating whether this instance the looping selector is
+            expanded .
+            </summary>
+            <value>
+            <see langword="true"/> if the looping selector is open; otherwise, <see
+            langword="false"/>.
+            </value>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.LoopingSelector.IsExpandedProperty">
+            <summary>
+            The IsExpanded DependencyProperty.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.LoopingSelector.UpdateItemTemplate">
+            <summary>
+            Updates the template for the item
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.LoopingSelector.OnApplyTemplate">
+            <summary>
+            Initializes all the child elements of <see
+            cref="T:Syncfusion.UI.Xaml.Controls.LoopingSelector"/> control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.LoopingSelector.Dispose">
+            <summary>
+            Disposes the control while unloading
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.LoopingSelector.Dispose(System.Boolean)">
+            <summary>
+            Disposes the control while unloading
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.LoopingSelectorItem">
+            <summary>
+             LoopingSelectorItem is a <see
+            cref="N:Windows.UI.Xaml.Controls.ContentControl"/>. It is a selectable item
+            inside the <see cref="T:Syncfusion.UI.Xaml.Controls.LoopingSelector"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.LoopingSelectorItem.AccentBrushProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for AccentBrush.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.LoopingSelectorItem.SelectedForegroundProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for AccentBrush.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.LoopingSelectorItem._state">
+            <summary>
+            Declares a variable for <see
+            cref="T:Syncfusion.UI.Xaml.Controls.LoopingSelectorItem.State"/>
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.LoopingSelectorItem.loopingSelector">
+            <summary>
+            Gets or sets the looping selector.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.LoopingSelectorItem.#ctor">
+            <summary>
+            Initializes a new instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.LoopingSelectorItem"/> class.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.Controls.LoopingSelectorItem.Click">
+            <summary>
+            The Click event. This is needed because there is no gesture for touch-down, pause
+            longer than the Hold time, and touch-up. Tap will not be raise, and Hold is not
+            adequate.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.LoopingSelectorItem.State">
+            <summary>
+            Represents an enum list for <see
+            cref="T:Syncfusion.UI.Xaml.Controls.LoopingSelectorItem.State"/>
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.LoopingSelectorItem.State.Normal">
+            <summary>
+            Not visible
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.LoopingSelectorItem.State.Expanded">
+            <summary>
+            Visible state
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.LoopingSelectorItem.State.Selected">
+            <summary>
+            Selected state
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.LoopingSelectorItem.State.Disabled">
+            <summary>
+            Disabled state
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.LoopingSelectorItem.AccentBrush">
+            <summary>
+            Gets or sets the brush that is applied as the background of the item.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.LoopingSelectorItem.SelectedForeground">
+            <summary>
+            Gets or sets the brush that is applied as the background of the item.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.LoopingSelectorItem.SetState(Syncfusion.UI.Xaml.Controls.LoopingSelectorItem.State,System.Boolean)">
+            <summary>
+            Sets the state <see
+            cref="T:Syncfusion.UI.Xaml.Controls.LoopingSelectorItem.State"/>
+            </summary>
+            <param name="newState">new state</param>
+            <param name="useTransitions">indicates need to use transitions or not</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.LoopingSelectorItem.Dispose">
+            <summary>
+            Disposes the control while unloading
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.LoopingSelectorItem.OnApplyTemplate">
+            <summary>
+            Initializes all the child elements of <see
+            cref="T:Syncfusion.UI.Xaml.Controls.LoopingSelectorItem"/> control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.LoopingSelectorItem.ClearProperties(Syncfusion.UI.Xaml.Controls.LoopingSelectorItem)">
+            <summary>
+            Method to clear the Dependency properties of LoopingSelectorItem
+            </summary>
+            <param name="item">LoopingSelectorItem</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.LoopingSelectorItem.Dispose(System.Boolean)">
+            <summary>
+            Disposes the control while unloading
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.ChildCollection">
+            <summary>
+            Represents a collection of objects that can be individually accessed by index in the <see cref="T:Syncfusion.UI.Xaml.Controls.SfNavigator"/> control.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Syncfusion.UI.Xaml.Controls.ChildCollection.#ctor" -->
+        <member name="P:Syncfusion.UI.Xaml.Controls.ChildCollection.Count">
+            <summary>
+            Gets the count of the children
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.ChildCollection.IsReadOnly">
+            <summary>
+            Gets a value IsReadOnly
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.ChildCollection.Item(System.Int32)">
+            <summary>
+            Gets or sets the children at the index position
+            </summary>
+            <param name="index">index value</param>
+            <returns>returns the children at the index position</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.ChildCollection.IndexOf(System.Object)">
+            <summary>
+            Gets the index of the item
+            </summary>
+            <param name="item">input item</param>
+            <returns>returns index of item</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.ChildCollection.Insert(System.Int32,System.Object)">
+            <summary>
+            Inserts an item in the particular index
+            </summary>
+            <param name="index">index value to insert</param>
+            <param name="item">input item</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.ChildCollection.RemoveAt(System.Int32)">
+            <summary>
+            Removes an item in the particular index
+            </summary>
+            <param name="index">index value</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.ChildCollection.Add(System.Object)">
+            <summary>
+            Add an item to children
+            </summary>
+            <param name="item">input item</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.ChildCollection.Clear">
+            <summary>
+            Clears the children
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.ChildCollection.Contains(System.Object)">
+            <summary>
+            Checks if the children contains the given item
+            </summary>
+            <param name="item">input item</param>
+            <returns>
+            <c>true</c> if it contains; otherwise, <c>false</c>
+            </returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.ChildCollection.CopyTo(System.Object[],System.Int32)">
+            <summary>
+            Copies an item to the children
+            </summary>
+            <param name="array">object array collection</param>
+            <param name="arrayIndex">index in the array</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.ChildCollection.Remove(System.Object)">
+            <summary>
+            Removes an item from the children
+            </summary>
+            <param name="item">input item</param>
+            <returns>returns boolean value whether item is removed or not</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.ChildCollection.GetEnumerator">
+            <summary>
+            Gets the children enumerator
+            </summary>
+            <returns>returns the children enumerator</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.SfNavigator">
+            <summary>
+            Represents a control that provides a user interface with navigation of records in a given application.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.SfNavigator.ActiveItemProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ActiveItem.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.SfNavigator.ActiveIndexProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ActiveIndex.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Syncfusion.UI.Xaml.Controls.SfNavigator.#ctor" -->
+        <member name="E:Syncfusion.UI.Xaml.Controls.SfNavigator.Navigated">
+            <summary>
+            Invoke event when item is navigated
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.SfNavigator.Direction">
+            <summary>
+            Represents an enum list for the direction used to navigate the records in the previous and next directions.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.SfNavigator.Direction.Next">
+            <summary>
+            Navigate to the Next item
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.SfNavigator.Direction.Previous">
+            <summary>
+            Navigate to the Previous item
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.SfNavigator.ActiveItem">
+            <summary>
+            Gets or sets the items that are active
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.SfNavigator.ActiveIndex">
+            <summary>
+            Gets or sets the index of the items that are active
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.SfNavigator.Items">
+            <summary>
+            Gets the items of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.ChildCollection"/> control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SfNavigator.Navigate(System.Object)">
+            <summary>
+            Function to navigate through items
+            </summary>
+            <param name="child">child value</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SfNavigator.UpdateTransform">
+            <summary>
+            Updates the layout for the transformation
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SfNavigator.OnActiveItemChanged(Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Invoked when the active item has changed
+            </summary>
+            <param name="args">Property Changed Event Arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SfNavigator.OnActiveIndexChanged(Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Invoked when the index of the active item has changed
+            </summary>
+            <param name="args">Property Changed Event Arguments</param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.NamespaceDoc">
+            <summary>
+            Provides classes, interfaces, and enumerators that are required to create <see cref="T:Syncfusion.UI.Xaml.Controls.SfNavigator"/> and <see cref="T:Syncfusion.UI.Xaml.Controls.SfUpDown"/> controls.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.FadeTransition">
+            <summary>
+             This Transition creates a fade effect animation that spans its duration. This
+            is done by updating the opacity variable of the node at regular interval.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.FadeTransition.DurationProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Duration.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.FadeTransition.EasingProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for EasingFunction.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.FadeTransition.Duration">
+            <summary>
+            Gets or sets the length of time for which this timeline plays, not counting
+            repetitions.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.FadeTransition.Easing">
+            <summary>
+            Gets or sets <see
+            cref="N:Windows.UI.Xaml.Media.EasingFunctionBase">EasingFunctionBase</see> that allow to
+            apply custom mathematical formulas to animations
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.RotateTransition">
+            <summary>
+             This Transition creates a rotation animation that spans its <see
+            cref="P:Syncfusion.UI.Xaml.Controls.RotateTransition.Duration"/>. This is done
+            by updating the rotate variable of the node at regular interval. The angle value
+            is specified in degrees.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.RotateTransition.EasingProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Easing.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.RotateTransition.DurationProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Duration.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.RotateTransition.Duration">
+            <summary>
+            Gets or sets the length of time for which this timeline plays, not counting
+            repetitions.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.RotateTransition.Easing">
+            <summary>
+            Gets or sets <see
+            cref="N:Windows.UI.Xaml.Media.EasingFunctionBase">EasingFunctionBase</see> that allow to
+            apply custom mathematical formulas to animations
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.SlideTransition">
+            <summary>
+             Animating the content one after another in a regular <see
+            cref="P:Syncfusion.UI.Xaml.Controls.SlideTransition.Duration"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.SlideTransition.Position">
+            <summary>
+            Defines a variable for <see
+            cref="P:Syncfusion.UI.Xaml.Controls.Position"/>
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.SlideTransition.EasingProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Easing.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.SlideTransition.DirectionProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Direction.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.SlideTransition.DurationProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Duration.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.SlideTransition.Duration">
+            <summary>
+            Gets or sets the length of time for which this timeline plays, not counting
+            repetitions.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.SlideTransition.Easing">
+            <summary>
+            Gets or sets <see
+            cref="N:Windows.UI.Xaml.Media.EasingFunctionBase">EasingFunctionBase</see> that allow to
+            apply custom mathematical formulas to animations
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.SlideTransition.Direction">
+            <summary>
+            Gets or sets direction of the slide.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SlideTransition.CreateExitAnimation(System.Double)">
+            <summary>
+            Create animation for the control while exit
+            </summary>
+            <param name="toValue">to value</param>
+            <returns>timeline to exit animation</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SlideTransition.CreateEnterAnimation(System.Double)">
+            <summary>
+            Create animation for the control while enter
+            </summary>
+            <param name="fromValue">from value</param>
+            <returns>returns timeline for animation</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.ContentTransition">
+            <summary>
+            Represents a class that apply transition style elements for the content present in the ContentControl.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Syncfusion.UI.Xaml.Controls.ContentTransition.#ctor" -->
+        <member name="T:Syncfusion.UI.Xaml.Controls.TransitionContentControl">
+            <summary>
+            TransitionContentControl is a <see
+            cref="N:Windows.UI.Xaml.Controls.ContentControl">ContentControl</see> that contains
+            the implementation for the controls that needs transitions.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.TransitionContentControl.TransitionProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Transition.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.TransitionContentControl.EnableAnimationProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for EnableAnimation.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.TransitionContentControl.#ctor">
+            <summary>
+            Initializes a new instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.TransitionContentControl"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.TransitionContentControl.Transition">
+            <summary>
+            Gets or sets the transition.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.TransitionContentControl.EnableAnimation">
+            <summary>
+            Gets or sets a value to animate while up/down click.
+            </summary>
+            <value>
+            <c>true</c> if [enable animation]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.TransitionContentControl.Dispose">
+            <summary>
+            To Dispose unused objects
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.TransitionContentControl.OnApplyTemplate">
+            <summary>
+            Initializes all the child elements of <see
+            cref="T:Syncfusion.UI.Xaml.Controls.TransitionContentControl"/> control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.TransitionContentControl.OnContentChanged(System.Object,System.Object)">
+            <summary>
+            Invoked when the content is changed
+            </summary>
+            <param name="oldContent">old content value</param>
+            <param name="newContent">new content value</param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.TransitionInverter">
+            <summary>
+            Represents a convertor that inverts the transition values by applying custom logic using <see cref="T:Windows.UI.Xaml.Data.IValueConverter"/>.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.TransitionInverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Inverts the transition
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType">target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.TransitionInverter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts back into default type
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType">target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.SpinButtonsAlignment">
+            <summary>
+            Represents an enum list for the Spin button alignment
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.SpinButtonsAlignment.Left">
+            <summary>
+            Align SpinButtons to Left
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.SpinButtonsAlignment.Right">
+            <summary>
+            Align SpinButtons to Right
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.SpinButtonsAlignment.Both">
+            <summary>
+            Align SpinButtons at both the end
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.SfUpDown">
+            <summary>
+            Represents a control that allows you enter numeric values and provides a user interface to increase or decrease numeric values
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.SfUpDown.UpCommandProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for UpCommand.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.SfUpDown.DownCommandProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DownCommand.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.SfUpDown.UpCommandParameterProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for commandParameter.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.SfUpDown.DownCommandParameterProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DownCommandParameter.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.SfUpDown.UpButtonStyleProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for UpButtonStyle.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.SfUpDown.DownButtonStyleProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DownButtonStyle.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.SfUpDown.SpinButtonsAlignmentProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SpinButtonsAlignment.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.SfUpDown.UpDownContentProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for UpDownContent.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.SfUpDown.AccentBrushProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for AccentBrush.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.SfUpDown.materialLayoutMargin">
+            <summary>
+            Specifies the marging for spin button.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.SfUpDown.IsMaterialLayout">
+            <summary>
+            Specifies whether the parent is SfTextInputLayout or not.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Syncfusion.UI.Xaml.Controls.SfUpDown.#ctor" -->
+        <member name="E:Syncfusion.UI.Xaml.Controls.SfUpDown.UpButtonClick">
+            <summary>
+            Event that is raised when UpButton is clicked.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.Controls.SfUpDown.DownButtonClick">
+            <summary>
+            Event that is raised when DownButton is clicked.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.SfUpDown.UpCommand">
+            <summary>
+            Gets or sets the command for up motion
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.SfUpDown.DownCommand">
+            <summary>
+            Gets or sets the command for down motion
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.SfUpDown.UpCommandParameter">
+            <summary>
+            Gets or sets the parameter for up command
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.SfUpDown.DownCommandParameter">
+            <summary>
+            Gets or sets the parameter for down command
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.SfUpDown.UpButtonStyle">
+            <summary>
+            Gets or sets the style for up button
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.SfUpDown.DownButtonStyle">
+            <summary>
+            Gets or sets the style for down button
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.SfUpDown.SpinButtonsAlignment">
+            <summary>
+            Gets or sets the alignment for spin buttons
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.SfUpDown.UpDownContent">
+            <summary>
+            Gets or sets the content for up button
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.SfUpDown.AccentBrush">
+            <summary>
+            Gets or sets the accent brush
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SfUpDown.OnSpinButtonsAlignmentChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Invoked when Spin buttons alignment has changed
+            </summary>
+            <param name="obj">object value</param>
+            <param name="args">property changed event arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SfUpDown.OnSpinButtonsAlignmentChanged(Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Invoked when Spin buttons alignment has changed
+            </summary>
+            <param name="args">Property Changed Event Arguments</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SfUpDown.OnApplyTemplate">
+            <summary>
+            Initializes all the child elements of <see
+            cref="T:Syncfusion.UI.Xaml.Controls.SfUpDown"/> control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SfUpDown.ChangeSpinButtonAlignment(Syncfusion.UI.Xaml.Controls.SpinButtonsAlignment)">
+            Changes the SpinButtons Alignment
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.HsvColor">
+            <summary>
+            Represents a structure of Hue-Saturation-values-alpha used to convert back and forth between the <see cref="T:Syncfusion.UI.Xaml.Controls.HsvColor"/> and RGB color values.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.HsvColor.H">
+            <summary>
+            The Hue in 0..360 range.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.HsvColor.S">
+            <summary>
+            The Saturation in 0..1 range.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.HsvColor.V">
+            <summary>
+            The Value in 0..1 range.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.HsvColor.A">
+            <summary>
+            The Alpha/opacity in 0..1 range.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Pixel">
+            <summary>
+            Represents a class used for getting pixel value from a corresponding traditional RGBA color values.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Syncfusion.UI.Xaml.Controls.Pixel.#ctor(System.Byte,System.Byte,System.Byte,System.Byte)" -->
+        <!-- Badly formed XML comment ignored for member "M:Syncfusion.UI.Xaml.Controls.Pixel.#ctor" -->
+        <member name="P:Syncfusion.UI.Xaml.Controls.Pixel.R">
+            <summary>
+            Gets or sets the R byte
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Pixel.G">
+            <summary>
+            Gets or sets the G byte
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Pixel.B">
+            <summary>
+            Gets or sets the B byte
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Pixel.A">
+            <summary>
+            Gets or sets the A byte
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Position">
+            <summary>
+            Represents an enum list for the directions that move the position of ContentControl when applying transition. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Position.Bottom">
+            <summary>
+            Bottom position
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Position.Center">
+            <summary>
+            Center position
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Position.Top">
+            <summary>
+            Top position
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Position.Left">
+            <summary>
+            Left position
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Position.Right">
+            <summary>
+            Right position
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.ColorExtension">
+            <summary>
+            Represents an extension class that provides the methods to convert the color values into different types 
+            such as <see cref="T:System.Int32"/>, <see cref="T:Syncfusion.UI.Xaml.Controls.Pixel"/> and <see cref="T:Syncfusion.UI.Xaml.Controls.HsvColor"/>.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.ColorExtension.AsInt(Windows.UI.Color)">
+            <summary>
+            Gets the color as an integer
+            </summary>
+            <param name="color">color value</param>
+            <returns>returns color as an integer</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.ColorExtension.GetPixel(Windows.UI.Color)">
+            <summary>
+            Gets pixel value from the color
+            </summary>
+            <param name="color">color value</param>
+            <returns>returns pixel value from the color</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.ColorExtension.ToHsv(Windows.UI.Color)">
+            <summary>
+            Converts the RGBA color to HSV
+            </summary>
+            <param name="rgba">color value</param>
+            <returns>returns HSV color from RGB color</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.DateTimeExtension">
+            <summary>
+            Represents an extension class that provides the methods for obtaining the first and last days of a month
+            corresponding to the provided <see cref="T:System.DateTime"/> object such as year, month, or week.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.DateTimeExtension.EachDayInMonth(System.DateTime)">
+            <summary>
+            Returns an enumerator collection of each day in the month corresponding to the provided <see cref="T:System.DateTime"/> object.
+            </summary>
+            <param name="datetime">date time value</param>
+            <returns>returns each day in the given month</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.DateTimeExtension.FirstDay(System.DateTime)">
+            <summary>
+            Calculates the first day of a month corresponding to the provided <see cref="T:System.DateTime"/> object.
+            </summary>
+            <param name="dateTime">date time value</param>
+            <returns>the first day of a month corresponding to the provided <see cref="T:System.DateTime"/> object</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.DateTimeExtension.StartOfWeek(System.DateTime,System.DayOfWeek)">
+            <summary>
+            Calculates the starting day of a week corresponding to the provided <see cref="T:System.DateTime"/> object.
+            </summary>
+            <param name="dt">date time value</param>
+            <param name="startOfWeek">starting day of week</param>
+            <returns>the starting day of a week corresponding to the provided <see cref="T:System.DateTime"/> object</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.DateTimeExtension.LastDay(System.DateTime)">
+            <summary>
+            Calculates the last day of a month corresponding to the provided <see cref="T:System.DateTime"/> object.
+            </summary>
+            <param name="dateTime">date time value</param>
+            <returns>Returns the last day the last day of a month corresponding to the provided <see cref="T:System.DateTime"/> object</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.DateTimeExtension.ToDateTime(System.Object)">
+            <summary>
+            Converts the specified object representation of date and time to its <see cref="T:System.DateTime"/> equivalent.
+            </summary>
+            <param name="dateTime">date time value</param>
+            <returns>Returns the <see cref="T:System.DateTime"/> of the given object</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Extensions.FrameworkElementExtensions">
+            <summary>
+            Represents a class for the Framework element extensions
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Extensions.FrameworkElementExtensions.CursorDisplayHandlerProperty">
+            <summary>
+            CursorDisplayHandler Attached Dependency Property
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Extensions.FrameworkElementExtensions.CursorProperty">
+            <summary>
+            Cursor Attached Dependency Property
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Extensions.FrameworkElementExtensions.GetCursorDisplayHandler(Windows.UI.Xaml.DependencyObject)">
+            <summary>
+            Gets the CursorDisplayHandler property. This dependency property
+            indicates the handler for displaying the Cursor when a mouse is moved over the control.
+            </summary>
+            <param name="d">dependency object</param>
+            <returns>returns cursor display handler</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Extensions.FrameworkElementExtensions.SetCursorDisplayHandler(Windows.UI.Xaml.DependencyObject,Syncfusion.UI.Xaml.Controls.Extensions.CursorDisplayHandler)">
+            <summary>
+            Sets the CursorDisplayHandler property. This dependency property
+            indicates the handler for displaying the Cursor when a mouse is moved over the control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Extensions.FrameworkElementExtensions.GetCursor(Windows.UI.Xaml.DependencyObject)">
+            <summary>
+            Gets the Cursor property. This dependency property
+            indicates the cursor to use when a mouse cursor is moved over the control.
+            </summary>
+            <param name="d">dependency object</param>
+            <returns>returns the cursor</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Extensions.FrameworkElementExtensions.SetCursor(Windows.UI.Xaml.DependencyObject,Windows.UI.Core.CoreCursor)">
+            <summary>
+            Sets the Cursor property. This dependency property
+            indicates the cursor to use when a mouse cursor is moved over the control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Extensions.FrameworkElementExtensions.OnCursorChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Handles changes to the Cursor property.
+            </summary>
+            <param name="d">
+            The <see cref="T:Windows.UI.Xaml.DependencyObject"/> on which
+            the property has changed value.
+            </param>
+            <param name="e">
+            Event data that is issued by any event that
+            tracks changes to the effective value of this property.
+            </param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Extensions.CursorDisplayHandler">
+            <summary>
+            Represents a class for the cursor display handler
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Extensions.CursorDisplayHandler.DefaultCursor">
+            <summary>
+            Gets the Default cursor for the <see cref="T:Windows.UI.Core.CoreCursor"/>
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Extensions.CursorDisplayHandler.Attach(Windows.UI.Xaml.FrameworkElement)">
+            <summary>
+            Gets the focus
+            </summary>
+            <param name="c">frame work element</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Extensions.CursorDisplayHandler.Detach">
+            <summary>
+            Removes the focus
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Extensions.NamespaceDoc">
+            <summary>
+            Provides the Extension classes used to access the Cursor framework element objects and make them as customizable cursors.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.GridExtension">
+            <summary>
+            Represents an extension class that provides the methods for getting the Grid <see cref="T:Windows.UI.Xaml.UIElement"/> at the given mouse pointer position.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.GridExtension.ElementAt(Windows.UI.Xaml.Controls.Grid,System.Int32,System.Int32)">
+            <summary>
+            Gets the element at the given position.
+            </summary>
+            <param name="grid">input grid</param>
+            <param name="row">row at the grid</param>
+            <param name="column">column at the grid</param>
+            <returns>returns element at the given position.</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.WriteableBitmapExtention">
+            <summary>
+            Represents an extension class that provides a method for validating saturation values.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.WriteableBitmapExtention.RenderSaturationValue(Windows.UI.Xaml.Media.Imaging.WriteableBitmap,System.Double)">
+            <summary>
+            Validate the saturation values
+            </summary>
+            <param name="target">target value</param>
+            <param name="hue">hue value</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.WriteableBitmapExtention.RenderSaturationValueAsync(Windows.UI.Xaml.Media.Imaging.WriteableBitmap,System.Double)">
+            <summary>
+            Validate the saturation values
+            </summary>
+            <param name="target"> target value as writable bitmap</param>
+            <param name="hue">hue value</param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.WriteableBitmapExtention.GetPixels(Windows.Storage.Streams.IBuffer)">
+            <summary>
+            Retrieves information of the pixel buffer
+            </summary>
+            <param name="pixelBuffer">pixel buffer</param>
+            <returns> Returns information of the pixel buffer</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Serialization.Serializer">
+            <summary>
+            Represents a class for serialization
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Serialization.Serializer.SerializeObject``1(``0,Windows.Storage.StorageFile)">
+            <summary>
+            Serializes the object
+            </summary>
+            <typeparam name="T">Method type</typeparam>
+            <param name="serializableObject">serializable object</param>
+            <param name="file">storage file</param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Serialization.Serializer.DeSerializeObject``1(Windows.Storage.StorageFile)">
+            <summary>
+            Deserializes the object
+            </summary>
+            <typeparam name="T">Method type</typeparam>
+            <param name="file">storage file</param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Serialization.NamespaceDoc">
+            <summary>
+            Provides classes that can be used for converting back and forth between object into a linear sequence of bytes from the storage files.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.ColorPickerHelper">
+            <summary>
+            Represents a helping class for the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.SfColorPicker"/> control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.ColorPickerHelper.FromHsv(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Gets the ARGB values from HSV
+            </summary>
+            <param name="hue"> hue value</param>
+            <param name="saturation">saturation value</param>
+            <param name="value">Indicates value from HSV</param>
+            <param name="alpha">alpha value</param>
+            <returns> returns color from HSV value</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.ColorPickerHelper.IntColorFromBytes(System.Byte,System.Byte,System.Byte,System.Byte)">
+            <summary>
+            Gets the color from the input bytes
+            </summary>
+            <param name="a">a value</param>
+            <param name="r">red value</param>
+            <param name="g">green value</param>
+            <param name="b">blue value</param>
+            <returns>integer value from bytes</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.ColorPickerHelper.UpdateColorValue(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Update all the color values
+            </summary>
+            <param name="hue">hue value</param>
+            <param name="x">x value</param>
+            <param name="y">y value</param>
+            <param name="ph">PH value</param>
+            <param name="pw">pw value</param>
+            <param name="invPh">Invariant PH</param>
+            <returns>returns updated color value</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.ColorPickerHelper.GetCanvasPosition(Syncfusion.UI.Xaml.Controls.HsvColor,System.Double,System.Double)">
+            <summary>
+            Gets the canvas position
+            </summary>
+            <param name="hsv">HSV color</param>
+            <param name="ph">PH value</param>
+            <param name="pw">pw value</param>
+            <returns>canvas position as point</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.ColorPickerHelper.FromHsl(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Returns the A, RGB values
+            </summary>
+            <param name="hue">hue value</param>
+            <param name="saturation">saturation value</param>
+            <param name="lightness">lightness value</param>
+            <param name="alpha">alpha value</param>
+            <returns>returns color from HSL value</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.PixelBufferInfo">
+            <summary>
+            Represents a class for to retrieve the information about pixel buffer.
+            <see cref="T:Syncfusion.UI.Xaml.Controls.PixelBufferInfo"/> holds the collection of pixel objects helps to improve the performance when rendering
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.PixelBufferInfo.Bytes">
+            <summary>
+            Declares a variable for Bytes
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.PixelBufferInfo.#ctor(Windows.Storage.Streams.IBuffer)">
+            <summary>
+            Retrieves information about the pixel buffer
+            </summary>
+            <param name="pixelBuffer">pixel buffer</param>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.PixelBufferInfo.Item(System.Int32)">
+            <summary>
+            Gets or sets the Bytes
+            </summary>
+            <param name="i">i bytes</param>
+            <returns>returns bytes</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.PixelBufferInfo.UpdateFromBytes">
+            <summary>
+            Seek and Write bytes
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Syncfusion_SfShared_UWP_2017_XamlTypeInfo.XamlMetaDataProvider">
+            <summary>
+            Main class for providing metadata for the app or library
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Syncfusion_SfShared_UWP_2017_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.Type)">
+            <summary>
+            GetXamlType(Type)
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Syncfusion_SfShared_UWP_2017_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.String)">
+            <summary>
+            GetXamlType(String)
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Syncfusion_SfShared_UWP_2017_XamlTypeInfo.XamlMetaDataProvider.GetXmlnsDefinitions">
+            <summary>
+            GetXmlnsDefinitions()
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Converters.BooleanToVisibilityConverter">
+            <summary>
+            Represents the converter that converts Boolean values to and
+            from visibility enumeration values
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.BooleanToVisibilityConverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts boolean variable to visibility
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType"> target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.BooleanToVisibilityConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts back into default type
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType">target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>returns converted value as object</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Converters.InverseBooleanToVisibilityConverter">
+            <summary>
+            Represents the converter that converts InverseBoolean values to and
+            from visibility enumeration values
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.InverseBooleanToVisibilityConverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts Boolean to visibility
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType">target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>returns converted value as object</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.InverseBooleanToVisibilityConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts back into default type
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType">target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Converters.NamespaceDoc">
+            <summary>
+            Provides classes and interfaces used to support type conversion during serialization in WPF by deriving the <see cref="T:Windows.UI.Xaml.Data.IValueConverter"/> interface.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Converters.BrushModifier">
+            <summary>
+            Represents a convertor that modifies the brush
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.BrushModifier.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Modifies the brush
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType">target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.BrushModifier.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts back into default type
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType">target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Converters.BrushToColorConverter">
+            <summary>
+            Represents a convertor that converts brush to color
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.BrushToColorConverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts brush to color
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType"> target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.BrushToColorConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts back into default type
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType"> target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Converters.ColorToBrushConverter">
+            <summary>
+            Represents a convertor that converts color to brush
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.ColorToBrushConverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts color to brush
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType"> target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.ColorToBrushConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts back into default type
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType"> target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Converters.DateTimeFormater">
+            <summary>
+            Represents a class that formats the DateTime
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.DateTimeFormater.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts the DateTime
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType"> target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.DateTimeFormater.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts back into default type
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType"> target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Converters.CalendarHeaderFormatter">
+            <summary>
+            Represents a class that formats the Calendar header
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.CalendarHeaderFormatter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Formats the DateTime as header
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType"> target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.CalendarHeaderFormatter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts back into default type
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType"> target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Converters.DoubleToThicknessConverter">
+            <summary>
+            Represents a convertor that converts Double to thickness
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.DoubleToThicknessConverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts Double to thickness
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType"> target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.DoubleToThicknessConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts back into default type
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType"> target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Converters.InvertBooleanConverter">
+            <summary>
+            Conversion of Invert boolean
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.InvertBooleanConverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Returns boolean value
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType"> target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.InvertBooleanConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts back into default type
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType"> target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Converters.Inverter">
+            <summary>
+            Inverter to convert the value
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.Inverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Inverts the value
+            </summary>
+            <param name="value">indicates value to be inverted</param>
+            <param name="targetType"> target type</param>
+            <param name="parameter">parameter value</param>
+            <param name="language">language value</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.Inverter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts back into default type
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType"> target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Converters.InvertRadialDoubleToThicknessConverter">
+            <summary>
+             Conversion of InvertRadialDouble To Thickness
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.InvertRadialDoubleToThicknessConverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts InvertRadialDouble To Thickness
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType"> target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.InvertRadialDoubleToThicknessConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts back into default type
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType"> target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Converters.NullToVisibilityConverter">
+            <summary>
+            Convertor from null to visibility
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.NullToVisibilityConverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts the object
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType"> target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.NullToVisibilityConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts the value back into the object
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType">target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Converters.EmptyStringToVisibilityConverter">
+            <summary>
+            Convertor for empty string to visibility
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.EmptyStringToVisibilityConverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts into visibility
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType"> target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.EmptyStringToVisibilityConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts the value back into the object
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType"> target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Converters.StringToVisibilityConverter">
+            <summary>
+            Convertor for String to visibility
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.StringToVisibilityConverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts to visibility
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType">target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.StringToVisibilityConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts the value back into the object
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType"> target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Converters.OrientationToAngleConverter">
+            <summary>
+            Conversion of Orientation to angle
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.OrientationToAngleConverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts Orientation to angle
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType"> target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.OrientationToAngleConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts back into default type
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType"> target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Converters.IconLeftVisibilityConverter">
+            <summary>
+            Class for LeftIcon to Visibility Converter
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.IconLeftVisibilityConverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts the value to visibility
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType"> target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.IconLeftVisibilityConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts visibility back to object
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType"> target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Converters.IconRightVisibilityConverter">
+            <summary>
+            Class for RightIcon to Visibility Converter
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.IconRightVisibilityConverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts the value to visibility
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType"> target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.IconRightVisibilityConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts visibility back to object
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType">target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Converters.PopupPositioner">
+            <summary>
+            Converts Popup position
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.PopupPositioner.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            converts into position value
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType">target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.PopupPositioner.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts back into default type
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType">target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Converters.PrecisionToVisibilityConverter">
+            <summary>
+            Conversion of precision to visibility
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.PrecisionToVisibilityConverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts precision to visibility
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType">target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.PrecisionToVisibilityConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts back into default type
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType"> target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Converters.PrecisionToVisibilityInverseConverter">
+            <summary>
+            Conversion of precision to visibility inverse
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.PrecisionToVisibilityInverseConverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts precision to visibility inverse
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType">target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.PrecisionToVisibilityInverseConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts back into default type
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType">target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Converters.RadialDoubleToThicknessConverter">
+            <summary>
+            Conversion of Radial Double to thickness
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.RadialDoubleToThicknessConverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts Radial Double to thickness
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType">target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.RadialDoubleToThicknessConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts back into default type
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType">target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Converters.RadiusToWidthConverter">
+            <summary>
+            Conversion of radius to width
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.RadiusToWidthConverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts the Radius to width
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType">target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.RadiusToWidthConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts the width back into radius
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType">target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Converters.RandomBrushConverter">
+            <summary>
+            Brush convertor
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.RandomBrushConverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts into brush
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType">target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.RandomBrushConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts the value back into the object
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType">target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Converters.RGBConverter">
+            <summary>
+            Conversion of RGB values
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.RGBConverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts into RGB Value
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType">target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.RGBConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts the value back into the object
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType">target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Converters.StringFormatConverter">
+            <summary>
+            Convertor of string format
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.StringFormatConverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts to value
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType">target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.StringFormatConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts the value back into the object
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType">target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Converters.TimeFormater">
+            <summary>
+            Format the time
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.TimeFormater.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts the object
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType">target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.TimeFormater.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts the value back into the object
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType">target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Converters.ToolTipVisibilityConverter">
+            <summary>
+            Converts the ToolTip visibility state
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.ToolTipVisibilityConverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts object into visibility
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType"> target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.ToolTipVisibilityConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts Visibility back into object
+            </summary>
+            <param name="value">input value</param>
+            <param name="targetType"> target type</param>
+            <param name="parameter">input parameter</param>
+            <param name="language">input language</param>
+            <returns>converted value as object</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Primitives.SlideDirection">
+            <summary>
+            Creates an enum list for the Slide Direction
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Primitives.SlideDirection.Up">
+            <summary>
+            Up Direction
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Primitives.SlideDirection.Down">
+            <summary>
+            Down Direction
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Primitives.SlideDirection.Left">
+            <summary>
+            Up Direction
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Primitives.SlideDirection.Right">
+            <summary>
+            Down Direction
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Primitives.SlideDirection.Default">
+            <summary>
+            Default Direction
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Primitives.Precision">
+            <summary>
+            Creates an enum list for the precision
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Primitives.Precision.Standard">
+            <summary>
+            Standard Precision
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Primitives.Precision.Half">
+            <summary>
+            Half Precision
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Primitives.Precision.Exact">
+            <summary>
+            Exact Precision
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Primitives.Clipper">
+            <summary>
+            Clips a ratio of its content.
+            </summary>
+            <QualityBand>Preview</QualityBand>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Primitives.Clipper.RatioVisibleProperty">
+            <summary>
+            Identifies the RatioVisible dependency property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.Clipper.#ctor">
+            <summary>
+            Initializes a new instance of the Clipper class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Primitives.Clipper.RatioVisible">
+            <summary>
+            Gets or sets the percentage of the item visible.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.Clipper.ClipContent">
+            <summary>
+            Updates the clip geometry.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.Clipper.OnRatioVisibleChanged(System.Double,System.Double)">
+            <summary>
+            RatioVisibleProperty property changed handler.
+            </summary>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.Clipper.OnRatioVisibleChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            RatioVisibleProperty property changed handler.
+            </summary>
+            <param name="d">PartialView that changed its RatioVisible.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Primitives.AmPmDataSource">
+            <summary>
+            Source for AMPM Data
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.AmPmDataSource.GetRelativeTo(System.DateTime,System.Int32)">
+            <summary>
+            Gets the relative DateTime
+            </summary>
+            <param name="relativeDate">relative date</param>
+            <param name="delta">delta value</param>
+            <returns>returns the relative DateTime</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Primitives.DataSource">
+            <summary>
+            Source of data
+            </summary>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.Primitives.DataSource.SelectionChanged">
+            <summary>
+            Event invoked on changing the selection
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Primitives.DataSource.SelectedItem">
+            <summary>
+            Gets or sets the item that has been selected
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.DataSource.Dispose">
+            <summary>
+            Disposes the control while unloading
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.DataSource.GetNext(System.Object)">
+            <summary>
+            Gets the next value.
+            </summary>
+            <param name="relativeTo">relative value</param>
+            <returns>next value as object for relative value</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.DataSource.GetPrevious(System.Object)">
+            <summary>
+            Gets the previous value.
+            </summary>
+            <param name="relativeTo">relative value</param>
+            <returns>previous value to relative value</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.DataSource.UpdateMinimumDateTime(System.DateTime,System.Int32,System.Int32,System.DateTime@)">
+            <summary>
+            Gets the updated minimum date time.
+            </summary>
+            <param name="relativeDate">relative date</param>
+            <param name="minuteinterval">minute interval</param>
+            <param name="secondinterval">second interval</param>
+            <param name="datetime">date time value</param>
+            <returns>returns updated minimum date time.</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.DataSource.GetDatePartCollection(System.DateTime,System.Int32,System.Int32)">
+            <summary>
+            Gets the collection of dates.
+            </summary>
+            <param name="relativeDate">relative date</param>
+            <param name="minuteinterval">minute interval</param>
+            <param name="secondinterval">second interval</param>
+            <returns>returns collection of dates.</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.DataSource.GetRelativeTo(System.DateTime,System.Int32)">
+            <summary>
+            Gets the relative DateTime value
+            </summary>
+            <param name="relativeDate">relative date</param>
+            <param name="delta">delta value</param>
+            <returns>returns the relative date</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Primitives.DayDataSource">
+            <summary>
+            Source for the day data
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.DayDataSource.GetRelativeTo(System.DateTime,System.Int32)">
+            <summary>
+            Returns the relative date
+            </summary>
+            <param name="relativeDate">relative date</param>
+            <param name="delta">delta value</param>
+            <returns>returns relative date</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Primitives.MinuteDataSource">
+            <summary>
+            Represents the minute data
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.MinuteDataSource.#ctor">
+            <summary>
+            Initializes a new MinuteDataSource
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.MinuteDataSource.#ctor(System.Int32)">
+            <summary>
+            Initializes a new MinuteDataSource
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Primitives.MinuteDataSource.Interval">
+            <summary>
+            Gets or sets a start date of date range
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.MinuteDataSource.GetRelativeTo(System.DateTime,System.Int32)">
+            <summary>
+            Compares the minute data with the next.
+            </summary>
+            <param name="relativeDate">relative date</param>
+            <param name="delta">delta value</param>
+            <returns>returns the relative date</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.MinuteDataSource.Dispose">
+            <summary>
+            Disposes the control while unloading
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Primitives.MonthDataSource">
+            <summary>
+            Represents the month data
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.MonthDataSource.GetRelativeTo(System.DateTime,System.Int32)">
+            <summary>
+            Compares the month data with the next.
+            </summary>
+            <param name="relativeDate">relative date</param>
+            <param name="delta">delta value</param>
+            <returns>returns the relative date</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Primitives.SecondDataSource">
+            <summary>
+            Represents the seconds data.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.SecondDataSource.#ctor">
+            <summary>
+            Initializes a new SecondDataSource
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.SecondDataSource.#ctor(System.Int32)">
+            <summary>
+            Initializes a new SecondDataSource
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Primitives.SecondDataSource.Interval">
+            <summary>
+            Gets or sets a Interval
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.SecondDataSource.GetRelativeTo(System.DateTime,System.Int32)">
+            <summary>
+            Compares the second data with the next.
+            </summary>
+            <param name="relativeDate">relative date</param>
+            <param name="delta">delta value</param>
+            <returns>returns the relative date</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.SecondDataSource.Dispose">
+            <summary>
+            Disposes the control while unloading
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Primitives.TwelveHourDataSource">
+            <summary>
+            Gets the twelve hour data
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.TwelveHourDataSource.GetRelativeTo(System.DateTime,System.Int32)">
+            <summary>
+            Compares the twelve hour data with the next.
+            </summary>
+            <param name="relativeDate">relative date</param>
+            <param name="delta">delta value</param>
+            <returns>returns the relative date</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.TwelveHourDataSource.Dispose">
+            <summary>
+            Disposes the control while unloading
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Primitives.TwentyFourHourDataSource">
+            <summary>
+            Represents the twenty four hour data
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.TwentyFourHourDataSource.GetRelativeTo(System.DateTime,System.Int32)">
+            <summary>
+            Compares the twenty four hour data with the next.
+            </summary>
+            <param name="relativeDate">relative date</param>
+            <param name="delta">delta value</param>
+            <returns>returns the relative date</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.TwentyFourHourDataSource.Dispose">
+            <summary>
+            Disposes the control while unloading
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Primitives.YearDataSource">
+            <summary>
+            Represents the year data
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.YearDataSource.GetRelativeTo(System.DateTime,System.Int32)">
+            <summary>
+            Compares the year data with the next.
+            </summary>
+            <param name="relativeDate">relative date</param>
+            <param name="delta">delta value</param>
+            <returns>returns the relative date</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Primitives.DateTimeWrapper">
+            <summary>
+            An ElementWrapper class that can serve as the basis for Atom Date Construct
+            based extensions.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.DateTimeWrapper.#ctor(System.DateTime)">
+            <summary>
+            Initializes a new instance of the DateTimeWrapper class.
+            </summary>
+            <param name="dateTime">DateTime to wrap.</param>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Primitives.DateTimeWrapper.IsTwentyFourHourtimeline">
+            <summary>
+            Gets or sets the IsTwentyFour Hour timeline as a boolean.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Primitives.DateTimeWrapper.DateTime">
+            <summary>
+            Gets the DateTime being wrapped.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Primitives.DateTimeWrapper.YearNumber">
+            <summary>
+            Gets the 4-digit year as a string.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Primitives.DateTimeWrapper.MonthNumber">
+            <summary>
+            Gets the 2-digit month as a string.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Primitives.DateTimeWrapper.MonthName">
+            <summary>
+            Gets the month name as a string.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Primitives.DateTimeWrapper.DayNumber">
+            <summary>
+            Gets the 2-digit day as a string.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Primitives.DateTimeWrapper.DayName">
+            <summary>
+            Gets the day name as a string.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Primitives.DateTimeWrapper.HourNumber">
+            <summary>
+            Gets the hour as a string.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Primitives.DateTimeWrapper.MinuteNumber">
+            <summary>
+            Gets the 2-digit minute as a string.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Primitives.DateTimeWrapper.SecondNumber">
+            <summary>
+            Gets the 2-digit second as a string.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Primitives.DateTimeWrapper.AmPmString">
+            <summary>
+            Gets the AM/PM designator as a string.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.DateTimeWrapper.CurrentCultureUsesTwentyFourHourClock">
+            <summary>
+            Returns a value indicating whether the current culture uses a 24-hour clock.
+            </summary>
+            <returns>True if it uses a 24-hour clock; false otherwise.</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Primitives.HeaderedContentControl">
+            <summary>
+            Represents a control with header content
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Primitives.HeaderedContentControl.HeaderTemplateSelectorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for HeaderTemplateSelector.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Primitives.HeaderedContentControl.HeaderProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Header.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Primitives.HeaderedContentControl.HeaderStyleProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for HeaderStyle.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Primitives.HeaderedContentControl.HeaderTemplateProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for HeaderTemplate.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Syncfusion.UI.Xaml.Primitives.HeaderedContentControl.#ctor" -->
+        <member name="P:Syncfusion.UI.Xaml.Primitives.HeaderedContentControl.Header">
+            <summary>
+            Gets or sets the data used as header
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Primitives.HeaderedContentControl.HeaderStyle">
+            <summary>
+            Gets or sets the style for the data used as header
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Primitives.HeaderedContentControl.HeaderTemplate">
+            <summary>
+            Gets or sets the template for the data used as header
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Primitives.HeaderedContentControl.HeaderTemplateSelector">
+            <summary>
+            Gets or sets the TemplateSelector for the data used as header
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Primitives.HeaderedItemsControl">
+            <summary>
+             Represents a control that contains multiple items and has a header.
+            </summary>
+            <seealso cref="T:Syncfusion.UI.Xaml.Primitives.HeaderedItemsControl"/>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Primitives.HeaderedItemsControl.HeaderStyleProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for HeaderStyle.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Primitives.HeaderedItemsControl.HeaderProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Header.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Primitives.HeaderedItemsControl.HeaderTemplateSelectorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for HeaderTemplateSelector.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Primitives.HeaderedItemsControl.HeaderTemplateProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for HeaderTemplate.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.HeaderedItemsControl.#ctor">
+            <summary>
+            Initializes a new instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Primitives.HeaderedItemsControl"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Primitives.HeaderedItemsControl.HeaderStyle">
+            <summary>
+            Gets or sets  the style that appearance of the <see
+            cref="P:Syncfusion.UI.Xaml.Primitives.HeaderedItemsControl.Header"/>.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Primitives.HeaderedItemsControl.HeaderTemplate"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Primitives.HeaderedItemsControl.HeaderTemplateSelector"/>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Primitives.HeaderedItemsControl.Header">
+            <summary>
+            Gets or sets the data used for the header of each control.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Primitives.HeaderedItemsControl.HeaderStyle"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Primitives.HeaderedItemsControl.HeaderTemplate"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Primitives.HeaderedItemsControl.HeaderTemplateSelector"/>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Primitives.HeaderedItemsControl.HeaderTemplate">
+            <summary>
+            Gets or sets the <see cref="N:Windows.UI.Xaml.DataTemplate">DataTemplate</see> used
+            to display the content of the control&apos;s <see
+            cref="P:Syncfusion.UI.Xaml.Primitives.HeaderedItemsControl.Header"/>.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Primitives.HeaderedItemsControl.HeaderStyle"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Primitives.HeaderedItemsControl.HeaderTemplateSelector"/>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Primitives.HeaderedItemsControl.HeaderTemplateSelector">
+            <summary>
+            Gets or sets a <see
+            cref="N:Windows.UI.Xaml.Controls.DataTemplateSelector">DataTemplateSelector</see> that provides
+            custom logic for choosing the template used to display the <see
+            cref="P:Syncfusion.UI.Xaml.Primitives.HeaderedItemsControl.Header"/>.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Primitives.HeaderedItemsControl.HeaderStyle"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Primitives.HeaderedItemsControl.HeaderTemplate"/>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.HeaderedItemsControl.PrepareHeaderedItemsControlContainer(System.Object,Windows.UI.Xaml.Controls.ItemsControl)">
+            <summary>
+            Arranges the container for overridden items
+            </summary>
+            <param name="item">current item</param>
+            <param name="parentItemsControl">parent items control</param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Primitives.HierarchicalDataTemplate">
+            <summary>
+            Represents a <see cref="T:System.Windows.DataTemplate" /> that supports
+            <see cref="T:System.Windows.Controls.HeaderedItemsControl" /> objects,
+            such as <see cref="T:System.Windows.Controls.TreeViewItem" />.
+            </summary>
+            <QualityBand>Stable</QualityBand>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Primitives.HierarchicalDataTemplate.itemContainerStyle">
+            <summary>
+            The Style to apply to the ItemContainerStyle property
+            to indicate how to style items from the next level in the data hierarchy.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Primitives.HierarchicalDataTemplate.itemTemplate">
+            <summary>
+            The DataTemplate to apply to the ItemTemplate property to indicate how to display items from the next level
+            in the data hierarchy.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.HierarchicalDataTemplate.#ctor">
+            <summary>
+            Initializes a new instance of the
+            <see cref="T:WinRTXamlToolkit.Controls.Data.HierarchicalDataTemplate"/>
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Primitives.HierarchicalDataTemplate.ItemsSource">
+            <summary>
+            Gets or sets the values for the item source
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Primitives.HierarchicalDataTemplate.ItemTemplate">
+            <summary>
+            Gets or sets the <see cref="T:System.Windows.DataTemplate" /> to
+            apply to the
+            <see cref="P:System.Windows.Controls.ItemsControl.ItemTemplate" />
+            property on a generated
+            <see cref="T:System.Windows.Controls.HeaderedItemsControl" />, such
+            as a <see cref="T:System.Windows.Controls.TreeViewItem" />, to
+            indicate how to display items from the next sublevel in the data
+            hierarchy.
+            </summary>
+            <value>
+            The <see cref="T:System.Windows.DataTemplate" /> to apply to the
+            <see cref="P:System.Windows.Controls.ItemsControl.ItemTemplate" />
+            property on a generated
+            <see cref="T:System.Windows.Controls.HeaderedItemsControl" />, such
+            as a <see cref="T:System.Windows.Controls.TreeViewItem" />, to
+            indicate how to display items from the next sublevel in the data
+            hierarchy.
+            </value>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Primitives.HierarchicalDataTemplate.Template">
+            <summary>
+            Gets or sets the value for the template
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Primitives.HierarchicalDataTemplate.ItemContainerStyle">
+            <summary>
+            Gets or sets the <see cref="T:System.Windows.Style" /> that is
+            applied to the item container for each child item.
+            </summary>
+            <value>
+            The style that is applied to the item container for each child item.
+            </value>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Primitives.HierarchicalDataTemplate.IsItemTemplateSet">
+            <summary>
+            Gets a value indicating whether the ItemTemplate property was set on
+            the template.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Primitives.HierarchicalDataTemplate.IsItemContainerStyleSet">
+            <summary>
+            Gets a value indicating whether the ItemContainerStyle property was
+            set on the template.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Primitives.ExpandDirection">
+            <summary>
+            Represents an enum list for the direction to expand.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Primitives.ExpandDirection.Down">
+            <summary>
+            Specifies that the <see cref="T:System.Windows.Controls.Expander" />
+            control opens in the down direction.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Primitives.ExpandDirection.Up">
+            <summary>
+            Specifies that the <see cref="T:System.Windows.Controls.Expander" />
+            control opens in the up direction.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Primitives.ExpandDirection.Left">
+            <summary>
+            Specifies that the <see cref="T:System.Windows.Controls.Expander" />
+            control opens in the left direction.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Primitives.ExpandDirection.Right">
+            <summary>
+            Specifies that the <see cref="T:System.Windows.Controls.Expander" />
+            control opens in the right direction.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Primitives.LinearClipper">
+            <summary>
+            Clips the content of the control in a given direction.
+            </summary>
+            <QualityBand>Preview</QualityBand>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Primitives.LinearClipper.ExpandDirectionProperty">
+            <summary>
+            Identifies the ExpandDirection dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Primitives.LinearClipper.ExpandDirection">
+            <summary>
+            Gets or sets the clipped edge.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.LinearClipper.ClipContent">
+            <summary>
+            Updates the clip geometry.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.LinearClipper.OnExpandDirectionChanged(Syncfusion.UI.Xaml.Primitives.ExpandDirection,Syncfusion.UI.Xaml.Primitives.ExpandDirection)">
+            <summary>
+            ExpandDirectionProperty property changed handler.
+            </summary>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.LinearClipper.OnExpandDirectionChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            ExpandDirectionProperty property changed handler.
+            </summary>
+            <param name="d">ExpandDirectionView that changed its ExpandDirection.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Primitives.ILoopingSelectorDataSource">
+            <summary>
+             Defines how the LoopingSelector communicates with data source.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.Primitives.ILoopingSelectorDataSource.SelectionChanged">
+            <summary>
+            Occurs when the selected item changed.
+            </summary>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Primitives.ILoopingSelectorDataSource.SelectedItem"/>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Primitives.ILoopingSelectorDataSource.SelectedItem">
+            <summary>
+            Gets or sets the current selected item.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.ILoopingSelectorDataSource.GetNext(System.Object)">
+            <summary>
+             Get the next datum, relative to an existing datum.
+            </summary>
+            <param name="relativeTo">relative value</param>
+            <returns>returns next datum, relative to an existing datum.</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.ILoopingSelectorDataSource.GetPrevious(System.Object)">
+            <summary>
+             Get the previous datum, relative to an existing datum.
+            </summary>
+            <param name="relativeTo">relative value</param>
+            <returns>returns previous datum, relative to an existing datum</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Primitives.SafeRaise.GetEventArgs`1">
+            <summary>
+            This is a method that returns event args, used for lazy creation.
+            </summary>
+            <typeparam name="T">The event type.</typeparam>
+            <returns>returns event args, used for lazy creation.</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.SafeRaise.Raise(System.EventHandler,System.Object)">
+            <summary>
+            Raises an event in a thread-safe manner, also does the null check.
+            </summary>
+            <param name="eventToRaise">The event to raise.</param>
+            <param name="sender">The event sender.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.SafeRaise.Raise(System.EventHandler{System.EventArgs},System.Object)">
+            <summary>
+            Raises an event in a thread-safe manner, also does the null check.
+            </summary>
+            <param name="eventToRaise">The event to raise.</param>
+            <param name="sender">The event sender.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.SafeRaise.Raise``1(System.EventHandler{``0},System.Object,``0)">
+            <summary>
+            Raises an event in a thread-safe manner, also does the null check.
+            </summary>
+            <typeparam name="T">The event args type.</typeparam>
+            <param name="eventToRaise">The event to raise.</param>
+            <param name="sender">The event sender.</param>
+            <param name="args">The event args.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.SafeRaise.Raise``1(System.EventHandler{``0},System.Object,Syncfusion.UI.Xaml.Primitives.SafeRaise.GetEventArgs{``0})">
+            <summary>
+            Raise an event in a thread-safe manner, with the required null check. Lazily creates event args.
+            </summary>
+            <typeparam name="T">The event args type.</typeparam>
+            <param name="eventToRaise">The event to raise.</param>
+            <param name="sender">The event sender.</param>
+            <param name="getEventArgs">The delegate to return the event args if needed.</param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Primitives.Selector">
+            <summary>
+            Represents a class for defining the selection properties.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Primitives.Selector.SelectedItemProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SelectedItem.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Primitives.Selector.SelectedIndexProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SelectedIndex.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.Primitives.Selector.SelectionChanged">
+            <summary>
+            Occurs when the selection has changed
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Primitives.Selector.SelectedIndex">
+            <summary>
+            Gets or sets the index for the selected item.
+            </summary>
+            <value>
+            The default value is -1
+            </value>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Primitives.Selector.SelectedItem">
+            <summary>
+            Gets or sets the selected item.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.Selector.OnApplyTemplate">
+            <summary>
+            Initializes the SelectedItem property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.Selector.OnSelectedItemChanged(Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Called when the Selector SelectedItem Property changed.
+            </summary>
+            <param name="args">The DependencyPropertyChangedEventArgs instance containing the event data.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.Selector.OnSelectionChanged(Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Called when the Selector SelectedItem Property changed.
+            </summary>
+            <param name="args">The DependencyPropertyChangedEventArgs instance containing the event data.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.Selector.OnSelectedIndexChanged(Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Called when the Selector SelectedIndex Property changed.
+            </summary>
+            <param name="args">The DependencyPropertyChangedEventArgs instance containing the event data.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.Selector.OnSelectedItemChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Called when the Selector SelectedItem Property changed.
+            </summary>
+            <param name="obj">The object.</param>
+            <param name="args">The DependencyPropertyChangedEventArgs instance containing the event data.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Primitives.Selector.OnSelectedIndexChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Called when the Selector SelectedIndex Property changed.
+            </summary>
+            <param name="obj">The object.</param>
+            <param name="args">The DependencyPropertyChangedEventArgs instance containing the event data.</param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Primitives.NamespaceDoc">
+            <summary>
+            Provides classes, interfaces, and enumerators that are intended to be used as all kind of 
+            selection done in the <see cref="T:Syncfusion.UI.Xaml.Controls.LoopingSelector"/> control based on the directions.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Utils.DelegateCommand">
+            <summary>
+            Represents a class for the delegate command
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Utils.DelegateCommand.canExecute">
+            <summary>
+            Can execute property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Utils.DelegateCommand.executeAction">
+            <summary>
+            Execute action property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Utils.DelegateCommand.#ctor(System.Action{System.Object},System.Predicate{System.Object})">
+            <summary>
+            Initializes a new instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Utils.DelegateCommand"/> class.
+            </summary>
+            <seealso cref="T:Syncfusion.UI.Xaml.Utils.DelegateCommand"/>
+            <seealso cref="N:Syncfusion.UI.Xaml.Utils">Syncfusion.UI.Xaml.Utils
+            Namespace</seealso>
+            <param name="executeAction">execute action</param>
+            <param name="canExecute">boolean value, indicates execute the command or not</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Utils.DelegateCommand.#ctor(System.Action{System.Object})">
+            <summary>
+            Initializes a new instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Utils.DelegateCommand"/> class.
+            </summary>
+            <seealso cref="T:Syncfusion.UI.Xaml.Utils.DelegateCommand"/>
+            <seealso cref="N:Syncfusion.UI.Xaml.Utils">Syncfusion.UI.Xaml.Utils
+            Namespace</seealso>
+            <param name="executeAction">execute action</param>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.Utils.DelegateCommand.CanExecuteChanged">
+            <summary>
+            Occurs when value of CanExecute as changed
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Utils.DelegateCommand.UpdateCanExecute">
+            <summary>
+            Invokes event if can execute
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Utils.DelegateCommand.CanExecute(System.Object)">
+            <summary>
+            Returns a value if can execute
+            </summary>
+            <param name="parameter">The parameter to execute.</param>
+            <returns>Returns a value whether to execute or not</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Utils.DelegateCommand.Execute(System.Object)">
+            <summary>
+            Executes the parameter command
+            </summary>
+            <param name="parameter">parameter to execute</param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Utils.NamespaceDoc">
+            <summary>
+            Provides the Commands class, which inherits the <see cref="T:System.Windows.Input.ICommand"/> interface 
+            to simplify programming by providing a ready-made solution for common operations.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper">
+            <summary>
+            Class that implements a workaround for a UWP XAML parser
+            limitation that prevents the following syntax from working:
+               &lt;Setter Property="IsSelected" Value="{Binding IsSelected}"/&gt;.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper.PropertyBindingProperty">
+            <summary>
+            PropertyBinding attached DependencyProperty.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper.dependencyPropertyName">
+            <summary>
+            Gets or sets a dependency property name for the normal/attached
+            DependencyProperty on which to remove the Binding.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper.values">
+            <summary>
+            Backing store for the Values property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper.Type">
+            <summary>
+            Gets or sets an optional type parameter used to specify the type
+            of an attached DependencyProperty as an assembly-qualified name,
+            full name, or short name.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper.Property">
+            <summary>
+            Gets or sets a property name for the normal/attached
+            DependencyProperty on which to set the Binding.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper.Binding">
+            <summary>
+            Gets or sets a Binding to set on the specified property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper.Values">
+            <summary>
+            Gets a Collection of SetterValueBindingHelper instances to apply
+            to the target element.
+            </summary>
+            <remarks>
+            Used when multiple Bindings need to be applied to the same element.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper.GetPropertyBinding(Windows.UI.Xaml.FrameworkElement)">
+            <summary>
+            Gets the value of the PropertyBinding attached DependencyProperty.
+            </summary>
+            <param name="element">Element for which to get the property.</param>
+            <returns>Value of PropertyBinding attached DependencyProperty.</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper.SetPropertyBinding(Windows.UI.Xaml.FrameworkElement,Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper)">
+            <summary>
+            Sets the value of the PropertyBinding attached DependencyProperty.
+            </summary>
+            <param name="element">Element on which to set the property.</param>
+            <param name="value">Value forPropertyBinding attached DependencyProperty.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper.OnPropertyBindingPropertyChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Change handler for the PropertyBinding attached DependencyProperty.
+            </summary>
+            <param name="d">Object on which the property was changed.</param>
+            <param name="e">Property change arguments.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper.AssembliesToSearch(Windows.UI.Xaml.UIElement)">
+            <summary>
+             Gets a stream of assemblies to search for the provided type name.
+            </summary>
+            <param name="uiElement">UI element</param>
+            <returns>returns stream of assemblies to search for the provided type name</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper.ApplyBinding(Windows.UI.Xaml.FrameworkElement,Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper)">
+            <summary>
+            Applies the Binding represented by the SetterValueBindingHelper.
+            </summary>
+            <param name="element">Element to apply the Binding to.</param>
+            <param name="item">SetterValueBindingHelper representing the Binding.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper.RemoveBinding(Windows.UI.Xaml.FrameworkElement,Syncfusion.UI.Xaml.Utils.SetterValueBindingHelper)">
+            <summary>
+            Removes the Binding represented by the SetterValueBindingHelper.
+            </summary>
+            <param name="element">Element to remove the Binding to.</param>
+            <param name="item">SetterValueBindingHelper representing the Binding.</param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Utils.VisualUtils">
+            <summary>
+            Represents a class for the visual utils
+            </summary>
+        </member>
+        <member name="T:ClassReferenceAttribute">
+            <summary>
+            Represents a class for the reference attributes
+            </summary>
+        </member>
+        <member name="P:ClassReferenceAttribute.IsReviewed">
+            <summary>
+            Gets a value IsReviewed
+            </summary>
+            <value>
+            <c>true</c> if instance is created ; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:ClassReferenceAttribute.ShouldInclude">
+            <summary>
+            Gets or sets a value ShouldInclude
+            </summary>
+            <value>
+            <c>true</c> if instance is created ; otherwise, <c>false</c>.
+            </value>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,541 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfGroupBar.UWP</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.UI.Xaml.Converters.ObjectToVisibilityConverter">
+            <summary>
+             Represents a class to convert Object to Visibility.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.ObjectToVisibilityConverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts Object to Visibility
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.ObjectToVisibilityConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts Visibility to Object.
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Converters.PopupPlacementToHorizontalAlignmentConverter">
+            <summary>
+             Represents a class to convert PopupPlacement to HorizontalAlignment.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.PopupPlacementToHorizontalAlignmentConverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts PopupPlacement to HorizontalAlignment
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.PopupPlacementToHorizontalAlignmentConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts HorizontalAlignment to PopupPlacement.
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Converters.WidthToOffsetConverter">
+            <summary>
+             Represents a class to convert Width to Offset.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.WidthToOffsetConverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts Width to Offset.
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Converters.WidthToOffsetConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converts Offset to Width.
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Navigation.ContentPopupAnimationTypes">
+            <summary>
+             Specifies the animation types for the popup in GroupBar.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.ContentPopupAnimationTypes.None">
+            <summary>
+            No animation is performed for popup in GroupBar.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.ContentPopupAnimationTypes.Fade">
+            <summary>
+            Fade animation is performed for popup in GroupBar.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.ContentPopupAnimationTypes.Scale">
+            <summary>
+            Scale animation is performed for popup in GroupBar.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.ContentPopupAnimationTypes.Slide">
+            <summary>
+            Slide animation is performed for popup in GroupBar.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Navigation.PopupSizeModes">
+            <summary>
+             Specifies the size modes for the popup in GroupBar.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.PopupSizeModes.DefaultSize">
+            <summary>
+            Default size is applied for popup in GroupBar.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.PopupSizeModes.FullSize">
+            <summary>
+            Full size is applied for popup in GroupBar.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.PopupSizeModes.CustomSize">
+            <summary>
+            Custom size is applied for popup in GroupBar.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Navigation.PopupPlacement">
+            <summary>
+             Specifies the popup placement in GroupBar.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.PopupPlacement.Left">
+            <summary>
+            Left placement for popup in GroupBar.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.PopupPlacement.Right">
+            <summary>
+            Right placement for popup in GroupBar.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Navigation.DragDirection">
+            <summary>
+            Specifies drag directions.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.DragDirection.Up">
+            <summary>
+            Up drag direction.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.DragDirection.Down">
+            <summary>
+            Down drag direction.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.DragDirection.None">
+            <summary>
+            There is no drag direction.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar">
+            <summary>
+            <see cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar"/> control 
+            allows to arrange controls in a manner similar to Outlook bar.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar.#ctor">
+            <summary>
+            Initializes the new instance of
+            <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar.ContentTemplate">
+            <summary>
+            Gets or sets the data used to display the content of the selected <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBarItem"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar.ContentTemplateProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ContentTemplate.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar.ContentTemplateSelector">
+            <summary>
+            Gets or sets the Template Selector for the data used to display the content of the selected <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBarItem"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar.ContentTemplateSelectorProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ContentTemplateSelector.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar.SelectedContent">
+            <summary>
+            Gets or sets the SelectedContent.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar.SelectedContentProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SelectedContent.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar.DefaultTemplate">
+            <summary>
+            Gets or sets the DefaultTemplate.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar.DefaultTemplateProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DefaultTemplate.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar.CollapsedTemplate">
+            <summary>
+            Gets or sets the CollapsedTemplate.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar.CollapsedTemplateProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for CollapsedTemplate.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar.CollapsedWidth">
+            <summary>
+            Gets or sets the CollapsedWidth.
+            </summary>
+            <value>
+            The default value is 45.0.
+            </value>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar.CollapsedWidthProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for CollapsedWidth.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar.PopupPlacementPosition">
+            <summary>
+            Gets or sets the PopupPlacementPosition.
+            </summary>
+            <value>
+            The default value is PopupPlacement.Right.
+            </value>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar.PopupPlacementPositionProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for PopupPlacementPosition.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar.PopupWidth">
+            <summary>
+            Gets or sets the PopupWidth.
+            </summary>
+            <value>
+            The default value is 300.
+            </value>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar.PopupWidthProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for PopupWidth.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar.PopupHeight">
+            <summary>
+            Gets or sets the PopupHeight.
+            </summary>
+            <value>
+            The default value is 300.
+            </value>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar.PopupHeightProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for PopupHeight.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar.PopupAnimation">
+            <summary>
+            Gets or sets the PopupAnimation.
+            </summary>
+            <value>
+            The default value is ContentPopupAnimationTypes.None.
+            </value>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar.PopupAnimationProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for PopupAnimation.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar.AnimationSpeed">
+            <summary>
+            Gets or sets the AnimationSpeed.
+            </summary>
+            <value>
+            The default value is 300.
+            </value>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar.AnimationSpeedProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for AnimationSpeed.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar.IsCollapsed">
+            <summary>
+            Gets or sets the IsCollapsed.
+            </summary>
+            <value>
+            The default value is false.
+            </value>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar.IsCollapsedProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for IsCollapsed.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar.PopupSizeMode">
+            <summary>
+            Gets or sets the PopupSizeMode.
+            </summary>
+            <value>
+            The default value is PopupSizeMode.DefaultSize.
+            </value>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar.PopupSizeModeProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for PopupSizeMode.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar.OnApplyTemplate">
+            <summary>
+            Initializes all the child elements of <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar"/> control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar.PrepareContainerForItemOverride(Windows.UI.Xaml.DependencyObject,System.Object)">
+            <summary>
+            Arranges the container for overrided items
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar.GetContainerForItemOverride">
+             <summary>
+            Creates or identifies the element that is used to display the given item
+             </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar.IsItemItsOwnContainerOverride(System.Object)">
+             <summary>
+            Determines if the specified item is (or is eligible to be) its own container
+             </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar.IsCtrlKeyPressed">
+            <summary>
+            Used to find the Control key pressed or not
+            </summary>
+            <returns>If control key pressed returns True or else False</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar.IsShiftKeyPressed">
+            <summary>
+            Used to find the Alt key pressed or not
+            </summary>
+            <returns>If Shift key pressed returns True or else False</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar.OnKeyDown(Windows.UI.Xaml.Input.KeyRoutedEventArgs)">
+            <summary>
+            Invoked when Key(s) down 
+            </summary>
+            <param name="e">Key Routed Event Args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar.Dispose">
+            <summary>
+            To clear unused objects
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar.Dispose(System.Boolean)">
+            <summary>
+            To remove all the instance which is used in SfAccordion
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar.Collapsed">
+            <summary>
+            Collasped event fires when GroupBar moves to collapsed mode.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar.Expanded">
+            <summary>
+            Expanded event fires when GroupBar moves to expanded mode.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBarItem">
+            <summary>
+            Implements a selectable item inside a <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBarItem"/>
+            </summary>
+            <remarks>
+            The SfGroupBarItem is a <see cref="T:Syncfusion.UI.Xaml.Primitives.HeaderedContentControl"/>.
+            </remarks>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupPanel"/>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBarItem.#ctor">
+            <summary>
+            Initializes a new instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBarItem"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBarItem.IsSelected">
+            <summary>
+            Gets or sets the IsSelected.
+            </summary>
+            <value>
+            The default value is false.
+            </value>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBarItem.IsSelectedProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for IsSelected.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBarItem.ImagePath">
+            <summary>
+            Gets or sets the ImagePath.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBarItem.ImagePathProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ImagePath.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBarItem.DefaultTemplate">
+            <summary>
+            Gets or sets the DefaultTemplate.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBarItem.DefaultTemplateProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DefaultTemplate.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBarItem.CollapsedTemplate">
+            <summary>
+            Gets or sets the CollapsedTemplate.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBarItem.CollapsedTemplateProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for CollapsedTemplate.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBarItem.OnApplyTemplate">
+            <summary>
+            Initializes all the child elements of <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBarItem"/> control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBarItem.OnPointerEntered(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Occurs when the pointer enters GroupBarItem
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBarItem.OnPointerExited(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Occurs when the pointer exits GroupBarItem.
+            <param name="e"></param>
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBarItem.OnPointerReleased(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Occurs when the pointer is released from GroupBarItem
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBarItem.Dispose">
+            <summary>
+            To clear unused objects
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBarItem.Dispose(System.Boolean)">
+            <summary>
+            To remove all the instance which is used in SfAccordion
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupPanel">
+            <summary>
+            Used to group and arrange the collections of <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBarItem"/>
+            </summary>
+            <remarks>
+            SfGroupPanel is a <see cref="N:Windows.UI.Xaml.Controls.StackPanel"/>.
+            </remarks>
+            <seealso cref="T:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupBar"/>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.SfGroupPanel.ArrangeOverride(Windows.Foundation.Size)">
+            <summary>
+            Sets the size for the arranging behaviour
+            </summary>
+            <param name="finalSize"></param>
+            <returns> The size </returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Navigation.Syncfusion_SfGroupBar_UWP_2017_XamlTypeInfo.XamlMetaDataProvider">
+            <summary>
+            Main class for providing metadata for the app or library
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.Syncfusion_SfGroupBar_UWP_2017_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.Type)">
+            <summary>
+            GetXamlType(Type)
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.Syncfusion_SfGroupBar_UWP_2017_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.String)">
+            <summary>
+            GetXamlType(String)
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Navigation.Syncfusion_SfGroupBar_UWP_2017_XamlTypeInfo.XamlMetaDataProvider.GetXmlnsDefinitions">
+            <summary>
+            GetXmlnsDefinitions()
+            </summary>
+        </member>
+    </members>
+</doc>

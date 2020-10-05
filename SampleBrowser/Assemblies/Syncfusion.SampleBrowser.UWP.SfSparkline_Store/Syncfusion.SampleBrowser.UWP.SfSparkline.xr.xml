@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Roots >
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="ViewModel" />
+    <RootPropertyPathName Name="OneYearPerformance" />
+    <RootPropertyPathName Name="DayActivity" />
+    <RootPropertyPathName Name="Transaction" />
+    <RootPropertyPathName Name="Value" />
+  </Roots.PropertyPathNames>
+  <Roots.RootTypes>
+    <RootType FullName="Windows.UI.Xaml.Application">
+      <RootProperty Name="RequestedTheme" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Page">
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="Background" />
+      <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="DataContext" />
+      <RootProperty Name="ColumnDefinitions" />
+      <RootProperty Name="Margin" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
+      <RootMethod Name="GetColumn" />
+      <RootMethod Name="SetColumn" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfSparkline.MainPage" />
+    <RootType FullName="Common.SampleLayout">
+      <RootProperty Name="Content" />
+      <RootProperty Name="Sample" />
+      <RootProperty Name="Setting" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ContentControl">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="HorizontalContentAlignment" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Charts.SfLineSparkline">
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="HorizontalContentAlignment" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="YBindingPath" />
+      <RootProperty Name="RangeBandBrush" />
+      <RootProperty Name="EnableAnimation" />
+      <RootProperty Name="MarkerVisibility" />
+      <RootProperty Name="BandRangeEnd" />
+      <RootProperty Name="BandRangeStart" />
+      <RootProperty Name="StrokeThickness" />
+      <RootProperty Name="MarkerTemplateSelector" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Inlines" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Charts.SfAreaSparkline">
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="HorizontalContentAlignment" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="YBindingPath" />
+      <RootProperty Name="RangeBandBrush" />
+      <RootProperty Name="MarkerVisibility" />
+      <RootProperty Name="EnableAnimation" />
+      <RootProperty Name="BandRangeEnd" />
+      <RootProperty Name="BandRangeStart" />
+      <RootProperty Name="StrokeThickness" />
+      <RootProperty Name="MarkerTemplateSelector" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Charts.SfColumnSparkline">
+      <RootProperty Name="RangeBandBrush" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="HorizontalContentAlignment" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="YBindingPath" />
+      <RootProperty Name="EnableAnimation" />
+      <RootProperty Name="BandRangeStart" />
+      <RootProperty Name="StrokeThickness" />
+      <RootProperty Name="BandRangeEnd" />
+      <RootProperty Name="SegmentTemplateSelector" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Charts.SfWinLossSparkline">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="HorizontalContentAlignment" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="YBindingPath" />
+      <RootProperty Name="EnableAnimation" />
+      <RootProperty Name="RangeBandBrush" />
+      <RootProperty Name="NegativePointBrush" />
+      <RootProperty Name="NeutralBrush" />
+      <RootProperty Name="BandRangeEnd" />
+      <RootProperty Name="BandRangeStart" />
+      <RootProperty Name="StrokeThickness" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="ElementName" />
+      <RootProperty Name="Path" />
+      <RootProperty Name="Mode" />
+    </RootType>
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfSparkline.SparklineDemo" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfSparkline.SparkViewModel" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Border">
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Child" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Charts.MarkerTemplateSelector">
+      <RootProperty Name="FirstPointBrush" />
+      <RootProperty Name="LastPointBrush" />
+      <RootProperty Name="LowPointBrush" />
+      <RootProperty Name="HighPointBrush" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Charts.SegmentTemplateSelector">
+      <RootProperty Name="FirstPointBrush" />
+      <RootProperty Name="LastPointBrush" />
+      <RootProperty Name="LowPointBrush" />
+      <RootProperty Name="HighPointBrush" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Slider">
+      <RootProperty Name="Minimum" />
+      <RootProperty Name="Maximum" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Value" />
+    </RootType>
+  </Roots.RootTypes>
+</Roots>

@@ -1,0 +1,586 @@
+<UserControl
+    x:Class="DiagramBuilder.View.PropertyEditor"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DiagramBuilder.View"
+    xmlns:vm="using:DiagramBuilder.ViewModel"
+    xmlns:util="using:DiagramBuilder.Utility"
+    xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    x:Name="propertyEditor"
+    xmlns:color="using:Syncfusion.UI.Xaml.Controls.Media"
+    d:DesignWidth="400">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+            <ResourceDictionary Source="ms-appx:///Common/StandardStyles.xaml" />
+            <ResourceDictionary Source="ms-appx:///Showcase/DiagramBuilder/Theme/DiagramBuilderUI.xaml"/>
+        </ResourceDictionary.MergedDictionaries>
+        <util:Inverter x:Name="Inverter"/>
+        
+        <Style x:Name="CommonTextBlockStyle"  TargetType="TextBlock">
+            <Setter Property="FontSize" Value="24"></Setter>
+            <Setter Property="Foreground" Value="#FF45A8A8"></Setter>
+            <Setter Property="Margin" Value="25,25,0,10"></Setter>
+        </Style>
+            <Style TargetType="TextBlock">
+                <Setter Property="Width" Value="75"></Setter>
+                <Setter Property="FontSize" Value="14"></Setter>
+                <Setter Property="Foreground" Value="#333333"></Setter>
+                <Setter Property="HorizontalAlignment" Value="Left"></Setter>
+                <Setter Property="VerticalAlignment" Value="Center"></Setter>
+                <Setter Property="Margin" Value="25,10,0,5"></Setter>
+            </Style>
+
+
+            <Style TargetType="TextBox">
+            <Setter Property="Width" Value="150"></Setter>
+            <Setter Property="FontSize" Value="14"></Setter>
+            <Setter Property="Foreground" Value="#333333"></Setter>
+            <Setter Property="HorizontalAlignment" Value="Left"></Setter>
+            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+            <Setter Property="Margin" Value="15,10,0,5"></Setter>
+            <Setter Property="BorderThickness" Value="1"></Setter>
+        </Style>
+        
+        <Style TargetType="ComboBox">
+            <Setter Property="Width" Value="150"></Setter>
+            <Setter Property="FontSize" Value="14"></Setter>
+            <Setter Property="Foreground" Value="#333333"></Setter>
+            <Setter Property="HorizontalAlignment" Value="Left"></Setter>
+            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+            <Setter Property="Margin" Value="15,10,0,5"></Setter>
+            <Setter Property="BorderThickness" Value="1"></Setter>
+        </Style>
+
+        <Style TargetType="Slider">
+            <Setter Property="Width" Value="150"></Setter>
+            <Setter Property="Height" Value="35"></Setter>
+            <Setter Property="HorizontalAlignment" Value="Stretch"></Setter>
+            <Setter Property="VerticalAlignment" Value="Stretch"></Setter>
+            <Setter Property="Margin" Value="15,5,0,5"></Setter>
+            <Setter Property="Foreground" Value="Orange"></Setter>
+        </Style>
+
+        <Style TargetType="Button">
+            <Setter Property="Width" Value="150"></Setter>
+            <Setter Property="Height" Value="35"></Setter>
+            <Setter Property="HorizontalAlignment" Value="Left"></Setter>
+            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+            <Setter Property="Margin" Value="15,5,0,5"></Setter>            
+        </Style>
+
+        <Style TargetType="input:SfNumericTextBox">
+            <Setter Property="Width" Value="150"></Setter>
+            <Setter Property="Height" Value="35"></Setter>
+            <Setter Property="HorizontalAlignment" Value="Left"></Setter>
+            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+            <Setter Property="Margin" Value="15,5,0,5"></Setter>
+        </Style>
+
+
+        <Style TargetType="ToggleButton" BasedOn="{StaticResource PropertyEditorToggleButtonAppBarStyle}" x:Key="ToggleButtonCommonStyle">
+            <Setter Property="Margin" Value="25,5,5,5"></Setter>
+            <Setter Property="Width" Value="60"></Setter>
+            <Setter Property="Height" Value="60"></Setter>
+        </Style>
+
+        <Style TargetType="Button" BasedOn="{StaticResource BackButtonPathBasedAppBarButtonStyle}" x:Key="ButtonStyle">
+            <Setter Property="Foreground" Value="#FF4E4E4E"></Setter>
+            <Setter Property="Padding" Value="5"></Setter>
+        </Style>
+       </ResourceDictionary>
+    </UserControl.Resources>
+      <Grid>
+        <ScrollViewer ScrollViewer.ZoomMode="Disabled" HorizontalScrollMode="Disabled" Visibility="{Binding SelectedDiagram.SelectedItems.IsBrushEditing, Converter={StaticResource Inverter}}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid Visibility="{Binding ElementName=propertyEditor, Path=PropertyEditing}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Foreground="#FF45A8A8" FontSize="24" Grid.ColumnSpan="2" Text="State"/>
+                    <StackPanel  Grid.Row="1" Orientation="Horizontal" >
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                        <ToggleButton Grid.Column="0"  Style="{StaticResource ToggleButtonCommonStyle}" Tag="Invisible"
+                                   IsEnabled="{Binding SelectedDiagram.SelectedItems.IsAnythingSelected}"
+                                   IsChecked="{Binding SelectedDiagram.SelectedItems.Visibile, Mode=TwoWay}"  
+                                   Content="M20.252024,9.8469551 C20.760028,10.618954 21.073029,11.501954 21.073029,12.457953 21.073029,15.381951 18.353015,17.752949 15.000995,17.752949 14.498993,17.752949 14.01899,17.685949 13.552988,17.584949 z M22.280984,7.4999855 C26.884988,9.911988 30.000991,13.685992 30.000991,13.685992 30.000991,13.685992 23.284985,21.834001 15.000978,21.834001 13.443977,21.834001 11.942976,21.545002 10.528975,21.078001 L12.652976,18.624998 C13.420976,18.793998 14.199978,18.916998 15.000978,18.916998 19.563981,18.916998 23.723984,15.800995 26.019986,13.685992 24.668986,12.441991 22.661984,10.86899 20.317982,9.7699878 z M14.999979,5.5379489 C15.726978,5.5379489 16.437978,5.6199491 17.136976,5.7339494 L9.458987,14.603968 C9.1239874,13.945967 8.9279878,13.222966 8.9279878,12.457964 8.9279878,11.435962 9.2769873,10.49096 9.8499863,9.681958 7.4319899,10.78396 5.3649926,12.411964 3.9809946,13.685967 4.9439931,14.574969 6.2489915,15.627971 7.7619894,16.564974 L5.8519924,18.770979 C2.2979969,16.460974 0,13.685967 0,13.685967 0,13.685967 6.7159908,5.5379489 14.999979,5.5379489 z M24.085002,0 L25.629985,1.3380109 4.2759686,26.009001 2.7309853,24.671966 z" />
+                            <ToggleButton Margin="5,10,5,5" Grid.Column="1" Tag="Drag" Style="{StaticResource ToggleButtonCommonStyle}" 
+                                   IsChecked="{Binding SelectedDiagram.SelectedItems.AllowDrag, Mode=TwoWay}" 
+                                   IsEnabled="{Binding SelectedDiagram.SelectedItems.IsNodeSelected}"
+                                   Content="M8.5897367,4.7663207 C8.6122224,4.7671197 8.6331394,4.7694659 8.6522009,4.7732767 8.9601767,4.8332732 10.046147,4.7932959 10.085147,6.1262794 10.126162,7.4612772 10.149172,15.348096 10.149172,15.348096 10.149172,15.348096 10.010137,16.157103 10.939129,15.663093 10.939129,15.663093 10.846114,11.729144 11.282138,11.452171 11.716148,11.177152 12.650084,11.280178 12.8861,11.558187 13.12407,11.834184 13.282087,11.827165 13.282087,15.796087 13.282087,15.796087 13.897061,16.364069&#xd;&#xa;14.183064,15.690071 14.440076,15.085101 14.080039,12.842161 14.625069,12.58417 15.071041,12.373175 16.360986,12.373175 16.454001,13.40111 16.558979,14.601101 16.216031,17.112042 16.888011,16.954086 16.888011,16.954086 17.361998,17.09306 17.401975,16.362055 17.439999,15.632088 17.612968,14.283114 18.204931,14.163121 18.796957,14.048132 19.5329,14.310152 19.569887,15.292128 19.610901,16.280087 20.039908,22.116956 18.412935,26.242918 16.937997,29.97985&#xd;&#xa;17.255006,29.664854 15.857032,29.90081 14.574044,30.121814 12.647093,29.90081 12.647093,29.90081 12.647093,29.90081 8.3951886,30.532817 7.4082148,27.295877 6.4222782,24.05796 5.1182959,19.399048 3.4603186,18.451067 1.8013651,17.503087 2.0073534,17.231058 2.0273722,16.743091 2.0493445,16.260067 3.5983157,14.799096 6.1442702,16.931076 6.1442702,16.931076 7.6262267,18.847057 7.6262267,19.894035 7.6262267,19.894035 7.4322007,6.7712872 7.4882295,6.0532827&#xd;&#xa;7.5622709,5.0904516 8.2524536,4.754334 8.5897367,4.7663207 z M7.3320639,0.00040817261 C7.4140613,-0.0015921593 7.4970591,0.0044078827 7.579057,0.0044078827 7.7490528,0.0054078102 7.9190481,0.0064077377 8.0880435,0.018407345 8.101043,0.0204072 8.1120427,0.019407272 8.1260426,0.0204072 8.2050402,0.026407242 8.2810385,0.042407036 8.3610361,0.050406456 8.516032,0.067406178 8.670028,0.084405422 8.823024,0.11040497 8.9430206,0.13040447 9.0580175,0.1594038 9.1750147,0.1864028 9.2960112,0.21240234 9.4170082,0.23740149 9.5370047,0.27040052 9.6650016,0.30539942 9.7889984,0.34839821&#xd;&#xa;9.914995,0.38939714 10.021992,0.42439651 10.127989,0.45839548 10.232987,0.49839401 10.355983,0.54539299 10.47598,0.59939146 10.595977,0.65338993 10.700974,0.6993885 10.806971,0.74538755 10.907969,0.79538608 11.019965,0.85038447 11.125962,0.91238284 11.23296,0.97238111 11.340957,1.0343795 11.448954,1.0933778 11.555951,1.1603761 11.650949,1.2193744 11.741946,1.2863724 11.834944,1.3503706 11.944941,1.4263687 12.054938,1.5023665 12.160935,1.5843642 12.245933,1.6513624&#xd;&#xa;12.325931,1.7223606 12.408928,1.7923584 12.513926,1.881356 12.616923,1.9683537 12.717921,2.0633512 12.801918,2.1433489 12.880916,2.2283466 12.960914,2.3113441 13.049911,2.4043417 13.140908,2.4953392 13.225907,2.5923364 13.316904,2.6983335 13.399902,2.8083305 13.4849,2.9183275 13.542898,2.9933255 13.604897,3.0613236 13.659895,3.1383214 13.668895,3.1503211 13.675895,3.1633208 13.684894,3.1753204 13.785892,3.3193165 13.877889,3.4693123 13.969887,3.6203082&#xd;&#xa;13.989887,3.6553072 14.014885,3.6883063 14.034885,3.7233052 14.788865,5.0072699 15.175855,6.5252281 15.050858,8.123184 15.025858,8.4391754 14.97186,8.7441669 14.907862,9.0441585 L14.915861,9.0441585 C14.900862,9.1201568 14.875862,9.1931543 14.858863,9.2671523 14.843864,9.3301506 14.831864,9.3951488 14.816864,9.4571471 L14.810865,9.4521475 C14.59487,10.270125 14.247879,11.055103 13.765892,11.769083 13.683894,11.452092 13.565897,11.292097 13.406902,11.113101 13.370902,11.072103 13.329904,11.042104 13.289905,11.004105 13.655895,10.392121 13.925888,9.7311397 14.083884,9.0441585 L14.328877,9.0441585 14.121883,8.8701634 C14.174881,8.6051707 14.21888,8.3341782 14.23988,8.0581858 14.347877,6.7002233 14.037885,5.405259 13.423901,4.2932894 13.306904,4.0812955 13.177908,3.8733012 13.036911,3.6703069 12.919914,3.5043113 12.794918,3.3423158 12.661922,3.1883202 L12.644922,3.165321 C12.515926,3.0143249 12.379929,2.8723288 12.236933,2.7323329 12.223933,2.718333 12.210934,2.7033334 12.194934,2.6893339 12.064938,2.5633373 11.926941,2.4443407 11.784945,2.329344 11.754946,2.3033445 11.724946,2.2763453 11.693947,2.2523456 11.56995,2.1553485 11.441954,2.065351 11.310957,1.9753535 11.253959,1.9383545 11.197961,1.8973558 11.140962,1.860357 11.035965,1.7933586 10.925967,1.7333603 10.817971,1.6713622 10.726973,1.6213634 10.635975,1.5693648&#xd;&#xa;10.542979,1.522366 10.462981,1.4833672 10.381982,1.4483681 10.300985,1.4113691 10.173988,1.3543706 10.046992,1.2973721 9.9169948,1.2493734 9.8649962,1.2293742 9.8129976,1.2123744 9.759999,1.1943753 9.600003,1.1393766 9.4400074,1.084378 9.2770116,1.0423794 9.2500126,1.0353794 9.225013,1.0303795 9.198014,1.02338 7.5560577,0.60639143 5.7661054,0.80538583 4.2141471,1.6883614 4.1241491,1.74036 4.0401514,1.7993584 3.9521538,1.8543565 3.8551564,1.9173551&#xd;&#xa;3.755159,1.9753535 3.6591613,2.042352 3.5521644,2.1193495 3.4501672,2.2033472 3.3461702,2.286345 3.2791717,2.3383436 3.2091736,2.390342 3.1441755,2.4463403 3.0351782,2.5423379 2.931181,2.6433351 2.8271839,2.7453322 2.7761852,2.7953309 2.7211866,2.8443296 2.6711881,2.8973281 2.5731906,3.0003253 2.482193,3.1083223 2.3911954,3.2163193 2.3401968,3.2783176 2.2861982,3.336316 2.2371996,3.3993143 2.1612015,3.4983115 2.0902034,3.6003088 2.0192052,3.7033061&#xd;&#xa;1.9622068,3.7863036 1.9032084,3.8673013 1.85021,3.9522991 1.7982112,4.0352967 1.7502125,4.1222944 1.7002136,4.2082921 1.6372155,4.3192889 1.5742172,4.4302858 1.5182186,4.5432829 1.4862195,4.606281 1.4592202,4.6722792 1.4302208,4.7362773 1.3652228,4.8762736 1.3032244,5.0182696 1.2482259,5.1632659 1.2332262,5.2052645 1.2202266,5.2492633 1.204227,5.2902622 1.1462286,5.4582575 1.09123,5.6262529 1.0452312,5.7952482 1.0382315,5.8222475 1.0332316,5.8482468&#xd;&#xa;1.0272319,5.8762461 0.98023295,6.0612409 0.93823409,6.2482357 0.9062351,6.4362303 0.90423501,6.4522301 0.90323508,6.4682297 0.90123522,6.4842292 0.81423748,7.0322142 0.80023777,7.5901988 0.85023642,8.1471832 0.85923624,8.233181 0.86123621,8.3211787 0.87223601,8.4061761 0.88723552,8.5161731 0.91023493,8.6261702 0.93023431,8.7371671 0.95323372,8.8591638 0.97423315,8.9821606 1.0022323,9.1021571 1.0232319,9.1861548 1.0492312,9.2701526 1.0722308,9.3541503 1.1142294,9.5011458&#xd;&#xa;1.1572283,9.6471419 1.2092269,9.7901382 1.2302263,9.8481364 1.2542257,9.907135 1.277225,9.9651332 1.3422233,10.130129 1.4102215,10.294124 1.4882195,10.45412 1.506219,10.491119 1.5262184,10.528118 1.5452178,10.565117 1.6352156,10.741112 1.731213,10.915107 1.8352102,11.083102 1.8492098,11.103102 1.8632095,11.125101 1.8772091,11.145101 1.9892061,11.321096 2.1092029,11.491091 2.2371996,11.655087 2.2531991,11.676086 2.2701986,11.696085 2.2851984,11.715085&#xd;&#xa;2.4201946,11.88308 2.5601909,12.045076 2.708187,12.200072 3.8391567,13.369039 5.3201172,14.059021 6.8670762,14.215016 6.8710759,14.494009 6.8750761,14.768001 6.8780758,15.036994 5.1451221,14.882998 3.4771664,14.127018 2.1952007,12.835054 2.1942006,12.836054 2.1942006,12.838054 2.1922007,12.840054 2.1702013,12.819054 2.1522018,12.793055 2.1312021,12.772056 2.0012058,12.63706 1.8762091,12.497064 1.7542123,12.350068 1.6962139,12.282069 1.6412154,12.211071&#xd;&#xa;1.5862167,12.140073 1.5292184,12.068075 1.46822,12.002077 1.4142215,11.928079 1.3612229,11.854081 1.318224,11.774084 1.2662256,11.698085 1.2242265,11.633087 1.1822276,11.569089 1.1422288,11.504091 1.0432313,11.346095 0.95123374,11.1861 0.86623621,11.024104 0.83023703,10.955106 0.79323804,10.885108 0.75923908,10.81411 0.67924106,10.650115 0.60824287,10.485119 0.5402447,10.317123 0.51024556,10.241126 0.47924638,10.164128 0.45024693,10.08413 0.3912487,9.9191346&#xd;&#xa;0.33925009,9.7521391 0.29125166,9.5841436 0.26725197,9.499146 0.24025273,9.4151483 0.22025323,9.3281507 0.17825437,9.1571555 0.14625525,8.9851604 0.11625612,8.8131652 0.10225642,8.7271674 0.082256913,8.6411698 0.070257306,8.5531721 0.043257952,8.3481779 0.027258396,8.1411836 0.016258478,7.9341891 0.013258815,7.8791907 0.005259037,7.8251922 0.003259182,7.7701938 -0.004740715,7.5082009 0.002259016,7.2492082 0.021258473,6.9892151 0.023258567,6.9732158 0.021258593,6.9582162 0.023258448,6.9402163&#xd;&#xa;0.031258345,6.8292198 0.05125773,6.7222227 0.065257311,6.6122254 0.079257011,6.4972289 0.090256691,6.3792322 0.1102562,6.2642353 0.13725543,6.1072396 0.17325449,5.9542438 0.20925331,5.7992481 0.22925305,5.7192503 0.24325264,5.6392525 0.26625204,5.5592549 0.31125081,5.3902594 0.3652494,5.2252639 0.42224789,5.0622683 0.44424725,4.9982702 0.4652468,4.932272 0.48824596,4.8692739 0.55224442,4.7032783 0.62224257,4.5422828 0.69524062,4.3812872 0.72523975,4.3202889 0.75023913,4.2582906&#xd;&#xa;0.78023839,4.1972922 0.85823631,4.0422965 0.94223404,3.8913007 1.0292319,3.7433045 1.0662307,3.6783066 1.1002298,3.6153083 1.1392289,3.5533102 1.2292264,3.408314 1.3262238,3.2693179 1.4262209,3.1313214 1.47022,3.0713233 1.5122188,3.0083251 1.5582176,2.9483265 1.6662147,2.8073306 1.7802117,2.6733344 1.8982083,2.5423381 1.9432073,2.4913392 1.9852062,2.4393408 2.031205,2.3893421 2.1712013,2.2413461 2.3181973,2.1003501 2.4691934,1.9623539 2.4981925,1.9353547&#xd;&#xa;2.5261918,1.9073553 2.5571911,1.8793561 3.759159,0.82138538 5.296118,0.1514039 6.9680736,0.026407242 7.0890701,0.017407417 7.211067,0.0024080276 7.3320639,0.00040817261 z"/>
+
+                            <ToggleButton Margin="5,10,5,5" Grid.Column="2" Tag="Resize" Style="{StaticResource ToggleButtonCommonStyle}"
+                                  IsEnabled="{Binding SelectedDiagram.SelectedItems.IsNodeSelected}"
+                                  IsChecked="{Binding SelectedDiagram.SelectedItems.AllowResize, Mode=TwoWay}" 
+                                  Content="F1M733.937,568.1338L732.832,568.1338L732.832,566.9898L732.832,565.6008L732.832,564.0908L732.832,563.0658L737.729,563.0658L737.729,568.1338L736.063,568.1338L735.281,568.1338z M736.063,585.6538L737.729,585.6538L737.729,590.7238L732.832,590.7238L732.832,589.5748L732.832,588.7338L732.832,587.3458L732.832,585.6538L733.937,585.6538L735.281,585.6538z M731.7,587.3458L716.022,587.3458L716.022,584.4858L713.785,584.4858L713.785,569.3038L716.022,569.3038L716.022,566.9898L731.7,566.9898L731.7,569.3038L733.937,569.3038L733.937,584.4858L731.7,584.4858z M714.89,587.3458L714.89,588.7338L714.89,589.5748L714.89,590.7238L709.993,590.7238L709.993,585.6538L711.88,585.6538L712.441,585.6538L713.785,585.6538L714.89,585.6538z M711.433,568.1338L709.993,568.1338L709.993,563.0658L714.89,563.0658L714.89,564.0908L714.89,565.6008L714.89,566.9898L714.89,568.1338L713.785,568.1338L712.441,568.1338z M738.861,569.3038L738.861,561.8938L731.7,561.8938L731.7,565.6008L716.022,565.6008L716.022,561.8938L708.861,561.8938L708.861,569.3038L712.441,569.3038L712.441,584.4858L708.861,584.4858L708.861,591.8938L716.022,591.8938L716.022,588.7338L731.7,588.7338L731.7,591.8938L738.861,591.8938L738.861,584.4858L735.281,584.4858L735.281,569.3038z"/>
+
+                            <ToggleButton Margin="5,10,5,5" Grid.Column="3" Tag="Rotate" Style="{StaticResource ToggleButtonCommonStyle}"
+                                  IsEnabled="{Binding SelectedDiagram.SelectedItems.IsNodeSelected}"
+                                  IsChecked="{Binding SelectedDiagram.SelectedItems.AllowRotate, Mode=TwoWay}" 
+                                  Content="F1M801.48,572.2803L805.406,574.0323L804.96,569.7573L804.515,565.4803L801.637,567.5643C798.927,564.2413,794.806,562.1143,790.183,562.1143C782.021,562.1143,775.406,568.7333,775.406,576.8933C775.406,585.0573,782.021,591.6733,790.183,591.6733C793.823,591.6733,797.149,590.3543,799.718,588.1713C799.734,588.1373,799.746,588.1083,799.765,588.0733C800.669,586.3133,798.748,586.4133,798.748,586.4133C798.746,586.4133,798.743,586.4113,798.741,586.4113C796.472,588.4553,793.469,589.7023,790.181,589.7023C783.118,589.7023,777.374,583.9563,777.374,576.8933C777.374,569.8323,783.118,564.0853,790.181,564.0853C794.139,564.0853,797.679,565.8943,800.029,568.7263L797.55,570.5263z"/>
+
+                            <ToggleButton Grid.Row="1" Grid.Column="0" Tag="Aspect Ratio" Style="{StaticResource ToggleButtonCommonStyle}"
+                                  IsEnabled="{Binding SelectedDiagram.SelectedItems.IsNodeSelected}"
+                                  IsChecked="{Binding SelectedDiagram.SelectedItems.AspectRatio, Mode=TwoWay}" 
+                                  Content="M38.689856,28.581999 L40.000002,28.581999 40.000002,40 28.580999,40 28.580999,38.6897 38.689856,38.6897 z M0,28.581 L1.3101301,28.581 1.3101301,38.689755 11.418,38.689755 11.418,40 0,40 z M20.231703,21.494453 C18.980289,21.494453 17.958275,22.454422 17.958275,23.636782 17.958275,24.495154 18.503182,25.221129 19.271592,25.565718 L19.271592,28.487019 21.194813,28.487019 21.194813,25.565718 C21.963324,25.222628 22.50813,24.495154 22.50533,23.636782 22.50533,22.454422 21.492117,21.494453 20.231703,21.494453 z M19.9964,9.7710989 C17.865174,9.7710983 16.142054,11.667485 16.142054,14.001406 L16.142054,16.238031 C16.142054,16.519222 16.171555,16.796012 16.214455,17.065403 L23.783644,17.065403 C23.832046,16.796012 23.856145,16.519222 23.856145,16.238031 L23.856145,14.001406 C23.856145,11.663185 22.127625,9.7710983 19.9964,9.7710989 z M19.996099,7.9379996 C23.132536,7.9379999 25.682867,10.485225 25.682867,13.621418 L25.682867,16.620819 C25.682867,16.809311 25.673967,16.996205 25.656365,17.180398 27.264384,17.589485 28.456999,19.045937 28.456999,20.783278 L28.456999,28.344023 C28.456999,30.398356 26.79318,32.061999 24.743355,32.061999 L15.260744,32.061999 C13.202819,32.061999 11.542,30.398356 11.542,28.344023 L11.542,20.783278 C11.542,19.044436 12.734614,17.589485 14.344633,17.180398 14.327132,16.999806 14.315233,16.809311 14.315233,16.620819 L14.315233,13.621418 C14.315233,10.485225 16.856862,7.9379999 19.996099,7.9379996 z M28.580999,0 L40,0 40,11.419001 38.689934,11.419001 38.689934,1.3101745 28.580999,1.3101745 z M0,0 L11.419001,0 11.419001,1.3101273 1.3101978,1.3101273 1.3101978,11.419 0,11.419 z"/>
+                        
+                        </Grid>
+                    </StackPanel>
+                </Grid>
+                <!-- Shape -->
+                <Grid Grid.Row="1"  Visibility="{Binding ElementName=propertyEditor, Path=PropertyEditing}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Style" Style="{StaticResource CommonTextBlockStyle}"                           
+                           Grid.Row="1"
+                           Grid.ColumnSpan="2"/>
+
+                    <TextBlock Grid.Row="2" Text="Fill"/>
+                    <Button Grid.Row="2" Grid.Column="1"                           
+                            HorizontalContentAlignment="Stretch"
+                            VerticalContentAlignment="Stretch"
+                            BorderThickness="1"
+                            Padding="1"
+                            Background="{Binding SelectedDiagram.SelectedItems.Fill}"
+                            IsEnabled="{Binding SelectedDiagram.SelectedItems.IsNodeSelected}"
+                            Command="{Binding SelectedDiagram.SelectedItems.PickerCommand}">
+                        <Button.CommandParameter>
+                            <vm:CurrentBrush>Fill</vm:CurrentBrush>
+                        </Button.CommandParameter>
+                    </Button>
+
+                    <TextBlock Grid.Row="3" Text="Stroke"/>
+                    <Button  Grid.Row="3" Grid.Column="1"                         
+                            HorizontalContentAlignment="Stretch"
+                            VerticalContentAlignment="Stretch"
+                            BorderThickness="1"
+                            Padding="1"
+                            IsEnabled="{Binding SelectedDiagram.SelectedItems.IsAnythingSelected}"
+                            Background="{Binding SelectedDiagram.SelectedItems.Stroke}"
+                            Command="{Binding SelectedDiagram.SelectedItems.PickerCommand}">
+                        <Button.CommandParameter>
+                            <vm:CurrentBrush>Stroke</vm:CurrentBrush>
+                        </Button.CommandParameter>
+                    </Button>
+
+                    <TextBlock Grid.Row="4" Text="Thickness"/>
+                    <Slider Grid.Row="4" Grid.Column="1" Minimum="0" Maximum="10" StepFrequency=".1"
+                        IsEnabled="{Binding SelectedDiagram.SelectedItems.IsAnythingSelected}"
+                        Value="{Binding SelectedDiagram.SelectedItems.Thickness, Mode=TwoWay}"/>
+
+                    <TextBlock Grid.Row="5" Text="Opacity"/>
+                    <Slider Grid.Row="5" Grid.Column="1" Minimum="0" Maximum="1" StepFrequency=".1"
+                        IsEnabled="{Binding SelectedDiagram.SelectedItems.IsAnythingSelected}"
+                        Value="{Binding SelectedDiagram.SelectedItems.Opacity, Mode=TwoWay}"/>
+
+                    <TextBlock Grid.Row="6" Text="Dash Dot"/>
+                    <ComboBox Grid.Row="6" Grid.Column="1" 
+                          ItemsSource="{Binding DashDots}"
+                          IsEnabled="{Binding SelectedDiagram.SelectedItems.IsAnythingSelected}"
+                          SelectedItem="{Binding SelectedDiagram.SelectedItems.DashDot, Mode=TwoWay}">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <Line X1="0" Y1="0" X2="100" Y2="0"
+                                      Stretch="UniformToFill"
+                                      Width="100"
+                                      StrokeDashArray="{Binding}"
+                                      StrokeThickness="1"
+                                      Margin="10"
+                                      Stroke="Black"/>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                </Grid>
+                <!-- Connector -->
+                <Grid Grid.Row="2"  Visibility="{Binding ElementName=propertyEditor, Path=PropertyEditing}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Connector" Style="{StaticResource CommonTextBlockStyle}"
+                          
+                           Grid.Row="0"
+                           Grid.ColumnSpan="2"
+                           />
+
+                    <TextBlock Grid.Row="1" Text="Source Cap"/>
+                    <ComboBox Grid.Row="1" Grid.Column="1"
+                          IsEnabled="{Binding SelectedDiagram.SelectedItems.IsConnectorSelected}"
+                          ItemsSource="{Binding Caps}" 
+                          SelectedItem="{Binding SelectedDiagram.SelectedItems.SourceCap, Mode=TwoWay}">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+                                    <Line
+                                          X1="0" Y1="7" X2="100" Y2="7"
+                                          Stroke="Black"
+                                          StrokeThickness="1"/>
+                                        <Path Data="{Binding}" Width="20" Height="15" 
+                                          HorizontalAlignment="Left" VerticalAlignment="Center"
+                                          RenderTransformOrigin="0.5,0.5"
+                                          Stretch="Fill"
+                                          Fill="Black"
+                                          Stroke="Black"
+                                          StrokeThickness="1">
+                                            <Path.RenderTransform>
+                                                <RotateTransform Angle="180"/>
+                                            </Path.RenderTransform>
+                                        </Path>
+                                </Grid>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+
+                    <TextBlock Grid.Row="2" Text="Target Cap"/>
+                    <ComboBox Grid.Row="2" Grid.Column="1"  
+                          IsEnabled="{Binding SelectedDiagram.SelectedItems.IsConnectorSelected}"
+                          ItemsSource="{Binding Caps}" 
+                          SelectedItem="{Binding SelectedDiagram.SelectedItems.TargetCap, Mode=TwoWay}">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+                                    <Line
+                                          X1="0" Y1="7" X2="100" Y2="7"
+                                          Stroke="Black"
+                                          StrokeThickness="1"/>
+                                        <Path Data="{Binding}" Width="20" Height="15" 
+                                          HorizontalAlignment="Right" VerticalAlignment="Center"
+                                          RenderTransformOrigin="0.5,0.5"
+                                          Stretch="Fill"
+                                          Fill="Black"
+                                          Stroke="Black"
+                                          StrokeThickness="1">
+                                            </Path>
+                                </Grid>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+
+                    <TextBlock Grid.Row="3" Text="Type"/>
+                    <ComboBox Grid.Row="3" Grid.Column="1" 
+                          IsEnabled="{Binding SelectedDiagram.SelectedItems.IsConnectorSelected}"
+                          ItemsSource="{Binding Types}" 
+                          SelectedItem="{Binding SelectedDiagram.SelectedItems.Type, Mode=TwoWay}"/>
+                </Grid>
+                <!-- Label -->
+                <Grid Grid.Row="3" Visibility="{Binding ElementName=propertyEditor, Path=TextEditing}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="1" Style="{StaticResource CommonTextBlockStyle}"
+                              
+                               Grid.ColumnSpan="2" 
+                               Text="Label"/>
+
+                    <TextBlock Grid.Row="2" Text="Text"/>
+                    <TextBox Grid.Row="2" Grid.Column="1" 
+                             Text="{Binding SelectedDiagram.SelectedItems.Label, Mode=TwoWay}" 
+                             IsEnabled="{Binding SelectedDiagram.SelectedItems.IsAnythingSelected}"
+                             FontFamily="{Binding SelectedDiagram.SelectedItems.Font}"/>
+
+                    <TextBlock Grid.Row="3" Text="Font"/>
+                    <ComboBox Grid.Row="3" Grid.Column="1" 
+                              ItemsSource="{Binding Fonts}"
+                              IsEnabled="{Binding SelectedDiagram.SelectedItems.IsAnythingSelected}"
+                              SelectedItem="{Binding SelectedDiagram.SelectedItems.Font, Mode=TwoWay}">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Path=Source}" FontFamily="{Binding}"/>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+
+                    <TextBlock Grid.Row="4" Text="Foreground"/>
+                    <Button Grid.Row="4" Grid.Column="1" 
+                          
+                            HorizontalContentAlignment="Stretch"
+                            VerticalContentAlignment="Stretch"
+                            BorderThickness="1"
+                            Padding="1"
+                            IsEnabled="{Binding SelectedDiagram.SelectedItems.IsAnythingSelected}"
+                            Background="{Binding SelectedDiagram.SelectedItems.LabelForeground}"
+                            Command="{Binding SelectedDiagram.SelectedItems.PickerCommand}">
+                        <Button.CommandParameter>
+                            <vm:CurrentBrush>LabelForeground</vm:CurrentBrush>
+                        </Button.CommandParameter>
+                    </Button>
+
+                    <TextBlock Grid.Row="5" Text="Background"/>
+                    <Button Grid.Row="5" Grid.Column="1" 
+                       
+                            HorizontalContentAlignment="Stretch"
+                            VerticalContentAlignment="Stretch"
+                            BorderThickness="1"
+                            Padding="1"
+                            IsEnabled="{Binding SelectedDiagram.SelectedItems.IsAnythingSelected}"
+                            Background="{Binding SelectedDiagram.SelectedItems.LabelBackground}"
+                            Command="{Binding SelectedDiagram.SelectedItems.PickerCommand}">
+                        <Button.CommandParameter>
+                            <vm:CurrentBrush>LabelBackground</vm:CurrentBrush>
+                        </Button.CommandParameter>
+                    </Button>
+                    <TextBlock Grid.Row="6" Text="Font Size"/>
+                    <Slider Grid.Row="6"
+                            Grid.Column="1" 
+                            Minimum="6"
+                            Maximum="40"
+                            StepFrequency="1" 
+                            IsEnabled="{Binding SelectedDiagram.SelectedItems.IsAnythingSelected}"
+                            Value="{Binding SelectedDiagram.SelectedItems.FontSize, Mode=TwoWay}"/>
+
+                    <TextBlock Grid.Row="7" Text="Margin"/>
+                    <Slider Grid.Row="7"
+                            Grid.Column="1"
+                            Minimum="0"
+                            Maximum="20" 
+                            StepFrequency=".5"
+                            IsEnabled="{Binding SelectedDiagram.SelectedItems.IsAnythingSelected}"
+                            Value="{Binding SelectedDiagram.SelectedItems.LabelMargin, Mode=TwoWay}"/>
+                    <Grid Grid.Row="8" Grid.ColumnSpan="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <ToggleButton Grid.Column="0" 
+                                  
+                                  IsEnabled="{Binding SelectedDiagram.SelectedItems.IsAnythingSelected}"
+                                  Style="{StaticResource ToggleButtonCommonStyle}"
+                                  IsChecked="{Binding SelectedDiagram.SelectedItems.Bold, Mode=TwoWay}" 
+                                  Content="F1M592.0767,178.7871L592.0767,186.8091L597.6837,186.8091C599.8667,186.8091,601.2527,186.7471,601.8387,186.6251C602.7387,186.4621,603.4727,186.0621,604.0377,185.4291C604.6037,184.7941,604.8877,183.9441,604.8877,182.8801C604.8877,181.9791,604.6687,181.2161,604.2317,180.5891C603.7957,179.9611,603.1657,179.5031,602.3397,179.2171C601.5147,178.9311,599.7227,178.7871,596.9687,178.7871z M592.0767,166.8561L592.0767,173.7941L596.0477,173.7941C598.4067,173.7941,599.8737,173.7601,600.4467,173.6921C601.4827,173.5691,602.2987,173.2111,602.8917,172.6171C603.4847,172.0241,603.7827,171.2431,603.7827,170.2741C603.7827,169.3471,603.5257,168.5931,603.0147,168.0131C602.5037,167.4331,601.7427,167.0821,600.7327,166.9591C600.1327,166.8911,598.4067,166.8561,595.5557,166.8561z M586.0187,161.8641L598.0117,161.8641C600.3857,161.8641,602.1547,161.9631,603.3207,162.1611C604.4877,162.3581,605.5317,162.7701,606.4537,163.3981C607.3737,164.0261,608.1407,164.8621,608.7557,165.9051C609.3687,166.9481,609.6757,168.1191,609.6757,169.4151C609.6757,170.8191,609.2977,172.1091,608.5407,173.2821C607.7827,174.4561,606.7567,175.3361,605.4597,175.9231C607.2877,176.4541,608.6937,177.3621,609.6757,178.6431C610.6577,179.9271,611.1487,181.4341,611.1487,183.1671C611.1487,184.5311,610.8327,185.8571,610.1977,187.1471C609.5637,188.4361,608.6967,189.4661,607.5977,190.2371C606.5007,191.0081,605.1457,191.4811,603.5367,191.6591C602.5267,191.7681,600.0927,191.8371,596.2307,191.8641L586.0187,191.8641z"/>
+
+
+                        <ToggleButton Grid.Column="1" 
+                                  
+                                  Style="{StaticResource ToggleButtonCommonStyle}"
+                                  IsEnabled="{Binding SelectedDiagram.SelectedItems.IsAnythingSelected}"
+                                  IsChecked="{Binding SelectedDiagram.SelectedItems.Italic, Mode=TwoWay}"
+                                  Content="F1M694.3511,162.0713L694.0851,162.8893C695.2221,162.8893,695.9861,162.9583,696.3761,163.0983C696.7691,163.2393,697.0561,163.4423,697.2501,163.7083C697.4431,163.9723,697.5381,164.2983,697.5381,164.6793C697.5381,165.4483,697.3171,166.5833,696.8741,168.0873L691.6521,186.1843C691.1361,187.9703,690.6341,189.2093,690.1481,189.9013C689.8371,190.3443,689.3591,190.6923,688.7101,190.9413C688.3121,191.1193,687.4941,191.2223,686.2551,191.2513L685.9461,192.0713L698.2901,192.0713L698.5331,191.2513C697.2501,191.1633,696.4051,191.0483,696.0011,190.9093C695.5921,190.7703,695.2991,190.5713,695.1151,190.3123C694.9301,190.0533,694.8381,189.7403,694.8381,189.3713C694.8381,188.9133,695.0751,187.8523,695.5451,186.1843L700.7461,168.0873C701.2911,166.2163,701.7371,165.0053,702.0831,164.4603C702.4321,163.9133,702.9361,163.4943,703.6001,163.1983C704.0561,162.9773,704.7561,162.8743,705.7021,162.8893L705.9451,162.0713z"/>
+                    </Grid>
+
+                    <Grid Grid.Row="9" ColumnSpan="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Row="0" Style="{StaticResource CommonTextBlockStyle}" Margin="25,10,5,5" Grid.ColumnSpan="2" Text="Text Alignment"></TextBlock>
+                        <ToggleButton Grid.Row="1"
+                                      Grid.Column="0" Tag="TopLeft"
+                                      Style="{StaticResource ToggleButtonCommonStyle}"
+                                      IsChecked="{Binding SelectedDiagram.SelectedItems.TopLeft, Mode=TwoWay}"
+                                      IsEnabled="{Binding SelectedDiagram.SelectedItems.IsNodeSelected}"
+                                      Content="M1.8509956,1.6250017 L16.552995,1.6250017 16.552995,5.3830003 11.126004,5.3830003 11.126004,18.244002 7.2300143,18.244002 7.2300143,5.3830003 1.8509956,5.3830003 z M1.0000005,1 L1.0000005,30.000001 30,30.000001 30,1 z M0,0 L31,0 31,31.000001 0,31.000001 z"/>
+                        <ToggleButton  Grid.Row="1"
+                                      Grid.Column="1" Tag="Top"
+                                      Style="{StaticResource ToggleButtonCommonStyle}"
+                                      IsChecked="{Binding SelectedDiagram.SelectedItems.Top, Mode=TwoWay}" 
+                                      IsEnabled="{Binding SelectedDiagram.SelectedItems.IsNodeSelected}"
+                                      Content="M7.8050159,1.3290013 L21.846016,1.3290013 21.846016,4.9189974 16.661024,4.9189974 16.661024,17.200002 12.943011,17.200002 12.943011,4.9189974 7.8050159,4.9189974 z M0.99999952,1.0000008 L0.99999952,28.648019 28.64799,28.648019 28.64799,1.0000008 z M0,0 L29.64799,0 29.64799,29.648021 0,29.648021 z"/>
+                        <ToggleButton  Grid.Row="1"
+                                      Grid.Column="2" Tag="TopRight"
+                                      Style="{StaticResource ToggleButtonCommonStyle}"
+                                      IsChecked="{Binding SelectedDiagram.SelectedItems.TopRight, Mode=TwoWay}" 
+                                      IsEnabled="{Binding SelectedDiagram.SelectedItems.IsNodeSelected}"
+                                      Content="M14.796977,1.3689935 L29.500977,1.3689935 29.500977,5.1269916 24.070938,5.1269916 24.070938,17.987994 20.178004,17.987994 20.178004,5.1269916 14.796977,5.1269916 z M1,0.99999997 L1,30 30,30 30,0.99999997 z M0,0 L31,0 31,31 0,31 z"/>
+
+
+                        <ToggleButton 
+                                  Grid.Row="2" 
+                                  Grid.Column="0" Tag="Left"
+                                  Style="{StaticResource ToggleButtonCommonStyle}"
+                                  IsChecked="{Binding SelectedDiagram.SelectedItems.Left, Mode=TwoWay}" 
+                                  IsEnabled="{Binding SelectedDiagram.SelectedItems.IsNodeSelected}"
+                                  Content="M1.8139958,7.0039859 L16.106995,7.0039859 16.106995,10.65798 10.831006,10.65798 10.831006,23.161985 7.0440267,23.161985 7.0440267,10.65798 1.8139958,10.65798 z M0.99999946,1.0000005 L0.99999946,29.166014 29.165985,29.166014 29.165985,1.0000005 z M0,0 L30.165985,0 30.165985,30.166016 0,30.166016 z"/>
+                        <ToggleButton 
+                                  Grid.Row="2"
+                                  Grid.Column="1" Tag="Center"
+                                  Style="{StaticResource ToggleButtonCommonStyle}"
+                                  IsChecked="{Binding SelectedDiagram.SelectedItems.Center, Mode=TwoWay}"
+                                  IsEnabled="{Binding SelectedDiagram.SelectedItems.IsNodeSelected}"
+                                  Content="M8.5400159,7.9759955 L22.462016,7.9759955 22.462016,11.534986 17.322001,11.534986 17.322001,23.712995 13.634011,23.712995 13.634011,11.534986 8.5400159,11.534986 z M1,1 L1,30 30,30 30,1 z M0,0 L31,0 31,31 0,31 z" />
+                        <ToggleButton 
+                                  Grid.Row="2"
+                                  Grid.Column="2" Tag="Right"
+                                  Style="{StaticResource ToggleButtonCommonStyle}"
+                                  IsChecked="{Binding SelectedDiagram.SelectedItems.Right, Mode=TwoWay}" 
+                                  IsEnabled="{Binding SelectedDiagram.SelectedItems.IsNodeSelected}"
+                                  Content="M14.796977,7.1909978 L29.500977,7.1909978 29.500977,10.948996 24.070938,10.948996 24.070938,23.809999 20.178004,23.809999 20.178004,10.948996 14.796977,10.948996 z M1,1 L1,29.999999 30,29.999999 30,1 z M0,0 L31,0 31,30.999999 0,30.999999 z"/>
+
+                        <ToggleButton 
+                                  Grid.Row="3"
+                                  Grid.Column="0" Tag="BottomLeft"
+                                  Style="{StaticResource ToggleButtonCommonStyle}"
+                                  IsChecked="{Binding SelectedDiagram.SelectedItems.BottomLeft, Mode=TwoWay}" 
+                                  IsEnabled="{Binding SelectedDiagram.SelectedItems.IsNodeSelected}"
+                                  Content="M1.8509951,12.617975 L16.552995,12.617975 16.552995,16.376979 11.126003,16.376979 11.126003,29.237974 7.230014,29.237974 7.230014,16.376979 1.8509951,16.376979 z M0.99999994,1 L0.99999994,30 29.999999,30 29.999999,1 z M0,0 L30.999999,0 30.999999,31 0,31 z"/>
+                        <ToggleButton 
+                                  Grid.Row="3"
+                                  Grid.Column="1" Tag="Bottom"
+                                  Style="{StaticResource ToggleButtonCommonStyle}"
+                                  IsEnabled="{Binding SelectedDiagram.SelectedItems.IsNodeSelected}"
+                                  IsChecked="{Binding SelectedDiagram.SelectedItems.Bottom, Mode=TwoWay}" Content="M8.1499733,12.617975 L22.852974,12.617975 22.852974,16.376979 17.42402,16.376979 17.42402,29.237974 13.529977,29.237974 13.529977,16.376979 8.1499733,16.376979 z M0.99999952,1 L0.99999952,30 29.999999,30 29.999999,1 z M0,0 L30.999999,0 30.999999,31 0,31 z"/>
+                        <ToggleButton
+                                  Grid.Row="3" 
+                                  Grid.Column="2"   Tag="BottomRight"
+                                  Style="{StaticResource ToggleButtonCommonStyle}"
+                                  IsEnabled="{Binding SelectedDiagram.SelectedItems.IsNodeSelected}"
+                                  IsChecked="{Binding SelectedDiagram.SelectedItems.BottomRight, Mode=TwoWay}"
+                                  Content="M14.796977,12.617975 L29.500977,12.617975 29.500977,16.376979 24.070938,16.376979 24.070938,29.237974 20.178004,29.237974 20.178004,16.376979 14.796977,16.376979 z M1,1 L1,30 30,30 30,1 z M0,0 L31,0 31,31 0,31 z"/>
+                    </Grid>
+                </Grid>
+                <!-- Dimentions -->
+                <Grid Grid.Row="4"  Visibility="{Binding ElementName=propertyEditor, Path=PropertyEditing}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Style="{StaticResource CommonTextBlockStyle}"
+                          
+                           Grid.ColumnSpan="2" 
+                           Text="Dimentions"/>
+                    <TextBlock Grid.Row="1"
+                           Text="X"/>
+                    <input:SfNumericTextBox Grid.Row="1"
+                                            Grid.Column="1" 
+                                            FormatString="N"
+                                            IsEnabled="{Binding SelectedDiagram.SelectedItems.IsNodeSelected}"
+                                            Value="{Binding SelectedDiagram.SelectedItems.X, Mode=TwoWay}"/>
+
+                    <TextBlock Grid.Row="2" Text="Y"/>
+                    <input:SfNumericTextBox Grid.Row="2"
+                                            Grid.Column="1" 
+                                            FormatString="N"
+                                            IsEnabled="{Binding SelectedDiagram.SelectedItems.IsNodeSelected}"
+                                            Value="{Binding SelectedDiagram.SelectedItems.Y, Mode=TwoWay}"/>
+
+                    <TextBlock Grid.Row="3" Text="PivotX"/>
+                    <Slider Grid.Row="3"
+                            Grid.Column="1"
+                            Minimum="0"
+                            Maximum="1" 
+                            StepFrequency="0.1"
+                            IsEnabled="{Binding SelectedDiagram.SelectedItems.IsNodeSelected}"
+                            Value="{Binding SelectedDiagram.SelectedItems.Px, Mode=TwoWay}"/>
+
+                    <TextBlock Grid.Row="4" Text="PivotY"/>
+                    <Slider Grid.Row="4" 
+                            Grid.Column="1" 
+                            Minimum="0" 
+                            Maximum="1"
+                            StepFrequency="0.1"
+                            IsEnabled="{Binding SelectedDiagram.SelectedItems.IsNodeSelected}"
+                            Value="{Binding SelectedDiagram.SelectedItems.Py, Mode=TwoWay}"/>
+
+                    <TextBlock Grid.Row="5" Text="Width"/>
+                    <input:SfNumericTextBox Grid.Row="5"
+                                            Grid.Column="1"
+                                            FormatString="N"
+                                            IsEnabled="{Binding SelectedDiagram.SelectedItems.IsNodeSelected}"
+                                            Value="{Binding SelectedDiagram.SelectedItems.Width, Mode=TwoWay}"/>
+
+                    <TextBlock Grid.Row="6" 
+                           Text="Height"/>
+                    <input:SfNumericTextBox Grid.Row="6" 
+                                            Grid.Column="1" 
+                                            FormatString="N"
+                                            IsEnabled="{Binding SelectedDiagram.SelectedItems.IsNodeSelected}"
+                                            Value="{Binding SelectedDiagram.SelectedItems.Height, Mode=TwoWay}"/>
+
+                    <TextBlock Grid.Row="7" Text="Angle"/>
+                    <input:SfNumericTextBox Grid.Row="7"
+                                            Grid.Column="1" 
+                                            FormatString="N"
+                                            IsEnabled="{Binding SelectedDiagram.SelectedItems.IsNodeSelected}"
+                                            Value="{Binding SelectedDiagram.SelectedItems.Angle, Mode=TwoWay}"/>
+                </Grid>
+            </Grid>
+        </ScrollViewer>
+        <!-- Color Picker -->
+        <ScrollViewer Visibility="{Binding SelectedDiagram.SelectedItems.IsBrushEditing}" VerticalScrollBarVisibility="Disabled">
+            <StackPanel ManipulationMode="None">
+                <StackPanel Orientation="Horizontal" >
+                    <Button Margin="-15,5,5,5" HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Style="{StaticResource ButtonStyle}" Content="F1M808.3066,432.2607L803.7926,426.7517L817.7426,426.7517L817.7406,423.2697L803.3576,423.2717L808.1816,417.4477L802.8516,417.4477L796.2906,425.0107L802.5396,432.2607z"
+                        Command="{Binding SelectedDiagram.SelectedItems.PickerCommand}">
+                        <Button.CommandParameter>
+                            <vm:CurrentBrush>None</vm:CurrentBrush>
+                        </Button.CommandParameter>
+                    </Button>                   
+                </StackPanel>
+                <local:BrushPicker  Brush="{Binding Path=SelectedDiagram.SelectedItems.PickedBrush, Mode=TwoWay}"
+                                   ManipulationMode="None"/>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>
