@@ -1,0 +1,119 @@
+﻿<common:SampleLayout
+    x:Class="Syncfusion.SampleBrowser.UWP.SfChart.EmptyValues"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Syncfusion.SampleBrowser.UWP.SfChart"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:common="using:Common"
+    xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
+    xmlns:navigation="using:Syncfusion.UI.Xaml.Controls.Layout"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+    <common:SampleLayout.Sample>
+        <ContentControl Margin="50,50,50,25">
+            <Grid x:Name="mainGrid">
+                <Grid.Resources>
+                    <Style x:Key="axisLineStyle" TargetType="Line">
+                        <Setter Property="Stroke" Value="#a3a3a3"/>
+                        <Setter Property="StrokeThickness" Value="1"/>
+                    </Style>
+
+                    <DataTemplate x:Key="headerTemplate">
+                        <TextBlock Text="{Binding}" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    </DataTemplate>
+                </Grid.Resources>
+
+                <Grid.DataContext>
+                    <local:EmptypointViewModel/>
+                </Grid.DataContext>
+
+                <chart:SfChart x:Name="EmptyPointChart" HorizontalAlignment="Left" VerticalAlignment="Center"
+                           AreaBorderThickness="0,0.7,0.7,0" AreaBorderBrush="#a3a3a3" >
+                    <chart:SfChart.Header>
+                        <TextBlock Text="New Products Count By Year" FontSize="20" Margin="0,0,0,20"/>
+                    </chart:SfChart.Header>
+
+                    <chart:SfChart.PrimaryAxis >
+                        <chart:CategoryAxis x:Name="Category" PlotOffset="10" FontSize="14" Header="Years" 
+                                        HeaderTemplate="{StaticResource headerTemplate}"
+                                        AxisLineStyle="{StaticResource axisLineStyle}" 
+                                        MajorTickLineStyle="{StaticResource axisLineStyle}"/>
+                    </chart:SfChart.PrimaryAxis>
+
+                    <chart:SfChart.SecondaryAxis>
+                        <chart:NumericalAxis FontSize="12" Interval="1" Header="Product Counts" 
+                                         HeaderTemplate="{StaticResource headerTemplate}"
+                                         AxisLineStyle="{StaticResource axisLineStyle}" 
+                                         MajorTickLineStyle="{StaticResource axisLineStyle}"/>
+                    </chart:SfChart.SecondaryAxis>
+
+                    <chart:ColumnSeries ShowEmptyPoints="True" EnableAnimation="False" ItemsSource="{Binding Data}"  
+                                    XBindingPath="Year" YBindingPath="Count" x:Name="columnSeries" >
+                        <chart:ColumnSeries.AdornmentsInfo>
+                            <chart:ChartAdornmentInfo x:Name="csChartAdornmentInfo" />
+                        </chart:ColumnSeries.AdornmentsInfo>
+                    </chart:ColumnSeries>
+                </chart:SfChart>
+            </Grid>
+        </ContentControl>
+    </common:SampleLayout.Sample>
+
+    <common:SampleLayout.Setting>
+        <ContentControl Margin="0,55,0,0">
+            <Grid Margin="10">
+                <Grid.DataContext>
+                    <local:LineChartViewModel/>
+                </Grid.DataContext>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="45"/>
+                    <RowDefinition Height="45"/>
+                    <RowDefinition Height="45"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Name="emptyPointStyle" Margin="2" FontSize="14" Grid.Row="0" Grid.Column="0" Text="Empty Point Style" />
+                <ComboBox Name="emptyPointStyles" SelectionChanged="OnEmptyPointStylesSelectionChanged" Margin="2" 
+                          Width="150" Grid.Row="0" Grid.Column="1" SelectedIndex="0">
+                    <ComboBoxItem >Interior</ComboBoxItem>
+                    <ComboBoxItem >Symbol</ComboBoxItem>
+                    <ComboBoxItem >Symbol and Interior</ComboBoxItem>
+                </ComboBox>
+
+                <TextBlock Name="emptyPointValue" Margin="2"  Grid.Row="1" Grid.Column="0" Text="Empty Point Value" />
+                <ComboBox Name="emptyPointValues" Margin="2" SelectionChanged="OnEmptyPointValuesSelectionChanged" 
+                          Width="150" Grid.Row="1"  Grid.Column="1" SelectedIndex="0">
+                    <ComboBoxItem>Zero</ComboBoxItem>
+                    <ComboBoxItem>Average</ComboBoxItem>
+                </ComboBox>
+
+                <TextBlock Margin="2" Grid.Row="2" Grid.Column="0" Text="Empty Point Interior" />
+                <ComboBox Margin="2" Grid.Row="2" Grid.Column="1" SelectionChanged="OnEmptyPointInteriorSelectionChanged" 
+                          Width="150" SelectedIndex="1">
+                    <ComboBoxItem>
+                        <Polyline Points="0,8,125,8" Stroke="Blue" StrokeThickness="2" />
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        <Polyline Points="0,8,125,8" Stroke="Green" StrokeThickness="2" />
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        <Polyline Points="0,8,125,8" Stroke="Orange" StrokeThickness="2" />
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        <Polyline Points="0,8,125,8" Stroke="Purple" StrokeThickness="2" />
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        <Polyline Points="0,8,125,8" Stroke="RoyalBlue" StrokeThickness="2" />
+                    </ComboBoxItem>
+                </ComboBox>
+            </Grid>
+        </ContentControl>
+    </common:SampleLayout.Setting>
+</common:SampleLayout>

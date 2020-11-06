@@ -1,0 +1,88 @@
+﻿<common:SampleLayout
+    x:Class="Syncfusion.SampleBrowser.UWP.SfChart.VerticalChartDemo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Syncfusion.SampleBrowser.UWP.SfChart"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:common="using:Common"
+    xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+    <common:SampleLayout.Sample>
+        <ContentControl Margin="50,50,50,25">
+            <Grid x:Name="grid"  HorizontalAlignment="Left" VerticalAlignment="Top" >
+                <Grid.Resources>
+                    <DataTemplate x:Key="labelTemplate">
+                        <TextBlock Text="{Binding LabelContent}" Foreground="Black" FontSize="12"/>
+                    </DataTemplate>
+
+                    <Style x:Key="axisLineStyle" TargetType="Line">
+                        <Setter Property="Stroke" Value="#FFD1D3D4"/>
+                        <Setter Property="StrokeThickness" Value="1"/>
+                    </Style>
+
+                    <DataTemplate x:Key="headerTemplate">
+                        <TextBlock Text="{Binding}" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    </DataTemplate>
+                </Grid.Resources>
+
+                <chart:SfChart x:Name="chart" AreaBorderThickness="0,0.5,0.5,0">
+                    <chart:SfChart.Header>
+                        <TextBlock Text="Seismograph Comparison Of Two Countries" Margin="0,0,0,20" FontSize="20" FontFamily="Segoe UI" />
+                    </chart:SfChart.Header>
+
+                    <chart:SfChart.DataContext>
+                        <local:DataDetails/>
+                    </chart:SfChart.DataContext>
+
+                    <chart:SfChart.ColumnDefinitions>
+                        <chart:ChartColumnDefinition/>
+                        <chart:ChartColumnDefinition Width="0.1"/>
+                        <chart:ChartColumnDefinition/>
+                    </chart:SfChart.ColumnDefinitions>
+
+                    <chart:SfChart.PrimaryAxis>
+                        <chart:CategoryAxis x:Name="axis" Header="Time(sec)" FontSize="12" 
+                                    FontFamily="Segoe UI" HeaderTemplate="{StaticResource headerTemplate}"
+                                    AxisLineStyle="{StaticResource axisLineStyle}" 
+                                    MajorTickLineStyle="{StaticResource axisLineStyle}"
+                                    LabelTemplate="{StaticResource labelTemplate}"
+                                    LabelFormat="mm:ss" ShowGridLines="False"/>
+                    </chart:SfChart.PrimaryAxis>
+
+                    <chart:SfChart.Legend>
+                        <chart:ChartLegend/>
+                    </chart:SfChart.Legend>
+
+                    <chart:SfChart.SecondaryAxis>
+                        <chart:NumericalAxis Header="Velocity(m/s)" Minimum="-15" Maximum="15" 
+                                     HeaderTemplate="{StaticResource headerTemplate}"
+                                     AxisLineStyle="{StaticResource axisLineStyle}" 
+                                     MajorTickLineStyle="{StaticResource axisLineStyle}"
+                                     LabelTemplate="{StaticResource labelTemplate}" 
+                                     FontSize="12" ShowGridLines="False"/>
+                    </chart:SfChart.SecondaryAxis>
+
+                    <chart:FastLineSeries x:Name="series1" Label="Indonesia" Interior="#f6b53f" StrokeThickness="2"
+                                  XBindingPath="Speed" chart:SfChart.Column="0" YBindingPath="Rate" 
+                                  ItemsSource="{Binding}" IsTransposed="True"/>
+
+                    <chart:FastLineSeries Label="Japan" Interior="#e94649" StrokeThickness="2" XBindingPath="Speed" 
+                                  YBindingPath="Rate1" ItemsSource="{Binding}" IsTransposed="True" chart:SfChart.Column="1">
+                        <chart:FastLineSeries.YAxis>
+                            <chart:NumericalAxis Header="Velocity(m/s)" FontFamily="Segoe UI" chart:SfChart.Column="2"
+                                         Minimum="-15" Maximum="15" FontSize="12"
+                                         HeaderTemplate="{StaticResource headerTemplate}"
+                                         AxisLineStyle="{StaticResource axisLineStyle}" 
+                                         MajorTickLineStyle="{StaticResource axisLineStyle}"
+                                         LabelTemplate="{StaticResource labelTemplate}" ShowGridLines="False"/>
+                        </chart:FastLineSeries.YAxis>
+                    </chart:FastLineSeries>
+                </chart:SfChart>
+            </Grid>
+        </ContentControl>
+    </common:SampleLayout.Sample>
+</common:SampleLayout>
