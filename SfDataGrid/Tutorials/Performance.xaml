@@ -1,0 +1,176 @@
+﻿<View:SampleLayout
+    x:Class="DataGrid.Performance"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:View="using:Common"
+    xmlns:local="using:DataGrid"
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Grid"
+    mc:Ignorable="d">
+
+    <View:SampleLayout.Resources>
+        <ResourceDictionary>
+            <local:StockChangeConverter x:Key="stockChangeConverter" />
+            <local:ChangeForegroundConverter x:Key="changeForegroundConverter" />
+            <Style TargetType="TextBlock">
+                <Setter Property="FontSize" Value="18" />
+                <Setter Property="FontFamily" Value="Segoe UI" />
+                <Setter Property="FontWeight" Value="Light" />
+                <Setter Property="Margin" Value="3,0" />
+            </Style>
+        </ResourceDictionary>
+    </View:SampleLayout.Resources>
+
+    <View:SampleLayout.Sample>
+        <UserControl>
+            <Grid Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <StackPanel Margin="10" Orientation="Horizontal">
+                    <StackPanel.Resources>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="FontSize" Value="16" />
+                            <Setter Property="Margin" Value="5,0,10,5" />
+                            <Setter Property="Foreground" Value="#FF333333" />
+                            <Setter Property="FontFamily" Value="Segoe UI" />
+                            <Setter Property="FontWeight" Value="Normal" />
+                        </Style>
+                    </StackPanel.Resources>
+                    <TextBlock Margin="15,0,0,0" Text="Timer Frequency : " />
+                    <TextBlock Margin="15,0,0,0"
+                           FontWeight="SemiBold"
+                           Foreground="#FF191717">
+                    <Run Text="{Binding Value, ElementName=trackTimer}" />
+                    <Run Text="ms" />
+                    </TextBlock>
+                    <TextBlock Margin="15,0,0,0" Text="No of Updates : " />
+                    <TextBlock Margin="15,0,0,0"
+                           FontWeight="SemiBold"
+                           Foreground="#FF191717"
+                           Text="10000" />
+                </StackPanel>
+                <syncfusion:SfDataGrid x:Name="datagrid"
+                                   Grid.Row="1"
+                                   Margin="10,13,10,15"
+                                   AllowSorting="False"
+                                   AutoGenerateColumns="False"
+                                   ColumnSizer="Star"
+                                   ItemsSource="{Binding Stocks}"
+                                   Loaded="OnSfDataGridLoaded"
+                                   NavigationMode="Row"
+                                   Unloaded="OnSfDataGridUnloaded">
+                    <syncfusion:SfDataGrid.Columns>
+                        <syncfusion:GridTextColumn MappingName="Symbol" />
+                        <syncfusion:GridTextColumn Width="250" MappingName="Account" />
+                        <syncfusion:GridTextColumn MappingName="LastTrade" HeaderText="Last Trade"/>
+                        <syncfusion:GridTemplateColumn Width="200" MappingName="Change">
+                            <syncfusion:GridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Grid Width="150">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition />
+                                            <ColumnDefinition />
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock x:Name="changeValue"
+                                               Grid.Column="1"
+                                               HorizontalAlignment="Center"
+                                               FontSize="24"
+                                               FontWeight="Light"
+                                               Foreground="{Binding Change,
+                                                                    Converter={StaticResource changeForegroundConverter}}"
+                                               Text="{Binding Change}" />
+
+                                        <Path Width="18"
+                                          Height="18"
+                                          Margin="0,0,0,0"
+                                          Data="{Binding Change,
+                                                         Converter={StaticResource stockChangeConverter}}"
+                                          Fill="{Binding Foreground,
+                                                         ElementName=changeValue}"
+                                          Stretch="Uniform">
+                                            <Path.RenderTransform>
+                                                <TransformGroup>
+                                                    <TransformGroup.Children>
+                                                        <RotateTransform Angle="0" />
+                                                        <ScaleTransform ScaleX="1" ScaleY="1" />
+                                                    </TransformGroup.Children>
+                                                </TransformGroup>
+                                            </Path.RenderTransform>
+                                        </Path>
+                                    </Grid>
+                                </DataTemplate>
+                            </syncfusion:GridTemplateColumn.CellTemplate>
+                        </syncfusion:GridTemplateColumn>
+                        <syncfusion:GridTextColumn MappingName="PreviousClose" HeaderText="Previous Close" />
+                        <syncfusion:GridTextColumn MappingName="Open" />
+                    </syncfusion:SfDataGrid.Columns>
+                </syncfusion:SfDataGrid>
+            </Grid>
+        </UserControl>
+    </View:SampleLayout.Sample>
+ 
+    <View:SampleLayout.Setting>
+        <UserControl>
+            <StackPanel  Margin="10,10,10,10">
+
+                <TextBlock  Margin="0,5,0,0"
+                       FontSize="14"
+                       FontWeight="Bold"
+                       Text="Timer and Update count :-"
+                       Visibility="Collapsed" />
+                <StackPanel>
+                    <TextBlock  Margin="0,5,0,0"
+                           FontSize="14"
+                           FontWeight="Bold"
+                           Text="Timer Frequency :-" />
+
+                    <Slider x:Name="trackTimer"
+                        Width="150"
+                        Margin="0,5,0,0"
+                        Maximum="1000"
+                        Minimum="100"
+                        TickFrequency="1"
+                        TickPlacement="None"
+                        Value="{Binding TimeSpanValue,
+                                        Mode=TwoWay}" />
+
+
+                    <TextBlock  Margin="0,5,0,0"
+                           HorizontalAlignment="Left"
+                           Text="No of updates :-"
+                           Visibility="Collapsed" />
+
+                    <ComboBox x:Name="NoOfUpdates"
+                          Width="100"
+                           Margin="0,5,0,0"
+                          SelectedIndex="0"
+                          SelectedItem="{Binding SelectedItem,
+                                                 Mode=TwoWay}"
+                          Visibility="Collapsed">
+                        <ComboBoxItem Content="500" />
+                        <ComboBoxItem Content="5000" />
+                        <ComboBoxItem Content="50000" />
+                        <ComboBoxItem Content="500000" />
+                    </ComboBox>
+
+                </StackPanel>
+
+
+                <TextBlock  Margin="0,5,0,0"
+                       FontSize="14"
+                       FontWeight="Bold"
+                       Text="Start / Stop Timer :-" />
+
+                <Button x:Name="btnTimer"
+                    Width="130"
+                     Margin="0,5,0,0"
+                    HorizontalAlignment="Center"
+                    Command="{Binding BtonClick}"
+                    Content="{Binding ButtonContnt}" />
+            </StackPanel>
+        </UserControl>
+    </View:SampleLayout.Setting>
+</View:SampleLayout>

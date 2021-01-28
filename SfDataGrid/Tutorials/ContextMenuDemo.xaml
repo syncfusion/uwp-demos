@@ -1,0 +1,116 @@
+﻿<View:SampleLayout
+    x:Class="DataGrid.ContextMenuDemo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:DataGrid"
+    xmlns:run="using:Syncfusion.UI.Xaml.Utils"
+    xmlns:linq="using:Syncfusion.Data"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Grid"
+    xmlns:View="using:Common"
+    mc:Ignorable="d">
+    
+    <View:SampleLayout.Sample>
+        <syncfusion:SfDataGrid x:Name="sfGrid"
+                               AllowFiltering="True"
+                               AllowGrouping="True"
+                               AutoGenerateColumns="False"
+                               Background="White"
+                               ColumnSizer="Star"
+                               ShowSortNumbers="True"
+                               AllowDeleting="True"
+                               Margin="10,13,10,15"
+                               LiveDataUpdateMode="AllowDataShaping"
+                               SelectionMode="Extended"
+                               SelectionUnit="Row"
+                               ShowGroupDropArea="True">
+            <syncfusion:SfDataGrid.Columns>
+                <syncfusion:GridNumericColumn HeaderText="Order ID" MappingName="OrderID" />
+                <syncfusion:GridTextColumn HeaderText="Customer ID" MappingName="CustomerID" />
+                <syncfusion:GridTextColumn HeaderText="Employee ID"
+                                           MappingName="EmployeeID"
+                                           TextAlignment="Center" />
+                <syncfusion:GridTextColumn HeaderText="Ship City"
+                                               MappingName="ShipCity" />
+                <syncfusion:GridTextColumn HeaderText="Ship Country"
+                                               MappingName="ShipCountry" />
+            </syncfusion:SfDataGrid.Columns>
+            <syncfusion:SfDataGrid.GroupSummaryRows>
+                <syncfusion:GridSummaryRow ShowSummaryInRow="False">
+                    <syncfusion:GridSummaryRow.SummaryColumns>
+                        <syncfusion:GridSummaryColumn Name="Summary OrderID"
+                                              Format="'Count - {Count:d}'"
+                                              MappingName="OrderID"
+                                              SummaryType="CountAggregate" />
+                    </syncfusion:GridSummaryRow.SummaryColumns>
+                </syncfusion:GridSummaryRow>
+            </syncfusion:SfDataGrid.GroupSummaryRows>
+            <syncfusion:SfDataGrid.HeaderContextMenu>
+                <MenuFlyout>
+                    <MenuFlyoutItem Text="Sort Ascending"
+                                            Command="{Binding Path=DataGrid.DataContext.SortAscendingCommand}"
+                                            CommandParameter="{Binding}"/>
+                    <MenuFlyoutItem  Text="Sort Descending"
+                                             Command="{Binding Path=DataGrid.DataContext.SortDescendingCommand}"
+                                             CommandParameter="{Binding}"/>
+                    <MenuFlyoutSeparator />
+                    <MenuFlyoutItem Text="Group Column"
+                                            Command="{Binding Path=DataGrid.DataContext.GroupColumnCommand}"
+                                            CommandParameter="{Binding}"/>
+                    <MenuFlyoutItem  Text="Show/Hide Group Drop Area"
+                                             Command="{Binding Path=DataGrid.DataContext.ShowGroupDropAreaCommand}"
+                                             CommandParameter="{Binding}" />
+                    <MenuFlyoutSeparator />
+                    <MenuFlyoutItem Text="Clear Sorting"
+                                            Command="{Binding Path=DataGrid.DataContext.ClearSortingCommand}"
+                                            CommandParameter="{Binding}"/>
+                    <MenuFlyoutItem  Text="Clear Filtering"
+                                             Command="{Binding Path=DataGrid.DataContext.ClearFilteringCommand}"
+                                             CommandParameter="{Binding}"/>
+                </MenuFlyout>
+            </syncfusion:SfDataGrid.HeaderContextMenu>
+            <syncfusion:SfDataGrid.RecordContextMenu>
+                <MenuFlyout>
+                    <MenuFlyoutItem Text="Cut"
+                                            Command="{Binding Path=DataGrid.DataContext.GridCutCommand}"
+                                            CommandParameter="{Binding}"/>
+                    <MenuFlyoutItem Text="Copy"
+                                            Command="{Binding Path=DataGrid.DataContext.GridCopyCommand}"
+                                            CommandParameter="{Binding}"/>
+                    <MenuFlyoutItem Text="Paste"
+                                            Command="{Binding Path=DataGrid.DataContext.GridPasteCommand}"
+                                            CommandParameter="{Binding}"/>
+                    <MenuFlyoutItem Text="Delete"
+                                            Command="{Binding Path=DataGrid.DataContext.DeleteCommand}"
+                                            CommandParameter="{Binding}"/>
+                </MenuFlyout>
+            </syncfusion:SfDataGrid.RecordContextMenu>
+            <syncfusion:SfDataGrid.GroupDropItemContextMenu>
+                <MenuFlyout>
+                    <MenuFlyoutItem Text="Expand all"
+                                            Command="{Binding Path=DataGrid.DataContext.ExpandAllCommand}"
+                                            CommandParameter="{Binding}"/>
+                    <MenuFlyoutItem Text="Collapse all"
+                                            Command="{Binding Path=DataGrid.DataContext.CollapseAllCommand}"
+                                            CommandParameter="{Binding}"/>
+                </MenuFlyout>
+            </syncfusion:SfDataGrid.GroupDropItemContextMenu>
+            <syncfusion:SfDataGrid.GroupDropAreaContextMenu>
+                <MenuFlyout>
+                    <MenuFlyoutItem Text="Clear Groups"
+                                            Command="{Binding Path=DataGrid.DataContext.ClearGroupingCommand}"
+                                            CommandParameter="{Binding}"/>
+                </MenuFlyout>
+            </syncfusion:SfDataGrid.GroupDropAreaContextMenu>
+            <syncfusion:SfDataGrid.GroupSummaryContextMenu>
+                <MenuFlyout>
+                    <MenuFlyoutItem Text="Clear Summary"
+                                            Command="{Binding Path=DataGrid.DataContext.ClearSummaryCommand}"
+                                            CommandParameter="{Binding}">
+                    </MenuFlyoutItem>
+                </MenuFlyout>
+            </syncfusion:SfDataGrid.GroupSummaryContextMenu>
+        </syncfusion:SfDataGrid>
+    </View:SampleLayout.Sample>
+</View:SampleLayout>
