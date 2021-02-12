@@ -1,0 +1,118 @@
+﻿<View:SampleLayout x:Class="DataGrid.Filtering"
+                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                   xmlns:common="using:Common"
+                   xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                   xmlns:local="using:DataGrid"
+                   xmlns:View="using:Common"
+                   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                   xmlns:syncfusion="using:Syncfusion.UI.Xaml.Grid"
+                   mc:Ignorable="d">
+
+    <View:SampleLayout.Resources>
+        <ResourceDictionary>
+            <local:StringComboVisibility x:Key="stringComboConverter" />
+            <local:NumericComboVisibility x:Key="numericComboVisibility" />
+            <local:ConditionHeadingVisibility x:Key="conditionHeadingVisibility" />
+            <local:CurrencyFormatConverter x:Key="currencyFormatConverter" />
+        </ResourceDictionary>
+    </View:SampleLayout.Resources>
+
+    <View:SampleLayout.Sample>
+        <ContentControl>
+            <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0"
+                  Margin="10"
+                  HorizontalAlignment="Left"
+                  VerticalAlignment="Top">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="3"
+                               VerticalAlignment="Center"
+                               FontSize="16"
+                               FontWeight="Normal"
+                               Text="Find :" />
+                    <TextBox x:Name="FilterBox"                            
+                             Width="182"
+                             BorderBrush="Gray"
+                             VerticalAlignment="Top"
+                             local:FilteringTextBox.Command="{Binding TextChanged}" />
+
+                    <TextBlock Margin="30,3,5,3"
+                               VerticalAlignment="Center"
+                               FontSize="16"
+                               Text="Find from:" />
+
+                    <ComboBox x:Name="columnCombo"
+                              Width="182"
+                              BorderBrush="Gray"
+                              SelectedIndex="0"
+                              local:FilteringComboBox.Command="{Binding FilterComboChanged}">
+                        <ComboBoxItem>All Columns</ComboBoxItem>
+                        <ComboBoxItem>EmployeeID</ComboBoxItem>
+                        <ComboBoxItem>Salary</ComboBoxItem>
+                        <ComboBoxItem>Name</ComboBoxItem>
+                        <ComboBoxItem>Title</ComboBoxItem>
+                    </ComboBox>
+
+                    <TextBlock Margin="30,3,5,3"
+                               VerticalAlignment="Center"
+                               FontSize="16"
+                               FontWeight="Normal"
+                               Text="Find by Condition :"
+                               Visibility="{Binding SelectedIndex,
+                                                    ElementName=columnCombo,
+                                                    Converter={StaticResource conditionHeadingVisibility}}" />
+
+                    <ComboBox x:Name="stringCombo"
+                              Width="200"
+                              SelectedIndex="0"
+                              Visibility="{Binding SelectedIndex,
+                                                   ElementName=columnCombo,
+                                                   Converter={StaticResource stringComboConverter}}"
+                              local:FilteringComboBox.Command="{Binding ComboChanged}">
+                        <ComboBoxItem>Contains</ComboBoxItem>
+                        <ComboBoxItem>StartsWith</ComboBoxItem>
+                        <ComboBoxItem>EndsWith</ComboBoxItem>
+                    </ComboBox>
+                    <ComboBox x:Name="numericCombo"
+                              Width="200"
+                              SelectedIndex="0"
+                              Visibility="{Binding SelectedIndex,
+                                                   ElementName=columnCombo,
+                                                   Converter={StaticResource numericComboVisibility}}"
+                              local:FilteringComboBox.Command="{Binding ComboChanged}">
+                        <ComboBoxItem>Equals</ComboBoxItem>
+                        <ComboBoxItem>GreaterThan</ComboBoxItem>
+                        <ComboBoxItem>LessThan</ComboBoxItem>
+                        <ComboBoxItem>NotEquals</ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+            </Grid>
+
+            <Grid Grid.Row="1">
+                <syncfusion:SfDataGrid x:Name="sfGrid"
+                                       AutoGenerateColumns="False"
+                                       ColumnSizer="Star"
+                                       Margin="10,13,10,15"
+                                       NavigationMode="Row">
+                    <syncfusion:SfDataGrid.Columns>
+                        <syncfusion:GridTextColumn MappingName="EmployeeID" 
+                                                   HeaderText="Employee ID"/>
+                        <syncfusion:GridTextColumn MappingName="Name" />
+                        <syncfusion:GridTextColumn MappingName="Title"/>
+                        <syncfusion:GridTextColumn MappingName="Gender" />
+                        <syncfusion:GridTextColumn DisplayBinding="{Binding Salary,
+                                                                            Converter={StaticResource currencyFormatConverter}}"                                                   
+                                                   TextAlignment="Right" />
+                    </syncfusion:SfDataGrid.Columns>
+                </syncfusion:SfDataGrid>
+            </Grid>
+        </Grid>
+        </ContentControl>
+
+    </View:SampleLayout.Sample>
+</View:SampleLayout>

@@ -1,0 +1,111 @@
+﻿<common:SampleLayout
+    x:Class="Syncfusion.SampleBrowser.UWP.SfChart.ScatterDataEditing"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Syncfusion.SampleBrowser.UWP.SfChart"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:common="using:Common"
+    xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+    <common:SampleLayout.Sample>
+        <ContentControl Margin="30,50,50,25">
+            <Grid x:Name="MainGrid">
+                <Grid.Resources>
+                    <ResourceDictionary>
+                        <chart:ChartColorModel x:Key="customBrush">
+                            <chart:ChartColorModel.CustomBrushes>
+                                <SolidColorBrush Color="#99DE4A" />
+                                <SolidColorBrush Color="#A4C5F4" />
+                                <SolidColorBrush Color="#F783C1" />
+                                <SolidColorBrush Color="#FBEC7E" />
+                                <SolidColorBrush Color="#7EDBDD" />
+                                <SolidColorBrush Color="#D3A0F8" />
+                                <SolidColorBrush Color="#FFCA61" />
+                                <SolidColorBrush Color="#FEB9FC" />
+                                <SolidColorBrush Color="#7EE0FC" />
+                                <SolidColorBrush Color="#ECF875" />
+                            </chart:ChartColorModel.CustomBrushes>
+                        </chart:ChartColorModel>
+
+                    </ResourceDictionary>
+                </Grid.Resources>
+                <Grid.DataContext>
+                    <local:SalePredictionViewModel/>
+                </Grid.DataContext>
+
+                <chart:SfChart Name="scatterChart"
+                               Palette="Custom" ColorModel="{StaticResource customBrush}"
+                               Header="Sales Prediction of Products" AreaBorderThickness="0,0.5,0.5,0" >
+
+                    <chart:SfChart.Legend>
+                        <chart:ChartLegend DockPosition="Bottom"/>
+                    </chart:SfChart.Legend>
+
+                    <chart:SfChart.PrimaryAxis>
+                        <chart:DateTimeAxis LabelFormat="MMM/yyyy" Header="Month" IntervalType="Months" Interval="1"
+                                            LabelExtent="30" 
+                                            >
+                        </chart:DateTimeAxis>
+                    </chart:SfChart.PrimaryAxis>
+
+                    <chart:SfChart.SecondaryAxis>
+                        <chart:NumericalAxis LabelExtent="50" RangePadding="Round" Header="Sale Count" >
+                        </chart:NumericalAxis>
+                    </chart:SfChart.SecondaryAxis>
+
+                    <chart:ScatterSeries x:Name="scatterSeries1" XBindingPath="Month" YBindingPath="SaleCount" 
+                                  ItemsSource="{Binding Data1}"
+                                  DragDirection="{Binding ElementName=dragDirectionCombo, Path=SelectedValue}"
+                                  Label="Product 1" />
+
+                    <chart:ScatterSeries x:Name="scatterSeries2" XBindingPath="Month" YBindingPath="SaleCount" 
+                                  ItemsSource="{Binding Data2}"
+                                  DragDirection="{Binding ElementName=dragDirectionCombo, Path=SelectedValue}"
+                                  Label="Product 2" />
+
+                </chart:SfChart>
+            </Grid>
+        </ContentControl>
+    </common:SampleLayout.Sample>
+
+    <common:SampleLayout.Setting>
+        <ContentControl >
+          
+            <Grid Margin="10">
+                <Grid.DataContext>
+                    <local:LineChartViewModel/>
+                </Grid.DataContext>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="45"/>
+                    <RowDefinition Height="45"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Text="Enable Segment Dragging" Margin="2" VerticalAlignment="Center" />
+                <CheckBox Grid.Column="1" x:Name="enableDraggingCheck" Checked="enableDraggingCheck_Operated"
+                      Unchecked="enableDraggingCheck_Operated"
+                      VerticalAlignment="Center" IsChecked="True" Margin="15,2,2,2" />
+
+                <TextBlock Grid.Row="1" Text="Drag Direction" Margin="2" VerticalAlignment="Center" />
+                <ComboBox Grid.Row="1" Grid.Column="1" x:Name="dragDirectionCombo"
+                          SelectionChanged="dragDirectionCombo_SelectionChanged"
+                          SelectedIndex="2" VerticalAlignment="Center" Margin="15,2,2,2" Width="100" >
+                    <ComboBoxItem>X</ComboBoxItem>
+                    <ComboBoxItem>Y</ComboBoxItem>
+                    <ComboBoxItem>XY</ComboBoxItem>
+                </ComboBox>
+              
+            </Grid>
+        </ContentControl>
+    </common:SampleLayout.Setting>
+
+</common:SampleLayout>
