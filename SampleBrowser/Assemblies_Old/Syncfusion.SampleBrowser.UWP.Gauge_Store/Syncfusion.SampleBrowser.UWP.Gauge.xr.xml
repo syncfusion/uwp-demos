@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Roots >
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="Content" />
+    <RootPropertyPathName Name="Foreground" />
+    <RootPropertyPathName Name="LabelFontSize" />
+    <RootPropertyPathName Name="Scales" />
+    <RootPropertyPathName Name="Ranges" />
+    <RootPropertyPathName Name="EndValue" />
+    <RootPropertyPathName Name="TickPosition" />
+    <RootPropertyPathName Name="LabelPosition" />
+    <RootPropertyPathName Name="RangePosition" />
+  </Roots.PropertyPathNames>
+  <Roots.RootTypes>
+    <RootType FullName="Windows.UI.Xaml.Application">
+      <RootProperty Name="RequestedTheme" />
+    </RootType>
+    <RootType FullName="Common.SampleLayout">
+      <RootProperty Name="Sample" />
+      <RootProperty Name="Setting" />
+      <RootEvent Name="Loaded" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ContentControl">
+      <RootProperty Name="Content" />
+      <RootEvent Name="Loaded" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="ColumnDefinitions" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
+      <RootMethod Name="GetColumn" />
+      <RootMethod Name="SetColumn" />
+      <RootMethod Name="GetRowSpan" />
+      <RootMethod Name="SetRowSpan" />
+      <RootMethod Name="GetColumnSpan" />
+      <RootMethod Name="SetColumnSpan" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Gauges.SfCircularGauge">
+      <RootProperty Name="Name" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HeaderAlignment" />
+      <RootProperty Name="GaugeHeaderPosition" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Resources" />
+      <RootProperty Name="GaugeHeader" />
+      <RootProperty Name="Scales" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Text" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="Inlines" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="TextWrapping" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Gauges.CircularScale">
+      <RootProperty Name="RimStroke" />
+      <RootProperty Name="TickStroke" />
+      <RootProperty Name="SmallTickStroke" />
+      <RootProperty Name="SmallTickLength" />
+      <RootProperty Name="RimStrokeThickness" />
+      <RootProperty Name="LabelStroke" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="SmallTickStrokeThickness" />
+      <RootProperty Name="Interval" />
+      <RootProperty Name="MinorTicksPerInterval" />
+      <RootProperty Name="TickLength" />
+      <RootProperty Name="TickStrokeThickness" />
+      <RootProperty Name="BindRangeStrokeToLabels" />
+      <RootProperty Name="BindRangeStrokeToTicks" />
+      <RootProperty Name="StartAngle" />
+      <RootProperty Name="SweepAngle" />
+      <RootProperty Name="StartValue" />
+      <RootProperty Name="EndValue" />
+      <RootProperty Name="RangePosition" />
+      <RootProperty Name="Ranges" />
+      <RootProperty Name="Pointers" />
+      <RootProperty Name="TickShape" />
+      <RootProperty Name="RangePointerPosition" />
+      <RootProperty Name="LabelOffset" />
+      <RootProperty Name="LabelPosition" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Gauges.CircularRange">
+      <RootProperty Name="StartValue" />
+      <RootProperty Name="EndValue" />
+      <RootProperty Name="Stroke" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Gauges.CircularPointer">
+      <RootProperty Name="EnableAnimation" />
+      <RootProperty Name="PointerCapDiameter" />
+      <RootProperty Name="PointerType" />
+      <RootProperty Name="NeedlePointerStroke" />
+      <RootProperty Name="NeedlePointerStrokeThickness" />
+      <RootProperty Name="NeedleLengthFactor" />
+      <RootProperty Name="PointerCapStroke" />
+      <RootProperty Name="Value" />
+      <RootProperty Name="RangePointerStroke" />
+      <RootProperty Name="RangePointerStrokeThickness" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Gauges.CircularScaleLabel" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Control">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Setter">
+      <RootProperty Name="Property" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ControlTemplate">
+      <RootProperty Name="TargetType" />
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="ElementName" />
+      <RootProperty Name="Path" />
+      <RootProperty Name="Mode" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Children" />
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Documents.Run">
+      <RootProperty Name="Text" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="SelectedItem" />
+    </RootType>
+    <RootType FullName="GaugeUWP_Samples.CircularGauge" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Border">
+      <RootProperty Name="Child" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Fill" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="UseLayoutRounding" />
+      <RootProperty Name="RenderTransform" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Path">
+      <RootProperty Name="Fill" />
+      <RootProperty Name="Stretch" />
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="UseLayoutRounding" />
+      <RootProperty Name="Data" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Gauges.SfDigitalGauge">
+      <RootProperty Name="SegmentThickness" />
+      <RootProperty Name="CharacterHeight" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="CharacterStroke" />
+      <RootProperty Name="CharacterWidth" />
+      <RootProperty Name="DimmedBrush" />
+      <RootProperty Name="CharactersSpacing" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Value" />
+      <RootProperty Name="CharacterType" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="CharacterSpacing" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.TransformGroup">
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.ScaleTransform" />
+    <RootType FullName="Windows.UI.Xaml.Media.SkewTransform" />
+    <RootType FullName="Windows.UI.Xaml.Media.RotateTransform">
+      <RootProperty Name="Angle" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.TranslateTransform" />
+    <RootType FullName="Windows.UI.Xaml.Media.LinearGradientBrush">
+      <RootProperty Name="EndPoint" />
+      <RootProperty Name="StartPoint" />
+      <RootProperty Name="GradientStops" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.GradientStop">
+      <RootProperty Name="Color" />
+      <RootProperty Name="Offset" />
+    </RootType>
+    <RootType FullName="GaugeUWP_Samples.DigitalGauge" />
+    <RootType FullName="Syncfusion.UI.Xaml.Gauges.SfLinearGauge">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="MainScale" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Gauges.LinearScale">
+      <RootProperty Name="ScaleDirection" />
+      <RootProperty Name="ScaleBarLength" />
+      <RootProperty Name="ScaleBarSize" />
+      <RootProperty Name="ScaleBarStroke" />
+      <RootProperty Name="Minimum" />
+      <RootProperty Name="Maximum" />
+      <RootProperty Name="Interval" />
+      <RootProperty Name="MinorTicksPerInterval" />
+      <RootProperty Name="MajorTickSize" />
+      <RootProperty Name="MinorTickSize" />
+      <RootProperty Name="LabelSize" />
+      <RootProperty Name="MajorTickStroke" />
+      <RootProperty Name="MinorTickStroke" />
+      <RootProperty Name="LabelStroke" />
+      <RootProperty Name="RangePosition" />
+      <RootProperty Name="TickPosition" />
+      <RootProperty Name="LabelPosition" />
+      <RootProperty Name="Pointers" />
+      <RootProperty Name="Ranges" />
+      <RootProperty Name="LabelOffset" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Gauges.LinearPointer">
+      <RootProperty Name="PointerType" />
+      <RootProperty Name="SymbolPointerStroke" />
+      <RootProperty Name="SymbolPointerStyle" />
+      <RootProperty Name="SymbolPointerPosition" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Gauges.LinearRange">
+      <RootProperty Name="StartValue" />
+      <RootProperty Name="EndValue" />
+      <RootProperty Name="StartWidth" />
+      <RootProperty Name="EndWidth" />
+      <RootProperty Name="RangeStroke" />
+      <RootProperty Name="RangeOpacity" />
+      <RootProperty Name="RangeOffset" />
+    </RootType>
+    <RootType FullName="GaugeUWP_Samples.LinearGauge" />
+  </Roots.RootTypes>
+</Roots>

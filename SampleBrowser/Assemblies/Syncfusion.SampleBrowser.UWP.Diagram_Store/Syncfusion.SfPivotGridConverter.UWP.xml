@@ -1,0 +1,381 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfPivotGridConverter.UWP</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.UI.Xaml.PivotGridConverter.ExportingGridEventHandler">
+            <summary>
+            Represents the method that will handle the <see cref="T:Syncfusion.UI.Xaml.PivotGridConverter.ExportingGridEventHandler"/> event.
+            </summary>
+            <param name="sender">The object where the event handler is attached.</param>
+            <param name="e">The data for the event.</param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGridConverter.ExportingGridEventArgs">
+            <summary>
+            Provides event data for the<see cref="E:Syncfusion.UI.Xaml.PivotGridConverter.ExportingGridEventHandler"/> event.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGridConverter.ExportingGridEventArgs.Document">
+            <summary>
+            Gets or sets the document to which the grid is going to export.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToCsv">
+            <summary>
+            Represents a class that transfers the grid content to CSV document.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToCsv.#ctor(Syncfusion.Olap.UWP.Engine.PivotEngine)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToCsv" /> class.
+            </summary>
+            <param name="pivotData">The pivot engine data.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToCsv.#ctor(Syncfusion.Olap.UWP.Engine.PivotEngine[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToCsv" /> class.
+            </summary>
+            <param name="pivotData">The pivot engine data.</param>
+            <exception cref="T:System.ArgumentNullException">Throws exception if the PivotEngine array is null or its length become zero.</exception>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToCsv.#ctor(Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToCsv" /> class.
+            </summary>
+            <param name="pivotGrid">This parameter holds the SfPivotGrid control object which is utilized for CSV exporting.</param>
+            <remarks>
+            This is applicable only for relational data source.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToCsv.#ctor(Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToCsv" /> class.
+            </summary>
+            <param name="pivotGrid">This parameter holds the SfPivotGrid control object which is utilized for CSV exporting.</param>
+            <exception cref="T:System.ArgumentNullException">Throws exception if the SfPivotGrid control is null or its length become zero.</exception>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToCsv.ExportToDocument(System.String)">
+            <summary>
+            Exports the grid to CSV document.
+            </summary>
+            <param name="fileName">The file name for exported CSV document. </param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGridConverter.ExportModes">
+            <summary>
+            Specifies export modes, to export the PivotGrid either cell wise or as PivotTable.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGridConverter.ExportModes.Cell">
+            <summary>
+            Enables cell wise exporting.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGridConverter.ExportModes.PivotTable">
+            <summary>
+            Enables PivotTable exporting.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToExcel">
+            <summary>
+            Represents a class that transfers the grid content to excel document.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToExcel.#ctor(Syncfusion.Olap.UWP.Engine.PivotEngine,Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo,Syncfusion.Olap.UWP.Engine.GridLayout,System.String,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToExcel"/> class.
+            </summary>
+            <param name="pivotData">The pivot data.</param>
+            <param name="gridStyleInfo">The grid style information.</param>
+            <param name="layout">The grid layout.</param>
+            <param name="excelExtension">The extension to save as excel document.</param>
+            <param name="isItemsSource">Indicates whether it is items source.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToExcel.#ctor(Syncfusion.Olap.UWP.Engine.PivotEngine[],Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo,Syncfusion.Olap.UWP.Engine.GridLayout,System.String,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToExcel"/> class.
+            </summary>
+            <param name="pivotData">The pivot data.</param>
+            <param name="gridStyleInfo">The grid style information.</param>
+            <param name="layout">The grid layout.</param>
+            <param name="excelExtension">The extension to save as excel document.</param>
+            <param name="isItemsSource">Indicates whether it is items source.</param>
+            <exception cref="T:System.ArgumentNullException">Throws exception if the PivotEngine array is null or its length become zero.</exception>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToExcel.#ctor(Syncfusion.Olap.UWP.Engine.PivotEngine,Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo,Syncfusion.Olap.UWP.Engine.GridLayout,System.String,System.Boolean,System.Collections.ObjectModel.ObservableCollection{Syncfusion.UI.Xaml.PivotGrid.PivotGridDataConditionalFormat})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToExcel"/> class.
+            </summary>
+            <param name="pivotData">The pivot data.</param>
+            <param name="gridStyleInfo">The grid style information.</param>
+            <param name="layout">The grid layout.</param>
+            <param name="excelExtension">The extension to save as excel document.</param>
+            <param name="isItemsSource">Indicates whether it is items source.</param>
+            <param name="conditionalFormat">The conditional format.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToExcel.#ctor(Syncfusion.Olap.UWP.Engine.PivotEngine[],Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo,Syncfusion.Olap.UWP.Engine.GridLayout,System.String,System.Boolean,System.Collections.ObjectModel.ObservableCollection{Syncfusion.UI.Xaml.PivotGrid.PivotGridDataConditionalFormat})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToExcel"/> class.
+            </summary>
+            <param name="pivotData">The pivot data.</param>
+            <param name="gridStyleInfo">The grid style information.</param>
+            <param name="layout">The grid layout.</param>
+            <param name="excelExtension">The extension to save as excel document.</param>
+            <param name="isItemsSource">Indicates whether it is items source.</param>
+            <param name="conditionalFormat">The Conditional format.</param>
+            <exception cref="T:System.ArgumentNullException">Throws exception if the PivotEngine array is null or its length become zero.</exception>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToExcel.#ctor(Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid,Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo,System.String,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToExcel"/> class.
+            </summary>
+            <param name = "pivotGrid" > This parameter holds the SfPivotGrid control object which is utilized for Excel exporting.</param>
+            <param name="gridStyleInfo">The grid style information.</param>
+            <param name="excelExtension">The extension to save as excel document.</param>
+            <param name="isItemsSource">Indicates whether it is items source.</param>
+            <remarks>
+            This is applicable only for relational data source.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToExcel.#ctor(Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid[],Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo,System.String,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToExcel"/> class.
+            </summary>
+            <param name = "pivotGrid" > This parameter holds the SfPivotGrid control object which is utilized for Excel exporting.</param>
+            <param name="gridStyleInfo">The grid style information.</param>
+            <param name="excelExtension">The extension to save as excel document.</param>
+            <param name="isItemsSource">Indicates whether it is items source.</param>
+            <exception cref="T:System.ArgumentNullException">Throws exception if the SfPivotGrid control is null or its length become zero.</exception>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToExcel.Exporting">
+            <summary>
+            Occurs while exporting the document.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToExcel.ExportMode">
+            <summary>
+            Gets or sets the mode(Cell/PivotTable) to export.
+            </summary>
+            <value>ExportMode</value>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToExcel.ExportToDocument(System.String)">
+            <summary>
+            Exports the grid to excel document.
+            </summary>
+            <param name="fileName">The file name for exported excel document. </param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToExcel.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToExcel.GetSubTotalType(Syncfusion.PivotAnalysis.UWP.SummaryType)">
+            <summary>
+            Converts the summary type of PivotGrid to respective type supported by XlsIO.
+            </summary>
+            <param name="summaryType">SummaryType</param>
+            <returns>PivotSubtotalType</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToExcel.Dispose(System.Boolean)">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+            <param name="isDisposing">Checks whether the instances are needs to be disposed.</param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToPdf">
+            <summary>
+            Represents a class that transfers the grid content to PDF document.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToPdf.#ctor(Syncfusion.Olap.UWP.Engine.PivotEngine,Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToPdf"/> class.
+            </summary>
+            <param name="pivotData">The pivot data.</param>
+            <param name="gridStyleInfo">The grid style information.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToPdf.#ctor(Syncfusion.Olap.UWP.Engine.PivotEngine[],Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToPdf"/> class.
+            </summary>
+            <param name="pivotData">The pivot data.</param>
+            <param name="gridStyleInfo">The grid style information.</param>
+            <exception cref="T:System.ArgumentNullException">Throws exception if the PivotEngine array is null or its length become zero.</exception>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToPdf.#ctor(Syncfusion.Olap.UWP.Engine.PivotEngine,Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo,System.Collections.ObjectModel.ObservableCollection{Syncfusion.UI.Xaml.PivotGrid.PivotGridDataConditionalFormat})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToPdf"/> class.
+            </summary>
+            <param name="pivotData">The pivot data.</param>
+            <param name="gridStyleInfo">The grid style information.</param>
+            <param name="conditionalFormat">The Conditional format.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToPdf.#ctor(Syncfusion.Olap.UWP.Engine.PivotEngine[],Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo,System.Collections.ObjectModel.ObservableCollection{Syncfusion.UI.Xaml.PivotGrid.PivotGridDataConditionalFormat})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToPdf"/> class.
+            </summary>
+            <param name="pivotData">The pivot data.</param>
+            <param name="gridStyleInfo">The grid style information.</param>
+            <param name="conditionalFormat">The Conditional format.</param>
+            <exception cref="T:System.ArgumentNullException">Throws exception if the PivotEngine array is null or its length become zero.</exception>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToPdf.#ctor(Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid,Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToPdf"/> class.
+            </summary>
+            <param name="pivotGrid">This parameter holds the SfPivotGrid control object which is utilized for PDF exporting.</param>
+            <param name="gridStyleInfo">The grid style information.</param>
+            <remarks>
+            This is applicable only for relational data source.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToPdf.#ctor(Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid[],Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToPdf"/> class.
+            </summary>
+            <param name="pivotGrid">This parameter holds the SfPivotGrid control object which is utilized for PDF exporting.</param>
+            <param name="gridStyleInfo">The grid style information.</param>
+            <exception cref="T:System.ArgumentNullException">Throws exception if the SfPivotGrid control is null or its length become zero.</exception>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToPdf.Exporting">
+            <summary>
+            Occurs while exporting the document.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToPdf.ExportToDocument(System.String)">
+            <summary>
+            Exports the grid to PDF document.
+            </summary>
+            <param name="fileName">The file name for exported PDF document. </param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToPdf.GetPdfFontName(System.String)">
+            <summary>
+            Gets the standard PDF font name.
+            </summary>
+            <param name="fontName">The font name to be applied.</param>
+            <returns>The standard PDF font applied to the given font name.</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToPdf.GetPdfFontStyle(System.Nullable{System.Int32})">
+            <summary>
+            Gets the font style for the PDF document.
+            </summary>
+            <param name="fontFlags">The style to be applied.</param>
+            <returns>The respective style applied PDF fonts.</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToWord">
+            <summary>
+            Represents a class that transfers the grid content to word document.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToWord.#ctor(Syncfusion.Olap.UWP.Engine.PivotEngine,Syncfusion.Olap.UWP.Engine.GridLayout,Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToWord"/> class.
+            </summary>
+            <param name="pivotData">The pivot data.</param>
+            <param name="layout">The grid layout.</param>
+            <param name="gridStyleInfo">The grid style information.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToWord.#ctor(Syncfusion.Olap.UWP.Engine.PivotEngine[],Syncfusion.Olap.UWP.Engine.GridLayout,Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToWord"/> class.
+            </summary>
+            <param name="pivotData">The pivot data.</param>
+            <param name="layout">The grid layout.</param>
+            <param name="gridStyleInfo">The grid style information.</param>
+            <exception cref="T:System.ArgumentNullException">Throws exception if the PivotEngine array is null or its length become zero.</exception>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToWord.#ctor(Syncfusion.Olap.UWP.Engine.PivotEngine,Syncfusion.Olap.UWP.Engine.GridLayout,Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo,System.Collections.ObjectModel.ObservableCollection{Syncfusion.UI.Xaml.PivotGrid.PivotGridDataConditionalFormat})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToWord"/> class.
+            </summary>
+            <param name="pivotData">The pivot data.</param>
+            <param name="layout">The grid layout.</param>
+            <param name="gridStyleInfo">The grid style information.</param>
+            <param name="conditionalFormat">The Conditional format.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToWord.#ctor(Syncfusion.Olap.UWP.Engine.PivotEngine[],Syncfusion.Olap.UWP.Engine.GridLayout,Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo,System.Collections.ObjectModel.ObservableCollection{Syncfusion.UI.Xaml.PivotGrid.PivotGridDataConditionalFormat})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToWord"/> class.
+            </summary>
+            <param name="pivotData">The pivot data.</param>
+            <param name="layout">The grid layout.</param>
+            <param name="gridStyleInfo">The grid style information.</param>
+            <param name="conditionalFormat">The Conditional format.</param>
+            <exception cref="T:System.ArgumentNullException">Throws exception if the PivotEngine array is null or its length become zero.</exception>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToWord.#ctor(Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid,Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToWord"/> class.
+            </summary>
+            <param name = "pivotGrid" > This parameter holds the SfPivotGrid control object which is utilized for Word exporting.</param>
+            <param name="gridStyleInfo">The grid style information.</param>
+            <remarks>
+            This is applicable only for relational data source.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToWord.#ctor(Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid[],Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToWord"/> class.
+            </summary>
+            <param name = "pivotGrid" > This parameter holds the SfPivotGrid control object which is utilized for Word exporting.</param>
+            <param name="gridStyleInfo">The grid style information.</param>
+            <exception cref="T:System.ArgumentNullException">Throws exception if the SfPivotGrid control is null or its length become zero.</exception>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToWord.Exporting">
+            <summary>
+            Occurs while exporting the document.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToWord.ExportToDocument(System.String)">
+            <summary>
+            Exports the grid to word document.
+            </summary>
+            <param name="fileName">The file name for exported word document. </param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGridConverter.ExportPivotGridToWord.ApplyMdxStyle(System.Int32,System.Int32,Syncfusion.Olap.UWP.Engine.PivotCellDescriptor,Syncfusion.DocIO.DLS.IWTable,Syncfusion.DocIO.DLS.IWTextRange)">
+            <summary>
+            Applies the formatting styles form the Mdx query.
+            </summary>
+            <param name="rowIndex">The row index.</param>
+            <param name="columnIndex">The column index.</param>
+            <param name="pivotCell">The pivot cell to be formatted.</param>
+            <param name="docTable">The word document.</param>
+            <param name="text">The text value.</param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGridConverter.NamespaceDoc">
+            <summary>
+            The Syncfusion.UI.Xaml.PivotGridConverter namespace contains classes for exporting the Pivot Grid control to a word, excel or PDF document.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGridConverter.ClassReferenceAttribute">
+            <summary>
+            Represents the class that defines the attribute for class reference.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGridConverter.ClassReferenceAttribute.isReviewed">
+            <summary>
+            Gets or sets a value indicating whether the attribute is reviewed.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGridConverter.ClassReferenceAttribute.shouldInclude">
+            <summary>
+            Gets or sets a value indicating whether the attribute should be included.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGridConverter.ClassReferenceAttribute.IsReviewed">
+            <summary>
+            Gets or sets a value indicating whether the attribute is reviewed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGridConverter.ClassReferenceAttribute.ShouldInclude">
+            <summary>
+            Gets or sets a value indicating whether the attribute should be included.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGridConverter.ResourceWrapper">
+            <summary>
+            ResourceWrapper is used to apply the static resource to UWP Components
+            </summary>
+        </member>
+    </members>
+</doc>

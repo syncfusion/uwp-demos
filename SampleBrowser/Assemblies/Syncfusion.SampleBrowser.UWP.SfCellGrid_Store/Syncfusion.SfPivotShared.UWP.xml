@@ -1,0 +1,514 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfPivotShared.UWP</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.UI.Xaml.PivotShared.PagerDisplayMode">
+            <summary>
+            Defines constants that specify how to display the pager settings.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotShared.PagerDisplayMode.Both">
+            <summary>
+            Displays both categorical(or column) and series(or row) settings.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotShared.PagerDisplayMode.CategorialOnly">
+            <summary>
+            Displays only categorical(or column) settings.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotShared.PagerDisplayMode.SeriesOnly">
+            <summary>
+            Displays only series(or row) settings.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotShared.PageChangingEventArgs">
+            <summary>
+            Provides data for page changing event.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotShared.PageChangingEventArgs.NewPageIndex">
+            <summary>
+            Gets or sets the index of the page.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotShared.Utils.FindParentElementOfType``1(Windows.UI.Xaml.FrameworkElement)">
+            <summary>
+            Gets the parent element of the specified framework element in the visual tree.
+            </summary>
+            <typeparam name="T">The type of parent element.</typeparam>
+            <param name="element">The child element.</param>
+            <returns>The parent element.</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotShared.PageSetupDialog">
+            <summary>
+            An empty page that can be used on its own or navigated to within a Frame.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotShared.PageSetupDialog.OlapDataManagerProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for OlapDataManager.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotShared.PageSetupDialog.DisplayModeProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DisplayMode. This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotShared.PageSetupDialog.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotShared.PageSetupDialog" /> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotShared.PageSetupDialog.OlapDataManager">
+            <summary>
+            Gets or sets the OLAP data manager which manages OLAP data source.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotShared.PageSetupDialog.PagerDisplayMode">
+            <summary>
+            Gets or sets the value to display the pager based on the mode.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotShared.PageSetupDialog.OnApplyTemplate">
+            <summary>
+            Builds the visual tree for this control when a new template is applied.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotShared.PivotPagedCollectionView">
+            <summary>
+            PivotPagedCollectionView represents the page view for Pivot Pager.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotShared.PivotPagedCollectionView.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotShared.PivotPagedCollectionView"/> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotShared.PivotPagedCollectionView.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotShared.PivotPagedCollectionView"/> class.
+            </summary>
+            <param name="totalItemCount">The total item count.</param>
+            <param name="pageIndex">Index of the page.</param>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.PivotShared.PivotPagedCollectionView.PageChanged">
+            <summary>
+            Occurs when the page is changed in the pager.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.PivotShared.PivotPagedCollectionView.PageChanging">
+            <summary>
+            Occurs when the page is changing in the pager.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotShared.PivotPagedCollectionView.PageCount">
+            <summary>
+            Gets the number of pages we currently have
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotShared.PivotPagedCollectionView.PageIndex">
+            <summary>
+            Gets the index of the page.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotShared.PivotPagedCollectionView.PageSize">
+            <summary>
+            Gets or sets the size of the page.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotShared.PivotPagedCollectionView.TotalItemCount">
+            <summary>
+            Gets the total item count of the page.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotShared.PivotPagedCollectionView.ItemCount">
+            <summary>
+            Gets the item count of the page.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotShared.PivotPagedCollectionView.CanChangePage">
+             <summary>
+            Gets a value indicating whether the page can change or not
+             /// </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotShared.PivotPagedCollectionView.IsPageChanging">
+             <summary>
+            Gets a value indicating whether the page is changing or not
+             /// </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotShared.PivotPagedCollectionView.MoveToFirstPage">
+             <summary>
+            Gets or sets a value indicating whether the page is moves to first or not
+             /// </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotShared.PivotPagedCollectionView.MoveToLastPage">
+             <summary>
+            Gets or sets a value indicating whether the page is moves to last or not
+             /// </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotShared.PivotPagedCollectionView.MoveToNextPage">
+             <summary>
+            Gets or sets a value indicating whether the page is moves to next page or not
+             /// </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotShared.PivotPagedCollectionView.MoveToPage(System.Int32)">
+             <summary>
+            Gets or sets a value indicating whether the page is moves or not
+             /// </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotShared.PivotPagedCollectionView.MoveToPreviousPage">
+             <summary>
+            Gets or sets a value indicating whether the page is moves to previous page or not
+             /// </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotShared.PivotPagedCollectionView.SetTotalItemCount(System.Int32)">
+            <summary>
+            Sets the total item count.
+            </summary>
+            <param name="totalCount">The total item count.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotShared.PivotPagedCollectionView.SetPageIndex(System.Int32)">
+            <summary>
+            Sets the index of the page.
+            </summary>
+            <param name="index">Index of the page.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotShared.PivotPagedCollectionView.RaisePageChangingEvent(System.Int32)">
+            <summary>
+            Raises the page changing event.
+            </summary>
+            <param name="newPageIndex">New index of the page.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotShared.PivotPagedCollectionView.RaisePageChangedEvent">
+            <summary>
+            Raises the page changed event.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotShared.SfPivotPager">
+            <summary>
+            Represents the control that visualizes multidimensional data from OLAP data source.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotShared.SfPivotPager.OlapDataManagerProperty">
+            <summary>
+            Sets the OlapDataManager.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotShared.SfPivotPager.DisplayModeProperty">
+            <summary>
+            Sets the display mode.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotShared.SfPivotPager.CategoricalPageSizeProperty">
+            <summary>
+            Sets the default page size for categorical pager.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotShared.SfPivotPager.SeriesPageSizeProperty">
+            <summary>
+            Sets the default page size for series pager.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotShared.SfPivotPager.CategoricalCurrentPageProperty">
+            <summary>
+            Sets current page number to categorical pager.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotShared.SfPivotPager.SeriesCurrentPageProperty">
+            <summary>
+            Sets current page number to series pager.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotShared.SfPivotPager.EnableAutoExecuteProperty">
+            <summary>
+            Sets the AutoExecute for pivot pager.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotShared.SfPivotPager.CategoricalPageCountProperty">
+            <summary>
+            Sets the page count of categorical pager.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotShared.SfPivotPager.SeriesPageCountProperty">
+            <summary>
+            Sets the page count of series pager.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotShared.SfPivotPager.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotShared.SfPivotPager"/> class.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotShared.SfPivotPager.RefreshStartedEventHandler">
+            <summary>
+            Represents the method that will handle the <see cref="E:Syncfusion.UI.Xaml.PivotShared.SfPivotPager.RefreshStarted" /> event.
+            </summary>
+            <param name="sender">The <see cref="T:Syncfusion.UI.Xaml.PivotShared.SfPivotPager"/> instance.</param>
+            <param name="e">The <see cref="T:Syncfusion.UI.Xaml.PivotShared.RefreshEventArgs"/> contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotShared.SfPivotPager.RefreshCompletedEventHandler">
+            <summary>
+            Represents the method that will handle the <see cref="E:Syncfusion.UI.Xaml.PivotShared.SfPivotPager.RefreshCompleted" /> event.
+            </summary>
+            <param name="sender">The <see cref="T:Syncfusion.UI.Xaml.PivotShared.SfPivotPager"/> instance.</param>
+            <param name="e">The <see cref="T:Syncfusion.UI.Xaml.PivotShared.RefreshEventArgs"/> contains the event data.</param>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.PivotShared.SfPivotPager.RefreshStarted">
+            <summary>
+            Occurs when the SfPivotClient started to Refresh.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.PivotShared.SfPivotPager.RefreshCompleted">
+            <summary>
+            Occurs when the SfPivotClient completed Refresh.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotShared.SfPivotPager.OlapDataManager">
+            <summary>
+            Gets or sets the OLAP data manager which manages OLAP data source.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotShared.SfPivotPager.PagerDisplayMode">
+            <summary>
+            Gets or sets the value to display the pager based on the mode.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotShared.SfPivotPager.CategoricalPageSize">
+            <summary>
+            Gets or sets size of the categorical page.
+            </summary>
+            <value>Size of the categorical page.</value>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotShared.SfPivotPager.SeriesPageSize">
+            <summary>
+            Gets or sets size of the series page.
+            </summary>
+            <value>Size of the series page.</value>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotShared.SfPivotPager.CategoricalCurrentPage">
+            <summary>
+            Gets or sets categorical current page.
+            </summary>
+            <value>Categorical current page.</value>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotShared.SfPivotPager.SeriesCurrentPage">
+            <summary>
+            Gets or sets series current page.
+            </summary>
+            <value>Series current page.</value>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotShared.SfPivotPager.EnableAutoExecute">
+            <summary>
+            Gets or sets whether the AutoExecute option is enabled in pivot client control or not.
+            </summary>
+            <value> Returns <c>true</c> if [EnableAutoExecute]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotShared.SfPivotPager.UpdatePageSizesFromCurrentReport">
+            <summary>
+            Updates the page size from current report.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotShared.SfPivotPager.UpdateCategoricalPagerControl">
+            <summary>
+            Updates categorical pager control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotShared.SfPivotPager.UpdateSeriesPagerControl">
+            <summary>
+            Updates series pager control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotShared.SfPivotPager.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotShared.SfPivotPager.OnApplyTemplate">
+            <summary>
+            When overridden in a derived class, it get invoked whenever application code or internal processes (such as a rebuilding layout pass) call <see cref="M:System.Windows.Controls.Control.ApplyTemplate"/>. In simplest terms, this means the method is called just before a UI element displays in an application. For more information, see Remarks.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotShared.SfPivotPager.ResetPager">
+            <summary>
+            Resets the pager.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotShared.SfPivotPager.RaiseRefreshStarted(System.Object,Syncfusion.UI.Xaml.PivotShared.RefreshEventArgs)">
+            <summary>
+            Raises the <see cref="E:Syncfusion.UI.Xaml.PivotShared.SfPivotPager.RefreshStarted"/> event.
+            </summary>
+            <param name="sender">The <see cref="T:Syncfusion.UI.Xaml.PivotShared.SfPivotPager"/> instance.</param>
+            <param name="e">The <see cref="T:Syncfusion.UI.Xaml.PivotShared.RefreshEventArgs"/> contains the event data.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotShared.SfPivotPager.RaiseRefreshCompleted(System.Object,Syncfusion.UI.Xaml.PivotShared.RefreshEventArgs)">
+            <summary>
+            Raises the <see cref="E:Syncfusion.UI.Xaml.PivotShared.SfPivotPager.RefreshCompleted"/> event.
+            </summary>
+            <param name="sender">The <see cref="T:Syncfusion.UI.Xaml.PivotShared.SfPivotPager"/> instance.</param>
+            <param name="e">The <see cref="T:Syncfusion.UI.Xaml.PivotShared.RefreshEventArgs"/> contains the event data.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotShared.SfPivotPager.SfPivotPager_RefreshStarted(System.Object,Syncfusion.UI.Xaml.PivotShared.RefreshEventArgs)">
+            <summary>
+            Triggered when the refresh started.
+            </summary>
+            <param name="sender">The <see cref="T:Syncfusion.UI.Xaml.PivotShared.SfPivotPager"/> instance.</param>
+            <param name="e">The <see cref="T:Syncfusion.UI.Xaml.PivotShared.RefreshEventArgs"/> contains the event data.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotShared.SfPivotPager.SfPivotPager_RefreshCompleted(System.Object,Syncfusion.UI.Xaml.PivotShared.RefreshEventArgs)">
+            <summary>
+            Triggered when the refresh gets completed.
+            </summary>
+            <param name="sender">The <see cref="T:Syncfusion.UI.Xaml.PivotShared.SfPivotPager"/> instance.</param>
+            <param name="e">The <see cref="T:Syncfusion.UI.Xaml.PivotShared.RefreshEventArgs"/> contains the event data.</param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotShared.RefreshEventArgs">
+            <summary>
+            Provides event data for the Refresh events.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotShared.ClassReferenceAttribute">
+            <summary>
+            Represents the class that defines the attribute for class reference.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotShared.ClassReferenceAttribute.isReviewed">
+            <summary>
+            Gets or sets a value indicating whether the attribute is reviewed.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotShared.ClassReferenceAttribute.shouldInclude">
+            <summary>
+            Gets or sets a value indicating whether the attribute should be included.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotShared.ClassReferenceAttribute.IsReviewed">
+            <summary>
+            Gets or sets a value indicating whether the attribute is reviewed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotShared.ClassReferenceAttribute.ShouldInclude">
+            <summary>
+            Gets or sets a value indicating whether the attribute should be included.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotShared.ResourceWrapper">
+            <summary>
+            Represents a wrapper that is used to apply static resources to Pivot Pager's components.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotShared.ResourceWrapper.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotShared.ResourceWrapper">ResourceWrapper</see> class. 
+            </summary>    
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotShared.ResourceWrapper.Page">
+            <summary>
+            Gets or sets the localized string for 'Page'.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotShared.ResourceWrapper.CurrentPage">
+            <summary>
+            Gets or sets the localized string for 'CurrentPage'.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotShared.ResourceWrapper.PageSize">
+            <summary>
+            Gets or sets the localized string for 'PageSize'.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotShared.ResourceWrapper.PagerSettings">
+            <summary>
+            Gets or sets the localized string for 'PagerSettings'.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotShared.ResourceWrapper.PageSettings">
+            <summary>
+            Gets or sets the localized string for 'PageSettings'.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotShared.ResourceWrapper.RowPageSettings">
+            <summary>
+            Gets or sets the localized string for 'RowPageSettings'.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotShared.ResourceWrapper.ColumnPageSettings">
+            <summary>
+            Gets or sets the localized string for 'ColumnPageSettings'.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotShared.ResourceWrapper.RowPager">
+            <summary>
+            Gets or sets the localized string for 'RowPager'.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotShared.ResourceWrapper.ColumnPager">
+            <summary>
+            Gets or sets the localized string for 'ColumnPager'.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotShared.ResourceWrapper.MoveToPrevious">
+            <summary>
+            Gets or sets the localized string for 'MoveToPrevious'.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotShared.ResourceWrapper.MoveToNext">
+            <summary>
+            Gets or sets the localized string for 'MoveToNext'.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotShared.ResourceWrapper.MoveToFirst">
+            <summary>
+            Gets or sets the localized string for 'MoveToFirst'.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotShared.ResourceWrapper.MoveToLast">
+            <summary>
+            Gets or sets the localized string for 'MoveToLast'.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotShared.ResourceWrapper.Of">
+            <summary>
+            Gets or sets the localized string for 'Of'.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotShared.ResourceWrapper.Settings">
+            <summary>
+            Gets or sets the localized string for 'Settings'.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotShared.ResourceWrapper.Ok">
+            <summary>
+            Gets or sets the localized string for 'OK'.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotShared.ResourceWrapper.Cancel">
+            <summary>
+            Gets or sets the localized string for 'Cancel'.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotShared.Syncfusion_SfPivotShared_UWP_2017_XamlTypeInfo.XamlMetaDataProvider">
+            <summary>
+            Main class for providing metadata for the app or library
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotShared.Syncfusion_SfPivotShared_UWP_2017_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.Type)">
+            <summary>
+            GetXamlType(Type)
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotShared.Syncfusion_SfPivotShared_UWP_2017_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.String)">
+            <summary>
+            GetXamlType(String)
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotShared.Syncfusion_SfPivotShared_UWP_2017_XamlTypeInfo.XamlMetaDataProvider.GetXmlnsDefinitions">
+            <summary>
+            GetXmlnsDefinitions()
+            </summary>
+        </member>
+    </members>
+</doc>

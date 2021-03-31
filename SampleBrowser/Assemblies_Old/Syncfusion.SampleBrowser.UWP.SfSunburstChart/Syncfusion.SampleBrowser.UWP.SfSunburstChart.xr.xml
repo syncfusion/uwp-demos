@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Roots >
+  <Roots.Interfaces>
+    <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
+  </Roots.Interfaces>
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="Value" />
+    <RootPropertyPathName Name="Category" />
+    <RootPropertyPathName Name="Population_Data" />
+    <RootPropertyPathName Name="AnimationDuration" />
+    <RootPropertyPathName Name="DataSource" />
+    <RootPropertyPathName Name="InnerRadius" />
+    <RootPropertyPathName Name="Radius" />
+    <RootPropertyPathName Name="EndAngle" />
+    <RootPropertyPathName Name="StartAngle" />
+    <RootPropertyPathName Name="Opacity" />
+    <RootPropertyPathName Name="Population_Data_Selection" />
+  </Roots.PropertyPathNames>
+  <Roots.RootTypes>
+    <RootType FullName="Windows.UI.Xaml.Application">
+      <RootProperty Name="RequestedTheme" />
+    </RootType>
+    <RootType FullName="Common.SampleLayout">
+      <RootProperty Name="Sample" />
+      <RootProperty Name="Setting" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ContentControl">
+      <RootProperty Name="Content" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="Background" />
+      <RootProperty Name="Resources" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="ColumnDefinitions" />
+      <RootProperty Name="Margin" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
+      <RootMethod Name="GetColumn" />
+      <RootMethod Name="SetColumn" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfSunburstChart.ViewModel" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfSunburstChart.ToolTipConverter" />
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Border">
+      <RootProperty Name="Background" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="CornerRadius" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="Child" />
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Text" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="TextWrapping" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Converter" />
+      <RootProperty Name="ElementName" />
+      <RootProperty Name="Mode" />
+      <RootProperty Name="Path" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart">
+      <RootProperty Name="DataContext" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="ValueMemberPath" />
+      <RootProperty Name="Palette" />
+      <RootProperty Name="EnableAnimation" />
+      <RootProperty Name="AnimationDuration" />
+      <RootProperty Name="Header" />
+      <RootProperty Name="Levels" />
+      <RootProperty Name="Behaviors" />
+      <RootProperty Name="DataLabelInfo" />
+      <RootProperty Name="Radius" />
+      <RootProperty Name="Legend" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.SunburstChart.SunburstHierarchicalLevel">
+      <RootProperty Name="GroupMemberPath" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.SunburstChart.SunburstToolTipBehavior">
+      <RootProperty Name="ToolTipTemplate" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.SunburstChart.SunburstDataLabelInfo" />
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Width" />
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Slider">
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Minimum" />
+      <RootProperty Name="Maximum" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Value" />
+      <RootProperty Name="StepFrequency" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Width" />
+      <RootEvent Name="Loaded" />
+      <RootEvent Name="SelectionChanged" />
+    </RootType>
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfSunburstChart.Animation" />
+    <RootType FullName="Syncfusion.UI.Xaml.SunburstChart.SunburstLegend">
+      <RootProperty Name="DockPosition" />
+      <RootProperty Name="ClickAction" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfSunburstChart.GettingStarted" />
+    <RootType FullName="Syncfusion.UI.Xaml.SunburstChart.SunburstSelectionBehavior">
+      <RootProperty Name="SelectionBrush" />
+    </RootType>
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfSunburstChart.Selection" />
+    <RootType FullName="Syncfusion.UI.Xaml.SunburstChart.SunburstZoomingBehavior" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfSunburstChart.Zoom" />
+  </Roots.RootTypes>
+</Roots>

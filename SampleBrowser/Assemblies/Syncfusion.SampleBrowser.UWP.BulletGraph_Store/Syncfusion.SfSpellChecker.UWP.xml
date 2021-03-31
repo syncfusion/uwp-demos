@@ -1,0 +1,600 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfSpellChecker.UWP</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.SpellChecker.Base.AccuracyLevels">
+            <summary>
+            Represents a list of accuracy levels based on which phonetic matching is executed for filtering suggestions
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SpellChecker.Base.AccuracyLevels.High">
+            <summary>
+            Represents a high level which filters maximum possible suggestions.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SpellChecker.Base.AccuracyLevels.Medium">
+            <summary>
+            Represents a medium level which filters matching suggestions.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SpellChecker.Base.AccuracyLevels.Low">
+            <summary>
+            Represents a most accurate level which filters accurate suggestions only.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SpellChecker.Base.TransmutationHelper.GetTransmutations(System.Char[])">
+            <summary>
+            Returns a list of possible combinations for the given character array
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SpellChecker.Base.VerbalProcessor.GetSimilarSounds(System.String,System.Collections.Generic.List{System.Object},Syncfusion.SpellChecker.Base.AccuracyLevels)">
+            <summary>
+            Returns a list of phonetic suggestions for the given word in specified accuracy level.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SpellChecker.Base.Sorter.Compare(System.Object,System.Object)">
+            <summary>
+            Compares the two objects.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SpellChecker.Base.Sorter.Compare(System.String,System.String)">
+            <summary>
+            Compares the two String values
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SpellChecker.Base.ReverseSorter.Compare(System.String,System.String)">
+            <summary>
+            Compares the two object values.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SpellChecker.Base.ReverseSorter.Reverse(System.String)">
+            <summary>
+            Returns reverse String of input String
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SpellChecker.Base.SpellCheckerBase">
+            <summary>
+            SpellChecker base helps to find erroneous spelling in a word and provides suggestions for it.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SpellChecker.Base.SpellCheckerBase.#ctor(System.IO.Stream)">
+            <summary>
+            Initializes the instance of SpellChecker base.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SpellChecker.Base.SpellCheckerBase.#ctor">
+            <summary>
+            Initializes the instance of SpellChecker base.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SpellChecker.Base.SpellCheckerBase.IgnoreAlphaNumericWords">
+            <summary>
+            Gets or Sets the boolean value to check AlphaNumericWords
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SpellChecker.Base.SpellCheckerBase.IgnoreFileNames">
+            <summary>
+            Gets or Sets the boolean value to check file names
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SpellChecker.Base.SpellCheckerBase.IgnoreHtmlTags">
+            <summary>
+            Gets or Sets the boolean value to check html tags
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SpellChecker.Base.SpellCheckerBase.IgnoreEmailAddress">
+            <summary>
+            Gets or Sets the boolean value to check Email addresses
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SpellChecker.Base.SpellCheckerBase.IgnoreMixedCaseWords">
+            <summary>
+            Gets or Sets the boolean value to check mixed case words
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SpellChecker.Base.SpellCheckerBase.IgnoreUpperCaseWords">
+            <summary>
+            Gets or Sets the boolean value to check upper case words
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SpellChecker.Base.SpellCheckerBase.IgnoreUrl">
+            <summary>
+            Gets or Sets the boolean value to check urls
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SpellChecker.Base.SpellCheckerBase.AddWordToDictionary(System.String)">
+            <summary>
+            Adds the word to dictionary word collection
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SpellChecker.Base.SpellCheckerBase.HasError(System.String)">
+            <summary>
+            Checks whether the word exists in dictionary
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SpellChecker.Base.SpellCheckerBase.GetSuggestions(System.String)">
+            <summary>
+            Returns the suggestions for error word
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SpellChecker.Base.SpellCheckerBase.GetAnagrams(System.String)">
+            <summary>
+            Returns the anagrams for error word
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SpellChecker.Base.SpellCheckerBase.GetPhoneticWords(System.String)">
+            <summary>
+            Returns the phonetic suggestions for error word in medium accuracy.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SpellChecker.Base.SpellCheckerBase.GetPhoneticWords(System.String,Syncfusion.SpellChecker.Base.AccuracyLevels)">
+            <summary>
+            Returns the phonetic suggestions for error word in specified accuracy.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SpellChecker.Base.SpellCheckerBase.IsPatternMatch(System.String)">
+            <summary>
+            Returns whether the word matches Email or File name or URL pattern.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SpellChecker.Base.SpellCheckerBase.AddWordsInDictionaryStream(System.IO.Stream)">
+            <summary>
+            Adds the word from custom stream to dicitionary collection
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.SfSpellChecker">
+            <summary>
+            SfSpellChecker control helps to find erroneous spelling in a editor and provides suggestions for it.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.Controls.SfSpellChecker.SpellCheckCompleted">
+            <summary>
+            Event which is handled after spell check operations are completed
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SfSpellChecker.#ctor">
+            <summary>
+            Initializes the instance of SfSpellChecker.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.SfSpellChecker.IgnoreAlphaNumericWords">
+            <summary>
+            Gets or Sets the boolean value to check AlphaNumericWords
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.SfSpellChecker.IgnoreAlphaNumericWordsProperty">
+            <summary>
+             Using a DependencyProperty as the backing store for IgnoreAlphaNumericWords.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.SfSpellChecker.IgnoreHtmlTags">
+            <summary>
+            Gets or Sets the boolean value to check HTML tags
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.SfSpellChecker.IgnoreHtmlTagsProperty">
+            <summary>
+             Using a DependencyProperty as the backing store for IgnoreHtmlTags.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.SfSpellChecker.IgnoreEmailAddress">
+            <summary>
+            Gets or Sets the boolean value to check Email addresses
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.SfSpellChecker.IgnoreEmailAddressProperty">
+            <summary>
+             Using a DependencyProperty as the backing store for IgnoreEmailAddress.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.SfSpellChecker.IgnoreMixedCaseWords">
+            <summary>
+            Gets or Sets the boolean value to check mixed case words
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.SfSpellChecker.IgnoreMixedCaseWordsProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for IgnoreMixedCaseWords.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.SfSpellChecker.IgnoreUpperCaseWords">
+            <summary>
+            Gets or Sets the boolean value to check upper case words
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.SfSpellChecker.IgnoreUpperCaseWordsProperty">
+            <summary>
+             Using a DependencyProperty as the backing store for IgnoreUpperCaseWords.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.SfSpellChecker.IgnoreUrl">
+            <summary>
+            Gets or Sets the boolean value to check URLs.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.SfSpellChecker.IgnoreUrlProperty">
+            <summary>
+             Using a DependencyProperty as the backing store for IgnoreUrl.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.SfSpellChecker.CustomDictionaryPath">
+            <summary>
+            gets or sets string value for user dictionary path.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.SfSpellChecker.CustomDictionaryPathProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for CustomDictionaryPath.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SfSpellChecker.IgnoreAlphaNumericWordsChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SfSpellChecker.IgnoreHtmlTagsChnaged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SfSpellChecker.IgnoreEmailAddressChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SfSpellChecker.IgnoreMixedCaseWordsChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SfSpellChecker.IgnoreUpperCaseWordsChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SfSpellChecker.IgnoreUrlChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SfSpellChecker.CustomDictionaryPathChnaged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SfSpellChecker.HasError(System.String)">
+            <summary>
+            Checks whether the word exists in dictionary
+            </summary>
+            <param name="word"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SfSpellChecker.GetSuggestions(System.String)">
+            <summary>
+            Returns the suggestions for error word
+            </summary>
+            <param name="word"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SfSpellChecker.GetAnagrams(System.String)">
+            <summary>
+            Returns the anagrams for error word
+            </summary>
+            <param name="word"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SfSpellChecker.GetPhoneticWords(System.String)">
+            <summary>
+             Returns the phonetic suggestions for error word in medium accuracy
+            </summary>
+            <param name="word"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SfSpellChecker.GetPhoneticWords(System.String,Syncfusion.SpellChecker.Base.AccuracyLevels)">
+            <summary>
+            
+            </summary>
+            <param name="word"></param>
+            <param name="accuracy"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SfSpellChecker.PerformSpellCheckUsingContextMenu(Syncfusion.UI.Xaml.Controls.IEditorProperties)">
+            <summary>
+            Perform spell checking with ContextMenu in the editor control.
+            </summary>
+            <param name="editor"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SfSpellChecker.PerformSpellCheckUsingDialog(Syncfusion.UI.Xaml.Controls.IEditorProperties)">
+            <summary>
+            Perform spell checking with dialog window in the editor control.
+            </summary>
+            <param name="editor"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SfSpellChecker.Dispose">
+            <summary>
+            Disposes the instance of SfSpellChecker
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SfSpellChecker.getstream">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SfSpellChecker.HasDictionaryEntry(System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.String)">
+            <summary>
+            
+            </summary>
+            <param name="dictionary"></param>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SfSpellChecker.GetSugesstion">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SfSpellChecker.GetAnagrams">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SfSpellChecker.GetPhoneticWords">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SfSpellChecker.Suggestbox_PointerExited(System.Object,Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SfSpellChecker.Suggestbox_PointerEntered(System.Object,Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SfSpellChecker.Suggestbox_ContextMenuOpening(System.Object,Windows.UI.Xaml.Controls.ContextMenuEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SfSpellChecker.m_addtodictionary_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SfSpellChecker.suggestions_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SfSpellChecker.Suggestbox_PointerReleased(System.Object,Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SfSpellChecker.Suggestbox_PointerPressed(System.Object,Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SfSpellChecker.Messagedialog_PrimaryButtonClick(Windows.UI.Xaml.Controls.ContentDialog,Windows.UI.Xaml.Controls.ContentDialogButtonClickEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="args"></param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.IEditorProperties">
+            <summary>
+            Interfaces specifying the properties of Editor control
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.IEditorProperties.ControlToCheck">
+            <summary>
+            Gets or Sets the control to be checked
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.IEditorProperties.SelectedText">
+            <summary>
+            Gets or Sets the selected text
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.IEditorProperties.Text">
+            <summary>
+            Gets or Sets the text to be checked
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.IEditorProperties.Select(System.Int32,System.Int32)">
+            <summary>
+            Selects the particular range of text in the editor
+            </summary>
+            <param name="selectionStart"></param>
+            <param name="selectionLength"></param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.IEditorProperties.HasMoreTextToCheck">
+            <summary>
+            Returns a value indicating whether to continue with the spell checking
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.IEditorProperties.Focus">
+            <summary>
+            Focuses the editor
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.IEditorProperties.UpdateTextField">
+            <summary>
+            Updates the text field so that SpellChecker will spell check with newly updated texts
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.ResourceWrapper.NoSuggestionText">
+            <summary>
+            Gets or sets the value of NoSuggestionText
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.ResourceWrapper.HeaderText">
+            <summary>
+            Gets or sets the value of Header of the Dialogbox
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.ResourceWrapper.NotInDictionaryText">
+            <summary>
+            Gets or sets the value of Not in dictionary text
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.ResourceWrapper.SuggestionsText">
+            <summary>
+            Gets or sets the value of SuggestionsText
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.ResourceWrapper.IgnoreOnceText">
+            <summary>
+            Gets or sets the value of Ignore Once text
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.ResourceWrapper.IgnoreAllText">
+            <summary>
+            Gets or sets the value of IgnoreAll text
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.ResourceWrapper.AddToDictionaryText">
+            <summary>
+            Gets or sets the value of Add in dictionary text
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.ResourceWrapper.ReplaceText">
+            <summary>
+            Gets or sets the value of Change Text
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.ResourceWrapper.ReplaceAllText">
+            <summary>
+            Gets or sets the value of Change all text
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.ResourceWrapper.CloseText">
+            <summary>
+            Gets or sets the value of close text
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.SpellCheckerDialog">
+            <summary>
+            Interaction logic for SpellCheckerDialog.xaml
+            </summary>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.Controls.SpellCheckerDialog.SpellCheckCompleted">
+            <summary>
+            Event which is handled after spell check operations are completed
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SpellCheckerDialog.#ctor(Syncfusion.UI.Xaml.Controls.SfSpellChecker,Syncfusion.UI.Xaml.Controls.IEditorProperties)">
+            <summary>
+            Initializes the instance of SpellCheckerDialog
+            </summary>
+            <param name="checker"></param>
+            <param name="editor"></param>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Controls.SpellCheckerDialog.Suggestions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Controls.SpellCheckerDialog.SuggestionsProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Suggestions.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SpellCheckerDialog.Dispose">
+            <summary>
+            Disposes the instance of SpellCheckerDialog
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SpellCheckerDialog.InitializeComponent">
+            <summary>
+            InitializeComponent()
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SpellCheckerDialog.Connect(System.Int32,System.Object)">
+            <summary>
+            Connect()
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.SpellCheckerDialog.GetBindingConnector(System.Int32,System.Object)">
+            <summary>
+            GetBindingConnector(int connectionId, object target)
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Controls.Syncfusion_SfSpellChecker_UWP_2017_XamlTypeInfo.XamlMetaDataProvider">
+            <summary>
+            Main class for providing metadata for the app or library
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Syncfusion_SfSpellChecker_UWP_2017_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.Type)">
+            <summary>
+            GetXamlType(Type)
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Syncfusion_SfSpellChecker_UWP_2017_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.String)">
+            <summary>
+            GetXamlType(String)
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Controls.Syncfusion_SfSpellChecker_UWP_2017_XamlTypeInfo.XamlMetaDataProvider.GetXmlnsDefinitions">
+            <summary>
+            GetXmlnsDefinitions()
+            </summary>
+        </member>
+        <member name="T:ClassReferenceAttribute">
+            <summary>
+            Represents a class for the reference attributes
+            </summary>
+        </member>
+        <member name="P:ClassReferenceAttribute.IsReviewed">
+            <summary>
+            Returns a value when set
+            </summary>
+            <value>
+            <c>true</c> if instance is created ; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:ClassReferenceAttribute.ShouldInclude">
+            <summary>
+            Returns a value when set
+            </summary>
+            <value>
+            <c>true</c> if instance is created ; otherwise, <c>false</c>.
+            </value>
+        </member>
+    </members>
+</doc>

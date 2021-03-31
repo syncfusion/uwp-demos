@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Roots >
+  <Roots.Interfaces>
+    <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
+  </Roots.Interfaces>
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="TaskCollection" />
+    <RootPropertyPathName Name="ResourceCollection" />
+    <RootPropertyPathName Name="StriplineCollection" />
+    <RootPropertyPathName Name="Holidays" />
+    <RootPropertyPathName Name="IntervalType" />
+    <RootPropertyPathName Name="TaskWidth" />
+    <RootPropertyPathName Name="ActualTaskHeight" />
+    <RootPropertyPathName Name="ProgressWidth" />
+    <RootPropertyPathName Name="TaskDetail" />
+  </Roots.PropertyPathNames>
+  <Roots.RootTypes>
+    <RootType FullName="Windows.UI.Xaml.Application">
+      <RootProperty Name="RequestedTheme" />
+    </RootType>
+    <RootType FullName="Common.SampleLayout">
+      <RootProperty Name="Sample" />
+      <RootProperty Name="Setting" />
+      <RootProperty Name="Background" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="Background" />
+      <RootProperty Name="DataContext" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="ColumnDefinitions" />
+      <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="Resources" />
+      <RootMethod Name="GetColumn" />
+      <RootMethod Name="SetColumn" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
+      <RootMethod Name="GetColumnSpan" />
+      <RootMethod Name="SetColumnSpan" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfGantt.ProjectTrackerViewModel" />
+    <RootType FullName="Syncfusion.UI.Xaml.Gantt.SfGantt">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="AllowEditing" />
+      <RootProperty Name="AllowSorting" />
+      <RootProperty Name="TimescaleStartDate" />
+      <RootProperty Name="TimescaleEndDate" />
+      <RootProperty Name="ProjectResources" />
+      <RootProperty Name="AllowResizingColumns" />
+      <RootProperty Name="ValidationMode" />
+      <RootProperty Name="ShowToolbar" />
+      <RootProperty Name="TaskHighlightBrush" />
+      <RootProperty Name="Striplines" />
+      <RootProperty Name="TimescaleSettings" />
+      <RootProperty Name="EnableSelection" />
+      <RootProperty Name="ExcludeNonWorkingDays" />
+      <RootProperty Name="DisplayTaskNames" />
+      <RootProperty Name="VisibleGridColumns" />
+      <RootProperty Name="ShowNonWorkingDays" />
+      <RootProperty Name="Holidays" />
+      <RootProperty Name="MilestoneTemplate" />
+      <RootProperty Name="ParentTaskBarTemplate" />
+      <RootProperty Name="TaskBarTemplate" />
+      <RootProperty Name="HighlightCriticalTasks" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="ElementName" />
+      <RootProperty Name="Path" />
+      <RootProperty Name="Mode" />
+      <RootProperty Name="Converter" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Gantt.TimescaleSettings">
+      <RootProperty Name="TopTier" />
+      <RootProperty Name="BottomTier" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Gantt.TimescaleTier">
+      <RootProperty Name="IntervalType" />
+    </RootType>
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfGantt.Project_Tracker" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfGantt.TaskDetails" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfGantt.Editing" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfGantt.Getting_Started" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfGantt.TaskViewModel" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfGantt.AutoValidation" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfGantt.HolidaysViewModel" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfGantt.Holidays" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Page">
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfGantt.MainPage" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfGantt.Stripline" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ContentControl">
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Text" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Slider">
+      <RootProperty Name="Width" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Minimum" />
+      <RootProperty Name="Maximum" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
+      <RootProperty Name="Width" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Name" />
+      <RootProperty Name="SelectedItem" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="Name" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfGantt.Timescale" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfGantt.TemplateSupportModel" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfGantt.TextConverter" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfGantt.ProgressColorConverter" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfGantt.ColorConverter" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ControlTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Viewbox">
+      <RootProperty Name="Child" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Path">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Data" />
+      <RootProperty Name="Stretch" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Fill" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Fill" />
+      <RootProperty Name="RadiusX" />
+      <RootProperty Name="RadiusY" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfGantt.TemplateSupport" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfGantt.CriticalPathModel" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.SfGantt.CriticalPath" />
+  </Roots.RootTypes>
+</Roots>
