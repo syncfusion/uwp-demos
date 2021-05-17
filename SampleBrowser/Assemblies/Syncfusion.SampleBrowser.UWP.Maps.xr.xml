@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Roots >
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="Countries" />
+    <RootPropertyPathName Name="Data" />
+    <RootPropertyPathName Name="NAME" />
+    <RootPropertyPathName Name="Countries1" />
+    <RootPropertyPathName Name="PopulationFormat" />
+    <RootPropertyPathName Name="Models" />
+    <RootPropertyPathName Name="Name" />
+    <RootPropertyPathName Name="ActualWidth" />
+    <RootPropertyPathName Name="ElectionResults" />
+    <RootPropertyPathName Name="DbfData" />
+    <RootPropertyPathName Name="DBFData" />
+  </Roots.PropertyPathNames>
+  <Roots.RootTypes>
+    <RootType FullName="Windows.UI.Xaml.Application">
+      <RootProperty Name="RequestedTheme" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Page">
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="Background" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="DataContext" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="ColumnDefinitions" />
+      <RootProperty Name="Height" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
+      <RootMethod Name="GetColumn" />
+      <RootMethod Name="SetColumn" />
+      <RootMethod Name="GetRowSpan" />
+      <RootMethod Name="SetRowSpan" />
+      <RootMethod Name="GetColumnSpan" />
+      <RootMethod Name="SetColumnSpan" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Syncfusion.SampleBrowser.UWP.Maps.MainPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
+      <RootProperty Name="Resources" />
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="MapControlUWP_Samples.MapViewModel" />
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Source" />
+      <RootProperty Name="ElementName" />
+      <RootProperty Name="Path" />
+      <RootProperty Name="Mode" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="Syncfusion.UI.Xaml.Maps.SfMap">
+      <RootProperty Name="MaxZoom" />
+      <RootProperty Name="Header" />
+      <RootProperty Name="Layers" />
+      <RootProperty Name="EnableZoom" />
+      <RootProperty Name="MapView" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="EnablePan" />
+      <RootProperty Name="EnableLayerChangeAnimation" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Text" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="IsHitTestVisible" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Maps.ShapeFileLayer">
+      <RootProperty Name="Background" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="ShapeIDPath" />
+      <RootProperty Name="ShapeIDTableField" />
+      <RootProperty Name="ItemsTemplate" />
+      <RootProperty Name="ShapeSettings" />
+      <RootProperty Name="EnableSelection" />
+      <RootProperty Name="BubbleMarkerSetting" />
+      <RootProperty Name="Markers" />
+      <RootProperty Name="MarkerSettings" />
+      <RootProperty Name="MarkerTemplate" />
+      <RootProperty Name="EnableMultiSelection" />
+      <RootProperty Name="MapItemsVisibility" />
+      <RootProperty Name="SelectionRectStroke" />
+      <RootProperty Name="SelectionRectStrokeThickness" />
+      <RootProperty Name="IsTileMap" />
+      <RootProperty Name="SubShapeFileLayers" />
+      <RootEvent Name="ShapesSelected" />
+      <RootEvent Name="ShapesUnSelected" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Maps.ShapeSetting">
+      <RootProperty Name="ShapeFill" />
+      <RootProperty Name="ShapeStroke" />
+      <RootProperty Name="ShapeStrokeThickness" />
+      <RootProperty Name="ShapeValuePath" />
+      <RootProperty Name="ShapeColorValuePath" />
+      <RootProperty Name="FillSetting" />
+      <RootProperty Name="SelectedShapeColor" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Maps.ShapeFillSetting">
+      <RootProperty Name="AutoFillColors" />
+      <RootProperty Name="ColorMappings" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Maps.RangeColorMapping">
+      <RootProperty Name="From" />
+      <RootProperty Name="To" />
+      <RootProperty Name="Color" />
+    </RootType>
+    <RootType FullName="MapControlUWP_Samples.BasicMap" />
+    <RootType FullName="Syncfusion.UI.Xaml.Maps.BubbleMarkerSetting">
+      <RootProperty Name="AutoFillColor" />
+      <RootProperty Name="MaxSize" />
+      <RootProperty Name="MinSize" />
+      <RootProperty Name="StrokeThickness" />
+      <RootProperty Name="ValuePath" />
+      <RootProperty Name="ColorValuePath" />
+      <RootProperty Name="ColorMappings" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Border">
+      <RootProperty Name="Background" />
+      <RootProperty Name="Child" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="CornerRadius" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Opacity" />
+    </RootType>
+    <RootType FullName="MapControlUWP_Samples.BubbleVisualization" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Canvas">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="Source" />
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Primitives.ScrollBar">
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Maps.MarkerSetting">
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
+    <RootType FullName="MapControlUWP_Samples.DataMarkers" />
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="HorizontalContentAlignment" />
+      <RootEvent Name="Click" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Fill" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="StrokeDashArray" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Maps.EqualsColorMapping">
+      <RootProperty Name="Value" />
+      <RootProperty Name="Color" />
+    </RootType>
+    <RootType FullName="MapControlUWP_Samples.TicketBooking" />
+    <RootType FullName="MapControlUWP_Samples.ElectionResult" />
+    <RootType FullName="MapControlUWP_Samples.ElectionResultMobile" />
+    <RootType FullName="Syncfusion.UI.Xaml.Maps.SubShapeFileLayer">
+      <RootProperty Name="EnableSelection" />
+      <RootProperty Name="MapPointPopupTemplate" />
+      <RootProperty Name="MapPointTemplate" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Ellipse">
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="Fill" />
+    </RootType>
+    <RootType FullName="MapControlUWP_Samples.MapPoints" />
+  </Roots.RootTypes>
+</Roots>

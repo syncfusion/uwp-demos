@@ -1,0 +1,57 @@
+﻿<View:SampleLayout x:Class="DataGrid.UnBoundColumns"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="using:DataGrid"
+             xmlns:View="using:Common"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:syncfusion="using:Syncfusion.UI.Xaml.Grid"
+             mc:Ignorable="d">
+
+
+    <View:SampleLayout.Resources>
+    <ResourceDictionary>
+      <Style TargetType="syncfusion:GridStackedHeaderCellControl">
+        <Setter Property="HorizontalContentAlignment" Value="Right" />
+      </Style>
+      <local:CurrencyFormatConverter x:Key="currencyFormatConverter" />
+    </ResourceDictionary>
+
+  </View:SampleLayout.Resources>
+
+    <View:SampleLayout.Sample>
+    <syncfusion:SfDataGrid x:Name="sfGrid"
+                           AllowEditing="True"
+                           Margin="10,13,10,15"
+                           AutoGenerateColumns="False"
+                           ColumnSizer="Star"
+                           NavigationMode="Row">
+      <syncfusion:SfDataGrid.Columns>
+        <syncfusion:GridTextColumn Width="120"
+                                   HeaderText="Order ID"
+                                   MappingName="OrderID" />
+        <syncfusion:GridTextColumn Width="120"
+                                   HeaderText="Customer ID"
+                                   MappingName="CustomerID" />
+        <syncfusion:GridTextColumn Width="120"
+                                   HeaderText="Ship City"
+                                   MappingName="ShipCity" />
+        <syncfusion:GridTextColumn Width="120"
+                                   HeaderText="Ship Country"
+                                   MappingName="ShipCountry" />
+        <syncfusion:GridTextColumn Width="120"
+                                   DisplayBinding="{Binding Path=Freight,
+                                                                    Converter={StaticResource currencyFormatConverter}}"
+                                   MappingName="Freight"
+                                   TextAlignment="Right" />
+        <syncfusion:GridUnBoundColumn AllowEditing="False"
+                                      Format="'{Freight} for {ShipCity}'"
+                                      MappingName="Freight for ShipCity" />
+        <syncfusion:GridUnBoundColumn AllowEditing="False"
+                                      Expression="Freight ^ 2"
+                                      MappingName="Frieght Square"
+                                      TextAlignment="Right" />
+      </syncfusion:SfDataGrid.Columns>
+    </syncfusion:SfDataGrid>
+  </View:SampleLayout.Sample>
+</View:SampleLayout>

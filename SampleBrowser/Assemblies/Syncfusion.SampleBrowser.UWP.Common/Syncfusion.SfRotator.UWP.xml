@@ -1,0 +1,2049 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfRotator.UWP</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.UI.Xaml.Rotator.BoolToVisibilityConverter">
+            <summary>
+            Represents the boolean to visibility converter
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.BoolToVisibilityConverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Represents the Convert method
+            </summary>
+            <param name="value">Object type</param>
+            <param name="targetType">Target type</param>
+            <param name="parameter">Parameter as object</param>
+            <param name="language">String type</param>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.BoolToVisibilityConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Represents the ConvertBack method
+            </summary>
+            <param name="value">object type</param>
+            <param name="targetType">Target type</param>
+            <param name="parameter">Parameter as object</param>
+            <param name="language">String type</param>
+            <returns>return value</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Rotator.BrushToColorConverter">
+            <summary>
+            Brush to color converter class
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.BrushToColorConverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Converter class
+            </summary>
+            <param name="value">Object type</param>
+            <param name="targetType">Target Type</param>
+            <param name="parameter">Object as parameter</param>
+            <param name="language">String type</param>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.BrushToColorConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Convert back Method
+            </summary>
+            <param name="value">Object type</param>
+            <param name="targetType">Target Type</param>
+            <param name="parameter">Object as parameter</param>
+            <param name="language">String type</param>
+            <returns>return value</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Rotator.NavigationDirectionToOrientationConverter">
+            <summary>
+            Navigation direction to orientation converter class
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.NavigationDirectionToOrientationConverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Convert method.
+            </summary>
+            <param name="value">Object type</param>
+            <param name="targetType">Target type</param>
+            <param name="parameter">Parameter value</param>
+            <param name="language">String type</param>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.NavigationDirectionToOrientationConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Convert Back method.
+            </summary>
+            <param name="value">Object type</param>
+            <param name="targetType">Target type</param>
+            <param name="parameter">Parameter value</param>
+            <param name="language">String type</param>
+            <returns>return value</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Rotator.NavigationDirection">
+            <summary>
+            Defines the NavigationDirection of the rotator<see
+            cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator.cs"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.NavigationDirection.Horizontal">
+            <summary>
+            NavigationDirection Horizontal <see
+            cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator.cs"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.NavigationDirection.Vertical">
+            <summary>
+            Navigation Direction Vertical <see
+            cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator.cs"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.NavigationDirection.LeftToRight">
+            <summary>
+            Navigation Direction only on Left to Right<see
+            cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator.cs"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.NavigationDirection.RightToLeft">
+            <summary>
+            Navigation Direction only on Right To Left<see
+            cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator.cs"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.NavigationDirection.TopToBottom">
+            <summary>
+            Navigation Direction only on Top To Bottom <see
+            cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator.cs"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.NavigationDirection.BottomToTop">
+            <summary>
+            Navigation Direction only on Bottom To Top.<see
+            cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator.cs"/>.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Rotator.NavigationStripPosition">
+            <summary>
+            Defines the NavigationStripPosition of the rotator <see
+            cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator.cs"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.NavigationStripPosition.Top">
+            <summary> Navigation strip position top <see
+            cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator.cs"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.NavigationStripPosition.Left">
+            <summary> Navigation strip position left <see
+            cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator.cs"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.NavigationStripPosition.Right">
+            <summary> Navigation strip position right <see
+            cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator.cs"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.NavigationStripPosition.Bottom">
+            <summary> Navigation strip position bottom <see
+            cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator.cs"/>.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Rotator.NavigationStripMode">
+            <summary>
+            Defines the NavigationStripMode of the rotator <see
+            cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator.cs"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.NavigationStripMode.Dots">
+            <summary>
+             Navigation strip mode Dots <see
+            cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator.cs"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.NavigationStripMode.Thumbnail">
+            <summary>
+             Navigation strip mode Thumbnail <see
+            cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator.cs"/>.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Rotator.DotsPlacement">
+            <summary>
+            Defines the DotsPlacement of the rotator <see
+            cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator.cs"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.DotsPlacement.Default">
+            <summary> Dots Placement Mode Default <see
+            cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator.cs"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.DotsPlacement.Outside">
+            <summary> Dots Placement Mode Outside <see
+            cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator.cs"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.DotsPlacement.None">
+            <summary> Dots Placement Mode None <see
+            cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator.cs"/>.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Rotator.ClassReferenceAttribute">
+            <summary>
+            Class reference Attributes
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.ClassReferenceAttribute.isReviewed">
+            <summary>
+            IS Reviewed field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.ClassReferenceAttribute.shouldInclude">
+            <summary>
+            Should include field.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.ClassReferenceAttribute.IsReviewed">
+            <summary>
+            Gets or sets a value indicating whether of IS reviewed property
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.ClassReferenceAttribute.ShouldInclude">
+            <summary>
+            Gets or sets a value indicating whether of Should include property.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Rotator.CloneExtensions">
+            <summary>
+            Clone extension class
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.CloneExtensions.CloneImage``1(``0)">
+            <summary>
+            Clone image method.
+            </summary>
+            <typeparam name="T">Clone image</typeparam>
+            <param name="item">Item value</param>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.CloneExtensions.CloneProperties``1(``0,``0,System.Type)">
+            <summary>
+            Clone properties method
+            </summary>
+            <typeparam name="T">Clone property</typeparam>
+            <param name="item">Item value</param>
+            <param name="instance">Instance type</param>
+            <param name="type">Type as type</param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Rotator.SfRotator">
+            <summary>
+            Rotator is a panel which has a collection of images and can be viewed by navigating through images by
+            translations and swiping or auto played
+            </summary>
+            <remarks>
+            Rotator is a <see cref="N:Syncfusion.UI.Xaml.Rotator"/> panel
+            which can swiped to view the next or previous image
+            </remarks>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.NavigationButtonVisibilityProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for NavigationButtonVisibilityProperty.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.SelectedIndexProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SelectedIndexProperty.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.SelectedDotsBackgroundProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SelectedDotsBackground.  This enables animation, styling, binding, etc...
+            </summary>    
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.SelectedDotsBorderBrushProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SelectedDotsBorderBrush.  This enables animation, styling, binding, etc...
+            </summary>      
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.UnselectedDotsBackgroundProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for UnSelected dots Brush.  This enables animation, styling, binding, etc...
+            </summary>     
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.UnselectedDotsBroderBrushProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Unselected Dots BorderBrush.  This enables animation, styling, binding, etc... 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.DotsPlacementProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for  DotsPlacement.  This enables animation, styling, binding, etc...
+            </summary>      
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.NavigationStripModeProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for NavigationStripModeProperty.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.NavigationStripPositionProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for NavigationStripPositionProperty.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.EnableAutoPlayProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for EnableAutoPlayProperty.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.EnableSwipingProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for EnableSwipingProperty.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.EnableLoopingProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for EnableLoopingProperty.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.TextAreaVisibilityProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for TextAreaVisibilityProperty.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.TextPathProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for TextPathProperty.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.ImageTextProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ImageTextProperty.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.NavigationDelayProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for NavigationDelay.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.NavigationDirectionProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for NavigationDirectionProperty.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.contentRoot">
+            <summary>
+            Content Root field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.isInitialModeTypeChanged">
+            <summary>
+            Initial Mode Type Changes field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.isLoaded">
+            <summary>
+            Loaded field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.nextButton">
+            <summary>
+            Next button field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.tabstrip">
+            <summary>
+            Tap Strip field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.previousButton">
+            <summary>
+            Previous button field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.restrictAnimation">
+            <summary>
+            Restrict Animation field.
+            </summary>      
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.currentImage">
+            <summary>
+            Current image field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.isItemsCollectionChanged">
+            <summary>
+            Checks whether the items collection is changed or not.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.prevbuttonvertical">
+            <summary>
+            Previous button vertical field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.prevborder">
+            <summary>
+            Previous Border field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.nextborder">
+            <summary>
+            Next border field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.nextbuttonvertical">
+            <summary>
+            Next button vertical field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.tabStripItems">
+            <summary>
+            Tab Strip Items field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.scrollViewer">
+            <summary>
+            Scroll viewer field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.tabStripPanel">
+            <summary>
+            Tab Strip panel field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.thumbnailList">
+            <summary>
+            Thumbnail list field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.thumbNailPanel">
+            <summary>
+            Thumbnail Panel field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.sliderPanel">
+            <summary>
+            Slider panel field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.itemControl">
+            <summary>
+            Item control field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.thumbImageCounthorizontal">
+            <summary>
+            Thumb image count Horizontal field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.thumbImageCountVertical">
+            <summary>
+            Thumb image count vertical field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.tempValue">
+            <summary>
+            value field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.imageGrid">
+            <summary>
+            Image grid field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.automationId">
+            <summary>
+            AutomationId field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.thumbnail">
+            <summary>
+            Thumb nail field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.thumbNextImageVertical">
+            <summary>
+            Thumb Next image Vertical field. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.thumbPrevImageVertical">
+            <summary>
+            Thumb Previous image vertical field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.prevbordervertical">
+            <summary>
+            Previous Border vertical.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.nextbordervertical">
+            <summary>
+            Next Border Vertical field. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.thumbHorizontalImage">
+            <summary>
+            Thumb Horizontal image field. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.nextthumbImage">
+            <summary>
+            Next thumb image field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.prevthumbimage">
+            <summary>
+            Previous thumb image field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.tempItems">
+            <summary>
+            Items list field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.timer">
+            <summary>
+            timer field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotator.movewithautoplay">
+            <summary>
+            Move with Auto play field.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator" /> class.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.Rotator.SfRotator.SelectionChanged">
+            <summary>
+            Selection changed event
+            </summary>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.Rotator.SfRotator.RotatorScrolling">
+            <summary>
+            Occurs when scrolling changed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.NavigationDelay">
+            <summary>
+            Gets or sets the NavigationDelay for animation of Rotator<see
+            cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator"/>.
+            </summary>
+            <value>Default value is 2 seconds</value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator"/>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.EnableSwiping">
+            <summary>
+            Gets or sets a value indicating whether value of EnableSwiping to Rotator<see
+            cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator"/>.
+            </summary>
+            <value>Default value is false</value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator"/>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.EnableLooping">
+            <summary>
+            Gets or sets a value indicating whether value of EnableLooping to Rotator<see
+            cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator"/>.
+            </summary>
+            <value>Default value is false</value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator"/>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.ShowText">
+            <summary>
+            Gets or sets a value indicating whether value of ShowText to Rotator<see
+            cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator"/>.
+            </summary>
+            <value>Default value is false</value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator"/>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.TextPath">
+            <summary>
+            Gets or sets the TextPath value to Rotator<see
+            cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator"/>.
+            </summary>
+            <value>Default value is null</value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator"/>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.NavigationDirection">
+            <summary>
+            Gets or sets the NavigationDirection value to Rotator<see
+            cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator"/>.
+            </summary>
+            <value>Default value is Horizontal</value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator"/>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.NavigationButtonVisibility">
+            <summary>
+            Gets or sets the Visibility value to NavigationButton of Rotator<see
+            cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator"/>.
+            </summary>
+            <value>Default value is Collapsed</value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator"/>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.SelectedIndex">
+            <summary>
+            Gets or sets the SelectedIndex value of Rotator<see
+            cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator"/>.
+            </summary>
+            <value>Default value is 0</value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator"/>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.SelectedDotsBackground">
+            <summary>
+            Gets or sets the Selected Background to TabStripButton of Rotator<see
+            cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator"/>.
+            </summary>
+            <value>Default value is Blue</value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator"/>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.SelectedDotsBorderBrush">
+            <summary>
+            Gets or sets the Selected BorderBrush to TabStripButton of Rotator<see
+            cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator"/>.
+            </summary>
+            <value>Default value is Blue</value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator"/>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.UnselectedDotsBackground">
+            <summary>
+            Gets or sets the Unselected Background to TabStripButton of Rotator<see
+            cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator"/>.
+            </summary>
+            <value>Default value is #D2D2D4</value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator"/>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.UnselectedDotsBroderBrush">
+            <summary>
+            Gets or sets the Unselected BorderBrush to TabStripButton of Rotator<see
+            cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator"/>.
+            </summary>
+            <value>Default value is #D2D2D4</value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator"/>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.DotsPlacement">
+            <summary>
+            Gets or sets the DotsPlacement value to Rotator<see
+            cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator"/>.
+            </summary>
+            <value>Default value is DotsPlacement.Default</value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator"/>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.NavigationStripMode">
+            <summary>
+            Gets or sets the NavigationStripMode value to Rotator<see
+            cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator"/>.
+            </summary>
+            <value>Default value is Dots</value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator"/>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.NavigationStripPosition">
+            <summary>
+            Gets or sets the NavigationStripPosition value to Rotator<see
+            cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator"/>.
+            </summary>
+            <value>Default value is Bottom</value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator"/>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.EnableAutoPlay">
+            <summary>
+            Gets or sets a value indicating whether value of Enable AutoPlay to Rotator<see
+            cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator"/>.
+            </summary>
+            <value>Default value is false</value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator"/>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.ImageText">
+            <summary>
+            Gets or sets the internal TextPath value to Rotator<see
+            cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator"/>.
+            </summary>
+            <value>Default value is null</value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator"/>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.ContentRoot">
+            <summary>
+            Gets or sets the value of content root property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.RestrictAnimation">
+            <summary>
+            Gets or sets a value indicating whether value of Restrict Animation property
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.IsInitialModeTypeChanged">
+            <summary>
+            Gets or sets a value indicating whether the value of Initial mode type changed property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.IsLoaded">
+            <summary>
+            Gets or sets a value indicating whether the value of Loaded property
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.AutomationId">
+            <summary>
+            Gets or sets the AutomationId
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.NextButton">
+            <summary>
+            Gets or sets the value of Next button property
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.Tabstrip">
+            <summary>
+            Gets or sets the value of Tab strip property
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.PreviousButton">
+            <summary>
+            Gets or sets the value of previous button property
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.CurrentImage">
+            <summary>
+            Gets or sets the value of Current image property
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.Prevbuttonvertical">
+            <summary>
+            Gets or sets the value of previous button vertical
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.PrevBorder">
+            <summary>
+            Gets or sets the value of Previous border property
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.NextBorder">
+            <summary>
+            Gets or sets the value of next border property
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.Nextbuttonvertical">
+            <summary>
+            Gets or sets the value of Next button vertical property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.TabStripItems">
+            <summary>
+            Gets or sets the value of Tab Strip items property
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.ScrollViewer">
+            <summary>
+            Gets or sets the value of Scroll viewer property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.ThumbnailList">
+            <summary>
+            Gets or sets the value of Thumbnail list property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.TabStripPanel">
+            <summary>
+            Gets or sets the value of Tab Strip panel property
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.ThumbNailPanel">
+            <summary>
+            Gets or sets the value of Thumbnail panel property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.SliderPanel">
+            <summary>
+            Gets or sets the value of Slider panel property
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.ItemControl">
+            <summary>
+            Gets or sets the value of item control property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.ThumbImageCounthorizontal">
+            <summary>
+            Gets or sets the value of Thumb image count horizontal property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.ThumbImageCountVertical">
+            <summary>
+            Gets or sets the value of Thumb image count vertical property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.TempValue">
+            <summary>
+            Gets or sets the value of Temp value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.Thumbnail">
+            <summary>
+            Gets or sets the value of thumbnail property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.ThumbNextImageVertical">
+            <summary>
+            Gets or sets the value of thumb image vertical property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.ThumbPrevImageVertical">
+            <summary>
+            Gets or sets the value of thumb image vertical property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.Prevbordervertical">
+            <summary>
+            Gets or sets the value of previous border vertical property
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.Nextbordervertical">
+            <summary>
+            Gets or sets the value of Next border vertical property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.ThumbHorizontalImage">
+            <summary>
+            Gets or sets the value of Thumb horizontal image
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.SelectedItem">
+            <summary>
+            Gets or sets the value of Selected item property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.SelectedTabStripContainer">
+            <summary>
+            Gets or sets the value of selected Tab strip Container property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.SelectedThumbNailContainer">
+            <summary>
+            Gets or sets the value of Selected Thumb nail Container property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.NextthumbImage">
+            <summary>
+            Gets or sets the value of next thumb image property
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.Prevthumbimage">
+            <summary>
+            Gets or sets the value of Previous thumb image property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.TempItems">
+            <summary>
+            Gets or sets the value of Items property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.Timer">
+            <summary>
+            Gets or sets the Timer property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.Movewithautoplay">
+            <summary>
+            Gets or sets a value indicating whether the value of Move with  auto play property
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotator.PreviousIndex">
+            <summary>
+            Previous SelectedIndex
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.Refresh">
+            <summary>
+            Refresh the view.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.GetVisibility">
+            <summary>
+            Get visibility method.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.FindParent``1(Windows.UI.Xaml.UIElement)">
+            <summary>
+            Finds the parent of the control
+            </summary>
+            <typeparam name="T">Name of parameter</typeparam>
+            <param name="control">UI Element type</param>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.OnScrolling(Syncfusion.UI.Xaml.Rotator.RotatorScrollingEventArgs)">
+            <summary>
+            On Selection Changed.
+            </summary>
+            <param name="args"> The Argument.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.ValidateIndex(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Validates the index of the items
+            </summary>
+            <param name="oldvalue">Integer type</param>
+            <param name="value">Integer value</param>
+            <param name="restrictAnimation">Boolean type</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.ValidateSelection">
+            <summary>
+            Validate Selection method.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.ValidatePosition">
+            <summary>
+            Validate position method
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.SetTabStripPosition">
+            <summary>
+            Sets the tab strip position based on the dependency property NavigationStripPosition
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.ValidateBitMap(Windows.UI.Xaml.UIElement,System.Int32)">
+            <summary>
+            Validate Bitmap method
+            </summary>
+            <param name="item">UI Element</param>
+            <param name="index">Integer type</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.OnPointerCaptureLost(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            On pointer Capture Lost method 
+            </summary>
+            <param name="e">Routed event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.OnApplyTemplate">
+            <summary>
+            OnApplyTemplate override method
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.OnAutomationIdChanged">
+            <summary>
+            On AutomationId changed method
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.OnItemsChanged(System.Object)">
+            <summary>
+            On items Changed method.
+            </summary>
+            <param name="e">Object type</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.OnNavigationButtonVisibilityChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            On Navigation Button Visibility Changed
+            </summary>
+            <param name="d">Dependency object</param>
+            <param name="e">Dependency Property changed event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.OnSelectedIndexChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            On Selected Index Changed
+            </summary>
+            <param name="d">Dependency object</param>
+            <param name="e">Dependency Property Changed event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.OnModeTypeChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            On Mode Type Changed
+            </summary>
+            <param name="d">Dependency object</param>
+            <param name="e">Dependency Property Changed event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.OnTabStripPositionChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            On Tab Strip Position Changed
+            </summary>
+            <param name="d">Dependency object</param>
+            <param name="e">Dependency Property changed event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.OnShowTextPropertyChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            On Show Text Property Changed
+            </summary>
+            <param name="d">Dependency object</param>
+            <param name="e">changed event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.OnEnableLoopingChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Triggers when the EnableLooping property is changed
+            </summary>
+            <param name="d">dependency object</param>
+            <param name="e">Changed event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.OnEnableAutoPlayChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Triggers when the EnableAutoPlay property is changed
+            </summary>
+            <param name="d">Dependency Object</param>
+            <param name="e">Changed event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.OnIntervalChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Interval for the moving to next image when auto play is enabled
+            </summary>
+            <param name="d">Dependency object</param>
+            <param name="e">Changed event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.OnNavigationDirectionChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Triggers when the navigation direction is changed
+            </summary>
+            <param name="d">Dependency object</param>
+            <param name="e">Changed event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.SfRotator_SizeChanged(System.Object,Windows.UI.Xaml.SizeChangedEventArgs)">
+            <summary>
+            Size changed method.
+            </summary>
+            <param name="sender">object type</param>
+            <param name="e">Size changed event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.SfRotator_Unloaded(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator" /> class.
+            </summary>
+            <param name="sender">Object type</param>
+            <param name="e">Routed event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.SfRotator_Loaded(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Loaded override method
+            </summary>
+            <param name="sender">object type</param>
+            <param name="e">Routed event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.GetPosition">
+            <summary>
+            Gets the Position of the Dots and the thumbnails
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.ItemsCollectionChanged">
+            <summary>
+            Items collection changed method.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.SetImageCollection">
+            <summary>
+            Set the image collection.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.SetThumbnailPosition">
+            <summary>
+            Sets the thumbnail position of the Rotator
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.Timer_Tick(System.Object,System.Object)">
+            <summary>
+            Timer for auto play
+            </summary>
+            <param name="sender">Object type</param>
+            <param name="e">Event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.Next_Bordervertical_PointerPressed(System.Object,Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Next Border vertical PointerPressed
+            </summary>
+            <param name="sender">object type</param>
+            <param name="e">Routed event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.Prev_Bordervertical_PointerPressed(System.Object,Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Previous Border vertical Pointer Pressed
+            </summary>
+            <param name="sender">object type</param>
+            <param name="e">Routed event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.Next_Border_PointerPressed(System.Object,Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Next Border Pointer Pressed
+            </summary>
+            <param name="sender">object type</param>
+            <param name="e">Routed event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.Prev_Border_PointerPressed(System.Object,Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Previous Border Pointer Pressed
+            </summary>
+            <param name="sender">object type</param>
+            <param name="e">Routed event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.ValidateThumbImageCount">
+            <summary>
+            Validate Thumb image count
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.ContentRootVertical_PointerExited(System.Object,Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Triggers when the pointer exits vertical content root
+            </summary>
+            <param name="sender">object type</param>
+            <param name="e">Routed Event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.ContentRootVertical_PointerEntered(System.Object,Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Triggers when the pointer entered vertical content root
+            </summary>
+            <param name="sender">object type</param>
+            <param name="e">Routed Event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.ThumbPrevImageVertical_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Triggers when the next previous thumbnail image is clicked
+            </summary>
+            <param name="sender">object type</param>
+            <param name="e">Routed Event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.ThumbNextImageVertical_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Triggers when the next vertical thumbnail image is clicked
+            </summary>
+            <param name="sender">object type</param>
+            <param name="e">Routed Event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.ThumbNailVertical_PointerExited(System.Object,Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Triggers when pointer exits the vertical thumbnails
+            </summary>
+            <param name="sender">object type</param>
+            <param name="e">Routed Event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.ThumbNailVertical_PointerEntered(System.Object,Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Triggers when pointer enters the vertical thumbnails
+            </summary>
+            <param name="sender">object type</param>
+            <param name="e">Routed Event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.Thumbnail_PointerExited(System.Object,Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Triggers when pointer exits the thumbnails
+            </summary>
+            <param name="sender">object type</param>
+            <param name="e">Routed Event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.Thumbnail_PointerEntered(System.Object,Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Triggers when pointer enter the thumbnails
+            </summary>
+            <param name="sender">object type</param>
+            <param name="e">Routed Event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.ContentRoot_PointerExited(System.Object,Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Triggers when pointer exits from the content root
+            </summary>
+            <param name="sender">object type</param>
+            <param name="e">Routed Event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.ContentRoot_PointerEntered(System.Object,Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Triggered when Pointer enters content root
+            </summary>
+            <param name="sender">object type</param>
+            <param name="e">Routed Event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.CurrentImage_ManipulationCompleted(System.Object,Windows.UI.Xaml.Input.ManipulationCompletedRoutedEventArgs)">
+            <summary>
+            Fires when the current image has been completed translated or moved
+            </summary>
+            <param name="sender">object type</param>
+            <param name="e">Routed Event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.CurrentImage_ManipulationDelta(System.Object,Windows.UI.Xaml.Input.ManipulationDeltaRoutedEventArgs)">
+            <summary>
+            Moves the current image based on the swipe direction
+            </summary>
+            <param name="sender">object type</param>
+            <param name="e">Routed Event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.Translateanimation(System.Double,System.Double,Windows.UI.Xaml.UIElement,System.Boolean)">
+            <summary>
+            Defines the Animation definitions and story board definitions
+            </summary>
+            <param name="fromValue">from value</param>
+            <param name="toValue">To value</param>
+            <param name="obj">UI Element</param>
+            <param name="isHorizontal">Boolean type</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.Anim_Completed(System.Object,System.Object)">
+            <summary>
+            Animation completed method
+            </summary>
+            <param name="sender">object type</param>
+            <param name="e">Routed Event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.Nextbuttonvertical_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Triggered when the vertical next button is clicked
+            </summary>
+            <param name="sender">object type</param>
+            <param name="e">Routed Event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.Prevbuttonvertical_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Previous button vertical Click
+            </summary>
+            <param name="sender">Object type</param>
+            <param name="e">Routed event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.PrevThumbImage_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Triggered when the previous image is clicked
+            </summary>
+            <param name="sender">Object type</param>
+            <param name="e">Event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.NextThumbImage_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Triggered when the next thumbnail is clicked
+            </summary>
+            <param name="sender">object type</param>
+            <param name="e">Routed Event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.NextImage_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Triggered when next image is clicked
+            </summary>
+            <param name="sender">object type</param>
+            <param name="e">Routed Event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotator.PreviousImage_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Triggered when the previous image is clicked
+            </summary>
+            <param name="sender">object type</param>
+            <param name="e">Routed Event args</param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Rotator.RotatorScrollingEventArgs">
+            <summary>
+            Scrolling event arguments to support parallax scrolling in Parallax control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.RotatorScrollingEventArgs.ScrollX">
+            <summary>
+            Gets or sets the value of ScrollX.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.RotatorScrollingEventArgs.ScrollY">
+            <summary>
+            Gets or sets the value of ScrollY 
+            </summary> 
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.RotatorScrollingEventArgs.CanAnimate">
+            <summary>
+             Gets or sets a value indicating whether value need to get animated or not
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Rotator.SfRotatorItem">
+            <summary>
+            RotatorItem <see
+            cref="T:Syncfusion.UI.Xaml.Rotator.SfRotatorItem"/> is an item container for Rotator <see
+            cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotatorItem.TextProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for TextProperty.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SfRotatorItem.rotator">
+            <summary>
+            Rotator field.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotatorItem.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.Rotator.SfRotatorItem" /> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotatorItem.Text">
+            <summary>
+            Gets or sets the Text for the Rotator item<see
+            cref="T:Syncfusion.UI.Xaml.Rotator.SfRotatorItem"/>.
+            </summary>
+            <value>Default value is null</value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator"/>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SfRotatorItem.Rotator">
+            <summary>
+            Gets or sets the value of Rotator property
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotatorItem.SfRotatorItem_LayoutUpdated(System.Object,System.Object)">
+            <summary>
+            Rotator Item Layout Updated
+            </summary>
+            <param name="sender">Object type</param>
+            <param name="e">Event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotatorItem.OnApplyTemplate">
+            <summary>
+            On Apply template.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SfRotatorItem.OnContentChanged(System.Object,System.Object)">
+            <summary>
+            On content changed method.
+            </summary>
+            <param name="oldContent">Old Content</param>
+            <param name="newContent">New Content</param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Rotator.SliderItemsControl">
+            <summary>
+            Slider Items Control class
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SliderItemsControl.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.Rotator.SliderItemsControl" /> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SliderItemsControl.PrepareContainerForItemOverride(Windows.UI.Xaml.DependencyObject,System.Object)">
+            <summary>
+            Prepare Container for item over ride method.
+            </summary>
+            <param name="element">Dependency object element</param>
+            <param name="item">Object type</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SliderItemsControl.OnApplyTemplate">
+            <summary>
+            On Apply Template.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SliderItemsControl.GetContainerForItemOverride">
+            <summary>
+            Get Container for Item over ride method.
+            </summary>
+            <returns>return value</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel">
+            <summary>
+            Slider Item panel class
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.OrientationProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Orientation.  This enables animation, styling, binding, etc...
+            </summary> 
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.isTouchHandled">
+            <summary>
+            Checks whether the control is manipulated or not.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.initialpoint">
+            <summary>
+            Initial Point field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.slider">
+            <summary>
+            Slider field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.child">
+            <summary>
+            Child field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.offset">
+            <summary>
+            Offset,item width,item height fields.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.itemwidth">
+            <summary>
+            Offset,item width,item height fields.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.itemheight">
+            <summary>
+            Offset,item width,item height fields.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.translateX">
+            <summary>
+            To get scroll X value.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.translateY">
+            <summary>
+            To get scroll Y value.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.isMovingWithTouch">
+            <summary>
+            To detect whether the item is scrolled or not.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.isswipleft">
+            <summary>
+            Swipe left field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.selectedindex">
+            <summary>
+            Selected index field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.ismanipulationcomplete">
+            <summary>
+            Is Manipulation Complete field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.currentindex">
+            <summary>
+            Current index field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.scrollingEventArgs">
+            <summary>
+            Rotator scrolling event args.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.previousManipulationDirectionFactor">
+            <summary>
+            Direction of previous manipulation
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel" /> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.Orientation">
+            <summary>
+            Gets or sets the value of Orientation property. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.CurrentIndex">
+            <summary>
+            Gets or sets the current Index for the slider Panel
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.Rotator">
+            <summary>
+            Gets or sets the value of Rotator.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.UpdatePanelIndex">
+            <summary>
+            Update panel index method.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.MoveSelectedItem(Windows.UI.Xaml.UIElement)">
+            <summary>
+            Move Selected Item method.
+            </summary>
+            <param name="child">UI Element</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.MoveSelectedIndex(System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Move Selected Index method.
+            </summary>
+            <param name="index">Integer type</param>
+            <param name="isupdate">Boolean type</param>
+            <param name="isItemChanged">Indicates whether the ItemChanged is Calling</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.MovePosition(System.Double)">
+            <summary>
+            Move Position method.
+            </summary>
+            <param name="translationAxis">Double value</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.InitialLoadedItems(System.Boolean)">
+            <summary>
+            Initial Loaded Items method.
+            </summary>
+            <param name="isItemChanged">Indicates whether the ItemChanged is Calling</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.MeasureOverride(Windows.Foundation.Size)">
+            <summary>
+            Measure Override method.
+            </summary>
+            <param name="availableSize">Size type.</param>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.ArrangeOverride(Windows.Foundation.Size)">
+            <summary>
+            Arrange Override method.
+            </summary>
+            <param name="finalSize">Final size</param>
+            <returns>return value.</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.OnOrientationChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            On orientation changed method.
+            </summary>
+            <param name="d">Dependency object type</param>
+            <param name="e">Changed event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.RaiseRotatorScrollingEvent(System.Double,System.Double,System.Boolean)">
+            <summary>
+            Raise Rotator scrolling method.
+            </summary>
+            <param name="scrollX">double type</param>
+            <param name="scrollY">type is double</param>
+            <param name="canAnimate">boolean type</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.SliderItemsPanel_SizeChanged(System.Object,Windows.UI.Xaml.SizeChangedEventArgs)">
+            <summary>
+            Slider Item change panel method.
+            </summary>
+            <param name="sender">Object type</param>
+            <param name="e">Changed event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.SliderPanel_Loaded(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Slider panel Loaded method.
+            </summary>
+            <param name="sender">Object type</param>
+            <param name="e">Routed event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.SliderPanel_ManipulationCompleted(System.Object,Windows.UI.Xaml.Input.ManipulationCompletedRoutedEventArgs)">
+            <summary>
+            Slider panel Manipulation completed method.
+            </summary>
+            <param name="sender">Object type</param>
+            <param name="e">Routed event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.UpdatePositionsWithAnimation(System.Double,System.Double)">
+            <summary>
+            Update position method.
+            </summary>
+            <param name="y">Double value</param>
+            <param name="p">Double type</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.AnimationSnap_Completed(System.Object,System.Object)">
+            <summary>
+            Animation Snap Completed method.
+            </summary>
+            <param name="sender">Object type</param>
+            <param name="e">Routed event</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.SliderPanel_ManipulationDelta(System.Object,Windows.UI.Xaml.Input.ManipulationDeltaRoutedEventArgs)">
+            <summary>
+            Slider Panel Manipulation Delta method.
+            </summary>
+            <param name="sender">Object type</param>
+            <param name="e">Routed event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.InRange(System.Double,System.Single,System.Single)">
+            <summary>
+            Find the angle range.
+            </summary>
+            <param name="angle">The angle</param>
+            <param name="init">The initial position.</param>
+            <param name="end">The end position.</param>
+            <returns>The return value.</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.GetNextView">
+            <summary>
+            Get Next View method.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.GetPreviousView">
+            <summary>
+            Get Previous View method.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.PrepareContainer(System.Object)">
+            <summary>
+            Prepare Container method.
+            </summary>
+            <param name="obj">Object type.</param>
+            <returns>Return value</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.OnVerticalOffsetChanged(System.Object,Windows.UI.Xaml.Controls.Primitives.RangeBaseValueChangedEventArgs)">
+            <summary>
+            On vertical Offset changed method.
+            </summary>
+            <param name="sender">Object type.</param>
+            <param name="e">Range Base Value Event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.SliderPanel_ManipulationStarted(System.Object,Windows.UI.Xaml.Input.ManipulationStartedRoutedEventArgs)">
+            <summary>
+            Slider panel changed method.
+            </summary>
+            <param name="sender">Object type</param>
+            <param name="e">Event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.SliderItemsPanel.MovePosition(System.Int32,System.Int32,System.Double)">
+            <summary>
+            Move position method.
+            </summary>
+            <param name="start">Start value</param>
+            <param name="end">End value</param>
+            <param name="offset">Offset value</param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Rotator.TabStripButton">
+            <summary>
+            Represents the TabStripButton class
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.TabStripButton.TabStripImageTemplateProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for TabStripImageTemplateProperty. This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.TabStripButton.SelectedDotsBackgroundProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SelectedDotsBackground.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.TabStripButton.UnselectedDotsBackgroundProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for UnselectedDotsBackground.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.TabStripButton.SelectedDotsBorderBrushProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SelectedDotsBorderBrush.  This enables animation, styling, binding, etc...
+            </summary>      
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.TabStripButton.UnselectedDotsBroderBrushProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for UnselectedDotsBorderBrush.  This enables animation, styling, binding, etc...
+            </summary>     
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.TabStripButton.rotator">
+            <summary>
+            Rotator field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.TabStripButton.tabstripPanel">
+            <summary>
+            Tap strip panel field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.TabStripButton.isPointerPressed">
+            <summary>
+            Is pointer Pressed field. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.TabStripButton.isSelected">
+            <summary>
+            Is selected field.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.TabStripButton.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.Rotator.TabStripButton" /> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.TabStripButton.Rotator">
+            <summary>
+            Gets or sets the value of Rotator property
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.TabStripButton.TabstripPanel">
+            <summary>
+            Gets or sets the value of Tap strip panel property
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.TabStripButton.IsPointerPressed">
+            <summary>
+            Gets or sets a value indicating whether the value of Pointer Pressed property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.TabStripButton.TabStripImageTemplate">
+            <summary>
+            Gets or sets the value of DataTemplate for Tab strip Image Template
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.TabStripButton.SelectedDotsBackground">
+            <summary>
+            Gets or sets the value of Selected Dots Background property
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.TabStripButton.UnselectedDotsBackground">
+            <summary>
+            Gets or sets the value of Un selected Dots Background
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.TabStripButton.SelectedDotsBorderBrush">
+            <summary>
+            Gets or sets the value of Selected Dots Border Brush property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.TabStripButton.UnselectedDotsBroderBrush">
+            <summary>
+            Gets or sets the value of Un selected Border Brush property
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.TabStripButton.Select(System.Boolean)">
+            <summary>
+            Method for selecting rotator item
+            </summary>
+            <param name="select">boolean type</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.TabStripButton.ValidateTextArea">
+            <summary>
+            Method to validate text area
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.TabStripButton.OnApplyTemplate">
+            <summary>
+            On apply Template
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.TabStripButton.OnPointerEntered(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Pointer Entered Override method
+            </summary>
+            <param name="e">Routed event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.TabStripButton.OnPointerExited(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Pointer Exited Override method
+            </summary>
+            <param name="e">Routed event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.TabStripButton.OnPointerPressed(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Pointer Pressed Override method
+            </summary>
+            <param name="e">Routed event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.TabStripButton.OnPointerReleased(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Pointer Released Override method
+            </summary>
+            <param name="e">Routed event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.TabStripButton.UpdateTemplate(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Update Template Method.
+            </summary>
+            <param name="d">Dependency object</param>
+            <param name="e">Changed event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.TabStripButton.UpdateTemplate">
+            <summary>
+            Update Template method.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Rotator.TabStripControl">
+            <summary>
+            Represents the TabStripControl class
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.TabStripControl.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.Rotator.TabStripControl" /> class.
+            </summary> 
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.TabStripControl.Rotator">
+            <summary>
+            Gets or sets the value of Rotator property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.TabStripControl.OnApplyTemplate">
+            <summary>
+            On apply template method.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.TabStripControl.OnItemsChanged(System.Object)">
+            <summary>
+            On items changed method.
+            </summary>
+            <param name="e">Object type</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.TabStripControl.GetContainerForItemOverride">
+            <summary>
+            Override method for getting the items for the tab strip control
+            </summary>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.TabStripControl.TabStripControl_LayoutUpdated(System.Object,System.Object)">
+            <summary>
+            Tap StripControl Layout Updated method
+            </summary>
+            <param name="sender">Object type</param>
+            <param name="e">Event args</param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Rotator.TabStripPanel">
+            <summary>
+            Represents the TabStripPanel class
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.TabStripPanel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.Rotator.TabStripPanel" /> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.TabStripPanel.Orientation">
+            <summary>
+            Gets or sets the Orientation of the TabStrip Panel<see
+            cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator"/>.
+            </summary>
+            <value>Default value is Horizontal</value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator"/>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.TabStripPanel.Rotator">
+            <summary>
+            Gets or sets the value of Rotator property
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.TabStripPanel.MeasureOverride(Windows.Foundation.Size)">
+            <summary>
+            Measures the panel size based on the available size
+            </summary>
+            <param name="availableSize">Available size</param>
+            <returns>Return value</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.TabStripPanel.ArrangeOverride(Windows.Foundation.Size)">
+            <summary>
+            Arranges the children in the panel based on the final size
+            </summary>
+            <param name="finalSize">Final value</param>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.TabStripPanel.TabStripPanel_SizeChanged(System.Object,Windows.UI.Xaml.SizeChangedEventArgs)">
+            <summary>
+            Tap Strip panel Size changed method
+            </summary>
+            <param name="sender">Object type</param>
+            <param name="e">Size changed event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.TabStripPanel.TabstripPanel_Loaded(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Loaded override method
+            </summary>
+            <param name="sender">Object type</param>
+            <param name="e">Routed event args</param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Rotator.ThumbnailButton">
+            <summary>
+            Represents the Thumbnail Button class
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.ThumbnailButton.ThumbnailTemplateProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ThumbnailTemplateProperty.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.ThumbnailButton.rotator">
+            <summary>
+            Rotator field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.ThumbnailButton.thumbnailContent">
+            <summary>
+            Thumbnail content field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.ThumbnailButton.thumbNailPanel">
+            <summary>
+            Thumbnail panel field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.ThumbnailButton.isSelected">
+            <summary>
+            Is selected field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.Rotator.ThumbnailButton.isPointerPressed">
+            <summary>
+            Is pointer pressed field.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.ThumbnailButton.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.Rotator.ThumbnailButton" /> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.ThumbnailButton.ThumbnailImageTemplate">
+            <summary>
+            Gets or sets the template for Thumbnail Image<see
+            cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator"/>.
+            </summary>
+            <value>Default value is null</value>
+            <seealso cref="T:Syncfusion.UI.Xaml.Rotator.SfRotator"/>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.ThumbnailButton.Rotator">
+            <summary>
+            Gets or sets the value of rotator property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.ThumbnailButton.ThumbnailContent">
+            <summary>
+            Gets or sets the value of Thumbnail content field.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.ThumbnailButton.ThumbNailPanel">
+            <summary>
+            Gets or sets the value of Thumbnail panel property
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.ThumbnailButton.IsSelected">
+            <summary>
+            Gets or sets a value indicating whether the value of Is selected property 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.ThumbnailButton.IsPointerPressed">
+            <summary>
+            Gets or sets a value indicating whether the value of Is pointer pressed property
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.ThumbnailButton.Select(System.Boolean)">
+            <summary>
+            Method to Select thumbnail 
+            </summary>
+            <param name="select">Boolean type</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.ThumbnailButton.ValidateTextArea">
+            <summary>
+            Method to validate text area
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.ThumbnailButton.OnApplyTemplate">
+            <summary>
+            On Apply Template method.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.ThumbnailButton.OnPointerExited(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Pointer Exited override method
+            </summary>
+            <param name="e">Event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.ThumbnailButton.OnPointerEntered(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Pointer entered override method
+            </summary>
+            <param name="e">Event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.ThumbnailButton.OnPointerPressed(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Pointer pressed override method
+            </summary>
+            <param name="e">Event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.ThumbnailButton.OnPointerReleased(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Pointer released override method
+            </summary>
+            <param name="e">Routed Event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.ThumbnailButton.OnPointerCaptureLost(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            On pointer Capture Lost method
+            </summary>
+            <param name="e">Routed event args</param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Rotator.ThumbnailControl">
+            <summary>
+            Represents the ThumbnailControl class
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.ThumbnailControl.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.Rotator.ThumbnailControl" /> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.ThumbnailControl.Rotator">
+            <summary>
+            Gets or sets the value of Rotator property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.ThumbnailControl.OnItemsChanged(System.Object)">
+            <summary>
+            On items changed method.
+            </summary>
+            <param name="e">Object type</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.ThumbnailControl.PrepareContainerForItemOverride(Windows.UI.Xaml.DependencyObject,System.Object)">
+            <summary>
+            Prepare Container for item override method.
+            </summary>
+            <param name="element">Dependency object type</param>
+            <param name="item">Object type</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.ThumbnailControl.GetContainerForItemOverride">
+            <summary>
+            Obtain the items for the thumbnail items control
+            </summary>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.ThumbnailControl.ThumbnailPanel_Loaded(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Loaded override method
+            </summary>
+            <param name="sender">Object type</param>
+            <param name="e">Routed event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.ThumbnailControl.ThumbnailControl_LayoutUpdated(System.Object,System.Object)">
+            <summary>
+            Thumbnail Control Layout updated method.
+            </summary>
+            <param name="sender">Object type</param>
+            <param name="e">routed event args</param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Rotator.ThumbnailPanel">
+            <summary>
+            Represents the ThumbnailPanel class
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.ThumbnailPanel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.Rotator.ThumbnailPanel" /> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.ThumbnailPanel.Orientation">
+            <summary>
+            Gets or sets the Orientation for the Thumbnail panel
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.Rotator.ThumbnailPanel.Rotator">
+            <summary>
+            Gets or sets the value of Rotator control
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.ThumbnailPanel.MeasureOverride(Windows.Foundation.Size)">
+            <summary>
+            Measure the thumbnail panel based on the available size
+            </summary>
+            <param name="availableSize">Available size</param>
+            <returns>Return value</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.ThumbnailPanel.ArrangeOverride(Windows.Foundation.Size)">
+            <summary>
+            Arranges the children in the panel based on the final size
+            </summary>
+            <param name="finalSize">Final size</param>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.ThumbnailPanel.ThumbnailPanel_SizeChanged(System.Object,Windows.UI.Xaml.SizeChangedEventArgs)">
+            <summary>
+            Thumbnail Panel Size changed method.
+            </summary>
+            <param name="sender">object type</param>
+            <param name="e">Size changed event args</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.ThumbnailPanel.ThumbnailPanel_Loaded(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Loaded event for the thumbnail panel
+            </summary>
+            <param name="sender">Object type</param>
+            <param name="e">Routed event args</param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.Rotator.Syncfusion_SfRotator_UWP_2017_XamlTypeInfo.XamlMetaDataProvider">
+            <summary>
+            Main class for providing metadata for the app or library
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.Syncfusion_SfRotator_UWP_2017_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.Type)">
+            <summary>
+            GetXamlType(Type)
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.Syncfusion_SfRotator_UWP_2017_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.String)">
+            <summary>
+            GetXamlType(String)
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.Rotator.Syncfusion_SfRotator_UWP_2017_XamlTypeInfo.XamlMetaDataProvider.GetXmlnsDefinitions">
+            <summary>
+            GetXmlnsDefinitions()
+            </summary>
+        </member>
+    </members>
+</doc>
