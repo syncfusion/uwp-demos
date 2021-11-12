@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="Syncfusion.SfGrid.UWP" version="1.0" primary="true">
+		<Qualifiers>
+			<DeviceFamily>MOBILE</DeviceFamily>
+			<Language>EN-US</Language>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<ResourceMapSubtree name="Syncfusion.SfGrid.UWP">
+				<NamedResource name="Syncfusion.SfGrid.UWP.xr.xml" uri="ms-resource://Syncfusion.SfGrid.UWP/Files/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.xr.xml">
+					<Candidate type="Path">
+						<Value>Syncfusion.SfGrid.UWP\Syncfusion.SfGrid.UWP.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="ColumnChooser">
+					<ResourceMapSubtree name="Themes">
+						<NamedResource name="Generic.xbf" uri="ms-resource://Syncfusion.SfGrid.UWP/Files/Syncfusion.SfGrid.UWP/ColumnChooser/Themes/Generic.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Control">
+					<ResourceMapSubtree name="DetailsView">
+						<ResourceMapSubtree name="Themes">
+							<NamedResource name="Generic.xbf" uri="ms-resource://Syncfusion.SfGrid.UWP/Files/Syncfusion.SfGrid.UWP/Control/DetailsView/Themes/Generic.xbf">
+								<Candidate type="EmbeddedData">
+									<Base64Value>[Embedded Binary Data]</Base64Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="GroupDropArea">
+						<ResourceMapSubtree name="Themes">
+							<NamedResource name="Generic.xbf" uri="ms-resource://Syncfusion.SfGrid.UWP/Files/Syncfusion.SfGrid.UWP/Control/GroupDropArea/Themes/Generic.xbf">
+								<Candidate type="EmbeddedData">
+									<Base64Value>[Embedded Binary Data]</Base64Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="Themes">
+						<NamedResource name="Generic.xbf" uri="ms-resource://Syncfusion.SfGrid.UWP/Files/Syncfusion.SfGrid.UWP/Control/Themes/Generic.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="DataPager">
+					<ResourceMapSubtree name="Themes">
+						<NamedResource name="Generic.xbf" uri="ms-resource://Syncfusion.SfGrid.UWP/Files/Syncfusion.SfGrid.UWP/DataPager/Themes/Generic.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="GridCommon">
+					<ResourceMapSubtree name="ScrollableContentViewer">
+						<ResourceMapSubtree name="Themes">
+							<NamedResource name="Generic.xbf" uri="ms-resource://Syncfusion.SfGrid.UWP/Files/Syncfusion.SfGrid.UWP/GridCommon/ScrollableContentViewer/Themes/Generic.xbf">
+								<Candidate type="EmbeddedData">
+									<Base64Value>[Embedded Binary Data]</Base64Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="Themes">
+						<NamedResource name="generic.xbf" uri="ms-resource://Syncfusion.SfGrid.UWP/Files/Syncfusion.SfGrid.UWP/GridCommon/Themes/generic.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="GridFiltering">
+					<ResourceMapSubtree name="Themes">
+						<NamedResource name="AdvancedFilterControl.xbf" uri="ms-resource://Syncfusion.SfGrid.UWP/Files/Syncfusion.SfGrid.UWP/GridFiltering/Themes/AdvancedFilterControl.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="Generic.xbf" uri="ms-resource://Syncfusion.SfGrid.UWP/Files/Syncfusion.SfGrid.UWP/GridFiltering/Themes/Generic.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="GridFilterRow">
+					<ResourceMapSubtree name="Themes">
+						<NamedResource name="Generic.xbf" uri="ms-resource://Syncfusion.SfGrid.UWP/Files/Syncfusion.SfGrid.UWP/GridFilterRow/Themes/Generic.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="MultiColumnDropDownControl">
+					<ResourceMapSubtree name="Themes">
+						<NamedResource name="Generic.xbf" uri="ms-resource://Syncfusion.SfGrid.UWP/Files/Syncfusion.SfGrid.UWP/MultiColumnDropDownControl/Themes/Generic.xbf">
+							<Candidate qualifiers="DeviceFamily-MOBILE" type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Print">
+					<ResourceMapSubtree name="Themes">
+						<NamedResource name="Generic.xbf" uri="ms-resource://Syncfusion.SfGrid.UWP/Files/Syncfusion.SfGrid.UWP/Print/Themes/Generic.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Properties">
+					<NamedResource name="Syncfusion.SfGrid.UWP.rd.xml" uri="ms-resource://Syncfusion.SfGrid.UWP/Files/Syncfusion.SfGrid.UWP/Properties/Syncfusion.SfGrid.UWP.rd.xml">
+						<Candidate type="Path">
+							<Value>Syncfusion.SfGrid.UWP\Properties\Syncfusion.SfGrid.UWP.rd.xml</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="SfTreeGrid">
+					<ResourceMapSubtree name="Filtering">
+						<ResourceMapSubtree name="Themes">
+							<NamedResource name="Generic.xbf" uri="ms-resource://Syncfusion.SfGrid.UWP/Files/Syncfusion.SfGrid.UWP/SfTreeGrid/Filtering/Themes/Generic.xbf">
+								<Candidate type="EmbeddedData">
+									<Base64Value>[Embedded Binary Data]</Base64Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="TreeGridAdvancedFilterControl.xbf" uri="ms-resource://Syncfusion.SfGrid.UWP/Files/Syncfusion.SfGrid.UWP/SfTreeGrid/Filtering/Themes/TreeGridAdvancedFilterControl.xbf">
+								<Candidate type="EmbeddedData">
+									<Base64Value>[Embedded Binary Data]</Base64Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="Themes">
+						<NamedResource name="Generic.xbf" uri="ms-resource://Syncfusion.SfGrid.UWP/Files/Syncfusion.SfGrid.UWP/SfTreeGrid/Themes/Generic.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Styles">
+					<NamedResource name="ControlStyles.xbf" uri="ms-resource://Syncfusion.SfGrid.UWP/Files/Syncfusion.SfGrid.UWP/Styles/ControlStyles.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Styles.xbf" uri="ms-resource://Syncfusion.SfGrid.UWP/Files/Syncfusion.SfGrid.UWP/Styles/Styles.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="Generic.xbf" uri="ms-resource://Syncfusion.SfGrid.UWP/Files/Syncfusion.SfGrid.UWP/Themes/Generic.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Syncfusion.SfGrid.UWP">
+			<ResourceMapSubtree name="Syncfusion.SfGrid.UWP.Resources">
+				<NamedResource name="AddNewRowText" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/AddNewRowText">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Click here to add a new row</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="After" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/After">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>After</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="AfterOrEqual" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/AfterOrEqual">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>After Or Equal</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="AND" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/AND">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>AND</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Before" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/Before">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Before</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="BeforeOrEqual" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/BeforeOrEqual">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Before Or Equal</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="BeginsWith" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/BeginsWith">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Begins With</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Blanks" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/Blanks">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>(Blanks)</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Cancel" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/Cancel">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Cancel</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="CantDropHere" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/CantDropHere">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Cannot drop here</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ClearFilter" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/ClearFilter">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Clear Filter</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ColumnChooserTitle" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/ColumnChooserTitle">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Column Chooser</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ColumnChooserWaterMark" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/ColumnChooserWaterMark">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>(No Fields Available)</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Contains" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/Contains">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Contains</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DateFilters" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/DateFilters">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Date Filters</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Done" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/Done">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Done</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DropAbove" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/DropAbove">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Drop above</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DropAsChild" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/DropAsChild">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Drop as child</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DropBelow" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/DropBelow">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Drop below</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DropHere" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/DropHere">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Drop here</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DropRowsAbove" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/DropRowsAbove">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Drop {0} rows above</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DropRowsAsChild" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/DropRowsAsChild">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Drop {0} rows as child</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DropRowsBelow" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/DropRowsBelow">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Drop {0} rows below</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DropRowsHere" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/DropRowsHere">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Drop {0} rows here</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Empty" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/Empty">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Empty</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="EndsWith" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/EndsWith">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Ends With</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="EnterValidFilterValue" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/EnterValidFilterValue">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Enter Valid Filter Value</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Equalss" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/Equalss">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Equals</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="GreaterThan" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/GreaterThan">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Greater Than</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="GreaterThanorEqual" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/GreaterThanorEqual">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Greater Than or Equal</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="GroupDropAreaText" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/GroupDropAreaText">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Drag a column to group</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="LessThan" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/LessThan">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Less Than</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="LessThanorEqual" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/LessThanorEqual">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Less Than or Equal</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="NoItems" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/NoItems">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>No Items</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="NoMatches" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/NoMatches">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>No Matches</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="NotBeginsWith" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/NotBeginsWith">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Does Not Begin With</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="NotContains" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/NotContains">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Does Not Contain</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="NotEmpty" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/NotEmpty">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Not Empty</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="NotEndsWith" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/NotEndsWith">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Does Not End With</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="NotEquals" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/NotEquals">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Does Not Equal</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="NotNull" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/NotNull">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Not Null</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Null" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/Null">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Null</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="NumberFilters" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/NumberFilters">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Number Filters</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="OK" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/OK">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>OK</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="OR" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/OR">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>OR</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="RowErrorMessage" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/RowErrorMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Row Containing Error</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Search" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/Search">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Search</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SelectAll" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/SelectAll">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>(Select All)</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ShowRowsWhere" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/ShowRowsWhere">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Show rows where:</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SortDateAscending" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/SortDateAscending">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Sort Oldest to Newest</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SortDateDescending" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/SortDateDescending">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Sort Newest to Oldest</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SortNumberAscending" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/SortNumberAscending">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Sort Smallest to Largest</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SortNumberDescending" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/SortNumberDescending">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Sort Largest to Smallest</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SortStringAscending" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/SortStringAscending">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Sort A to Z</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SortStringDescending" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/SortStringDescending">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Sort Z to A</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="TextFilters" uri="ms-resource://Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP/Syncfusion.SfGrid.UWP.Resources/TextFilters">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Text Filters</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

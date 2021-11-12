@@ -1,0 +1,1 @@
+D:\Samples_19.3.0.53\UWP\Schedule\Syncfusion.SampleBrowser.UWP.Schedule.csproj;x86

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="Syncfusion.SfProgressBar.UWP" version="1.0" primary="true">
+		<Qualifiers>
+			<DeviceFamily>MOBILE</DeviceFamily>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<ResourceMapSubtree name="Syncfusion.SfProgressBar.UWP">
+				<NamedResource name="Syncfusion.SfProgressBar.UWP.xr.xml" uri="ms-resource://Syncfusion.SfProgressBar.UWP/Files/Syncfusion.SfProgressBar.UWP/Syncfusion.SfProgressBar.UWP.xr.xml">
+					<Candidate type="Path">
+						<Value>Syncfusion.SfProgressBar.UWP\Syncfusion.SfProgressBar.UWP.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Properties">
+					<NamedResource name="Syncfusion.SfProgressBar.UWP.rd.xml" uri="ms-resource://Syncfusion.SfProgressBar.UWP/Files/Syncfusion.SfProgressBar.UWP/Properties/Syncfusion.SfProgressBar.UWP.rd.xml">
+						<Candidate type="Path">
+							<Value>Syncfusion.SfProgressBar.UWP\Properties\Syncfusion.SfProgressBar.UWP.rd.xml</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="generic.xbf" uri="ms-resource://Syncfusion.SfProgressBar.UWP/Files/Syncfusion.SfProgressBar.UWP/Themes/generic.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="ProgressBarStyle.xbf" uri="ms-resource://Syncfusion.SfProgressBar.UWP/Files/Syncfusion.SfProgressBar.UWP/Themes/ProgressBarStyle.xbf">
+						<Candidate qualifiers="DeviceFamily-MOBILE" type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

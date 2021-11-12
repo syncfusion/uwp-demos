@@ -1,0 +1,1 @@
+D:\Samples_19.3.0.53\UWP\ImageEditor\Syncfusion.SampleBrowser.UWP.ImageEditor.csproj;x86

@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Grad_Moss" type="System.Byte[], mscorlib">
+    <value>
+        AwAAAMBlUgAAAAAAAAAAAAAAAAAAAAAAAAAAAADP690AnoYBAFDDAABuuJwAnoYBAKCGAQATaxUAnoYB
+        AA==
+</value>
+  </data>
+  <data name="Grad_Gold" type="System.Byte[], mscorlib">
+    <value>
+        BgAAAMBlUgAAAAAAAAAAAAAAAAAAAAAAAAAAAACs3OYAnoYBAOAuAACK1+YAnoYBADB1AABMrMcAnoYB
+        AMivAACK1+YAnoYBAMgsAQBMrMcAnoYBAKCGAQCs3OYAnoYBAA==
+</value>
+  </data>
+  <data name="Grad_Fire" type="System.Byte[], mscorlib">
+    <value>
+        BAAAAMBlUgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8v8AnoYBAMivAAAAev8AnoYBAHARAQAAA/8AnoYB
+        AKCGAQAICE0AnoYBAA==
+</value>
+  </data>
+  <data name="Grad_Calm_Water" type="System.Byte[], mscorlib">
+    <value>
+        BgAAAMBlUgAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/zMwAnoYBAE9GAAD/zJkAnoYBAKCMAAD/ZpkAnoYB
+        AEjuAAD/mcwAnoYBAFFAAQD/zJkAnoYBAKCGAQD/zMwAnoYBAA==
+</value>
+  </data>
+  <data name="Grad_Parchment" type="System.Byte[], mscorlib">
+    <value>
+        AwAAAMBlUgAAAAAAAAAAAAAAAAAAAAAAAAAAAADR7/8AnoYBAOf9AADV6/AAnoYBAKCGAQCfw9EAnoYB
+        AA==
+</value>
+  </data>
+  <data name="Grad_Late_Sunset" type="System.Byte[], mscorlib">
+    <value>
+        BgAAAMBlUgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAnoYBACBOAABAAAAAnoYBAFDDAABAAEAAnoYB
+        APgkAQBAAI8AnoYBAI9fAQAAc/IAnoYBAKCGAQAAv/8AnoYBAA==
+</value>
+  </data>
+  <data name="Grad_Daybreak" type="System.Byte[], mscorlib">
+    <value>
+        BAAAAMBlUgAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/nl4AnoYBAD+cAAD/woUAnoYBAHARAQDr1sQAnoYB
+        AKCGAQD66/8AnoYBAA==
+</value>
+  </data>
+  <data name="Grad_Horizon" type="System.Byte[], mscorlib">
+    <value>
+        CgAAAMBlUgAAAAAAAAAAAAAAAAAAAAAAAAAAAAD169wAnoYBAEAfAADDp4MAnoYBAMgyAAC5j3YAnoYB
+        AAlSAADDp4MAnoYBACDLAAD///8AnoYBAMDaAABjZZwAnoYBAJDiAAAtMIAAnoYBAFkVAQBOUsAAnoYB
+        ADBvAQDU2usAnoYBAKCGAQAcJlUAnoYBAA==
+</value>
+  </data>
+  <data name="Grad_Peacock" type="System.Byte[], mscorlib">
+    <value>
+        BwAAAMBlUgAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/mTMAnoYBAIA+AADMzAAAnoYBAJi3AAD/mZkAnoYB
+        AGHqAACSZy4AnoYBAFkVAQDMMzMAnoYBAGg8AQD/cBEAnoYBAKCGAQCZZgAAnoYBAA==
+</value>
+  </data>
+  <data name="Grad_RainbowII" type="System.Byte[], mscorlib">
+    <value>
+        BQAAAMBlUgAAAAAAAAAAAAAAAAAAAAAAAAAAAACZM/8AnoYBAKhhAAAzZv8AnoYBAFDDAAAA//8AnoYB
+        APgkAQCPpwEAnoYBAKCGAQD/ZjMAnoYBAA==
+</value>
+  </data>
+  <data name="Grad_ChromeII" type="System.Byte[], mscorlib">
+    <value>
+        CAAAAMBlUgAAAAAAAAAAAAAAAAAAAAAAAAAAAADLy8sAnoYBAMgyAABfX18AnoYBAAlSAABfX18AnoYB
+        ABj2AAD///8AnoYBALgFAQCysrIAnoYBAIgNAQApKSkAnoYBAFFAAQB3d3cAnoYBAKCGAQDq6uoAnoYB
+        AA==
+</value>
+  </data>
+  <data name="Grad_Nightfall" type="System.Byte[], mscorlib">
+    <value>
+        BQAAAMBlUgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAnoYBAD+cAACMEgoAnoYBAHARAQDHHBgAnoYB
+        AMBXAQDUBXAAnoYBAKCGAQCRPYwAnoYBAA==
+</value>
+  </data>
+  <data name="Grad_Sapphire" type="System.Byte[], mscorlib">
+    <value>
+        CAAAAMBlUgAAAAAAAAAAAAAAAAAAAAAAAAAAAACCAAAAnoYBAMgyAAD/RwAAnoYBAGBtAACCAAAAnoYB
+        APenAAD/RwAAnoYBAJDiAACCAAAAnoYBAEAZAQD/RwAAnoYBANhTAQCCAAAAnoYBAKCGAQD/RwAAnoYB
+        AA==
+</value>
+  </data>
+  <data name="Grad_Early_Sunset" type="System.Byte[], mscorlib">
+    <value>
+        BQAAAMBlUgAAAAAAAAAAAAAAAAAAAAAAAAAAAACCAAAAnoYBADB1AACPAGYAnoYBAOf9AABmALoAnoYB
+        AI9fAQAAAP8AnoYBAKCGAQAAgv8AnoYBAA==
+</value>
+  </data>
+  <data name="Grad_Mahogany" type="System.Byte[], mscorlib">
+    <value>
+        BAAAAMBlUgAAAAAAAAAAAAAAAAAAAAAAAAAAAACcsdYAnoYBADB1AABsntQAnoYBAHARAQAoVaYAnoYB
+        AKCGAQASMGYAnoYBAA==
+</value>
+  </data>
+  <data name="Grad_Fog" type="System.Byte[], mscorlib">
+    <value>
+        BAAAAMBlUgAAAAAAAAAAAAAAAAAAAAAAAAAAAADEiIQAnoYBAAjPAAD/3tQAnoYBADhEAQD/3tQAnoYB
+        AKCGAQCUq5YAnoYBAA==
+</value>
+  </data>
+  <data name="Grad_Chrome" type="System.Byte[], mscorlib">
+    <value>
+        CQAAAMBlUgAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8AnoYBAIA+AAAfHx8AnoYBAE9GAAD///8AnoYB
+        ABCkAABjY2MAnoYBAAjPAADPz88AnoYBANABAQDPz88AnoYBAN8oAQAfHx8AnoYBAJc0AQD///8AnoYB
+        AKCGAQB/f38AnoYBAA==
+</value>
+  </data>
+  <data name="Grad_Desert" type="System.Byte[], mscorlib">
+    <value>
+        CAAAAMBlUgAAAAAAAAAAAAAAAAAAAAAAAAAAAADLn/wAnoYBAMgyAABJsPgAnoYBAAlSAABJsPgAnoYB
+        ABj2AADy5/4AnoYBALgFAQCgUvkAnoYBAIgNAQBJCMUAnoYBAFFAAQCFPrQAnoYBAKCGAQBJsPgAnoYB
+        AA==
+</value>
+  </data>
+  <data name="Grad_Ocean" type="System.Byte[], mscorlib">
+    <value>
+        BAAAAMBlUgAAAAAAAAAAAAAAAAAAAAAAAAAAAACo1AMAnoYBAKhhAADg1iEAnoYBAPgkAQDmhwAAnoYB
+        AKCGAQC/XAAAnoYBAA==
+</value>
+  </data>
+  <data name="Grad_Brass" type="System.Byte[], mscorlib">
+    <value>
+        CAAAAMBlUgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVoIAnoYBAMgyAAAAqP8AnoYBAGBtAAAAVoIAnoYB
+        APenAAAAqP8AnoYBAJDiAAAAVoIAnoYBAEAZAQAAqP8AnoYBANhTAQAAVoIAnoYBAKCGAQAAqP8AnoYB
+        AA==
+</value>
+  </data>
+  <data name="Grad_GoldII" type="System.Byte[], mscorlib">
+    <value>
+        CAAAAMBlUgAAAAAAAAAAAAAAAAAAAAAAAAAAAACu5PsAnoYBAMgyAAAqkr0AnoYBAAlSAAAqkr0AnoYB
+        ABj2AACu5PsAnoYBALgFAQAqkr0AnoYBAIgNAQAXXoMAnoYBAFFAAQBJiaIAnoYBAKCGAQC34/oAnoYB
+        AA==
+</value>
+  </data>
+  <data name="Grad_Wheat" type="System.Byte[], mscorlib">
+    <value>
+        BgAAAMBlUgAAAAAAAAAAAAAAAAAAAAAAAAAAAADH6vsAnoYBAE9GAADy5/4AnoYBAKCMAAB9x/oAnoYB
+        AEjuAAB9qfsAnoYBAFFAAQCc1PsAnoYBAKCGAQDy5/4AnoYBAA==
+</value>
+  </data>
+  <data name="Grad_Rainbow" type="System.Byte[], mscorlib">
+    <value>
+        BwAAAMBlUgAAAAAAAAAAAAAAAAAAAAAAAAAAAACrA6YAnoYBAAlSAAD7GQgAnoYBALmIAABIjRoAnoYB
+        ACDLAAAA//8AnoYBACgdAQAXP+4AnoYBAMBXAQBmF+gAnoYBAKCGAQCrA6YAnoYBAA==
+</value>
+  </data>
+  <data name="Grad_Silver" type="System.Byte[], mscorlib">
+    <value>
+        BgAAAMBlUgAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8AnoYBAFkbAADm5uYAnoYBAAF9AACWhH0AnoYB
+        AJi3AADm5uYAnoYBAAlMAQCWhH0AnoYBAKCGAQDm5uYAnoYBAA==
+</value>
+  </data>
+</root>

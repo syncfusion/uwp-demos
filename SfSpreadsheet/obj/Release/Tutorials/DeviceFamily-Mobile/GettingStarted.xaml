@@ -1,0 +1,20 @@
+﻿<common:SampleLayout x:Class="SpreadsheetSamples.GettingStarted"
+                     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                     xmlns:common="using:Common"
+                     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                     xmlns:syncfusion="using:Syncfusion.UI.Xaml.Spreadsheet"
+                     mc:Ignorable="d">
+
+    <Grid>
+        <syncfusion:SfSpreadsheetRibbon x:ConnectionId='1' x:Name="ribbon" DataContext="{Binding ElementName=spreadsheet}">
+            <syncfusion:SfSpreadsheetRibbon.Content>
+                <syncfusion:SfSpreadsheet x:ConnectionId='2' x:Name="spreadsheet" />
+            </syncfusion:SfSpreadsheetRibbon.Content>
+        </syncfusion:SfSpreadsheetRibbon>
+    </Grid>
+</common:SampleLayout>
+
+
+

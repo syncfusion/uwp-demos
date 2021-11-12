@@ -1,0 +1,33 @@
+﻿<layout:SampleLayout x:Class="BI.PivotGrid.Hyperlink"
+                     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                     mc:Ignorable="d"  xmlns:pivotGrid="using:Syncfusion.UI.Xaml.PivotGrid"
+                     xmlns:layout="using:Common" Header="PivotGrid">
+    
+    <layout:SampleLayout.Sample>
+        <pivotGrid:SfPivotGrid x:ConnectionId='1' x:Name="pivotGrid" Margin="5" ShowHeaderCellsToolTip="True" FreezeHeaders="False">
+        </pivotGrid:SfPivotGrid>
+    </layout:SampleLayout.Sample>
+
+    <layout:SampleLayout.Setting>
+        <ContentControl>
+            <StackPanel Width="300">
+                <StackPanel Margin="10 7">
+                    <CheckBox x:ConnectionId='2' Name="chkEnableColumnHeaderHyperlink" Margin="10 7" Content="Enable Column Header Hyperlink" 
+                                                                                                                                 />
+                    <CheckBox x:ConnectionId='3' Name="chkEnableRowHeaderHyperlink" Margin="10 7" Content="Enable Row Header Hyperlink" 
+                                                                                                                           />
+                    <CheckBox x:ConnectionId='4' Name="chkEnableSummaryColumnHeaderHyperlink" Margin="10 7" Content="Enable Summary Column Hyperlink" 
+                                                                                                                                               />
+                    <CheckBox x:ConnectionId='5' Name="chkEnableSummaryRowHeaderHyperlink" Margin="10 7" Content="Enable Summary Row Hyperlink" 
+                                                                                                                                         />
+                    <CheckBox x:ConnectionId='6' Name="chkEnableValueCellsHyperlink" Margin="10 7" Content="Enable Value Cells Hyperlink" 
+                                                                                                                             />
+                </StackPanel>
+            </StackPanel>
+        </ContentControl>
+    </layout:SampleLayout.Setting>
+</layout:SampleLayout>
+

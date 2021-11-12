@@ -1,0 +1,37 @@
+WinMetadata\Windows.winmd
+ApplicationInsights.config
+Assets\LockScreenLogo.scale-200.png
+Assets\Sales Analysis.jpg
+Assets\SplashScreen.scale-200.png
+Assets\Square150x150Logo.scale-200.png
+Assets\Square44x44Logo.scale-200.png
+Assets\Square44x44Logo.targetsize-24_altform-unplated.png
+Assets\Stock Analysis.jpg
+Assets\StoreLogo.png
+Assets\Wide310x150Logo.scale-200.png
+Syncfusion.SampleBrowser.UWP.SfChart.xr.xml
+Chart\ShowCase\SalesAnalysisDemo\Assets\BackgroundTexture.png
+Chart\ShowCase\SalesAnalysisDemo\Assets\Logo.png
+Chart\ShowCase\SalesAnalysisDemo\Assets\SmallLogo.png
+Chart\ShowCase\SalesAnalysisDemo\Assets\SplashScreen.png
+Chart\ShowCase\SalesAnalysisDemo\Assets\StoreLogo.png
+Chart\ShowCase\StockAnalysisDemo\Assets\info_icon.png
+Chart\ShowCase\StockAnalysisDemo\Assets\Logo.png
+Chart\ShowCase\StockAnalysisDemo\Assets\SmallLogo.png
+Chart\ShowCase\StockAnalysisDemo\Assets\SplashScreen.png
+Chart\ShowCase\StockAnalysisDemo\Assets\StoreLogo.png
+Chart\Tutorials\ChartSamples\Annotation\DeviceFamily-Mobile\Images\Ball.jpg
+Chart\Tutorials\ChartSamples\Annotation\Images\Ball.jpg
+Chart\Tutorials\ChartSamples\PieChart\Images\Car.png
+Chart\Tutorials\ChartSamples\PieChart\Images\Chart_Book.png
+Chart\Tutorials\ChartSamples\PieChart\Images\House.png
+Chart\Tutorials\ChartSamples\PieChart\Images\Person.png
+Chart\Tutorials\ChartSamples\PieChart\Images\Personal.png
+Chart\Tutorials\ChartSamples\ToolTip\Images\audi.png
+Chart\Tutorials\ChartSamples\ToolTip\Images\benz.png
+Chart\Tutorials\ChartSamples\ToolTip\Images\bmw.png
+Chart\Tutorials\ChartSamples\ToolTip\Images\jaguar.png
+Chart\Tutorials\ChartSamples\ToolTip\Images\Rolls-Royce.png
+Chart\Tutorials\ChartSamples\ToolTip\Images\skoda.png
+Chart\Tutorials\ChartSamples\ToolTip\Images\volvo.png
+Properties\Default.rd.xml

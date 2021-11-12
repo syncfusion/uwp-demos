@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="Syncfusion.SfDockingManager.UWP" version="1.0" primary="true">
+		<Qualifiers>
+			<DeviceFamily>MOBILE</DeviceFamily>
+			<Language>EN-US</Language>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<ResourceMapSubtree name="Syncfusion.SfDockingManager.UWP">
+				<NamedResource name="Syncfusion.SfDockingManager.UWP.xr.xml" uri="ms-resource://Syncfusion.SfDockingManager.UWP/Files/Syncfusion.SfDockingManager.UWP/Syncfusion.SfDockingManager.UWP.xr.xml">
+					<Candidate type="Path">
+						<Value>Syncfusion.SfDockingManager.UWP\Syncfusion.SfDockingManager.UWP.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="DockingManagerStyle.xbf" uri="ms-resource://Syncfusion.SfDockingManager.UWP/Files/Syncfusion.SfDockingManager.UWP/Themes/DockingManagerStyle.xbf">
+						<Candidate qualifiers="DeviceFamily-MOBILE" type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Generic.xbf" uri="ms-resource://Syncfusion.SfDockingManager.UWP/Files/Syncfusion.SfDockingManager.UWP/Themes/Generic.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Syncfusion.SfDockingManager.UWP">
+			<ResourceMapSubtree name="Syncfusion.SfDockingManager.UWP.Resources">
+				<NamedResource name="AutoHideButtonTooltip" uri="ms-resource://Syncfusion.SfDockingManager.UWP/Syncfusion.SfDockingManager.UWP/Syncfusion.SfDockingManager.UWP.Resources/AutoHideButtonTooltip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Auto Hide</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="AutoHideFlyoutMenuItemText" uri="ms-resource://Syncfusion.SfDockingManager.UWP/Syncfusion.SfDockingManager.UWP/Syncfusion.SfDockingManager.UWP.Resources/AutoHideFlyoutMenuItemText">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>AutoHide</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="CloseAllButThisContextMenuItemText" uri="ms-resource://Syncfusion.SfDockingManager.UWP/Syncfusion.SfDockingManager.UWP/Syncfusion.SfDockingManager.UWP.Resources/CloseAllButThisContextMenuItemText">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Close All But This</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="CloseAllContextMenuItemText" uri="ms-resource://Syncfusion.SfDockingManager.UWP/Syncfusion.SfDockingManager.UWP/Syncfusion.SfDockingManager.UWP.Resources/CloseAllContextMenuItemText">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Close All</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="CloseButtonTooltip" uri="ms-resource://Syncfusion.SfDockingManager.UWP/Syncfusion.SfDockingManager.UWP/Syncfusion.SfDockingManager.UWP.Resources/CloseButtonTooltip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Close</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="CloseContextMenuItemText" uri="ms-resource://Syncfusion.SfDockingManager.UWP/Syncfusion.SfDockingManager.UWP/Syncfusion.SfDockingManager.UWP.Resources/CloseContextMenuItemText">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Close</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="CloseFlyoutMenuItemText" uri="ms-resource://Syncfusion.SfDockingManager.UWP/Syncfusion.SfDockingManager.UWP/Syncfusion.SfDockingManager.UWP.Resources/CloseFlyoutMenuItemText">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Close</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DockButtonTooltip" uri="ms-resource://Syncfusion.SfDockingManager.UWP/Syncfusion.SfDockingManager.UWP/Syncfusion.SfDockingManager.UWP.Resources/DockButtonTooltip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Dock</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DockFlyoutMenuItemText" uri="ms-resource://Syncfusion.SfDockingManager.UWP/Syncfusion.SfDockingManager.UWP/Syncfusion.SfDockingManager.UWP.Resources/DockFlyoutMenuItemText">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Dock</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DocumentCommonCloseButtonTooltip" uri="ms-resource://Syncfusion.SfDockingManager.UWP/Syncfusion.SfDockingManager.UWP/Syncfusion.SfDockingManager.UWP.Resources/DocumentCommonCloseButtonTooltip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Close</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DocumentFlyoutMenuItemText" uri="ms-resource://Syncfusion.SfDockingManager.UWP/Syncfusion.SfDockingManager.UWP/Syncfusion.SfDockingManager.UWP.Resources/DocumentFlyoutMenuItemText">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Document</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DocumentItemCloseButtonTooltip" uri="ms-resource://Syncfusion.SfDockingManager.UWP/Syncfusion.SfDockingManager.UWP/Syncfusion.SfDockingManager.UWP.Resources/DocumentItemCloseButtonTooltip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Close</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DocumentItemPinButtonTooltip" uri="ms-resource://Syncfusion.SfDockingManager.UWP/Syncfusion.SfDockingManager.UWP/Syncfusion.SfDockingManager.UWP.Resources/DocumentItemPinButtonTooltip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Pin</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DocumentItemUnPinButtonTooltip" uri="ms-resource://Syncfusion.SfDockingManager.UWP/Syncfusion.SfDockingManager.UWP/Syncfusion.SfDockingManager.UWP.Resources/DocumentItemUnPinButtonTooltip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>UnPin</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FloatFlyoutMenuItemText" uri="ms-resource://Syncfusion.SfDockingManager.UWP/Syncfusion.SfDockingManager.UWP/Syncfusion.SfDockingManager.UWP.Resources/FloatFlyoutMenuItemText">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Float</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="OptionsButtonTooltip" uri="ms-resource://Syncfusion.SfDockingManager.UWP/Syncfusion.SfDockingManager.UWP/Syncfusion.SfDockingManager.UWP.Resources/OptionsButtonTooltip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Options</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

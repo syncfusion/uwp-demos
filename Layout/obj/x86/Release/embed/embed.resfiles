@@ -1,0 +1,33 @@
+Accordion\Accordion.xbf
+Accordion\AccordionView.xbf
+Accordion\DataBindingView.xbf
+Accordion\DeviceFamily-Mobile\AccordionView.xbf
+Accordion\DeviceFamily-Mobile\DataBindingView.xbf
+App.xbf
+Carousel\View\CarouselOptionsView.xbf
+Carousel\View\CarouselView.xbf
+Carousel\View\DeviceFamily-Mobile\CarouselView.xbf
+Docking Manager\Views\DockingManagerLocalization.xbf
+Docking Manager\Views\DockingManagerNestedDocking.xbf
+Docking Manager\Views\DockingManagerSerialization.xbf
+Docking Manager\Views\DockingManagerVisualStudio.xbf
+MainPage.xbf
+Ribbon\BackStageView\DeviceFamily-Mobile\HistoryView.xbf
+Ribbon\BackStageView\DeviceFamily-Mobile\NewView.xbf
+Ribbon\BackStageView\DeviceFamily-Mobile\SaveView.xbf
+Ribbon\BackStageView\DeviceFamily-Mobile\ShareView.xbf
+Ribbon\BackStageView\DeviceFamily-Mobile\UserView.xbf
+Ribbon\BackStageView\HistoryView.xbf
+Ribbon\BackStageView\NewView.xbf
+Ribbon\BackStageView\SaveView.xbf
+Ribbon\BackStageView\ShareView.xbf
+Ribbon\BackStageView\UserView.xbf
+Ribbon\RibbonDemo.xbf
+Ribbon\View\CustomBackStagePage.xbf
+Ribbon\View\DeviceFamily-Mobile\CustomBackStagePage.xbf
+Ribbon\View\DeviceFamily-Mobile\RibbonSamplePage.xbf
+Ribbon\View\RibbonSamplePage.xbf
+TileView\View\DeviceFamily-Mobile\TileView.xbf
+TileView\View\Template_Winrt.xbf
+TileView\View\Template_WP.xbf
+TileView\View\TileView.xbf

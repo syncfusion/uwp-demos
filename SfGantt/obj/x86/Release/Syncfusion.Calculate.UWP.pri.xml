@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="Syncfusion.Calculate.UWP" version="1.0" primary="true">
+		<Qualifiers/>
+		<ResourceMapSubtree name="Files">
+			<ResourceMapSubtree name="Syncfusion.Calculate.UWP">
+				<NamedResource name="Syncfusion.Calculate.UWP.rd.xml" uri="ms-resource://Syncfusion.Calculate.UWP/Files/Syncfusion.Calculate.UWP/Syncfusion.Calculate.UWP.rd.xml">
+					<Candidate type="Path">
+						<Value>Syncfusion.Calculate.UWP\Syncfusion.Calculate.UWP.rd.xml</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

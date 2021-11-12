@@ -1,0 +1,67 @@
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.HeatMap\ApplicationInsights.config
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.HeatMap\Assets\HeatMap.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.HeatMap\Properties\Syncfusion.SampleBrowser.UWP.HeatMap.rd.xml
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.HeatMap\Assets\LockScreenLogo.scale-200.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.HeatMap\Assets\SplashScreen.scale-200.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.HeatMap\Assets\Square150x150Logo.scale-200.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.HeatMap\Assets\Square44x44Logo.scale-200.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.HeatMap\Assets\Square44x44Logo.targetsize-24_altform-unplated.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.HeatMap\Assets\StoreLogo.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.HeatMap\Assets\Wide310x150Logo.scale-200.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.HeatMap\Syncfusion.SampleBrowser.UWP.HeatMap.dll
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.HeatMap\Syncfusion.SampleBrowser.UWP.HeatMap.pdb
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.HeatMap\Syncfusion.SampleBrowser.UWP.HeatMap.pri
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\Syncfusion.SampleBrowser.UWP.HeatMap.csprojAssemblyReference.cache
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\App.g.i.cs
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\App.g.cs
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\Tutorial\DeviceFamily-Mobile\GettingStarted.g.i.cs
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\Tutorial\DeviceFamily-Mobile\GettingStarted.g.cs
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\Tutorial\Items Mapping_Mobile.g.i.cs
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\Tutorial\Items Mapping_Mobile.g.cs
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\Tutorial\Legend_Mobile.g.i.cs
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\Tutorial\Legend_Mobile.g.cs
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\Tutorial\GettingStarted.g.i.cs
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\Tutorial\GettingStarted.g.cs
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\Tutorial\Items Mapping.g.i.cs
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\Tutorial\Items Mapping.g.cs
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\Tutorial\Legend.g.i.cs
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\Tutorial\Legend.g.cs
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\Tutorial\Virtualization.g.i.cs
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\Tutorial\Virtualization.g.cs
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\XamlTypeInfo.g.cs
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\App.xaml
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\Tutorial\DeviceFamily-Mobile\GettingStarted.xaml
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\Tutorial\Items Mapping_Mobile.xaml
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\Tutorial\Legend_Mobile.xaml
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\Tutorial\GettingStarted.xaml
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\Tutorial\Items Mapping.xaml
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\Tutorial\Legend.xaml
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\Tutorial\Virtualization.xaml
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\App.xbf
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\Tutorial\DeviceFamily-Mobile\GettingStarted.xbf
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\Tutorial\Items Mapping_Mobile.xbf
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\Tutorial\Legend_Mobile.xbf
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\Tutorial\GettingStarted.xbf
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\Tutorial\Items Mapping.xbf
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\Tutorial\Legend.xbf
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\Tutorial\Virtualization.xbf
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\XamlSaveStateFile.xml
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\Syncfusion.SampleBrowser.UWP.HeatMap.csproj.CoreCompileInputs.cache
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\Syncfusion.SampleBrowser.UWP.HeatMap.csproj.CopyComplete
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\Syncfusion.SampleBrowser.UWP.HeatMap.dll
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\Syncfusion.SampleBrowser.UWP.HeatMap.pdb
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\priconfig.xml
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\priconfig.xml.intermediate
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\unfiltered.layout.resfiles
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\unfiltered.layout.resfiles.intermediate
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\filtered.layout.resfiles
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\filtered.layout.resfiles.intermediate
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\excluded.layout.resfiles
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\excluded.layout.resfiles.intermediate
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\resources.resfiles
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\resources.resfiles.intermediate
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\pri.resfiles
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\pri.resfiles.intermediate
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\qualifiers.txt
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\qualifiers.txt.intermediate
+D:\Git\RP\sfheatmap-xaml\UWP\Samples\HeatMap\obj\Release\MultipleQualifiersPerDimensionFound.txt

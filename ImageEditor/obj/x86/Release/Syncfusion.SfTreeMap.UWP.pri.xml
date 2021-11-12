@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="Syncfusion.SfTreeMap.UWP" version="1.0" primary="true">
+		<Qualifiers/>
+		<ResourceMapSubtree name="Files">
+			<ResourceMapSubtree name="Syncfusion.SfTreeMap.UWP">
+				<NamedResource name="Syncfusion.SfTreeMap.UWP.xr.xml" uri="ms-resource://Syncfusion.SfTreeMap.UWP/Files/Syncfusion.SfTreeMap.UWP/Syncfusion.SfTreeMap.UWP.xr.xml">
+					<Candidate type="Path">
+						<Value>Syncfusion.SfTreeMap.UWP\Syncfusion.SfTreeMap.UWP.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Properties">
+					<NamedResource name="Syncfusion.SfTreeMap.UWP.rd.xml" uri="ms-resource://Syncfusion.SfTreeMap.UWP/Files/Syncfusion.SfTreeMap.UWP/Properties/Syncfusion.SfTreeMap.UWP.rd.xml">
+						<Candidate type="Path">
+							<Value>Syncfusion.SfTreeMap.UWP\Properties\Syncfusion.SfTreeMap.UWP.rd.xml</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="Generic.Common.xbf" uri="ms-resource://Syncfusion.SfTreeMap.UWP/Files/Syncfusion.SfTreeMap.UWP/Themes/Generic.Common.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Generic.xbf" uri="ms-resource://Syncfusion.SfTreeMap.UWP/Files/Syncfusion.SfTreeMap.UWP/Themes/Generic.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

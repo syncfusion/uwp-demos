@@ -1,0 +1,1 @@
+D:\Samples_19.3.0.53\UWP\SfSunburstChart\AppPackages\Syncfusion.SampleBrowser.UWP.SfSunburstChart_1.0.0.0_x86_Test\Syncfusion.SampleBrowser.UWP.SfSunburstChart_1.0.0.0_x86.appx

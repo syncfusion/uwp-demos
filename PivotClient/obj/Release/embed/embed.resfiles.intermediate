@@ -1,0 +1,13 @@
+Syncfusion.SampleBrowser.UWP.PivotClient\App.xbf
+Syncfusion.SampleBrowser.UWP.PivotClient\Common\StandardStyles.xbf
+Syncfusion.SampleBrowser.UWP.PivotClient\PivotClient\View\AdvancedFiltering.xbf
+Syncfusion.SampleBrowser.UWP.PivotClient\PivotClient\View\CalculatedMembers.xbf
+Syncfusion.SampleBrowser.UWP.PivotClient\PivotClient\View\DeferUpdate.xbf
+Syncfusion.SampleBrowser.UWP.PivotClient\PivotClient\View\GettingStarted.xbf
+Syncfusion.SampleBrowser.UWP.PivotClient\PivotClient\View\Localization.xbf
+Syncfusion.SampleBrowser.UWP.PivotClient\PivotClient\View\MDXQuery.xbf
+Syncfusion.SampleBrowser.UWP.PivotClient\PivotClient\View\Paging.xbf
+Syncfusion.SampleBrowser.UWP.PivotClient\PivotClient\View\PivotClientConfiguration.xbf
+Syncfusion.SampleBrowser.UWP.PivotClient\PivotClient\View\PivotClientCustomization.xbf
+Syncfusion.SampleBrowser.UWP.PivotClient\PivotClient\View\Relational.xbf
+Syncfusion.SampleBrowser.UWP.PivotClient\PivotClient\View\VirtualKPI.xbf

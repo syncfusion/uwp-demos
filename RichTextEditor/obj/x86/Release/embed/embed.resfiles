@@ -1,0 +1,17 @@
+App.xbf
+Common\StandardStyles.xbf
+RTE\Controls\FontFormatGrid.xbf
+RTE\Controls\HighlightColorPicker.xbf
+RTE\Controls\InsertTableGrid.xbf
+RTE\Controls\ListFormatGrid.xbf
+RTE\Controls\ParaFormatGrid.xbf
+RTE\Controls\ReviewOptionsGrid.xbf
+RTE\Controls\SpacingsFormatGrid.xbf
+RTE\CreateLetters\CreateLetters.xbf
+RTE\CustomizedEditor\CustomizedEditor.xbf
+RTE\CustomizedEditor\DeviceFamily-Mobile\CustomizedEditor.xbf
+RTE\DeviceFamily-Mobile\DocumentEditor.xbf
+RTE\DocumentEditor.xbf
+RTE\Forum\Forum.xbf
+RTE\Forum\ForumPostControl.xbf
+RTE\Forum\ForumReplyControl.xbf

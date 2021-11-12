@@ -1,0 +1,13 @@
+App.xbf
+Common\StandardStyles.xbf
+PivotClient\View\AdvancedFiltering.xbf
+PivotClient\View\CalculatedMembers.xbf
+PivotClient\View\DeferUpdate.xbf
+PivotClient\View\GettingStarted.xbf
+PivotClient\View\Localization.xbf
+PivotClient\View\MDXQuery.xbf
+PivotClient\View\Paging.xbf
+PivotClient\View\PivotClientConfiguration.xbf
+PivotClient\View\PivotClientCustomization.xbf
+PivotClient\View\Relational.xbf
+PivotClient\View\VirtualKPI.xbf

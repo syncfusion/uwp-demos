@@ -1,0 +1,112 @@
+﻿<common:SampleLayout
+    x:Class="Syncfusion.SampleBrowser.UWP.SfChart.PolarAndRadarCharts"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Syncfusion.SampleBrowser.UWP.SfChart"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:common="using:Common"
+    xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+    <common:SampleLayout.Sample>
+        <ContentControl Margin="50,50,50,25">
+            <Grid x:ConnectionId='1' Name="Maingrd" HorizontalAlignment="Left" Height="500" VerticalAlignment="Top">
+                <Grid.DataContext>
+                    <local:PolarChartViewModel/>
+                </Grid.DataContext>
+
+                <Grid.Resources>
+                    <ResourceDictionary>
+
+                        <local:CircularLabelConverter x:Key="labelconverter"/>
+
+                    </ResourceDictionary>
+                    
+                </Grid.Resources>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <chart:SfChart x:ConnectionId='2' x:Name="polarSeries" Palette="Custom" ColorModel="{StaticResource customBrush}" AreaBorderThickness="0" Height="400" VerticalAlignment="Center" HorizontalAlignment="Center" >
+                    <chart:SfChart.PrimaryAxis>
+                        <chart:CategoryAxis />
+                    </chart:SfChart.PrimaryAxis>
+
+                    <chart:SfChart.SecondaryAxis>
+                        <chart:NumericalAxis Interval="15"/>
+                    </chart:SfChart.SecondaryAxis>
+
+                    <chart:PolarSeries x:ConnectionId='11' x:Name="series1" Background="Transparent" ItemsSource="{Binding PlantDetails}" Label="Amount Spent" 
+                               DrawType="Area" IsClosed="True" XBindingPath="Direction" YBindingPath="Tree"
+                               StrokeThickness="2">
+                        <chart:PolarSeries.AdornmentsInfo>
+                            <chart:ChartAdornmentInfo x:ConnectionId='16' x:Name="Adornments_weed" />
+                        </chart:PolarSeries.AdornmentsInfo>
+                    </chart:PolarSeries>
+
+                    <chart:PolarSeries x:ConnectionId='12' x:Name="series2" Background="Transparent" ItemsSource="{Binding PlantDetails}" Label="Amount Allotted" 
+                               IsClosed="True"  DrawType="Area" XBindingPath="Direction" YBindingPath="Weed" 
+                               StrokeThickness="1">
+                        <chart:PolarSeries.AdornmentsInfo>
+                            <chart:ChartAdornmentInfo x:ConnectionId='15' x:Name="chartAdornmentInfo1" />
+                        </chart:PolarSeries.AdornmentsInfo>
+                    </chart:PolarSeries>
+
+                    <chart:PolarSeries x:ConnectionId='13' x:Name="series3"  Background="Transparent" ItemsSource="{Binding PlantDetails}" Label="Amount Spent" 
+                               DrawType="Area" IsClosed="True"  XBindingPath="Direction" YBindingPath="Flower" 
+                               StrokeThickness="2">
+                        <chart:PolarSeries.AdornmentsInfo>
+                            <chart:ChartAdornmentInfo x:ConnectionId='14' x:Name="chartAdornmentInfo2" />
+                        </chart:PolarSeries.AdornmentsInfo>
+                    </chart:PolarSeries>
+                </chart:SfChart>
+
+                <chart:SfChart x:ConnectionId='3' x:Name="radarSeries" Palette="Custom" ColorModel="{StaticResource customBrush}" Visibility="Collapsed" AreaBorderThickness="0" Height="400" 
+                           HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <chart:SfChart.PrimaryAxis>
+                        <chart:CategoryAxis />
+                    </chart:SfChart.PrimaryAxis>
+
+                    <chart:SfChart.SecondaryAxis>
+                        <chart:NumericalAxis Interval="15"/>
+                    </chart:SfChart.SecondaryAxis>
+
+                    <chart:RadarSeries x:ConnectionId='5' x:Name="radSeries1"  Opacity="0.5" ItemsSource="{Binding PlantDetails}" Label="Amount Spent" DrawType="Area" 
+                               IsClosed="True"  XBindingPath="Direction" YBindingPath="Tree" 
+                               StrokeThickness="2">
+                        <chart:RadarSeries.AdornmentsInfo>
+                            <chart:ChartAdornmentInfo x:ConnectionId='10' x:Name="radarChartAdornmentInfo1" />
+                        </chart:RadarSeries.AdornmentsInfo>
+                    </chart:RadarSeries>
+
+                    <chart:RadarSeries x:ConnectionId='6' x:Name="radSeries2"  Opacity="0.5" ItemsSource="{Binding PlantDetails}" Label="Amount Allotted"  IsClosed="True" 
+                                   DrawType="Area" XBindingPath="Direction" YBindingPath="Weed" StrokeThickness="2">
+                        <chart:RadarSeries.AdornmentsInfo>
+                            <chart:ChartAdornmentInfo x:ConnectionId='9' x:Name="radarChartAdornmentInfo2" />
+                        </chart:RadarSeries.AdornmentsInfo>
+                    </chart:RadarSeries>
+
+                    <chart:RadarSeries x:ConnectionId='7' x:Name="radSeries3" Opacity="0.5" ItemsSource="{Binding PlantDetails}" Label="Amount Spent" DrawType="Area" 
+                                   IsClosed="True" XBindingPath="Direction" YBindingPath="Flower" StrokeThickness="2">
+                        <chart:RadarSeries.AdornmentsInfo>
+                            <chart:ChartAdornmentInfo x:ConnectionId='8' x:Name="radarChartAdornmentInfo3" />
+                        </chart:RadarSeries.AdornmentsInfo>
+                    </chart:RadarSeries>
+                </chart:SfChart>
+
+                <StackPanel Margin="0,0,0,20">
+                    <ComboBox x:ConnectionId='4' x:Name="comboBox" Width="200" HorizontalAlignment="Right" SelectedIndex="0" 
+                                                                           >
+                        <ComboBoxItem Content="Polar" />
+                        <ComboBoxItem Content="Radar" />
+                    </ComboBox>
+                </StackPanel>
+            </Grid>
+        </ContentControl>
+    </common:SampleLayout.Sample>
+</common:SampleLayout>
+

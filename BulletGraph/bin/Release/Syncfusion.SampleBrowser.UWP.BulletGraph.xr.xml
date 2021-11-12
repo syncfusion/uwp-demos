@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Roots >
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="Value" />
+    <RootPropertyPathName Name="SelectedItem" />
+    <RootPropertyPathName Name="Minimum" />
+    <RootPropertyPathName Name="Maximum" />
+    <RootPropertyPathName Name="ComparativeMeasure" />
+    <RootPropertyPathName Name="FeaturedMeasure" />
+    <RootPropertyPathName Name="EnableAnimation" />
+    <RootPropertyPathName Name="BindRangeStrokeToTicks" />
+    <RootPropertyPathName Name="BindRangeStrokeToLabels" />
+  </Roots.PropertyPathNames>
+  <Roots.RootTypes>
+    <RootType FullName="Windows.UI.Xaml.Application">
+      <RootProperty Name="RequestedTheme" />
+    </RootType>
+    <RootType FullName="Common.SampleLayout">
+      <RootProperty Name="Sample" />
+      <RootProperty Name="Setting" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ContentControl">
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="Children" />
+      <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Background" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Text" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Inlines" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph">
+      <RootProperty Name="ShowToolTip" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="QualitativeRangesSize" />
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="Minimum" />
+      <RootProperty Name="Maximum" />
+      <RootProperty Name="Interval" />
+      <RootProperty Name="MajorTickSize" />
+      <RootProperty Name="MinorTickSize" />
+      <RootProperty Name="MajorTickStrokeThickness" />
+      <RootProperty Name="MinorTickStrokeThickness" />
+      <RootProperty Name="MajorTickStroke" />
+      <RootProperty Name="MinorTickStroke" />
+      <RootProperty Name="LabelStroke" />
+      <RootProperty Name="LabelSize" />
+      <RootProperty Name="LabelOffset" />
+      <RootProperty Name="EnableAnimation" />
+      <RootProperty Name="MinorTicksPerInterval" />
+      <RootProperty Name="LabelPosition" />
+      <RootProperty Name="CaptionPosition" />
+      <RootProperty Name="TickPosition" />
+      <RootProperty Name="ComparativeMeasure" />
+      <RootProperty Name="FeaturedMeasure" />
+      <RootProperty Name="ComparativeMeasureSymbolStrokeThickness" />
+      <RootProperty Name="FeaturedMeasureBarStrokeThickness" />
+      <RootProperty Name="ComparativeMeasureSymbolStroke" />
+      <RootProperty Name="FeaturedMeasureBarStroke" />
+      <RootProperty Name="Caption" />
+      <RootProperty Name="QualitativeRanges" />
+      <RootProperty Name="QuantitativeScaleLength" />
+      <RootProperty Name="FlowDirection" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="ElementName" />
+      <RootProperty Name="Mode" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.BulletGraph.QualitativeRange">
+      <RootProperty Name="RangeEnd" />
+      <RootProperty Name="RangeStroke" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="SelectedIndex" />
+      <RootEvent Name="SelectionChanged" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Slider">
+      <RootProperty Name="Name" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Minimum" />
+      <RootProperty Name="Value" />
+      <RootProperty Name="Maximum" />
+    </RootType>
+    <RootType FullName="BulletGraphUWP_Samples.BulletGraph" />
+    <RootType FullName="Windows.UI.Xaml.Controls.CheckBox">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="IsChecked" />
+      <RootProperty Name="Visibility" />
+    </RootType>
+    <RootType FullName="BulletGraphUWP_Samples.BulletGraphMeasuresAndRanges" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="Content" />
+    </RootType>
+  </Roots.RootTypes>
+</Roots>

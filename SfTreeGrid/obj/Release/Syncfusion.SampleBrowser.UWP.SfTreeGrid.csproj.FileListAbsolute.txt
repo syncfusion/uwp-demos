@@ -1,0 +1,157 @@
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\ApplicationInsights.config
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Images\Albert.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Images\Amy.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Images\Andrew.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Images\Anne.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Images\Calendar.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Images\Carla.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Images\Caroline.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Images\Contacts.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Images\Deleted Items.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Images\Drafts.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Images\Emiliya.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Images\Folder.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Images\Footer.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Images\Header.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Images\Hill.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Images\Inbox.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Images\Janet.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Images\John.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Images\Margaret.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Images\Maxwell.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Images\Michael.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Images\Nancy.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Images\Justin.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Images\Hawkin.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Images\Oscar.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Images\Phyllis.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Images\Robert.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Images\Sean.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Images\Sent Items.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Images\Seves.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Images\SIMOB.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Images\Steven.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Samples\Samples.xml
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\WhatsNewImages\Filtering.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\WhatsNewImages\Stacked Header.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Properties\Default.rd.xml
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Assets\LockScreenLogo.scale-200.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Assets\SplashScreen.scale-200.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Assets\Square150x150Logo.scale-200.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Assets\Square44x44Logo.scale-200.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Assets\Square44x44Logo.targetsize-24_altform-unplated.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Assets\StoreLogo.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Assets\Wide310x150Logo.scale-200.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Syncfusion.SampleBrowser.UWP.SfTreeGrid.dll
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Syncfusion.SampleBrowser.UWP.SfTreeGrid.pdb
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.SfTreeGrid\Syncfusion.SampleBrowser.UWP.SfTreeGrid.pri
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Syncfusion.SampleBrowser.UWP.SfTreeGrid.csprojAssemblyReference.cache
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\App.g.i.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\App.g.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Appearance\ConditionalFormatting.g.i.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Appearance\ConditionalFormatting.g.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Appearance\FreezeColumns.g.i.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Appearance\FreezeColumns.g.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Columns\ColumnSizer.g.i.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Columns\ColumnSizer.g.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Columns\StackedHeader.g.i.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Columns\StackedHeader.g.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\DragandDrop\RowDragandDrop.g.i.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\DragandDrop\RowDragandDrop.g.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\MainPage.g.i.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\MainPage.g.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Editing and Selection\SelectionDemo.g.i.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Editing and Selection\SelectionDemo.g.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Exporting\ExcelExporting.g.i.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Exporting\ExcelExporting.g.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Exporting\PdfExporting.g.i.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Exporting\PdfExporting.g.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Filtering\Filtering.g.i.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Filtering\Filtering.g.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Node CheckBox\CheckBoxSelection.g.i.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Node CheckBox\CheckBoxSelection.g.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Node CheckBox\ConditionalCheckBox.g.i.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Node CheckBox\ConditionalCheckBox.g.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Sorting\CustomSorting.g.i.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Sorting\CustomSorting.g.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Editing and Selection\EditingDemo.g.i.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Editing and Selection\EditingDemo.g.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Getting Started\NestedCollection.g.i.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Getting Started\NestedCollection.g.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Getting Started\OnDemandLoading.g.i.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Getting Started\OnDemandLoading.g.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Getting Started\SelfRelational.g.i.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Getting Started\SelfRelational.g.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Sorting\SortingDemo.g.i.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Sorting\SortingDemo.g.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Getting Started\TreeViewDemo.g.i.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Getting Started\TreeViewDemo.g.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Validation\ValidationDemo.g.i.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Validation\ValidationDemo.g.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\XamlTypeInfo.g.cs
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\App.xaml
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Appearance\ConditionalFormatting.xaml
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Appearance\FreezeColumns.xaml
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Columns\ColumnSizer.xaml
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Columns\StackedHeader.xaml
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\DragandDrop\RowDragandDrop.xaml
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\MainPage.xaml
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Editing and Selection\DeviceFamily-Mobile\SelectionDemo.xaml
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Exporting\ExcelExporting.xaml
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Exporting\PdfExporting.xaml
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Filtering\DeviceFamily-Mobile\Filtering.xaml
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Filtering\Filtering.xaml
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Node CheckBox\CheckBoxSelection.xaml
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Node CheckBox\ConditionalCheckBox.xaml
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Sorting\CustomSorting.xaml
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Editing and Selection\EditingDemo.xaml
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Getting Started\NestedCollection.xaml
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Getting Started\OnDemandLoading.xaml
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Editing and Selection\SelectionDemo.xaml
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Getting Started\SelfRelational.xaml
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Sorting\SortingDemo.xaml
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Getting Started\TreeViewDemo.xaml
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Validation\ValidationDemo.xaml
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\App.xbf
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Appearance\ConditionalFormatting.xbf
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Appearance\FreezeColumns.xbf
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Columns\ColumnSizer.xbf
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Columns\StackedHeader.xbf
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\DragandDrop\RowDragandDrop.xbf
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\MainPage.xbf
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Editing and Selection\DeviceFamily-Mobile\SelectionDemo.xbf
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Exporting\ExcelExporting.xbf
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Exporting\PdfExporting.xbf
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Filtering\DeviceFamily-Mobile\Filtering.xbf
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Filtering\Filtering.xbf
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Node CheckBox\CheckBoxSelection.xbf
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Node CheckBox\ConditionalCheckBox.xbf
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Sorting\CustomSorting.xbf
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Editing and Selection\EditingDemo.xbf
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Getting Started\NestedCollection.xbf
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Getting Started\OnDemandLoading.xbf
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Editing and Selection\SelectionDemo.xbf
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Getting Started\SelfRelational.xbf
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Sorting\SortingDemo.xbf
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Getting Started\TreeViewDemo.xbf
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Views\Validation\ValidationDemo.xbf
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\XamlSaveStateFile.xml
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Syncfusion.SampleBrowser.UWP.SfTreeGrid.csproj.CoreCompileInputs.cache
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Syncfusion.SampleBrowser.UWP.SfTreeGrid.csproj.CopyComplete
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Syncfusion.SampleBrowser.UWP.SfTreeGrid.dll
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\Syncfusion.SampleBrowser.UWP.SfTreeGrid.pdb
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\priconfig.xml
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\priconfig.xml.intermediate
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\unfiltered.layout.resfiles
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\unfiltered.layout.resfiles.intermediate
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\filtered.layout.resfiles
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\filtered.layout.resfiles.intermediate
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\excluded.layout.resfiles
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\excluded.layout.resfiles.intermediate
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\resources.resfiles
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\resources.resfiles.intermediate
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\pri.resfiles
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\pri.resfiles.intermediate
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\qualifiers.txt
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\qualifiers.txt.intermediate
+D:\Git\RP\datagrid-xaml\UWP\Samples\SfTreeGrid\obj\Release\MultipleQualifiersPerDimensionFound.txt

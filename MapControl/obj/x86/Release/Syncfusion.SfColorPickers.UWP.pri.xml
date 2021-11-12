@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="Syncfusion.SfColorPickers.UWP" version="1.0" primary="true">
+		<Qualifiers>
+			<DeviceFamily>MOBILE</DeviceFamily>
+			<Language>EN-US</Language>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<ResourceMapSubtree name="Syncfusion.SfColorPickers.UWP">
+				<NamedResource name="Syncfusion.SfColorPickers.UWP.xr.xml" uri="ms-resource://Syncfusion.SfColorPickers.UWP/Files/Syncfusion.SfColorPickers.UWP/Syncfusion.SfColorPickers.UWP.xr.xml">
+					<Candidate type="Path">
+						<Value>Syncfusion.SfColorPickers.UWP\Syncfusion.SfColorPickers.UWP.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Properties">
+					<NamedResource name="Syncfusion.SfColorPickers.UWP.rd.xml" uri="ms-resource://Syncfusion.SfColorPickers.UWP/Files/Syncfusion.SfColorPickers.UWP/Properties/Syncfusion.SfColorPickers.UWP.rd.xml">
+						<Candidate type="Path">
+							<Value>Syncfusion.SfColorPickers.UWP\Properties\Syncfusion.SfColorPickers.UWP.rd.xml</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="ColorPickersStyle.xbf" uri="ms-resource://Syncfusion.SfColorPickers.UWP/Files/Syncfusion.SfColorPickers.UWP/Themes/ColorPickersStyle.xbf">
+						<Candidate qualifiers="DeviceFamily-MOBILE" type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="generic.xbf" uri="ms-resource://Syncfusion.SfColorPickers.UWP/Files/Syncfusion.SfColorPickers.UWP/Themes/generic.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Syncfusion.SfColorPickers.UWP">
+			<ResourceMapSubtree name="Syncfusion.SfColorPickers.WinRT.Resources">
+				<NamedResource name="B" uri="ms-resource://Syncfusion.SfColorPickers.UWP/Syncfusion.SfColorPickers.UWP/Syncfusion.SfColorPickers.WinRT.Resources/B">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>B</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Colors" uri="ms-resource://Syncfusion.SfColorPickers.UWP/Syncfusion.SfColorPickers.UWP/Syncfusion.SfColorPickers.WinRT.Resources/Colors">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Colors</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="G" uri="ms-resource://Syncfusion.SfColorPickers.UWP/Syncfusion.SfColorPickers.UWP/Syncfusion.SfColorPickers.WinRT.Resources/G">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>G</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="R" uri="ms-resource://Syncfusion.SfColorPickers.UWP/Syncfusion.SfColorPickers.UWP/Syncfusion.SfColorPickers.WinRT.Resources/R">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>R</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="RGB" uri="ms-resource://Syncfusion.SfColorPickers.UWP/Syncfusion.SfColorPickers.UWP/Syncfusion.SfColorPickers.WinRT.Resources/RGB">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>RGB</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Swatches" uri="ms-resource://Syncfusion.SfColorPickers.UWP/Syncfusion.SfColorPickers.UWP/Syncfusion.SfColorPickers.WinRT.Resources/Swatches">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Swatches</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

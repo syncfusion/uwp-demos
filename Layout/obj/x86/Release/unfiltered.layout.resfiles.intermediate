@@ -1,0 +1,185 @@
+WinMetadata\Windows.winmd
+Accordion\Images\Contact.png
+Accordion\Images\Emp_02.png
+Accordion\Images\Emp_04.png
+Accordion\Images\Emp_06.png
+Accordion\Images\Emp_11.png
+Accordion\Images\Emp_13.png
+Accordion\Images\Emp_16.png
+Accordion\Images\Emp_21.png
+Accordion\Images\Emp_23.png
+Accordion\Images\Emp_25.png
+Accordion\Images\Mail.png
+ApplicationInsights.config
+Assets\LockScreenLogo.scale-200.png
+Assets\SplashScreen.scale-200.png
+Assets\Square150x150Logo.scale-200.png
+Assets\Square44x44Logo.scale-200.png
+Assets\Square44x44Logo.targetsize-24_altform-unplated.png
+Assets\StoreLogo.png
+Assets\Wide310x150Logo.scale-200.png
+Syncfusion.SampleBrowser.UWP.Layout.xr.xml
+Carousel\Assets\1.jpg
+Carousel\Assets\11.jpg
+Carousel\Assets\12.jpg
+Carousel\Assets\13.jpg
+Carousel\Assets\14.jpg
+Carousel\Assets\15.jpg
+Carousel\Assets\16.jpg
+Carousel\Assets\17.jpg
+Carousel\Assets\18.jpg
+Carousel\Assets\19.jpg
+Carousel\Assets\2.jpg
+Carousel\Assets\20.jpg
+Carousel\Assets\21.jpg
+Carousel\Assets\22.jpg
+Carousel\Assets\23.jpg
+Carousel\Assets\24.jpg
+Carousel\Assets\3.jpg
+Carousel\Assets\4.jpg
+Carousel\Assets\5.jpg
+Carousel\Assets\6.jpg
+Carousel\Assets\7.jpg
+Carousel\Assets\8.jpg
+Carousel\Assets\9.jpg
+Docking Manager\Assets\background.jpg
+Docking Manager\Assets\Border.png
+Docking Manager\Assets\Button.png
+Docking Manager\Assets\Canvas.png
+Docking Manager\Assets\CheckBox.png
+Docking Manager\Assets\classimg.PNG
+Docking Manager\Assets\ClassView.png
+Docking Manager\Assets\Cloudy.jpg
+Docking Manager\Assets\cloudy.png
+Docking Manager\Assets\ComboBox.png
+Docking Manager\Assets\ContentControl.png
+Docking Manager\Assets\CSharp.png
+Docking Manager\Assets\DockPanel.png
+Docking Manager\Assets\DocumentViewer.png
+Docking Manager\Assets\Ellipse.png
+Docking Manager\Assets\Error.png
+Docking Manager\Assets\ErrorList.png
+Docking Manager\Assets\Expander.png
+Docking Manager\Assets\FindResults.png
+Docking Manager\Assets\FindSymbolResults.png
+Docking Manager\Assets\Folder_Collapsed.png
+Docking Manager\Assets\Folder_Expanded.png
+Docking Manager\Assets\Frame.png
+Docking Manager\Assets\Grid.png
+Docking Manager\Assets\GridSplitter.png
+Docking Manager\Assets\GroupBox.png
+Docking Manager\Assets\icon.png
+Docking Manager\Assets\Image.png
+Docking Manager\Assets\Images\ClassView.png
+Docking Manager\Assets\Images\SolutionExplorer.png
+Docking Manager\Assets\Images\Toolbox.png
+Docking Manager\Assets\Label.png
+Docking Manager\Assets\Linked.png
+Docking Manager\Assets\ListBox.png
+Docking Manager\Assets\ListView.png
+Docking Manager\Assets\MediaElement.png
+Docking Manager\Assets\Menu.png
+Docking Manager\Assets\Message.png
+Docking Manager\Assets\Mostly Cloudy.png
+Docking Manager\Assets\Output.png
+Docking Manager\Assets\Partly Cloudy.png
+Docking Manager\Assets\PasswordBox.png
+Docking Manager\Assets\Pointer.png
+Docking Manager\Assets\ProgressBar.png
+Docking Manager\Assets\Project.png
+Docking Manager\Assets\Properties.png
+Docking Manager\Assets\Properties_Collapsed.png
+Docking Manager\Assets\propimg.PNG
+Docking Manager\Assets\RadioButton.png
+Docking Manager\Assets\Rain.png
+Docking Manager\Assets\rainy.png
+Docking Manager\Assets\rainy1.png
+Docking Manager\Assets\Rectangle.png
+Docking Manager\Assets\Reference.png
+Docking Manager\Assets\References_Collapsed.png
+Docking Manager\Assets\References_Expanded.png
+Docking Manager\Assets\Resources.png
+Docking Manager\Assets\RichTextBox.png
+Docking Manager\Assets\Scattered Thunderstorms.png
+Docking Manager\Assets\ScrollBar.png
+Docking Manager\Assets\ScrollViewer.png
+Docking Manager\Assets\Separator.png
+Docking Manager\Assets\Settings.png
+Docking Manager\Assets\showerClear.png
+Docking Manager\Assets\Showers _ Clear.jpg
+Docking Manager\Assets\Showers Late.jpg
+Docking Manager\Assets\Slider.png
+Docking Manager\Assets\Solution.png
+Docking Manager\Assets\SolutionExplorer.png
+Docking Manager\Assets\StackPanel.png
+Docking Manager\Assets\StatusBar.png
+Docking Manager\Assets\sunny.png
+Docking Manager\Assets\TabControl.png
+Docking Manager\Assets\TextBlock.png
+Docking Manager\Assets\TextBox.png
+Docking Manager\Assets\Thunderstorms.png
+Docking Manager\Assets\ToolBar.png
+Docking Manager\Assets\Toolbox.png
+Docking Manager\Assets\TransparentBackground.jpg
+Docking Manager\Assets\TreeView.png
+Docking Manager\Assets\UniformGrid.png
+Docking Manager\Assets\ViewBox.png
+Docking Manager\Assets\Warning.png
+Docking Manager\Assets\WindowsFormsHost.png
+Docking Manager\Assets\WrapPanel.png
+Docking Manager\Assets\Xaml.png
+Properties\Default.rd.xml
+Ribbon\Assets\1.jpg
+Ribbon\Assets\2.jpg
+Ribbon\Assets\3.jpg
+Ribbon\Assets\4.jpg
+Ribbon\Assets\5.jpg
+Ribbon\Assets\Emp_02.png
+Ribbon\Assets\Emp_04.png
+Ribbon\Assets\Emp_06.png
+Ribbon\Assets\Emp_11.png
+Ribbon\Assets\Emp_13.png
+Ribbon\Assets\Emp_16.png
+Ribbon\Assets\Emp_21.png
+Ribbon\Assets\Emp_23.png
+Ribbon\Assets\Emp_25.png
+Ribbon\Assets\LockScreenLogo.scale-200.png
+Ribbon\Assets\Pictures\1.png
+Ribbon\Assets\Pictures\10.png
+Ribbon\Assets\Pictures\11.png
+Ribbon\Assets\Pictures\12.png
+Ribbon\Assets\Pictures\13.png
+Ribbon\Assets\Pictures\14.png
+Ribbon\Assets\Pictures\15.png
+Ribbon\Assets\Pictures\16.png
+Ribbon\Assets\Pictures\2.png
+Ribbon\Assets\Pictures\3.png
+Ribbon\Assets\Pictures\4.png
+Ribbon\Assets\Pictures\5.png
+Ribbon\Assets\Pictures\6.png
+Ribbon\Assets\Pictures\7.png
+Ribbon\Assets\Pictures\8.png
+Ribbon\Assets\Pictures\9.png
+Ribbon\Assets\SplashScreen.scale-200.png
+Ribbon\Assets\Square150x150Logo.scale-200.png
+Ribbon\Assets\Square44x44Logo.scale-200.png
+Ribbon\Assets\Square44x44Logo.targetsize-24_altform-unplated.png
+Ribbon\Assets\StoreLogo.png
+Ribbon\Assets\Wide310x150Logo.scale-200.png
+Ribbon\FontIcons\BackStageIcons.ttf
+Ribbon\FontIcons\CustomBackMenu.ttf
+Ribbon\FontIcons\RibbonIcons.ttf
+Ribbon\FontIcons\Shapes.ttf
+TileView\Assets\Contact.png
+TileView\Assets\Emp_02.png
+TileView\Assets\Emp_04.png
+TileView\Assets\Emp_06.png
+TileView\Assets\Emp_11.png
+TileView\Assets\Emp_13.png
+TileView\Assets\Emp_16.png
+TileView\Assets\Emp_21.png
+TileView\Assets\Emp_23.png
+TileView\Assets\Emp_25.png
+TileView\Assets\Mail.png
+WhatsNewImage\dockingmanager.png
+WhatsNewImage\dockingmanagermobile.png

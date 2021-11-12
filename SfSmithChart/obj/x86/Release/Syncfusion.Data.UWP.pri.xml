@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="Syncfusion.Data.UWP" version="1.0" primary="true">
+		<Qualifiers/>
+		<ResourceMapSubtree name="Files">
+			<ResourceMapSubtree name="Syncfusion.Data.UWP">
+				<ResourceMapSubtree name="Properties">
+					<NamedResource name="Syncfusion.Data.UWP.rd.xml" uri="ms-resource://Syncfusion.Data.UWP/Files/Syncfusion.Data.UWP/Properties/Syncfusion.Data.UWP.rd.xml">
+						<Candidate type="Path">
+							<Value>Syncfusion.Data.UWP\Properties\Syncfusion.Data.UWP.rd.xml</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

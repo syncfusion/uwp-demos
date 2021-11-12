@@ -1,0 +1,497 @@
+﻿<common:SampleLayout
+    x:Class="Syncfusion.SampleBrowser.UWP.SfChart.StackedCharts"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Syncfusion.SampleBrowser.UWP.SfChart"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:common="using:Common"
+    xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+    <common:SampleLayout.Sample>
+        <ContentControl Margin="50,50,50,25">
+            <Grid x:ConnectionId='1' x:Name="MainGrid" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Grid.Resources>
+                    <ResourceDictionary>
+
+                        <DataTemplate x:Key="stackingAreaSeriesLT1">
+                        <Grid Margin="{Binding Item.Margin}">
+                            <Ellipse StrokeThickness="2" Fill="White" HorizontalAlignment="Stretch" 
+                                                 Height="25" Stroke="{Binding Stroke}" VerticalAlignment="Stretch" Width="25"/>
+                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" 
+                                                   TextWrapping="Wrap" Text="{Binding Item.Autumn}" FontSize="12" 
+                                                   Foreground="Black" FontFamily="Segoe UI" FontWeight="Bold"/>
+                        </Grid>
+                    </DataTemplate>
+
+                    <DataTemplate x:Key="stackingAreaSeriesLT2">
+                        <Grid Margin="{Binding Item.Margin}">
+                            <Ellipse StrokeThickness="2" Fill="White" HorizontalAlignment="Stretch" 
+                                                 Height="25" Stroke="{Binding Stroke}" VerticalAlignment="Stretch" Width="25"/>
+                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" 
+                                                   TextWrapping="Wrap" Text="{Binding Item.Spring}" FontSize="12" 
+                                                   Foreground="Black" FontFamily="Segoe UI" FontWeight="Bold"/>
+                        </Grid>
+                    </DataTemplate>
+
+                    <DataTemplate x:Key="stackingAreaSeriesLT3">
+                        <Grid Margin="{Binding Item.Margin}">
+                            <Ellipse StrokeThickness="2" Fill="White" HorizontalAlignment="Stretch" 
+                                                 Height="25" Stroke="{Binding Stroke}" VerticalAlignment="Stretch" Width="25"/>
+                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" 
+                                                   TextWrapping="Wrap" Text="{Binding Item.Summer}" 
+                                                   FontSize="12" Foreground="Black" FontFamily="Segoe UI" FontWeight="Bold"/>
+                        </Grid>
+                    </DataTemplate>
+
+                    <DataTemplate x:Key="stackingArea100SeriesLT1">
+                        <Grid Margin="{Binding Item.Margin}">
+                            <Ellipse StrokeThickness="2" Fill="White" HorizontalAlignment="Stretch" 
+                                                 Height="25" Stroke="{Binding Stroke}" VerticalAlignment="Stretch" Width="25"/>
+                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" 
+                                                   TextWrapping="Wrap" Text="{Binding Item.Autumn}" FontSize="12" 
+                                                   Foreground="Black" FontFamily="Segoe UI" FontWeight="Bold"/>
+                        </Grid>
+                    </DataTemplate>
+
+                    <DataTemplate x:Key="stackingArea100SeriesLT2">
+                        <Grid Margin="{Binding Item.Margin}">
+                            <Ellipse StrokeThickness="2" Fill="White" HorizontalAlignment="Stretch" 
+                                                 Height="25" Stroke="{Binding Stroke}" VerticalAlignment="Stretch" Width="25"/>
+                            <TextBlock  HorizontalAlignment="Center" VerticalAlignment="Center" 
+                                                    TextWrapping="Wrap" Text="{Binding Item.Spring}" FontSize="12" 
+                                                    Foreground="Black" FontFamily="Segoe UI" FontWeight="Bold"/>
+                        </Grid>
+                    </DataTemplate>
+
+                    <DataTemplate x:Key="stackingArea100SeriesLT3">
+                        <Grid Margin="{Binding Item.Margin}">
+                            <Ellipse Margin="0,25,0,0" StrokeThickness="2" Fill="White" 
+                                                 HorizontalAlignment="Stretch" Height="25" Stroke="{Binding Stroke}" 
+                                                 VerticalAlignment="Stretch" Width="25"/>
+                            <TextBlock Margin="0,25,0,0" HorizontalAlignment="Center" 
+                                                   VerticalAlignment="Center" TextWrapping="Wrap" 
+                                                   Text="{Binding Item.Summer}" FontSize="12" 
+                                                   Foreground="Black" FontFamily="Segoe UI" FontWeight="Bold"/>
+                        </Grid>
+                    </DataTemplate>
+                    </ResourceDictionary>
+                </Grid.Resources>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <chart:SfChart x:ConnectionId='2' x:Name="stLineChart" Visibility="Collapsed"
+                               Header="Monthly Expenses of a Family"
+                               Palette="Custom" ColorModel="{StaticResource customBrush}"
+                               AreaBorderThickness="0,0.5,0.5,0"
+                           DataContext="{Binding LineChartViewModel}" VerticalAlignment="Center">
+
+                    <chart:SfChart.Behaviors>
+                        <chart:ChartZoomPanBehavior/>
+                    </chart:SfChart.Behaviors>
+
+                    <chart:SfChart.Legend>
+                        <chart:ChartLegend ItemMargin="5" DockPosition="Top"/>
+                    </chart:SfChart.Legend>
+
+                    <chart:SfChart.PrimaryAxis>
+                        <chart:CategoryAxis PlotOffset="50"/>
+                    </chart:SfChart.PrimaryAxis>
+
+                    <chart:SfChart.SecondaryAxis>
+                        <chart:NumericalAxis RangePadding="Round" Header="Expenses" Minimum="0" Maximum="200" LabelFormat="$0"/>
+                    </chart:SfChart.SecondaryAxis>
+
+                    <chart:StackingLineSeries EnableAnimation="True"
+                                            Label="Daughter" XBindingPath="Name" YBindingPath="Daughter" 
+                                            ItemsSource="{Binding MonthlyExpense}">
+                        <chart:StackingLineSeries.AdornmentsInfo>
+                            <chart:ChartAdornmentInfo x:ConnectionId='39' x:Name="slChartAdornmentInfo1"/>
+                        </chart:StackingLineSeries.AdornmentsInfo>
+                    </chart:StackingLineSeries>
+
+                    <chart:StackingLineSeries EnableAnimation="True"
+                                            Label="Son" XBindingPath="Name" YBindingPath="Son" 
+                                            ItemsSource="{Binding MonthlyExpense}">
+                        <chart:StackingLineSeries.AdornmentsInfo>
+                            <chart:ChartAdornmentInfo x:ConnectionId='38' x:Name="slChartAdornmentInfo2" />
+                        </chart:StackingLineSeries.AdornmentsInfo>
+                    </chart:StackingLineSeries>
+
+                    <chart:StackingLineSeries EnableAnimation="True"   
+                                            Label="Mother" XBindingPath="Name" YBindingPath="Mother" 
+                                            ItemsSource="{Binding MonthlyExpense}">
+                        <chart:StackingLineSeries.AdornmentsInfo>
+                            <chart:ChartAdornmentInfo x:ConnectionId='37' x:Name="slChartAdornmentInfo3"/>
+                        </chart:StackingLineSeries.AdornmentsInfo>
+                    </chart:StackingLineSeries>
+
+                    <chart:StackingLineSeries EnableAnimation="True"   
+                                            Label="Father" XBindingPath="Name" YBindingPath="Father" 
+                                            ItemsSource="{Binding MonthlyExpense}">
+                        <chart:StackingLineSeries.AdornmentsInfo>
+                            <chart:ChartAdornmentInfo x:ConnectionId='36' x:Name="slChartAdornmentInfo4"/>
+                        </chart:StackingLineSeries.AdornmentsInfo>
+                    </chart:StackingLineSeries>
+                </chart:SfChart>
+
+                <chart:SfChart x:ConnectionId='3' x:Name="stLine100Chart" Visibility="Collapsed"
+                               Palette="Custom" ColorModel="{StaticResource customBrush}"
+                               Header="Monthly Expenses of a Family" AreaBorderThickness="0,0.5,0.5,0"
+                           DataContext="{Binding LineChartViewModel}" VerticalAlignment="Center">
+
+                    <chart:SfChart.Behaviors>
+                        <chart:ChartZoomPanBehavior/>
+                    </chart:SfChart.Behaviors>
+
+                    <chart:SfChart.Legend>
+                        <chart:ChartLegend ItemMargin="5" DockPosition="Top"/>
+                    </chart:SfChart.Legend>
+
+                    <chart:SfChart.PrimaryAxis>
+                        <chart:CategoryAxis PlotOffset="50"/>
+                    </chart:SfChart.PrimaryAxis>
+
+                    <chart:SfChart.SecondaryAxis>
+                        <chart:NumericalAxis RangePadding="Round" Header="Expenses (Percentage)"
+                                             Minimum="0" Maximum="100" PlotOffset="30" LabelFormat="0'%'"/>
+                    </chart:SfChart.SecondaryAxis>
+
+                    <chart:StackingLine100Series EnableAnimation="True" 
+                                               Label="Daughter" XBindingPath="Name" YBindingPath="Daughter"
+                                               ItemsSource="{Binding MonthlyExpense}">
+                        <chart:StackingLine100Series.AdornmentsInfo>
+                            <chart:ChartAdornmentInfo x:ConnectionId='35' x:Name="sl100ChartAdornmentInfo1"/>
+                        </chart:StackingLine100Series.AdornmentsInfo>
+                    </chart:StackingLine100Series>
+
+                    <chart:StackingLine100Series EnableAnimation="True"
+                                               Label="Son" XBindingPath="Name" YBindingPath="Son" 
+                                               ItemsSource="{Binding MonthlyExpense}">
+                        <chart:StackingLine100Series.AdornmentsInfo>
+                            <chart:ChartAdornmentInfo x:ConnectionId='34' x:Name="sl100ChartAdornmentInfo2"/>
+                        </chart:StackingLine100Series.AdornmentsInfo>
+                    </chart:StackingLine100Series>
+
+                    <chart:StackingLine100Series EnableAnimation="True" 
+                                               Label="Mother" XBindingPath="Name" YBindingPath="Mother"
+                                               ItemsSource="{Binding MonthlyExpense}">
+                        <chart:StackingLine100Series.AdornmentsInfo>
+                            <chart:ChartAdornmentInfo x:ConnectionId='33' x:Name="sl100ChartAdornmentInfo3"/>
+                        </chart:StackingLine100Series.AdornmentsInfo>
+                    </chart:StackingLine100Series>
+
+                    <chart:StackingLine100Series EnableAnimation="True"
+                                               Label="Father" XBindingPath="Name" YBindingPath="Father"
+                                               ItemsSource="{Binding MonthlyExpense}">
+                        <chart:StackingLine100Series.AdornmentsInfo>
+                            <chart:ChartAdornmentInfo x:ConnectionId='32' x:Name="sl100ChartAdornmentInfo4"/>
+                        </chart:StackingLine100Series.AdornmentsInfo>
+                    </chart:StackingLine100Series>
+                </chart:SfChart>
+
+                <chart:SfChart x:ConnectionId='4' x:Name="stBarChart" 
+                               Palette="Custom" ColorModel="{StaticResource customBrush}"
+                               Header="Gold Inventory Analysis"
+                               DataContext="{Binding BarChartViewModel}"
+                               VerticalAlignment="Center" AreaBorderThickness="0,0.5,0.5,0">
+                    <chart:SfChart.Behaviors>
+                        <chart:ChartZoomPanBehavior/>
+                    </chart:SfChart.Behaviors>
+
+                    <chart:SfChart.Legend>
+                        <chart:ChartLegend DockPosition="Top" ItemMargin="5"/>
+                    </chart:SfChart.Legend>
+
+                    <chart:SfChart.PrimaryAxis>
+                        <chart:CategoryAxis Header="Year"/>
+                    </chart:SfChart.PrimaryAxis>
+
+                    <chart:SfChart.SecondaryAxis>
+                        <chart:NumericalAxis Header="Gold OZ (x1000)"/>
+                    </chart:SfChart.SecondaryAxis>
+
+                    <chart:StackingBarSeries x:ConnectionId='26' x:Name="stackingBarSeries1" Label="Inferred" ItemsSource="{Binding GoldInventoryDetails}"
+                                         XBindingPath="Year" YBindingPath="Inferred">
+                        <chart:StackingBarSeries.AdornmentsInfo>
+                            <chart:ChartAdornmentInfo x:ConnectionId='31' x:Name="sbsChartAdornmentInfo1" />
+                        </chart:StackingBarSeries.AdornmentsInfo>
+                    </chart:StackingBarSeries>
+
+                    <chart:StackingBarSeries x:ConnectionId='27' x:Name="stackingBarSeries2" Label="Measured" ItemsSource="{Binding GoldInventoryDetails}"  
+                                         XBindingPath="Year" YBindingPath="Measured">
+                        <chart:StackingBarSeries.AdornmentsInfo>
+                            <chart:ChartAdornmentInfo x:ConnectionId='30'  x:Name="sbsChartAdornmentInfo2" />
+                        </chart:StackingBarSeries.AdornmentsInfo>
+                    </chart:StackingBarSeries>
+
+                    <chart:StackingBarSeries x:ConnectionId='28' x:Name="stackingBarSeries3" Label="Reserves" ItemsSource="{Binding GoldInventoryDetails}" 
+                                         XBindingPath="Year" YBindingPath="Reserves">
+                        <chart:StackingBarSeries.AdornmentsInfo>
+                            <chart:ChartAdornmentInfo x:ConnectionId='29'  x:Name="sbsChartAdornmentInfo3" />
+                        </chart:StackingBarSeries.AdornmentsInfo>
+                    </chart:StackingBarSeries>
+                </chart:SfChart>
+
+                <chart:SfChart x:ConnectionId='5' x:Name="stBar100Chart"
+                               Palette="Custom" ColorModel="{StaticResource customBrush}"
+                               Visibility="Collapsed" AreaBorderThickness="0,0.5,0.5,0"
+                               DataContext="{Binding BarChartViewModel}"
+                               Header="Gold Inventory Analysis"
+                               VerticalAlignment="Center">
+                    <chart:SfChart.Behaviors>
+                        <chart:ChartZoomPanBehavior/>
+                    </chart:SfChart.Behaviors>
+
+                    <chart:SfChart.Legend>
+                        <chart:ChartLegend ItemMargin="5" DockPosition="Top"/>
+                    </chart:SfChart.Legend>
+
+                    <chart:SfChart.PrimaryAxis>
+                        <chart:CategoryAxis Header="Year"/>
+                    </chart:SfChart.PrimaryAxis>
+
+                    <chart:SfChart.SecondaryAxis>
+                        <chart:NumericalAxis RangePadding="Round" Header="Gold OZ (Percentage)"/>
+                    </chart:SfChart.SecondaryAxis>
+
+                    <chart:StackingBar100Series EnableAnimation="True" Label="Inferred" 
+                                            ItemsSource="{Binding GoldInventoryDetails}" 
+                                            XBindingPath="Year" YBindingPath="Inferred">
+                        <chart:StackingBar100Series.AdornmentsInfo>
+                            <chart:ChartAdornmentInfo x:ConnectionId='25' x:Name="sb100ChartAdornmentInfo1"/>
+                        </chart:StackingBar100Series.AdornmentsInfo>
+                    </chart:StackingBar100Series>
+
+                    <chart:StackingBar100Series EnableAnimation="True" Label="Measured" 
+                                            ItemsSource="{Binding GoldInventoryDetails}" 
+                                            XBindingPath="Year" YBindingPath="Measured">
+                        <chart:StackingBar100Series.AdornmentsInfo>
+                            <chart:ChartAdornmentInfo x:ConnectionId='24' x:Name="sb100ChartAdornmentInfo2" />
+                        </chart:StackingBar100Series.AdornmentsInfo>
+                    </chart:StackingBar100Series>
+
+                    <chart:StackingBar100Series EnableAnimation="True" Label="Reserves" 
+                                            ItemsSource="{Binding GoldInventoryDetails}" 
+                                            XBindingPath="Year" YBindingPath="Reserves">
+                        <chart:StackingBar100Series.AdornmentsInfo>
+                            <chart:ChartAdornmentInfo x:ConnectionId='23' x:Name="sb100ChartAdornmentInfo3" />
+                        </chart:StackingBar100Series.AdornmentsInfo>
+                    </chart:StackingBar100Series>
+                </chart:SfChart>
+
+                <chart:SfChart x:ConnectionId='6' x:Name="stAreaChart"
+                               Palette="Custom" ColorModel="{StaticResource customBrush}"
+                               Visibility="Collapsed" AreaBorderThickness="0,0.5,0.5,0"
+                           DataContext="{Binding AreaChartViewModel}" VerticalAlignment="Center"
+                               Header="Average temperature for three seasons between 2008-2013">
+                    
+                    <chart:SfChart.Behaviors>
+                        <chart:ChartZoomPanBehavior/>
+                    </chart:SfChart.Behaviors>
+
+                    <chart:SfChart.Legend>
+                        <chart:ChartLegend ItemMargin="5" DockPosition="Top"/>
+                    </chart:SfChart.Legend>
+
+                    <chart:SfChart.PrimaryAxis>
+                        <chart:CategoryAxis Header="Years 2008-2013"/>
+                    </chart:SfChart.PrimaryAxis>
+
+                    <chart:SfChart.SecondaryAxis>
+                        <chart:NumericalAxis RangePadding="Round" Header="Temperature in Celsius"/>
+                    </chart:SfChart.SecondaryAxis>
+
+                    <chart:StackingAreaSeries StrokeThickness="4" Interior="{StaticResource SeriesInterior1WithOpacity}" Stroke="{StaticResource SeriesInterior1}" 
+                                          EnableAnimation="False" Label="Autumn" Canvas.ZIndex="3" 
+                                          XBindingPath="Year" YBindingPath="Autumn" 
+                                          ItemsSource="{Binding TemperatureData}">
+                        <chart:StackingAreaSeries.AdornmentsInfo>
+                            <chart:ChartAdornmentInfo x:ConnectionId='22' x:Name="saChartAdornmentInfo1" />
+                        </chart:StackingAreaSeries.AdornmentsInfo>
+                    </chart:StackingAreaSeries>
+
+                    <chart:StackingAreaSeries StrokeThickness="4" Interior="{StaticResource SeriesInterior2WithOpacity}" Stroke="{StaticResource SeriesInterior2}"
+                                          EnableAnimation="False" Label="Spring" Canvas.ZIndex="2" 
+                                          XBindingPath="Year" YBindingPath="Spring" 
+                                          ItemsSource="{Binding TemperatureData}">
+                        <chart:StackingAreaSeries.AdornmentsInfo>
+                            <chart:ChartAdornmentInfo x:ConnectionId='21' x:Name="saChartAdornmentInfo2"/>
+                        </chart:StackingAreaSeries.AdornmentsInfo>
+                    </chart:StackingAreaSeries>
+
+                    <chart:StackingAreaSeries StrokeThickness="4" Interior="{StaticResource SeriesInterior3WithOpacity}" Stroke="{StaticResource SeriesInterior3}" 
+                                          EnableAnimation="False" Label="Summer" XBindingPath="Year" 
+                                          YBindingPath="Summer" ItemsSource="{Binding TemperatureData}">
+                        <chart:StackingAreaSeries.AdornmentsInfo>
+                            <chart:ChartAdornmentInfo x:ConnectionId='20' x:Name="saChartAdornmentInfo3"/>
+                        </chart:StackingAreaSeries.AdornmentsInfo>
+                    </chart:StackingAreaSeries>
+                </chart:SfChart>
+
+                <chart:SfChart x:ConnectionId='7' x:Name="stArea100Chart"
+                               Palette="Custom" ColorModel="{StaticResource customBrush}"
+                               AreaBorderThickness="0" Visibility="Collapsed" 
+                           DataContext="{Binding AreaChartViewModel}"
+                               Header="Average temperature for three seasons between 2008-2013"
+                               VerticalAlignment="Center">
+
+                    <chart:SfChart.Behaviors>
+                        <chart:ChartZoomPanBehavior/>
+                    </chart:SfChart.Behaviors>
+
+                    <chart:SfChart.Legend>
+                        <chart:ChartLegend ItemMargin="5" DockPosition="Top"/>
+                    </chart:SfChart.Legend>
+
+                    <chart:SfChart.PrimaryAxis>
+                        <chart:CategoryAxis Header="Years 2008-2013"/>
+                    </chart:SfChart.PrimaryAxis>
+
+                    <chart:SfChart.SecondaryAxis>
+                        <chart:NumericalAxis Header="Temperature in celsius"/>
+                    </chart:SfChart.SecondaryAxis>
+
+                    <chart:StackingArea100Series StrokeThickness="4" Interior="{StaticResource SeriesInterior1WithOpacity}" Stroke="{StaticResource SeriesInterior1}" 
+                                             EnableAnimation="False" Label="Autumn" Canvas.ZIndex="3" 
+                                             XBindingPath="Year" YBindingPath="Autumn" 
+                                             ItemsSource="{Binding TemperatureData}">
+                        <chart:StackingArea100Series.AdornmentsInfo>
+                            <chart:ChartAdornmentInfo x:ConnectionId='19' x:Name="sa100ChartAdornmentInfo1" />
+                        </chart:StackingArea100Series.AdornmentsInfo>
+                    </chart:StackingArea100Series>
+
+                    <chart:StackingArea100Series StrokeThickness="4" Interior="{StaticResource SeriesInterior2WithOpacity}" Stroke="{StaticResource SeriesInterior2}" 
+                                             EnableAnimation="False" Label="Spring" Canvas.ZIndex="2" 
+                                             XBindingPath="Year" YBindingPath="Spring" 
+                                             ItemsSource="{Binding TemperatureData}">
+                        <chart:StackingArea100Series.AdornmentsInfo>
+                            <chart:ChartAdornmentInfo x:ConnectionId='18' x:Name="sa100ChartAdornmentInfo2"/>
+                        </chart:StackingArea100Series.AdornmentsInfo>
+                    </chart:StackingArea100Series>
+
+                    <chart:StackingArea100Series StrokeThickness="4" Interior="{StaticResource SeriesInterior3WithOpacity}" Stroke="{StaticResource SeriesInterior3}" 
+                                             EnableAnimation="False" Label="Summer" XBindingPath="Year" 
+                                             YBindingPath="Summer" ItemsSource="{Binding TemperatureData}">
+                        <chart:StackingArea100Series.AdornmentsInfo>
+                            <chart:ChartAdornmentInfo x:ConnectionId='17' x:Name="sa100ChartAdornmentInfo3"/>
+                        </chart:StackingArea100Series.AdornmentsInfo>
+                    </chart:StackingArea100Series>
+                </chart:SfChart>
+
+                <chart:SfChart x:ConnectionId='8' x:Name="stColumnChart"
+                               Palette="Custom" ColorModel="{StaticResource customBrush}"
+                               Visibility="Collapsed" AreaBorderThickness="0,0.5,0.5,0"
+                           DataContext="{Binding ColumnChartViewModel}" Header="Olympic Games Medal Details" VerticalAlignment="Center">
+
+                    <chart:SfChart.Behaviors>
+                        <chart:ChartZoomPanBehavior/>
+                    </chart:SfChart.Behaviors>
+
+                    <chart:SfChart.Legend>
+                        <chart:ChartLegend ItemMargin="5" DockPosition="Top"/>
+                    </chart:SfChart.Legend>
+
+                    <chart:SfChart.PrimaryAxis>
+                        <chart:CategoryAxis Header="Country"/>
+                    </chart:SfChart.PrimaryAxis>
+
+                    <chart:SfChart.SecondaryAxis>
+                        <chart:NumericalAxis RangePadding="Round" Header="Number of Medals"/>
+                    </chart:SfChart.SecondaryAxis>
+
+                    <chart:StackingColumnSeries EnableAnimation="True" 
+                                            Label="Gold" XBindingPath="CountryName" YBindingPath="GoldMedals" 
+                                            ItemsSource="{Binding MedalDetails}">
+                        <chart:StackingColumnSeries.AdornmentsInfo>
+                            <chart:ChartAdornmentInfo x:ConnectionId='16' x:Name="scChartAdornmentInfo1"/>
+                        </chart:StackingColumnSeries.AdornmentsInfo>
+                    </chart:StackingColumnSeries>
+
+                    <chart:StackingColumnSeries EnableAnimation="True" 
+                                            Label="Silver" XBindingPath="CountryName" YBindingPath="SilverMedals" 
+                                            ItemsSource="{Binding MedalDetails}">
+                        <chart:StackingColumnSeries.AdornmentsInfo>
+                            <chart:ChartAdornmentInfo x:ConnectionId='15' x:Name="scChartAdornmentInfo2"/>
+                        </chart:StackingColumnSeries.AdornmentsInfo>
+                    </chart:StackingColumnSeries>
+
+                    <chart:StackingColumnSeries EnableAnimation="True" 
+                                            Label="Bronze" XBindingPath="CountryName" YBindingPath="BronzeMedals" 
+                                            ItemsSource="{Binding MedalDetails}">
+                        <chart:StackingColumnSeries.AdornmentsInfo>
+                            <chart:ChartAdornmentInfo x:ConnectionId='14' x:Name="scChartAdornmentInfo3"/>
+                        </chart:StackingColumnSeries.AdornmentsInfo>
+                    </chart:StackingColumnSeries>
+                </chart:SfChart>
+
+                <chart:SfChart x:ConnectionId='9' x:Name="stColumn100Chart"
+                               Palette="Custom" ColorModel="{StaticResource customBrush}"
+                               Visibility="Collapsed" AreaBorderThickness="0,0.5,0.5,0"
+                           DataContext="{Binding ColumnChartViewModel}" 
+                               Header="Olympic Games Medal Details"
+                               VerticalAlignment="Center">
+                    <chart:SfChart.Behaviors>
+                        <chart:ChartZoomPanBehavior/>
+                    </chart:SfChart.Behaviors>
+
+                    <chart:SfChart.Legend>
+                        <chart:ChartLegend ItemMargin="5" DockPosition="Top"/>
+                    </chart:SfChart.Legend>
+
+                    <chart:SfChart.PrimaryAxis>
+                        <chart:CategoryAxis Header="Country"/>
+                    </chart:SfChart.PrimaryAxis>
+
+                    <chart:SfChart.SecondaryAxis>
+                        <chart:NumericalAxis RangePadding="Round" Header="Number of Medals (Percentage)"/>
+                    </chart:SfChart.SecondaryAxis>
+
+                    <chart:StackingColumn100Series EnableAnimation="True" LegendIcon="Circle"
+                                               Label="Gold" XBindingPath="CountryName" YBindingPath="GoldMedals" 
+                                               ItemsSource="{Binding MedalDetails}">
+                        <chart:StackingColumn100Series.AdornmentsInfo>
+                            <chart:ChartAdornmentInfo x:ConnectionId='13' x:Name="sc100ChartAdornmentInfo1"/>
+                        </chart:StackingColumn100Series.AdornmentsInfo>
+                    </chart:StackingColumn100Series>
+
+                    <chart:StackingColumn100Series EnableAnimation="True" LegendIcon="Circle"
+                                               Label="Silver" XBindingPath="CountryName" YBindingPath="SilverMedals" 
+                                               ItemsSource="{Binding MedalDetails}">
+                        <chart:StackingColumn100Series.AdornmentsInfo>
+                            <chart:ChartAdornmentInfo x:ConnectionId='12' x:Name="sc100ChartAdornmentInfo2"/>
+                        </chart:StackingColumn100Series.AdornmentsInfo>
+                    </chart:StackingColumn100Series>
+
+                    <chart:StackingColumn100Series EnableAnimation="True" LegendIcon="Circle"
+                                               Label="Bronze" XBindingPath="CountryName" YBindingPath="BronzeMedals" 
+                                               ItemsSource="{Binding MedalDetails}">
+                        <chart:StackingColumn100Series.AdornmentsInfo>
+                            <chart:ChartAdornmentInfo x:ConnectionId='11' x:Name="sc100ChartAdornmentInfo3"/>
+                        </chart:StackingColumn100Series.AdornmentsInfo>
+                    </chart:StackingColumn100Series>
+                </chart:SfChart>
+
+                <StackPanel Margin="0,0,0,5">
+                    <ComboBox x:ConnectionId='10' x:Name="selectStack" HorizontalAlignment="Right" SelectedIndex="0" Width="175" 
+                                                                          >
+                        <ComboBoxItem Content="Stacked Line"/>
+                        <ComboBoxItem Content="Stacked Bar"/>
+                        <ComboBoxItem Content="Stacked Column"/>
+                        <ComboBoxItem Content="Stacked Area"/>
+                        <ComboBoxItem Content="Stacked Line 100"/>
+                        <ComboBoxItem Content="Stacked Bar 100"/>
+                        <ComboBoxItem Content="Stacked Column 100"/>
+                        <ComboBoxItem Content="Stacked Area 100"/>
+                    </ComboBox>
+                </StackPanel>
+            </Grid>
+        </ContentControl>
+    </common:SampleLayout.Sample>
+</common:SampleLayout>
+

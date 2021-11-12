@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="Syncfusion.SfPdfViewer.UWP" version="1.0" primary="true">
+		<Qualifiers>
+			<Language>EN-US</Language>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<ResourceMapSubtree name="Syncfusion.SfPdfViewer.UWP">
+				<NamedResource name="Syncfusion.SfPdfViewer.UWP.xr.xml" uri="ms-resource://Syncfusion.SfPdfViewer.UWP/Files/Syncfusion.SfPdfViewer.UWP/Syncfusion.SfPdfViewer.UWP.xr.xml">
+					<Candidate type="Path">
+						<Value>Syncfusion.SfPdfViewer.UWP\Syncfusion.SfPdfViewer.UWP.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Implementation">
+					<ResourceMapSubtree name="UI">
+						<NamedResource name="PdfFlipView.xbf" uri="ms-resource://Syncfusion.SfPdfViewer.UWP/Files/Syncfusion.SfPdfViewer.UWP/Implementation/UI/PdfFlipView.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="PopupAnnotationHelper.xbf" uri="ms-resource://Syncfusion.SfPdfViewer.UWP/Files/Syncfusion.SfPdfViewer.UWP/Implementation/UI/PopupAnnotationHelper.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="TextSelectionCopyButton.xbf" uri="ms-resource://Syncfusion.SfPdfViewer.UWP/Files/Syncfusion.SfPdfViewer.UWP/Implementation/UI/TextSelectionCopyButton.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="ThumbnailView.xbf" uri="ms-resource://Syncfusion.SfPdfViewer.UWP/Files/Syncfusion.SfPdfViewer.UWP/Implementation/UI/ThumbnailView.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+						<ResourceMapSubtree name="EditText">
+							<NamedResource name="ContentDialogEx.xbf" uri="ms-resource://Syncfusion.SfPdfViewer.UWP/Files/Syncfusion.SfPdfViewer.UWP/Implementation/UI/EditText/ContentDialogEx.xbf">
+								<Candidate type="EmbeddedData">
+									<Base64Value>[Embedded Binary Data]</Base64Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Properties">
+					<NamedResource name="Syncfusion.SfPDFViewer.UWP_2017.rd.xml" uri="ms-resource://Syncfusion.SfPdfViewer.UWP/Files/Syncfusion.SfPdfViewer.UWP/Properties/Syncfusion.SfPDFViewer.UWP_2017.rd.xml">
+						<Candidate type="Path">
+							<Value>Syncfusion.SfPdfViewer.UWP\Properties\Syncfusion.SfPDFViewer.UWP_2017.rd.xml</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="Generic.Advanced.xbf" uri="ms-resource://Syncfusion.SfPdfViewer.UWP/Files/Syncfusion.SfPdfViewer.UWP/Themes/Generic.Advanced.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Generic.xbf" uri="ms-resource://Syncfusion.SfPdfViewer.UWP/Files/Syncfusion.SfPdfViewer.UWP/Themes/Generic.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Syncfusion.SfPdfViewer.UWP">
+			<ResourceMapSubtree name="Syncfusion.SfPdfViewer.UWP.Resources">
+				<NamedResource name="Appearance" uri="ms-resource://Syncfusion.SfPdfViewer.UWP/Syncfusion.SfPdfViewer.UWP/Syncfusion.SfPdfViewer.UWP.Resources/Appearance">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Appearance</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Author" uri="ms-resource://Syncfusion.SfPdfViewer.UWP/Syncfusion.SfPdfViewer.UWP/Syncfusion.SfPdfViewer.UWP.Resources/Author">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Author</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Color" uri="ms-resource://Syncfusion.SfPdfViewer.UWP/Syncfusion.SfPdfViewer.UWP/Syncfusion.SfPdfViewer.UWP.Resources/Color">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Color</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Comment" uri="ms-resource://Syncfusion.SfPdfViewer.UWP/Syncfusion.SfPdfViewer.UWP/Syncfusion.SfPdfViewer.UWP.Resources/Comment">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Comment</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Delete" uri="ms-resource://Syncfusion.SfPdfViewer.UWP/Syncfusion.SfPdfViewer.UWP/Syncfusion.SfPdfViewer.UWP.Resources/Delete">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Delete</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Edit" uri="ms-resource://Syncfusion.SfPdfViewer.UWP/Syncfusion.SfPdfViewer.UWP/Syncfusion.SfPdfViewer.UWP.Resources/Edit">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Edit</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FillColor" uri="ms-resource://Syncfusion.SfPdfViewer.UWP/Syncfusion.SfPdfViewer.UWP/Syncfusion.SfPdfViewer.UWP.Resources/FillColor">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Fill Color</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Help" uri="ms-resource://Syncfusion.SfPdfViewer.UWP/Syncfusion.SfPdfViewer.UWP/Syncfusion.SfPdfViewer.UWP.Resources/Help">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Help</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="InsertText" uri="ms-resource://Syncfusion.SfPdfViewer.UWP/Syncfusion.SfPdfViewer.UWP/Syncfusion.SfPdfViewer.UWP.Resources/InsertText">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>InsertText</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Key" uri="ms-resource://Syncfusion.SfPdfViewer.UWP/Syncfusion.SfPdfViewer.UWP/Syncfusion.SfPdfViewer.UWP.Resources/Key">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Key</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Opacity" uri="ms-resource://Syncfusion.SfPdfViewer.UWP/Syncfusion.SfPdfViewer.UWP/Syncfusion.SfPdfViewer.UWP.Resources/Opacity">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Opacity</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Open Pop-Up Note" uri="ms-resource://Syncfusion.SfPdfViewer.UWP/Syncfusion.SfPdfViewer.UWP/Syncfusion.SfPdfViewer.UWP.Resources/Open Pop-Up Note">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Open Pop-Up Note</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Paragraph" uri="ms-resource://Syncfusion.SfPdfViewer.UWP/Syncfusion.SfPdfViewer.UWP/Syncfusion.SfPdfViewer.UWP.Resources/Paragraph">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Paragraph</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Properties" uri="ms-resource://Syncfusion.SfPdfViewer.UWP/Syncfusion.SfPdfViewer.UWP/Syncfusion.SfPdfViewer.UWP.Resources/Properties">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Properties</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Subject" uri="ms-resource://Syncfusion.SfPdfViewer.UWP/Syncfusion.SfPdfViewer.UWP/Syncfusion.SfPdfViewer.UWP.Resources/Subject">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Subject</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Text Size" uri="ms-resource://Syncfusion.SfPdfViewer.UWP/Syncfusion.SfPdfViewer.UWP/Syncfusion.SfPdfViewer.UWP.Resources/Text Size">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Text Size</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="TextNote" uri="ms-resource://Syncfusion.SfPdfViewer.UWP/Syncfusion.SfPdfViewer.UWP/Syncfusion.SfPdfViewer.UWP.Resources/TextNote">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>TextNote</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Thickness" uri="ms-resource://Syncfusion.SfPdfViewer.UWP/Syncfusion.SfPdfViewer.UWP/Syncfusion.SfPdfViewer.UWP.Resources/Thickness">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Thickness</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="Syncfusion.SfGauge.UWP" version="1.0" primary="true">
+		<Qualifiers/>
+		<ResourceMapSubtree name="Files">
+			<ResourceMapSubtree name="Syncfusion.SfGauge.UWP">
+				<NamedResource name="Syncfusion.SfGauge.UWP.xr.xml" uri="ms-resource://Syncfusion.SfGauge.UWP/Files/Syncfusion.SfGauge.UWP/Syncfusion.SfGauge.UWP.xr.xml">
+					<Candidate type="Path">
+						<Value>Syncfusion.SfGauge.UWP\Syncfusion.SfGauge.UWP.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="CircularGauge">
+					<ResourceMapSubtree name="Themes">
+						<NamedResource name="CircularGauge.xbf" uri="ms-resource://Syncfusion.SfGauge.UWP/Files/Syncfusion.SfGauge.UWP/CircularGauge/Themes/CircularGauge.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="DigitalGauge">
+					<ResourceMapSubtree name="Themes">
+						<NamedResource name="DigitalGauge.xbf" uri="ms-resource://Syncfusion.SfGauge.UWP/Files/Syncfusion.SfGauge.UWP/DigitalGauge/Themes/DigitalGauge.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="LinearGauge">
+					<ResourceMapSubtree name="Themes">
+						<NamedResource name="LinearGauge.xbf" uri="ms-resource://Syncfusion.SfGauge.UWP/Files/Syncfusion.SfGauge.UWP/LinearGauge/Themes/LinearGauge.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Properties">
+					<NamedResource name="Syncfusion.SfGauge.UWP.rd.xml" uri="ms-resource://Syncfusion.SfGauge.UWP/Files/Syncfusion.SfGauge.UWP/Properties/Syncfusion.SfGauge.UWP.rd.xml">
+						<Candidate type="Path">
+							<Value>Syncfusion.SfGauge.UWP\Properties\Syncfusion.SfGauge.UWP.rd.xml</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="Generic.xbf" uri="ms-resource://Syncfusion.SfGauge.UWP/Files/Syncfusion.SfGauge.UWP/Themes/Generic.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="Syncfusion.SfSchedule.UWP" version="1.0" primary="true">
+		<Qualifiers>
+			<DeviceFamily>MOBILE</DeviceFamily>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<ResourceMapSubtree name="Syncfusion.SfSchedule.UWP">
+				<NamedResource name="Syncfusion.SfSchedule.UWP.xr.xml" uri="ms-resource://Syncfusion.SfSchedule.UWP/Files/Syncfusion.SfSchedule.UWP/Syncfusion.SfSchedule.UWP.xr.xml">
+					<Candidate type="Path">
+						<Value>Syncfusion.SfSchedule.UWP\Syncfusion.SfSchedule.UWP.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Properties">
+					<NamedResource name="Syncfusion.SfSchedule.UWP.rd.xml" uri="ms-resource://Syncfusion.SfSchedule.UWP/Files/Syncfusion.SfSchedule.UWP/Properties/Syncfusion.SfSchedule.UWP.rd.xml">
+						<Candidate type="Path">
+							<Value>Syncfusion.SfSchedule.UWP\Properties\Syncfusion.SfSchedule.UWP.rd.xml</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="generic.xbf" uri="ms-resource://Syncfusion.SfSchedule.UWP/Files/Syncfusion.SfSchedule.UWP/Themes/generic.xbf">
+						<Candidate qualifiers="DeviceFamily-MOBILE" type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="ScheduleAppointmentEditor_Mobile.xbf" uri="ms-resource://Syncfusion.SfSchedule.UWP/Files/Syncfusion.SfSchedule.UWP/Themes/ScheduleAppointmentEditor_Mobile.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="ScheduleAppointmentResources.xbf" uri="ms-resource://Syncfusion.SfSchedule.UWP/Files/Syncfusion.SfSchedule.UWP/Themes/ScheduleAppointmentResources.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="ScheduleAppointmentResources_Mobile.xbf" uri="ms-resource://Syncfusion.SfSchedule.UWP/Files/Syncfusion.SfSchedule.UWP/Themes/ScheduleAppointmentResources_Mobile.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="ScheduleDaysViewResources.xbf" uri="ms-resource://Syncfusion.SfSchedule.UWP/Files/Syncfusion.SfSchedule.UWP/Themes/ScheduleDaysViewResources.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="ScheduleDaysViewResources_Mobile.xbf" uri="ms-resource://Syncfusion.SfSchedule.UWP/Files/Syncfusion.SfSchedule.UWP/Themes/ScheduleDaysViewResources_Mobile.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="ScheduleMonthViewResources.xbf" uri="ms-resource://Syncfusion.SfSchedule.UWP/Files/Syncfusion.SfSchedule.UWP/Themes/ScheduleMonthViewResources.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="ScheduleMonthViewResources_Mobile.xbf" uri="ms-resource://Syncfusion.SfSchedule.UWP/Files/Syncfusion.SfSchedule.UWP/Themes/ScheduleMonthViewResources_Mobile.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="ScheduleTimeLineViewResources.xbf" uri="ms-resource://Syncfusion.SfSchedule.UWP/Files/Syncfusion.SfSchedule.UWP/Themes/ScheduleTimeLineViewResources.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="ScheduleTimeLineViewResources_Mobile.xbf" uri="ms-resource://Syncfusion.SfSchedule.UWP/Files/Syncfusion.SfSchedule.UWP/Themes/ScheduleTimeLineViewResources_Mobile.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="ScheduleWeekViewResources_Mobile.xbf" uri="ms-resource://Syncfusion.SfSchedule.UWP/Files/Syncfusion.SfSchedule.UWP/Themes/ScheduleWeekViewResources_Mobile.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

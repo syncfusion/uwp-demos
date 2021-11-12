@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="Syncfusion.SfMenu.UWP" version="1.0" primary="true">
+		<Qualifiers>
+			<DeviceFamily>MOBILE</DeviceFamily>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<ResourceMapSubtree name="Syncfusion.SfMenu.UWP">
+				<NamedResource name="Syncfusion.SfMenu.UWP.xr.xml" uri="ms-resource://Syncfusion.SfMenu.UWP/Files/Syncfusion.SfMenu.UWP/Syncfusion.SfMenu.UWP.xr.xml">
+					<Candidate type="Path">
+						<Value>Syncfusion.SfMenu.UWP\Syncfusion.SfMenu.UWP.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Properties">
+					<NamedResource name="Syncfusion.SfMenu.UWP.rd.xml" uri="ms-resource://Syncfusion.SfMenu.UWP/Files/Syncfusion.SfMenu.UWP/Properties/Syncfusion.SfMenu.UWP.rd.xml">
+						<Candidate type="Path">
+							<Value>Syncfusion.SfMenu.UWP\Properties\Syncfusion.SfMenu.UWP.rd.xml</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="generic.xbf" uri="ms-resource://Syncfusion.SfMenu.UWP/Files/Syncfusion.SfMenu.UWP/Themes/generic.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="MenuStyle.xbf" uri="ms-resource://Syncfusion.SfMenu.UWP/Files/Syncfusion.SfMenu.UWP/Themes/MenuStyle.xbf">
+						<Candidate qualifiers="DeviceFamily-MOBILE" type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

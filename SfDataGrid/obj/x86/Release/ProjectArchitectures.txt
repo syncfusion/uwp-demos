@@ -1,0 +1,1 @@
+D:\Samples_19.3.0.53\UWP\SfDataGrid\Syncfusion.SampleBrowser.UWP.SfDataGrid.csproj;x86

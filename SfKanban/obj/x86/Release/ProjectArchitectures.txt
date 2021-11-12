@@ -1,0 +1,1 @@
+D:\Samples_19.3.0.53\UWP\SfKanban\Syncfusion.SampleBrowser.UWP.SfKanban.csproj;x86

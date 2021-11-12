@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="Syncfusion.SfMaps.UWP" version="1.0" primary="true">
+		<Qualifiers/>
+		<ResourceMapSubtree name="Files">
+			<ResourceMapSubtree name="Syncfusion.SfMaps.UWP">
+				<NamedResource name="Syncfusion.SfMaps.UWP.xr.xml" uri="ms-resource://Syncfusion.SfMaps.UWP/Files/Syncfusion.SfMaps.UWP/Syncfusion.SfMaps.UWP.xr.xml">
+					<Candidate type="Path">
+						<Value>Syncfusion.SfMaps.UWP\Syncfusion.SfMaps.UWP.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Properties">
+					<NamedResource name="Syncfusion.SfMaps.UWP.rd.xml" uri="ms-resource://Syncfusion.SfMaps.UWP/Files/Syncfusion.SfMaps.UWP/Properties/Syncfusion.SfMaps.UWP.rd.xml">
+						<Candidate type="Path">
+							<Value>Syncfusion.SfMaps.UWP\Properties\Syncfusion.SfMaps.UWP.rd.xml</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="ColorPalette.xbf" uri="ms-resource://Syncfusion.SfMaps.UWP/Files/Syncfusion.SfMaps.UWP/Themes/ColorPalette.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Generic.Common.xbf" uri="ms-resource://Syncfusion.SfMaps.UWP/Files/Syncfusion.SfMaps.UWP/Themes/Generic.Common.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Generic.xbf" uri="ms-resource://Syncfusion.SfMaps.UWP/Files/Syncfusion.SfMaps.UWP/Themes/Generic.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Templates.xbf" uri="ms-resource://Syncfusion.SfMaps.UWP/Files/Syncfusion.SfMaps.UWP/Themes/Templates.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

@@ -1,0 +1,17 @@
+Syncfusion.SampleBrowser.UWP.RichTextEditor\App.xbf
+Syncfusion.SampleBrowser.UWP.RichTextEditor\Common\StandardStyles.xbf
+Syncfusion.SampleBrowser.UWP.RichTextEditor\RTE\Controls\FontFormatGrid.xbf
+Syncfusion.SampleBrowser.UWP.RichTextEditor\RTE\Controls\HighlightColorPicker.xbf
+Syncfusion.SampleBrowser.UWP.RichTextEditor\RTE\Controls\InsertTableGrid.xbf
+Syncfusion.SampleBrowser.UWP.RichTextEditor\RTE\Controls\ListFormatGrid.xbf
+Syncfusion.SampleBrowser.UWP.RichTextEditor\RTE\Controls\ParaFormatGrid.xbf
+Syncfusion.SampleBrowser.UWP.RichTextEditor\RTE\Controls\ReviewOptionsGrid.xbf
+Syncfusion.SampleBrowser.UWP.RichTextEditor\RTE\Controls\SpacingsFormatGrid.xbf
+Syncfusion.SampleBrowser.UWP.RichTextEditor\RTE\CreateLetters\CreateLetters.xbf
+Syncfusion.SampleBrowser.UWP.RichTextEditor\RTE\CustomizedEditor\CustomizedEditor.xbf
+Syncfusion.SampleBrowser.UWP.RichTextEditor\RTE\CustomizedEditor\DeviceFamily-Mobile\CustomizedEditor.xbf
+Syncfusion.SampleBrowser.UWP.RichTextEditor\RTE\DeviceFamily-Mobile\DocumentEditor.xbf
+Syncfusion.SampleBrowser.UWP.RichTextEditor\RTE\DocumentEditor.xbf
+Syncfusion.SampleBrowser.UWP.RichTextEditor\RTE\Forum\Forum.xbf
+Syncfusion.SampleBrowser.UWP.RichTextEditor\RTE\Forum\ForumPostControl.xbf
+Syncfusion.SampleBrowser.UWP.RichTextEditor\RTE\Forum\ForumReplyControl.xbf

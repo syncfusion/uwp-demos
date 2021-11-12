@@ -1,0 +1,1 @@
+D:\Samples_19.3.0.53\UWP\SfCellGrid\Syncfusion.SampleBrowser.UWP.SfCellGrid.csproj;x86

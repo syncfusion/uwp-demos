@@ -1,0 +1,10 @@
+App.xbf
+MainPage.xbf
+MapControl\BasicMap.xbf
+MapControl\BubbleVisualization.xbf
+MapControl\DataMarkers.xbf
+MapControl\DeviceFamily-Mobile\TicketBooking.xbf
+MapControl\ElectionResult.xbf
+MapControl\ElectionResultMobile.xbf
+MapControl\MapPoints.xbf
+MapControl\TicketBooking.xbf

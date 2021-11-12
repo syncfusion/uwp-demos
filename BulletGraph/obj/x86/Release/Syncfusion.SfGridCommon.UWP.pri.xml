@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="Syncfusion.SfGridCommon.UWP" version="1.0" primary="true">
+		<Qualifiers/>
+		<ResourceMapSubtree name="Files">
+			<ResourceMapSubtree name="Syncfusion.SfGridCommon.UWP">
+				<NamedResource name="Syncfusion.SfGridCommon.UWP.xr.xml" uri="ms-resource://Syncfusion.SfGridCommon.UWP/Files/Syncfusion.SfGridCommon.UWP/Syncfusion.SfGridCommon.UWP.xr.xml">
+					<Candidate type="Path">
+						<Value>Syncfusion.SfGridCommon.UWP\Syncfusion.SfGridCommon.UWP.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Properties">
+					<NamedResource name="Syncfusion.SfGridCommon.UWP.rd.xml" uri="ms-resource://Syncfusion.SfGridCommon.UWP/Files/Syncfusion.SfGridCommon.UWP/Properties/Syncfusion.SfGridCommon.UWP.rd.xml">
+						<Candidate type="Path">
+							<Value>Syncfusion.SfGridCommon.UWP\Properties\Syncfusion.SfGridCommon.UWP.rd.xml</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="ScrollableContentViewer">
+					<ResourceMapSubtree name="Themes">
+						<NamedResource name="Generic.xbf" uri="ms-resource://Syncfusion.SfGridCommon.UWP/Files/Syncfusion.SfGridCommon.UWP/ScrollableContentViewer/Themes/Generic.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="generic.xbf" uri="ms-resource://Syncfusion.SfGridCommon.UWP/Files/Syncfusion.SfGridCommon.UWP/Themes/generic.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

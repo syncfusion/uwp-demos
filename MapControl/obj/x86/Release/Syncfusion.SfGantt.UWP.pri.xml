@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="Syncfusion.SfGantt.UWP" version="1.0" primary="true">
+		<Qualifiers>
+			<DeviceFamily>MOBILE</DeviceFamily>
+			<Language>EN-US</Language>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<ResourceMapSubtree name="Syncfusion.SfGantt.UWP">
+				<NamedResource name="Syncfusion.SfGantt.UWP.xr.xml" uri="ms-resource://Syncfusion.SfGantt.UWP/Files/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.xr.xml">
+					<Candidate type="Path">
+						<Value>Syncfusion.SfGantt.UWP\Syncfusion.SfGantt.UWP.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="GanttGrid">
+					<ResourceMapSubtree name="Themes">
+						<NamedResource name="Generic.xbf" uri="ms-resource://Syncfusion.SfGantt.UWP/Files/Syncfusion.SfGantt.UWP/GanttGrid/Themes/Generic.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="Generic.xbf" uri="ms-resource://Syncfusion.SfGantt.UWP/Files/Syncfusion.SfGantt.UWP/Themes/Generic.xbf">
+						<Candidate qualifiers="DeviceFamily-MOBILE" type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Toolbar">
+					<NamedResource name="Common.xbf" uri="ms-resource://Syncfusion.SfGantt.UWP/Files/Syncfusion.SfGantt.UWP/Toolbar/Common.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<ResourceMapSubtree name="Themes">
+						<NamedResource name="Toolbar.xbf" uri="ms-resource://Syncfusion.SfGantt.UWP/Files/Syncfusion.SfGantt.UWP/Toolbar/Themes/Toolbar.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="UI">
+					<ResourceMapSubtree name="Themes">
+						<NamedResource name="ChartView.xbf" uri="ms-resource://Syncfusion.SfGantt.UWP/Files/Syncfusion.SfGantt.UWP/UI/Themes/ChartView.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="GanttChart.xbf" uri="ms-resource://Syncfusion.SfGantt.UWP/Files/Syncfusion.SfGantt.UWP/UI/Themes/GanttChart.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="GanttPredecessorDialog.xbf" uri="ms-resource://Syncfusion.SfGantt.UWP/Files/Syncfusion.SfGantt.UWP/UI/Themes/GanttPredecessorDialog.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="Timescale.xbf" uri="ms-resource://Syncfusion.SfGantt.UWP/Files/Syncfusion.SfGantt.UWP/UI/Themes/Timescale.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Syncfusion.SfGantt.UWP">
+			<ResourceMapSubtree name="Syncfusion.SfGantt.UWP.Resources">
+				<NamedResource name="1st" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/1st">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>1st</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="2nd" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/2nd">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>2nd</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="3rd" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/3rd">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>3rd</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="4th" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/4th">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>4th</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Add" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/Add">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Add</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Add New" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/Add New">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Add New</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="All" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/All">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>All</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="are invalid" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/are invalid">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>are invalid</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="BottomTierValidation" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/BottomTierValidation">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Check bottom tier interval value.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Cancel" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/Cancel">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Cancel</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="CellSizeValidation" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/CellSizeValidation">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Cell size value must exist between 25 to 1000.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Collapse All" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/Collapse All">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Collapse All</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="day" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/day">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>day</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="days" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/days">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>days</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Delete" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/Delete">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Delete</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Duration" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/Duration">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Duration</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Edit" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/Edit">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Edit</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Edit task" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/Edit task">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Edit task</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Establish Relationship" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/Establish Relationship">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Establish Relationship</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Expand All" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/Expand All">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Expand All</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Finish" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/Finish">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Finish</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Finish date" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/Finish date">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Finish date</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Finish-to-Finish (FF)" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/Finish-to-Finish (FF)">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Finish-to-Finish (FF)</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Finish-to-Start (FS)" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/Finish-to-Start (FS)">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Finish-to-Start (FS)</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="From" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/From">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>From</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Gantt view" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/Gantt view">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Gantt view</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="General" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/General">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>General</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Grid view" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/Grid view">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Grid view</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Highlight Critical Path" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/Highlight Critical Path">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Highlight Critical Path</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ID" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/ID">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>ID</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Indent" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/Indent">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Indent</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="IntervalTypeValidation" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/IntervalTypeValidation">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Top tier's IntervalType is less than the bottom tier's IntervalType.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="IntervalValidation" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/IntervalValidation">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Set Interval property value greater than or equal to one.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="IntervalValueValidation" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/IntervalValueValidation">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Top tier's Interval is less than the bottom tier's Interval.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="InvalidRelationshipMessage" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/InvalidRelationshipMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Relationship is invalid.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="is invalid" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/is invalid">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>is invalid</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="IsMilestone" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/IsMilestone">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>IsMilestone</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Lag" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/Lag">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Lag</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Name" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/Name">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Name</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="New task" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/New task">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>New task</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="None" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/None">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>None</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Offset" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/Offset">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Offset</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Outdent" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/Outdent">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Outdent</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Predecessors" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/Predecessors">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Predecessors</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Progress" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/Progress">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Progress</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Quarter" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/Quarter">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Quarter</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Relationship" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/Relationship">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Relationship</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Remove" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/Remove">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Remove</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Resources" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/Resources">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Resources</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Save" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/Save">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Save</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Start" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/Start">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Start</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Start date" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/Start date">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Start date</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Start-to-Finish (SF)" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/Start-to-Finish (SF)">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Start-to-Finish (SF)</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Start-to-Start (SS)" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/Start-to-Start (SS)">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Start-to-Start (SS)</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Task Dependency" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/Task Dependency">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Task Dependency</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Task Name" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/Task Name">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Task Name</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="TaskIDInvalidMessage" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/TaskIDInvalidMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Task ID is invalid.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="TaskIDValidation" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/TaskIDValidation">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Task's ID cannot be null or empty.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="TaskIsExistMessage" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/TaskIsExistMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Task ID already exist.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="To" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/To">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>To</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="TopTierValidation" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/TopTierValidation">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Check top tier interval value.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Type" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/Type">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Type</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ValidRelationshipMessage" uri="ms-resource://Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP/Syncfusion.SfGantt.UWP.Resources/ValidRelationshipMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Relationship Established.</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

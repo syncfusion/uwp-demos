@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="Syncfusion.SfPivotShared.UWP" version="1.0" primary="true">
+		<Qualifiers>
+			<DeviceFamily>MOBILE</DeviceFamily>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<ResourceMapSubtree name="Syncfusion.SfPivotShared.UWP">
+				<NamedResource name="Syncfusion.SfPivotShared.UWP.xr.xml" uri="ms-resource://Syncfusion.SfPivotShared.UWP/Files/Syncfusion.SfPivotShared.UWP/Syncfusion.SfPivotShared.UWP.xr.xml">
+					<Candidate type="Path">
+						<Value>Syncfusion.SfPivotShared.UWP\Syncfusion.SfPivotShared.UWP.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="PageSetupDialog">
+					<NamedResource name="PageSetupDialog.xbf" uri="ms-resource://Syncfusion.SfPivotShared.UWP/Files/Syncfusion.SfPivotShared.UWP/PageSetupDialog/PageSetupDialog.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="PageSetupDialog_Mobile.xbf" uri="ms-resource://Syncfusion.SfPivotShared.UWP/Files/Syncfusion.SfPivotShared.UWP/PageSetupDialog/PageSetupDialog_Mobile.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Properties">
+					<NamedResource name="Syncfusion.SfPivotShared.UWP.rd.xml" uri="ms-resource://Syncfusion.SfPivotShared.UWP/Files/Syncfusion.SfPivotShared.UWP/Properties/Syncfusion.SfPivotShared.UWP.rd.xml">
+						<Candidate type="Path">
+							<Value>Syncfusion.SfPivotShared.UWP\Properties\Syncfusion.SfPivotShared.UWP.rd.xml</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="Generic.xbf" uri="ms-resource://Syncfusion.SfPivotShared.UWP/Files/Syncfusion.SfPivotShared.UWP/Themes/Generic.xbf">
+						<Candidate qualifiers="DeviceFamily-MOBILE" type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

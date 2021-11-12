@@ -1,0 +1,15 @@
+Syncfusion.SampleBrowser.UWP.Barcode\App.xbf
+Syncfusion.SampleBrowser.UWP.Barcode\BarcodeControl\Codabar.xbf
+Syncfusion.SampleBrowser.UWP.Barcode\BarcodeControl\Code11.xbf
+Syncfusion.SampleBrowser.UWP.Barcode\BarcodeControl\Code128A.xbf
+Syncfusion.SampleBrowser.UWP.Barcode\BarcodeControl\Code128B.xbf
+Syncfusion.SampleBrowser.UWP.Barcode\BarcodeControl\Code128C.xbf
+Syncfusion.SampleBrowser.UWP.Barcode\BarcodeControl\Code32.xbf
+Syncfusion.SampleBrowser.UWP.Barcode\BarcodeControl\Code39.xbf
+Syncfusion.SampleBrowser.UWP.Barcode\BarcodeControl\Code39Ext.xbf
+Syncfusion.SampleBrowser.UWP.Barcode\BarcodeControl\Code93.xbf
+Syncfusion.SampleBrowser.UWP.Barcode\BarcodeControl\Code93Ext.xbf
+Syncfusion.SampleBrowser.UWP.Barcode\BarcodeControl\QRBarcode.xbf
+Syncfusion.SampleBrowser.UWP.Barcode\BarcodeControl\UpcBarcode.xbf
+Syncfusion.SampleBrowser.UWP.Barcode\Common\StandardStyles.xbf
+Syncfusion.SampleBrowser.UWP.Barcode\MainPage.xbf

@@ -1,0 +1,11 @@
+App.xbf
+Common\StandardStyles.xbf
+PivotChart\View\Adornments.xbf
+PivotChart\View\Annotations.xbf
+PivotChart\View\ChartTypes.xbf
+PivotChart\View\GettingStarted.xbf
+PivotChart\View\KPI.xbf
+PivotChart\View\LegendCustomization.xbf
+PivotChart\View\Localization.xbf
+PivotChart\View\Relational.xbf
+PivotChart\View\Serialization.xbf

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="Syncfusion.SfChart.UWP" version="1.0" primary="true">
+		<Qualifiers>
+			<Language>EN-US</Language>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<ResourceMapSubtree name="Syncfusion.SfChart.UWP">
+				<NamedResource name="Syncfusion.SfChart.UWP.xr.xml" uri="ms-resource://Syncfusion.SfChart.UWP/Files/Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP.xr.xml">
+					<Candidate type="Path">
+						<Value>Syncfusion.SfChart.UWP\Syncfusion.SfChart.UWP.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="3D">
+					<ResourceMapSubtree name="ChartArea">
+						<ResourceMapSubtree name="Themes">
+							<NamedResource name="SfChart3D.xbf" uri="ms-resource://Syncfusion.SfChart.UWP/Files/Syncfusion.SfChart.UWP/3D/ChartArea/Themes/SfChart3D.xbf">
+								<Candidate type="EmbeddedData">
+									<Base64Value>[Embedded Binary Data]</Base64Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="ChartSeries">
+						<ResourceMapSubtree name="Themes">
+							<NamedResource name="ChartSeries.xbf" uri="ms-resource://Syncfusion.SfChart.UWP/Files/Syncfusion.SfChart.UWP/3D/ChartSeries/Themes/ChartSeries.xbf">
+								<Candidate type="EmbeddedData">
+									<Base64Value>[Embedded Binary Data]</Base64Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="ChartArea">
+					<ResourceMapSubtree name="Themes">
+						<NamedResource name="ChartArea.xbf" uri="ms-resource://Syncfusion.SfChart.UWP/Files/Syncfusion.SfChart.UWP/ChartArea/Themes/ChartArea.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="ChartAxis">
+					<ResourceMapSubtree name="Themes">
+						<NamedResource name="ChartAxis.xbf" uri="ms-resource://Syncfusion.SfChart.UWP/Files/Syncfusion.SfChart.UWP/ChartAxis/Themes/ChartAxis.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="ChartSeries">
+					<ResourceMapSubtree name="Themes">
+						<NamedResource name="ChartSeries.xbf" uri="ms-resource://Syncfusion.SfChart.UWP/Files/Syncfusion.SfChart.UWP/ChartSeries/Themes/ChartSeries.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Controls">
+					<ResourceMapSubtree name="Themes">
+						<NamedResource name="ChartToolBar.xbf" uri="ms-resource://Syncfusion.SfChart.UWP/Files/Syncfusion.SfChart.UWP/Controls/Themes/ChartToolBar.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="ResizableScrollBar.xbf" uri="ms-resource://Syncfusion.SfChart.UWP/Files/Syncfusion.SfChart.UWP/Controls/Themes/ResizableScrollBar.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="Resizer.xbf" uri="ms-resource://Syncfusion.SfChart.UWP/Files/Syncfusion.SfChart.UWP/Controls/Themes/Resizer.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="SfRangeNavigator.xbf" uri="ms-resource://Syncfusion.SfChart.UWP/Files/Syncfusion.SfChart.UWP/Controls/Themes/SfRangeNavigator.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Properties">
+					<NamedResource name="Syncfusion.SfChart.UWP_2017.rd.xml" uri="ms-resource://Syncfusion.SfChart.UWP/Files/Syncfusion.SfChart.UWP/Properties/Syncfusion.SfChart.UWP_2017.rd.xml">
+						<Candidate type="Path">
+							<Value>Syncfusion.SfChart.UWP\Properties\Syncfusion.SfChart.UWP_2017.rd.xml</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Sparkline">
+					<ResourceMapSubtree name="Themes">
+						<NamedResource name="Sparkline.xbf" uri="ms-resource://Syncfusion.SfChart.UWP/Files/Syncfusion.SfChart.UWP/Sparkline/Themes/Sparkline.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="Generic.Common.xbf" uri="ms-resource://Syncfusion.SfChart.UWP/Files/Syncfusion.SfChart.UWP/Themes/Generic.Common.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Generic.Legend.xbf" uri="ms-resource://Syncfusion.SfChart.UWP/Files/Syncfusion.SfChart.UWP/Themes/Generic.Legend.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Generic.Symbol.xbf" uri="ms-resource://Syncfusion.SfChart.UWP/Files/Syncfusion.SfChart.UWP/Themes/Generic.Symbol.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="generic.xbf" uri="ms-resource://Syncfusion.SfChart.UWP/Files/Syncfusion.SfChart.UWP/Themes/generic.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Syncfusion.SfChart.UWP">
+			<ResourceMapSubtree name="Syncfusion.SfChart.UWP.Resources">
+				<NamedResource name="AxisIncompatibleExceptionMessage" uri="ms-resource://Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP.Resources/AxisIncompatibleExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>axis is not compatible with the axis of</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="BoxSelectionZoom" uri="ms-resource://Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP.Resources/BoxSelectionZoom">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>BoxSelection Zoom</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Close" uri="ms-resource://Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP.Resources/Close">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Close</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Decrease" uri="ms-resource://Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP.Resources/Decrease">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Decrease</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FileName" uri="ms-resource://Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP.Resources/FileName">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>untitled</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="High" uri="ms-resource://Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP.Resources/High">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>High</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Histogram" uri="ms-resource://Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP.Resources/Histogram">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Histogram</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Increase" uri="ms-resource://Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP.Resources/Increase">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Increase</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Low" uri="ms-resource://Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP.Resources/Low">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Low</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="LowerLine" uri="ms-resource://Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP.Resources/LowerLine">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Lower Line</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="MACD" uri="ms-resource://Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP.Resources/MACD">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>MACD</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Maximum" uri="ms-resource://Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP.Resources/Maximum">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Maximum</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Median" uri="ms-resource://Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP.Resources/Median">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Median</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Minimum" uri="ms-resource://Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP.Resources/Minimum">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Minimum</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Open" uri="ms-resource://Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP.Resources/Open">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Open</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Others" uri="ms-resource://Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP.Resources/Others">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Others</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Pan" uri="ms-resource://Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP.Resources/Pan">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Pan</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="PeriodLine" uri="ms-resource://Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP.Resources/PeriodLine">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Period Line</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="PrintErrorMessage" uri="ms-resource://Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP.Resources/PrintErrorMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Sorry printing can't be proceeded at this time due internal printing error. Please Try again.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="PrintingExceptionMessage" uri="ms-resource://Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP.Resources/PrintingExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Element must be rendered, and must have a parent in order to print.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Q" uri="ms-resource://Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP.Resources/Q">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Q</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Q1" uri="ms-resource://Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP.Resources/Q1">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Q1</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Q3" uri="ms-resource://Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP.Resources/Q3">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Q3</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Quarter" uri="ms-resource://Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP.Resources/Quarter">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Quarter</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Reset" uri="ms-resource://Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP.Resources/Reset">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Reset</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SignalLine" uri="ms-resource://Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP.Resources/SignalLine">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Signal Line</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Size" uri="ms-resource://Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP.Resources/Size">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Size</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Total" uri="ms-resource://Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP.Resources/Total">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Total</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="UpperLine" uri="ms-resource://Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP.Resources/UpperLine">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Upper Line</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="W" uri="ms-resource://Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP.Resources/W">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>W</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Week" uri="ms-resource://Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP.Resources/Week">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Week</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="YValue" uri="ms-resource://Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP.Resources/YValue">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>YValue</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ZoomIn" uri="ms-resource://Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP.Resources/ZoomIn">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Zoom In</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ZoomOut" uri="ms-resource://Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP/Syncfusion.SfChart.UWP.Resources/ZoomOut">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Zoom Out</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

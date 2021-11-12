@@ -1,0 +1,123 @@
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\ApplicationInsights.config
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\Assets\pdfviewer.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\OpenBlack.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Open_White.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\pdfviewer.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\Annotations_black.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\Annotations_white.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\Close_black.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\Close_White.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\disable_next.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\disable_prev.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\Disable_redo.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\Disable_undo.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\Ellipse_black.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\Ellipse_white.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\GotoIcon.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\GoTo_Black.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\GoTo_White.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\Highlight_black.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\Highlight_white.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\Ink_Black.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\Ink_White.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\Line_black.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\Line_white.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\NavigationDown_Black.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\NavigationDown_White.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\NavigationUp_Black.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\NavigationUp_White.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\OpenBlack.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\OpenPdf.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\Open_White.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\PageDown.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\PageUp.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\Print.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\PrintIcon.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\Print_Black.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\Print_Clicked.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\Print_White.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\Rectangle_black.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\Rectangle_white.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\Redo_Black.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\Redo_White.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\Save_Black.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\Save_White.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\SearchButton_Black.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\SearchButton_White.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\Search_White.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\Strikethrough_black.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\Strikethrough_white.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\Underline_black.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\Underline_white.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\Undo_Black.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\Undo_White.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\Zoom In_Black.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\Zoom In_White.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\ZoomDown.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\ZoomMode_Black.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\ZoomMode_White.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\ZoomOutWhite.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\ZoomOut_Black.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\ZoomUp.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\Zoom_black.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\PdfViewer\Assets\Pdf\Zoom_white.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\Samples\Samples.xml
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\Properties\Default.rd.xml
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\Assets\LockScreenLogo.scale-200.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\Assets\SplashScreen.scale-200.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\Assets\Square150x150Logo.scale-200.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\Assets\Square44x44Logo.scale-200.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\Assets\Square44x44Logo.targetsize-24_altform-unplated.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\Assets\StoreLogo.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\Assets\Wide310x150Logo.scale-200.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\Syncfusion.SampleBrowser.UWP.PdfViewer.dll
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\Syncfusion.SampleBrowser.UWP.PdfViewer.pdb
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PdfViewer\Syncfusion.SampleBrowser.UWP.PdfViewer.pri
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\Syncfusion.SampleBrowser.UWP.PdfViewer.csprojAssemblyReference.cache
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\App.g.i.cs
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\App.g.cs
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\PdfViewer\Form Fillings\FormFillings.g.i.cs
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\PdfViewer\Form Fillings\FormFillings.g.cs
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\PdfViewer\Getting Started\CommentsList\CommentListView.g.i.cs
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\PdfViewer\Getting Started\CommentsList\CommentListView.g.cs
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\PdfViewer\Getting Started\CommentsList\CommentView.g.i.cs
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\PdfViewer\Getting Started\CommentsList\CommentView.g.cs
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\PdfViewer\Getting Started\MainPage.g.i.cs
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\PdfViewer\Getting Started\MainPage.g.cs
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\XamlTypeInfo.g.cs
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\App.xaml
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\Common\StandardStyles.xaml
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\PdfViewer\Form Fillings\DeviceFamily-Mobile\FormFillings.xaml
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\PdfViewer\Form Fillings\FormFillings.xaml
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\PdfViewer\Getting Started\CommentsList\CommentListView.xaml
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\PdfViewer\Getting Started\CommentsList\CommentView.xaml
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\PdfViewer\Getting Started\DeviceFamily-Mobile\MainPage.xaml
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\PdfViewer\Getting Started\MainPage.xaml
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\App.xbf
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\Common\StandardStyles.xbf
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\PdfViewer\Form Fillings\DeviceFamily-Mobile\FormFillings.xbf
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\PdfViewer\Form Fillings\FormFillings.xbf
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\PdfViewer\Getting Started\CommentsList\CommentListView.xbf
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\PdfViewer\Getting Started\CommentsList\CommentView.xbf
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\PdfViewer\Getting Started\DeviceFamily-Mobile\MainPage.xbf
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\PdfViewer\Getting Started\MainPage.xbf
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\XamlSaveStateFile.xml
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\Syncfusion.SampleBrowser.UWP.PdfViewer.csproj.CoreCompileInputs.cache
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\Syncfusion.SampleBrowser.UWP.PdfViewer.csproj.CopyComplete
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\Syncfusion.SampleBrowser.UWP.PdfViewer.dll
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\Syncfusion.SampleBrowser.UWP.PdfViewer.pdb
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\priconfig.xml
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\priconfig.xml.intermediate
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\unfiltered.layout.resfiles
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\unfiltered.layout.resfiles.intermediate
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\filtered.layout.resfiles
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\filtered.layout.resfiles.intermediate
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\excluded.layout.resfiles
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\excluded.layout.resfiles.intermediate
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\resources.resfiles
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\resources.resfiles.intermediate
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\pri.resfiles
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\pri.resfiles.intermediate
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\qualifiers.txt
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\qualifiers.txt.intermediate
+D:\Git\RP\SfPdfViewer-UWP\UWP\Samples\PdfViewer\obj\Release\MultipleQualifiersPerDimensionFound.txt

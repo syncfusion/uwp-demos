@@ -1,0 +1,6 @@
+App.xbf
+MainPage.xbf
+TreeMap\View\FlatCollectionTreeMap.xbf
+TreeMap\View\HierarchicalCollectionTreeMap.xbf
+TreeMap\View\TreeMapCustomization.xbf
+TreeMap\View\TreeMapDrillDown.xbf

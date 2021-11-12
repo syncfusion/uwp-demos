@@ -1,0 +1,191 @@
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\ApplicationInsights.config
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\Assets\Icons\tax_mobile.jpg
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Data\Audit.pmml
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Data\Bfeed.pmml
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Data\BreastCancer.pmml
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Data\Cars.pmml
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Data\Glass.pmml
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Data\Groceries.pmml
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Data\Imports.pmml
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Data\Iris.pmml
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Data\Ozone.pmml
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Data\Tips.pmml
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Data\Titanic.pmml
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Data\Wine.pmml
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Association Rules\Groceries.pmml
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Association Rules\Groceries.R
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Clustering Model\Glass.csv
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Clustering Model\Glass.pmml
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Clustering Model\Glass.R
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Cox Regression\Bfeed.csv
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Cox Regression\Bfeed.pmml
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Cox Regression\Bfeed.R
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\General Regression\Audit.csv
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\General Regression\Audit.pmml
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\General Regression\Audit.R
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Gradient Boosting\Cars.csv
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Gradient Boosting\Cars.pmml
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Multinomial Regression\Wine.csv
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Multinomial Regression\Wine.pmml
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Multinomial Regression\Wine.R
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Naive Bayes\BreastCancer.csv
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Naive Bayes\BreastCancer.pmml
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Naive Bayes\BreastCancer.r
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Neural Networks\Imports.csv
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Neural Networks\Imports.pmml
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Neural Networks\Imports.R
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Random Forest\Iris.csv
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Random Forest\Iris.pmml
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Random Forest\Iris.R
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Regression\Tips.csv
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Regression\Tips.pmml
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Regression\Tips.R
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Support Vector Machine\Ozone.csv
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Support Vector Machine\Ozone.pmml
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Support Vector Machine\Ozone.R
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Tree Model\Titanic.csv
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Tree Model\Titanic.pmml
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Tree Model\Titanic.R
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\ShowCase\AuditDemo\Data\Audit.pmml
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Cox Regression\Bfeed.cs
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Support Vector Machine\Ozone.cs
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Tree Model\Titanic.cs
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Gradient Boosting\Cars.r
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Association Rules\Groceries.cs
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Clustering Model\Glass.cs
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\General Regression\Audit.cs
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Gradient Boosting\Cars.cs
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Multinomial Regression\Wine.cs
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Naive Bayes\BreastCancer.cs
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Neural Networks\Imports.cs
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Random Forest\Iris.cs
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Regression\Tips.cs
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\Assets\Icons\tax.jpg
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Getting Started\Association Rules\Groceries.txt
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Images\BackButton.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Images\car.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Images\dollar.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\Images\ozone.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\ShowCase\AuditDemo\Images\BackButton.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\ShowCase\AuditDemo\Images\thumb_no.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\PredictiveAnalytics\ShowCase\AuditDemo\Images\thumb_yes.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\Properties\Default.rd.xml
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\Assets\LockScreenLogo.scale-200.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\Assets\SplashScreen.scale-200.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\Assets\Square150x150Logo.scale-200.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\Assets\Square44x44Logo.scale-200.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\Assets\Square44x44Logo.targetsize-24_altform-unplated.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\Assets\StoreLogo.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\Assets\Wide310x150Logo.scale-200.png
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\Samples\Samples.xml
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics.dll
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics.pdb
+D:\Git\RP\sfshared-xaml\UWP\Samples\SampleBrowser\Assemblies\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics.pri
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics.csprojAssemblyReference.cache
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\App.g.i.cs
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\App.g.cs
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\MainPage.g.i.cs
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\MainPage.g.cs
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\AssociationRules.g.i.cs
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\AssociationRules.g.cs
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\ClusteringModel.g.i.cs
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\ClusteringModel.g.cs
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\CoxRegression.g.i.cs
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\CoxRegression.g.cs
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\GeneralRegression.g.i.cs
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\GeneralRegression.g.cs
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\GradientBoosting.g.i.cs
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\GradientBoosting.g.cs
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\MultinomialRegression.g.i.cs
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\MultinomialRegression.g.cs
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\NaiveBayes.g.i.cs
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\NaiveBayes.g.cs
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\NeuralNetworks.g.i.cs
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\NeuralNetworks.g.cs
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\RandomForest.g.i.cs
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\RandomForest.g.cs
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\Regression.g.i.cs
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\Regression.g.cs
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\SupportVectorMachine.g.i.cs
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\SupportVectorMachine.g.cs
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\TreeModel.g.i.cs
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\TreeModel.g.cs
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\ShowCase\AuditDemo\AuditDemo.g.i.cs
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\ShowCase\AuditDemo\AuditDemo.g.cs
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\XamlTypeInfo.g.cs
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\App.xaml
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\MainPage.xaml
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\AssociationRules.xaml
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\ClusteringModel.xaml
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\CoxRegression.xaml
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\DeviceFamily-Mobile\AssociationRules.xaml
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\DeviceFamily-Mobile\ClusteringModel.xaml
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\DeviceFamily-Mobile\CoxRegression.xaml
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\DeviceFamily-Mobile\GeneralRegression.xaml
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\DeviceFamily-Mobile\GradientBoosting.xaml
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\DeviceFamily-Mobile\MultinomialRegression.xaml
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\DeviceFamily-Mobile\NaiveBayes.xaml
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\DeviceFamily-Mobile\NeuralNetworks.xaml
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\DeviceFamily-Mobile\RandomForest.xaml
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\DeviceFamily-Mobile\Regression.xaml
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\DeviceFamily-Mobile\SupportVectorMachine.xaml
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\DeviceFamily-Mobile\TreeModel.xaml
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\GeneralRegression.xaml
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\GradientBoosting.xaml
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\MultinomialRegression.xaml
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\NaiveBayes.xaml
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\NeuralNetworks.xaml
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\RandomForest.xaml
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\Regression.xaml
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\ShowCase\AuditDemo\AuditDemo.xaml
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\ShowCase\AuditDemo\DeviceFamily-Mobile\AuditDemo.xaml
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\SupportVectorMachine.xaml
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\TreeModel.xaml
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\App.xbf
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\MainPage.xbf
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\AssociationRules.xbf
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\ClusteringModel.xbf
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\CoxRegression.xbf
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\DeviceFamily-Mobile\AssociationRules.xbf
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\DeviceFamily-Mobile\ClusteringModel.xbf
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\DeviceFamily-Mobile\CoxRegression.xbf
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\DeviceFamily-Mobile\GeneralRegression.xbf
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\DeviceFamily-Mobile\GradientBoosting.xbf
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\DeviceFamily-Mobile\MultinomialRegression.xbf
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\DeviceFamily-Mobile\NaiveBayes.xbf
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\DeviceFamily-Mobile\NeuralNetworks.xbf
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\DeviceFamily-Mobile\RandomForest.xbf
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\DeviceFamily-Mobile\Regression.xbf
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\DeviceFamily-Mobile\SupportVectorMachine.xbf
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\DeviceFamily-Mobile\TreeModel.xbf
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\GeneralRegression.xbf
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\GradientBoosting.xbf
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\MultinomialRegression.xbf
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\NaiveBayes.xbf
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\NeuralNetworks.xbf
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\RandomForest.xbf
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\Regression.xbf
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\ShowCase\AuditDemo\AuditDemo.xbf
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\ShowCase\AuditDemo\DeviceFamily-Mobile\AuditDemo.xbf
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\SupportVectorMachine.xbf
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\PredictiveAnalytics\TreeModel.xbf
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\XamlSaveStateFile.xml
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics.csproj.CoreCompileInputs.cache
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics.csproj.CopyComplete
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics.dll
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\Syncfusion.SampleBrowser.UWP.PredictiveAnalytics.pdb
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\priconfig.xml
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\priconfig.xml.intermediate
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\unfiltered.layout.resfiles
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\unfiltered.layout.resfiles.intermediate
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\filtered.layout.resfiles
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\filtered.layout.resfiles.intermediate
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\excluded.layout.resfiles
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\excluded.layout.resfiles.intermediate
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\resources.resfiles
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\resources.resfiles.intermediate
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\pri.resfiles
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\pri.resfiles.intermediate
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\qualifiers.txt
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\qualifiers.txt.intermediate
+D:\Git\RP\pmml\UWP\Samples\PredictiveAnalytics\obj\Release\MultipleQualifiersPerDimensionFound.txt

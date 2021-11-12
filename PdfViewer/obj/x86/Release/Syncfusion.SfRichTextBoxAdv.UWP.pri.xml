@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="Syncfusion.SfRichTextBoxAdv.UWP" version="1.0" primary="true">
+		<Qualifiers>
+			<Language>EN-US</Language>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<ResourceMapSubtree name="Syncfusion.SfRichTextBoxAdv.UWP">
+				<NamedResource name="Syncfusion.SfRichTextBoxAdv.UWP.xr.xml" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Files/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.xr.xml">
+					<Candidate type="Path">
+						<Value>Syncfusion.SfRichTextBoxAdv.UWP\Syncfusion.SfRichTextBoxAdv.UWP.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Properties">
+					<NamedResource name="Syncfusion.SfRichTextBoxAdv.UWP.rd.xml" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Files/Syncfusion.SfRichTextBoxAdv.UWP/Properties/Syncfusion.SfRichTextBoxAdv.UWP.rd.xml">
+						<Candidate type="Path">
+							<Value>Syncfusion.SfRichTextBoxAdv.UWP\Properties\Syncfusion.SfRichTextBoxAdv.UWP.rd.xml</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="Generic.xbf" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Files/Syncfusion.SfRichTextBoxAdv.UWP/Themes/Generic.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Syncfusion.SfRichTextBoxAdv.UWP">
+			<ResourceMapSubtree name="Syncfusion.SfRichTextBoxAdv.UWP.Resources">
+				<NamedResource name="AdvancedSearch" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/AdvancedSearch">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Advanced Search</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="AlignLeft" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/AlignLeft">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Align Left</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Alignment" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/Alignment">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Alignment</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="AlignRight" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/AlignRight">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Align Right</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Aqua" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/Aqua">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Aqua</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Black" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/Black">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Black</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Blue" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/Blue">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Blue</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Bold" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/Bold">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Bold</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="BoldToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/BoldToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Bold</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Brown" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/Brown">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Brown</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="BulletsToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/BulletsToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Bullets</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Center" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/Center">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Center</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="CenterToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/CenterToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Center</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Copy" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/Copy">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Copy</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="CopyHyperlink" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/CopyHyperlink">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Copy</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="CopyHyperlinkToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/CopyHyperlinkToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Copy Hyperlink</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="CopyToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/CopyToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Copy</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Cut" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/Cut">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Cut</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="CutToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/CutToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Cut</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DarkBlue" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/DarkBlue">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Dark Blue</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DarkGreen" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/DarkGreen">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Dark Green</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DarkPurple" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/DarkPurple">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Dark Purple</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DarkRed" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/DarkRed">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Dark Red</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DeleteColumn" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/DeleteColumn">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Delete Column</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DeleteColumnToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/DeleteColumnToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Delete Column</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DeleteRow" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/DeleteRow">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Delete Row</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DeleteRowToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/DeleteRowToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Delete Row</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DeleteTable" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/DeleteTable">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Delete Table</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DeleteTableToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/DeleteTableToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Delete Table</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DialogBoxCancel" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/DialogBoxCancel">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Cancel</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DialogBoxOk" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/DialogBoxOk">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>OK</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DoubleStrike" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/DoubleStrike">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Double Strike</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DoubleStrikeToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/DoubleStrikeToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Double Strike</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="EditHyperlink" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/EditHyperlink">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Edit</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="EditHyperlinkToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/EditHyperlinkToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Edit Hyperlink</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FindButtonToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/FindButtonToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Search for more things</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FindReplaceDialogErrorMessage" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/FindReplaceDialogErrorMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>We couldn't find what you were looking for.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FindReplaceDialogFind" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/FindReplaceDialogFind">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Find</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FindReplaceDialogFindNext" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/FindReplaceDialogFindNext">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Find next</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FindReplaceDialogFindText" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/FindReplaceDialogFindText">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Find what</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FindReplaceDialogLessOption" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/FindReplaceDialogLessOption">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Less</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FindReplaceDialogMatchCase" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/FindReplaceDialogMatchCase">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Match case</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FindReplaceDialogMoreOption" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/FindReplaceDialogMoreOption">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>More</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FindReplaceDialogRegularExpression" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/FindReplaceDialogRegularExpression">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Use regular expression</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FindReplaceDialogReplace" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/FindReplaceDialogReplace">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Replace</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FindReplaceDialogReplaceAll" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/FindReplaceDialogReplaceAll">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Replace All</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FindReplaceDialogTitle" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/FindReplaceDialogTitle">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Find and Replace</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FindReplaceDialogWholeWord" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/FindReplaceDialogWholeWord">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Find whole words only</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Font" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/Font">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Font</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FontColorToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/FontColorToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Font Color</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FontFamilyToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/FontFamilyToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Font Family</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FontSize" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/FontSize">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Font Size</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FontSizeToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/FontSizeToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Font Size</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Gold" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/Gold">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Gold</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Gray25" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/Gray25">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Gray-25%</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Gray50" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/Gray50">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Gray-50%</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Gray80" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/Gray80">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Gray-80%</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Green" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/Green">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Green</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="HyperLink" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/HyperLink">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Hyperlink</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="HyperlinkDialogAddress" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/HyperlinkDialogAddress">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Address</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="HyperLinkDialogDisplayText" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/HyperLinkDialogDisplayText">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Text to Display</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="HyperlinkDialogTargetFrameText" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/HyperlinkDialogTargetFrameText">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Target Frame</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="HyperlinkDialogTitle" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/HyperlinkDialogTitle">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Insert Hyperlink</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="HyperlinkTargetNewWindow" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/HyperlinkTargetNewWindow">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>New window</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="HyperlinkTargetNone" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/HyperlinkTargetNone">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>None</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="HyperlinkTargetParentFrame" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/HyperlinkTargetParentFrame">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Parent frame</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="HyperlinkTargetSameFrame" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/HyperlinkTargetSameFrame">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Same frame</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="HyperlinkTargetWholePage" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/HyperlinkTargetWholePage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Whole page</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="IncorrectPassword" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/IncorrectPassword">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Incorrect password</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="IncorrectPasswordInfo" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/IncorrectPasswordInfo">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>The password is incorrect! SfRichTextBoxAdv cannot open the document.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="InsertAbove" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/InsertAbove">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Insert Above</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="InsertAboveToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/InsertAboveToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Insert Rows Above</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="InsertBelow" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/InsertBelow">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Insert Below</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="InsertBelowToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/InsertBelowToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Insert Rows Below</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="InsertHyperLinkToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/InsertHyperLinkToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Insert Hyperlink</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="InsertImage" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/InsertImage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Insert Image</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="InsertImageToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/InsertImageToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Insert Image</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="InsertLeft" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/InsertLeft">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Insert Left</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="InsertLeftToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/InsertLeftToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Insert Columns to the Left</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="InsertRight" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/InsertRight">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Insert Right</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="InsertRightToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/InsertRightToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Insert Columns to the Right</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="InsertTable" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/InsertTable">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Insert Table</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="InsertTableToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/InsertTableToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Insert Table</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Italic" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/Italic">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Italic</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ItalicToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/ItalicToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Italic</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Justify" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/Justify">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Justify</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="JustifyToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/JustifyToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Justify</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="LeftAlignToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/LeftAlignToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Align Left</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="LightGreen" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/LightGreen">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Light Green</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="LightYellow" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/LightYellow">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Light Yellow</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Lime" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/Lime">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Lime</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="List" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/List">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>List</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ListToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/ListToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>List</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="LoadingPage" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/LoadingPage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Loading Page</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="MergeCells" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/MergeCells">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Merge Cells</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="MergeCellsToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/MergeCellsToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Merge the Selected Cells</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="NoList" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/NoList">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>None</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="NoListToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/NoListToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>No List</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Normal" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/Normal">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Normal</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="NormalToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/NormalToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Normal</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="NoStrike" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/NoStrike">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>No Strike</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="NoStrikeToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/NoStrikeToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>No Strike</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="NumberingToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/NumberingToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Numbering</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Occurrences" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/Occurrences">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>occurrences are replaced.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="OptionPaneCloseButtonToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/OptionPaneCloseButtonToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Close</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="OptionsPaneResultsHeader" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/OptionsPaneResultsHeader">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Results</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="OptionsPaneSearch" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/OptionsPaneSearch">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Search</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="OptionsPaneSearchErrorMessage" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/OptionsPaneSearchErrorMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>We couldn't find what you were looking for.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="OptionsPaneSearchInformation" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/OptionsPaneSearchInformation">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Use search box for find text in the document.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="OptionsPaneSearchManyResultsInfo" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/OptionsPaneSearchManyResultsInfo">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>That's shows up a lot.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="OptionsPaneSearchNoResult" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/OptionsPaneSearchNoResult">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>No results found</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="OptionsPaneSearchOneResult" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/OptionsPaneSearchOneResult">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>1 result found</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="OptionsPaneSearchPaused" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/OptionsPaneSearchPaused">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Search paused</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="OptionsPaneSearchResult" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/OptionsPaneSearchResult">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Result</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="OptionsPaneSearchResultOf" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/OptionsPaneSearchResultOf">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>of</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Orange" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/Orange">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Orange</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ParagraphAlignmentToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/ParagraphAlignmentToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Paragraph Alignment</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="PasswordDialogEnterPassword" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/PasswordDialogEnterPassword">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Enter  the password</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Paste" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/Paste">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Paste</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="PasteToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/PasteToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Paste</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Pink" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/Pink">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Pink</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Plum" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/Plum">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Plum</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="PrintingPage" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/PrintingPage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Printing...</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="PrintPreview" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/PrintPreview">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Print Preview..</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Purple" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/Purple">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Purple</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Red" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/Red">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Red</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Redo" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/Redo">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Redo</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="RedoToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/RedoToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Redo</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="RemoveHyperlink" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/RemoveHyperlink">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Remove</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="RemoveHyperlinkToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/RemoveHyperlinkToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Remove Hyperlink</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ReplaceWith" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/ReplaceWith">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Replace with</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="RightAlignToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/RightAlignToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Align Right</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Rose" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/Rose">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Rose</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SingleStrike" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/SingleStrike">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Single Strike</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SingleStrikeToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/SingleStrikeToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Single Strike</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SkyBlue" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/SkyBlue">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Sky Blue</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SpellingPaneAddToDictionary" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/SpellingPaneAddToDictionary">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Add</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SpellingPaneChange" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/SpellingPaneChange">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Change</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SpellingPaneChangeAll" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/SpellingPaneChangeAll">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Change All</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SpellingPaneIgnoreAll" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/SpellingPaneIgnoreAll">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Ignore All</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SpellingPaneResume" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/SpellingPaneResume">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Resume</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SpellingPaneSpelling" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/SpellingPaneSpelling">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Spelling</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SpellingPaneSuccessMessage" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/SpellingPaneSuccessMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Spelling check complete. You're good to go!</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="StrikeThrough" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/StrikeThrough">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Strikethrough</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="StrikeThroughToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/StrikeThroughToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Strikethrough</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SubScript" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/SubScript">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Subscript</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SubScriptToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/SubScriptToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Subscript</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SuggestionBoxErrorMessage" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/SuggestionBoxErrorMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>We couldn’t find the person you were looking for.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SuperScript" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/SuperScript">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Superscript</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SuperScriptToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/SuperScriptToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Superscript</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Turquoise" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/Turquoise">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Turquoise</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Underline" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/Underline">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Underline</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="UnderlineToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/UnderlineToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Underline</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Undo" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/Undo">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Undo</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="UndoToolTip" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/UndoToolTip">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Undo</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="White" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/White">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>White</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Yellow" uri="ms-resource://Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP/Syncfusion.SfRichTextBoxAdv.UWP.Resources/Yellow">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Yellow</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

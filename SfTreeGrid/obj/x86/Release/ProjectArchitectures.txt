@@ -1,0 +1,1 @@
+D:\Samples_19.3.0.53\UWP\SfTreeGrid\Syncfusion.SampleBrowser.UWP.SfTreeGrid.csproj;x86

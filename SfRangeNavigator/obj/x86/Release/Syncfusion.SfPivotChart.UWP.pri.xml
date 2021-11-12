@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="Syncfusion.SfPivotChart.UWP" version="1.0" primary="true">
+		<Qualifiers/>
+		<ResourceMapSubtree name="Files">
+			<ResourceMapSubtree name="Syncfusion.SfPivotChart.UWP">
+				<NamedResource name="Syncfusion.SfPivotChart.UWP.xr.xml" uri="ms-resource://Syncfusion.SfPivotChart.UWP/Files/Syncfusion.SfPivotChart.UWP/Syncfusion.SfPivotChart.UWP.xr.xml">
+					<Candidate type="Path">
+						<Value>Syncfusion.SfPivotChart.UWP\Syncfusion.SfPivotChart.UWP.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Images">
+					<ResourceMapSubtree name="KPI">
+						<NamedResource name="Signal_All.png" uri="ms-resource://Syncfusion.SfPivotChart.UWP/Files/Syncfusion.SfPivotChart.UWP/Images/KPI/Signal_All.png">
+							<Candidate type="Path">
+								<Value>Syncfusion.SfPivotChart.UWP\Images\KPI\Signal_All.png</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="Signal_Green.png" uri="ms-resource://Syncfusion.SfPivotChart.UWP/Files/Syncfusion.SfPivotChart.UWP/Images/KPI/Signal_Green.png">
+							<Candidate type="Path">
+								<Value>Syncfusion.SfPivotChart.UWP\Images\KPI\Signal_Green.png</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="Signal_Red.png" uri="ms-resource://Syncfusion.SfPivotChart.UWP/Files/Syncfusion.SfPivotChart.UWP/Images/KPI/Signal_Red.png">
+							<Candidate type="Path">
+								<Value>Syncfusion.SfPivotChart.UWP\Images\KPI\Signal_Red.png</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="Signal_Yellow.png" uri="ms-resource://Syncfusion.SfPivotChart.UWP/Files/Syncfusion.SfPivotChart.UWP/Images/KPI/Signal_Yellow.png">
+							<Candidate type="Path">
+								<Value>Syncfusion.SfPivotChart.UWP\Images\KPI\Signal_Yellow.png</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="Status_Circle.png" uri="ms-resource://Syncfusion.SfPivotChart.UWP/Files/Syncfusion.SfPivotChart.UWP/Images/KPI/Status_Circle.png">
+							<Candidate type="Path">
+								<Value>Syncfusion.SfPivotChart.UWP\Images\KPI\Status_Circle.png</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="Status_Diamond.png" uri="ms-resource://Syncfusion.SfPivotChart.UWP/Files/Syncfusion.SfPivotChart.UWP/Images/KPI/Status_Diamond.png">
+							<Candidate type="Path">
+								<Value>Syncfusion.SfPivotChart.UWP\Images\KPI\Status_Diamond.png</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="Status_Triangle.png" uri="ms-resource://Syncfusion.SfPivotChart.UWP/Files/Syncfusion.SfPivotChart.UWP/Images/KPI/Status_Triangle.png">
+							<Candidate type="Path">
+								<Value>Syncfusion.SfPivotChart.UWP\Images\KPI\Status_Triangle.png</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="Trend_DownArrow.png" uri="ms-resource://Syncfusion.SfPivotChart.UWP/Files/Syncfusion.SfPivotChart.UWP/Images/KPI/Trend_DownArrow.png">
+							<Candidate type="Path">
+								<Value>Syncfusion.SfPivotChart.UWP\Images\KPI\Trend_DownArrow.png</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="Trend_RightArrow.png" uri="ms-resource://Syncfusion.SfPivotChart.UWP/Files/Syncfusion.SfPivotChart.UWP/Images/KPI/Trend_RightArrow.png">
+							<Candidate type="Path">
+								<Value>Syncfusion.SfPivotChart.UWP\Images\KPI\Trend_RightArrow.png</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="Trend_UpArrow.png" uri="ms-resource://Syncfusion.SfPivotChart.UWP/Files/Syncfusion.SfPivotChart.UWP/Images/KPI/Trend_UpArrow.png">
+							<Candidate type="Path">
+								<Value>Syncfusion.SfPivotChart.UWP\Images\KPI\Trend_UpArrow.png</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Properties">
+					<NamedResource name="Syncfusion.SfPivotChart.UWP.rd.xml" uri="ms-resource://Syncfusion.SfPivotChart.UWP/Files/Syncfusion.SfPivotChart.UWP/Properties/Syncfusion.SfPivotChart.UWP.rd.xml">
+						<Candidate type="Path">
+							<Value>Syncfusion.SfPivotChart.UWP\Properties\Syncfusion.SfPivotChart.UWP.rd.xml</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="Generic.Common.xbf" uri="ms-resource://Syncfusion.SfPivotChart.UWP/Files/Syncfusion.SfPivotChart.UWP/Themes/Generic.Common.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Generic.Style.Blend.xbf" uri="ms-resource://Syncfusion.SfPivotChart.UWP/Files/Syncfusion.SfPivotChart.UWP/Themes/Generic.Style.Blend.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Generic.Style.Lime.xbf" uri="ms-resource://Syncfusion.SfPivotChart.UWP/Files/Syncfusion.SfPivotChart.UWP/Themes/Generic.Style.Lime.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Generic.Style.Metro.xbf" uri="ms-resource://Syncfusion.SfPivotChart.UWP/Files/Syncfusion.SfPivotChart.UWP/Themes/Generic.Style.Metro.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Generic.Style.Office2010Black.xbf" uri="ms-resource://Syncfusion.SfPivotChart.UWP/Files/Syncfusion.SfPivotChart.UWP/Themes/Generic.Style.Office2010Black.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Generic.Style.Office2010Blue.xbf" uri="ms-resource://Syncfusion.SfPivotChart.UWP/Files/Syncfusion.SfPivotChart.UWP/Themes/Generic.Style.Office2010Blue.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Generic.Style.Office2010Silver.xbf" uri="ms-resource://Syncfusion.SfPivotChart.UWP/Files/Syncfusion.SfPivotChart.UWP/Themes/Generic.Style.Office2010Silver.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Generic.Style.Office2013DarkGray.xbf" uri="ms-resource://Syncfusion.SfPivotChart.UWP/Files/Syncfusion.SfPivotChart.UWP/Themes/Generic.Style.Office2013DarkGray.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Generic.Style.Office2013LightGray.xbf" uri="ms-resource://Syncfusion.SfPivotChart.UWP/Files/Syncfusion.SfPivotChart.UWP/Themes/Generic.Style.Office2013LightGray.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Generic.Style.Office2013White.xbf" uri="ms-resource://Syncfusion.SfPivotChart.UWP/Files/Syncfusion.SfPivotChart.UWP/Themes/Generic.Style.Office2013White.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Generic.Style.Office2016Colorful.xbf" uri="ms-resource://Syncfusion.SfPivotChart.UWP/Files/Syncfusion.SfPivotChart.UWP/Themes/Generic.Style.Office2016Colorful.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Generic.Style.Office2016DarkGray.xbf" uri="ms-resource://Syncfusion.SfPivotChart.UWP/Files/Syncfusion.SfPivotChart.UWP/Themes/Generic.Style.Office2016DarkGray.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Generic.Style.Office2016White.xbf" uri="ms-resource://Syncfusion.SfPivotChart.UWP/Files/Syncfusion.SfPivotChart.UWP/Themes/Generic.Style.Office2016White.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Generic.Style.Office365.xbf" uri="ms-resource://Syncfusion.SfPivotChart.UWP/Files/Syncfusion.SfPivotChart.UWP/Themes/Generic.Style.Office365.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Generic.Style.Saffron.xbf" uri="ms-resource://Syncfusion.SfPivotChart.UWP/Files/Syncfusion.SfPivotChart.UWP/Themes/Generic.Style.Saffron.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Generic.Style.VisualStudio2013.xbf" uri="ms-resource://Syncfusion.SfPivotChart.UWP/Files/Syncfusion.SfPivotChart.UWP/Themes/Generic.Style.VisualStudio2013.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Generic.Style.VisualStudio2015.xbf" uri="ms-resource://Syncfusion.SfPivotChart.UWP/Files/Syncfusion.SfPivotChart.UWP/Themes/Generic.Style.VisualStudio2015.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Generic.xbf" uri="ms-resource://Syncfusion.SfPivotChart.UWP/Files/Syncfusion.SfPivotChart.UWP/Themes/Generic.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

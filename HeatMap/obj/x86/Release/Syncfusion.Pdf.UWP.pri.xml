@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="Syncfusion.Pdf.UWP" version="1.0" primary="true">
+		<Qualifiers/>
+		<ResourceMapSubtree name="Files">
+			<ResourceMapSubtree name="Syncfusion.Pdf.UWP">
+				<ResourceMapSubtree name="Properties">
+					<NamedResource name="Syncfusion.Pdf.UWP.rd.xml" uri="ms-resource://Syncfusion.Pdf.UWP/Files/Syncfusion.Pdf.UWP/Properties/Syncfusion.Pdf.UWP.rd.xml">
+						<Candidate type="Path">
+							<Value>Syncfusion.Pdf.UWP\Properties\Syncfusion.Pdf.UWP.rd.xml</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

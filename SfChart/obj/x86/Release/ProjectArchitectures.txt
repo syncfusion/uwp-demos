@@ -1,0 +1,1 @@
+D:\Samples_19.3.0.53\UWP\SfChart\Syncfusion.SampleBrowser.UWP.SfChart.csproj;x86

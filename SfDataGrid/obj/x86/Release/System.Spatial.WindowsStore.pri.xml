@@ -1,0 +1,1386 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="System.Spatial.WindowsStore" version="1.0" primary="true">
+		<Qualifiers>
+			<Language>en,de,es,fr,it,ja,ko,ru,zh-Hans,zh-Hant</Language>
+		</Qualifiers>
+		<ResourceMapSubtree name="System.Spatial">
+			<NamedResource name="GeoJsonReader_ExpectedArray" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/GeoJsonReader_ExpectedArray">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>無效的 GeoJSON。在需要陣列的陣列元素中找到基本值。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>GeoJSON 无效。在需要数组的数组元素中找到了基元值。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>Недопустимый GeoJSON. В элементе массива обнаружено значение-примитив, а ожидался массив.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>잘못된 GeoJSON입니다. 배열 요소에서 기본 값을 찾았지만 배열이 필요합니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>GeoJSON が無効です。プリミティブ型の値が、配列が必要とされる配列要素で見つかりました。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>GeoJSON non valido. Trovato un valore primitivo in un elemento di matrice in cui era prevista una matrice.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>GeoJSON non valide. Une valeur primitive a été trouvée dans un élément de tableau alors qu'un tableau était attendu.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>GeoJSON no válido. Se encontró un valor primitivo en un elemento de matriz donde se esperaba una matriz.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>Invalid GeoJSON. A primitive value was found in an array element where an array was expected.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Ungültige GeoJSON. In einem Arrayelement wurde ein primitiver Wert gefunden, stattdessen wurde ein Array erwartet.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="GeoJsonReader_ExpectedNumeric" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/GeoJsonReader_ExpectedNumeric">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>無效的 GeoJSON。在需要數值的陣列元素中找到非數值。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>GeoJSON 无效。在需要数字值的数组元素找到了非数字值。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>Недопустимый GeoJSON. В элементе массива обнаружено нечисловое значение, а ожидалось числовое значение.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>잘못된 GeoJSON입니다. 배열 요소에서 숫자가 아닌 값을 찾았지만 숫자 값이 필요합니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>GeoJSON が無効です。数値以外の値が、数値が必要とされる配列要素で見つかりました。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>GeoJSON non valido. Trovato un valore non numerico in un elemento di matrice in cui era previsto un valore numerico.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>GeoJSON non valide. Une valeur non numérique a été trouvée dans un élément de tableau alors qu'une valeur numérique était attendue.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>GeoJSON no válido.Se encontró un valor no numérico en un elemento de matriz donde se esperaba un valor numérico.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>Invalid GeoJSON. A non-numeric value was found in an array element where a numeric value was expected.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Ungültige GeoJSON. In einem Arrayelement wurde ein nicht numerischer Wert gefunden; stattdessen wurde ein numerischer Wert erwartet.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="GeoJsonReader_InvalidCrsName" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/GeoJsonReader_InvalidCrsName">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>無效的 GeoJSON。值 '{0}' 不是可辨識的 CRS 名稱。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>GeoJSON 无效。值“{0}”不是已识别的 CRS 名称。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>Недопустимый GeoJSON. Значение "{0}" не соответствует известному имени CRS.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>잘못된 GeoJSON입니다. 값 '{0}'은(는) 인식할 수 있는 CRS 이름이 아닙니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>GeoJSON が無効です。値 '{0}' は、認識された CRS 名ではありません。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>GeoJSON non valido. Il valore '{0}' non è un nome CRS riconosciuto.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>GeoJSON non valide. La valeur '{0}' n'est pas un nom CRS reconnu.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>GeoJSON no válido. El valor '{0}' no es un nombre CRS reconocido.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>Invalid GeoJSON. The value '{0}' is not a recognized CRS name.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Ungültige GeoJSON. Der Wert "{0}" ist kein bekannter CRS-Name.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="GeoJsonReader_InvalidCrsType" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/GeoJsonReader_InvalidCrsType">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>無效的 GeoJSON。值 '{0}' 不是可辨識的 CRS 類型。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>GeoJSON 无效。值“{0}”不是已识别的 CRS 类型。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>Недопустимый GeoJSON. Значение "{0}" не соответствует известному типу CRS.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>잘못된 GeoJSON입니다. 값 '{0}'은(는) 인식할 수 있는 CRS 형식이 아닙니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>GeoJSON が無効です。値 '{0}' は、認識された CRS 型ではありません。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>GeoJSON non valido. Il valore '{0}' non è un tipo CRS riconosciuto.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>GeoJSON non valide. La valeur '{0}' n'est pas un type CRS reconnu.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>GeoJSON no válido. El valor '{0}' no es un tipo CRS reconocido.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>Invalid GeoJSON. The value '{0}' is not a recognized CRS type.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Ungültige GeoJSON. Der Wert "{0}" ist kein bekannter CRS-Typ.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="GeoJsonReader_InvalidNullElement" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/GeoJsonReader_InvalidNullElement">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>無效的 GeoJSON。在陣列元素中找到 null 值，但不允許 null。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>GeoJSON 无效。在不允许 Null 的数组元素中找到了 Null 值。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>Недопустимый GeoJSON. В элементе массива, где не допускаются значения NULL, обнаружено значение NULL.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>잘못된 GeoJSON입니다. Null을 사용할 수 없는 배열 요소에 Null 값이 있습니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>GeoJSON が無効です。NULL が許可されていない配列要素で NULL 値が見つかりました。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>GeoJSON non valido. È stato trovato un valore Null in un elemento di matrice, dove i valori Null non sono consentiti.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>GeoJSON non valide. Une valeur Null a été trouvée dans un élément de tableau dans lequel les valeurs Null ne sont pas autorisées.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>GeoJSON no válido. Se encontró un elemento NULL en un elemento de matriz donde no se permiten elementos NULL.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>Invalid GeoJSON. A null value was found in an array element where nulls are not allowed.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Ungültige GeoJSON. Ein NULL-Wert wurde in einem Arrayelement gefunden, in dem NULL-Werte nicht zulässig sind.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="GeoJsonReader_InvalidPosition" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/GeoJsonReader_InvalidPosition">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>無效的 GeoJSON。位置必須包含至少兩個但不超過四個的項目。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>GeoJSON 无效。位置必须至少包含两个元素，但不能超过四个元素。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>Недопустимый GeoJSON. Позиция должна содержать не менее двух и не более четырех элементов.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>잘못된 GeoJSON입니다. 위치가 2개에서 4개 사이의 요소를 포함해야 합니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>GeoJSON が無効です。1 か所に 2 個または 3 個の要素が必要です。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>GeoJSON non valido. Una posizione deve contenere almeno due elementi e non più di quattro.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>GeoJSON non valide. Une position doit contenir au moins deux et pas plus de quatre éléments.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>GeoJSON no válido. Una posición debe contener al menos dos y no más de cuatro elementos.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>Invalid GeoJSON. A position must contain at least two and no more than four elements.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Ungültige GeoJSON. Eine Position muss mindestens zwei und nicht mehr als vier Elemente enthalten.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="GeoJsonReader_InvalidTypeName" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/GeoJsonReader_InvalidTypeName">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>無效的 GeoJSON。值 '{0}' 不是 'type' 成員的有效值。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>GeoJSON 无效。值“{0}”对于“type”成员不是有效的值。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>Недопустимый GeoJSON. Значение "{0}" недопустимо для элемента "type".</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>잘못된 GeoJSON입니다. 값 '{0}'은(는) 'type' 멤버에 올바른 값이 아닙니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>GeoJSON が無効です。値 '{0}' は、'型' メンバーに有効な値ではありません。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>GeoJSON non valido. '{0}' non è un valore valido per il membro 'type'.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>GeoJSON non valide. La valeur '{0}' n'est pas valide pour le membre 'type'.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>GeoJSON no válido. '{0}' no es un valor válido para el miembro 'type'.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>Invalid GeoJSON. The value '{0}' is not a valid value for the 'type' member.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Ungültige GeoJSON. Der Wert "{0}" ist kein gültiger Wert für das type-Element.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="GeoJsonReader_MissingRequiredMember" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/GeoJsonReader_MissingRequiredMember">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>無效的 GeoJSON。需要 '{0}' 成員，但找不到。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>GeoJSON 无效。“{0}”成员是必需的，但找不到。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>Недопустимый GeoJSON. Не найден обязательный элемент "{0}".</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>잘못된 GeoJSON입니다. '{0}' 멤버가 필요한데 없습니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>GeoJSON が無効です。メンバー '{0}' が必要ですが、見つかりませんでした。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>GeoJSON non valido. Il membro '{0}' è obbligatorio, ma non è stato trovato.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>GeoJSON non valide. Le membre '{0}' est requis mais est introuvable.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>GeoJSON no válido. El miembro '{0}' es necesario, pero no se encontró.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>Invalid GeoJSON. The '{0}' member is required, but was not found.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Ungültige GeoJSON. Das Element "{0}" ist erforderlich, wurde aber nicht gefunden.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="GmlReader_EmptyRingsNotAllowed" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/GmlReader_EmptyRingsNotAllowed">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>GML 格式不正確: LinearRing 元素不可以空白。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>GML 格式不正确: LinearRing 元素不能为空。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>Неверный формат GML: элемент LinearRing не может быть пустым.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>잘못된 GML 형식입니다. LinearRing 요소를 비워 둘 수 없습니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>GML 形式が正しくありません: LinearRing 要素を空にすることはできません。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>Formato GML non corretto. Un elemento LinearRing  non deve essere vuoto.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>Format GML incorrect : un élément LinearRing ne doit pas être vide.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>Formato GML incorrecto: un elemento LinearRing no debe estar vacío.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>Incorrect GML Format: a LinearRing element must not be empty.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Falsches GML-Format: Ein LinearRing-Element darf nicht leer sein.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="GmlReader_ExpectReaderAtElement" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/GmlReader_ExpectReaderAtElement">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>GML 格式不正確: XmlReader 執行個體必須在 GML 項目的開頭。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>GML 格式不正确: XmlReader 实例应位于 GML 元素的开头。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>Неверный формат GML: экземпляр XmlReader должен находиться в начале элемента GML.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>잘못된 GML 형식입니다. XmlReader 인스턴스가 GML 요소의 시작에 있어야 합니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>GML 形式が正しくありません: XmlReader インスタンスは、GML 要素の先頭に必要です。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>Formato GML non corretto: l'istanza XmlReader deve trovarsi all'inizio di un elemento GML.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>Format GML incorrect : l'instance XmlReader doit figurer au début d'un élément GML.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>Formato GML incorrecto: se espera que la instancia de XmlReader esté al principio de un elemento GML.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>Incorrect GML Format: the XmlReader instance is expected to be at the start of a GML element.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Falsches GML-Format: Die XmlReader-Instanz wird am Anfang eines GML-Elements erwartet.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="GmlReader_InvalidAttribute" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/GmlReader_InvalidAttribute">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>不支援項目 '{1}' 上的屬性 '{0}'。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>不支持元素“{1}”上的特性“{0}”。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>Атрибут "{0}" элемента "{1}" не поддерживается.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>'{1}' 요소에 대한 '{0}' 특성은 지원되지 않습니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>要素 '{1}' の属性は '{0}' はサポートされません。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>Attributo '{0}' nell'elemento '{1}' non supportato.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>L'attribut '{0}' sur l'élément '{1}' n'est pas pris en charge.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>No se admite el atributo '{0}' en el elemento '{1}'.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>The attribute '{0}' on element '{1}' is not supported.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Das Attribut "{0}" für das Element "{1}" wird nicht unterstützt.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="GmlReader_InvalidSpatialType" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/GmlReader_InvalidSpatialType">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>GML 格式不正確: 未知的空間類型標記 "{0}"。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>GML 格式不正确: 未知的空间类型标记“{0}”。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>Неверный формат GML: неизвестный тег пространственного типа "{0}".</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>잘못된 GML 형식입니다. 알 수 없는 공간 형식 태그 "{0}"입니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>GML 形式が正しくありません: 不明な空間型タグ "{0}" です。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>Formato GML non corretto: tag di tipo spaziale "{0}" sconosciuto.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>Format GML incorrect : balise de type spatial inconnue '{0}'.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>Formato GML incorrecto: etiqueta de tipo espacial desconocido "{0}".</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>Incorrect GML Format: unknown spatial type tag "{0}".</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Falsches GML-Format: Unbekanntes Tag "{0}" für räumlichen Typ.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="GmlReader_InvalidSrsName" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/GmlReader_InvalidSrsName">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>GML 格式不正確: srsName 屬性必須以命名空間 "{0}" 開頭。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>GML 格式不正确: srsName 特性必须以命名空间“{0}”开头。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>Неверный формат GML: атрибут srsName должен начинаться с пространства имен "{0}".</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>잘못된 GML 형식입니다. srsName 특성은 "{0}" 네임스페이스로 시작해야 합니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>GML 形式が正しくありません: srsName 属性は、名前空間 "{0}" で始める必要があります。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>Formato GML non corretto. Un attributo srsName deve iniziare con lo spazio dei nomi "{0}".</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>Format GML incorrect : un attribut srsName doit commencer par l'espace de noms '{0}'.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>Formato GML incorrecto: un atributo srsName debe empezar con el espacio de nombres "{0}".</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>Incorrect GML Format: a srsName attribute must begin with the namespace "{0}".</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Falsches GML-Format: Ein srsName-Attribut muss mit dem Namespace '{0}' beginnen.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="GmlReader_PosListNeedsEvenCount" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/GmlReader_PosListNeedsEvenCount">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>GML 格式不正確: posList 元素必須包含偶數個數的座標。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>GML 格式不正确: posList 元素必须包含偶数个坐标。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>Неверный формат GML: элемент posList должен содержать четное число координат.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>잘못된 GML 형식입니다. posList 요소는 짝수 개수의 좌표를 포함해야 합니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>GML 形式が正しくありません: posList 要素には、偶数の座標を含める必要があります。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>Formato GML non corretto. Un elemento posList deve contenere un numero pari di coordinate.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>Format GML incorrect : un élément posList doit contenir un nombre pair de coordonnées.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>Formato GML incorrecto: un elemento posList debe contener un número par de coordenadas.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>Incorrect GML Format: a posList element must contain an even number of coordinates.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Falsches GML-Format: Ein posList-Element muss eine gerade Anzahl an Koordinaten enthalten.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="GmlReader_PosNeedTwoNumbers" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/GmlReader_PosNeedTwoNumbers">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>GML 格式不正確: pos 元素必須包含至少兩個座標。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>GML 格式不正确: pos 元素必须包含至少两个坐标。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>Неверный формат GML: элемент pos должен содержать не менее двух координат.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>잘못된 GML 형식입니다. pos 요소는 두 개 이상의 좌표를 포함해야 합니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>GML 形式が正しくありません: pos 要素には、少なくとも 2 つの座標を含める必要があります。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>Formato GML non corretto. Un elemento pos deve contenere almeno due coordinate.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>Format GML incorrect : un élément pos doit contenir au moins deux coordonnées.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>Formato GML incorrecto: un elemento pos debe contener al menos dos coordenadas.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>Incorrect GML Format: a pos element must contain at least two coordinates.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Falsches GML-Format: Ein pos-Element muss mindestens zwei Koordinaten enthalten.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="GmlReader_UnexpectedElement" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/GmlReader_UnexpectedElement">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>GML 格式不正確: XmlReader 執行個體發現未預期的元素 "{0}"。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>GML 格式不正确: XmlReader 实例遇到意外的元素“{0}”。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>Неверный формат GML: экземпляр XmlReader обнаружил непредвиденный элемент "{0}".</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>GML 형식이 잘못되었습니다. XmlReader 인스턴스에서 예기치 않은 요소 "{0}"이(가) 발견되었습니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>GML 形式が正しくありません: XmlReader インスタンスに、予期しない要素 "{0}" が検出されました。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>Formato GML non corretto. L'istanza di XmlReader ha rilevato un elemento imprevisto "{0}".</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>Format GML incorrect : l'instance XmlReader a rencontré un élément inattendu "{0}".</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>Formato GML incorrecto: la instancia de XmlReader encontró un elemento inesperado "{0}".</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>Incorrect GML Format: The XmlReader instance encountered an unexpected element "{0}".</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Falsches GML-Format: Von der XmlReader-Instanz wurde das unerwartete Element '{0}' gefunden.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="InvalidPointCoordinate" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/InvalidPointCoordinate">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>值 '{0}' 對座標 '{1}' 而言無效。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>值“{0}”对于坐标“{1}”无效。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>Значение "{0}" недопустимо для координаты "{1}".</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>값 '{0}'은(는) '{1}' 좌표에 사용할 수 없습니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>値 '{0}' は座標 '{1}' に対して無効です。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>Valore '{0}' non valido per la coordinata '{1}'.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>La valeur '{0}' n'est pas valide pour la coordonnée '{1}'.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>El valor '{0}' no es válido para la coordenada '{1}'.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>The value '{0}' is not valid for the coordinate '{1}'.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Der Wert '{0}' ist für die Koordinate '{1}' ungültig.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="JsonReaderExtensions_CannotReadPropertyValueAsString" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/JsonReaderExtensions_CannotReadPropertyValueAsString">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>無法將屬性 '{1}' 的值 '{0}' 讀取為具引號的 JSON 字串值。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>无法读取属性“{1}”的值“{0}”作为带引号的 JSON 字符串值。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>Не удается считать значение "{0}" для свойства "{1}" как строковое значение JSON в кавычках.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>'{1}' 속성에 대한 값 '{0}'을(를) 따옴표로 묶은 JSON 문자열 값으로 읽을 수 없습니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>プロパティ '{1}' の値 '{0}' を引用符で囲まれた文字列値として読み取ることができません。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>Impossibile leggere il valore '{0}' della proprietà '{1}' come valore stringa JSON delimitato.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>Impossible de lire la valeur '{0}' pour la propriété '{1}' en tant que valeur de chaîne JSON entre guillemets.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>No se puede leer el valor '{0}' para la propiedad '{1}' como un valor de cadena JSON entre comillas.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>Cannot read the value '{0}' for the property '{1}' as a quoted JSON string value.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Der Wert "{0}" für die Eigenschaft "{1}" kann nicht als JSON-Zeichenfolgenwert in Anführungszeichen gelesen werden.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="JsonReaderExtensions_CannotReadValueAsJsonObject" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/JsonReaderExtensions_CannotReadValueAsJsonObject">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>無法將值 '{0}' 讀取為 JSON 物件。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>无法读取值“{0}”作为 JSON 对象。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>Не удается считать значение "{0}" как объект JSON.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>값 '{0}'을(를) JSON 개체로 읽을 수 없습니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>値 '{0}' を JSON オブジェクトとして読み取ることはできません。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>Impossibile leggere il valore '{0}' come oggetto JSON.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>Impossible de lire la valeur '{0}' en tant qu'objet JSON.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>No se puede leer el valor '{0}' como un objeto JSON.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>Cannot read the value '{0}' as a JSON object.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Den Wert "{0}" kann nicht als JSON-Objekt gelesen werden.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Point_AccessCoordinateWhenEmpty" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/Point_AccessCoordinateWhenEmpty">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>不支援存取空白點的座標屬性。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>不支持访问空点的坐标属性。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>Доступ к свойствам координат пустой точки не поддерживается.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>빈 지점의 좌표 속성에 대한 액세스는 지원되지 않습니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>空のポイントの座標プロパティへのアクセスはサポートされていません。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>L'accesso alle proprietà delle coordinate di un punto vuoto non è supportato.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>L'accès aux propriétés de coordonnées d'un point vide n'est pas pris en charge.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>No se admite el acceso a las propiedades de coordenadas de un punto vacío.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>Access to the coordinate properties of an empty point is not supported.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Der Zugriff auf die Koordinateneigenschaften eines leeren Punkts wird nicht unterstützt.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="PriorityQueueDoesNotContainItem" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/PriorityQueueDoesNotContainItem">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>佇列中沒有具有優先順序 {0} 的項目。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>队列不包含具有优先级 {0} 的项。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>Очередь не содержит элемент с приоритетом {0}.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>큐에 {0} 우선 순위의 항목이 없습니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>キューには、優先度 {0} のアイテムが含まれていません。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>La coda non contiene un elemento con la priorità {0}.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>La file d'attente ne contient pas d'élément avec la priorité {0}.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>La cola no contiene un elemento con la prioridad {0}.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>The queue doesn't contain an item with the priority {0}.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>In der Warteschlange ist kein Element mit der Priorität {0} enthalten.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="PriorityQueueEnqueueExistingPriority" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/PriorityQueueEnqueueExistingPriority">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>具有相同優先順序的項目已經存在。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>具有相同优先级的项已存在。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>Уже существует элемент с таким приоритетом.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>동일한 우선 순위의 항목이 이미 있습니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>同じ優先度のアイテムが既に存在します。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>Un elemento con la stessa priorità esiste già.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>Il existe déjà un élément avec la même priorité.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>Ya existe un elemento con la misma prioridad.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>An item with the same priority already exists.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Ein Element mit derselben Priorität ist bereits vorhanden.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="PriorityQueueOperationNotValidOnEmptyQueue" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/PriorityQueueOperationNotValidOnEmptyQueue">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>作業在空的佇列上無效。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>该操作对于空队列无效。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>Эта операция недопустима для пустой очереди.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>작업이 빈 큐에서 올바르지 않습니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>空のキューに対する操作は無効です。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>Operazione non valida in una coda vuota.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>L'opération n'est pas valide sur une file d'attente vide.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>La operación no es válida en una cola vacía.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>The operation is not valid on an empty queue.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Der Vorgang ist für eine leere Warteschlange nicht gültig.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SpatialBuilder_CannotCreateBeforeDrawn" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/SpatialBuilder_CannotCreateBeforeDrawn">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>必須等到所有管線呼叫都完成後，產生器才能建立執行個體。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>在完成所有管道调用之前，生成器无法创建实例。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>Построитель не может создать экземпляр до завершения всех вызовов конвейера.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>모든 파이프라인 호출을 완료할 때까지 작성기에서 인스턴스를 만들 수 없습니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>ビルダーは、パイプラインの呼び出しがすべて完了するまでインスタンスを作成できません。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>Il compilatore non è grado di creare un'istanza fino a quando tutte le chiamate alla pipeline non sono state completate.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>Le générateur ne peut pas créer une instance avant la fin de tous les appels de pipeline.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>El generador no puede crear una instancia hasta que se hayan completado todas las llamadas de canalización.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>The builder cannot create an instance until all pipeline calls are completed.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Der Generator kann erst eine Instanz erstellen, nachdem alle Pipeline-Aufrufe abgeschlossen sind.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SpatialImplementation_NoRegisteredOperations" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/SpatialImplementation_NoRegisteredOperations">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>未登錄任何作業。請使用 SpatialImplementation.CurrentImplementation.Operations 屬性提供作業。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>未注册任何操作。请使用 SpatialImplementation.CurrentImplementation.Operations 属性提供操作。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>Операции не зарегистрированы. Укажите операции посредством свойства SpatialImplementation.CurrentImplementation.Operations.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>등록된 작업이 없습니다. SpatialImplementation.CurrentImplementation.Operations 속성을 사용하여 작업을 제공하십시오.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>操作が登録されていません。SpatialImplementation.CurrentImplementation.Operations プロパティを使用して操作を指定してください。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>Nessuna operazione registrata. Fornire le operazioni utilizzando la proprietà SpatialImplementation.CurrentImplementation.Operations.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>Aucune opération n'est enregistrée. Veuillez fournir des opérations utilisant la propriété SpatialImplementation.CurrentImplementation.Operations.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>No hay ninguna operación registrada. Proporcione operaciones mediante la propiedad SpatialImplementation.CurrentImplementation.Operations.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>No operations are registered. Please provide operations using SpatialImplementation.CurrentImplementation.Operations property.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Es sind keine Vorgänge registriert. Geben Sie Vorgänge mithilfe der SpatialImplementation.CurrentImplementation.Operations-Eigenschaft an.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Validator_FullGlobeCannotHaveElements" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/Validator_FullGlobeCannotHaveElements">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>無效的空間資料: 空間類型 "FullGlobe" 不可以包含數字。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>空间数据无效: 空间类型“FullGlobe”不能包含任何图表。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>Недопустимые пространственные данные: пространственный тип "FullGlobe" не может содержать фигуры.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>잘못된 공간 데이터입니다. 공간 형식 "FullGlobe"는 숫자를 포함할 수 없습니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>空間データが無効です: 空間型 "FullGlobe" には数字を含めることができません。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>Dati spaziali non validi: il tipo spaziale "FullGlobe" non può contenere cifre.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>Données spatiales non valides : le type spatial 'FullGlobe' ne peut pas contenir de chiffres.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>Datos espaciales no válidos: el tipo espacial "FullGlobe" no puede contener cifras.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>Invalid spatial data: the spatial type "FullGlobe" cannot contain figures.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Ungültige räumliche Daten: Der räumliche FullGlobe-Typ darf keine Zahlen enthalten.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Validator_FullGlobeInCollection" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/Validator_FullGlobeInCollection">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>無效的空間資料: 空間類型 "FullGlobe" 不可以是收集類型的一部分。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>空间数据无效: 空间类型“FullGlobe”不能是集合类型的一部分。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>Недопустимые пространственные данные: пространственный тип "FullGlobe" не может быть частью типа коллекции.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>잘못된 공간 데이터입니다. 공간 형식 "FullGlobe"는 컬렉션 형식의 일부분일 수 없습니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>空間データが無効です: 空間型 "FullGlobe" はコレクション型に含めることができません。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>Dati spaziali non validi: il tipo spaziale "FullGlobe" non può essere parte di un tipo di raccolta.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>Données spatiales non valides : le type spatial "FullGlobe" ne peut pas faire partie d'un type de collection.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>Datos espaciales no válidos: el tipo espacial "FullGlobe" no puede formar parte de un tipo de colección.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>Invalid spatial data: the spatial type "FullGlobe" cannot be part of a collection type.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Ungültige räumliche Daten: Der räumliche Typ "FullGlobe" kann nicht Teil eines Auflistungstyps sein.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Validator_InvalidLatitudeCoordinate" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/Validator_InvalidLatitudeCoordinate">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>無效的緯度座標 {0}。緯度座標必須是介於 -90.0 到 +90.0 度之間的值。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>纬度坐标 {0} 无效。纬度坐标必须是 -90.0 到 +90.0 度之间的值。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>Недопустимая координата широты {0}. Координата широты может определяться только в диапазоне от -90,0 до +90,0 градусов.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>잘못된 위도 좌표 {0}입니다. 위도 좌표는 -90.0도에서 +90.0도 사이의 값이어야 합니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>座標 (緯度) {0} が無効です。座標 (緯度) には、-90.0 度から +90.0 度までの値を指定する必要があります。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>Coordinata di latitudine {0} non valida. Il valore di una coordinata di latitudine deve essere compreso tra -90,0 e +90,0 gradi.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>Coordonnée de latitude non valide {0}. La valeur d'une coordonnée de latitude doit être comprise entre -90.0 et +90.0 degrés.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>Coordenada de latitud no válida {0}. Una coordenada de latitud debe ser un valor comprendido entre -90.0 y +90.0 grados.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>Invalid latitude coordinate {0}. A latitude coordinate must be a value between -90.0 and +90.0 degrees.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Ungültige Breitenkoordinate {0}. Eine Breitenkoordinate muss einem Wert zwischen -90,0 und +90,0 Grad entsprechen.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Validator_InvalidLongitudeCoordinate" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/Validator_InvalidLongitudeCoordinate">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>無效的經度座標 {0}。經度座標必須是介於 -15069.0 到 +15069.0 度之間的值</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>经度坐标 {0} 无效。经度坐标必须是 -15069.0 到 +15069.0 度之间的值</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>Недопустимая координата долготы {0}. Координата долготы может определяться только в диапазоне от -15069,0 до +15069,0 градусов.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>잘못된 경도 좌표 {0}입니다. 경도 좌표는 -15069.0도에서 +15069.0도 사이의 값이어야 합니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>座標 (経度) {0} が無効です。座標 (経度) には、-15069.0 度から +15069.0 度までの値を指定する必要があります。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>Coordinata di longitudine {0} non valida. Il valore di una coordinata di longitudine deve essere compreso tra -15069,0 e +15069,0 gradi.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>Coordonnée de longitude non valide {0}. La valeur d'une coordonnée de longitude doit être comprise entre -15069.0 et +15069.0 degrés</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>Coordenada de longitud no válida {0}. Una coordenada de longitud debe ser un valor comprendido entre -15069.0 y +15069.0 grados.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>Invalid longitude coordinate {0}. A longitude coordinate must be a value between -15069.0 and +15069.0 degrees</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Ungültige Längenkoordinate {0}. Eine Längenkoordinate muss einem Wert zwischen -15069,0 und +15069,0 Grad entsprechen.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Validator_InvalidPointCoordinate" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/Validator_InvalidPointCoordinate">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>無效的空間資料: 座標 ({0} {1} {2} {3}) 無效。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>空间数据无效: 坐标({0} {1} {2} {3})无效。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>Недопустимые пространственные данные: недопустимые координаты ({0} {1} {2} {3}).</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>잘못된 공간 데이터입니다. 좌표({0} {1} {2} {3})가 잘못되었습니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>空間データが無効です: 座標 ({0} {1} {2} {3}) が無効です。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>Dati spaziali non validi. Coordinate ({0} {1} {2} {3}) non valide.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>Données spatiales non valides : les coordonnées ({0} {1} {2} {3}) ne sont pas valides.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>Datos espaciales no válidos: las coordenadas ({0} {1} {2} {3}) no son válidas.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>Invalid spatial data: the coordinates ({0} {1} {2} {3}) are not valid.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Ungültige räumliche Daten: Die Koordinaten ({0} {1} {2} {3}) sind ungültig.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Validator_InvalidPolygonPoints" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/Validator_InvalidPolygonPoints">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>無效的空間資料: 多邊形環必須包含至少四個點，而且最後一個點必須等於第一個點。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>空间数据无效: 多边形环必须至少包含四个点，且最后一个点必须等于第一个点。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>Недопустимые пространственные данные: кольцо полигона должно содержать не менее четырех точек, причем первая должна совпадать с последней.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>잘못된 공간 데이터입니다. 다각형 링은 4개 이상의 지점을 포함해야 하며 마지막 지점은 첫 번째 지점과 같아야 합니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>空間データが無効です: ポリゴンのリングには少なくとも 4 つのポイントを含める必要があります。さらに、最後のポイントと最初のポイントを等しくする必要があります。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>Dati spaziali non validi. Un anello del poligono deve contenere almeno quattro punti con l'ultimo punto uguale al primo.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>Données spatiales non valides : un anneau de polygone doit contenir au moins quatre points et le dernier point doit être égal au premier point.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>Datos espaciales no válidos: un anillo de polígonos debe contener al menos cuatro puntos y el último punto debe ser igual que el primero.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>Invalid spatial data: A polygon ring must contain at least four points, and the last point must be equal to the first point.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Ungültige räumliche Daten: Ein Polygonring muss mindestens vier Punkte enthalten, wobei der letzte Punkt gleich dem ersten Punkt sein muss.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Validator_InvalidType" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/Validator_InvalidType">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>無效的空間資料: 無效的空間類型 "{0}"。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>空间数据无效: 空间类型“{0}”无效。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>Недопустимые пространственные данные: недопустимый пространственный тип "{0}".</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>잘못된 공간 데이터입니다. 공간 형식 "{0}"이(가) 잘못되었습니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>空間データが無効です: 空間型 "{0}" が無効です。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>Dati spaziali non validi. Tipo spaziale "{0}" non valido.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>Données spatiales non valides : type spatial "{0}" non valide.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>Datos espaciales no válidos: tipo espacial no válido "{0}".</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>Invalid spatial data: Invalid spatial type "{0}".</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Ungültige räumliche Daten: Ungültiger räumlicher Typ '{0}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Validator_LineStringNeedsTwoPoints" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/Validator_LineStringNeedsTwoPoints">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>無效的空間資料: 空間類型 "LineString" 必須包含至少兩個點。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>空间数据无效: 空间类型“LineString”必须包含至少两个点。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>Недопустимые пространственные данные: пространственный тип "LineString" должен содержать не менее двух точек.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>잘못된 공간 데이터입니다. 공간 형식 "LineString"은 두 개 이상의 지점을 포함해야 합니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>空間データが無効です: 空間型 "LineString" には、少なくとも 2 つのポイントが必要です。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>Dati spaziali non validi: il tipo spaziale "LineString" deve contenere almeno due punti.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>Données spatiales non valides : le type spatial "LineString" doit contenir au moins deux points.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>Datos espaciales no válidos: el tipo espacial "LineString" debe contener al menos dos puntos.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>Invalid spatial data: the spatial type "LineString" must contain at least two points.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Ungültige räumliche Daten: Der räumliche Typ "LineString" muss mindestens zwei Punkte enthalten.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Validator_NestingOverflow" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/Validator_NestingOverflow">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>無效的空間資料: 收集類型只支援 {0} 層巢狀。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>空间数据无效: 在集合类型中只支持 {0} 级嵌套。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>Недопустимые пространственные данные: в типах коллекции поддерживается только {0} уровней вложенности.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>잘못된 공간 데이터입니다. 컬렉션 형식에서는 {0}개 수준의 중첩만 지원됩니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>空間データが無効です: コレクション型でサポートされている入れ子のレベルは {0} だけです。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>Dati spaziali non validi: nei tipi di raccolte sono supportati solo {0} livelli di annidamento.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>Données spatiales non valides : seuls {0}  niveaux d'imbrication sont pris en charge dans les types de collection.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>Datos espaciales no válidos: solo se admiten {0} niveles de anidamiento en tipos de colección.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>Invalid spatial data: only {0} levels of nesting are supported in collection types.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Ungültige räumliche Daten: In Auflistungstypen werden nur {0} Ebenen der Verschachtelung unterstützt.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Validator_SridMismatch" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/Validator_SridMismatch">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>無效的空間資料: 空間類型執行個體的所有座標只能有一個唯一的 CoordinateSystem。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>空间数据无效: 空间类型的实例只能有一个唯一的 CoordinateSystem 表示其所有坐标。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>Недопустимые пространственные данные: в экземпляре пространственных данных для всех координат должна использоваться только одна уникальная CoordinateSystem.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>잘못된 공간 데이터입니다. 공간 형식의 인스턴스는 모든 좌표에 대해 하나의 고유 CoordinateSystem만 포함할 수 있습니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>空間データが無効です: 空間型のインスタンスには、そのすべての座標に対して一意な CoordinateSystem を 1 つだけ含めることができます。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>Dati spaziali non validi. Un'istanza di tipo spaziale può contenere solo un oggetto CoordinateSystem univoco per tutte le relative coordinate.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>Données spatiales non valides : une instance de type spatial ne peut avoir qu'un seul CoordinateSystem pour toutes ses coordonnées.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>Datos espaciales no válidos: una instancia de tipo espacial solo puede tener un único CoordinateSystem para todas sus coordenadas.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>Invalid spatial data: An instance of spatial type can have only one unique CoordinateSystem for all of its coordinates.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Ungültige räumliche Daten: Eine Instanz des räumlichen Typs kann nur ein eindeutiges CoordinateSystem für alle zugehörigen Koordinaten aufweisen.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Validator_UnexpectedCall" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/Validator_UnexpectedCall">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>無效的空間資料: 必須呼叫 "{0}"，卻呼叫 "{1}"</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>空间数据无效: 应为对“{0}”的调用，但获得了对“{1}”的调用。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>Недопустимые пространственные данные: ожидался вызов "{0}", но обнаружен вызов "{1}".</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>잘못된 공간 데이터입니다. "{0}"에 대한 호출이 필요한데 "{1}"을(를) 호출했습니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>空間データが無効です: "{0}" への呼び出しが必要でしたが、"{1}" への呼び出しを取得しました。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>Dati spaziali non validi. Prevista una chiamata a "{0}", ma ricevuta una chiamata a "{1}".</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>Données spatiales non valides : un appel à "{0}" était attendu, mais "{1}" a été obtenu.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>Datos espaciales no válidos: se esperaba una llamada a "{0}" pero se obtuvo una llamada a "{1}".</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>Invalid spatial data: expected call to "{0}" but got call to "{1}".</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Ungültige räumliche Daten: Ein Aufruf von '{0}' wurde erwartet, aber ein Aufruf von '{1}' übergeben.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Validator_UnexpectedCall2" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/Validator_UnexpectedCall2">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>無效的空間資料: 必須呼叫 "{0}" 或 "{1}"，卻呼叫 "{2}"</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>空间数据无效: 应为对“{0}”或“{1}”的调用，但获得了对“{2}”的调用。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>Недопустимые пространственные данные: ожидался вызов "{0}" или "{1}", но обнаружен вызов "{2}".</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>잘못된 공간 데이터입니다. "{0}" 또는 "{1}"에 대한 호출이 필요한데 "{2}"을(를) 호출했습니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>空間データが無効です: "{0}" または "{1}" への呼び出しが必要でしたが、"{2}" への呼び出しを取得しました。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>Dati spaziali non validi. Prevista una chiamata a "{0}" o "{1}", ma ricevuto una chiamata a "{2}".</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>Données spatiales non valides : un appel à "{0}" ou " {1}" était attendu, mais "{2}" a été obtenu.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>Datos espaciales no válidos: se esperaba una llamada a "{0}" o "{1}" pero se obtuvo una llamada a "{2}".</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>Invalid spatial data: expected call to "{0}" or "{1}" but got call to "{2}".</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Ungültige räumliche Daten: Ein Aufruf von '{0}' oder '{1}' wurde erwartet, aber ein Aufruf von '{2}' übergeben.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Validator_UnexpectedGeography" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/Validator_UnexpectedGeography">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>處理幾何形狀時，已經呼叫地理作業。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>处理几何形状时调用了地理操作。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>При обработке геометрической фигуры вызвана операция географического типа.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>기하학적 셰이프를 처리하는 동안 지리 작업이 호출되었습니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>幾何学的図形の処理中に、geography 操作が呼び出されました。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>È stata chiamata un'operazione di geografia durante l'elaborazione di una forma geometrica.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>Une opération géographique a été appelée lors du traitement d'une forme géométrique.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>Se llamó a una operación de geografía mientras se procesaba una forma geométrica.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>A geography operation was called while processing a geometric shape.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Beim Verarbeiten einer geometrischen Form wurde ein Geografievorgang aufgerufen.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Validator_UnexpectedGeometry" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/Validator_UnexpectedGeometry">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>處理地理形狀時，已經呼叫幾何作業。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>处理地理形状时调用了几何图形操作。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>При обработке географической фигуры вызвана операция геометрического типа.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>지리적 셰이프를 처리하는 동안 기하학 작업이 호출되었습니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>地理的な図形の処理中に、geometry 操作が呼び出されました。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>È stata chiamata un'operazione di geometria durante l'elaborazione di una forma geografica.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>Une opération géométrique a été appelée lors du traitement d'une forme géographique.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>Se llamó a una operación de geometría mientras se procesaba una forma geográfica.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>A geometry operation was called while processing a geographic shape.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Beim Verarbeiten einer geografischen Form wurde ein Geometrievorgang aufgerufen.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="WellKnownText_TooManyDimensions" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/WellKnownText_TooManyDimensions">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>WellKnownTextReader 已設定為只允許兩個維度，但發現第三個維度。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>WellKnownTextReader 配置为仅允许两个维度，但遇到了第三个维度。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>Модуль WellKnownTextReader настроен для поддержки только двух измерений, но обнаружено третье измерение.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>WellKnownTextReader에서는 2차원만 허용하도록 구성되었는데 3차원이 있습니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>WellKnownTextReader は、2 次元のみを許可するように構成されていますが、3 次元が見つかりました。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>WellKnownTextReader è configurato per consentire solo due dimensioni, ma è stata rilevata una terza dimensione.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>WellKnownTextReader est configuré de manière à autoriser uniquement deux dimensions, or une troisième dimension a été observée.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>WellKnownTextReader está configurado para permitir solo dos dimensiones y se encontró una tercera dimensión.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>The WellKnownTextReader is configured to allow only two dimensions, and a third dimension was encountered.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Der WellKnownTextReader ist so konfiguriert, dass er nur zwei Dimensionen zulässt, es wurde aber eine dritte Dimension gefunden.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="WellKnownText_UnexpectedCharacter" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/WellKnownText_UnexpectedCharacter">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>在文字中找到未預期的字元 '{0}'。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>在文本中找到了意外的字符“{0}”。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>В тексте найден непредвиденный символ "{0}".</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>텍스트에 예기치 않은 문자 '{0}'이(가) 있습니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>予期しない文字 '{0}' がテキスト内に見つかりました。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>Carattere '{0}' imprevisto trovato nel testo.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>Caractère inattendu '{0}' trouvé dans le texte.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>Se encontró el carácter inesperado '{0}' en el texto.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>Unexpected character '{0}' found in text.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Im Text wurde das unerwartete Zeichen "{0}" gefunden.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="WellKnownText_UnexpectedToken" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/WellKnownText_UnexpectedToken">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>必須是具有文字 "{1}" 的 Token 類型 "{0}"，但是找到 "{2}"。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>需要标记类型“{0}”以及文本“{1}”，但找到了“{2}”。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>Ожидался токен типа "{0}" с текстом "{1}", но обнаружен "{2}".</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>"{1}" 텍스트의 토큰 형식 "{0}"이(가) 필요한데 "{2}"이(가) 있습니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>テキスト "{1}" を含むトークン型 "{0}" が必要ですが、"{2}" が見つかりました。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>Previsto token di tipo "{0}" con il testo "{1}", ma è stato trovato "{2}"</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>Jeton de type "{0}" avec le texte "{1}" attendu, mais "{2}" a été trouvé.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>Se esperaba el tipo de token "{0}" con el texto "{1}" pero se encontró "{2}".</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>Expecting token type "{0}" with text "{1}" but found "{2}".</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Erwartet wird der Tokentyp '{0}' mit dem Text '{1}', gefunden wurde aber '{2}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="WellKnownText_UnknownTaggedText" uri="ms-resource://System.Spatial.WindowsStore/System.Spatial/WellKnownText_UnknownTaggedText">
+				<Candidate qualifiers="Language-zh-Hant" type="String">
+					<Value>未知的標記文字 "{0}"。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-zh-Hans" type="String">
+					<Value>未知的标记文本“{0}”。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ru" type="String">
+					<Value>Неизвестный текст с меткой "{0}".</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ko" type="String">
+					<Value>알 수 없는 태그 지정 텍스트 "{0}"입니다.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-ja" type="String">
+					<Value>不明なタグ付きのテキスト "{0}" です。</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-it" type="String">
+					<Value>Testo "{0}" con tag sconosciuto.</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-fr" type="String">
+					<Value>Texte référencé inconnu "{0}".</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-es" type="String">
+					<Value>Texto etiquetado desconocido "{0}".</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-en" isDefault="true" type="String">
+					<Value>Unknown Tagged Text "{0}".</Value>
+				</Candidate>
+				<Candidate qualifiers="Language-de" type="String">
+					<Value>Unbekannter markierter Text "{0}".</Value>
+				</Candidate>
+			</NamedResource>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="Syncfusion.SfTreeNavigator.UWP" version="1.0" primary="true">
+		<Qualifiers>
+			<DeviceFamily>MOBILE</DeviceFamily>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<ResourceMapSubtree name="Syncfusion.SfTreeNavigator.UWP">
+				<NamedResource name="Syncfusion.SfTreeNavigator.UWP.xr.xml" uri="ms-resource://Syncfusion.SfTreeNavigator.UWP/Files/Syncfusion.SfTreeNavigator.UWP/Syncfusion.SfTreeNavigator.UWP.xr.xml">
+					<Candidate type="Path">
+						<Value>Syncfusion.SfTreeNavigator.UWP\Syncfusion.SfTreeNavigator.UWP.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Properties">
+					<NamedResource name="Syncfusion.SfTreeNavigator.UWP.rd.xml" uri="ms-resource://Syncfusion.SfTreeNavigator.UWP/Files/Syncfusion.SfTreeNavigator.UWP/Properties/Syncfusion.SfTreeNavigator.UWP.rd.xml">
+						<Candidate type="Path">
+							<Value>Syncfusion.SfTreeNavigator.UWP\Properties\Syncfusion.SfTreeNavigator.UWP.rd.xml</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="generic.xbf" uri="ms-resource://Syncfusion.SfTreeNavigator.UWP/Files/Syncfusion.SfTreeNavigator.UWP/Themes/generic.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="TreeNavigatorStyle.xbf" uri="ms-resource://Syncfusion.SfTreeNavigator.UWP/Files/Syncfusion.SfTreeNavigator.UWP/Themes/TreeNavigatorStyle.xbf">
+						<Candidate qualifiers="DeviceFamily-MOBILE" type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>
