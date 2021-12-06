@@ -1,1 +1,0 @@
-D:\Samples_19.3.0.53\UWP\PivotClient\Syncfusion.SampleBrowser.UWP.PivotClient.csproj;x86

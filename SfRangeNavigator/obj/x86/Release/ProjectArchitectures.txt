@@ -1,1 +1,0 @@
-D:\Samples_19.3.0.53\UWP\SfRangeNavigator\Syncfusion.SampleBrowser.UWP.SfRangeNavigator.csproj;x86

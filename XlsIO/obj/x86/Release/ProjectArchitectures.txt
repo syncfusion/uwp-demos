@@ -1,1 +1,0 @@
-D:\Samples_19.3.0.53\UWP\XlsIO\Syncfusion.SampleBrowser.UWP.XlsIO.csproj;x86

@@ -1,1 +1,0 @@
-D:\Samples_19.3.0.53\UWP\Gauge\Syncfusion.SampleBrowser.UWP.Gauge.csproj;x86

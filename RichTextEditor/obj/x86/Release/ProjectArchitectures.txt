@@ -1,1 +1,0 @@
-D:\Samples_19.3.0.53\UWP\RichTextEditor\Syncfusion.SampleBrowser.UWP.RichTextEditor.csproj;x86
