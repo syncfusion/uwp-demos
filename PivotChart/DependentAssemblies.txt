@@ -1,0 +1,10 @@
+Syncfusion.Data.UWP.dll
+Syncfusion.Olap.UWP.dll
+Syncfusion.PivotAnalysis.UWP.dll
+Syncfusion.SampleBrowser.UWP.Common.dll
+Syncfusion.SfBusyIndicator.UWP.dll
+Syncfusion.SfChart.UWP.dll
+Syncfusion.SfPivotChart.UWP.dll
+Syncfusion.SfPivotChartConverter.UWP.dll
+Syncfusion.SfShared.UWP.dll
+Syncfusion.Licensing.dll
