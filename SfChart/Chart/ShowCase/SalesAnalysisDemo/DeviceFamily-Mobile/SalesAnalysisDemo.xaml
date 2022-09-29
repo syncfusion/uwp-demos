@@ -1,0 +1,147 @@
+﻿<Page
+    x:Class="Syncfusion.SampleBrowser.UWP.SfChart.SalesAnalysisDemo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Syncfusion.SampleBrowser.UWP.SfChart" 
+    RequestedTheme="Dark"
+    xmlns:notification2="using:Syncfusion.UI.Xaml.Controls.Notification"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"    
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <ResourceDictionary>
+            <x:String x:Key="BackButtonGlyph">&#xE071;</x:String>
+
+            <Style x:Key="BackButtonStyle" TargetType="Button">
+                <Setter Property="MinWidth" Value="0"/>
+                <Setter Property="Width" Value="48"/>
+                <Setter Property="Height" Value="48"/>
+                <Setter Property="VerticalAlignment" Value="Bottom"/>
+                <Setter Property="FontFamily" Value="Segoe UI Symbol"/>
+                <Setter Property="FontWeight" Value="Normal"/>
+                <Setter Property="FontSize" Value="56"/>
+                <Setter Property="AutomationProperties.AutomationId" Value="BackButton"/>
+                <Setter Property="AutomationProperties.Name" Value="Back"/>
+                <Setter Property="AutomationProperties.ItemType" Value="Navigation Button"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Grid x:Name="RootGrid">
+                                <Grid Margin="-1,-16,0,0">
+                                    <TextBlock x:Name="BackgroundGlyph" Text="&#xE0A8;" Foreground="#00FFFFFF"/>
+                                    <TextBlock x:Name="NormalGlyph" Text="{StaticResource BackButtonGlyph}" Foreground="#FF333333"/>
+                                    <TextBlock x:Name="ArrowGlyph" Text="&#xE0A6;" Foreground="#FF333333" Opacity="0"/>
+                                </Grid>
+                                <Rectangle
+                            x:Name="FocusVisualWhite"
+                            IsHitTestVisible="False"
+                            Stroke="{StaticResource FocusVisualBlackStrokeThemeBrush}"
+                            StrokeEndLineCap="Square"
+                            StrokeDashArray="1,1"
+                            Opacity="0"
+                            StrokeDashOffset="1.5"/>
+                                <Rectangle
+                            x:Name="FocusVisualBlack"
+                            IsHitTestVisible="False"
+                            Stroke="{StaticResource FocusVisualBlackStrokeThemeBrush}"
+                            StrokeEndLineCap="Square"
+                            StrokeDashArray="1,1"
+                            Opacity="0"
+                            StrokeDashOffset="0.5"/>
+
+                                <VisualStateManager.VisualStateGroups>
+                                    <VisualStateGroup x:Name="CommonStates">
+                                        <VisualState x:Name="Normal" />
+                                        <VisualState x:Name="PointerOver">
+                                            <Storyboard>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="BackgroundGlyph" Storyboard.TargetProperty="Foreground">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="#21333333"/>
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalGlyph" Storyboard.TargetProperty="Foreground">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="#FF333333"/>
+                                                </ObjectAnimationUsingKeyFrames>
+                                            </Storyboard>
+                                        </VisualState>
+                                        <VisualState x:Name="Pressed">
+                                            <Storyboard>
+                                                <DoubleAnimation
+                                            Storyboard.TargetName="ArrowGlyph"
+                                            Storyboard.TargetProperty="Opacity"
+                                            To="1"
+                                            Duration="0"/>
+                                                <DoubleAnimation
+                                            Storyboard.TargetName="NormalGlyph"
+                                            Storyboard.TargetProperty="Opacity"
+                                            To="0"
+                                            Duration="0"/>
+                                            </Storyboard>
+                                        </VisualState>
+                                        <VisualState x:Name="Disabled">
+                                            <Storyboard>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="Visibility">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
+                                                </ObjectAnimationUsingKeyFrames>
+                                            </Storyboard>
+                                        </VisualState>
+                                    </VisualStateGroup>
+                                    <VisualStateGroup x:Name="FocusStates">
+                                        <VisualState x:Name="Focused">
+                                            <Storyboard>
+                                                <DoubleAnimation
+                                            Storyboard.TargetName="FocusVisualWhite"
+                                            Storyboard.TargetProperty="Opacity"
+                                            To="1"
+                                            Duration="0"/>
+                                                <DoubleAnimation
+                                            Storyboard.TargetName="FocusVisualBlack"
+                                            Storyboard.TargetProperty="Opacity"
+                                            To="1"
+                                            Duration="0"/>
+                                            </Storyboard>
+                                        </VisualState>
+                                        <VisualState x:Name="Unfocused" />
+                                        <VisualState x:Name="PointerFocused" />
+                                    </VisualStateGroup>
+                                </VisualStateManager.VisualStateGroups>
+                            </Grid>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <local:ViewModelz x:Key="model"/>
+
+        </ResourceDictionary>
+    </Page.Resources>
+    <Grid>
+        <Grid x:Name="SalesWindowsPhone" Background="#FF1E1E1E">
+
+            <!--ContentPanel - place additional content here-->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.15*"/>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid>
+                <Grid Background="#FF434343">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Sales Analysis" FontFamily="Helvetica"  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="40"/>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="1">
+                <ScrollViewer Name="scrollviewer">
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock FontSize="25" Margin="10" Text="Sales by Country" HorizontalAlignment="Left"/>
+                        <local:DataChart x:Name="grid" Height="300" Margin="0,0,3,0" HorizontalAlignment="Left"/>
+                        <TextBlock FontSize="25" Margin="10" Text="Sales by Target" HorizontalAlignment="Left"/>
+                        <local:RangeNavigator_Chart x:Name="navigator" PointerEntered="navigator_PointerPressed"
+                                                    PointerReleased="navigator_PointerReleased"
+                                                    Margin="0,0,3,0" HorizontalAlignment="Left" Height="165"/>
+                    </StackPanel>
+                </ScrollViewer>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>
