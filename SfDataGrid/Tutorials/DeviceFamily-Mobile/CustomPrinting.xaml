@@ -1,0 +1,88 @@
+﻿<View:SampleLayout
+    x:Class="DataGrid.CustomPrinting"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:DataGrid"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Grid"
+    xmlns:View="using:Common"
+    mc:Ignorable="d">
+
+    <View:SampleLayout.Resources>
+        <local:CountFormatConverter x:Key="countFormatConverter" />
+        <DataTemplate x:Key="headerTemplate">
+            <TextBlock HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           FontSize="18"
+                           FontWeight="Bold"
+                           Text="Survey Details" />
+        </DataTemplate>
+
+        <DataTemplate x:Key="footerTemplate">
+            <Grid>
+                <TextBlock HorizontalAlignment="Left" Text="Syncfusion Inc.," />
+            </Grid>
+        </DataTemplate>
+    </View:SampleLayout.Resources>
+
+    <View:SampleLayout.Sample>
+
+        <syncfusion:SfDataGrid x:Name="sfGrid"
+                               Margin="10,5,5,5"
+                               AutoExpandGroups="True"
+                               AutoGenerateColumns="False"
+                               NavigationMode="Row"
+                               ShowGroupDropArea="True">
+            <syncfusion:SfDataGrid.Columns>
+                <syncfusion:GridTextColumn MappingName="Country" />
+                <syncfusion:GridTextColumn MappingName="Captial" />
+                <syncfusion:GridTextColumn MappingName="Currency" MaximumWidth="120" />
+                <syncfusion:GridTemplateColumn HeaderText="Population (Count)"
+                                               MappingName="Population"
+                                               MinimumWidth="200"
+                                               TextAlignment="Right">
+                    <syncfusion:GridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock HorizontalAlignment="Center"
+                                       VerticalAlignment="Center"
+                                       Padding="5,0,0,0"
+                                       Text="{Binding Population,
+                                                      Converter={StaticResource countFormatConverter}}"
+                                       TextAlignment="Right" />
+                        </DataTemplate>
+                    </syncfusion:GridTemplateColumn.CellTemplate>
+                </syncfusion:GridTemplateColumn>
+                <syncfusion:GridTextColumn HeaderText="Literacy Rate (in %)"
+                                           MappingName="LiteracyRate"
+                                           MinimumWidth="200"
+                                           TextAlignment="Right" />
+                <syncfusion:GridTextColumn HeaderText="Economy Rate (in %)"
+                                           MappingName="EconomyPercentage"
+                                           TextAlignment="Right" />
+            </syncfusion:SfDataGrid.Columns>
+        </syncfusion:SfDataGrid>
+    </View:SampleLayout.Sample>
+
+    <View:SampleLayout.Setting>
+        <ContentControl>
+            <StackPanel Margin="5">
+                <Button Width="150"
+                    Margin="5"
+                    Click="OnPrintBtnClick"
+                    Content="Print" />
+                <CheckBox Margin="5"
+                      Checked="OnAllowFitColumnsChecked"
+                      Content="Allow Columns to Fit on one page"
+                      IsChecked="True"
+                      Unchecked="OnAllowFitColumnsUnChecked" />
+                <CheckBox Margin="5"
+                      Checked="OnAllowRepeatHeaderChecked"
+                      Content="Allow Repeat Headers"
+                      IsChecked="True"
+                      Unchecked="OnAllowRepeatHeaderUnChecked" />
+
+            </StackPanel>
+        </ContentControl>
+    </View:SampleLayout.Setting>
+</View:SampleLayout>
