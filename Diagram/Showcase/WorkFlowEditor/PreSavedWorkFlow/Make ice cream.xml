@@ -1,0 +1,1301 @@
+<Graph xmlns="http://schemas.datacontract.org/2004/07/Syncfusion.UI.Xaml.Diagram.Serializer" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+  <Attributes xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+  <Connectors>
+    <Connector>
+      <ID i:nil="true"/>
+      <InternalID i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">d8106113-e8af-467a-8ce9-d961ed83b994</InternalID>
+      <Raw i:nil="true"/>
+      <Type>WorkFlowEditor.ProcessAutomationConnector, Syncfusion.SampleBrowser.UWP.Diagram</Type>
+      <AnnotationColT i:nil="true"/>
+      <Annotations/>
+      <Attributes xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:KeyValueOfstringanyType>
+          <a:Key>IsAnimationApplied</a:Key>
+          <a:Value i:type="b:boolean" xmlns:b="http://www.w3.org/2001/XMLSchema">false</a:Value>
+        </a:KeyValueOfstringanyType>
+        <a:KeyValueOfstringanyType>
+          <a:Key>UseforDecisionAnimation</a:Key>
+          <a:Value i:type="b:boolean" xmlns:b="http://www.w3.org/2001/XMLSchema">false</a:Value>
+        </a:KeyValueOfstringanyType>
+      </Attributes>
+      <Constraints>Default</Constraints>
+      <GroupId i:nil="true"/>
+      <IsSelected>false</IsSelected>
+      <SourceId i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">bc294278-4382-43ef-8440-b8ff464c050f</SourceId>
+      <SourcePoint xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>167.5</a:X>
+        <a:Y>400</a:Y>
+      </SourcePoint>
+      <SourcePortId i:nil="true"/>
+      <TargetId i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">d4c49775-8443-4e27-8316-8d1dd9cd9900</TargetId>
+      <TargetPoint xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>318.0625</a:X>
+        <a:Y>317.5</a:Y>
+      </TargetPoint>
+      <TargetPortId i:nil="true"/>
+      <ZIndex>0</ZIndex>
+    </Connector>
+    <Connector>
+      <ID i:nil="true"/>
+      <InternalID i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">207c649d-bb6c-48d8-bfdd-f67e94fbbec1</InternalID>
+      <Raw i:nil="true"/>
+      <Type>WorkFlowEditor.ProcessAutomationConnector, Syncfusion.SampleBrowser.UWP.Diagram</Type>
+      <AnnotationColT i:nil="true"/>
+      <Annotations/>
+      <Attributes xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:KeyValueOfstringanyType>
+          <a:Key>IsAnimationApplied</a:Key>
+          <a:Value i:type="b:boolean" xmlns:b="http://www.w3.org/2001/XMLSchema">false</a:Value>
+        </a:KeyValueOfstringanyType>
+        <a:KeyValueOfstringanyType>
+          <a:Key>UseforDecisionAnimation</a:Key>
+          <a:Value i:type="b:boolean" xmlns:b="http://www.w3.org/2001/XMLSchema">false</a:Value>
+        </a:KeyValueOfstringanyType>
+      </Attributes>
+      <Constraints>Default</Constraints>
+      <GroupId i:nil="true"/>
+      <IsSelected>false</IsSelected>
+      <SourceId i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">bc294278-4382-43ef-8440-b8ff464c050f</SourceId>
+      <SourcePoint xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>167.5</a:X>
+        <a:Y>400</a:Y>
+      </SourcePoint>
+      <SourcePortId i:nil="true"/>
+      <TargetId i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">9f327e14-b214-49a6-ad78-7ff18b7f556c</TargetId>
+      <TargetPoint xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>318.0625</a:X>
+        <a:Y>482.5</a:Y>
+      </TargetPoint>
+      <TargetPortId i:nil="true"/>
+      <ZIndex>0</ZIndex>
+    </Connector>
+    <Connector>
+      <ID i:nil="true"/>
+      <InternalID i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">c5bdff52-eaa3-4041-b2dc-28fe5ab6a443</InternalID>
+      <Raw i:nil="true"/>
+      <Type>WorkFlowEditor.ProcessAutomationConnector, Syncfusion.SampleBrowser.UWP.Diagram</Type>
+      <AnnotationColT i:nil="true"/>
+      <Annotations/>
+      <Attributes xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:KeyValueOfstringanyType>
+          <a:Key>IsAnimationApplied</a:Key>
+          <a:Value i:type="b:boolean" xmlns:b="http://www.w3.org/2001/XMLSchema">false</a:Value>
+        </a:KeyValueOfstringanyType>
+        <a:KeyValueOfstringanyType>
+          <a:Key>UseforDecisionAnimation</a:Key>
+          <a:Value i:type="b:boolean" xmlns:b="http://www.w3.org/2001/XMLSchema">false</a:Value>
+        </a:KeyValueOfstringanyType>
+      </Attributes>
+      <Constraints>Default</Constraints>
+      <GroupId i:nil="true"/>
+      <IsSelected>false</IsSelected>
+      <SourceId i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">d4c49775-8443-4e27-8316-8d1dd9cd9900</SourceId>
+      <SourcePoint xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>350</a:X>
+        <a:Y>282.5</a:Y>
+      </SourcePoint>
+      <SourcePortId i:nil="true"/>
+      <TargetId i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">48ef55c8-9a09-4a54-be43-7a8024bd85e2</TargetId>
+      <TargetPoint xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>517.44183349609375</a:X>
+        <a:Y>192.5</a:Y>
+      </TargetPoint>
+      <TargetPortId i:nil="true"/>
+      <ZIndex>0</ZIndex>
+    </Connector>
+    <Connector>
+      <ID i:nil="true"/>
+      <InternalID i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">116cba8f-f123-434e-88b7-1788867e326b</InternalID>
+      <Raw i:nil="true"/>
+      <Type>WorkFlowEditor.ProcessAutomationConnector, Syncfusion.SampleBrowser.UWP.Diagram</Type>
+      <AnnotationColT i:nil="true"/>
+      <Annotations/>
+      <Attributes xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:KeyValueOfstringanyType>
+          <a:Key>IsAnimationApplied</a:Key>
+          <a:Value i:type="b:boolean" xmlns:b="http://www.w3.org/2001/XMLSchema">false</a:Value>
+        </a:KeyValueOfstringanyType>
+        <a:KeyValueOfstringanyType>
+          <a:Key>UseforDecisionAnimation</a:Key>
+          <a:Value i:type="b:boolean" xmlns:b="http://www.w3.org/2001/XMLSchema">false</a:Value>
+        </a:KeyValueOfstringanyType>
+      </Attributes>
+      <Constraints>Default</Constraints>
+      <GroupId i:nil="true"/>
+      <IsSelected>false</IsSelected>
+      <SourceId i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">d4c49775-8443-4e27-8316-8d1dd9cd9900</SourceId>
+      <SourcePoint xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>392</a:X>
+        <a:Y>300</a:Y>
+      </SourcePoint>
+      <SourcePortId i:nil="true"/>
+      <TargetId i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">e857d467-7f63-4d10-940a-4ede0aa3c467</TargetId>
+      <TargetPoint xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>516</a:X>
+        <a:Y>260.75949096679688</a:Y>
+      </TargetPoint>
+      <TargetPortId i:nil="true"/>
+      <ZIndex>0</ZIndex>
+    </Connector>
+    <Connector>
+      <ID i:nil="true"/>
+      <InternalID i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">6adc0aee-aed8-4aed-a142-e9b85b37f2cb</InternalID>
+      <Raw i:nil="true"/>
+      <Type>WorkFlowEditor.ProcessAutomationConnector, Syncfusion.SampleBrowser.UWP.Diagram</Type>
+      <AnnotationColT i:nil="true"/>
+      <Annotations/>
+      <Attributes xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:KeyValueOfstringanyType>
+          <a:Key>IsAnimationApplied</a:Key>
+          <a:Value i:type="b:boolean" xmlns:b="http://www.w3.org/2001/XMLSchema">false</a:Value>
+        </a:KeyValueOfstringanyType>
+        <a:KeyValueOfstringanyType>
+          <a:Key>UseforDecisionAnimation</a:Key>
+          <a:Value i:type="b:boolean" xmlns:b="http://www.w3.org/2001/XMLSchema">false</a:Value>
+        </a:KeyValueOfstringanyType>
+      </Attributes>
+      <Constraints>Default</Constraints>
+      <GroupId i:nil="true"/>
+      <IsSelected>false</IsSelected>
+      <SourceId i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">d4c49775-8443-4e27-8316-8d1dd9cd9900</SourceId>
+      <SourcePoint xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>392</a:X>
+        <a:Y>300</a:Y>
+      </SourcePoint>
+      <SourcePortId i:nil="true"/>
+      <TargetId i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">99a52ede-4546-40fa-bfff-0b949b92f7f7</TargetId>
+      <TargetPoint xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>508</a:X>
+        <a:Y>318.35443115234375</a:Y>
+      </TargetPoint>
+      <TargetPortId i:nil="true"/>
+      <ZIndex>0</ZIndex>
+    </Connector>
+    <Connector>
+      <ID i:nil="true"/>
+      <InternalID i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">4c5abf32-d6ea-4199-beea-e58fb10a5570</InternalID>
+      <Raw i:nil="true"/>
+      <Type>WorkFlowEditor.ProcessAutomationConnector, Syncfusion.SampleBrowser.UWP.Diagram</Type>
+      <AnnotationColT i:nil="true"/>
+      <Annotations/>
+      <Attributes xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:KeyValueOfstringanyType>
+          <a:Key>IsAnimationApplied</a:Key>
+          <a:Value i:type="b:boolean" xmlns:b="http://www.w3.org/2001/XMLSchema">false</a:Value>
+        </a:KeyValueOfstringanyType>
+        <a:KeyValueOfstringanyType>
+          <a:Key>UseforDecisionAnimation</a:Key>
+          <a:Value i:type="b:boolean" xmlns:b="http://www.w3.org/2001/XMLSchema">false</a:Value>
+        </a:KeyValueOfstringanyType>
+      </Attributes>
+      <Constraints>Default</Constraints>
+      <GroupId i:nil="true"/>
+      <IsSelected>false</IsSelected>
+      <SourceId i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">d4c49775-8443-4e27-8316-8d1dd9cd9900</SourceId>
+      <SourcePoint xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>350</a:X>
+        <a:Y>317.5</a:Y>
+      </SourcePoint>
+      <SourcePortId i:nil="true"/>
+      <TargetId i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">1f9addec-8df5-49ed-ae75-477b6be7205d</TargetId>
+      <TargetPoint xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>519</a:X>
+        <a:Y>387.21249389648438</a:Y>
+      </TargetPoint>
+      <TargetPortId i:nil="true"/>
+      <ZIndex>0</ZIndex>
+    </Connector>
+    <Connector>
+      <ID i:nil="true"/>
+      <InternalID i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">7d1eaa03-dddc-43ff-bb3e-dbb3bf212028</InternalID>
+      <Raw i:nil="true"/>
+      <Type>WorkFlowEditor.ProcessAutomationConnector, Syncfusion.SampleBrowser.UWP.Diagram</Type>
+      <AnnotationColT i:nil="true"/>
+      <Annotations/>
+      <Attributes xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:KeyValueOfstringanyType>
+          <a:Key>IsAnimationApplied</a:Key>
+          <a:Value i:type="b:boolean" xmlns:b="http://www.w3.org/2001/XMLSchema">false</a:Value>
+        </a:KeyValueOfstringanyType>
+        <a:KeyValueOfstringanyType>
+          <a:Key>UseforDecisionAnimation</a:Key>
+          <a:Value i:type="b:boolean" xmlns:b="http://www.w3.org/2001/XMLSchema">false</a:Value>
+        </a:KeyValueOfstringanyType>
+      </Attributes>
+      <Constraints>Default</Constraints>
+      <GroupId i:nil="true"/>
+      <IsSelected>false</IsSelected>
+      <SourceId i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">9f327e14-b214-49a6-ad78-7ff18b7f556c</SourceId>
+      <SourcePoint xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>385.5</a:X>
+        <a:Y>500</a:Y>
+      </SourcePoint>
+      <SourcePortId i:nil="true"/>
+      <TargetId i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">002082de-8fc0-478c-9b3d-4f10b77bf3dd</TargetId>
+      <TargetPoint xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>510</a:X>
+        <a:Y>462.15805053710938</a:Y>
+      </TargetPoint>
+      <TargetPortId i:nil="true"/>
+      <ZIndex>0</ZIndex>
+    </Connector>
+    <Connector>
+      <ID i:nil="true"/>
+      <InternalID i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">7fc7baf9-a4b3-4263-b7c3-1be1222a6bba</InternalID>
+      <Raw i:nil="true"/>
+      <Type>WorkFlowEditor.ProcessAutomationConnector, Syncfusion.SampleBrowser.UWP.Diagram</Type>
+      <AnnotationColT i:nil="true"/>
+      <Annotations/>
+      <Attributes xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:KeyValueOfstringanyType>
+          <a:Key>IsAnimationApplied</a:Key>
+          <a:Value i:type="b:boolean" xmlns:b="http://www.w3.org/2001/XMLSchema">false</a:Value>
+        </a:KeyValueOfstringanyType>
+        <a:KeyValueOfstringanyType>
+          <a:Key>UseforDecisionAnimation</a:Key>
+          <a:Value i:type="b:boolean" xmlns:b="http://www.w3.org/2001/XMLSchema">false</a:Value>
+        </a:KeyValueOfstringanyType>
+      </Attributes>
+      <Constraints>Default</Constraints>
+      <GroupId i:nil="true"/>
+      <IsSelected>false</IsSelected>
+      <SourceId i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">9f327e14-b214-49a6-ad78-7ff18b7f556c</SourceId>
+      <SourcePoint xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>385.5</a:X>
+        <a:Y>500</a:Y>
+      </SourcePoint>
+      <SourcePortId i:nil="true"/>
+      <TargetId i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">a0f677c7-e542-44d9-94c0-bc950d40b2e5</TargetId>
+      <TargetPoint xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>515.5</a:X>
+        <a:Y>519.7568359375</a:Y>
+      </TargetPoint>
+      <TargetPortId i:nil="true"/>
+      <ZIndex>0</ZIndex>
+    </Connector>
+    <Connector>
+      <ID i:nil="true"/>
+      <InternalID i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">92d8cb9d-71fb-4806-9a25-d37424d3d75f</InternalID>
+      <Raw i:nil="true"/>
+      <Type>WorkFlowEditor.ProcessAutomationConnector, Syncfusion.SampleBrowser.UWP.Diagram</Type>
+      <AnnotationColT i:nil="true"/>
+      <Annotations/>
+      <Attributes xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:KeyValueOfstringanyType>
+          <a:Key>IsAnimationApplied</a:Key>
+          <a:Value i:type="b:boolean" xmlns:b="http://www.w3.org/2001/XMLSchema">false</a:Value>
+        </a:KeyValueOfstringanyType>
+        <a:KeyValueOfstringanyType>
+          <a:Key>UseforDecisionAnimation</a:Key>
+          <a:Value i:type="b:boolean" xmlns:b="http://www.w3.org/2001/XMLSchema">false</a:Value>
+        </a:KeyValueOfstringanyType>
+      </Attributes>
+      <Constraints>Default</Constraints>
+      <GroupId i:nil="true"/>
+      <IsSelected>false</IsSelected>
+      <SourceId i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">9f327e14-b214-49a6-ad78-7ff18b7f556c</SourceId>
+      <SourcePoint xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>350</a:X>
+        <a:Y>517.5</a:Y>
+      </SourcePoint>
+      <SourcePortId i:nil="true"/>
+      <TargetId i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">bd608f64-0380-4003-9bbc-31cd6d0d85fe</TargetId>
+      <TargetPoint xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>507.57574462890625</a:X>
+        <a:Y>582.5</a:Y>
+      </TargetPoint>
+      <TargetPortId i:nil="true"/>
+      <ZIndex>0</ZIndex>
+    </Connector>
+    <Connector>
+      <ID i:nil="true"/>
+      <InternalID i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">39687f21-2f2f-41a2-9ae9-86dcc7e1bdb9</InternalID>
+      <Raw i:nil="true"/>
+      <Type>WorkFlowEditor.ProcessAutomationConnector, Syncfusion.SampleBrowser.UWP.Diagram</Type>
+      <AnnotationColT i:nil="true"/>
+      <Annotations/>
+      <Attributes xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:KeyValueOfstringanyType>
+          <a:Key>IsAnimationApplied</a:Key>
+          <a:Value i:type="b:boolean" xmlns:b="http://www.w3.org/2001/XMLSchema">false</a:Value>
+        </a:KeyValueOfstringanyType>
+        <a:KeyValueOfstringanyType>
+          <a:Key>UseforDecisionAnimation</a:Key>
+          <a:Value i:type="b:boolean" xmlns:b="http://www.w3.org/2001/XMLSchema">false</a:Value>
+        </a:KeyValueOfstringanyType>
+      </Attributes>
+      <Constraints>Default</Constraints>
+      <GroupId i:nil="true"/>
+      <IsSelected>false</IsSelected>
+      <SourceId i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">48ef55c8-9a09-4a54-be43-7a8024bd85e2</SourceId>
+      <SourcePoint xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>550</a:X>
+        <a:Y>192.5</a:Y>
+      </SourcePoint>
+      <SourcePortId i:nil="true"/>
+      <TargetId i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">13733076-0e32-4f36-bd67-4b8d8099b64f</TargetId>
+      <TargetPoint xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>734.94622802734375</a:X>
+        <a:Y>407.5</a:Y>
+      </TargetPoint>
+      <TargetPortId i:nil="true"/>
+      <ZIndex>0</ZIndex>
+    </Connector>
+    <Connector>
+      <ID i:nil="true"/>
+      <InternalID i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">d0fb348e-0e84-4699-9935-5b96ceb029e7</InternalID>
+      <Raw i:nil="true"/>
+      <Type>WorkFlowEditor.ProcessAutomationConnector, Syncfusion.SampleBrowser.UWP.Diagram</Type>
+      <AnnotationColT i:nil="true"/>
+      <Annotations/>
+      <Attributes xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:KeyValueOfstringanyType>
+          <a:Key>IsAnimationApplied</a:Key>
+          <a:Value i:type="b:boolean" xmlns:b="http://www.w3.org/2001/XMLSchema">false</a:Value>
+        </a:KeyValueOfstringanyType>
+        <a:KeyValueOfstringanyType>
+          <a:Key>UseforDecisionAnimation</a:Key>
+          <a:Value i:type="b:boolean" xmlns:b="http://www.w3.org/2001/XMLSchema">false</a:Value>
+        </a:KeyValueOfstringanyType>
+      </Attributes>
+      <Constraints>Default</Constraints>
+      <GroupId i:nil="true"/>
+      <IsSelected>false</IsSelected>
+      <SourceId i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">e857d467-7f63-4d10-940a-4ede0aa3c467</SourceId>
+      <SourcePoint xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>550</a:X>
+        <a:Y>267.5</a:Y>
+      </SourcePoint>
+      <SourcePortId i:nil="true"/>
+      <TargetId i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">13733076-0e32-4f36-bd67-4b8d8099b64f</TargetId>
+      <TargetPoint xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>727.77777099609375</a:X>
+        <a:Y>407.5</a:Y>
+      </TargetPoint>
+      <TargetPortId i:nil="true"/>
+      <ZIndex>0</ZIndex>
+    </Connector>
+    <Connector>
+      <ID i:nil="true"/>
+      <InternalID i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">37a8f536-b169-4f3a-a50c-2c47dc4078c0</InternalID>
+      <Raw i:nil="true"/>
+      <Type>WorkFlowEditor.ProcessAutomationConnector, Syncfusion.SampleBrowser.UWP.Diagram</Type>
+      <AnnotationColT i:nil="true"/>
+      <Annotations/>
+      <Attributes xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:KeyValueOfstringanyType>
+          <a:Key>IsAnimationApplied</a:Key>
+          <a:Value i:type="b:boolean" xmlns:b="http://www.w3.org/2001/XMLSchema">false</a:Value>
+        </a:KeyValueOfstringanyType>
+        <a:KeyValueOfstringanyType>
+          <a:Key>UseforDecisionAnimation</a:Key>
+          <a:Value i:type="b:boolean" xmlns:b="http://www.w3.org/2001/XMLSchema">false</a:Value>
+        </a:KeyValueOfstringanyType>
+      </Attributes>
+      <Constraints>Default</Constraints>
+      <GroupId i:nil="true"/>
+      <IsSelected>false</IsSelected>
+      <SourceId i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">99a52ede-4546-40fa-bfff-0b949b92f7f7</SourceId>
+      <SourcePoint xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>550</a:X>
+        <a:Y>342.5</a:Y>
+      </SourcePoint>
+      <SourcePortId i:nil="true"/>
+      <TargetId i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">13733076-0e32-4f36-bd67-4b8d8099b64f</TargetId>
+      <TargetPoint xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>713</a:X>
+        <a:Y>409.73748779296875</a:Y>
+      </TargetPoint>
+      <TargetPortId i:nil="true"/>
+      <ZIndex>0</ZIndex>
+    </Connector>
+    <Connector>
+      <ID i:nil="true"/>
+      <InternalID i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">047bac16-0845-43f2-8def-9a6c710739ce</InternalID>
+      <Raw i:nil="true"/>
+      <Type>WorkFlowEditor.ProcessAutomationConnector, Syncfusion.SampleBrowser.UWP.Diagram</Type>
+      <AnnotationColT i:nil="true"/>
+      <Annotations/>
+      <Attributes xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:KeyValueOfstringanyType>
+          <a:Key>IsAnimationApplied</a:Key>
+          <a:Value i:type="b:boolean" xmlns:b="http://www.w3.org/2001/XMLSchema">false</a:Value>
+        </a:KeyValueOfstringanyType>
+        <a:KeyValueOfstringanyType>
+          <a:Key>UseforDecisionAnimation</a:Key>
+          <a:Value i:type="b:boolean" xmlns:b="http://www.w3.org/2001/XMLSchema">false</a:Value>
+        </a:KeyValueOfstringanyType>
+      </Attributes>
+      <Constraints>Default</Constraints>
+      <GroupId i:nil="true"/>
+      <IsSelected>false</IsSelected>
+      <SourceId i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">1f9addec-8df5-49ed-ae75-477b6be7205d</SourceId>
+      <SourcePoint xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>581</a:X>
+        <a:Y>400</a:Y>
+      </SourcePoint>
+      <SourcePortId i:nil="true"/>
+      <TargetId i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">13733076-0e32-4f36-bd67-4b8d8099b64f</TargetId>
+      <TargetPoint xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>713</a:X>
+        <a:Y>419.52664184570312</a:Y>
+      </TargetPoint>
+      <TargetPortId i:nil="true"/>
+      <ZIndex>0</ZIndex>
+    </Connector>
+    <Connector>
+      <ID i:nil="true"/>
+      <InternalID i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">51666299-48a0-4130-b612-9f6fe343cbca</InternalID>
+      <Raw i:nil="true"/>
+      <Type>WorkFlowEditor.ProcessAutomationConnector, Syncfusion.SampleBrowser.UWP.Diagram</Type>
+      <AnnotationColT i:nil="true"/>
+      <Annotations/>
+      <Attributes xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:KeyValueOfstringanyType>
+          <a:Key>IsAnimationApplied</a:Key>
+          <a:Value i:type="b:boolean" xmlns:b="http://www.w3.org/2001/XMLSchema">false</a:Value>
+        </a:KeyValueOfstringanyType>
+        <a:KeyValueOfstringanyType>
+          <a:Key>UseforDecisionAnimation</a:Key>
+          <a:Value i:type="b:boolean" xmlns:b="http://www.w3.org/2001/XMLSchema">false</a:Value>
+        </a:KeyValueOfstringanyType>
+      </Attributes>
+      <Constraints>Default</Constraints>
+      <GroupId i:nil="true"/>
+      <IsSelected>false</IsSelected>
+      <SourceId i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">002082de-8fc0-478c-9b3d-4f10b77bf3dd</SourceId>
+      <SourcePoint xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>590</a:X>
+        <a:Y>450</a:Y>
+      </SourcePoint>
+      <SourcePortId i:nil="true"/>
+      <TargetId i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">13733076-0e32-4f36-bd67-4b8d8099b64f</TargetId>
+      <TargetPoint xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>713</a:X>
+        <a:Y>430.78125</a:Y>
+      </TargetPoint>
+      <TargetPortId i:nil="true"/>
+      <ZIndex>0</ZIndex>
+    </Connector>
+    <Connector>
+      <ID i:nil="true"/>
+      <InternalID i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">74041d0f-ac36-48a4-8f1b-c1767beba37d</InternalID>
+      <Raw i:nil="true"/>
+      <Type>WorkFlowEditor.ProcessAutomationConnector, Syncfusion.SampleBrowser.UWP.Diagram</Type>
+      <AnnotationColT i:nil="true"/>
+      <Annotations/>
+      <Attributes xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:KeyValueOfstringanyType>
+          <a:Key>IsAnimationApplied</a:Key>
+          <a:Value i:type="b:boolean" xmlns:b="http://www.w3.org/2001/XMLSchema">false</a:Value>
+        </a:KeyValueOfstringanyType>
+        <a:KeyValueOfstringanyType>
+          <a:Key>UseforDecisionAnimation</a:Key>
+          <a:Value i:type="b:boolean" xmlns:b="http://www.w3.org/2001/XMLSchema">false</a:Value>
+        </a:KeyValueOfstringanyType>
+      </Attributes>
+      <Constraints>Default</Constraints>
+      <GroupId i:nil="true"/>
+      <IsSelected>false</IsSelected>
+      <SourceId i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">a0f677c7-e542-44d9-94c0-bc950d40b2e5</SourceId>
+      <SourcePoint xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>584.5</a:X>
+        <a:Y>525</a:Y>
+      </SourcePoint>
+      <SourcePortId i:nil="true"/>
+      <TargetId i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">13733076-0e32-4f36-bd67-4b8d8099b64f</TargetId>
+      <TargetPoint xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>721.0374755859375</a:X>
+        <a:Y>442.5</a:Y>
+      </TargetPoint>
+      <TargetPortId i:nil="true"/>
+      <ZIndex>0</ZIndex>
+    </Connector>
+    <Connector>
+      <ID i:nil="true"/>
+      <InternalID i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">02de0c61-5ca9-44cf-8dd9-6b2a093d28bf</InternalID>
+      <Raw i:nil="true"/>
+      <Type>WorkFlowEditor.ProcessAutomationConnector, Syncfusion.SampleBrowser.UWP.Diagram</Type>
+      <AnnotationColT i:nil="true"/>
+      <Annotations/>
+      <Attributes xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:KeyValueOfstringanyType>
+          <a:Key>IsAnimationApplied</a:Key>
+          <a:Value i:type="b:boolean" xmlns:b="http://www.w3.org/2001/XMLSchema">false</a:Value>
+        </a:KeyValueOfstringanyType>
+        <a:KeyValueOfstringanyType>
+          <a:Key>UseforDecisionAnimation</a:Key>
+          <a:Value i:type="b:boolean" xmlns:b="http://www.w3.org/2001/XMLSchema">false</a:Value>
+        </a:KeyValueOfstringanyType>
+      </Attributes>
+      <Constraints>Default</Constraints>
+      <GroupId i:nil="true"/>
+      <IsSelected>false</IsSelected>
+      <SourceId i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">bd608f64-0380-4003-9bbc-31cd6d0d85fe</SourceId>
+      <SourcePoint xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>550</a:X>
+        <a:Y>582.5</a:Y>
+      </SourcePoint>
+      <SourcePortId i:nil="true"/>
+      <TargetId i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">13733076-0e32-4f36-bd67-4b8d8099b64f</TargetId>
+      <TargetPoint xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>727.77777099609375</a:X>
+        <a:Y>442.5</a:Y>
+      </TargetPoint>
+      <TargetPortId i:nil="true"/>
+      <ZIndex>0</ZIndex>
+    </Connector>
+    <Connector>
+      <ID i:nil="true"/>
+      <InternalID i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">ee8ddaec-b2c8-481d-a307-f32e40938810</InternalID>
+      <Raw i:nil="true"/>
+      <Type>WorkFlowEditor.ProcessAutomationConnector, Syncfusion.SampleBrowser.UWP.Diagram</Type>
+      <AnnotationColT i:nil="true"/>
+      <Annotations/>
+      <Attributes xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:KeyValueOfstringanyType>
+          <a:Key>IsAnimationApplied</a:Key>
+          <a:Value i:type="b:boolean" xmlns:b="http://www.w3.org/2001/XMLSchema">false</a:Value>
+        </a:KeyValueOfstringanyType>
+        <a:KeyValueOfstringanyType>
+          <a:Key>UseforDecisionAnimation</a:Key>
+          <a:Value i:type="b:boolean" xmlns:b="http://www.w3.org/2001/XMLSchema">false</a:Value>
+        </a:KeyValueOfstringanyType>
+      </Attributes>
+      <Constraints>Default</Constraints>
+      <GroupId i:nil="true"/>
+      <IsSelected>false</IsSelected>
+      <SourceId i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">13733076-0e32-4f36-bd67-4b8d8099b64f</SourceId>
+      <SourcePoint xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>787</a:X>
+        <a:Y>425</a:Y>
+      </SourcePoint>
+      <SourcePortId i:nil="true"/>
+      <TargetId i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">811322e8-b792-4804-8e99-d51d39ec9722</TargetId>
+      <TargetPoint xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>840.02520751953125</a:X>
+        <a:Y>424.48477172851562</a:Y>
+      </TargetPoint>
+      <TargetPortId i:nil="true"/>
+      <ZIndex>0</ZIndex>
+    </Connector>
+    <Connector>
+      <ID i:nil="true"/>
+      <InternalID i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">d8c0e6fc-eb8f-44c6-8c53-3bb9ff6f471f</InternalID>
+      <Raw i:nil="true"/>
+      <Type>WorkFlowEditor.ProcessAutomationConnector, Syncfusion.SampleBrowser.UWP.Diagram</Type>
+      <AnnotationColT i:nil="true"/>
+      <Annotations/>
+      <Attributes xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:KeyValueOfstringanyType>
+          <a:Key>IsAnimationApplied</a:Key>
+          <a:Value i:type="b:boolean" xmlns:b="http://www.w3.org/2001/XMLSchema">false</a:Value>
+        </a:KeyValueOfstringanyType>
+        <a:KeyValueOfstringanyType>
+          <a:Key>UseforDecisionAnimation</a:Key>
+          <a:Value i:type="b:boolean" xmlns:b="http://www.w3.org/2001/XMLSchema">false</a:Value>
+        </a:KeyValueOfstringanyType>
+      </Attributes>
+      <Constraints>Default</Constraints>
+      <GroupId i:nil="true"/>
+      <IsSelected>false</IsSelected>
+      <SourceId i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">811322e8-b792-4804-8e99-d51d39ec9722</SourceId>
+      <SourcePoint xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>944.02520751953125</a:X>
+        <a:Y>423.97952270507812</a:Y>
+      </SourcePoint>
+      <SourcePortId i:nil="true"/>
+      <TargetId i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">d6f52b64-a622-4c90-9b9a-0eb99012ee1d</TargetId>
+      <TargetPoint xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>1001.02197265625</a:X>
+        <a:Y>423.97952270507812</a:Y>
+      </TargetPoint>
+      <TargetPortId i:nil="true"/>
+      <ZIndex>0</ZIndex>
+    </Connector>
+    <Connector>
+      <ID i:nil="true"/>
+      <InternalID i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">c762cde4-35e2-4fa1-80f4-902940009eee</InternalID>
+      <Raw i:nil="true"/>
+      <Type>WorkFlowEditor.ProcessAutomationConnector, Syncfusion.SampleBrowser.UWP.Diagram</Type>
+      <AnnotationColT i:nil="true"/>
+      <Annotations/>
+      <Attributes xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:KeyValueOfstringanyType>
+          <a:Key>IsAnimationApplied</a:Key>
+          <a:Value i:type="b:boolean" xmlns:b="http://www.w3.org/2001/XMLSchema">false</a:Value>
+        </a:KeyValueOfstringanyType>
+        <a:KeyValueOfstringanyType>
+          <a:Key>UseforDecisionAnimation</a:Key>
+          <a:Value i:type="b:boolean" xmlns:b="http://www.w3.org/2001/XMLSchema">false</a:Value>
+        </a:KeyValueOfstringanyType>
+      </Attributes>
+      <Constraints>Default</Constraints>
+      <GroupId i:nil="true"/>
+      <IsSelected>false</IsSelected>
+      <SourceId i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">d6f52b64-a622-4c90-9b9a-0eb99012ee1d</SourceId>
+      <SourcePoint xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>1079.02197265625</a:X>
+        <a:Y>423.97952270507812</a:Y>
+      </SourcePoint>
+      <SourcePortId i:nil="true"/>
+      <TargetId i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">f3a6e94d-1bec-4825-9a9d-ba8e74bbef55</TargetId>
+      <TargetPoint xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>1120.0125732421875</a:X>
+        <a:Y>423.19744873046875</a:Y>
+      </TargetPoint>
+      <TargetPortId i:nil="true"/>
+      <ZIndex>0</ZIndex>
+    </Connector>
+    <Connector>
+      <ID i:nil="true"/>
+      <InternalID i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">3a438ea2-45a2-4d2c-89a1-8d0c5ac18bb8</InternalID>
+      <Raw i:nil="true"/>
+      <Type>WorkFlowEditor.ProcessAutomationConnector, Syncfusion.SampleBrowser.UWP.Diagram</Type>
+      <AnnotationColT i:nil="true"/>
+      <Annotations/>
+      <Attributes xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:KeyValueOfstringanyType>
+          <a:Key>IsAnimationApplied</a:Key>
+          <a:Value i:type="b:boolean" xmlns:b="http://www.w3.org/2001/XMLSchema">false</a:Value>
+        </a:KeyValueOfstringanyType>
+        <a:KeyValueOfstringanyType>
+          <a:Key>UseforDecisionAnimation</a:Key>
+          <a:Value i:type="b:boolean" xmlns:b="http://www.w3.org/2001/XMLSchema">false</a:Value>
+        </a:KeyValueOfstringanyType>
+      </Attributes>
+      <Constraints>Default</Constraints>
+      <GroupId i:nil="true"/>
+      <IsSelected>false</IsSelected>
+      <SourceId i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">f3a6e94d-1bec-4825-9a9d-ba8e74bbef55</SourceId>
+      <SourcePoint xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>1248.0125732421875</a:X>
+        <a:Y>421.97637939453125</a:Y>
+      </SourcePoint>
+      <SourcePortId i:nil="true"/>
+      <TargetId i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">e73bec13-54da-453a-8a15-7849a9bd1739</TargetId>
+      <TargetPoint xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>1292.512451171875</a:X>
+        <a:Y>424.14654541015625</a:Y>
+      </TargetPoint>
+      <TargetPortId i:nil="true"/>
+      <ZIndex>0</ZIndex>
+    </Connector>
+  </Connectors>
+  <Constraints>Default</Constraints>
+  <CurrentZoom>1</CurrentZoom>
+  <DrawingTool>Connector</DrawingTool>
+  <Groups/>
+  <HorizontalOffset>0</HorizontalOffset>
+  <MultipleSelectionMode>Default</MultipleSelectionMode>
+  <Nodes>
+    <Node>
+      <ID i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">282963ac-e8c0-4a59-a36e-4fa6e2d1a9f7</ID>
+      <InternalID i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">bc294278-4382-43ef-8440-b8ff464c050f</InternalID>
+      <Raw i:nil="true"/>
+      <Type>WorkFlowEditor.ProcessAutomationNode, Syncfusion.SampleBrowser.UWP.Diagram</Type>
+      <AnnotationColT i:nil="true"/>
+      <Annotations/>
+      <Attributes xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:KeyValueOfstringanyType>
+          <a:Key>NodeContent</a:Key>
+          <a:Value i:type="b:NodeContent" xmlns:b="http://schemas.datacontract.org/2004/07/WorkFlowEditor">
+            <b:DispalyText>Start</b:DispalyText>
+            <b:IsNotDecision>true</b:IsNotDecision>
+            <b:IsTask>false</b:IsTask>
+            <b:Properties/>
+          </a:Value>
+        </a:KeyValueOfstringanyType>
+      </Attributes>
+      <Constraints>Default</Constraints>
+      <Flip>None</Flip>
+      <Geometry/>
+      <GroupId i:nil="true"/>
+      <Height>35</Height>
+      <IsSelected>false</IsSelected>
+      <MaxHeight>INF</MaxHeight>
+      <MaxWidth>INF</MaxWidth>
+      <MinHeight>0</MinHeight>
+      <MinWidth>0</MinWidth>
+      <OffsetX>150</OffsetX>
+      <OffsetY>400</OffsetY>
+      <Pivot xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>0.5</a:X>
+        <a:Y>0.5</a:Y>
+      </Pivot>
+      <PortColT i:nil="true"/>
+      <Ports/>
+      <RotateAngle>0</RotateAngle>
+      <Width>NaN</Width>
+      <ZIndex>0</ZIndex>
+    </Node>
+    <Node>
+      <ID i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">55d5a77a-475e-46a2-9e9f-6e87c650832b</ID>
+      <InternalID i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">d4c49775-8443-4e27-8316-8d1dd9cd9900</InternalID>
+      <Raw i:nil="true"/>
+      <Type>WorkFlowEditor.ProcessAutomationNode, Syncfusion.SampleBrowser.UWP.Diagram</Type>
+      <AnnotationColT i:nil="true"/>
+      <Annotations/>
+      <Attributes xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:KeyValueOfstringanyType>
+          <a:Key>NodeContent</a:Key>
+          <a:Value i:type="b:NodeContent" xmlns:b="http://schemas.datacontract.org/2004/07/WorkFlowEditor">
+            <b:DispalyText>Liquid Input</b:DispalyText>
+            <b:IsNotDecision>true</b:IsNotDecision>
+            <b:IsTask>true</b:IsTask>
+            <b:Properties/>
+          </a:Value>
+        </a:KeyValueOfstringanyType>
+      </Attributes>
+      <Constraints>Default</Constraints>
+      <Flip>None</Flip>
+      <Geometry/>
+      <GroupId i:nil="true"/>
+      <Height>35</Height>
+      <IsSelected>false</IsSelected>
+      <MaxHeight>INF</MaxHeight>
+      <MaxWidth>INF</MaxWidth>
+      <MinHeight>0</MinHeight>
+      <MinWidth>0</MinWidth>
+      <OffsetX>350</OffsetX>
+      <OffsetY>300</OffsetY>
+      <Pivot xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>0.5</a:X>
+        <a:Y>0.5</a:Y>
+      </Pivot>
+      <PortColT i:nil="true"/>
+      <Ports/>
+      <RotateAngle>0</RotateAngle>
+      <Width>NaN</Width>
+      <ZIndex>0</ZIndex>
+    </Node>
+    <Node>
+      <ID i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">752ed34c-cafd-4347-9b9f-9fdad0ee155a</ID>
+      <InternalID i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">9f327e14-b214-49a6-ad78-7ff18b7f556c</InternalID>
+      <Raw i:nil="true"/>
+      <Type>WorkFlowEditor.ProcessAutomationNode, Syncfusion.SampleBrowser.UWP.Diagram</Type>
+      <AnnotationColT i:nil="true"/>
+      <Annotations/>
+      <Attributes xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:KeyValueOfstringanyType>
+          <a:Key>NodeContent</a:Key>
+          <a:Value i:type="b:NodeContent" xmlns:b="http://schemas.datacontract.org/2004/07/WorkFlowEditor">
+            <b:DispalyText>Dry Input</b:DispalyText>
+            <b:IsNotDecision>true</b:IsNotDecision>
+            <b:IsTask>true</b:IsTask>
+            <b:Properties/>
+          </a:Value>
+        </a:KeyValueOfstringanyType>
+      </Attributes>
+      <Constraints>Default</Constraints>
+      <Flip>None</Flip>
+      <Geometry/>
+      <GroupId i:nil="true"/>
+      <Height>35</Height>
+      <IsSelected>false</IsSelected>
+      <MaxHeight>INF</MaxHeight>
+      <MaxWidth>INF</MaxWidth>
+      <MinHeight>0</MinHeight>
+      <MinWidth>0</MinWidth>
+      <OffsetX>350</OffsetX>
+      <OffsetY>500</OffsetY>
+      <Pivot xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>0.5</a:X>
+        <a:Y>0.5</a:Y>
+      </Pivot>
+      <PortColT i:nil="true"/>
+      <Ports/>
+      <RotateAngle>0</RotateAngle>
+      <Width>NaN</Width>
+      <ZIndex>0</ZIndex>
+    </Node>
+    <Node>
+      <ID i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">8316dfd3-6a11-46b8-ba56-c2e9527c573f</ID>
+      <InternalID i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">48ef55c8-9a09-4a54-be43-7a8024bd85e2</InternalID>
+      <Raw i:nil="true"/>
+      <Type>WorkFlowEditor.ProcessAutomationNode, Syncfusion.SampleBrowser.UWP.Diagram</Type>
+      <AnnotationColT i:nil="true"/>
+      <Annotations/>
+      <Attributes xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:KeyValueOfstringanyType>
+          <a:Key>NodeContent</a:Key>
+          <a:Value i:type="b:NodeContent" xmlns:b="http://schemas.datacontract.org/2004/07/WorkFlowEditor">
+            <b:DispalyText>Condensed</b:DispalyText>
+            <b:IsNotDecision>true</b:IsNotDecision>
+            <b:IsTask>true</b:IsTask>
+            <b:Properties/>
+          </a:Value>
+        </a:KeyValueOfstringanyType>
+      </Attributes>
+      <Constraints>Default</Constraints>
+      <Flip>None</Flip>
+      <Geometry/>
+      <GroupId i:nil="true"/>
+      <Height>35</Height>
+      <IsSelected>false</IsSelected>
+      <MaxHeight>INF</MaxHeight>
+      <MaxWidth>INF</MaxWidth>
+      <MinHeight>0</MinHeight>
+      <MinWidth>0</MinWidth>
+      <OffsetX>550</OffsetX>
+      <OffsetY>175</OffsetY>
+      <Pivot xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>0.5</a:X>
+        <a:Y>0.5</a:Y>
+      </Pivot>
+      <PortColT i:nil="true"/>
+      <Ports/>
+      <RotateAngle>0</RotateAngle>
+      <Width>NaN</Width>
+      <ZIndex>0</ZIndex>
+    </Node>
+    <Node>
+      <ID i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">b8701dbb-37d1-4551-85d1-262bbf902335</ID>
+      <InternalID i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">e857d467-7f63-4d10-940a-4ede0aa3c467</InternalID>
+      <Raw i:nil="true"/>
+      <Type>WorkFlowEditor.ProcessAutomationNode, Syncfusion.SampleBrowser.UWP.Diagram</Type>
+      <AnnotationColT i:nil="true"/>
+      <Annotations/>
+      <Attributes xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:KeyValueOfstringanyType>
+          <a:Key>NodeContent</a:Key>
+          <a:Value i:type="b:NodeContent" xmlns:b="http://schemas.datacontract.org/2004/07/WorkFlowEditor">
+            <b:DispalyText>    Cream      </b:DispalyText>
+            <b:IsNotDecision>true</b:IsNotDecision>
+            <b:IsTask>true</b:IsTask>
+            <b:Properties/>
+          </a:Value>
+        </a:KeyValueOfstringanyType>
+      </Attributes>
+      <Constraints>Default</Constraints>
+      <Flip>None</Flip>
+      <Geometry/>
+      <GroupId i:nil="true"/>
+      <Height>35</Height>
+      <IsSelected>false</IsSelected>
+      <MaxHeight>INF</MaxHeight>
+      <MaxWidth>INF</MaxWidth>
+      <MinHeight>0</MinHeight>
+      <MinWidth>0</MinWidth>
+      <OffsetX>550</OffsetX>
+      <OffsetY>250</OffsetY>
+      <Pivot xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>0.5</a:X>
+        <a:Y>0.5</a:Y>
+      </Pivot>
+      <PortColT i:nil="true"/>
+      <Ports/>
+      <RotateAngle>0</RotateAngle>
+      <Width>NaN</Width>
+      <ZIndex>0</ZIndex>
+    </Node>
+    <Node>
+      <ID i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">6b1c6130-0d28-40a9-9f11-11037848275d</ID>
+      <InternalID i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">99a52ede-4546-40fa-bfff-0b949b92f7f7</InternalID>
+      <Raw i:nil="true"/>
+      <Type>WorkFlowEditor.ProcessAutomationNode, Syncfusion.SampleBrowser.UWP.Diagram</Type>
+      <AnnotationColT i:nil="true"/>
+      <Annotations/>
+      <Attributes xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:KeyValueOfstringanyType>
+          <a:Key>NodeContent</a:Key>
+          <a:Value i:type="b:NodeContent" xmlns:b="http://schemas.datacontract.org/2004/07/WorkFlowEditor">
+            <b:DispalyText>  Cane Sugar   </b:DispalyText>
+            <b:IsNotDecision>true</b:IsNotDecision>
+            <b:IsTask>true</b:IsTask>
+            <b:Properties/>
+          </a:Value>
+        </a:KeyValueOfstringanyType>
+      </Attributes>
+      <Constraints>Default</Constraints>
+      <Flip>None</Flip>
+      <Geometry/>
+      <GroupId i:nil="true"/>
+      <Height>35</Height>
+      <IsSelected>false</IsSelected>
+      <MaxHeight>INF</MaxHeight>
+      <MaxWidth>INF</MaxWidth>
+      <MinHeight>0</MinHeight>
+      <MinWidth>0</MinWidth>
+      <OffsetX>550</OffsetX>
+      <OffsetY>325</OffsetY>
+      <Pivot xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>0.5</a:X>
+        <a:Y>0.5</a:Y>
+      </Pivot>
+      <PortColT i:nil="true"/>
+      <Ports/>
+      <RotateAngle>0</RotateAngle>
+      <Width>NaN</Width>
+      <ZIndex>0</ZIndex>
+    </Node>
+    <Node>
+      <ID i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">6cb0f0fe-65aa-4fcf-b9d4-c3499ff2082a</ID>
+      <InternalID i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">1f9addec-8df5-49ed-ae75-477b6be7205d</InternalID>
+      <Raw i:nil="true"/>
+      <Type>WorkFlowEditor.ProcessAutomationNode, Syncfusion.SampleBrowser.UWP.Diagram</Type>
+      <AnnotationColT i:nil="true"/>
+      <Annotations/>
+      <Attributes xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:KeyValueOfstringanyType>
+          <a:Key>NodeContent</a:Key>
+          <a:Value i:type="b:NodeContent" xmlns:b="http://schemas.datacontract.org/2004/07/WorkFlowEditor">
+            <b:DispalyText>   Water       </b:DispalyText>
+            <b:IsNotDecision>true</b:IsNotDecision>
+            <b:IsTask>true</b:IsTask>
+            <b:Properties/>
+          </a:Value>
+        </a:KeyValueOfstringanyType>
+      </Attributes>
+      <Constraints>Default</Constraints>
+      <Flip>None</Flip>
+      <Geometry/>
+      <GroupId i:nil="true"/>
+      <Height>35</Height>
+      <IsSelected>false</IsSelected>
+      <MaxHeight>INF</MaxHeight>
+      <MaxWidth>INF</MaxWidth>
+      <MinHeight>0</MinHeight>
+      <MinWidth>0</MinWidth>
+      <OffsetX>550</OffsetX>
+      <OffsetY>400</OffsetY>
+      <Pivot xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>0.5</a:X>
+        <a:Y>0.5</a:Y>
+      </Pivot>
+      <PortColT i:nil="true"/>
+      <Ports/>
+      <RotateAngle>0</RotateAngle>
+      <Width>NaN</Width>
+      <ZIndex>0</ZIndex>
+    </Node>
+    <Node>
+      <ID i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">286c4775-bc57-428b-995d-e875ad7b48d8</ID>
+      <InternalID i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">002082de-8fc0-478c-9b3d-4f10b77bf3dd</InternalID>
+      <Raw i:nil="true"/>
+      <Type>WorkFlowEditor.ProcessAutomationNode, Syncfusion.SampleBrowser.UWP.Diagram</Type>
+      <AnnotationColT i:nil="true"/>
+      <Annotations/>
+      <Attributes xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:KeyValueOfstringanyType>
+          <a:Key>NodeContent</a:Key>
+          <a:Value i:type="b:NodeContent" xmlns:b="http://schemas.datacontract.org/2004/07/WorkFlowEditor">
+            <b:DispalyText>Ingredients</b:DispalyText>
+            <b:IsNotDecision>true</b:IsNotDecision>
+            <b:IsTask>true</b:IsTask>
+            <b:Properties/>
+          </a:Value>
+        </a:KeyValueOfstringanyType>
+      </Attributes>
+      <Constraints>Default</Constraints>
+      <Flip>None</Flip>
+      <Geometry/>
+      <GroupId i:nil="true"/>
+      <Height>35</Height>
+      <IsSelected>false</IsSelected>
+      <MaxHeight>INF</MaxHeight>
+      <MaxWidth>INF</MaxWidth>
+      <MinHeight>0</MinHeight>
+      <MinWidth>0</MinWidth>
+      <OffsetX>550</OffsetX>
+      <OffsetY>450</OffsetY>
+      <Pivot xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>0.5</a:X>
+        <a:Y>0.5</a:Y>
+      </Pivot>
+      <PortColT i:nil="true"/>
+      <Ports/>
+      <RotateAngle>0</RotateAngle>
+      <Width>NaN</Width>
+      <ZIndex>0</ZIndex>
+    </Node>
+    <Node>
+      <ID i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">c648df0a-5fa2-48f6-8aae-9703aa669246</ID>
+      <InternalID i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">a0f677c7-e542-44d9-94c0-bc950d40b2e5</InternalID>
+      <Raw i:nil="true"/>
+      <Type>WorkFlowEditor.ProcessAutomationNode, Syncfusion.SampleBrowser.UWP.Diagram</Type>
+      <AnnotationColT i:nil="true"/>
+      <Annotations/>
+      <Attributes xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:KeyValueOfstringanyType>
+          <a:Key>NodeContent</a:Key>
+          <a:Value i:type="b:NodeContent" xmlns:b="http://schemas.datacontract.org/2004/07/WorkFlowEditor">
+            <b:DispalyText>   Flavour     </b:DispalyText>
+            <b:IsNotDecision>true</b:IsNotDecision>
+            <b:IsTask>true</b:IsTask>
+            <b:Properties/>
+          </a:Value>
+        </a:KeyValueOfstringanyType>
+      </Attributes>
+      <Constraints>Default</Constraints>
+      <Flip>None</Flip>
+      <Geometry/>
+      <GroupId i:nil="true"/>
+      <Height>35</Height>
+      <IsSelected>false</IsSelected>
+      <MaxHeight>INF</MaxHeight>
+      <MaxWidth>INF</MaxWidth>
+      <MinHeight>0</MinHeight>
+      <MinWidth>0</MinWidth>
+      <OffsetX>550</OffsetX>
+      <OffsetY>525</OffsetY>
+      <Pivot xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>0.5</a:X>
+        <a:Y>0.5</a:Y>
+      </Pivot>
+      <PortColT i:nil="true"/>
+      <Ports/>
+      <RotateAngle>0</RotateAngle>
+      <Width>NaN</Width>
+      <ZIndex>0</ZIndex>
+    </Node>
+    <Node>
+      <ID i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">143a9f87-51b9-472f-b339-518fe973405f</ID>
+      <InternalID i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">bd608f64-0380-4003-9bbc-31cd6d0d85fe</InternalID>
+      <Raw i:nil="true"/>
+      <Type>WorkFlowEditor.ProcessAutomationNode, Syncfusion.SampleBrowser.UWP.Diagram</Type>
+      <AnnotationColT i:nil="true"/>
+      <Annotations/>
+      <Attributes xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:KeyValueOfstringanyType>
+          <a:Key>NodeContent</a:Key>
+          <a:Value i:type="b:NodeContent" xmlns:b="http://schemas.datacontract.org/2004/07/WorkFlowEditor">
+            <b:DispalyText>Fruits and Nuts</b:DispalyText>
+            <b:IsNotDecision>true</b:IsNotDecision>
+            <b:IsTask>true</b:IsTask>
+            <b:Properties/>
+          </a:Value>
+        </a:KeyValueOfstringanyType>
+      </Attributes>
+      <Constraints>Default</Constraints>
+      <Flip>None</Flip>
+      <Geometry/>
+      <GroupId i:nil="true"/>
+      <Height>35</Height>
+      <IsSelected>false</IsSelected>
+      <MaxHeight>INF</MaxHeight>
+      <MaxWidth>INF</MaxWidth>
+      <MinHeight>0</MinHeight>
+      <MinWidth>0</MinWidth>
+      <OffsetX>550</OffsetX>
+      <OffsetY>600</OffsetY>
+      <Pivot xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>0.5</a:X>
+        <a:Y>0.5</a:Y>
+      </Pivot>
+      <PortColT i:nil="true"/>
+      <Ports/>
+      <RotateAngle>0</RotateAngle>
+      <Width>NaN</Width>
+      <ZIndex>0</ZIndex>
+    </Node>
+    <Node>
+      <ID i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">a7041fad-f65c-4452-8dc6-70ab473a64bb</ID>
+      <InternalID i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">13733076-0e32-4f36-bd67-4b8d8099b64f</InternalID>
+      <Raw i:nil="true"/>
+      <Type>WorkFlowEditor.ProcessAutomationNode, Syncfusion.SampleBrowser.UWP.Diagram</Type>
+      <AnnotationColT i:nil="true"/>
+      <Annotations/>
+      <Attributes xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:KeyValueOfstringanyType>
+          <a:Key>NodeContent</a:Key>
+          <a:Value i:type="b:NodeContent" xmlns:b="http://schemas.datacontract.org/2004/07/WorkFlowEditor">
+            <b:DispalyText>  Blending  </b:DispalyText>
+            <b:IsNotDecision>true</b:IsNotDecision>
+            <b:IsTask>true</b:IsTask>
+            <b:Properties/>
+          </a:Value>
+        </a:KeyValueOfstringanyType>
+      </Attributes>
+      <Constraints>Default</Constraints>
+      <Flip>None</Flip>
+      <Geometry/>
+      <GroupId i:nil="true"/>
+      <Height>35</Height>
+      <IsSelected>false</IsSelected>
+      <MaxHeight>INF</MaxHeight>
+      <MaxWidth>INF</MaxWidth>
+      <MinHeight>0</MinHeight>
+      <MinWidth>0</MinWidth>
+      <OffsetX>750</OffsetX>
+      <OffsetY>425</OffsetY>
+      <Pivot xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>0.5</a:X>
+        <a:Y>0.5</a:Y>
+      </Pivot>
+      <PortColT i:nil="true"/>
+      <Ports/>
+      <RotateAngle>0</RotateAngle>
+      <Width>NaN</Width>
+      <ZIndex>0</ZIndex>
+    </Node>
+    <Node>
+      <ID i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">55446260-3fef-49a8-a098-e2aa5318c873</ID>
+      <InternalID i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">811322e8-b792-4804-8e99-d51d39ec9722</InternalID>
+      <Raw i:nil="true"/>
+      <Type>WorkFlowEditor.ProcessAutomationNode, Syncfusion.SampleBrowser.UWP.Diagram</Type>
+      <AnnotationColT i:nil="true"/>
+      <Annotations/>
+      <Attributes xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:KeyValueOfstringanyType>
+          <a:Key>NodeContent</a:Key>
+          <a:Value i:type="b:NodeContent" xmlns:b="http://schemas.datacontract.org/2004/07/WorkFlowEditor">
+            <b:DispalyText>Cooling/Aging</b:DispalyText>
+            <b:IsNotDecision>true</b:IsNotDecision>
+            <b:IsTask>true</b:IsTask>
+            <b:Properties/>
+          </a:Value>
+        </a:KeyValueOfstringanyType>
+      </Attributes>
+      <Constraints>Default</Constraints>
+      <Flip>None</Flip>
+      <Geometry/>
+      <GroupId i:nil="true"/>
+      <Height>35</Height>
+      <IsSelected>false</IsSelected>
+      <MaxHeight>INF</MaxHeight>
+      <MaxWidth>INF</MaxWidth>
+      <MinHeight>0</MinHeight>
+      <MinWidth>0</MinWidth>
+      <OffsetX>892.02517837286</OffsetX>
+      <OffsetY>423.979527592659</OffsetY>
+      <Pivot xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>0.5</a:X>
+        <a:Y>0.5</a:Y>
+      </Pivot>
+      <PortColT i:nil="true"/>
+      <Ports/>
+      <RotateAngle>0</RotateAngle>
+      <Width>NaN</Width>
+      <ZIndex>0</ZIndex>
+    </Node>
+    <Node>
+      <ID i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">b2f05304-239b-42de-a61c-87bf37f3a531</ID>
+      <InternalID i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">d6f52b64-a622-4c90-9b9a-0eb99012ee1d</InternalID>
+      <Raw i:nil="true"/>
+      <Type>WorkFlowEditor.ProcessAutomationNode, Syncfusion.SampleBrowser.UWP.Diagram</Type>
+      <AnnotationColT i:nil="true"/>
+      <Annotations/>
+      <Attributes xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:KeyValueOfstringanyType>
+          <a:Key>NodeContent</a:Key>
+          <a:Value i:type="b:NodeContent" xmlns:b="http://schemas.datacontract.org/2004/07/WorkFlowEditor">
+            <b:DispalyText> Packaging </b:DispalyText>
+            <b:IsNotDecision>true</b:IsNotDecision>
+            <b:IsTask>true</b:IsTask>
+            <b:Properties/>
+          </a:Value>
+        </a:KeyValueOfstringanyType>
+      </Attributes>
+      <Constraints>Default</Constraints>
+      <Flip>None</Flip>
+      <Geometry/>
+      <GroupId i:nil="true"/>
+      <Height>35</Height>
+      <IsSelected>false</IsSelected>
+      <MaxHeight>INF</MaxHeight>
+      <MaxWidth>INF</MaxWidth>
+      <MinHeight>0</MinHeight>
+      <MinWidth>0</MinWidth>
+      <OffsetX>1040.0220241546631</OffsetX>
+      <OffsetY>423.979527592659</OffsetY>
+      <Pivot xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>0.5</a:X>
+        <a:Y>0.5</a:Y>
+      </Pivot>
+      <PortColT i:nil="true"/>
+      <Ports/>
+      <RotateAngle>0</RotateAngle>
+      <Width>NaN</Width>
+      <ZIndex>0</ZIndex>
+    </Node>
+    <Node>
+      <ID i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">8a238762-be4f-40aa-95a2-6ec902b47dcf</ID>
+      <InternalID i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">f3a6e94d-1bec-4825-9a9d-ba8e74bbef55</InternalID>
+      <Raw i:nil="true"/>
+      <Type>WorkFlowEditor.ProcessAutomationNode, Syncfusion.SampleBrowser.UWP.Diagram</Type>
+      <AnnotationColT i:nil="true"/>
+      <Annotations/>
+      <Attributes xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:KeyValueOfstringanyType>
+          <a:Key>NodeContent</a:Key>
+          <a:Value i:type="b:NodeContent" xmlns:b="http://schemas.datacontract.org/2004/07/WorkFlowEditor">
+            <b:DispalyText>Storage/Distribution</b:DispalyText>
+            <b:IsNotDecision>true</b:IsNotDecision>
+            <b:IsTask>true</b:IsTask>
+            <b:Properties/>
+          </a:Value>
+        </a:KeyValueOfstringanyType>
+      </Attributes>
+      <Constraints>Default</Constraints>
+      <Flip>None</Flip>
+      <Geometry/>
+      <GroupId i:nil="true"/>
+      <Height>35</Height>
+      <IsSelected>false</IsSelected>
+      <MaxHeight>INF</MaxHeight>
+      <MaxWidth>INF</MaxWidth>
+      <MinHeight>0</MinHeight>
+      <MinWidth>0</MinWidth>
+      <OffsetX>1184.0125615000725</OffsetX>
+      <OffsetY>421.97637802362442</OffsetY>
+      <Pivot xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>0.5</a:X>
+        <a:Y>0.5</a:Y>
+      </Pivot>
+      <PortColT i:nil="true"/>
+      <Ports/>
+      <RotateAngle>0</RotateAngle>
+      <Width>NaN</Width>
+      <ZIndex>0</ZIndex>
+    </Node>
+    <Node>
+      <ID i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">c0e9a989-7cbc-4ca6-a862-175e873b3426</ID>
+      <InternalID i:type="a:guid" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/">e73bec13-54da-453a-8a15-7849a9bd1739</InternalID>
+      <Raw i:nil="true"/>
+      <Type>WorkFlowEditor.ProcessAutomationNode, Syncfusion.SampleBrowser.UWP.Diagram</Type>
+      <AnnotationColT i:nil="true"/>
+      <Annotations/>
+      <Attributes xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a:KeyValueOfstringanyType>
+          <a:Key>NodeContent</a:Key>
+          <a:Value i:type="b:NodeContent" xmlns:b="http://schemas.datacontract.org/2004/07/WorkFlowEditor">
+            <b:DispalyText>End</b:DispalyText>
+            <b:IsNotDecision>true</b:IsNotDecision>
+            <b:IsTask>false</b:IsTask>
+            <b:Properties/>
+          </a:Value>
+        </a:KeyValueOfstringanyType>
+      </Attributes>
+      <Constraints>Default</Constraints>
+      <Flip>None</Flip>
+      <Geometry/>
+      <GroupId i:nil="true"/>
+      <Height>35</Height>
+      <IsSelected>false</IsSelected>
+      <MaxHeight>INF</MaxHeight>
+      <MaxWidth>INF</MaxWidth>
+      <MinHeight>0</MinHeight>
+      <MinWidth>0</MinWidth>
+      <OffsetX>1310.012505710125</OffsetX>
+      <OffsetY>425</OffsetY>
+      <Pivot xmlns:a="http://schemas.datacontract.org/2004/07/Windows.Foundation">
+        <a:X>0.5</a:X>
+        <a:Y>0.5</a:Y>
+      </Pivot>
+      <PortColT i:nil="true"/>
+      <Ports/>
+      <RotateAngle>0</RotateAngle>
+      <Width>NaN</Width>
+      <ZIndex>0</ZIndex>
+    </Node>
+  </Nodes>
+  <Tool>SingleSelect ZoomPan</Tool>
+  <V xmlns:a="http://schemas.datacontract.org/2004/07/System">
+    <a:_Build>0</a:_Build>
+    <a:_Major>12</a:_Major>
+    <a:_Minor>2810</a:_Minor>
+    <a:_Revision>2</a:_Revision>
+  </V>
+  <VerticalOffset>0</VerticalOffset>
+</Graph>
