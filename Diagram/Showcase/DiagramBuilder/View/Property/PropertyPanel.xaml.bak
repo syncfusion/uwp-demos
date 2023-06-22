@@ -1,0 +1,180 @@
+﻿<UserControl
+    x:Class="DiagramBuilder.View.PropertyPanel"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:view="using:DiagramBuilder.View"
+    xmlns:panel="using:Syncfusion.UI.Xaml.Diagram.Panels"
+    xmlns:vm="using:DiagramBuilder.ViewModel"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="300">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ms-appx:///Common/StandardStyles.xaml" />
+                <ResourceDictionary Source="ms-appx:///Showcase/DiagramBuilder/Theme/DiagramBuilderUI.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <Style x:Key="ToggleButtonCommonStyle" TargetType="ToggleButton" BasedOn="{StaticResource ToggleButtonAppBarStyle}">
+
+            </Style>
+            <Style x:Key="TransitionControl" TargetType="view:PanelControl">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="view:PanelControl">
+                            <Border x:Name="PART_Content">
+                                <Grid>
+                                    <ContentPresenter Content="{TemplateBinding Content}" ContentTemplate="{TemplateBinding ContentTemplate}"/>
+                                </Grid>
+                                <VisualStateManager.VisualStateGroups>
+                                    <VisualStateGroup>
+                                        <VisualState x:Name="Normal"/>
+                                        <VisualState x:Name="Expanded">
+                                            <Storyboard>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_Content"
+                                                                           Storyboard.TargetProperty="Visibility">
+                                                    <DiscreteObjectKeyFrame KeyTime="0:0:3">
+                                                        <DiscreteObjectKeyFrame.Value>
+                                                            <Visibility>Visible</Visibility>
+                                                        </DiscreteObjectKeyFrame.Value>
+                                                    </DiscreteObjectKeyFrame>
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <!--<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="path1">
+                                                    <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                                                    <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="180"/>
+                                                </DoubleAnimationUsingKeyFrames>
+                                            <PopInThemeAnimation Storyboard.TargetName="PART_Content"/>-->
+                                            </Storyboard>
+                                        </VisualState>
+                                        <VisualState x:Name="Collapsed">
+                                            <Storyboard>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_Content"
+                                                                           Storyboard.TargetProperty="Visibility">
+                                                    <DiscreteObjectKeyFrame KeyTime="0:0:3">
+                                                        <DiscreteObjectKeyFrame.Value>
+                                                            <Visibility>Collapsed</Visibility>
+                                                        </DiscreteObjectKeyFrame.Value>
+                                                    </DiscreteObjectKeyFrame>
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <!--<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="path1">
+                                                    <EasingDoubleKeyFrame KeyTime="0" Value="180"/>
+                                                    <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0"/>
+                                                </DoubleAnimationUsingKeyFrames>
+                                            <PopOutThemeAnimation Storyboard.TargetName="PART_Content"/>-->
+                                            </Storyboard>
+                                        </VisualState>
+                                        <VisualState x:Name="PickerExpanded">
+                                            <Storyboard>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_Content"
+                                                                           Storyboard.TargetProperty="Visibility">
+                                                    <DiscreteObjectKeyFrame KeyTime="0:0:3">
+                                                        <DiscreteObjectKeyFrame.Value>
+                                                            <Visibility>Visible</Visibility>
+                                                        </DiscreteObjectKeyFrame.Value>
+                                                    </DiscreteObjectKeyFrame>
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="path1">
+                                                    <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                                                    <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="180"/>
+                                                </DoubleAnimationUsingKeyFrames>
+                                                <PopInThemeAnimation Storyboard.TargetName="PART_Content"/>
+                                            </Storyboard>
+                                        </VisualState>
+                                        <VisualState x:Name="PickerCollapsed">
+                                            <Storyboard>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_Content"
+                                                                           Storyboard.TargetProperty="Visibility">
+                                                    <DiscreteObjectKeyFrame KeyTime="0:0:3">
+                                                        <DiscreteObjectKeyFrame.Value>
+                                                            <Visibility>Collapsed</Visibility>
+                                                        </DiscreteObjectKeyFrame.Value>
+                                                    </DiscreteObjectKeyFrame>
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="path1">
+                                                    <EasingDoubleKeyFrame KeyTime="0" Value="180"/>
+                                                    <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0"/>
+                                                </DoubleAnimationUsingKeyFrames>
+                                                <PopOutThemeAnimation Storyboard.TargetName="PART_Content"/>
+                                            </Storyboard>
+                                        </VisualState>
+                                    </VisualStateGroup>
+                                </VisualStateManager.VisualStateGroups>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid Background="#f7f5f5" >
+        <view:PanelControl Width="310" PanelVisibility="{Binding Path=EditorVisbility, Mode=TwoWay}"
+                           Style="{StaticResource TransitionControl}">            
+          
+            <ItemsControl ItemsSource="{Binding Editors}" >
+                <ItemsControl.Template>
+                    <ControlTemplate>
+                        <Grid>                           
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid>                                                          
+                            <Border Background="#45a8a8" Padding="5,10,0,0">
+                                <Grid>
+                                    <TextBlock HorizontalAlignment="Left" Margin="25,10,10,10"  VerticalAlignment="Center" Foreground="White" FontSize="25"  Text="{Binding SelectedEditor.Title}"/>
+
+                                        <Button Margin="7,1,15,5" Width="35" Height="50" HorizontalContentAlignment="Right" Content="M11.920864,7.6668893 C12.584879,8.6049059 12.354874,9.9129291 11.418852,10.570941 L3.3466689,17.33106 C2.4086475,17.991072 1.1026178,17.767068 0.4416028,16.829052 -0.21841221,15.892035 0.010592997,14.589012 0.94361422,13.925 L6.9737514,8.8859109 0.88361285,3.7798204 C-0.054408482,3.1218088 -0.28241367,1.8127856 0.37760134,0.8817691 1.0376164,-0.055247494 2.3446461,-0.28225152 3.2796674,0.37876019 L11.29785,7.0928791 C11.535855,7.2338816 11.75086,7.426885 11.920864,7.6668893 M22.814573,10.348015 C22.642576,10.588017 22.431581,10.780019 22.193586,10.92602 L14.173759,17.637079 C13.238779,18.301084 11.929807,18.073082 11.271821,17.139074 10.613835,16.198066 10.83983,14.891055 11.77581,14.233049 L17.867679,9.1330046 11.839809,4.0869607 C10.900829,3.429955 10.677834,2.1229436 11.33582,1.1879355 11.996805,0.24992735 13.300777,0.025925405 14.238757,0.68593115 L22.312583,7.4439899 C23.244563,8.1069957 23.472558,9.412007 22.814573,10.348015" Style="{StaticResource ExpanderButtonStyle}" HorizontalAlignment="Right" VerticalAlignment="Center" Background="Transparent" Command="{Binding SelectEditor}" CommandParameter="Toggle">
+
+                                        </Button>
+
+                                    </Grid>
+                            </Border>
+                            </Grid>
+                            <ContentPresenter Grid.Row="1" Content="{Binding SelectedEditor.Content}"/>
+                            <Grid Grid.Row="2" Background="#45a8a8">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="25"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="10"></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <Button x:Name="path1" Click="path1_Click_1" RenderTransformOrigin="0.5,0.5" Margin="5,10,20,5" Width="15" Height="10"  Style="{StaticResource ExpanderButtonStyle}" Content="F1M1335.415,750.9834L1353.968,750.9834L1344.691,739.3464z" Background="Transparent" HorizontalAlignment="Right" VerticalAlignment="Center" Command="{Binding EditorPicker}" CommandParameter="Toggle">
+                                    <Button.RenderTransform>                                        
+                                        <TransformGroup>                                            
+                                            <ScaleTransform/>                                            
+                                            <SkewTransform/>                                            
+                                            <RotateTransform/>                                            
+                                            <TranslateTransform />                                            
+                                        </TransformGroup>                                        
+                                    </Button.RenderTransform>
+                                </Button>
+                                <Line  X1="10" Y1="60" Margin="10" Grid.Row="1"
+                                   X2="150" Y2="60" StrokeThickness="1" StrokeDashArray="1, 2" Stroke="#ffffff" Stretch="Fill"/>
+                                <view:PanelControl Grid.Row="2" 
+                                                   PanelVisibility="{Binding Path=EditorPickerVisibility, Mode=TwoWay}"
+                                                   Style="{StaticResource TransitionControl}">
+                                    <ItemsPresenter/>
+                                </view:PanelControl>
+                            </Grid>
+                        </Grid>
+                    </ControlTemplate>
+                </ItemsControl.Template>
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <panel:WrapPanel Visibility="{Binding Path=PanelPickerVisibility,Mode=TwoWay}"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <ToggleButton HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Command="{Binding Select}" Tag="{Binding Title}" Style="{StaticResource ToggleButtonCommonStyle}"
+                                  Content="{Binding Icon}"
+                                  IsChecked="{Binding Path=IsSelected, Mode=TwoWay}">
+                        </ToggleButton>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </view:PanelControl>
+    </Grid>
+</UserControl>

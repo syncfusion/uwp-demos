@@ -1,0 +1,50 @@
+﻿<Page x:Class="FloorPlannerDemo.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:Sample="using:DiagramUtility"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="using:FloorPlannerDemo"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d">
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ms-appx:///Template/DarkTheme.Xaml" />
+                <ResourceDictionary Source="ms-appx:///Common/StandardStyles.xaml" />
+                <ResourceDictionary Source="ms-appx:///Template/FloorPlanDictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+       
+    </Page.Resources>
+    <!--
+        <Grid >
+        <local:FloorPlannerDiagram></local:FloorPlannerDiagram>
+        </Grid>
+    -->
+    <!--FloorPlan-->
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Sample:DiagramFrontPage x:Name="frontpage"
+                                 Create="{Binding Path=Create}"
+                                 DiagramCommonViewModel="{Binding}"
+                                 DiagramType="FloorPlan"
+                                 FrontPageImge="../CommonResource/Floorplanner.png"
+                                 Load="{Binding Path=Load}" />
+        <local:FloorPlannerDiagram FloorPlannerViewModel="{Binding}" Visibility="{Binding DiagramVisibility}" />
+    </Grid>
+
+
+    
+        <Page.BottomAppBar>
+        <AppBar Background="#FF333333">
+        <local:FloorPlanAppBarView x:Name="appBarView1"
+        ExportFiles="{Binding ExportFiles}"
+        ImportFiles="{Binding ImportFiles}"
+        Save="{Binding Save}" Load="{Binding Load}"
+        Clear="{Binding Clear}" Delete="{Binding Delete}"
+        
+        />
+        </AppBar>
+        </Page.BottomAppBar>
+    
+
+</Page>

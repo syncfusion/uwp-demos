@@ -1,0 +1,37 @@
+﻿<Page
+    x:Class="UMLDiagramDesigner.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UMLDiagramDesigner"
+    xmlns:sample="using:DiagramUtility"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Foreground="White"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ms-appx:///Template/DarkTheme.Xaml"/>
+                <ResourceDictionary Source="ms-appx:///Template/NodeTypeTemplates.Xaml"/>
+                <ResourceDictionary Source="ms-appx:///Common/StandardStyles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>      
+    </Page.Resources>
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <sample:DiagramFrontPage FrontPageImge="../CommonResource/umllogo.png" DiagramType="UML" x:Name="frontpage" DiagramCommonViewModel="{Binding}" Create="{Binding Path=Create}" Load="{Binding Path=Load}"/>
+        <local:Diagram Visibility="{Binding DiagramVisibility}" UMLViewModel="{Binding}" x:Name="diagram1"/>
+    </Grid>
+    <Page.BottomAppBar>
+        <AppBar Background="#FF333333">
+            <local:AppBarView x:Name="appBarView1"
+                              ExportFiles="{Binding ExportFiles}"
+                              ImportFiles="{Binding ImportFiles}"
+                              AddINodeType="{Binding AddINodeType}"
+                              Save="{Binding Save}" Load="{Binding Load}"
+                              Clear="{Binding Clear}" Delete="{Binding Delete}" 
+                              Connector="{Binding Connector}" Split="{Binding Split}"
+                              Undo="{Binding Undo}" Redo="{Binding Redo}"
+                              ShowProperties="{Binding ShowProperties}"/>
+        </AppBar>
+    </Page.BottomAppBar>
+</Page>

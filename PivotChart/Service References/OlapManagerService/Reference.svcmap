@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="34393929-eaa1-4743-a902-7092760f6a04" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://bi.syncfusion.com/OlapUWPTestService/OlapManager.svc/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service22.wsdl" MetadataType="Wsdl" ID="cd3dbf0d-73b0-4109-9bcf-f36dd5cfb850" SourceId="1" SourceUrl="http://bi.syncfusion.com/OlapUWPTestService/OlapManager.svc/mex" />
+    <MetadataFile FileName="service23.wsdl" MetadataType="Wsdl" ID="88151baf-5607-4701-9990-430f567ae96e" SourceId="1" SourceUrl="http://bi.syncfusion.com/OlapUWPTestService/OlapManager.svc/mex" />
+    <MetadataFile FileName="service22.xsd" MetadataType="Schema" ID="346a71d6-631e-4390-ae88-b87c3536b516" SourceId="1" SourceUrl="http://bi.syncfusion.com/OlapUWPTestService/OlapManager.svc/mex" />
+    <MetadataFile FileName="Syncfusion.Olap.UWP.Reports11.xsd" MetadataType="Schema" ID="edbc8dfd-a075-40bd-b694-5fd8d83ae41f" SourceId="1" SourceUrl="http://bi.syncfusion.com/OlapUWPTestService/OlapManager.svc/mex" />
+    <MetadataFile FileName="Syncfusion.Olap.UWP.Common11.xsd" MetadataType="Schema" ID="a8816744-b630-48f0-aa9f-2df0b14c4460" SourceId="1" SourceUrl="http://bi.syncfusion.com/OlapUWPTestService/OlapManager.svc/mex" />
+    <MetadataFile FileName="service23.xsd" MetadataType="Schema" ID="2a517470-9d91-4dea-a82a-f11e09dec8b2" SourceId="1" SourceUrl="http://bi.syncfusion.com/OlapUWPTestService/OlapManager.svc/mex" />
+    <MetadataFile FileName="Arrays11.xsd" MetadataType="Schema" ID="7d782a97-2868-4801-bc1e-f8ea935bf66e" SourceId="1" SourceUrl="http://bi.syncfusion.com/OlapUWPTestService/OlapManager.svc/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,103 @@
+﻿<Page 
+    x:Class="EssentialPresentation.PPTXViewer"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:EssentialPresentation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" MinWidth="1000">
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceDictionary x:Key="Light">
+                    <SolidColorBrush x:Key="ApplicationPageBackgroundThemeBrush" Color="#F4F4F4F4" />
+                </ResourceDictionary>
+            </ResourceDictionary.ThemeDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+
+    <Grid Name="RootGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Loaded="Grid_Loaded">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.4*"/>
+            <RowDefinition Height="0.7*"/>
+            <RowDefinition Height="9.3*" />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="#B7472A">
+            <TextBlock Name="TitleTextBlock" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="white"></TextBlock>
+        </Grid>
+        <Grid Grid.Row="1">
+            <!--Tool Bar-->
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="0*" />
+            </Grid.RowDefinitions>
+            <Border Background="#B7472A" Grid.Row="0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="18*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Row="0" Grid.Column="0" Width="50" Height="100" PointerPressed="DesktopOpenButton_Click">
+                        <!--open-->
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Column="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="6*"></RowDefinition>
+                                <RowDefinition Height="4*"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid>
+                                <Grid Width="32" Height="32" Visibility="Visible" Padding="0">
+                                    <Path Data="M50.5,4.7500001C25.232973,4.75 4.75,25.232973 4.7500001,50.5 4.75,75.767029 25.232973,96.25 50.5,96.25 75.767029,96.25 96.25,75.767029 96.25,50.5 96.25,25.232973 75.767029,4.75 50.5,4.7500001z M50.5,0C78.390381,0 101,22.609621 101,50.5 101,78.390381 78.390381,101 50.5,101 22.609621,101 0,78.390381 0,50.5 0,22.609621 22.609621,0 50.5,0z" Stretch="Fill" Fill="#00FF0000" Visibility="Visible" />
+                                </Grid>
+                                <Path Data="M7.5160018,7.0210069L32,7.0210069 26.112001,21.280001 2.2460016,21.280001z M0,0L9.2969996,0 11.158,4.0930236 26.091997,4.0930236 26.087999,5.3469933 6.3500015,5.3469933 0.46300124,21.280001 0,21.280001z" Stretch="Uniform" Fill="#FFFFFFFF" Width="20" Height="20" RenderTransformOrigin="0.5,0.5">
+                                    <Path.RenderTransform>
+                                        <TransformGroup>
+                                            <TransformGroup.Children>
+                                                <RotateTransform Angle="0" />
+                                                <ScaleTransform ScaleX="1" ScaleY="1" />
+                                            </TransformGroup.Children>
+                                        </TransformGroup>
+                                    </Path.RenderTransform>
+                                </Path>
+                            </Grid>
+                            <TextBlock FontSize="12" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Height="30" Margin="11,25,10,-5" Grid.RowSpan="2" >Open</TextBlock>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Border>
+        </Grid>
+        <!--End of tool bar-->
+        <Grid Grid.Row="2" BorderBrush="SlateGray" BorderThickness="1.5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="4*"/>
+            </Grid.ColumnDefinitions>
+            <ScrollViewer VerticalScrollBarVisibility="Visible" VerticalContentAlignment="Top" Name="ThumbNailScrollViewer" BorderBrush="SlateGray" BorderThickness="1" >
+                <Grid>
+                    <Grid Grid.Column="0" Name="ThumbnailGrid" Margin="12,0,12,0"></Grid>
+                </Grid>
+            </ScrollViewer>
+            <ScrollViewer Visibility="Collapsed" Name="TempThumbNailScrollViewer" BorderBrush="SlateGray" BorderThickness="0.5" ></ScrollViewer>
+            <Grid Grid.Column="1" BorderBrush="Black">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="9.7*"/>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid Grid.Row="0" Name="MainViewImageGrid">
+                        
+                    </Grid>
+                    <ProgressRing Name="loadingRing" Visibility="Collapsed" Grid.Row="1" Height="50" Width="50"></ProgressRing>
+                 
+                </Grid>
+                <Canvas Name ="PrintStatusCanvas" Height="20" Grid.Row="1" Background="Gray" Visibility="Collapsed">
+                    <TextBlock Name="PrintingStatusTxtBlock" HorizontalAlignment="Center" Foreground="White">Printing status</TextBlock>
+                </Canvas>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>
