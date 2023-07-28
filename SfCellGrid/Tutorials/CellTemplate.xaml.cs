@@ -110,7 +110,7 @@ namespace CellGridSamples
                     if (coll == 1 && row > 0)
                     {
                         cellGrid.Model[row, coll].CellType = "DataTemplate";
-                        cellGrid.Model[row, coll].CellValue = "ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Images/" + cellGrid.Model[row, 0].CellValue.ToString() + ".jpg";
+                        cellGrid.Model[row, coll].CellValue = "ms-appx:///Assets/Images/" + cellGrid.Model[row, 0].CellValue.ToString() + ".jpg";
                         cellGrid.Model[row, coll].CellItemTemplateKey = "ImageTemplate";
                     }
 

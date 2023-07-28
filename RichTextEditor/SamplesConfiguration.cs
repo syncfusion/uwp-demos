@@ -27,8 +27,8 @@ namespace Syncfusion.SampleBrowser.UWP.RichTextEditor
                 {
                     Header = "Document Editor",
                     SampleType = SampleType.Showcase,
-                    DesktopImage = "ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/Showcase/DocumentEditor_Desktop.jpg",
-                    MobileImage = "ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/Showcase/DocumentEditor_Phone.jpg",
+                    DesktopImage = "ms-appx:///RTE/Assets/Showcase/DocumentEditor_Desktop.jpg",
+                    MobileImage = "ms-appx:///RTE/Assets/Showcase/DocumentEditor_Phone.jpg",
                     Description = "The RichTextBoxAdv and Ribbon controls have been used to build a sample application that looks similar to Microsoft Word.",
                     Product = "RichTextEditor",
                     SampleView = typeof(RTEDemo.DocumentEditor).AssemblyQualifiedName,
@@ -66,8 +66,8 @@ namespace Syncfusion.SampleBrowser.UWP.RichTextEditor
                 {
                     Header = "Document Editor",
                     SampleType = SampleType.Showcase,
-                    DesktopImage = "ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/Showcase/DocumentEditor_Desktop.jpg",
-                    MobileImage = "ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/Showcase/DocumentEditor_Phone.jpg",
+                    DesktopImage = "ms-appx:///RTE/Assets/Showcase/DocumentEditor_Desktop.jpg",
+                    MobileImage = "ms-appx:///RTE/Assets/Showcase/DocumentEditor_Phone.jpg",
                     Description = "The RichTextBoxAdv and Ribbon controls have been used to build a sample application that looks similar to Microsoft Word.",
                     Product = "RichTextEditor",
                     SampleView = typeof(RTEDemo.DocumentEditor).AssemblyQualifiedName,

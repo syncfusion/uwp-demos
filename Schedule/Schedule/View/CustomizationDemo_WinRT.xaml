@@ -210,7 +210,7 @@
                                             <StackPanel>
                                                 <Image Stretch="Uniform" Height="25" Width="25" >
                                                     <Image.Source>
-                                                        <BitmapImage   UriSource="ms-appx:///Syncfusion.SampleBrowser.UWP.Schedule/Schedule/Assets/AddNew.png"/>
+                                                        <BitmapImage   UriSource="ms-appx:///Schedule/Assets/AddNew.png"/>
                                                     </Image.Source>
                                                 </Image>
                                                 <TextBlock Text="Add"/>
@@ -224,7 +224,7 @@
                                             <StackPanel>
                                                 <Image Stretch="Uniform" Height="25" Width="25" >
                                                     <Image.Source>
-                                                        <BitmapImage UriSource="ms-appx:///Syncfusion.SampleBrowser.UWP.Schedule/Schedule/Assets/Edit.png"/>
+                                                        <BitmapImage UriSource="ms-appx:///Schedule/Assets/Edit.png"/>
                                                     </Image.Source>
                                                 </Image>
                                                 <TextBlock Text="Edit"/>
@@ -238,7 +238,7 @@
                                             <StackPanel>
                                                 <Image Stretch="Uniform" Height="25" Width="25" >
                                                     <Image.Source>
-                                                        <BitmapImage UriSource="ms-appx:///Syncfusion.SampleBrowser.UWP.Schedule/Schedule/Assets/Copy.png" />
+                                                        <BitmapImage UriSource="ms-appx:///Schedule/Assets/Copy.png" />
                                                     </Image.Source>
                                                 </Image>
                                                 <TextBlock Text="Copy"/>
@@ -252,7 +252,7 @@
                                             <StackPanel>
                                                 <Image Stretch="Uniform" Height="25" Width="25" >
                                                     <Image.Source>
-                                                        <BitmapImage UriSource="ms-appx:///Syncfusion.SampleBrowser.UWP.Schedule/Schedule/Assets/Paste.png" />
+                                                        <BitmapImage UriSource="ms-appx:///Schedule/Assets/Paste.png" />
                                                     </Image.Source>
                                                 </Image>
                                                 <TextBlock Text="Paste"/>
@@ -267,7 +267,7 @@
                                             <StackPanel>
                                                 <Image Stretch="Uniform" Height="25" Width="25" >
                                                     <Image.Source>
-                                                        <BitmapImage UriSource="ms-appx:///Syncfusion.SampleBrowser.UWP.Schedule/Schedule/Assets/Delete.png" />
+                                                        <BitmapImage UriSource="ms-appx:///Schedule/Assets/Delete.png" />
                                                     </Image.Source>
                                                 </Image>
                                                 <TextBlock Text="Delete"/>

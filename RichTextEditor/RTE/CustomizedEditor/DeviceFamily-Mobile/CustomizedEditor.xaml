@@ -131,7 +131,7 @@
                             </VisualStateManager.VisualStateGroups>
                             <Grid>
                                 <Border x:Name="border" Height="{TemplateBinding MinHeight}" Width="{TemplateBinding MinWidth}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
-                                    <BitmapIcon UriSource="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/Bold_Icon.png"/>
+                                    <BitmapIcon UriSource="ms-appx:///RTE/Assets/Bold_Icon.png"/>
                                 </Border>
                             </Grid>
                         </Grid>
@@ -211,7 +211,7 @@
                             </VisualStateManager.VisualStateGroups>
                             <Grid>
                                 <Border x:Name="border" Height="{TemplateBinding MinHeight}" Width="{TemplateBinding MinWidth}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
-                                    <BitmapIcon UriSource="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/Italic_Icon.png"/>
+                                    <BitmapIcon UriSource="ms-appx:///RTE/Assets/Italic_Icon.png"/>
                                 </Border>
                             </Grid>
                         </Grid>
@@ -291,7 +291,7 @@
                             </VisualStateManager.VisualStateGroups>
                             <Grid>
                                 <Border x:Name="border" Height="{TemplateBinding MinHeight}" Width="{TemplateBinding MinWidth}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
-                                    <BitmapIcon UriSource="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/Underline_Icon.png"/>
+                                    <BitmapIcon UriSource="ms-appx:///RTE/Assets/Underline_Icon.png"/>
                                 </Border>
                             </Grid>
                         </Grid>
@@ -371,7 +371,7 @@
                             </VisualStateManager.VisualStateGroups>
                             <Grid>
                                 <Border x:Name="border" Height="{TemplateBinding MinHeight}" Width="{TemplateBinding MinWidth}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
-                                    <BitmapIcon UriSource="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/Strike_Icon.png"/>
+                                    <BitmapIcon UriSource="ms-appx:///RTE/Assets/Strike_Icon.png"/>
                                 </Border>
                             </Grid>
                         </Grid>
@@ -442,7 +442,7 @@
                             </VisualStateManager.VisualStateGroups>
                             <Grid>
                                 <Border x:Name="border" Height="{TemplateBinding MinHeight}" Width="{TemplateBinding MinWidth}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
-                                    <BitmapIcon UriSource="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/IncreaseFont_Icon.png"/>
+                                    <BitmapIcon UriSource="ms-appx:///RTE/Assets/IncreaseFont_Icon.png"/>
                                 </Border>
                             </Grid>
                         </Grid>
@@ -513,7 +513,7 @@
                             </VisualStateManager.VisualStateGroups>
                             <Grid>
                                 <Border x:Name="border" Height="{TemplateBinding MinHeight}" Width="{TemplateBinding MinWidth}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
-                                    <BitmapIcon UriSource="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/DecreaseFont_Icon.png"/>
+                                    <BitmapIcon UriSource="ms-appx:///RTE/Assets/DecreaseFont_Icon.png"/>
                                 </Border>
                             </Grid>
                         </Grid>
@@ -810,27 +810,27 @@
             <CommandBar.PrimaryCommands>
                 <AppBarButton Width="60" x:Name="editButton" Label="edit" Click="EditButton_Click" >
                     <AppBarButton.Icon>
-                        <BitmapIcon UriSource="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/Edit_Icon.png"/>
+                        <BitmapIcon UriSource="ms-appx:///RTE/Assets/Edit_Icon.png"/>
                     </AppBarButton.Icon>
                 </AppBarButton>
                 <AppBarButton Width="60" x:Name="insertImageButton" Label="image" Click="InsertImageButton_Click" IsTabStop="False">
                     <AppBarButton.Icon>
-                        <BitmapIcon UriSource="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/InsertImage_Icon.png"/>
+                        <BitmapIcon UriSource="ms-appx:///RTE/Assets/InsertImage_Icon.png"/>
                     </AppBarButton.Icon>
                 </AppBarButton>
                 <AppBarButton Width="60" x:Name="formatButton" Label="format" Click="FormatButton_Click">
                     <AppBarButton.Icon>
-                        <BitmapIcon UriSource="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/Brush_Icon.png"/>
+                        <BitmapIcon UriSource="ms-appx:///RTE/Assets/Brush_Icon.png"/>
                     </AppBarButton.Icon>
                 </AppBarButton>
                 <AppBarButton Width="60" x:Name="findButton" Label="find" Click="FindButton_Click">
                     <AppBarButton.Icon>
-                        <BitmapIcon UriSource="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/Find_Icon.png"/>
+                        <BitmapIcon UriSource="ms-appx:///RTE/Assets/Find_Icon.png"/>
                     </AppBarButton.Icon>
                 </AppBarButton>
                 <AppBarButton x:Name="nextButton" Label="Next" Visibility="Collapsed" Click="NextButton_Click">
                     <AppBarButton.Icon>
-                        <BitmapIcon UriSource="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/NavigateRight_Icon.png"/>
+                        <BitmapIcon UriSource="ms-appx:///RTE/Assets/NavigateRight_Icon.png"/>
                     </AppBarButton.Icon>
                 </AppBarButton>
             </CommandBar.PrimaryCommands>

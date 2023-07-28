@@ -46,13 +46,13 @@
                             Content="Book Ticket" />
                 </DataTemplate>
                 <DataTemplate x:Key="Image1">
-                    <Image Source="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Images/Avatar.jpeg" Stretch="Fill" />
+                    <Image Source="ms-appx:///Assets/Images/Avatar.jpeg" Stretch="Fill" />
                 </DataTemplate>
                 <DataTemplate x:Key="Image2">
-                    <Image Source="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Images/Iceage3.jpeg" Stretch="Fill" />
+                    <Image Source="ms-appx:///Assets/Images/Iceage3.jpeg" Stretch="Fill" />
                 </DataTemplate>
                 <DataTemplate x:Key="Image3">
-                    <Image Source="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Images/shrek.jpeg" Stretch="Fill" />
+                    <Image Source="ms-appx:///Assets/Images/shrek.jpeg" Stretch="Fill" />
                 </DataTemplate>
             </syncfusion:SfCellGrid.Resources>
         </syncfusion:SfCellGrid>

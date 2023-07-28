@@ -218,8 +218,8 @@ namespace Syncfusion.SampleBrowser.UWP.SfTreeGrid
             var datacontext = value as DataContextHelper;
             if (datacontext.Value.ToString() == "Inbox" || datacontext.Value.ToString() == "Drafts" || datacontext.Value.ToString() == "Sent Items"
                 || datacontext.Value.ToString() == "Deleted Items" || datacontext.Value.ToString() == "Calendar" || datacontext.Value.ToString() == "Contacts")
-                return "ms-appx:///Syncfusion.SampleBrowser.UWP.SfTreeGrid/Images///" + datacontext.Value.ToString() + ".png";
-            return "ms-appx:///Syncfusion.SampleBrowser.UWP.SfTreeGrid/Images///" + "Folder.png";
+                return "ms-appx:///Images///" + datacontext.Value.ToString() + ".png";
+            return "ms-appx:///Images///" + "Folder.png";
 
         }
 

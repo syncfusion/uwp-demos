@@ -99,8 +99,8 @@ namespace Syncfusion.SampleBrowser.UWP.DocIO
                 Product = "DocIO",
                 Description = "This sample demonstrates how the file format manipulation components can be used to create an invoice in Excel, PDF and Word formats.",
                 SampleType = SampleType.Showcase,
-                DesktopImage = "ms-appx:///Syncfusion.SampleBrowser.UWP.DocIO/DocIO/Invoice/Assets/invoice.png",
-                MobileImage = "ms-appx:///Syncfusion.SampleBrowser.UWP.DocIO/DocIO/Invoice/Assets/invoice.png",
+                DesktopImage = "ms-appx:///DocIO/Invoice/Assets/invoice.png",
+                MobileImage = "ms-appx:///DocIO/Invoice/Assets/invoice.png",
                 SearchKeys = new string[] { "invoice", "basic" },
                 Tag = Tags.None
             });
@@ -188,7 +188,7 @@ namespace Syncfusion.SampleBrowser.UWP.DocIO
                     SampleCategory = "Import and Export",
                     Product = "DocIO",
 					Description = "This sample demonstrates exporting Word document to OpenDocument Text (ODT)",
-					DesktopImage = "ms-appx:///Syncfusion.SampleBrowser.UWP.DocIO/DocIO/Assets/wordtoodt.png",
+					DesktopImage = "ms-appx:///DocIO/Assets/wordtoodt.png",
                     Tag = Tags.None,
                     SearchKeys = new string[] { "WordToODT", "ODT"}
                 });

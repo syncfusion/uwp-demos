@@ -1879,7 +1879,7 @@ namespace RTEDemo
             spellchecker.IsEnabled = false;
 
             //Adding the language dictionary to spellchecker.
-            spellchecker.Dictionaries.Add("ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/en_US.dic");
+            spellchecker.Dictionaries.Add("ms-appx:///RTE/Assets/en_US.dic");
             this.richTextBox.SpellChecker = spellchecker;
         }
         #endregion

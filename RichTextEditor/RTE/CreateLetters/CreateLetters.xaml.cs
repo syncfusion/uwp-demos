@@ -96,7 +96,7 @@ namespace RTEDemo
             ribbon.BackStageOpened += Ribbon_BackStageOpened;
             ribbon.BackStageClosed += Ribbon_BackStageClosed;
             //Adding the language dictionary to spellchecker.
-            this.richTextBox.SpellChecker.Dictionaries.Add("ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/en_US.dic");
+            this.richTextBox.SpellChecker.Dictionaries.Add("ms-appx:///RTE/Assets/en_US.dic");
             Stream inputStream = GetManifestResourceStream("Letter.docx");
             this.richTextBox.Load(inputStream, FormatType.Docx);
             this.richTextBox.DocumentTitle = "Letter";

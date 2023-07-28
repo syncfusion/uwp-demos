@@ -127,8 +127,8 @@ namespace Syncfusion.SampleBrowser.UWP.Presentation
             {
                 Header = "Presentation Viewer",
                 SampleType = SampleType.Showcase,
-                DesktopImage = "ms-appx:///Syncfusion.SampleBrowser.UWP.Presentation/Syncfusion.SampleBrowser.UWP.Presentation/Syncfusion.SampleBrowser.UWP.Presentation/Presentation/Assets/PresentationViewer_Desktop.jpg",
-                MobileImage = "ms-appx:///Syncfusion.SampleBrowser.UWP.Presentation/Syncfusion.SampleBrowser.UWP.Presentation/Syncfusion.SampleBrowser.UWP.Presentation/Presentation/Assets/PresentationViewer_Mobile.jpg",
+                DesktopImage = "ms-appx:///Presentation/Assets/PresentationViewer_Desktop.jpg",
+                MobileImage = "ms-appx:///Presentation/Assets/PresentationViewer_Mobile.jpg",
                 Description = "Presentation viewer is a sample application that can be used to view PowerPoint presentations in windows mobile and desktop environments, similar to Microsoft Powerpoint.",
                 Product = "Presentation",
                 SampleView = typeof(EssentialPresentation.PPTXViewer).AssemblyQualifiedName,

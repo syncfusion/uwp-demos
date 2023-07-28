@@ -96,7 +96,7 @@
                        TitleAlignment="Center" QATVisibility="Visible" TabPanelVisibility="Visible" Title="{Binding ElementName=richTextBox, Path=DocumentTitle, Mode=TwoWay}">
                         <ribbon:SfRibbon.BackStage>
                             <ribbon:SfBackstage>
-                                <ribbon:SfBackStageTabItem x:Name="newBackStageTabItem" Header="New" Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/Backstage/New.png">
+                                <ribbon:SfBackStageTabItem x:Name="newBackStageTabItem" Header="New" Icon="ms-appx:///RTE/Assets/RibbonIcons/Backstage/New.png">
                                     <Grid>
                                         <Grid.RowDefinitions>
                                             <RowDefinition Height="10" />
@@ -119,7 +119,7 @@
                                             <Button.Content>
                                                 <StackPanel Orientation="Vertical">
                                                     <Border BorderBrush="#000000" BorderThickness="1">
-                                                        <Image Width="218" Height="280" Source="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/Templates/Blank.png"/>
+                                                        <Image Width="218" Height="280" Source="ms-appx:///RTE/Assets/Templates/Blank.png"/>
                                                     </Border>
                                                     <TextBlock HorizontalAlignment="Center"  FontFamily="Segoe UI" FontSize="14" FontWeight="Light" Text="Blank Document" />
                                                 </StackPanel>
@@ -129,7 +129,7 @@
                                             <Button.Content>
                                                 <StackPanel Orientation="Vertical">
                                                     <Border BorderBrush="#000000" BorderThickness="1">
-                                                        <Image Width="218" Height="280" Source="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/Templates/TakeATour.png"/>
+                                                        <Image Width="218" Height="280" Source="ms-appx:///RTE/Assets/Templates/TakeATour.png"/>
                                                     </Border>
                                                     <TextBlock HorizontalAlignment="Center"  FontFamily="Segoe UI" FontSize="14" FontWeight="Light" Text="Take A Tour" />
                                                 </StackPanel>
@@ -139,7 +139,7 @@
                                             <Button.Content>
                                                 <StackPanel Orientation="Vertical">
                                                     <Border BorderBrush="#000000" BorderThickness="1">
-                                                        <Image Width="218" Height="280" Source="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/Templates/Letter.png"/>
+                                                        <Image Width="218" Height="280" Source="ms-appx:///RTE/Assets/Templates/Letter.png"/>
                                                     </Border>
                                                     <TextBlock HorizontalAlignment="Center" FontFamily="Segoe UI" FontSize="14" FontWeight="Light" Text="Letter" />
                                                 </StackPanel>
@@ -149,7 +149,7 @@
                                             <Button.Content>
                                                 <StackPanel Orientation="Vertical">
                                                     <Border BorderBrush="#000000" BorderThickness="1">
-                                                        <Image Width="218" Height="280" Source="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/Templates/Title.png"/>
+                                                        <Image Width="218" Height="280" Source="ms-appx:///RTE/Assets/Templates/Title.png"/>
                                                     </Border>
                                                     <TextBlock HorizontalAlignment="Center"  FontFamily="Segoe UI" FontSize="14" FontWeight="Light" Text="Title" />
                                                 </StackPanel>
@@ -159,7 +159,7 @@
                                             <Button.Content>
                                                 <StackPanel Orientation="Vertical">
                                                     <Border BorderBrush="#000000" BorderThickness="1">
-                                                        <Image Width="218" Height="280" Source="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/Templates/Fax.png"/>
+                                                        <Image Width="218" Height="280" Source="ms-appx:///RTE/Assets/Templates/Fax.png"/>
                                                     </Border>
                                                     <TextBlock HorizontalAlignment="Center" FontFamily="Segoe UI" FontSize="14" FontWeight="Light" Text="Fax" />
                                                 </StackPanel>
@@ -169,7 +169,7 @@
                                             <Button.Content>
                                                 <StackPanel Orientation="Vertical">
                                                     <Border BorderBrush="#000000" BorderThickness="1">
-                                                        <Image Width="218" Height="280" Source="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/Templates/ToDoList.png"/>
+                                                        <Image Width="218" Height="280" Source="ms-appx:///RTE/Assets/Templates/ToDoList.png"/>
                                                     </Border>
                                                     <TextBlock HorizontalAlignment="Center"  FontFamily="Segoe UI" FontSize="14" FontWeight="Light" Text="To Do List" />
                                                 </StackPanel>
@@ -177,16 +177,16 @@
                                         </Button>
                                     </Grid>
                                 </ribbon:SfBackStageTabItem>
-                                <ribbon:SfBackStageButton x:Name="openBackStageButton" Label="Open" Click="WordImport_Click" Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/Backstage/Open.png" />
-                                <ribbon:SfBackStageButton x:Name="saveAsBackStageButton" Label="Save As" Click="WordExport_Click" Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/Backstage/SaveAs.png"/>
-                                <ribbon:SfBackStageButton x:Name="printBackStageButton" Label="Print" Click="PrintDocument_OnClick" Command="{Binding ElementName=richTextBox, Path=PrintDocumentCommand, Mode=TwoWay}" Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/Backstage/print.png"/>
-                                <ribbon:SfBackStageButton x:Name="helpBackaStageButton" Label="Help" Click="HelpButton_Clicked" Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/Backstage/Help.png"/>
-                                <ribbon:SfBackStageButton x:Name="exitBackStageButton" Label="Exit" Click="ExitButton_Click" Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/Backstage/Exit.png" />
+                                <ribbon:SfBackStageButton x:Name="openBackStageButton" Label="Open" Click="WordImport_Click" Icon="ms-appx:///RTE/Assets/RibbonIcons/Backstage/Open.png" />
+                                <ribbon:SfBackStageButton x:Name="saveAsBackStageButton" Label="Save As" Click="WordExport_Click" Icon="ms-appx:///RTE/Assets/RibbonIcons/Backstage/SaveAs.png"/>
+                                <ribbon:SfBackStageButton x:Name="printBackStageButton" Label="Print" Click="PrintDocument_OnClick" Command="{Binding ElementName=richTextBox, Path=PrintDocumentCommand, Mode=TwoWay}" Icon="ms-appx:///RTE/Assets/RibbonIcons/Backstage/print.png"/>
+                                <ribbon:SfBackStageButton x:Name="helpBackaStageButton" Label="Help" Click="HelpButton_Clicked" Icon="ms-appx:///RTE/Assets/RibbonIcons/Backstage/Help.png"/>
+                                <ribbon:SfBackStageButton x:Name="exitBackStageButton" Label="Exit" Click="ExitButton_Click" Icon="ms-appx:///RTE/Assets/RibbonIcons/Backstage/Exit.png" />
                             </ribbon:SfBackstage>
                         </ribbon:SfRibbon.BackStage>
                         <ribbon:SfRibbon.QuickAccessToolBar>
                             <ribbon:QuickAccessToolBar DisplayItemsCount="3">
-                                <ribbon:SfRibbonButton ribbon:RibbonCommandManager.SynchronizedItem="New" Height="50" FontIcon="N" FontIconFontFamily="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/RibbonQATIcons.ttf#RibbonQATIcons" BorderBrush="Transparent" Command="{Binding ElementName=richTextBox, Path=NewDocumentCommand,Mode=TwoWay}" Click="NewDocumentButton_Click">
+                                <ribbon:SfRibbonButton ribbon:RibbonCommandManager.SynchronizedItem="New" Height="50" FontIcon="N" FontIconFontFamily="ms-appx:///RTE/Assets/RibbonIcons/RibbonQATIcons.ttf#RibbonQATIcons" BorderBrush="Transparent" Command="{Binding ElementName=richTextBox, Path=NewDocumentCommand,Mode=TwoWay}" Click="NewDocumentButton_Click">
                                     <ribbon:SfRibbonButton.ToolTip>
                                         <StackPanel Orientation="Vertical" Margin="0 0 10 0">
                                             <TextBlock Text="New Document" FontSize="15" Margin="0 5 0 5"/>
@@ -194,7 +194,7 @@
                                         </StackPanel>
                                     </ribbon:SfRibbonButton.ToolTip>
                                 </ribbon:SfRibbonButton>
-                                <ribbon:SfRibbonButton ribbon:RibbonCommandManager.SynchronizedItem="Undo" Height="50" FontIcon="Z" FontIconFontFamily="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/RibbonQATIcons.ttf#RibbonQATIcons" BorderBrush="Transparent" Command="{Binding ElementName=richTextBox, Path=UndoCommand, Mode=TwoWay}">
+                                <ribbon:SfRibbonButton ribbon:RibbonCommandManager.SynchronizedItem="Undo" Height="50" FontIcon="Z" FontIconFontFamily="ms-appx:///RTE/Assets/RibbonIcons/RibbonQATIcons.ttf#RibbonQATIcons" BorderBrush="Transparent" Command="{Binding ElementName=richTextBox, Path=UndoCommand, Mode=TwoWay}">
                                     <ribbon:SfRibbonButton.ToolTip>
                                         <StackPanel Orientation="Vertical" Margin="0 0 10 0">
                                             <TextBlock Text="Undo (Ctrl+Z)" FontSize="15" Margin="0 5 0 5"/>
@@ -202,7 +202,7 @@
                                         </StackPanel>
                                     </ribbon:SfRibbonButton.ToolTip>
                                 </ribbon:SfRibbonButton>
-                                <ribbon:SfRibbonButton ribbon:RibbonCommandManager.SynchronizedItem="Redo" Height="50" FontIcon="Y" FontIconFontFamily="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/RibbonQATIcons.ttf#RibbonQATIcons" BorderBrush="Transparent" Command="{Binding ElementName=richTextBox,Path=RedoCommand,Mode=TwoWay}">
+                                <ribbon:SfRibbonButton ribbon:RibbonCommandManager.SynchronizedItem="Redo" Height="50" FontIcon="Y" FontIconFontFamily="ms-appx:///RTE/Assets/RibbonIcons/RibbonQATIcons.ttf#RibbonQATIcons" BorderBrush="Transparent" Command="{Binding ElementName=richTextBox,Path=RedoCommand,Mode=TwoWay}">
                                     <ribbon:SfRibbonButton.ToolTip>
                                         <StackPanel Orientation="Vertical" Margin="0 0 10 0">
                                             <TextBlock Text="Redo (Ctrl+Y)" FontSize="15" Margin="0 5 0 5"/>
@@ -214,7 +214,7 @@
                         </ribbon:SfRibbon.QuickAccessToolBar>
                         <ribbon:SfRibbonTab x:Name="homeTab" Caption="HOME" Background="White" FontSize="15">
                             <ribbon:SfRibbonBar Header="Clipboard" SeparatorBrush="DarkGray" Background="Transparent">
-                                <ribbon:SfRibbonButton x:Name="cutCommand" SizeMode="Small" Label="Cut" Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/Home/Cut.png" Command="{Binding ElementName=richTextBox, Path=CutCommand,Mode=TwoWay}">
+                                <ribbon:SfRibbonButton x:Name="cutCommand" SizeMode="Small" Label="Cut" Icon="ms-appx:///RTE/Assets/RibbonIcons/Home/Cut.png" Command="{Binding ElementName=richTextBox, Path=CutCommand,Mode=TwoWay}">
                                     <ribbon:SfRibbonButton.ToolTip>
                                         <StackPanel Orientation="Vertical" Margin="0 0 10 0">
                                             <TextBlock Text="Cut (Ctrl+X)" FontSize="15" Margin="0 5 0 5"/>
@@ -224,7 +224,7 @@
                                         </StackPanel>
                                     </ribbon:SfRibbonButton.ToolTip>
                                 </ribbon:SfRibbonButton>
-                                <ribbon:SfRibbonButton Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/Home/Copy.png" Label="Copy" SizeMode="Small" Command="{Binding ElementName=richTextBox,Path=CopyCommand,Mode=TwoWay}">
+                                <ribbon:SfRibbonButton Icon="ms-appx:///RTE/Assets/RibbonIcons/Home/Copy.png" Label="Copy" SizeMode="Small" Command="{Binding ElementName=richTextBox,Path=CopyCommand,Mode=TwoWay}">
                                     <ribbon:SfRibbonButton.ToolTip>
                                         <StackPanel Orientation="Vertical" Margin="0 0 10 0">
                                             <TextBlock Text="Copy (Ctrl+C)" FontSize="15" Margin="0 5 0 5"/>
@@ -234,7 +234,7 @@
                                         </StackPanel>
                                     </ribbon:SfRibbonButton.ToolTip>
                                 </ribbon:SfRibbonButton>
-                                <ribbon:SfRibbonButton SizeMode="Small" Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/Home/Paste.png" Label="Paste" Command="{Binding ElementName=richTextBox,Path=PasteCommand,Mode=TwoWay}">
+                                <ribbon:SfRibbonButton SizeMode="Small" Icon="ms-appx:///RTE/Assets/RibbonIcons/Home/Paste.png" Label="Paste" Command="{Binding ElementName=richTextBox,Path=PasteCommand,Mode=TwoWay}">
                                     <ribbon:SfRibbonButton.ToolTip>
                                         <StackPanel Orientation="Vertical" Margin="0 0 10 0">
                                             <TextBlock Text="Paste (Ctrl+V)" FontSize="15" Margin="0 5 0 5"/>
@@ -286,10 +286,10 @@
                                         <x:Double>60</x:Double>
                                     </ribbon:SfRibbonComboBox>
                                 </Grid>
-                                <ribbon:SfRibbonToggleButton x:Name="boldButton" IsTabStop="False" Margin="0 0" SizeMode="Small" Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/Home/Bold.png" IsChecked="{Binding ElementName=richTextBox,Path=Selection.CharacterFormat.Bold,Mode=TwoWay}" />
-                                <ribbon:SfRibbonToggleButton x:Name="italicButton" IsTabStop="False" Margin="0 0" SizeMode="Small" Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/Home/Italic.png" IsChecked="{Binding ElementName=richTextBox,Path=Selection.CharacterFormat.Italic,Mode=TwoWay}" />
-                                <ribbon:SfRibbonToggleButton x:Name="underlineButton" IsTabStop="False" Margin="0 0" SizeMode="Small" Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/Home/Underline.png" IsChecked="{Binding ElementName=richTextBox,Path=Selection.CharacterFormat.Underline,Mode=TwoWay,Converter={StaticResource UnderlineToggleConverter}}" />
-                                <ribbon:SfDropDownButton IsTabStop="False" Margin="0 0" x:Name="fontColorDropDownButton" Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/Home/FontColor.png">
+                                <ribbon:SfRibbonToggleButton x:Name="boldButton" IsTabStop="False" Margin="0 0" SizeMode="Small" Icon="ms-appx:///RTE/Assets/RibbonIcons/Home/Bold.png" IsChecked="{Binding ElementName=richTextBox,Path=Selection.CharacterFormat.Bold,Mode=TwoWay}" />
+                                <ribbon:SfRibbonToggleButton x:Name="italicButton" IsTabStop="False" Margin="0 0" SizeMode="Small" Icon="ms-appx:///RTE/Assets/RibbonIcons/Home/Italic.png" IsChecked="{Binding ElementName=richTextBox,Path=Selection.CharacterFormat.Italic,Mode=TwoWay}" />
+                                <ribbon:SfRibbonToggleButton x:Name="underlineButton" IsTabStop="False" Margin="0 0" SizeMode="Small" Icon="ms-appx:///RTE/Assets/RibbonIcons/Home/Underline.png" IsChecked="{Binding ElementName=richTextBox,Path=Selection.CharacterFormat.Underline,Mode=TwoWay,Converter={StaticResource UnderlineToggleConverter}}" />
+                                <ribbon:SfDropDownButton IsTabStop="False" Margin="0 0" x:Name="fontColorDropDownButton" Icon="ms-appx:///RTE/Assets/RibbonIcons/Home/FontColor.png">
                                     <ribbon:SfDropDownButton.ToolTip>
                                         <StackPanel Orientation="Vertical" Margin="0 0 10 0">
                                             <TextBlock Text="Font Color" FontSize="15" Margin="0 5 0 5"/>
@@ -298,7 +298,7 @@
                                     </ribbon:SfDropDownButton.ToolTip>
                                     <media:SfColorPicker x:Name="fontColorPicker" SelectedColor="{Binding ElementName=richTextBox, Path=Selection.CharacterFormat.FontColor, Mode=TwoWay}" Background="#FFFFFF" Foreground="#000000"/>
                                 </ribbon:SfDropDownButton>
-                                <ribbon:SfDropDownButton IsTabStop="False" x:Name="highlightColorDropDownButton" Margin="0 0 6 0" Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/Home/HighlightColor.png">
+                                <ribbon:SfDropDownButton IsTabStop="False" x:Name="highlightColorDropDownButton" Margin="0 0 6 0" Icon="ms-appx:///RTE/Assets/RibbonIcons/Home/HighlightColor.png">
                                     <ribbon:SfDropDownButton.ToolTip>
                                         <StackPanel Orientation="Vertical" Margin="0 0 10 0">
                                             <TextBlock Text="Highlight Color" FontSize="15" Margin="0 5 0 5"/>
@@ -309,11 +309,11 @@
                                 </ribbon:SfDropDownButton>
                             </ribbon:SfRibbonBar>
                             <ribbon:SfRibbonBar Header="Paragraph" SeparatorBrush="DarkGray" Background="Transparent">
-                                <ribbon:SfRibbonToggleButton x:Name="leftAlignButton" IsTabStop="False" Margin="6 0" SizeMode="Small" Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/Home/Left.png" IsChecked="{Binding ElementName=richTextBox,Path=Selection.ParagraphFormat.TextAlignment,Mode=TwoWay,Converter={StaticResource LeftAlignmentToggleConverter}}" />
-                                <ribbon:SfRibbonToggleButton x:Name="centerAlignButton" IsTabStop="False" Margin="0 0" SizeMode="Small" Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/Home/Center.png" IsChecked="{Binding ElementName=richTextBox,Path=Selection.ParagraphFormat.TextAlignment,Mode=TwoWay,Converter={StaticResource CenterAlignmentToggleConverter}}" />
-                                <ribbon:SfRibbonToggleButton x:Name="rightAlignButton" IsTabStop="False" Margin="0 0" SizeMode="Small" Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/Home/Right.png" IsChecked="{Binding ElementName=richTextBox,Path=Selection.ParagraphFormat.TextAlignment,Mode=TwoWay,Converter={StaticResource RightAlignmentToggleConverter}}" />
-                                <ribbon:SfRibbonToggleButton x:Name="justifyAlignButton" IsTabStop="False" Margin="0 0" SizeMode="Small" Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/Home/Justify.png" IsChecked="{Binding ElementName=richTextBox,Path=Selection.ParagraphFormat.TextAlignment,Mode=TwoWay,Converter={StaticResource JustifyAlignmentToggleConverter}}" />
-                                <ribbon:SfRibbonButton Margin="0 0" Label="Pencil" SizeMode="Small" Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/Home/Bullet.png" Click="BulletButton_Click" >
+                                <ribbon:SfRibbonToggleButton x:Name="leftAlignButton" IsTabStop="False" Margin="6 0" SizeMode="Small" Icon="ms-appx:///RTE/Assets/RibbonIcons/Home/Left.png" IsChecked="{Binding ElementName=richTextBox,Path=Selection.ParagraphFormat.TextAlignment,Mode=TwoWay,Converter={StaticResource LeftAlignmentToggleConverter}}" />
+                                <ribbon:SfRibbonToggleButton x:Name="centerAlignButton" IsTabStop="False" Margin="0 0" SizeMode="Small" Icon="ms-appx:///RTE/Assets/RibbonIcons/Home/Center.png" IsChecked="{Binding ElementName=richTextBox,Path=Selection.ParagraphFormat.TextAlignment,Mode=TwoWay,Converter={StaticResource CenterAlignmentToggleConverter}}" />
+                                <ribbon:SfRibbonToggleButton x:Name="rightAlignButton" IsTabStop="False" Margin="0 0" SizeMode="Small" Icon="ms-appx:///RTE/Assets/RibbonIcons/Home/Right.png" IsChecked="{Binding ElementName=richTextBox,Path=Selection.ParagraphFormat.TextAlignment,Mode=TwoWay,Converter={StaticResource RightAlignmentToggleConverter}}" />
+                                <ribbon:SfRibbonToggleButton x:Name="justifyAlignButton" IsTabStop="False" Margin="0 0" SizeMode="Small" Icon="ms-appx:///RTE/Assets/RibbonIcons/Home/Justify.png" IsChecked="{Binding ElementName=richTextBox,Path=Selection.ParagraphFormat.TextAlignment,Mode=TwoWay,Converter={StaticResource JustifyAlignmentToggleConverter}}" />
+                                <ribbon:SfRibbonButton Margin="0 0" Label="Pencil" SizeMode="Small" Icon="ms-appx:///RTE/Assets/RibbonIcons/Home/Bullet.png" Click="BulletButton_Click" >
                                     <ribbon:SfRibbonButton.ToolTip>
                                         <StackPanel Orientation="Vertical" Margin="0 0 10 0">
                                             <TextBlock Text="Applies Bulleted List" FontSize="15" Margin="0 5 0 5"/>
@@ -321,7 +321,7 @@
                                         </StackPanel>
                                     </ribbon:SfRibbonButton.ToolTip>
                                 </ribbon:SfRibbonButton>
-                                <ribbon:SfRibbonButton Margin="0 0" Label="Pencil"  SizeMode="Small" Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/Home/Numbering.png" Click="NumberingButton_Click">
+                                <ribbon:SfRibbonButton Margin="0 0" Label="Pencil"  SizeMode="Small" Icon="ms-appx:///RTE/Assets/RibbonIcons/Home/Numbering.png" Click="NumberingButton_Click">
                                     <ribbon:SfRibbonButton.ToolTip>
                                         <StackPanel Orientation="Vertical" Margin="0 0 10 0">
                                             <TextBlock Text="Applies Numbered List" FontSize="15" Margin="0 5 0 5"/>
@@ -329,7 +329,7 @@
                                         </StackPanel>
                                     </ribbon:SfRibbonButton.ToolTip>
                                 </ribbon:SfRibbonButton>
-                                <ribbon:SfRibbonToggleButton x:Name="leftToRight" Margin="0 0" IsTabStop="False" SizeMode="Small" Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/Home/LeftToRight.png" IsChecked="{Binding ElementName=richTextBox,Path=Selection.ParagraphFormat.Bidi,Mode=TwoWay,Converter={StaticResource InverseBooleanConverter},ConverterParameter={StaticResource False}}" >
+                                <ribbon:SfRibbonToggleButton x:Name="leftToRight" Margin="0 0" IsTabStop="False" SizeMode="Small" Icon="ms-appx:///RTE/Assets/RibbonIcons/Home/LeftToRight.png" IsChecked="{Binding ElementName=richTextBox,Path=Selection.ParagraphFormat.Bidi,Mode=TwoWay,Converter={StaticResource InverseBooleanConverter},ConverterParameter={StaticResource False}}" >
                                     <ribbon:SfRibbonToggleButton.ToolTip>
                                         <StackPanel Orientation="Vertical" Margin="0 0 10 0">
                                             <TextBlock Text="Left-to-Right Text Direction" FontSize="15" Margin="0 5 0 5"/>
@@ -337,7 +337,7 @@
                                         </StackPanel>
                                     </ribbon:SfRibbonToggleButton.ToolTip>
                                 </ribbon:SfRibbonToggleButton>
-                                <ribbon:SfRibbonToggleButton x:Name="rightToLeft" IsTabStop="False" Margin="0 0 6 0"  SizeMode="Small" Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/Home/RightToLeft.png" IsChecked="{Binding ElementName=richTextBox,Path=Selection.ParagraphFormat.Bidi,Mode=TwoWay,Converter={StaticResource InverseBooleanConverter},ConverterParameter={StaticResource True}}" >
+                                <ribbon:SfRibbonToggleButton x:Name="rightToLeft" IsTabStop="False" Margin="0 0 6 0"  SizeMode="Small" Icon="ms-appx:///RTE/Assets/RibbonIcons/Home/RightToLeft.png" IsChecked="{Binding ElementName=richTextBox,Path=Selection.ParagraphFormat.Bidi,Mode=TwoWay,Converter={StaticResource InverseBooleanConverter},ConverterParameter={StaticResource True}}" >
                                     <ribbon:SfRibbonToggleButton.ToolTip>
                                         <StackPanel Orientation="Vertical" Margin="0 0 10 0">
                                             <TextBlock Text="Right-to-Left Text Direction" FontSize="15" Margin="0 5 0 5"/>
@@ -347,7 +347,7 @@
                                 </ribbon:SfRibbonToggleButton>
                             </ribbon:SfRibbonBar>
                             <ribbon:SfRibbonBar Header="Editing" SeparatorBrush="Transparent" Background="Transparent">
-                                <ribbon:SfRibbonButton Label="Find" ToolTipService.Placement="Left" Margin="6 0 0 0" SizeMode="Small" Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/Home/Find.png" Command="{Binding ElementName=richTextBox, Path=ShowOptionsPaneCommand, Mode=TwoWay}" >
+                                <ribbon:SfRibbonButton Label="Find" ToolTipService.Placement="Left" Margin="6 0 0 0" SizeMode="Small" Icon="ms-appx:///RTE/Assets/RibbonIcons/Home/Find.png" Command="{Binding ElementName=richTextBox, Path=ShowOptionsPaneCommand, Mode=TwoWay}" >
                                     <ribbon:SfRibbonButton.ToolTip>
                                         <StackPanel Orientation="Vertical" Margin="0 0 10 0">
                                             <TextBlock Text="Find (Ctrl+F)" FontSize="15" Margin="0 5 0 5"/>
@@ -355,7 +355,7 @@
                                         </StackPanel>
                                     </ribbon:SfRibbonButton.ToolTip>
                                 </ribbon:SfRibbonButton>
-                                <ribbon:SfRibbonButton Label="Replace" ToolTipService.Placement="Left" Margin="0 0" SizeMode="Small" Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/Home/Replace.png" Command="{Binding ElementName=richTextBox, Path=ShowOptionsPaneCommand, Mode=TwoWay}" CommandParameter="Replace">
+                                <ribbon:SfRibbonButton Label="Replace" ToolTipService.Placement="Left" Margin="0 0" SizeMode="Small" Icon="ms-appx:///RTE/Assets/RibbonIcons/Home/Replace.png" Command="{Binding ElementName=richTextBox, Path=ShowOptionsPaneCommand, Mode=TwoWay}" CommandParameter="Replace">
                                     <ribbon:SfRibbonButton.ToolTip>
                                         <StackPanel Orientation="Vertical" Margin="0 0 10 0">
                                             <TextBlock Text="Replace (Ctrl+H)" FontSize="15" Margin="0 5 0 5"/>
@@ -367,7 +367,7 @@
                         </ribbon:SfRibbonTab>
                         <ribbon:SfRibbonTab Caption="INSERT" SelectedForeground="#FF19488A" Background="White" FontSize="15">
                             <ribbon:SfRibbonBar Header="Pages" SeparatorBrush="Transparent"  Background="Transparent">
-                                <ribbon:SfRibbonButton x:Name="insertBreakbutton" Label="Page Break" SizeMode="Large" Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/Insert/PageBreak.png" Command="{Binding ElementName=richTextBox, Path=InsertBreakCommand, Mode=TwoWay}" CommandParameter="PageBreak">
+                                <ribbon:SfRibbonButton x:Name="insertBreakbutton" Label="Page Break" SizeMode="Large" Icon="ms-appx:///RTE/Assets/RibbonIcons/Insert/PageBreak.png" Command="{Binding ElementName=richTextBox, Path=InsertBreakCommand, Mode=TwoWay}" CommandParameter="PageBreak">
                                     <ribbon:SfRibbonButton.ToolTip>
                                         <StackPanel Orientation="Vertical" Margin="0 0 10 0">
                                             <TextBlock Text="Insert a Page Break (Ctrl+Return)" FontSize="15" Margin="0 5 0 5"/>
@@ -377,7 +377,7 @@
                                 </ribbon:SfRibbonButton>
                             </ribbon:SfRibbonBar>
                             <ribbon:SfRibbonBar Header="Tables" SeparatorBrush="Transparent"  Background="Transparent">
-                                <ribbon:SfDropDownButton x:Name="tabledropdown" Label="Table" SizeMode="Large" Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/Insert/InsertTable.png"  >
+                                <ribbon:SfDropDownButton x:Name="tabledropdown" Label="Table" SizeMode="Large" Icon="ms-appx:///RTE/Assets/RibbonIcons/Insert/InsertTable.png"  >
                                     <ribbon:SfDropDownButton.ToolTip>
                                         <StackPanel Orientation="Vertical" Margin="0 0 10 0">
                                             <TextBlock Text="Add a Table" FontSize="15" Margin="0 5 0 5"/>
@@ -408,7 +408,7 @@
                                 </ribbon:SfDropDownButton>
                             </ribbon:SfRibbonBar>
                             <ribbon:SfRibbonBar Header="Illustrations" SeparatorBrush="Transparent"  Background="Transparent">
-                                <ribbon:SfRibbonButton x:Name="insertPicturebutton" Label="Picture" SizeMode="Large" Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/Insert/InsertPicture.png" Command="{Binding ElementName=richTextBox, Path=InsertPictureCommand, Mode=TwoWay}">
+                                <ribbon:SfRibbonButton x:Name="insertPicturebutton" Label="Picture" SizeMode="Large" Icon="ms-appx:///RTE/Assets/RibbonIcons/Insert/InsertPicture.png" Command="{Binding ElementName=richTextBox, Path=InsertPictureCommand, Mode=TwoWay}">
                                     <ribbon:SfRibbonButton.ToolTip>
                                         <StackPanel Orientation="Vertical" Margin="0 0 10 0">
                                             <TextBlock Text="Add a Picture" FontSize="15" Margin="0 5 0 5"/>
@@ -418,7 +418,7 @@
                                 </ribbon:SfRibbonButton>
                             </ribbon:SfRibbonBar>
                             <ribbon:SfRibbonBar Header="Links" SeparatorBrush="Transparent"  Background="Transparent">
-                                <ribbon:SfRibbonButton x:Name="hyperlinkbutton" Label="Hyperlink" SizeMode="Large" Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/Insert/Hyperlink.png" Command="{Binding ElementName=richTextBox, Path=ShowHyperlinkDialogCommand, Mode=TwoWay}">
+                                <ribbon:SfRibbonButton x:Name="hyperlinkbutton" Label="Hyperlink" SizeMode="Large" Icon="ms-appx:///RTE/Assets/RibbonIcons/Insert/Hyperlink.png" Command="{Binding ElementName=richTextBox, Path=ShowHyperlinkDialogCommand, Mode=TwoWay}">
                                     <ribbon:SfRibbonButton.ToolTip>
                                         <StackPanel Orientation="Vertical" Margin="0 0 10 0">
                                             <TextBlock Text="Add Hyperlink (Ctrl+K)" FontSize="15" Margin="0 5 0 5"/>
@@ -431,7 +431,7 @@
                         </ribbon:SfRibbonTab>
                         <ribbon:SfRibbonTab Caption="VIEW" SelectedForeground="#FF19488A" Background="White" FontSize="15">
                             <ribbon:SfRibbonBar Header="Views" SeparatorBrush="DarkGray" Background="Transparent">
-                                <ribbon:SfRibbonButton Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/View/PrintMode.png" Label="Pages View" SizeMode="Large" Command="{Binding ElementName=richTextBox, Path=LayoutTypeCommand, Mode=TwoWay}">
+                                <ribbon:SfRibbonButton Icon="ms-appx:///RTE/Assets/RibbonIcons/View/PrintMode.png" Label="Pages View" SizeMode="Large" Command="{Binding ElementName=richTextBox, Path=LayoutTypeCommand, Mode=TwoWay}">
                                     <ribbon:SfRibbonButton.CommandParameter>
                                         <richTextBoxAdv:LayoutType>Pages</richTextBoxAdv:LayoutType>
                                     </ribbon:SfRibbonButton.CommandParameter>
@@ -443,7 +443,7 @@
                                         </StackPanel>
                                     </ribbon:SfRibbonButton.ToolTip>
                                 </ribbon:SfRibbonButton>
-                                <ribbon:SfRibbonButton SizeMode="Large" Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/View/WebMode.png" Label="Continuous" Command="{Binding ElementName=richTextBox, Path=LayoutTypeCommand, Mode=TwoWay}">
+                                <ribbon:SfRibbonButton SizeMode="Large" Icon="ms-appx:///RTE/Assets/RibbonIcons/View/WebMode.png" Label="Continuous" Command="{Binding ElementName=richTextBox, Path=LayoutTypeCommand, Mode=TwoWay}">
                                     <ribbon:SfRibbonButton.CommandParameter>
                                         <richTextBoxAdv:LayoutType>Continuous</richTextBoxAdv:LayoutType>
                                     </ribbon:SfRibbonButton.CommandParameter>
@@ -457,7 +457,7 @@
                                 </ribbon:SfRibbonButton>
                             </ribbon:SfRibbonBar>
                             <ribbon:SfRibbonBar Header="Zoom" SeparatorBrush="DarkGray" Background="Transparent">
-                                <ribbon:SfRibbonButton Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/View/Zoom100.png" Label="100%" SizeMode="Large" Command="{Binding ElementName=richTextBox, Path=PageFitCommand, Mode=TwoWay}" CommandParameter="None">
+                                <ribbon:SfRibbonButton Icon="ms-appx:///RTE/Assets/RibbonIcons/View/Zoom100.png" Label="100%" SizeMode="Large" Command="{Binding ElementName=richTextBox, Path=PageFitCommand, Mode=TwoWay}" CommandParameter="None">
                                     <ribbon:SfRibbonButton.ToolTip>
                                         <StackPanel Orientation="Vertical" Margin="0 0 10 0">
                                             <TextBlock Text="100%" FontSize="15" Margin="0 5 0 5"/>
@@ -465,7 +465,7 @@
                                         </StackPanel>
                                     </ribbon:SfRibbonButton.ToolTip>
                                 </ribbon:SfRibbonButton>
-                                <ribbon:SfRibbonButton Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/View/OnePage.png" Label="One Page" SizeMode="Large" Command="{Binding ElementName=richTextBox, Path=PageFitCommand, Mode=TwoWay}" CommandParameter="FitFullPage">
+                                <ribbon:SfRibbonButton Icon="ms-appx:///RTE/Assets/RibbonIcons/View/OnePage.png" Label="One Page" SizeMode="Large" Command="{Binding ElementName=richTextBox, Path=PageFitCommand, Mode=TwoWay}" CommandParameter="FitFullPage">
                                     <ribbon:SfRibbonButton.ToolTip>
                                         <StackPanel Orientation="Vertical" Margin="0 0 10 0">
                                             <TextBlock Text="One Page" FontSize="15" Margin="0 5 0 5"/>
@@ -474,7 +474,7 @@
                                         </StackPanel>
                                     </ribbon:SfRibbonButton.ToolTip>
                                 </ribbon:SfRibbonButton>
-                                <ribbon:SfRibbonButton Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/View/PageWidth.png" Label="Page Width" SizeMode="Large" Command="{Binding ElementName=richTextBox, Path=PageFitCommand, Mode=TwoWay}" CommandParameter="FitPageWidth">
+                                <ribbon:SfRibbonButton Icon="ms-appx:///RTE/Assets/RibbonIcons/View/PageWidth.png" Label="Page Width" SizeMode="Large" Command="{Binding ElementName=richTextBox, Path=PageFitCommand, Mode=TwoWay}" CommandParameter="FitPageWidth">
                                     <ribbon:SfRibbonButton.ToolTip>
                                         <StackPanel Orientation="Vertical" Margin="0 0 10 0">
                                             <TextBlock Text="Page Width" FontSize="15" Margin="0 5 0 5"/>
@@ -488,7 +488,7 @@
                         </ribbon:SfRibbonTab>
                         <ribbon:SfRibbonTab Caption="REVIEW" SelectedForeground="#FF19488A" Background="White" FontSize="15">
                             <ribbon:SfRibbonBar Header="Proofing" SeparatorBrush="DarkGray" Background="Transparent">
-                                <ribbon:SfRibbonButton Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/Review/SpellChecker.png" Label="Spelling" SizeMode="Large" Command="{Binding ElementName=richTextBox, Path=ShowSpellingPaneCommand, Mode=TwoWay}">
+                                <ribbon:SfRibbonButton Icon="ms-appx:///RTE/Assets/RibbonIcons/Review/SpellChecker.png" Label="Spelling" SizeMode="Large" Command="{Binding ElementName=richTextBox, Path=ShowSpellingPaneCommand, Mode=TwoWay}">
                                     <ribbon:SfRibbonButton.ToolTip>
                                         <StackPanel Orientation="Vertical" Margin="0 0 10 0">
                                             <TextBlock Text="Spelling" FontSize="15" Margin="0 5 0 5"/>
@@ -499,7 +499,7 @@
                                 </ribbon:SfRibbonButton>
                             </ribbon:SfRibbonBar>
                             <ribbon:SfRibbonBar Header="Comments" SeparatorBrush="Transparent" Background="Transparent">
-                                <ribbon:SfRibbonButton Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/Review/NewComment.png" Label="New Comment" SizeMode="Large" Command="{Binding ElementName=richTextBox, Path=NewCommentCommand, Mode=TwoWay}">
+                                <ribbon:SfRibbonButton Icon="ms-appx:///RTE/Assets/RibbonIcons/Review/NewComment.png" Label="New Comment" SizeMode="Large" Command="{Binding ElementName=richTextBox, Path=NewCommentCommand, Mode=TwoWay}">
                                     <ribbon:SfRibbonButton.ToolTip>
                                         <StackPanel Orientation="Vertical" Margin="0 0 10 0">
                                             <TextBlock Text="Insert a Comment" FontSize="15" Margin="0 5 0 5"/>
@@ -508,7 +508,7 @@
                                         </StackPanel>
                                     </ribbon:SfRibbonButton.ToolTip>
                                 </ribbon:SfRibbonButton>
-                                <ribbon:SfRibbonButton Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/Review/DeleteComment.png" Label="Delete" SizeMode="Large" Command="{Binding ElementName=richTextBox, Path=DeleteCommentCommand, Mode=TwoWay}">
+                                <ribbon:SfRibbonButton Icon="ms-appx:///RTE/Assets/RibbonIcons/Review/DeleteComment.png" Label="Delete" SizeMode="Large" Command="{Binding ElementName=richTextBox, Path=DeleteCommentCommand, Mode=TwoWay}">
                                     <ribbon:SfRibbonButton.ToolTip>
                                         <StackPanel Orientation="Vertical" Margin="0 0 10 0">
                                             <TextBlock Text="Delete Comment" FontSize="15" Margin="0 5 0 5"/>
@@ -516,7 +516,7 @@
                                         </StackPanel>
                                     </ribbon:SfRibbonButton.ToolTip>
                                 </ribbon:SfRibbonButton>
-                                <ribbon:SfRibbonButton Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/Review/PreviousComment.png" Label="Previous" SizeMode="Large" Command="{Binding ElementName=richTextBox, Path=PreviousCommentCommand, Mode=TwoWay}">
+                                <ribbon:SfRibbonButton Icon="ms-appx:///RTE/Assets/RibbonIcons/Review/PreviousComment.png" Label="Previous" SizeMode="Large" Command="{Binding ElementName=richTextBox, Path=PreviousCommentCommand, Mode=TwoWay}">
                                     <ribbon:SfRibbonButton.ToolTip>
                                         <StackPanel Orientation="Vertical" Margin="0 0 10 0">
                                             <TextBlock Text="Previous Comment" FontSize="15" Margin="0 5 0 5"/>
@@ -524,7 +524,7 @@
                                         </StackPanel>
                                     </ribbon:SfRibbonButton.ToolTip>
                                 </ribbon:SfRibbonButton>
-                                <ribbon:SfRibbonButton Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/Review/NextComment.png" Label="Next" SizeMode="Large" Command="{Binding ElementName=richTextBox, Path=NextCommentCommand, Mode=TwoWay}">
+                                <ribbon:SfRibbonButton Icon="ms-appx:///RTE/Assets/RibbonIcons/Review/NextComment.png" Label="Next" SizeMode="Large" Command="{Binding ElementName=richTextBox, Path=NextCommentCommand, Mode=TwoWay}">
                                     <ribbon:SfRibbonButton.ToolTip>
                                         <StackPanel Orientation="Vertical" Margin="0 0 10 0">
                                             <TextBlock Text="Next Comment" FontSize="15" Margin="0 5 0 5"/>
@@ -532,7 +532,7 @@
                                         </StackPanel>
                                     </ribbon:SfRibbonButton.ToolTip>
                                 </ribbon:SfRibbonButton>
-                                <ribbon:SfRibbonButton Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/Review/ShowComments.png" Label="Show Comments" SizeMode="Large" Command="{Binding ElementName=richTextBox, Path=ShowCommentsCommand, Mode=TwoWay}">
+                                <ribbon:SfRibbonButton Icon="ms-appx:///RTE/Assets/RibbonIcons/Review/ShowComments.png" Label="Show Comments" SizeMode="Large" Command="{Binding ElementName=richTextBox, Path=ShowCommentsCommand, Mode=TwoWay}">
                                     <ribbon:SfRibbonButton.ToolTip>
                                         <StackPanel Orientation="Vertical" Margin="0 0 10 0">
                                             <TextBlock Text="Show Comments" FontSize="15" Margin="0 5 0 5"/>
@@ -559,7 +559,7 @@
                         </ribbon:SfRibbonTab>
                         <ribbon:SfRibbonTab x:Name="tableLayoutTab" Visibility="Collapsed" Caption="TABLE LAYOUT" SelectedForeground="#FF19488A" Background="White" FontSize="15">
                             <ribbon:SfRibbonBar Header="Cell Size" SeparatorBrush="DarkGray" Background="Transparent">
-                                <ribbon:SfRibbonButton Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/Table/AutoFitContents.png" Label="AutoFit Contents" SizeMode="Large" Command="{Binding ElementName=richTextBox, Path=AutoFitTableCommand, Mode=TwoWay}" CommandParameter="FitToContents">
+                                <ribbon:SfRibbonButton Icon="ms-appx:///RTE/Assets/RibbonIcons/Table/AutoFitContents.png" Label="AutoFit Contents" SizeMode="Large" Command="{Binding ElementName=richTextBox, Path=AutoFitTableCommand, Mode=TwoWay}" CommandParameter="FitToContents">
                                     <ribbon:SfRibbonButton.ToolTip>
                                         <StackPanel Orientation="Vertical" Margin="0 0 10 0">
                                             <TextBlock Text="AutoFit to Contents" FontSize="15" Margin="0 5 0 5"/>
@@ -567,7 +567,7 @@
                                         </StackPanel>
                                     </ribbon:SfRibbonButton.ToolTip>
                                 </ribbon:SfRibbonButton>
-                                <ribbon:SfRibbonButton Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/Table/AutoFitWindow.png" Label="AutoFit Window" SizeMode="Large" Command="{Binding ElementName=richTextBox, Path=AutoFitTableCommand, Mode=TwoWay}" CommandParameter="FitToWindow">
+                                <ribbon:SfRibbonButton Icon="ms-appx:///RTE/Assets/RibbonIcons/Table/AutoFitWindow.png" Label="AutoFit Window" SizeMode="Large" Command="{Binding ElementName=richTextBox, Path=AutoFitTableCommand, Mode=TwoWay}" CommandParameter="FitToWindow">
                                     <ribbon:SfRibbonButton.ToolTip>
                                         <StackPanel Orientation="Vertical" Margin="0 0 10 0">
                                             <TextBlock Text="AutoFit to Width" FontSize="15" Margin="0 5 0 5"/>
@@ -575,7 +575,7 @@
                                         </StackPanel>
                                     </ribbon:SfRibbonButton.ToolTip>
                                 </ribbon:SfRibbonButton>
-                                <ribbon:SfRibbonButton Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/RibbonIcons/Table/FixedColumnWidth.png" Label="Fixed Column Width" SizeMode="Large" Command="{Binding ElementName=richTextBox, Path=AutoFitTableCommand, Mode=TwoWay}" CommandParameter="FixedColumnWidth">
+                                <ribbon:SfRibbonButton Icon="ms-appx:///RTE/Assets/RibbonIcons/Table/FixedColumnWidth.png" Label="Fixed Column Width" SizeMode="Large" Command="{Binding ElementName=richTextBox, Path=AutoFitTableCommand, Mode=TwoWay}" CommandParameter="FixedColumnWidth">
                                     <ribbon:SfRibbonButton.ToolTip>
                                         <StackPanel Orientation="Vertical" Margin="0 0 10 0">
                                             <TextBlock Text="Fixed Column Width" FontSize="15" Margin="0 5 0 5"/>

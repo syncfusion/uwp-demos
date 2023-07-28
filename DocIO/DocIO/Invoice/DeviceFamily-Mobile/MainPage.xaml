@@ -10,7 +10,7 @@
     <Page.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="ms-appx:///Syncfusion.SampleBrowser.UWP.DocIO/DocIO/Invoice/Common/IOStandardStyles.Xaml"/>
+                <ResourceDictionary Source="ms-appx:///DocIO/Invoice/Common/IOStandardStyles.Xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Page.Resources>
@@ -183,10 +183,10 @@
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
                             <Button Grid.Column="0" Style="{StaticResource EditButtonStyle}" HorizontalAlignment="Center" VerticalAlignment="Top"  x:Name="AddButton" Click="Add" >
-                                <Image Source="ms-appx:///Syncfusion.SampleBrowser.UWP.DocIO/DocIO/Invoice/Assets/Add.png" Width="50" Height="50" VerticalAlignment="Top"/>
+                                <Image Source="ms-appx:///DocIO/Invoice/Assets/Add.png" Width="50" Height="50" VerticalAlignment="Top"/>
                             </Button>
                             <Button Grid.Column="2" IsEnabled="False" Style="{StaticResource EditButtonStyle}" HorizontalAlignment="Center" VerticalAlignment="Top" x:Name="DeleteButton" Click="Delete" >
-                                <Image Source="ms-appx:///Syncfusion.SampleBrowser.UWP.DocIO/DocIO/Invoice/Assets/Delete.png" Height="50" Width="50" VerticalAlignment="Top"/>
+                                <Image Source="ms-appx:///DocIO/Invoice/Assets/Delete.png" Height="50" Width="50" VerticalAlignment="Top"/>
                             </Button>
                         </Grid>
                         <Grid Grid.Column="3" Grid.ColumnSpan="2">

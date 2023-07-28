@@ -164,7 +164,7 @@
                         </Grid.RowDefinitions>
                         <Grid Grid.Row="0" Name="backgroundGrid" Width="35" Height="35" Visibility="Visible">
                             <Ellipse Name="Fill" Visibility="Visible"/>
-                            <Image Source="ms-appx:///Syncfusion.SampleBrowser.UWP.DocIO/DocIO/Invoice/Assets/Export.png"/>
+                            <Image Source="ms-appx:///DocIO/Invoice/Assets/Export.png"/>
                         </Grid>
                         <TextBlock Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Light" FontFamily="Segeo UI" FontSize="16" Grid.Row="1" Padding="0,5,0,0" Text="Export"/>
                         <VisualStateManager.VisualStateGroups>
@@ -726,7 +726,7 @@
                         </Grid.RowDefinitions>
                         <Grid Grid.Row="1" Name="backgroundGrid" Width="35" Height="35" Visibility="Visible" Padding="0,5,0,0">
                             <Ellipse Name="Fill" Visibility="Visible"/>
-                            <Image Source="ms-appx:///Syncfusion.SampleBrowser.UWP.DocIO/DocIO/Invoice/Assets/PDF.png"/>
+                            <Image Source="ms-appx:///DocIO/Invoice/Assets/PDF.png"/>
                         </Grid>
                         <TextBlock Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Light" FontFamily="Segeo UI" FontSize="16" Grid.Row="2" Padding="0,5,0,0" Text="PDF"/>
                         <VisualStateManager.VisualStateGroups>
@@ -768,7 +768,7 @@
                         </Grid.RowDefinitions>
                         <Grid Grid.Row="1" Name="backgroundGrid" Width="35" Height="35" Visibility="Visible" Padding="0,5,0,0">
                             <Ellipse Name="Fill" Visibility="Visible"/>
-                            <Image Source="ms-appx:///Syncfusion.SampleBrowser.UWP.DocIO/DocIO/Invoice/Assets/Excel.png"/>
+                            <Image Source="ms-appx:///DocIO/Invoice/Assets/Excel.png"/>
                         </Grid>
                         <TextBlock  Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Light" FontFamily="Segeo UI" FontSize="16" Grid.Row="2" Padding="0,5,0,0" Text="Excel"/>
                         <VisualStateManager.VisualStateGroups>
@@ -810,7 +810,7 @@
                         </Grid.RowDefinitions>
                         <Grid Grid.Row="1" Name="backgroundGrid" Width="35" Height="35" Visibility="Visible" Padding="0,5,0,0">
                             <Ellipse Name="Fill" Visibility="Visible"/>
-                            <Image Source="ms-appx:///Syncfusion.SampleBrowser.UWP.DocIO/DocIO/Invoice/Assets/Word.png"/>
+                            <Image Source="ms-appx:///DocIO/Invoice/Assets/Word.png"/>
                         </Grid>
                         <TextBlock Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Light" FontFamily="Segeo UI" FontSize="16" Grid.Row="2" Padding="0,5,0,0" Text="Word"/>
                         <VisualStateManager.VisualStateGroups>

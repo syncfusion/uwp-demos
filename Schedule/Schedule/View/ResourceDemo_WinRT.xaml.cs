@@ -141,8 +141,8 @@ namespace ScheduleUWP_Samples
             Schedule1.AppointmentStatusCollection.Add(new ScheduleAppointmentStatus() { Status = "Temporary" });
             this.DataContext = this;
 
-            (this.Schedule1.ScheduleResourceTypeCollection[0].ResourceCollection[0] as CustomResource).ResourceImageUri = new BitmapImage(new Uri("ms-appx:///Syncfusion.SampleBrowser.UWP.Schedule/Schedule/Assets/emp1.png"));
-            (this.Schedule1.ScheduleResourceTypeCollection[0].ResourceCollection[1] as CustomResource).ResourceImageUri = new BitmapImage(new Uri("ms-appx:///Syncfusion.SampleBrowser.UWP.Schedule/Schedule/Assets/emp2.png"));
+            (this.Schedule1.ScheduleResourceTypeCollection[0].ResourceCollection[0] as CustomResource).ResourceImageUri = new BitmapImage(new Uri("ms-appx:/Schedule/Assets/emp1.png"));
+            (this.Schedule1.ScheduleResourceTypeCollection[0].ResourceCollection[1] as CustomResource).ResourceImageUri = new BitmapImage(new Uri("ms-appx:/Schedule/Assets/emp2.png"));
 
             ScheduleHeaderStyle mainHeader = new ScheduleHeaderStyle();
             mainHeader.HeaderHeight = 0;

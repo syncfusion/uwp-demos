@@ -36,17 +36,17 @@
                         <Syncfusion:SfRibbonButton Name="pastes"
                                                    Grid.Column="0"
                                                    Click="Paste_Click"
-                                                   Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/paste.png"
+                                                   Icon="ms-appx:///Assets/Icons/paste.png"
                                                    Label="Paste"
                                                    SizeMode="Small" />
                         <Syncfusion:SfRibbonButton Grid.Row="0"
                                                    Click="cut_Click"
-                                                   Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/cut.png"
+                                                   Icon="ms-appx:///Assets/Icons/cut.png"
                                                    Label="Cut"
                                                    SizeMode="Small" />
                         <Syncfusion:SfRibbonButton Grid.Row="1"
                                                    Click="copy_Click"
-                                                   Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/copy.png"
+                                                   Icon="ms-appx:///Assets/Icons/copy.png"
                                                    Label="Copy"
                                                    SizeMode="Small" />
                         <Syncfusion:SfRibbonComboBox x:Name="Font"
@@ -98,105 +98,105 @@
                             <x:Double>72</x:Double>
                         </Syncfusion:SfRibbonComboBox>
                         <Syncfusion:SfRibbonButton Click="Bold_Click"
-                                                   Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/bold.png"
+                                                   Icon="ms-appx:///Assets/Icons/bold.png"
                                                    Label="Bold"
                                                    SizeMode="Small" />
                         <Syncfusion:SfRibbonButton Click="Italic_Click"
-                                                   Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/Italic.png"
+                                                   Icon="ms-appx:///Assets/Icons/Italic.png"
                                                    Label="Italic"
                                                    SizeMode="Small" />
-                        <!--<Syncfusion:SfRibbonButton SizeMode="Small" Label="UnderLine" Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/Underline.png" Click="UnderLine_Click"/>-->
+                        <!--<Syncfusion:SfRibbonButton SizeMode="Small" Label="UnderLine" Icon="ms-appx:///Assets/Icons/Underline.png" Click="UnderLine_Click"/>-->
 
-                        <Syncfusion:SfDropDownButton Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/BottomBorder.png" Label="Borders">
+                        <Syncfusion:SfDropDownButton Icon="ms-appx:///Assets/Icons/BottomBorder.png" Label="Borders">
                             <ScrollViewer Width="230" Height="400">
                                 <StackPanel>
                                     <Syncfusion:SfRibbonButton Click="bottomborder_click"
-                                                               Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/BottomBorder.png"
+                                                               Icon="ms-appx:///Assets/Icons/BottomBorder.png"
                                                                Label="  Bottom Border"
                                                                SizeMode="Large" />
                                     <Syncfusion:SfRibbonButton Click="TopBorderClick"
-                                                               Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/TopBorder.png"
+                                                               Icon="ms-appx:///Assets/Icons/TopBorder.png"
                                                                Label="  Top Border"
                                                                SizeMode="Large" />
                                     <Syncfusion:SfRibbonButton Click="LeftBorderClick"
-                                                               Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/LeftBorder.png"
+                                                               Icon="ms-appx:///Assets/Icons/LeftBorder.png"
                                                                Label="  Left Border"
                                                                SizeMode="Large" />
                                     <Syncfusion:SfRibbonButton Click="RightBorderClick"
-                                                               Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/RightBorder.png"
+                                                               Icon="ms-appx:///Assets/Icons/RightBorder.png"
                                                                Label="  Right Border"
                                                                SizeMode="Large" />
                                     <Syncfusion:SfRibbonButton Click="NoBorderClick"
-                                                               Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/NoBorder.png"
+                                                               Icon="ms-appx:///Assets/Icons/NoBorder.png"
                                                                Label="  No Border"
                                                                SizeMode="Large" />
                                     <Syncfusion:SfRibbonButton Click="AllBorderClick"
-                                                               Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/all-border.png"
+                                                               Icon="ms-appx:///Assets/Icons/all-border.png"
                                                                Label="  All Border"
                                                                SizeMode="Large" />
                                     <Syncfusion:SfRibbonButton Click="OutsideBorderClick"
-                                                               Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/OutSideBorder.png"
+                                                               Icon="ms-appx:///Assets/Icons/OutSideBorder.png"
                                                                Label="  OutSide Border"
                                                                SizeMode="Large" />
                                     <Syncfusion:SfRibbonButton Click="ThickBoxBorder"
-                                                               Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/ThickBoxBorder.png"
+                                                               Icon="ms-appx:///Assets/Icons/ThickBoxBorder.png"
                                                                Label="  Thick Box Border"
                                                                SizeMode="Large" />
                                     <Syncfusion:SfRibbonButton Click="ThickBottomBorder"
-                                                               Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/ThickBottomBorder.png"
+                                                               Icon="ms-appx:///Assets/Icons/ThickBottomBorder.png"
                                                                Label="  Thick Bottom Border"
                                                                SizeMode="Large" />
                                     <Syncfusion:SfRibbonButton Click="TopandBottomBorder"
-                                                               Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/TopAndBottomBorder.png"
+                                                               Icon="ms-appx:///Assets/Icons/TopAndBottomBorder.png"
                                                                Label="  Top and Bottom Border"
                                                                SizeMode="Large" />
                                     <Syncfusion:SfRibbonButton Click="TopandThickBottomBorder"
-                                                               Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/TopAndThickBottomBorder.png"
+                                                               Icon="ms-appx:///Assets/Icons/TopAndThickBottomBorder.png"
                                                                Label="  Top and Thick Bottom Border"
                                                                SizeMode="Large" />
                                 </StackPanel>
                             </ScrollViewer>
                         </Syncfusion:SfDropDownButton>
                         <Syncfusion:SfRibbonButton Click="incresefontsize"
-                                                   Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/increasefontsize.png"
+                                                   Icon="ms-appx:///Assets/Icons/increasefontsize.png"
                                                    Label="Increse Font Size"
                                                    SizeMode="Small" />
                         <Syncfusion:SfRibbonButton Click="decresefontsize"
-                                                   Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/decreasefontsize.png"
+                                                   Icon="ms-appx:///Assets/Icons/decreasefontsize.png"
                                                    Label="Decrese Font Size"
                                                    SizeMode="Small" />
                         <Syncfusion:SfDropDownButton x:Name="backgcolorpicker"
-                                                     Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/fillcolor.png"
+                                                     Icon="ms-appx:///Assets/Icons/fillcolor.png"
                                                      IsTabStop="False">
                             <media:SfColorPicker Name="backgroundcolor" Background="White" />
                         </Syncfusion:SfDropDownButton>
                         <Syncfusion:SfDropDownButton x:Name="forecolorpicker"
-                                                     Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/fontcolor.png"
+                                                     Icon="ms-appx:///Assets/Icons/fontcolor.png"
                                                      IsTabStop="False">
                             <media:SfColorPicker Name="foregroundcolor" Background="White" />
                         </Syncfusion:SfDropDownButton>
                         <Syncfusion:SfRibbonButton Click="TopAlign_click"
-                                                   Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/TopAlign.png"
+                                                   Icon="ms-appx:///Assets/Icons/TopAlign.png"
                                                    Label="  Topalign"
                                                    SizeMode="Small" />
                         <Syncfusion:SfRibbonButton Click="CenterverticalAlign_click"
-                                                   Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/MiddleAlign.png"
+                                                   Icon="ms-appx:///Assets/Icons/MiddleAlign.png"
                                                    Label="  centerverticalalign"
                                                    SizeMode="Small" />
                         <Syncfusion:SfRibbonButton Click="BottomAlign_click"
-                                                   Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/BottomAlign.png"
+                                                   Icon="ms-appx:///Assets/Icons/BottomAlign.png"
                                                    Label="  Bottomalign"
                                                    SizeMode="Small" />
                         <Syncfusion:SfRibbonButton Click="LeftAlign_click"
-                                                   Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/LeftAlign.png"
+                                                   Icon="ms-appx:///Assets/Icons/LeftAlign.png"
                                                    Label="  Leftalign"
                                                    SizeMode="Small" />
                         <Syncfusion:SfRibbonButton Click="CenterHorizantalAlign_click"
-                                                   Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/CenterAlign.png"
+                                                   Icon="ms-appx:///Assets/Icons/CenterAlign.png"
                                                    Label="  Centerhorizantalalign"
                                                    SizeMode="Small" />
                         <Syncfusion:SfRibbonButton Click="RightAlign_click"
-                                                   Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/RightAlign.png"
+                                                   Icon="ms-appx:///Assets/Icons/RightAlign.png"
                                                    Label="  Rightalign"
                                                    SizeMode="Small" />
                     </Syncfusion:SfRibbonBar>
@@ -204,15 +204,15 @@
                 <Syncfusion:SfRibbonTab Background="White" FontSize="16" Caption="Format">
                     <Syncfusion:SfRibbonBar SeparatorBrush="Transparent">
                         <Syncfusion:SfRibbonButton Click="IncreaseIndent_Click"
-                                                   Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/IncreaseIndent.png"
+                                                   Icon="ms-appx:///Assets/Icons/IncreaseIndent.png"
                                                    Label="  Increseindent"
                                                    SizeMode="Small" />
                         <Syncfusion:SfRibbonButton Click="DecreaseIndent_Click"
-                                                   Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/DecreaseIndent.png"
+                                                   Icon="ms-appx:///Assets/Icons/DecreaseIndent.png"
                                                    Label="  Decreseindent"
                                                    SizeMode="Small" />
                         <Syncfusion:SfRibbonButton Click="TextWrapping_Click"
-                                                   Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/WrapText.Png"
+                                                   Icon="ms-appx:///Assets/Icons/WrapText.Png"
                                                    Label="  TextWrapping"
                                                    SizeMode="Large" />
                         <Syncfusion:SfRibbonComboBox Name="cellformatcombo"
@@ -234,57 +234,57 @@
                             <Syncfusion:SfRibbonComboBoxItem>Text</Syncfusion:SfRibbonComboBoxItem>
                         </Syncfusion:SfRibbonComboBox>
                         <Syncfusion:SfRibbonButton Click="IncreseDecimal"
-                                                   Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/increasedecimal.png"
+                                                   Icon="ms-appx:///Assets/Icons/increasedecimal.png"
                                                    Label="Increse Decimal"
                                                    SizeMode="Small" />
                         <Syncfusion:SfRibbonButton Click="DecreseDecimal"
-                                                   Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/decreasedecimal.png"
+                                                   Icon="ms-appx:///Assets/Icons/decreasedecimal.png"
                                                    Label="Decrese Decimal"
                                                    SizeMode="Small" />
                         <Syncfusion:SfRibbonMenu FontSize="12"
-                                                 Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/conditional-formating.png"
+                                                 Icon="ms-appx:///Assets/Icons/conditional-formating.png"
                                                  Label="Conditional Formating">
                             <Syncfusion:SfRibbonMenuItem>
                                 <Syncfusion:SfRibbonMenuItem.Header>
                                     <StackPanel Orientation="Horizontal">
-                                        <Image Source="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/high-light-cell-rules.png" />
+                                        <Image Source="ms-appx:///Assets/Icons/high-light-cell-rules.png" />
                                         <TextBlock FontSize="12" Text="Highlight Cell Rules" />
                                     </StackPanel>
                                 </Syncfusion:SfRibbonMenuItem.Header>
                                 <Syncfusion:SfRibbonMenuItem.Content>
                                     <StackPanel Orientation="Vertical">
                                         <Syncfusion:SfRibbonButton Click="greaterthan"
-                                                                   Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/greater-than.png"
+                                                                   Icon="ms-appx:///Assets/Icons/greater-than.png"
                                                                    Label="Greater Than"
                                                                    SizeMode="Large" />
                                         <Syncfusion:SfRibbonButton Click="lessthan"
-                                                                   Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/less-than.png"
+                                                                   Icon="ms-appx:///Assets/Icons/less-than.png"
                                                                    Label="less Than"
                                                                    SizeMode="Large" />
                                         <Syncfusion:SfRibbonButton Click="between"
-                                                                   Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/between.png"
+                                                                   Icon="ms-appx:///Assets/Icons/between.png"
                                                                    Label="Between"
                                                                    SizeMode="Large" />
                                         <Syncfusion:SfRibbonButton Click="equalto"
-                                                                   Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/equal-to.png"
+                                                                   Icon="ms-appx:///Assets/Icons/equal-to.png"
                                                                    Label="Equal To"
                                                                    SizeMode="Large" />
                                         <Syncfusion:SfRibbonButton Click="textcontains"
-                                                                   Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/text-that-contains.png"
+                                                                   Icon="ms-appx:///Assets/Icons/text-that-contains.png"
                                                                    Label="Text that Contains.."
                                                                    SizeMode="Large" />
                                         <Syncfusion:SfRibbonButton Click="Adateoccurs"
-                                                                   Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/dateocurred.png"
+                                                                   Icon="ms-appx:///Assets/Icons/dateocurred.png"
                                                                    Label="A Date Occuring.."
                                                                    SizeMode="Large" />
-                                        <!--<Syncfusion:SfRibbonButton SizeMode="Large" Label="Duplicate Values" Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/duplicate-values.PNG" Click="duplicatevalues"></Syncfusion:SfRibbonButton>-->
+                                        <!--<Syncfusion:SfRibbonButton SizeMode="Large" Label="Duplicate Values" Icon="ms-appx:///Assets/Icons/duplicate-values.PNG" Click="duplicatevalues"></Syncfusion:SfRibbonButton>-->
                                     </StackPanel>
                                 </Syncfusion:SfRibbonMenuItem.Content>
                             </Syncfusion:SfRibbonMenuItem>
                             <Syncfusion:SfRibbonMenuItem>
                                 <Syncfusion:SfRibbonMenuItem.Header>
                                     <StackPanel Orientation="Horizontal">
-                                        <Image Source="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/clear-rules.png" />
+                                        <Image Source="ms-appx:///Assets/Icons/clear-rules.png" />
                                         <TextBlock FontSize="12" Text="Clear Rules" />
                                     </StackPanel>
                                 </Syncfusion:SfRibbonMenuItem.Header>
@@ -301,33 +301,33 @@
                             </Syncfusion:SfRibbonMenuItem>
                         </Syncfusion:SfRibbonMenu>
                         <Syncfusion:SfDropDownButton x:Name="MergeAndCenterButton"
-                                                     Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/MergeAndCenter.png"
+                                                     Icon="ms-appx:///Assets/Icons/MergeAndCenter.png"
                                                      Label="Merge and Center"
                                                      SizeMode="Large">
                             <Syncfusion:SfRibbonButton Margin="0,1"
                                                        Click="MergeandCenter_Click"
-                                                       Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/MergeandCenter.png"
+                                                       Icon="ms-appx:///Assets/Icons/MergeandCenter.png"
                                                        Label="Merge and Center"
                                                        SizeMode="Large" />
                             <Syncfusion:SfRibbonButton Margin="0,1"
                                                        Click="Mergeaccross_Click"
-                                                       Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/MergeandAcross.png"
+                                                       Icon="ms-appx:///Assets/Icons/MergeandAcross.png"
                                                        Label="Merge Across"
                                                        SizeMode="Large" />
                             <Syncfusion:SfRibbonButton Margin="0,1"
                                                        Click="Mergecells_Click"
-                                                       Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/MergeCells.png"
+                                                       Icon="ms-appx:///Assets/Icons/MergeCells.png"
                                                        Label="Merge Cells"
                                                        SizeMode="Large" />
                             <Syncfusion:SfRibbonButton Margin="0,1"
                                                        Click="Unmergedcells_Click"
-                                                       Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/UnMergeCells.png"
+                                                       Icon="ms-appx:///Assets/Icons/UnMergeCells.png"
                                                        Label="Unmerge Cells"
                                                        SizeMode="Large" />
                         </Syncfusion:SfDropDownButton>
 
                         <Syncfusion:SfRibbonMenu FontSize="12"
-                                                 Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/format.png"
+                                                 Icon="ms-appx:///Assets/Icons/format.png"
                                                  Label="Format"
                                                  SizeMode="Large">
                             <Syncfusion:SfRibbonMenuItem>
@@ -337,14 +337,14 @@
                                 <Syncfusion:SfRibbonMenuItem.Content>
                                     <StackPanel Orientation="Vertical">
                                         <Syncfusion:SfRibbonButton Click="rowheight"
-                                                                   Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/rowheight.png"
+                                                                   Icon="ms-appx:///Assets/Icons/rowheight.png"
                                                                    Label="Row Height.."
                                                                    SizeMode="Large" />
                                         <Syncfusion:SfRibbonButton Click="AutoRowFit"
                                                                    Label=" AutoFit Row Height.."
                                                                    SizeMode="Large" />
                                         <Syncfusion:SfRibbonButton Click="ColumnWidths"
-                                                                   Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/columnwidth.png"
+                                                                   Icon="ms-appx:///Assets/Icons/columnwidth.png"
                                                                    Label="Column Width.."
                                                                    SizeMode="Large" />
                                         <Syncfusion:SfRibbonButton Click="AutoColumnFit"
@@ -377,41 +377,41 @@
                             </Syncfusion:SfRibbonMenuItem>
 
                         </Syncfusion:SfRibbonMenu>
-                        <Syncfusion:SfDropDownButton Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/insert.png"
+                        <Syncfusion:SfDropDownButton Icon="ms-appx:///Assets/Icons/insert.png"
                                                      Label="Insert"
                                                      SizeMode="Large">
                             <Syncfusion:SfRibbonButton Click="insertRow"
-                                                       Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/insertrows.png"
+                                                       Icon="ms-appx:///Assets/Icons/insertrows.png"
                                                        Label="Insert Sheet Rows"
                                                        SizeMode="Large" />
                             <Syncfusion:SfRibbonButton Click="insertColumn"
-                                                       Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/insertcols.png"
+                                                       Icon="ms-appx:///Assets/Icons/insertcols.png"
                                                        Label="Insert Sheet Columns"
                                                        SizeMode="Large" />
                         </Syncfusion:SfDropDownButton>
 
-                        <Syncfusion:SfDropDownButton Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/delete.png"
+                        <Syncfusion:SfDropDownButton Icon="ms-appx:///Assets/Icons/delete.png"
                                                      Label="Delete"
                                                      SizeMode="Large">
                             <Syncfusion:SfRibbonButton Click="deleteRow"
-                                                       Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/deleterows.png"
+                                                       Icon="ms-appx:///Assets/Icons/deleterows.png"
                                                        Label="  Delete Sheet Rows"
                                                        SizeMode="Large" />
                             <Syncfusion:SfRibbonButton Click="deleteColumn"
-                                                       Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/deletecols.png"
+                                                       Icon="ms-appx:///Assets/Icons/deletecols.png"
                                                        Label="  Delete Sheet Columns"
                                                        SizeMode="Large" />
                         </Syncfusion:SfDropDownButton>
 
-                        <Syncfusion:SfDropDownButton Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/clear.png"
+                        <Syncfusion:SfDropDownButton Icon="ms-appx:///Assets/Icons/clear.png"
                                                      Label=" Clear"
                                                      SizeMode="Small">
                             <Syncfusion:SfRibbonButton Click="ClearAll"
-                                                       Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/clear-all.png"
+                                                       Icon="ms-appx:///Assets/Icons/clear-all.png"
                                                        Label=" Clear All"
                                                        SizeMode="Large" />
                             <Syncfusion:SfRibbonButton Click="ClearFromats"
-                                                       Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/clear-formats.png"
+                                                       Icon="ms-appx:///Assets/Icons/clear-formats.png"
                                                        Label=" Clear Formats"
                                                        SizeMode="Large" />
                             <Syncfusion:SfRibbonButton Click="ClearContents"
@@ -431,31 +431,31 @@
                                   IsChecked="True"
                                   IsThreeState="False" />
                         <Syncfusion:SfDropDownButton x:Name="gridcolorpicker"
-                                                     Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/fillcolor.png"
+                                                     Icon="ms-appx:///Assets/Icons/fillcolor.png"
                                                      IsTabStop="False"
                                                      Label="Gridline Color"
                                                      SizeMode="Large">
                             <media:SfColorPicker Name="gridlinecolor" Background="White" />
                         </Syncfusion:SfDropDownButton>
-                        <Syncfusion:SfDropDownButton Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/freezepanes.png"
+                        <Syncfusion:SfDropDownButton Icon="ms-appx:///Assets/Icons/freezepanes.png"
                                                      Label="Freeze Panes"
                                                      SizeMode="Large">
                             <Syncfusion:SfRibbonButton x:Name="freeze"
                                                        Click="FreezePanes"
-                                                       Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/freezepanes.png"
+                                                       Icon="ms-appx:///Assets/Icons/freezepanes.png"
                                                        Label="Freeze Panes"
                                                        SizeMode="Large" />
                             <Syncfusion:SfRibbonButton Click="FreezeTopRow"
-                                                       Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/freezetoprow.png"
+                                                       Icon="ms-appx:///Assets/Icons/freezetoprow.png"
                                                        Label="Freeze Top Rows"
                                                        SizeMode="Large" />
                             <Syncfusion:SfRibbonButton Click="FreezeFirstColumn"
-                                                       Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/freezefirstcolumn.png"
+                                                       Icon="ms-appx:///Assets/Icons/freezefirstcolumn.png"
                                                        Label="Freeze First Columns"
                                                        SizeMode="Large" />
                             <Syncfusion:SfRibbonButton x:Name="unfreeze"
                                                        Click="UnFreezePanes"
-                                                       Icon="ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Icons/freezepanes.png"
+                                                       Icon="ms-appx:///Assets/Icons/freezepanes.png"
                                                        Label="UnFreeze Panes"
                                                        SizeMode="Large" />
                         </Syncfusion:SfDropDownButton>

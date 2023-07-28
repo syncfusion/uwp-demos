@@ -638,17 +638,17 @@ namespace ScheduleUWP_Samples
             if (str.Equals("Family"))
             {
                 //return null;
-                return new BitmapImage(new Uri("ms-appx:///Syncfusion.SampleBrowser.UWP.Schedule/Schedule/Assets/family.png"));
+                return new BitmapImage(new Uri("ms-appx:///Schedule/Assets/family.png"));
             }
             else if (str.Equals("Health"))
             {
                 //return null;
-                return new BitmapImage(new Uri("ms-appx:///Syncfusion.SampleBrowser.UWP.Schedule/Schedule/Assets/Hospital.png"));
+                return new BitmapImage(new Uri("ms-appx:///Schedule/Assets/Hospital.png"));
             }
             else
             {
                 //return null;
-                return new BitmapImage(new Uri("ms-appx:///Syncfusion.SampleBrowser.UWP.Schedule/Schedule/Assets/Team.png"));
+                return new BitmapImage(new Uri("ms-appx:///Schedule/Assets/Team.png"));
             }
         }
 

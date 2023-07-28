@@ -376,8 +376,8 @@ namespace Syncfusion.SampleBrowser.UWP.SfChart
                 Product = "Sales Analysis",
                 SampleType = SampleType.Showcase,
                 SampleView = typeof (SalesAnalysisDemo).AssemblyQualifiedName,
-                DesktopImage = "ms-appx:///Syncfusion.SampleBrowser.UWP.SfChart/Assets/Sales Analysis.jpg",
-                MobileImage = "ms-appx:///Syncfusion.SampleBrowser.UWP.SfChart/Assets/Sales Analysis.jpg",
+                DesktopImage = "ms-appx:///Assets/Sales Analysis.jpg",
+                MobileImage = "ms-appx:///Assets/Sales Analysis.jpg",
                 Tag = Tags.None,
                 Description = "This sample demonstrates analyzing the sales report for a product using Chart, Maps and Gauge controls.",
             });
@@ -388,8 +388,8 @@ namespace Syncfusion.SampleBrowser.UWP.SfChart
                 Product = "Stock Analysis",
                 SampleType = SampleType.Showcase,
                 SampleView = typeof (StockAnalysis).AssemblyQualifiedName,
-                DesktopImage = "ms-appx:///Syncfusion.SampleBrowser.UWP.SfChart/Assets/Stock Analysis.jpg",
-                MobileImage = "ms-appx:///Syncfusion.SampleBrowser.UWP.SfChart/Assets/Stock Analysis.jpg",
+                DesktopImage = "ms-appx:///Assets/Stock Analysis.jpg",
+                MobileImage = "ms-appx:///Assets/Stock Analysis.jpg",
                 Tag = Tags.None,
                 Description = "This demo illustrates the use of Chart and Range Navigator for a real world Stock Market application.",
             });

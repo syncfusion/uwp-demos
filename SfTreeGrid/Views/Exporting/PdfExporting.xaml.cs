@@ -111,12 +111,12 @@ namespace Syncfusion.SampleBrowser.UWP.SfTreeGrid
 
             PdfPageTemplateElement footer = new PdfPageTemplateElement(width, 30);
             e.PdfDocumentTemplate.Bottom = footer;           
-            var uri = new Uri("ms-appx:///Syncfusion.SampleBrowser.UWP.SfTreeGrid/Images/Header.png", UriKind.RelativeOrAbsolute);
+            var uri = new Uri("ms-appx:///Images/Header.png", UriKind.RelativeOrAbsolute);
             var srcfile = await StorageFile.GetFileFromApplicationUriAsync(uri);
             var stream = await srcfile.OpenStreamForReadAsync();
             header.Graphics.DrawImage(PdfImage.FromStream(stream), 0, 0, width / 3f, 34);
 
-            uri = new Uri("ms-appx:///Syncfusion.SampleBrowser.UWP.SfTreeGrid/Images/Footer.png", UriKind.RelativeOrAbsolute);
+            uri = new Uri("ms-appx:///Images/Footer.png", UriKind.RelativeOrAbsolute);
             srcfile = await StorageFile.GetFileFromApplicationUriAsync(uri);
             stream = await srcfile.OpenStreamForReadAsync();
             footer.Graphics.DrawImage(PdfImage.FromStream(stream), 0, 0, width, 25);

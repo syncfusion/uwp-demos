@@ -624,15 +624,15 @@ namespace ScheduleUWP_Samples
             string str = value.ToString();
             if (str.Equals("Family"))
             {
-                return new BitmapImage(new Uri("ms-appx:///Syncfusion.SampleBrowser.UWP.Schedule/Schedule/Assets/family.png"));
+                return new BitmapImage(new Uri("ms-appx:///Schedule/Assets/family.png"));
             }
             else if (str.Equals("Health"))
             {
-                return new BitmapImage(new Uri("ms-appx:///Syncfusion.SampleBrowser.UWP.Schedule/Schedule/Assets/Hospital.png"));
+                return new BitmapImage(new Uri("ms-appx:///Schedule/Assets/Hospital.png"));
             }
             else
             {
-                return new BitmapImage(new Uri("ms-appx:///Syncfusion.SampleBrowser.UWP.Schedule/Schedule/Assets/Team.png"));
+                return new BitmapImage(new Uri("ms-appx:///Schedule/Assets/Team.png"));
             }
         }
 

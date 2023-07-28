@@ -66,35 +66,35 @@ namespace RTEDemo
             NameSuggestionItem suggestionItem = new NameSuggestionItem();
             suggestionItem.Name = "Nancy Davolio";
             suggestionItem.Link = "mailto:nancy.davolio@northwindtraders.com";
-            BitmapImage bitmapImage = new BitmapImage(new Uri("ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/People_Circle0.png"));
+            BitmapImage bitmapImage = new BitmapImage(new Uri("ms-appx:/RTE/Assets/People_Circle0.png"));
             suggestionItem.ImageSource = bitmapImage;
             suggestionItems.Add(suggestionItem);
 
             suggestionItem = new NameSuggestionItem();
             suggestionItem.Name = "Andrew Fuller";
             suggestionItem.Link = "mailto:andrew.fuller@northwindtraders.com";
-            bitmapImage = new BitmapImage(new Uri("ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/People_Circle14.png"));
+            bitmapImage = new BitmapImage(new Uri("ms-appx:/RTE/Assets/People_Circle14.png"));
             suggestionItem.ImageSource = bitmapImage;
             suggestionItems.Add(suggestionItem);
 
             suggestionItem = new NameSuggestionItem();
             suggestionItem.Name = "Steven Buchanan";
             suggestionItem.Link = "mailto:steven.buchanan@northwindtraders.com";
-            bitmapImage = new BitmapImage(new Uri("ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/People_Circle18.png"));
+            bitmapImage = new BitmapImage(new Uri("ms-appx:/RTE/Assets/People_Circle18.png"));
             suggestionItem.ImageSource = bitmapImage;
             suggestionItems.Add(suggestionItem);
 
             suggestionItem = new NameSuggestionItem();
             suggestionItem.Name = "Maria Thomas";
             suggestionItem.Link = "mailto:maria.buchanan@northwindtraders.com";
-            bitmapImage = new BitmapImage(new Uri("ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/People_Circle2.png"));
+            bitmapImage = new BitmapImage(new Uri("ms-appx:/RTE/Assets/People_Circle2.png"));
             suggestionItem.ImageSource = bitmapImage;
             suggestionItems.Add(suggestionItem);
 
             suggestionItem = new NameSuggestionItem();
             suggestionItem.Name = "Vin Diesel";
             suggestionItem.Link = "mailto:vindiesel.buchanan@northwindtraders.com";
-            bitmapImage = new BitmapImage(new Uri("ms-appx:///Syncfusion.SampleBrowser.UWP.RichTextEditor/Syncfusion.SampleBrowser.UWP.RichTextEditor/RTE/Assets/People_Circle5.png"));
+            bitmapImage = new BitmapImage(new Uri("ms-appx:/RTE/Assets/People_Circle5.png"));
             suggestionItem.ImageSource = bitmapImage;
             suggestionItems.Add(suggestionItem);
 

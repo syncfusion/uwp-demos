@@ -420,7 +420,7 @@ namespace Syncfusion.SampleBrowser.UWP.SfChart
                 colorModel.CustomBrushes = customBrushes;
                 doughnutSeries.ColorModel = colorModel;
                 doughnutSeries.Palette = ChartColorPalette.Custom;
-                var image = new Image() { Source = new BitmapImage(new Uri("ms-appx:///Syncfusion.SampleBrowser.UWP.SfChart/Chart/Tutorials/ChartSamples/PieChart/Images/Person.png", UriKind.RelativeOrAbsolute)) };
+                var image = new Image() { Source = new BitmapImage(new Uri("ms-appx:///Chart/Tutorials/ChartSamples/PieChart/Images/Person.png", UriKind.RelativeOrAbsolute)) };
                 var centerView = new ContentControl() { Content = image, HorizontalAlignment= HorizontalAlignment.Center, VerticalAlignment = VerticalAlignment.Center };
                 
                 var binding = new Binding();
@@ -540,10 +540,10 @@ namespace Syncfusion.SampleBrowser.UWP.SfChart
         {
             DoughnutSeriesData = new ObservableCollection<StackedDoughnutModel>
             {
-                new StackedDoughnutModel("Vehicle", 62.7, new Uri("ms-appx:///Syncfusion.SampleBrowser.UWP.SfChart/Chart/Tutorials/ChartSamples/PieChart/Images/Car.png", UriKind.RelativeOrAbsolute)),
-                new StackedDoughnutModel("Education",29.5, new Uri("ms-appx:///Syncfusion.SampleBrowser.UWP.SfChart/Chart/Tutorials/ChartSamples/PieChart/Images/Chart_Book.png", UriKind.RelativeOrAbsolute)),
-                new StackedDoughnutModel("Home", 85.2, new Uri("ms-appx:///Syncfusion.SampleBrowser.UWP.SfChart/Chart/Tutorials/ChartSamples/PieChart/Images/House.png", UriKind.RelativeOrAbsolute)),
-                new StackedDoughnutModel("Personal", 45.6, new Uri("ms-appx:///Syncfusion.SampleBrowser.UWP.SfChart/Chart/Tutorials/ChartSamples/PieChart/Images/Personal.png", UriKind.RelativeOrAbsolute))
+                new StackedDoughnutModel("Vehicle", 62.7, new Uri("ms-appx:///Chart/Tutorials/ChartSamples/PieChart/Images/Car.png", UriKind.RelativeOrAbsolute)),
+                new StackedDoughnutModel("Education",29.5, new Uri("ms-appx:///Chart/Tutorials/ChartSamples/PieChart/Images/Chart_Book.png", UriKind.RelativeOrAbsolute)),
+                new StackedDoughnutModel("Home", 85.2, new Uri("ms-appx:///Chart/Tutorials/ChartSamples/PieChart/Images/House.png", UriKind.RelativeOrAbsolute)),
+                new StackedDoughnutModel("Personal", 45.6, new Uri("ms-appx:///Chart/Tutorials/ChartSamples/PieChart/Images/Personal.png", UriKind.RelativeOrAbsolute))
             };
 
             this.CountryDetails = new List<Populations>();

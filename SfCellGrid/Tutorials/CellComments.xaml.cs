@@ -82,7 +82,7 @@ namespace CellGridSamples
                         cellGrid.Model[row, col].HorizontalAlignment = HorizontalAlignment.Center;
                         cellGrid.Model[row, col].CellItemTemplateKey = "ImageTemplate";
                         cellGrid.Model[row, col].Tooltip = cellGrid.Model[row, 0].CellValue.ToString();
-                        cellGrid.Model[row, col].CellValue = "ms-appx:///Syncfusion.SampleBrowser.UWP.SfCellGrid/Syncfusion.SampleBrowser.UWP.SfCellGrid/Assets/Images/" + cellGrid.Model[row, 0].CellValue.ToString() + ".jpg";
+                        cellGrid.Model[row, col].CellValue = "ms-appx:///Assets/Images/" + cellGrid.Model[row, 0].CellValue.ToString() + ".jpg";
                     }
                     else
                     {

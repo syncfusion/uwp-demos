@@ -38,35 +38,35 @@ namespace Syncfusion.SampleBrowser.UWP.SfChart
                 CompanyName = "Mercedes",
                 YTD = 983.502,
                 Rank = 16,
-                Imagepath = new Uri("ms-appx:///Syncfusion.SampleBrowser.UWP.SfChart/Chart/Tutorials/ChartSamples/ToolTip/Images/benz.png", UriKind.RelativeOrAbsolute)
+                Imagepath = new Uri("ms-appx:///Chart/Tutorials/ChartSamples/ToolTip/Images/benz.png", UriKind.RelativeOrAbsolute)
             });
             CompanyDetails.Add(new CompanyDetail1()
             {
                 CompanyName = "Audi",
                 YTD = 1030.393,
                 Rank = 12,
-                Imagepath = new Uri("ms-appx:///Syncfusion.SampleBrowser.UWP.SfChart/Chart/Tutorials/ChartSamples/ToolTip/Images/audi.png", UriKind.RelativeOrAbsolute)
+                Imagepath = new Uri("ms-appx:///Chart/Tutorials/ChartSamples/ToolTip/Images/audi.png", UriKind.RelativeOrAbsolute)
             });
             CompanyDetails.Add(new CompanyDetail1()
             {
                 CompanyName = "BMW",
                 YTD = 1061.330,
                 Rank = 11,
-                Imagepath = new Uri("ms-appx:///Syncfusion.SampleBrowser.UWP.SfChart/Chart/Tutorials/ChartSamples/ToolTip/Images/bmw.png", UriKind.RelativeOrAbsolute)
+                Imagepath = new Uri("ms-appx:///Chart/Tutorials/ChartSamples/ToolTip/Images/bmw.png", UriKind.RelativeOrAbsolute)
             });
             CompanyDetails.Add(new CompanyDetail1()
             {
                 CompanyName = "Skoda",
                 YTD = 590.897,
                 Rank = 24,
-                Imagepath = new Uri("ms-appx:///Syncfusion.SampleBrowser.UWP.SfChart/Chart/Tutorials/ChartSamples/ToolTip/Images/skoda.png", UriKind.RelativeOrAbsolute)
+                Imagepath = new Uri("ms-appx:///Chart/Tutorials/ChartSamples/ToolTip/Images/skoda.png", UriKind.RelativeOrAbsolute)
             });
             CompanyDetails.Add(new CompanyDetail1()
             {
                 CompanyName = "Volvo",
                 YTD = 250.758,
                 Rank = 43,
-                Imagepath = new Uri("ms-appx:///Syncfusion.SampleBrowser.UWP.SfChart/Chart/Tutorials/ChartSamples/ToolTip/Images/volvo.png", UriKind.RelativeOrAbsolute)
+                Imagepath = new Uri("ms-appx:///Chart/Tutorials/ChartSamples/ToolTip/Images/volvo.png", UriKind.RelativeOrAbsolute)
             });
             this.InitializeComponent();
             this.DataContext = CompanyDetails;

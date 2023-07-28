@@ -74,7 +74,7 @@ namespace Syncfusion.SampleBrowser.UWP.SfTreeGrid
             if (value != null && value is SelectionEmployeeInfo)
             {
                 var name = value as SelectionEmployeeInfo;
-                return "ms-appx:///Syncfusion.SampleBrowser.UWP.SfTreeGrid/Images/" + name.FirstName + ".png";
+                return "ms-appx:///Images/" + name.FirstName + ".png";
             }
             return null;
         }
