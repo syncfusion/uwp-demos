@@ -1,0 +1,42 @@
+﻿<UserControl
+    x:Class="BarcodeControl.Code39"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BarcodeControl" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" xmlns:sync="using:Syncfusion.UI.Xaml.Controls.Barcode" Loaded="Page_Loaded_1">
+    
+    <Grid Background="#FFEDEDEB" Width="Auto">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Background="White" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Border Grid.Row="0" Margin="0,30,0,0" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <sync:SfBarcode x:Name="barcode" Text="SYNCFUSION" Symbology="Code39">
+                    <sync:SfBarcode.SymbologySettings>
+                        <sync:QRBarcodeSetting XDimension="8"/>
+                    </sync:SfBarcode.SymbologySettings>
+                </sync:SfBarcode>
+            </Border>
+            <StackPanel Margin="0,30,0,0" Orientation="Vertical" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <TextBlock Foreground="Black" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Left">Text to encode</TextBlock>
+                <TextBox Margin="3" Width="300" BorderBrush="Black" FontSize="14" HorizontalAlignment="Left" FontWeight="Medium" x:Name="barcodeTxt" Text="SYNCFUSION"></TextBox>
+                <TextBlock Margin="3" x:Name="errorNotify" Text=" * Invalid characters found in entered text" VerticalAlignment="Top" FontStyle="Italic" Foreground="Red" Visibility="Collapsed"></TextBlock>
+            </StackPanel>
+            <StackPanel Margin="0,30,0,0" Orientation="Vertical" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <TextBlock FontSize="16" Width="300" Foreground="Black" Text="Allowed Characters:"/>
+                <TextBlock Margin="3" Width="300" FontSize="14" Foreground="Black" x:Name="barCodeTip" TextWrapping="Wrap" TextAlignment="Justify"/>
+            </StackPanel>
+            <Button Margin="0,30,0,0" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Top" Content="Update Barcode" Click="Button_Click_1"></Button>
+        </Grid>
+    </Grid>
+   
+    </UserControl>
