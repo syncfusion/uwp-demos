@@ -63,8 +63,9 @@ namespace SpreadsheetSamples
         public void Dispose()
         {
             this.Unloaded -= SpreadsheetShowcase_Unloaded;
-            this.spreadsheet.Dispose();
+            //ES-890021 - Here we have called the ribbon.Dispose() method first before the this.Spreadsheet.Dispose to fix the null reference exception occurs while pressing the backbutton in UWP demos.
             this.ribbon.Dispose();
+            this.spreadsheet.Dispose(); 
             Resources.Clear();
             GC.Collect();
             GC.WaitForPendingFinalizers();
