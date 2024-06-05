@@ -63,8 +63,8 @@ namespace SpreadsheetSamples
         public void Dispose()
         {
             this.Unloaded -= SpreadsheetShowcase_Unloaded;
-            this.spreadsheet.Dispose();
             this.ribbon.Dispose();
+            this.spreadsheet.Dispose(); 
             Resources.Clear();
             GC.Collect();
             GC.WaitForPendingFinalizers();
