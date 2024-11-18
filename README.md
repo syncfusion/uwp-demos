@@ -413,4 +413,4 @@ The easiest way to use these samples without using Git is to download the zip fi
 
 * To renew the subscription, click [here](https://www.syncfusion.com/sales/products?utm_source=github&utm_medium=listing) or contact our sales team at <salessupport@syncfusion.com>.
   
-<p>Copyright © 2001-2024 Syncfusion, Inc. Updated on 2024-09-23 at precisely 04:17:00 EST.</p>
+<p>Copyright © 2001-2024 Syncfusion, Inc. Updated on 2024-11-18 at precisely 11:47:15 EST.</p>
