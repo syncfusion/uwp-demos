@@ -1,0 +1,495 @@
+﻿<layout:SampleLayout
+    x:Class="Layout.DockingManager.DockingManagerNestedDocking"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Layout.DockingManager" xmlns:layout="using:Common"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" xmlns:syncfusion="using:Syncfusion.UI.Xaml.Controls.Layout">
+    <layout:SampleLayout.Resources>
+        <SolidColorBrush x:Key="AccentBrush">#FF0073CD</SolidColorBrush>
+
+        <SolidColorBrush x:Key="NormalBackground">#FFE6E6E6</SolidColorBrush>
+
+        <SolidColorBrush x:Key="CollapsedStroke">#FF545454</SolidColorBrush>
+
+        <SolidColorBrush x:Key="ExpandedStroke">White</SolidColorBrush>
+
+        <Style TargetType="syncfusion:LayoutTransformer" x:Key="layoutStyle">
+            <Setter Property="Foreground" Value="#FF000000"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="syncfusion:LayoutTransformer">
+                        <Grid x:Name="TransformRoot" Background="{TemplateBinding Background}">
+                            <ContentPresenter
+                            x:Name="Presenter"
+                             FontFamily="{TemplateBinding FontFamily}" 
+                                        FontSize="{TemplateBinding FontSize}" 
+                                        FontStretch="{TemplateBinding FontStretch}" 
+                                        FontStyle="{TemplateBinding FontStyle}" 
+                            Content="{TemplateBinding Content}"
+                            ContentTemplate="{TemplateBinding ContentTemplate}"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style TargetType="syncfusion:AccordionButton" x:Key="AccordionButtonStyle">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="VerticalAlignment" Value="Stretch"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="IsTabStop" Value="True"/>
+            <Setter Property="TabNavigation" Value="Once"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="syncfusion:AccordionButton">
+                        <Grid Background="Transparent">
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="ExpandDirectionStates">
+                                    <VisualStateGroup.Transitions>
+                                        <VisualTransition GeneratedDuration="0"/>
+                                    </VisualStateGroup.Transitions>
+                                </VisualStateGroup>
+                                <VisualStateGroup x:Name="ExpansionStates">
+                                    <VisualStateGroup.Transitions>
+                                        <VisualTransition GeneratedDuration="0"/>
+                                    </VisualStateGroup.Transitions>
+                                    <VisualState x:Name="Collapsed">
+                                        <Storyboard>
+                                            <DoubleAnimation BeginTime="00:00:00" Duration="00:00:00.3" Storyboard.TargetName="icon" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" To="0"/>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Fill" Storyboard.TargetName="arrow">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CollapsedStroke}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="header">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource CollapsedStroke}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="arrow" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="expandedarrow" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Expanded">
+                                        <Storyboard>
+                                            <DoubleAnimation BeginTime="00:00:00" Duration="00:00:00.3" Storyboard.TargetName="icon" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" To="90"/>
+                                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="arrow" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="expandedarrow" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                                <VisualStateGroup x:Name="CheckStates">
+                                    <VisualStateGroup.Transitions>
+                                        <VisualTransition GeneratedDuration="00:00:00"/>
+                                    </VisualStateGroup.Transitions>
+                                    <VisualState x:Name="Checked"/>
+                                    <VisualState x:Name="Unchecked"/>
+                                </VisualStateGroup>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal"/>
+                                    <VisualState x:Name="MouseOver">
+                                        <Storyboard>
+                                            <DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="MouseOverBackground"/>
+                                            <DoubleAnimation Duration="0" To="0" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="NormalBackground"/>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="background">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="#FFEDEDED"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Pressed">
+                                        <Storyboard>
+
+                                        </Storyboard>
+
+                                    </VisualState>
+                                    <VisualState x:Name="Disabled">
+                                        <Storyboard/>
+                                    </VisualState>
+                                </VisualStateGroup>
+                                <VisualStateGroup x:Name="FocusStates">
+                                    <VisualState x:Name="Focused">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Duration="0" Storyboard.TargetName="FocusVisualElement" Storyboard.TargetProperty="Visibility">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="Visible"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="FocusVisualElement" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.385"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Unfocused"/>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Border x:Name="background" Background="{TemplateBinding Background}"
+                                >
+                                <Grid>
+                                    <Border x:Name="NormalBackground"
+                                        VerticalAlignment="Stretch"  
+                                        BorderBrush="{TemplateBinding BorderBrush}"
+                                        BorderThickness="{TemplateBinding BorderThickness}"/>
+
+                                    <Grid  x:Name="ExpandedBackground" Opacity="0">
+                                        <Border 
+                                        VerticalAlignment="Stretch" Background="#FF0073CD" 
+                                        BorderBrush="{TemplateBinding BorderBrush}" 
+                                        BorderThickness="{TemplateBinding BorderThickness}"/>
+                                    </Grid>
+
+                                    <Grid x:Name="MouseOverBackground"  Opacity="0" >
+                                        <Border 
+                                        VerticalAlignment="Stretch" Background="#FFEDEDED" 
+                                        BorderBrush="{TemplateBinding BorderBrush}"
+                                        BorderThickness="{TemplateBinding BorderThickness}"/>
+                                    </Grid>
+
+                                    <Grid Background="Transparent" Margin="{TemplateBinding Padding}">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" x:Name="cd0"/>
+                                            <ColumnDefinition Width="*" x:Name="cd1"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto" x:Name="rd0"/>
+                                            <RowDefinition Height="Auto" x:Name="rd1"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Height="19" Margin="5,0,5,0" Background="Transparent" HorizontalAlignment="Center" x:Name="icon" VerticalAlignment="Center" Width="19" RenderTransformOrigin="0.5,0.5" Grid.Column="0" Grid.Row="0">
+                                            <Grid.RenderTransform>
+                                                <TransformGroup>
+                                                    <ScaleTransform/>
+                                                    <SkewTransform/>
+                                                    <RotateTransform Angle="0"/>
+                                                    <TranslateTransform/>
+                                                </TransformGroup>
+                                            </Grid.RenderTransform>
+                                            <Path Data="F1M26.5985,56.6667L26.5985,68.6667L14.5985,68.6667z" Fill="#FF231F20" Stretch="Fill"
+                                          Width="8" Height="8" x:Name="arrow" RenderTransformOrigin="0.5,0.5" 
+                                           HorizontalAlignment="Center" VerticalAlignment="Center">
+                                                <Path.RenderTransform>
+                                                    <TransformGroup>
+                                                        <ScaleTransform/>
+                                                        <SkewTransform/>
+                                                        <RotateTransform Angle="-45"/>
+                                                        <TranslateTransform/>
+                                                    </TransformGroup>
+                                                </Path.RenderTransform>
+                                            </Path>
+                                            <Path Data="F1M26.5985,56.6667L26.5985,68.6667L14.5985,68.6667z" Fill="#FF231F20" Stretch="Fill"
+                                          Width="8" Height="8" x:Name="expandedarrow" RenderTransformOrigin="0.5,0.5" 
+                                           HorizontalAlignment="Center" VerticalAlignment="Center" Opacity="0">
+                                                <Path.RenderTransform>
+                                                    <TransformGroup>
+                                                        <ScaleTransform/>
+                                                        <SkewTransform/>
+                                                        <RotateTransform Angle="-90"/>
+                                                        <TranslateTransform/>
+                                                    </TransformGroup>
+                                                </Path.RenderTransform>
+                                            </Path>
+                                        </Grid>
+                                        <syncfusion:LayoutTransformer
+                                        HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                        VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                        Style="{StaticResource layoutStyle}"
+                                        x:Name="header" 
+                                        Grid.Column="1"
+                                        Grid.Row="0" 
+                                        Grid.RowSpan="1" 
+                                        Foreground="{TemplateBinding Foreground}"
+                                        FontFamily="{TemplateBinding FontFamily}"
+					                    FontSize="{TemplateBinding FontSize}"
+					                    FontStretch="{TemplateBinding FontStretch}"
+					                    FontStyle="{TemplateBinding FontStyle}"
+					                    FontWeight="{TemplateBinding FontWeight}"
+                                        Content="{TemplateBinding Content}" 
+                                        ContentTemplate="{TemplateBinding ContentTemplate}"/>
+                                    </Grid>
+                                </Grid>
+                            </Border>
+                            <Rectangle x:Name="FocusVisualElement" IsHitTestVisible="false" Visibility="Collapsed"
+                                   RadiusX="1" RadiusY="1" Stroke="#FF6DBDD1" StrokeThickness="1"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style TargetType="syncfusion:SfAccordionItem">
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="AccordionButtonStyle" Value="{StaticResource AccordionButtonStyle}"/>
+        </Style>
+
+        <Style TargetType="ListViewItem">
+            <Setter Property="FontSize" Value="12"/>
+        </Style>
+    </layout:SampleLayout.Resources>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <syncfusion:SfDockingManager x:Name="docking">
+            <!--Support-->
+            <ListView syncfusion:SfDockingManager.DockState="AutoHidden"
+                      syncfusion:SfDockingManager.DesiredWidthInDockedMode="200"
+                      syncfusion:SfDockingManager.Header="Support">
+                <ListView>
+                    <ListViewItem>Direct Trac</ListViewItem>
+                    <ListViewItem>Forum</ListViewItem>
+                    <ListViewItem>Knowledge Base</ListViewItem>
+                    <ListViewItem>Online Documentation</ListViewItem>
+                </ListView>
+            </ListView>
+
+            <!--Components-->
+            <syncfusion:SfDockingManager x:Name="components"
+                                       DockFill="True" 
+                                       syncfusion:SfDockingManager.DockState="Dock"
+                                       syncfusion:SfDockingManager.SideInDockedMode="Left"
+                                       syncfusion:SfDockingManager.DesiredWidthInDockedMode="250"
+                                       syncfusion:SfDockingManager.Header="Frameworks">
+                <ListView x:Name="desktop"
+                         syncfusion:SfDockingManager.CanAutoHide="False"
+                         syncfusion:SfDockingManager.Header="Desktop"
+                         syncfusion:SfDockingManager.SideInDockedMode="Left">
+                    <ListViewItem Margin="2,2,2,2">Windows Forms</ListViewItem>
+                    <ListViewItem Margin="2,2,2,2">WPF</ListViewItem>
+                    <ListViewItem Margin="2,2,2,2">WinRT</ListViewItem>
+                    <ListViewItem Margin="2,2,2,2">UWP</ListViewItem>
+                </ListView>
+
+                <ListView
+                    syncfusion:SfDockingManager.SideInDockedMode="Tabbed"
+                    syncfusion:SfDockingManager.DockState="Dock"
+                    syncfusion:SfDockingManager.TargetNameInDockedMode="desktop"
+                    syncfusion:SfDockingManager.Header="Mobile"
+                    syncfusion:SfDockingManager.CanAutoHide="False">
+                    <ListViewItem Margin="2,2,2,2">XAMARIN</ListViewItem>
+                    <ListViewItem Margin="2,2,2,2">UWP</ListViewItem>
+                    <ListViewItem Margin="2,2,2,2">Javascript</ListViewItem>
+                    <ListViewItem Margin="2,2,2,2">Windows Phone</ListViewItem>
+                    <ListViewItem Margin="2,2,2,2">Orubase</ListViewItem>
+                </ListView>
+
+                <ListView
+                    syncfusion:SfDockingManager.SideInDockedMode="Tabbed"
+                    syncfusion:SfDockingManager.DockState="Dock"
+                    syncfusion:SfDockingManager.TargetNameInDockedMode="desktop"
+                    syncfusion:SfDockingManager.Header="Web"
+                    syncfusion:SfDockingManager.CanAutoHide="False">
+                    <ListViewItem Margin="2,2,2,2">ASP.NET MVC</ListViewItem>
+                    <ListViewItem Margin="2,2,2,2">ASP.NET Core</ListViewItem>
+                    <ListViewItem Margin="2,2,2,2">ASP.NET Web Forms</ListViewItem>
+                    <ListViewItem Margin="2,2,2,2">Javascript</ListViewItem>
+                    <ListViewItem Margin="2,2,2,2">LightSwitch</ListViewItem>
+                    <ListViewItem Margin="2,2,2,2">Silverlight</ListViewItem>
+                </ListView>
+            </syncfusion:SfDockingManager>
+
+            <!--Product Categories-->
+            <syncfusion:SfDockingManager DockFill="True" x:Name="nesteddocking"
+                                       syncfusion:SfDockingManager.SideInDockedMode="Right"
+                                       syncfusion:SfDockingManager.DesiredWidthInDockedMode="250"
+                                       syncfusion:SfDockingManager.Header="Universal Windows Platform">
+                <syncfusion:SfAccordion SelectionMode="ZeroOrMore" syncfusion:SfDockingManager.Header="Products"
+                                        syncfusion:SfDockingManager.DockState="Dock"
+                                        syncfusion:SfDockingManager.DesiredHeightInDockedMode="425"
+                                        syncfusion:SfDockingManager.SideInDockedMode="Top">
+                    <syncfusion:SfAccordionItem Header="Grids">
+                        <ListView Margin="7 0 0 0">
+                            <ListViewItem>Cell Grid</ListViewItem>
+                            <ListViewItem>Data Grid</ListViewItem>
+                            <ListViewItem>Tree Grid</ListViewItem>
+                            <ListViewItem>Spreadsheet</ListViewItem>
+                        </ListView>
+                    </syncfusion:SfAccordionItem>
+                    <syncfusion:SfAccordionItem Header="Data Visualization">
+                        <ListView Margin="7 0 0 0">
+                            <ListViewItem>Chart</ListViewItem>
+                            <ListViewItem>Barcode</ListViewItem>
+                            <ListViewItem>BulletGraph</ListViewItem>
+                            <ListViewItem>Diagram</ListViewItem>
+                            <ListViewItem>Gauge</ListViewItem>
+                            <ListViewItem>Heatmap</ListViewItem>
+                            <ListViewItem>Maps</ListViewItem>
+                            <ListViewItem>Schedule</ListViewItem>
+                            <ListViewItem>Chart3D</ListViewItem>
+                            <ListViewItem>Kanban</ListViewItem>
+                            <ListViewItem>Sparkline</ListViewItem>
+                            <ListViewItem>RangeNavigator</ListViewItem>
+                            <ListViewItem>TreeMap</ListViewItem>
+                        </ListView>
+                    </syncfusion:SfAccordionItem>
+                    <syncfusion:SfAccordionItem Header="Layout">
+                        <ListView Margin="7 0 0 0">
+                            <ListViewItem>TileView</ListViewItem>
+                            <ListViewItem>Carousel</ListViewItem>
+                            <ListViewItem>Accordion</ListViewItem>
+                            <ListViewItem>Ribbon</ListViewItem>
+                            <ListViewItem>SfDockingManager</ListViewItem>
+                        </ListView>
+                    </syncfusion:SfAccordionItem>
+                    <syncfusion:SfAccordionItem Header="Editors">
+                        <ListView Margin="7 0 0 0">
+                            <ListViewItem>Calendar</ListViewItem>
+                            <ListViewItem>Date Time Pickers</ListViewItem>
+                            <ListViewItem>Color Picker</ListViewItem>
+                            <ListViewItem>AutoComplete</ListViewItem>
+                            <ListViewItem>ComboBox</ListViewItem>
+                            <ListViewItem>TextBoxExt</ListViewItem>
+                            <ListViewItem>RangeSlider</ListViewItem>
+                            <ListViewItem>DomainUpDown</ListViewItem>
+                            <ListViewItem>DropDownButton</ListViewItem>
+                            <ListViewItem>MaskedEdit</ListViewItem>
+                            <ListViewItem>NumericTextBox</ListViewItem>
+                            <ListViewItem>NumericUpDown</ListViewItem>
+                            <ListViewItem>Calculator</ListViewItem>
+                            <ListViewItem>Rating</ListViewItem>
+                            <ListViewItem>RichTextEditor</ListViewItem>
+                        </ListView>
+                    </syncfusion:SfAccordionItem>
+                    <syncfusion:SfAccordionItem Header="Navigation">
+                        <ListView Margin="7 0 0 0">
+                            <ListViewItem>RadialMenu</ListViewItem>
+                            <ListViewItem>Menu</ListViewItem>
+                            <ListViewItem>GroupBar</ListViewItem>
+                            <ListViewItem>TabControl</ListViewItem>
+                            <ListViewItem>TreeNavigator</ListViewItem>
+                        </ListView>
+                    </syncfusion:SfAccordionItem>
+                    <syncfusion:SfAccordionItem Header="Notification">
+                        <ListView Margin="7 0 0 0">
+                            <ListViewItem>BusyIndicator</ListViewItem>
+                            <ListViewItem>HubTiles</ListViewItem>
+                        </ListView>
+                    </syncfusion:SfAccordionItem>
+                    <syncfusion:SfAccordionItem Header="Reporting">
+                        <ListView Margin="7 0 0 0">
+                            <ListViewItem>Report Viewer</ListViewItem>
+                        </ListView>
+                    </syncfusion:SfAccordionItem>
+                    <syncfusion:SfAccordionItem Header="File Format">
+                        <ListView Margin="7 0 0 0">
+                            <ListViewItem>DocIO</ListViewItem>
+                            <ListViewItem>PDF</ListViewItem>
+                            <ListViewItem>PdfViewer</ListViewItem>
+                            <ListViewItem>Presentation</ListViewItem>
+                            <ListViewItem>XlsIO</ListViewItem>
+                        </ListView>
+                    </syncfusion:SfAccordionItem>
+                    <syncfusion:SfAccordionItem Header="Business Intelligence">
+                        <ListView Margin="7 0 0 0">
+                            <ListViewItem>PivotChart</ListViewItem>
+                            <ListViewItem>PivotGrid</ListViewItem>
+                            <ListViewItem>PivotGauge</ListViewItem>
+                        </ListView>
+                    </syncfusion:SfAccordionItem>
+                    <syncfusion:SfAccordionItem Header="Data Science">
+                        <ListView Margin="7 0 0 0">
+                            <ListViewItem>Predictive Analytics</ListViewItem>
+                        </ListView>
+                    </syncfusion:SfAccordionItem>
+                    <syncfusion:SfAccordionItem Header="Miscellaneous">
+                        <ListView Margin="7 0 0 0">
+                            <ListViewItem>SpellChecker</ListViewItem>
+                            <ListViewItem>ProgressBar</ListViewItem>
+                            <ListViewItem>Grid Splitter</ListViewItem>
+                            <ListViewItem>Calculate</ListViewItem>
+                        </ListView>
+                    </syncfusion:SfAccordionItem>
+                </syncfusion:SfAccordion>
+            </syncfusion:SfDockingManager>
+
+            <!--Others-->
+            <syncfusion:SfDockingManager syncfusion:SfDockingManager.SideInDockedMode="Bottom" x:Name="bottomdocking"
+                                       syncfusion:SfDockingManager.DockState="Dock" DockFill="True"
+                                       syncfusion:SfDockingManager.DesiredWidthInDockedMode="200"
+                                       syncfusion:SfDockingManager.DesiredHeightInDockedMode="250"
+                                       syncfusion:SfDockingManager.Header="Other components">
+
+                <!--Enterprise solutions-->
+                <ListView BorderThickness="0" x:Name="enterprise"
+                         syncfusion:SfDockingManager.SideInDockedMode="Left" 
+                         syncfusion:SfDockingManager.DockState="Dock"
+                         syncfusion:SfDockingManager.DesiredWidthInDockedMode="200"  
+                         syncfusion:SfDockingManager.DesiredHeightInDockedMode="200" 
+                         syncfusion:SfDockingManager.Header="Enterprise Solutions" >
+                    <ListViewItem Margin="2,2,2,2">Dashboard Platform</ListViewItem>
+                    <ListViewItem Margin="2,2,2,2">Report Platform</ListViewItem>
+                    <ListViewItem Margin="2,2,2,2">BigData Platform</ListViewItem>
+                </ListView>
+
+                <!--Metro Studio-->
+                <ContentControl syncfusion:SfDockingManager.TargetNameInDockedMode="enterprise"
+                                syncfusion:SfDockingManager.SideInDockedMode="Tabbed" 
+                                syncfusion:SfDockingManager.DockState="Dock"
+                                syncfusion:SfDockingManager.DesiredWidthInDockedMode="200"  
+                                syncfusion:SfDockingManager.DesiredHeightInDockedMode="200" 
+                                syncfusion:SfDockingManager.Header="Metro Studio" >
+                    Syncfusion Metro Studio is a collection of over 7,000 flat and wireframe icon templates that can be easily customized to create thousands of unique icons. It also supports creating custom icon font packages from selected sets of icons.
+                </ContentControl>
+
+                <!--Consulting Services-->
+                <ContentControl syncfusion:SfDockingManager.TargetNameInDockedMode="enterprise"
+                                syncfusion:SfDockingManager.SideInDockedMode="Tabbed" 
+                                syncfusion:SfDockingManager.DockState="Dock" 
+                                syncfusion:SfDockingManager.DesiredWidthInDockedMode="200" 
+                                syncfusion:SfDockingManager.Header="Consulting Services">
+                    We have already built hundreds of web, mobile, and desktop applications for our customers. Whatever your requirements are, there is a good chance that we will be able to help.
+                </ContentControl>
+            </syncfusion:SfDockingManager>
+
+            <!--About us-->
+            <Grid syncfusion:SfDockingManager.DockState="Document"
+                  syncfusion:SfDockingManager.Header="About Us">
+                <RichTextBlock ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto">
+                    <Paragraph  FontSize="14" FontFamily="Segoe UI" >
+                        Syncfusion is the enterprise technology partner of choice for software development, delivering a broad range of web, mobile, and desktop controls coupled with a service-oriented approach throughout the entire application lifecycle. Syncfusion has established itself as the trusted partner worldwide for use in mission-critical applications. Founded in 2001 and headquartered in Research Triangle Park, N.C., Syncfusion has more than 12,000 customers, including large financial institutions, Fortune 100 companies, and global IT consultancies.
+                    </Paragraph>
+                </RichTextBlock>
+            </Grid>
+
+            <!--Whats New-->
+            <syncfusion:SfDockingManager syncfusion:SfDockingManager.Header="What's New" x:Name="documentdocking"
+                                       syncfusion:SfDockingManager.DockState="Document"
+                                       DockFill="True">
+                <ListView syncfusion:SfDockingManager.DockState="Document"
+                                syncfusion:SfDockingManager.Header="Xamarin.Forms">
+                    <ListViewItem>PullToRefresh control</ListViewItem>
+                    <ListViewItem>Data Source control</ListViewItem>
+                </ListView>
+                <ListView syncfusion:SfDockingManager.DockState="Document"
+                                syncfusion:SfDockingManager.Header="Xamarin.Android">
+                    <ListViewItem>Calculate control</ListViewItem>
+                    <ListViewItem>Data Source control</ListViewItem>
+                    <ListViewItem>Kanban control</ListViewItem>
+                </ListView>
+                <ListView syncfusion:SfDockingManager.DockState="Document"
+                                syncfusion:SfDockingManager.Header="Xamarin.iOS">
+                    <ListViewItem>Calculate control</ListViewItem>
+                    <ListViewItem>Data Source control</ListViewItem>
+                    <ListViewItem>Kanban control</ListViewItem>
+                </ListView>
+                <ListView syncfusion:SfDockingManager.DockState="Document"
+                                syncfusion:SfDockingManager.Header="UWP">
+                    <ListViewItem>TreeGrid control</ListViewItem>
+                    <ListViewItem>SpellChecker control</ListViewItem>
+                    <ListViewItem>CellGrid control</ListViewItem>
+                </ListView>
+                <ListView syncfusion:SfDockingManager.DockState="Document"
+                                syncfusion:SfDockingManager.Header="Javascript">
+                    <ListViewItem>Heatmap control</ListViewItem>
+                    <ListViewItem>PivotTree control</ListViewItem>
+                    <ListViewItem>Sparkline control</ListViewItem>
+                </ListView>
+            </syncfusion:SfDockingManager>
+        </syncfusion:SfDockingManager>
+    </Grid>
+</layout:SampleLayout>
