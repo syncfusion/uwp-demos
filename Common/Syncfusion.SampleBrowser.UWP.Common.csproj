@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')"/>
+	<PropertyGroup>
+		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+		<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+		<ProjectGuid>{55694D0F-07E4-4B35-B0E4-939EF98E1014}</ProjectGuid>
+		<OutputType>Library</OutputType>
+		<AppDesignerFolder>Properties</AppDesignerFolder>
+		<RootNamespace>Common_2015</RootNamespace>
+		<AssemblyName>Syncfusion.SampleBrowser.UWP.Common</AssemblyName>
+		<DefaultLanguage>en-US</DefaultLanguage>
+		<TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+		<TargetPlatformVersion>10.0.16299.0</TargetPlatformVersion>
+		<TargetPlatformMinVersion>10.0.16299.0</TargetPlatformMinVersion>
+		<MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+		<FileAlignment>512</FileAlignment>
+		<ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<DebugSymbols>true</DebugSymbols>
+		<DebugType>full</DebugType>
+		<Optimize>false</Optimize>
+		<OutputPath>bin\Debug\</OutputPath>
+		<DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>4</WarningLevel>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<DebugType>pdbonly</DebugType>
+		<Optimize>true</Optimize>
+		<OutputPath>bin\Release\</OutputPath>
+		<DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>4</WarningLevel>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+		<PlatformTarget>x86</PlatformTarget>
+		<DebugSymbols>true</DebugSymbols>
+		<OutputPath>bin\x86\Debug\</OutputPath>
+		<DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+		<NoWarn>;2008</NoWarn>
+		<DebugType>full</DebugType>
+		<PlatformTarget>x86</PlatformTarget>
+		<UseVSHostingProcess>false</UseVSHostingProcess>
+		<ErrorReport>prompt</ErrorReport>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+		<PlatformTarget>x86</PlatformTarget>
+		<OutputPath>bin\x86\Release\</OutputPath>
+		<DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+		<Optimize>true</Optimize>
+		<NoWarn>;2008</NoWarn>
+		<DebugType>pdbonly</DebugType>
+		<PlatformTarget>x86</PlatformTarget>
+		<UseVSHostingProcess>false</UseVSHostingProcess>
+		<ErrorReport>prompt</ErrorReport>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+		<PlatformTarget>ARM</PlatformTarget>
+		<DebugSymbols>true</DebugSymbols>
+		<OutputPath>bin\ARM\Debug\</OutputPath>
+		<DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+		<NoWarn>;2008;CS0108</NoWarn>
+		<DebugType>full</DebugType>
+		<PlatformTarget>ARM</PlatformTarget>
+		<UseVSHostingProcess>false</UseVSHostingProcess>
+		<ErrorReport>prompt</ErrorReport>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+		<PlatformTarget>ARM</PlatformTarget>
+		<OutputPath>bin\ARM\Release\</OutputPath>
+		<DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+		<Optimize>true</Optimize>
+		<NoWarn>;2008</NoWarn>
+		<DebugType>pdbonly</DebugType>
+		<PlatformTarget>ARM</PlatformTarget>
+		<UseVSHostingProcess>false</UseVSHostingProcess>
+		<ErrorReport>prompt</ErrorReport>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+		<PlatformTarget>x64</PlatformTarget>
+		<DebugSymbols>true</DebugSymbols>
+		<OutputPath>bin\x64\Debug\</OutputPath>
+		<DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+		<NoWarn>;2008</NoWarn>
+		<DebugType>full</DebugType>
+		<PlatformTarget>x64</PlatformTarget>
+		<UseVSHostingProcess>false</UseVSHostingProcess>
+		<ErrorReport>prompt</ErrorReport>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+		<PlatformTarget>x64</PlatformTarget>
+		<OutputPath>bin\x64\Release\</OutputPath>
+		<DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+		<Optimize>true</Optimize>
+		<NoWarn>;2008</NoWarn>
+		<DebugType>pdbonly</DebugType>
+		<PlatformTarget>x64</PlatformTarget>
+		<UseVSHostingProcess>false</UseVSHostingProcess>
+		<ErrorReport>prompt</ErrorReport>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+		<VisualStudioVersion>14.0</VisualStudioVersion>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release-Xml|AnyCPU'">
+		<OutputPath>bin\Release-Xml\</OutputPath>
+		<DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+		<Optimize>true</Optimize>
+		<NoStdLib>true</NoStdLib>
+		<DebugType>pdbonly</DebugType>
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<UseVSHostingProcess>false</UseVSHostingProcess>
+		<ErrorReport>prompt</ErrorReport>
+		<CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+		<DocumentationFile>bin\Release-Xml\Syncfusion.SampleBrowser.UWP.Common.XML</DocumentationFile>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release-Xml|x86'">
+		<OutputPath>bin\x86\Release-Xml\</OutputPath>
+		<DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+		<Optimize>true</Optimize>
+		<NoWarn>;2008</NoWarn>
+		<NoStdLib>true</NoStdLib>
+		<DebugType>pdbonly</DebugType>
+		<PlatformTarget>x86</PlatformTarget>
+		<UseVSHostingProcess>false</UseVSHostingProcess>
+		<ErrorReport>prompt</ErrorReport>
+		<CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release-Xml|ARM'">
+		<OutputPath>bin\ARM\Release-Xml\</OutputPath>
+		<DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+		<Optimize>true</Optimize>
+		<NoWarn>;2008</NoWarn>
+		<NoStdLib>true</NoStdLib>
+		<DebugType>pdbonly</DebugType>
+		<PlatformTarget>ARM</PlatformTarget>
+		<UseVSHostingProcess>false</UseVSHostingProcess>
+		<ErrorReport>prompt</ErrorReport>
+		<CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release-Xml|x64'">
+		<OutputPath>bin\x64\Release-Xml\</OutputPath>
+		<DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+		<Optimize>true</Optimize>
+		<NoWarn>;2008</NoWarn>
+		<NoStdLib>true</NoStdLib>
+		<DebugType>pdbonly</DebugType>
+		<PlatformTarget>x64</PlatformTarget>
+		<UseVSHostingProcess>false</UseVSHostingProcess>
+		<ErrorReport>prompt</ErrorReport>
+		<CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+	</PropertyGroup>
+	<Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets"/>
+	<!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+	<ItemGroup>
+		<!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+		<Content Include="ApplicationInsights.config">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="FontIcons\UWPSBFontIcons.ttf">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+	<ItemGroup>
+		<!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+		<Page Include="Common\SampleView.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="Common\StandardStyles.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="ControlsHome.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="ControlsPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="DeviceFamily-Mobile\ControlsHome.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="DeviceFamily-Mobile\ControlsPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="DeviceFamily-Mobile\SampleContent.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="DeviceFamily-Mobile\SearchView.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Content Include="Generic.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Page Include="DeviceFamily-Mobile\WhatsNewPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="DeviceFamily-Mobile\WhatsNewTemplate.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="MobileSamplePage.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="MobileSearchResultView.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="SampleContent.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="SamplePage.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="SearchPage.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="InfoPage.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="DeviceFamily-Mobile\MainPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="DeviceFamily-Mobile\SampleLayout.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="DeviceFamily-Mobile\ShowcaseHome.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="DeviceFamily-Mobile\ShowcasePage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="MainPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="SampleLayout.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="SearchView.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="ShowcaseHome.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="ShowcasePage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="TileLayout.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Content Include="Icons\ComboBox.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\DomainUpDown.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\DropDownButton.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\GroupBar.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\MaskedEdit.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\Menu.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\NumericTextBox.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\NumericUpDown.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\RadialMenu.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\RangeSlider.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\TextBoxExt.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<EmbeddedResource Include="SyncfusionLicense.txt"/>
+		<Content Include="TileStyle.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Page Include="WhatsNewContentPage.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="WhatsNewPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="WhatsNewTemplate.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Include="Common\BindingHelper.cs"/>
+		<Compile Include="Common\ITileItem.cs"/>
+		<Compile Include="Common\NotificationObject.cs"/>
+		<Compile Include="Common\SampleView.xaml.cs"/>
+		<Compile Include="Common\SampleViewItem.cs"/>
+		<Compile Include="Common\VariableGrid.cs"/>
+		<Compile Include="ControlsHome.xaml.cs">
+			<DependentUpon>ControlsHome.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="ControlsPage.xaml.cs">
+			<DependentUpon>ControlsPage.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="Converter.cs"/>
+		<Compile Include="MobileSamplePage.xaml.cs">
+			<DependentUpon>MobileSamplePage.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="MobileSearchResultView.xaml.cs">
+			<DependentUpon>MobileSearchResultView.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="SampleContent.xaml.cs">
+			<DependentUpon>SampleContent.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="SamplePage.xaml.cs">
+			<DependentUpon>SamplePage.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="SearchPage.xaml.cs">
+			<DependentUpon>SearchPage.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="InfoPage.xaml.cs">
+			<DependentUpon>InfoPage.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="Helper.cs"/>
+		<Compile Include="MainPage.xaml.cs">
+			<DependentUpon>MainPage.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="Model\Category.cs"/>
+		<Compile Include="Model\GroupInfo.cs"/>
+		<Compile Include="Model\IProduct.cs"/>
+		<Compile Include="Model\Samples.cs"/>
+		<Compile Include="Model\Search.cs"/>
+		<Compile Include="Model\ShowcaseModel.cs"/>
+		<Compile Include="Model\Tile.cs"/>
+		<Compile Include="Model\ViewModel.cs"/>
+		<Compile Include="Properties\AssemblyInfo.cs"/>
+		<Compile Include="SearchView.xaml.cs">
+			<DependentUpon>SearchView.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="ShowcaseHome.xaml.cs">
+			<DependentUpon>ShowcaseHome.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="ShowcasePage.xaml.cs">
+			<DependentUpon>ShowcasePage.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="TileLayout.xaml.cs">
+			<DependentUpon>TileLayout.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="WhatsNewContentPage.xaml.cs">
+			<DependentUpon>WhatsNewContentPage.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="WhatsNewPage.xaml.cs">
+			<DependentUpon>WhatsNewPage.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="WhatsNewTemplate.xaml.cs">
+			<DependentUpon>WhatsNewTemplate.xaml</DependentUpon>
+		</Compile>
+		<Content Include="Icons\Accordion.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\Auto Complete.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\barcode.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\BulletGraph.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\Calculate.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\Calculator.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\Calendar.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\Carousel.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\CellGrid.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\chart.PNG">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\Color Pickers.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\Date Time Pickers.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\default.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\diagram.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\docIo.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\editor.PNG">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\Grid.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\guage.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\Hub Tile.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\LoadingIndicator.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\maps.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\NavigationDrawer.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\pdf.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\PdfViewer.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\PivotChart.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\PivotGauge.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\PivotGrid.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\PredictiveAnalytics.jpg">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\presentation.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\ProgressBar.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\range_selection.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\Rating.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\reportviewer.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\Ribbon.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\RTE.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\Schedule.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\sparkline_chart.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\SpellChecker.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\Splitter.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\Spreadsheet.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\Tab Control.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\tile-layout.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\tile-view.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\Tree Navigator.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\TreeMap.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Icons\xlsio.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Properties\Common.rd.xml">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Compile Include="SampleLayout.xaml.cs">
+			<DependentUpon>SampleLayout.xaml</DependentUpon>
+		</Compile>
+		<PackageReference Include="Syncfusion.SampleBrowser.UWP.Common" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfAccordion.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfInput.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfShared.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfTabControl.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfBarcode.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.Licensing" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.Calculate.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.Data.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.OfficeChart.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.Presentation.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.DocIO.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfBulletGraph.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfBusyIndicator.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfCarousel.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfChart.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfRadialMenu.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfColorPickers.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfDiagram.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfGauge.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfGrid.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.XlsIO.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfHubTile.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfMaps.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfRichTextBoxAdv.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfSchedule.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfTileView.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfTreeMap.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfTreeNavigator.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfRibbon.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfPdfViewer.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfProgressBar.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfGroupBar.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfMenu.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfGridCommon.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.ExcelChartToImageConverter.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfCellGrid.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfSpreadsheet.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfSpreadsheetHelper.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.PMML.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.Olap.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.PivotAnalysis.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfPivotChart.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfPivotGauge.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfPivotGrid.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfPullToRefresh.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfHeatMap.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfRotator.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfReportViewer.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfNavigationDrawer.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfSpellChecker.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfKanban.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfPivotShared.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfPivotClient.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfDockingManager.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfSunburstChart.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfGantt.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfImageEditor.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.SfSmithChart.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.OfficeChartToImageConverter.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.Pdf.UWP" Version="30.2.4"/>
+		<PackageReference Include="Syncfusion.DataGridExcelExport.UWP" Version="30.2.4"/>
+</ItemGroup>
+	<ItemGroup>
+		<SDKReference Include="WindowsDesktop, Version=10.0.10586.0">
+			<Name>Windows Desktop Extensions for the UWP</Name>
+		</SDKReference>
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
+			<Version>6.0.6</Version>
+		</PackageReference>
+	</ItemGroup>
+	<ItemGroup>
+		<Folder Include="OData_Assembly\"/>
+	</ItemGroup>
+</Project>
