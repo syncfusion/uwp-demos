@@ -15,7 +15,7 @@ This section guides you to use the Syncfusion UWP samples in your applications.
 
 The samples requires Windows 10 and Visual Studio 2015 or higher to build, test and deploy. Syncfusion controls supports “Build 10240 (Windows 10, version 1507)” and higher versions.  
 
-## <a name="documentation"></a>Documentation ##
+## <a name="documentation"></a>Documentation ## 
 
 All controls documentation for the Syncfusion UWP controls can be found on [Syncfusion Help](https://help.syncfusion.com/uwp/overview?utm_source=github&utm_medium=listing). All API documentation can be found at the [API Reference](https://help.syncfusion.com/cr/uwp?utm_source=github&utm_medium=listing).
 
