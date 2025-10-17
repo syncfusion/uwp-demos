@@ -1,0 +1,67 @@
+﻿<common:SampleLayout
+    x:Class="Syncfusion.SampleBrowser.UWP.SfChart.CrossHairDemo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Syncfusion.SampleBrowser.UWP.SfChart"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:common="using:Common"
+    xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
+    mc:Ignorable="d">
+
+    <common:SampleLayout.Sample>
+        <ContentControl>
+            <Grid x:Name="MainGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                <Grid.Resources>
+                    <Style  x:Key="TrackLine" TargetType="Line">
+                        <Setter Property="Stroke" Value="Black"/>
+                        <Setter Property="StrokeThickness" Value="2"/>
+                    </Style>
+
+                    <DataTemplate x:Key="labelTemplate">
+                        <TextBlock Text="{Binding LabelContent}" Foreground="Black" FontSize="12"/>
+                    </DataTemplate>
+
+                    <Style x:Key="axisLineStyle" TargetType="Line">
+                        <Setter Property="Stroke" Value="#FFD1D3D4"/>
+                        <Setter Property="StrokeThickness" Value="1"/>
+                    </Style>
+                    <DataTemplate x:Key="headerTemplate">
+                        <TextBlock Text="{Binding}" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    </DataTemplate>
+                </Grid.Resources>
+
+                <Grid.DataContext>
+                    <local:CurrencyData/>
+                </Grid.DataContext>
+
+                <chart:SfChart FontSize="20" Margin="10,15,10,5" AreaBorderThickness="0,0.5,0.5,0">
+                    <chart:SfChart.Behaviors>
+                        <chart:ChartCrossHairBehavior HorizontalLineStyle="{StaticResource TrackLine}" 
+                                              VerticalLineStyle="{StaticResource TrackLine}" 
+                                              HorizontalAxisLabelAlignment="Center" 
+                                              VerticalAxisLabelAlignment="Center">
+                        </chart:ChartCrossHairBehavior>
+                    </chart:SfChart.Behaviors>
+
+                    <chart:SfChart.PrimaryAxis>
+                        <chart:CategoryAxis Header="Currency" FontSize="12" ShowTrackBallInfo="True"
+                                    AxisLineStyle="{StaticResource axisLineStyle}" 
+                                    MajorTickLineStyle="{StaticResource axisLineStyle}"
+                                    LabelTemplate="{StaticResource labelTemplate}" />
+                    </chart:SfChart.PrimaryAxis>
+
+                    <chart:SfChart.SecondaryAxis>
+                        <chart:NumericalAxis FontSize="12" ShowTrackBallInfo="True" Header="Currency Value"
+                                     LabelTemplate="{StaticResource labelTemplate}" 
+                                     AxisLineStyle="{StaticResource axisLineStyle}" 
+                                     MajorTickLineStyle="{StaticResource axisLineStyle}" />
+                    </chart:SfChart.SecondaryAxis>
+
+                    <chart:ColumnSeries EnableAnimation="True" ItemsSource="{Binding CurrencyDetails}" XBindingPath="CurrencyName" 
+                                Palette="Metro" YBindingPath="CurrencyValue" AdornmentsInfo="{Binding AdornmentInfo}" />
+                </chart:SfChart>
+            </Grid>
+        </ContentControl>
+    </common:SampleLayout.Sample>
+</common:SampleLayout>

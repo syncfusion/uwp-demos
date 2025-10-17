@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<PMML version="4.1" xmlns="http://www.dmg.org/PMML-4_1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dmg.org/PMML-4_1 http://www.dmg.org/v4-1/pmml-4-1.xsd">
+ <Header copyright="Copyright (c) 2016 Syncfusion" description="RPart Decision Tree Model">
+  <Extension name="user" value="Syncfusion" extender="Rattle/PMML"/>
+  <Application name="Rattle/PMML" version="1.4"/>
+  <Timestamp>2014-07-17 10:27:50</Timestamp>
+ </Header>
+ <DataDictionary numberOfFields="6">
+  <DataField name="survived" optype="categorical" dataType="string">
+   <Value value="died"/>
+   <Value value="survived"/>
+  </DataField>
+  <DataField name="pclass" optype="categorical" dataType="string">
+   <Value value="1st"/>
+   <Value value="2nd"/>
+   <Value value="3rd"/>
+  </DataField>
+  <DataField name="sex" optype="categorical" dataType="string">
+   <Value value="female"/>
+   <Value value="male"/>
+  </DataField>
+  <DataField name="age" optype="continuous" dataType="double">
+   <Interval closure="closedClosed" leftMargin="0.166700006" rightMargin="80"/>
+  </DataField>
+  <DataField name="sibsp" optype="continuous" dataType="double">
+   <Interval closure="closedClosed" leftMargin="0" rightMargin="5"/>
+  </DataField>
+  <DataField name="parch" optype="continuous" dataType="double">
+   <Interval closure="closedClosed" leftMargin="0" rightMargin="6"/>
+  </DataField>
+ </DataDictionary>
+ <TreeModel modelName="RPart_Model" functionName="classification" algorithmName="rpart" splitCharacteristic="binarySplit" missingValueStrategy="defaultChild">
+  <MiningSchema>
+   <MiningField name="survived" usageType="predicted"/>
+   <MiningField name="pclass" usageType="active"/>
+   <MiningField name="sex" usageType="active"/>
+   <MiningField name="age" usageType="active"/>
+   <MiningField name="sibsp" usageType="active"/>
+   <MiningField name="parch" usageType="active"/>
+  </MiningSchema>
+  <Output>
+   <OutputField name="Predicted_survived" optype="categorical" dataType="string" feature="predictedValue"/>
+   <OutputField name="Probability_died" optype="continuous" dataType="double" feature="probability" value="died"/>
+   <OutputField name="Probability_survived" optype="continuous" dataType="double" feature="probability" value="survived"/>
+  </Output>
+  <Node id="1" score="died" recordCount="837" defaultChild="2">
+   <True/>
+   <ScoreDistribution value="died" recordCount="461" confidence="0.550776583034648"/>
+   <ScoreDistribution value="survived" recordCount="376" confidence="0.449223416965352"/>
+   <Node id="2" score="died" recordCount="512" defaultChild="4">
+    <CompoundPredicate booleanOperator="surrogate">
+     <SimpleSetPredicate field="sex" booleanOperator="isIn">
+      <Array n="1" type="string">&quot;male&quot;</Array>
+     </SimpleSetPredicate>
+     <SimplePredicate field="parch" operator="lessThan" value="0.5"/>
+     <SimplePredicate field="sibsp" operator="lessThan" value="2.5"/>
+     <SimplePredicate field="age" operator="greaterOrEqual" value="16.5"/>
+    </CompoundPredicate>
+    <ScoreDistribution value="died" recordCount="401" confidence="0.783203125"/>
+    <ScoreDistribution value="survived" recordCount="111" confidence="0.216796875"/>
+    <Node id="4" score="died" recordCount="484">
+     <CompoundPredicate booleanOperator="surrogate">
+      <SimplePredicate field="age" operator="greaterOrEqual" value="10"/>
+      <SimplePredicate field="sibsp" operator="lessThan" value="3.5"/>
+     </CompoundPredicate>
+     <ScoreDistribution value="died" recordCount="394" confidence="0.814049586776859"/>
+     <ScoreDistribution value="survived" recordCount="90" confidence="0.18595041322314"/>
+    </Node>
+    <Node id="5" score="survived" recordCount="28">
+     <CompoundPredicate booleanOperator="surrogate">
+      <SimplePredicate field="age" operator="lessThan" value="10"/>
+      <SimplePredicate field="sibsp" operator="greaterOrEqual" value="3.5"/>
+     </CompoundPredicate>
+     <ScoreDistribution value="died" recordCount="7" confidence="0.25"/>
+     <ScoreDistribution value="survived" recordCount="21" confidence="0.75"/>
+    </Node>
+   </Node>
+   <Node id="3" score="survived" recordCount="325">
+    <CompoundPredicate booleanOperator="surrogate">
+     <SimpleSetPredicate field="sex" booleanOperator="isIn">
+      <Array n="1" type="string">&quot;female&quot;</Array>
+     </SimpleSetPredicate>
+     <SimplePredicate field="parch" operator="greaterOrEqual" value="0.5"/>
+     <SimplePredicate field="sibsp" operator="greaterOrEqual" value="2.5"/>
+     <SimplePredicate field="age" operator="lessThan" value="16.5"/>
+    </CompoundPredicate>
+    <ScoreDistribution value="died" recordCount="60" confidence="0.184615384615385"/>
+    <ScoreDistribution value="survived" recordCount="265" confidence="0.815384615384615"/>
+   </Node>
+  </Node>
+ </TreeModel>
+</PMML>

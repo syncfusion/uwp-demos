@@ -1,0 +1,14 @@
+Syncfusion.SampleBrowser.UWP.Common.dll
+Syncfusion.SfCellGrid.UWP.dll
+Syncfusion.SfGridCommon.UWP.dll
+Syncfusion.SfSpreadsheet.UWP.dll
+Syncfusion.SfShared.UWP.dll
+Syncfusion.SfInput.UWP.dll
+Syncfusion.SfRibbon.UWP.dll
+Syncfusion.SfColorPickers.UWP.dll
+Syncfusion.SfTabControl.UWP.dll
+Syncfusion.XlsIO.UWP.dll
+Syncfusion.SfChart.UWP.dll
+Syncfusion.SfSpreadsheetHelper.UWP.dll
+Syncfusion.ExcelChartToImageConverter.UWP.dll
+Syncfusion.Licensing.dll

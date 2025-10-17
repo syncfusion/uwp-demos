@@ -1,0 +1,84 @@
+﻿<Page
+    x:Class="SampleBrowser.UWP.PredictiveAnalytics.AssociationRules"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SampleBrowser.UWP.PredictiveAnalytics"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
+    mc:Ignorable="d">
+
+    <Page.DataContext>
+        <local:ViewModel/>
+    </Page.DataContext>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <Grid x:Name="MainGrid">
+                <Grid.Resources>
+                    <!-- Template for axis labels -->
+                    <DataTemplate x:Key="primaryLabelTemplate">
+                        <TextBlock Text="{Binding LabelContent}" TextWrapping="Wrap" Width="50" Foreground="Gray" FontSize="14"/>
+                    </DataTemplate>
+                    <DataTemplate x:Key="secondaryLabelTemplate">
+                        <TextBlock Text="{Binding LabelContent}" Foreground="Gray" FontSize="14"/>
+                    </DataTemplate>
+                    <DataTemplate x:Key="DataLabelTemplate">
+                        <Grid>
+                            <TextBlock Text="{Binding}" Margin="0,2,10,0" FontSize="14" FontStretch="Expanded" 
+                                   Foreground="White" FontWeight="Light"
+                                   VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        </Grid>
+                    </DataTemplate>
+                </Grid.Resources>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="110"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition Height="20"></RowDefinition>
+                    <RowDefinition Height="300"></RowDefinition>
+                    <RowDefinition Height="20"></RowDefinition>
+                </Grid.RowDefinitions>
+                <TextBlock Margin="5,10,30,0" TextAlignment="Justify"  Foreground="DimGray" HorizontalAlignment="Left" FontSize="13" TextWrapping="Wrap">
+                                    This sample demonstrates the usage of PMML execution engine to recommended groceries for customer using "Association Rules" based on a sample dataset.
+                </TextBlock>
+                <TextBlock Margin="5,10,30,0" FontSize="14" Grid.Row="1" TextWrapping="Wrap" HorizontalAlignment="Stretch" FontFamily="Seoge UI">Select a transaction to get recommended items</TextBlock>
+                <ComboBox x:Name="Transactions" HorizontalAlignment="Stretch" Grid.Row="2" Margin="5,10,30,0" BorderBrush="LightGray" SelectedItem="1">
+                    <ComboBoxItem>1</ComboBoxItem>
+                    <ComboBoxItem>2</ComboBoxItem>
+                    <ComboBoxItem>3</ComboBoxItem>
+                    <ComboBoxItem>4</ComboBoxItem>
+                    <ComboBoxItem>5</ComboBoxItem>
+                </ComboBox>
+                <TextBlock Margin="5,10,30,0" FontSize="14" Grid.Row="3" >Purchased Items:</TextBlock>
+                <Border HorizontalAlignment="Stretch" Margin="5,10,30,0" Grid.Row="4" BorderThickness="2" BorderBrush="LightGray">
+                    <TextBlock Height="30" Margin="8,0,8,0" ToolTipService.ToolTip="{Binding PurchasedItems}"
+                                           TextTrimming="WordEllipsis" TextWrapping="Wrap" Text="{Binding PurchasedItems}"/>
+                </Border>
+                <TextBlock  Margin="5,10,30,0" FontSize="14" Grid.Row="5" >Recommended items and their confidences:</TextBlock>
+                <chart:SfChart Width="285" HorizontalAlignment="Left" Grid.Row="7" x:Name="SfChart" FontSize="20" Loaded="SfChart_Loaded">
+
+                    <!--PrimaryAxis with label customization-->
+                    <chart:SfChart.PrimaryAxis>
+                        <chart:CategoryAxis x:Name="categoryAxis" Header="Recommended Items" FontSize="16" Foreground="Gray"
+                                                             LabelTemplate="{StaticResource primaryLabelTemplate}" />                        
+                    </chart:SfChart.PrimaryAxis>
+
+                    <!--NumericalAxis with label customization-->
+                    <chart:SfChart.SecondaryAxis>
+                        <chart:NumericalAxis x:Name="numericalAxis" FontSize="16" Foreground="Gray" Minimum="0" Maximum="1"
+                                         LabelTemplate="{StaticResource secondaryLabelTemplate}" Header="Confidence" />
+                    </chart:SfChart.SecondaryAxis>
+
+                    <chart:StackingColumnSeries x:Name="StackingColumnSeries" XBindingPath="Item" Label="Item" YBindingPath="Confidence" Palette="Metro" ItemsSource="{Binding RecommendedGroceries}">
+                    </chart:StackingColumnSeries>
+                </chart:SfChart>
+            </Grid>
+        </ScrollViewer>
+
+    </Grid>
+</Page>

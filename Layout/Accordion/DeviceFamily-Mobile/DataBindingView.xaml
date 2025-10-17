@@ -1,0 +1,116 @@
+﻿<layout:SampleLayout
+    x:Class="Layout.Accordion.DataBindingView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:layout="using:Common"
+    xmlns:local="using:Layout.Accordion" xmlns:viewmodel="using:Layout.Accordion"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:syncfusion="using:Syncfusion.UI.Xaml.Controls.Layout"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+    <layout:SampleLayout.DataContext>
+        <viewmodel:EmployeeDetails />
+    </layout:SampleLayout.DataContext>
+    <layout:SampleLayout.Resources>
+        <Color x:Key="AccentColor">#FF1196CD</Color>
+        <SolidColorBrush x:Key="AccentBrush" Color="{StaticResource AccentColor}"/>
+    </layout:SampleLayout.Resources>
+    <layout:SampleLayout.Sample>
+    <ContentControl HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
+        <syncfusion:SfAccordion Width="300" AccentBrush="{StaticResource AccentBrush}" 
+                            ItemsSource="{Binding Employees}" DisplayMemberPath="Name"
+                            HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="accordion"
+                            Margin="5" SelectionMode="One">
+            <syncfusion:SfAccordion.ContentTemplate>
+                <DataTemplate>
+                    <Border Height="270" Width="300">
+                        <Grid Background="#FFF4F3F2" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="105"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid Width="100" Height="100" Background="DarkGray" Grid.Row="1" Margin="0 10 0 0" Grid.Column="0">
+                                    <Grid Margin="5" Background="White">
+                                        <Image Source="{Binding Image}"  Width="100" Height="100"
+                                   />
+                                    </Grid>
+                                </Grid>
+                                <StackPanel Orientation="Horizontal"  Margin="0 10 0 0"  Grid.Row="1" Grid.Column="1">
+                                    <Grid VerticalAlignment="Top">
+                                        <Grid.Resources>
+                                            <Style TargetType="TextBlock">
+                                                <Setter Property="FontSize" Value="12"/>
+                                            </Style>
+                                        </Grid.Resources>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="90"/>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock Text="Position "/>
+                                        <TextBlock Text="{Binding Position}" Grid.Column="1" Width="80" TextWrapping="Wrap"/>
+                                        <TextBlock Text="Organization " Grid.Row="1"/>
+                                        <TextBlock Text="{Binding OrganizationUnit}" Grid.Row="1" Width="80" TextWrapping="Wrap" Grid.Column="1"/>
+                                        <TextBlock Text="Date Of Birth " Grid.Row="2"/>
+                                        <TextBlock Text="{Binding DateOfBirth}" Grid.Row="2" Grid.Column="1" Width="80" TextWrapping="Wrap"/>
+                                        <TextBlock Text="Location " Grid.Row="3"/>
+                                        <TextBlock Text="{Binding Location}" Grid.Row="3" Grid.Column="1" Width="80" TextWrapping="Wrap"/>
+                                    </Grid>
+                                </StackPanel>
+
+                                <RichTextBlock Grid.ColumnSpan="2" Grid.Row="2" VerticalAlignment="Top"  TextWrapping="Wrap"
+                                           Margin="20" FontSize="12" FontWeight="Light" >
+                                    <Paragraph LineHeight="20">
+                                        <Run>
+                                            Lorem ipsum dolor sit amet, lacus amet amet ultricies. Quisque mi venenatis morbi libero, orci dis, mi ut et class porta,                                        
+                                    massa ligula magna enim, aliquam orci vestibulum tempus.
+                                        </Run>
+                                    </Paragraph>
+                                </RichTextBlock>
+
+                                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal" Grid.Row="3" Grid.ColumnSpan="2" Margin="2">
+                                    <Grid>
+                                        <Grid.Resources>
+                                            <Style TargetType="TextBlock">
+                                                <Setter Property="FontSize" Value="11"/>
+                                            </Style>
+                                        </Grid.Resources>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock Text=")" FontFamily="Wingdings"/>
+                                        <TextBlock Text="{Binding Phone}" Grid.Column="1" Margin="5 0" VerticalAlignment="Center"/>
+                                        <TextBlock Text="*" FontFamily="Wingdings" Grid.Column="2"/>
+                                        <TextBlock Text="{Binding Email}" Grid.Column="3" Margin="5 0" VerticalAlignment="Center"/>
+                                    </Grid>
+                                </StackPanel>
+
+                            </Grid>
+                    </Border>
+                </DataTemplate>
+            </syncfusion:SfAccordion.ContentTemplate>
+            <syncfusion:SfAccordion.HeaderTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <TextBlock Text="{Binding Name}" Margin="10" FontSize="18"/>
+                    </Grid>
+                </DataTemplate>
+            </syncfusion:SfAccordion.HeaderTemplate>
+        </syncfusion:SfAccordion>
+    </ContentControl>
+    </layout:SampleLayout.Sample>
+</layout:SampleLayout>
