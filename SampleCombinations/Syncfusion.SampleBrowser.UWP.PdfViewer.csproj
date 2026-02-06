@@ -1,0 +1,908 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')"/>
+	<PropertyGroup>
+		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+		<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+		<ProjectGuid>{55694D0F-07E4-4B35-B0E4-939EF98E1014}</ProjectGuid>
+		<OutputType>AppContainerExe</OutputType>
+		<AppDesignerFolder>Properties</AppDesignerFolder>
+		<RootNamespace>Syncfusion.SampleBrowser.UWP.PdfViewer</RootNamespace>
+		<AssemblyName>Syncfusion.SampleBrowser.UWP.PdfViewer</AssemblyName>
+		<DefaultLanguage>en-US</DefaultLanguage>
+		<TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+		<TargetPlatformVersion>10.0.16299.0</TargetPlatformVersion>
+		<TargetPlatformMinVersion>10.0.16299.0</TargetPlatformMinVersion>
+		<MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+		<FileAlignment>512</FileAlignment>
+		<ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+		<PackageCertificateKeyFile>Syncfusion.SampleBrowser.UWP.PdfViewer_TemporaryKey.pfx</PackageCertificateKeyFile>
+		<RuntimeIdentifiers>win10-arm;win10-arm-aot;win10-x86;win10-x86-aot;win10-x64;win10-x64-aot</RuntimeIdentifiers>
+		<PackageCertificateThumbprint>6324C0F40D5E1FC9916F4E6A1DC832D13BE2DCD4</PackageCertificateThumbprint>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<DebugSymbols>true</DebugSymbols>
+		<DebugType>full</DebugType>
+		<Optimize>false</Optimize>
+		<OutputPath>bin\Debug\</OutputPath>
+		<DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>4</WarningLevel>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<DebugType>pdbonly</DebugType>
+		<Optimize>true</Optimize>
+		<OutputPath>bin\Release\</OutputPath>
+		<DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>4</WarningLevel>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+		<PlatformTarget>x86</PlatformTarget>
+		<DebugSymbols>true</DebugSymbols>
+		<OutputPath>bin\x86\Debug\</OutputPath>
+		<DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+		<NoWarn>;2008</NoWarn>
+		<DebugType>full</DebugType>
+		<PlatformTarget>x86</PlatformTarget>
+		<UseVSHostingProcess>false</UseVSHostingProcess>
+		<ErrorReport>prompt</ErrorReport>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+		<PlatformTarget>x86</PlatformTarget>
+		<OutputPath>bin\x86\Release\</OutputPath>
+		<DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+		<Optimize>true</Optimize>
+		<NoWarn>;2008</NoWarn>
+		<DebugType>pdbonly</DebugType>
+		<PlatformTarget>x86</PlatformTarget>
+		<UseVSHostingProcess>false</UseVSHostingProcess>
+		<ErrorReport>prompt</ErrorReport>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+		<PlatformTarget>ARM</PlatformTarget>
+		<DebugSymbols>true</DebugSymbols>
+		<OutputPath>bin\ARM\Debug\</OutputPath>
+		<DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+		<NoWarn>;2008</NoWarn>
+		<DebugType>full</DebugType>
+		<PlatformTarget>ARM</PlatformTarget>
+		<UseVSHostingProcess>false</UseVSHostingProcess>
+		<ErrorReport>prompt</ErrorReport>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+		<PlatformTarget>ARM</PlatformTarget>
+		<OutputPath>bin\ARM\Release\</OutputPath>
+		<DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+		<Optimize>true</Optimize>
+		<NoWarn>;2008</NoWarn>
+		<DebugType>pdbonly</DebugType>
+		<PlatformTarget>ARM</PlatformTarget>
+		<UseVSHostingProcess>false</UseVSHostingProcess>
+		<ErrorReport>prompt</ErrorReport>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+		<PlatformTarget>x64</PlatformTarget>
+		<DebugSymbols>true</DebugSymbols>
+		<OutputPath>bin\x64\Debug\</OutputPath>
+		<DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+		<NoWarn>;2008</NoWarn>
+		<DebugType>full</DebugType>
+		<PlatformTarget>x64</PlatformTarget>
+		<UseVSHostingProcess>false</UseVSHostingProcess>
+		<ErrorReport>prompt</ErrorReport>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+		<PlatformTarget>x64</PlatformTarget>
+		<OutputPath>bin\x64\Release\</OutputPath>
+		<DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+		<Optimize>true</Optimize>
+		<NoWarn>;2008</NoWarn>
+		<DebugType>pdbonly</DebugType>
+		<PlatformTarget>x64</PlatformTarget>
+		<UseVSHostingProcess>false</UseVSHostingProcess>
+		<ErrorReport>prompt</ErrorReport>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+		<VisualStudioVersion>14.0</VisualStudioVersion>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release-Xml|AnyCPU'">
+		<OutputPath>bin\Release-Xml\</OutputPath>
+		<DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+		<Optimize>true</Optimize>
+		<NoStdLib>true</NoStdLib>
+		<DebugType>pdbonly</DebugType>
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<UseVSHostingProcess>false</UseVSHostingProcess>
+		<ErrorReport>prompt</ErrorReport>
+		<CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+		<DocumentationFile>bin\Release-Xml\Syncfusion.SampleBrowser.UWP.PdfViewer.XML</DocumentationFile>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release-Xml|x86'">
+		<OutputPath>bin\x86\Release-Xml\</OutputPath>
+		<DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+		<Optimize>true</Optimize>
+		<NoWarn>;2008</NoWarn>
+		<NoStdLib>true</NoStdLib>
+		<DebugType>pdbonly</DebugType>
+		<PlatformTarget>x86</PlatformTarget>
+		<UseVSHostingProcess>false</UseVSHostingProcess>
+		<ErrorReport>prompt</ErrorReport>
+		<CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release-Xml|ARM'">
+		<OutputPath>bin\ARM\Release-Xml\</OutputPath>
+		<DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+		<Optimize>true</Optimize>
+		<NoWarn>;2008</NoWarn>
+		<NoStdLib>true</NoStdLib>
+		<DebugType>pdbonly</DebugType>
+		<PlatformTarget>ARM</PlatformTarget>
+		<UseVSHostingProcess>false</UseVSHostingProcess>
+		<ErrorReport>prompt</ErrorReport>
+		<CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release-Xml|x64'">
+		<OutputPath>bin\x64\Release-Xml\</OutputPath>
+		<DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+		<Optimize>true</Optimize>
+		<NoWarn>;2008</NoWarn>
+		<NoStdLib>true</NoStdLib>
+		<DebugType>pdbonly</DebugType>
+		<PlatformTarget>x64</PlatformTarget>
+		<UseVSHostingProcess>false</UseVSHostingProcess>
+		<ErrorReport>prompt</ErrorReport>
+		<CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+	</PropertyGroup>
+	<Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets"/>
+	<!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+	<ItemGroup>
+		<Content Include="ApplicationInsights.config">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Assets\pdfviewer.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="PdfViewer\Assets\OpenBlack.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="PdfViewer\Assets\Open_White.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="PdfViewer\Assets\pdfviewer.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Annotations_black.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Annotations_white.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Close_black.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Close_White.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\disable_next.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\disable_prev.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Disable_redo.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Disable_undo.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Ellipse_black.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Ellipse_white.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\GotoIcon.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\GoTo_Black.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\GoTo_White.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Highlight_black.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Highlight_white.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Ink_Black.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Ink_White.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Line_black.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Line_white.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\NavigationDown_Black.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\NavigationDown_White.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\NavigationUp_Black.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\NavigationUp_White.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\OpenBlack.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\OpenPdf.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Open_White.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\PageDown.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\PageUp.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Print.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\PrintIcon.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Print_Black.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Print_Clicked.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Print_White.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Rectangle_black.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Rectangle_white.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Redo_Black.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Redo_White.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Save_Black.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Save_White.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\SearchButton_Black.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\SearchButton_White.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Search_White.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Strikethrough_black.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Strikethrough_white.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Underline_black.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Underline_white.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Undo_Black.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Undo_White.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Zoom In_Black.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Zoom In_White.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\ZoomDown.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\ZoomMode_Black.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\ZoomMode_White.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\ZoomOutWhite.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\ZoomOut_Black.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\ZoomUp.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Zoom_black.png"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Zoom_white.png"/>
+		<Content Include="Samples\Samples.xml">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\WindowsStoreApps.pdf"/>
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Include="App.xaml.cs">
+			<DependentUpon>App.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\HomePage.xaml.cs">
+			<DependentUpon>HomePage.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\PdfViewerViewModel.cs"/>
+		<Compile Include="PdfViewer\SignatureCanvas.cs"/>
+		<Compile Include="PdfViewer\SignatureView.xaml.cs">
+			<DependentUpon>SignatureView.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP-10395.xaml.cs">
+			<DependentUpon>UWP-10395.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP10449.xaml.cs">
+			<DependentUpon>UWP10449.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP9102\UWP9102.xaml.cs">
+			<DependentUpon>UWP9102.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\Getting Started\MainPage.xaml.cs">
+			<DependentUpon>MainPage.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10014.xaml.cs">
+			<DependentUpon>UWP_10014.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10023.xaml.cs">
+			<DependentUpon>UWP_10023.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10026.xaml.cs">
+			<DependentUpon>UWP_10026.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10029.xaml.cs">
+			<DependentUpon>UWP_10029.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10032.xaml.cs">
+			<DependentUpon>UWP_10032.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10138.xaml.cs">
+			<DependentUpon>UWP_10138.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10139.xaml.cs">
+			<DependentUpon>UWP_10139.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10143.xaml.cs">
+			<DependentUpon>UWP_10143.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10163.xaml.cs">
+			<DependentUpon>UWP_10163.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10199\UWP_10199.xaml.cs">
+			<DependentUpon>UWP_10199.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10238.xaml.cs">
+			<DependentUpon>UWP_10238.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10287.xaml.cs">
+			<DependentUpon>UWP_10287.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10320.xaml.cs">
+			<DependentUpon>UWP_10320.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10332.xaml.cs">
+			<DependentUpon>UWP_10332.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10400.xaml.cs">
+			<DependentUpon>UWP_10400.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10406.xaml.cs">
+			<DependentUpon>UWP_10406.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10445_10458.xaml.cs">
+			<DependentUpon>UWP_10445_10458.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10544.xaml.cs">
+			<DependentUpon>UWP_10544.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10547.xaml.cs">
+			<DependentUpon>UWP_10547.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10671 .xaml.cs">
+			<DependentUpon>UWP_10671 .xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10683\PdfPage_10683.xaml.cs">
+			<DependentUpon>PdfPage_10683.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10683\UWP_10683.xaml.cs">
+			<DependentUpon>UWP_10683.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10699\PdfPage_10699.xaml.cs">
+			<DependentUpon>PdfPage_10699.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10699\UWP_10699.xaml.cs">
+			<DependentUpon>UWP_10699.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10703\PdfPage_10703.xaml.cs">
+			<DependentUpon>PdfPage_10703.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10703\UWP_10703.xaml.cs">
+			<DependentUpon>UWP_10703.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10705.xaml.cs">
+			<DependentUpon>UWP_10705.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10709.xaml.cs">
+			<DependentUpon>UWP_10709.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10710.xaml.cs">
+			<DependentUpon>UWP_10710.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10714.xaml.cs">
+			<DependentUpon>UWP_10714.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10720.xaml.cs">
+			<DependentUpon>UWP_10720.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10729.xaml.cs">
+			<DependentUpon>UWP_10729.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10745.xaml.cs">
+			<DependentUpon>UWP_10745.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10756.xaml.cs">
+			<DependentUpon>UWP_10756.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10760.xaml.cs">
+			<DependentUpon>UWP_10760.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10767.xaml.cs">
+			<DependentUpon>UWP_10767.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10775.xaml.cs">
+			<DependentUpon>UWP_10775.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10778.xaml.cs">
+			<DependentUpon>UWP_10778.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10782\PdfPage_10782.xaml.cs">
+			<DependentUpon>PdfPage_10782.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10782\UWP_10782.xaml.cs">
+			<DependentUpon>UWP_10782.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10784\PdfPage_10784.xaml.cs">
+			<DependentUpon>PdfPage_10784.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10784\UWP_10784.xaml.cs">
+			<DependentUpon>UWP_10784.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10786.xaml.cs">
+			<DependentUpon>UWP_10786.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10787.xaml.cs">
+			<DependentUpon>UWP_10787.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10793.xaml.cs">
+			<DependentUpon>UWP_10793.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10794\PdfPage_10794.xaml.cs">
+			<DependentUpon>PdfPage_10794.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10794\UWP_10794.xaml.cs">
+			<DependentUpon>UWP_10794.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10820.xaml.cs">
+			<DependentUpon>UWP_10820.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10857.xaml.cs">
+			<DependentUpon>UWP_10857.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_10860.xaml.cs">
+			<DependentUpon>UWP_10860.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_7689\UWP_7689.xaml.cs">
+			<DependentUpon>UWP_7689.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_9496.xaml.cs">
+			<DependentUpon>UWP_9496.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_9701\UWP_9701.xaml.cs">
+			<DependentUpon>UWP_9701.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_9740.xaml.cs">
+			<DependentUpon>UWP_9740.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_9928\PdfViewerViewModel.cs"/>
+		<Compile Include="PdfViewer\UWP_9928\UWP_9928.xaml.cs">
+			<DependentUpon>UWP_9928.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="PdfViewer\UWP_9929.xaml.cs">
+			<DependentUpon>UWP_9929.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="Properties\AssemblyInfo.cs"/>
+		<Compile Include="PdfViewer\UWP_10372.xaml.cs">
+			<DependentUpon>UWP_10372.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="UWP_10363.xaml.cs">
+			<DependentUpon>UWP_10363.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="UWP_10394.xaml.cs">
+			<DependentUpon>UWP_10394.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="UWP_10528.xaml.cs">
+			<DependentUpon>UWP_10528.xaml</DependentUpon>
+		</Compile>
+	</ItemGroup>
+	<ItemGroup>
+		<AppxManifest Include="Package.appxmanifest">
+			<SubType>Designer</SubType>
+		</AppxManifest>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\PDF_Succinctly - Copy.pdf"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\GIS Succinctly.pdf"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Windows Store Apps Succinctly.pdf"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Windows Store Apps SuccinctlyFreeTextAnnotation.pdf"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\16.pdf"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\40_file_2020.pdf"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\4422-84.pdf"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\7d8f581c-0edd-40a4-97b4-75d0cdb4bd60.pdf"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\account-opening-guide-preview-cn.PDF"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Android.pdf"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\ARM-167_neu2.pdf"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\BRC-B-12522-002.pdf"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\BRC-B-12601-001.pdf"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\ContainsMarkup.pdf"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\DropdownIssue.pdf"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\EditedFormField.pdf"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\F# Succinctly.pdf"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Freetext.pdf"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\FreeTextCallout.pdf"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\FX3S.FX3G.FX3GC.FX3U.FX3UC.pdf"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\GIS Succinctly Annot.pdf"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\GIS SuccinctlyTextMarkup.pdf"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\GIS SuccinctlyTextMarkupAnnotation.pdf"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\HTTP Succinctly.pdf"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\JavaScript Succinctly.pdf"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\NS16 - Firewater Z3.pdf"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\output.pdf"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Post-Meeting Minutes - AM Council Meeting_May14_2018 - Kelowna%284%29.pdf"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Reference PDF 2.pdf"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Sample 2.pdf"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\sample.pdf"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\sample_10783.pdf"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\SW-WL-085-SHT 1 OF 1.pdf"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\tam0520u.pdf"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Test.pdf"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\TextMarkup Issue.pdf"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\Toshiba60J323datasheet.pdf"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\UWP_10029.pdf"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\UWP_10138.pdf"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\UWP_10139.pdf"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\UWP_10372.pdf"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\UWP_10544.pdf"/>
+		<EmbeddedResource Include="PdfViewer\Assets\Pdf\18.pdf"/>
+		<None Include="Syncfusion.SampleBrowser.UWP.PdfViewer_TemporaryKey.pfx"/>
+		<PackageReference Include="Syncfusion.SampleBrowser.UWP.Common" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfAccordion.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfInput.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfShared.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfTabControl.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfBarcode.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.Licensing" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.Calculate.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.Data.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.OfficeChart.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.Presentation.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.DocIO.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfBulletGraph.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfBusyIndicator.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfCarousel.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfChart.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfRadialMenu.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfColorPickers.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfDiagram.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfGauge.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfGrid.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.XlsIO.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfHubTile.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfMaps.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfRichTextBoxAdv.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfSchedule.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfTileView.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfTreeMap.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfTreeNavigator.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfRibbon.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfPdfViewer.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfProgressBar.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfGroupBar.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfMenu.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfGridCommon.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.ExcelChartToImageConverter.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfCellGrid.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfSpreadsheet.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfSpreadsheetHelper.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.PMML.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.Olap.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.PivotAnalysis.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfPivotChart.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfPivotGauge.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfPivotGrid.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfPullToRefresh.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfHeatMap.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfRotator.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfReportViewer.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfNavigationDrawer.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfSpellChecker.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfKanban.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfPivotShared.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfPivotClient.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfDockingManager.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfSunburstChart.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfGantt.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfImageEditor.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfSmithChart.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.OfficeChartToImageConverter.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.Pdf.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.DataGridExcelExport.UWP" Version="32.2.3"/>
+</ItemGroup>
+	<ItemGroup>
+		<Content Include="Properties\Default.rd.xml">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Assets\LockScreenLogo.scale-200.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Assets\SplashScreen.scale-200.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Assets\Square150x150Logo.scale-200.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Assets\Square44x44Logo.scale-200.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Assets\StoreLogo.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Assets\Wide310x150Logo.scale-200.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+	<ItemGroup>
+		<ApplicationDefinition Include="App.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</ApplicationDefinition>
+		<Page Include="Common\StandardStyles.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="PdfViewer\Getting Started\DeviceFamily-Mobile\DeviceFamily-Mobile\MainPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="PdfViewer\HomePage.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="PdfViewer\SignatureView.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="PdfViewer\UWP-10395.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="PdfViewer\UWP10449.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="PdfViewer\UWP9102\DeviceFamily-Mobile\DeviceFamily-Mobile\UWP9102.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="PdfViewer\UWP9102\UWP9102.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="PdfViewer\Getting Started\MainPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="PdfViewer\UWP_10014.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="PdfViewer\UWP_10023.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="PdfViewer\UWP_10026.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="PdfViewer\UWP_10029.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="PdfViewer\UWP_10032.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="PdfViewer\UWP_10138.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="PdfViewer\UWP_10139.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="PdfViewer\UWP_10143.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="PdfViewer\UWP_10163.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="PdfViewer\UWP_10199\DeviceFamily-Mobile\DeviceFamily-Mobile\UWP_10199.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="PdfViewer\UWP_10199\UWP_10199.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="PdfViewer\UWP_10238.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="PdfViewer\UWP_10287.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="PdfViewer\UWP_10320.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="PdfViewer\UWP_10332.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="PdfViewer\UWP_10400.xaml">
+			<Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="PdfViewer\UWP_10406.xaml">
+			<Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="PdfViewer\UWP_10445_10458.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="PdfViewer\UWP_10544.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="PdfViewer\UWP_10547.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="PdfViewer\UWP_10671 .xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="PdfViewer\UWP_10683\PdfPage_10683.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="PdfViewer\UWP_10683\UWP_10683.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="PdfViewer\UWP_10699\PdfPage_10699.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="PdfViewer\UWP_10699\UWP_10699.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="PdfViewer\UWP_10703\PdfPage_10703.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="PdfViewer\UWP_10703\UWP_10703.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="PdfViewer\UWP_10705.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="PdfViewer\UWP_10709.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="PdfViewer\UWP_10710.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="PdfViewer\UWP_10714.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="PdfViewer\UWP_10720.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="PdfViewer\UWP_10729.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="PdfViewer\UWP_10745.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="PdfViewer\UWP_10756.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="PdfViewer\UWP_10760.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="PdfViewer\UWP_10767.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="PdfViewer\UWP_10775.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="PdfViewer\UWP_10778.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="PdfViewer\UWP_10782\PdfPage_10782.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="PdfViewer\UWP_10782\UWP_10782.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="PdfViewer\UWP_10784\PdfPage_10784.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="PdfViewer\UWP_10784\UWP_10784.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="PdfViewer\UWP_10786.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="PdfViewer\UWP_10787.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="PdfViewer\UWP_10793.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="PdfViewer\UWP_10794\PdfPage_10794.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="PdfViewer\UWP_10794\UWP_10794.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="PdfViewer\UWP_10820.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="PdfViewer\UWP_10857.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="PdfViewer\UWP_10860.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="PdfViewer\UWP_7689\DeviceFamily-Mobile\DeviceFamily-Mobile\UWP_7689.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="PdfViewer\UWP_7689\UWP_7689.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="PdfViewer\UWP_9496.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="PdfViewer\UWP_9701\DeviceFamily-Mobile\DeviceFamily-Mobile\UWP_9701.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="PdfViewer\UWP_9701\UWP_9701.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="PdfViewer\UWP_9740.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="PdfViewer\UWP_9928\UWP_9928.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="PdfViewer\UWP_9929.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="PdfViewer\UWP_10372.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="UWP_10363.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="UWP_10394.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="UWP_10528.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+	</ItemGroup>
+	<ItemGroup/>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
+			<Version>6.2.12</Version>
+		</PackageReference>
+		<PackageReference Include="Microsoft.Toolkit.Uwp.UI.Controls">
+			<Version>6.1.1</Version>
+		</PackageReference>
+		<PackageReference Include="Syncfusion.SfPdfViewer.UWP">
+			<Version>18.4.0.43</Version>
+		</PackageReference>
+	</ItemGroup>
+	<ItemGroup>
+		<SDKReference Include="WindowsMobile, Version=10.0.16299.0">
+			<Name>Windows Mobile Extensions for the UWP</Name>
+		</SDKReference>
+	</ItemGroup>
+	<Target Name="ChangesAliases" BeforeTargets="FindReferenceAssembliesForReferences;ResolveReferences">
+		<ItemGroup>
+			<ReferencePath Condition="'%(FileName)' == 'Syncfusion.Pdf.UWP'">
+				<Aliases>global,syncfusion</Aliases>
+			</ReferencePath>
+		</ItemGroup>
+	</Target>
+</Project>

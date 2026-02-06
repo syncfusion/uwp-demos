@@ -1,0 +1,38 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Syncfusion.SampleBrowser.UWP.PdfViewer"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:sync="using:Syncfusion.Windows.PdfViewer"
+    x:Class="Syncfusion.SampleBrowser.UWP.PdfViewer.PdfViewer.UWP_9928.UWP_9928"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <controls:TabView x:Name="Tabs" Background="Transparent">
+        <controls:TabViewItem Width="234" Background="Red" Header="Electronic Medical Record">
+            <Grid>
+                <sync:SfPdfViewerControl  ItemsSource="{Binding PdfDocument1}" Name="pdfEMARViewer" ></sync:SfPdfViewerControl>
+            </Grid>
+        </controls:TabViewItem>
+        <controls:TabViewItem Width="234"  Background="Red" Header="Electronic Treatment Record">
+            <Grid>
+                <sync:SfPdfViewerControl ItemsSource="{Binding PdfDocument2}" Name="pdfETARViewer" ></sync:SfPdfViewerControl>
+            </Grid>
+        </controls:TabViewItem>
+        <controls:TabViewItem  Width="234"  Background="Red" Header="Activities of Daily Living">
+            <Grid>
+                <sync:SfPdfViewerControl ItemsSource="{Binding PdfDocument3}" Name="pdfADLViewer" ></sync:SfPdfViewerControl>
+            </Grid>
+        </controls:TabViewItem>
+        <controls:TabViewItem  Width="234" Background="Red" Header="Emergency Contacts">
+            <TextBlock Padding="16">Contacts here</TextBlock>
+        </controls:TabViewItem>
+        <controls:TabViewItem Width="234"  Background="Red" Header="Log entries">
+            <TextBlock Padding="16">Log entries here</TextBlock>
+        </controls:TabViewItem>
+    </controls:TabView>
+
+
+</Page>

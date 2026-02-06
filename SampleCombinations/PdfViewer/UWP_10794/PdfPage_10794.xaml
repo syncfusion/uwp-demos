@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="Syncfusion.SampleBrowser.UWP.PdfViewer.PdfPage_10794"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Syncfusion.SampleBrowser.UWP.PdfViewer"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:cc="using:Syncfusion.Windows.PdfViewer"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <Button Content="Back" Padding="5,5,5,5" Click="Button_Click"></Button>
+            <Button Content="OpenPdf" Padding="5,5,5,5" Click="Button_Click_1"></Button>
+            <Button Content="LineAnnotationMode" Padding="5,5,5,5" Click="Button_Click_3"></Button>
+            <Button Content="SaveAndRe-LoadPDF" Padding="5,5,5,5" Click="Button_Click_2"></Button>
+        </StackPanel>
+        <cc:SfPdfViewerControl Grid.Row="1" x:Name="pdfViewer" />
+    </Grid>
+</Page>

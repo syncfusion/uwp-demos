@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')"/>
+	<PropertyGroup>
+		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+		<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+		<ProjectGuid>{55694D0F-07E4-4B35-B0E4-939EF98E1014}</ProjectGuid>
+		<OutputType>AppContainerExe</OutputType>
+		<AppDesignerFolder>Properties</AppDesignerFolder>
+		<RootNamespace>Syncfusion.SampleBrowser.UWP.RichTextEditor</RootNamespace>
+		<AssemblyName>Syncfusion.SampleBrowser.UWP.RichTextEditor</AssemblyName>
+		<DefaultLanguage>en-US</DefaultLanguage>
+		<TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+		<TargetPlatformVersion>10.0.16299.0</TargetPlatformVersion>
+		<TargetPlatformMinVersion>10.0.16299.0</TargetPlatformMinVersion>
+		<MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+		<FileAlignment>512</FileAlignment>
+		<ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+		<PackageCertificateKeyFile>Syncfusion.SampleBrowser.UWP.RichTextEditor_TemporaryKey.pfx</PackageCertificateKeyFile>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<DebugSymbols>true</DebugSymbols>
+		<DebugType>full</DebugType>
+		<Optimize>false</Optimize>
+		<OutputPath>bin\Debug\</OutputPath>
+		<DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>4</WarningLevel>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<DebugType>pdbonly</DebugType>
+		<Optimize>true</Optimize>
+		<OutputPath>bin\Release\</OutputPath>
+		<DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>4</WarningLevel>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+		<PlatformTarget>x86</PlatformTarget>
+		<DebugSymbols>true</DebugSymbols>
+		<OutputPath>bin\x86\Debug\</OutputPath>
+		<DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+		<NoWarn>;2008</NoWarn>
+		<DebugType>full</DebugType>
+		<PlatformTarget>x86</PlatformTarget>
+		<UseVSHostingProcess>false</UseVSHostingProcess>
+		<ErrorReport>prompt</ErrorReport>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+		<PlatformTarget>x86</PlatformTarget>
+		<OutputPath>bin\x86\Release\</OutputPath>
+		<DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+		<Optimize>true</Optimize>
+		<NoWarn>;2008</NoWarn>
+		<DebugType>pdbonly</DebugType>
+		<PlatformTarget>x86</PlatformTarget>
+		<UseVSHostingProcess>false</UseVSHostingProcess>
+		<ErrorReport>prompt</ErrorReport>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+		<PlatformTarget>ARM</PlatformTarget>
+		<DebugSymbols>true</DebugSymbols>
+		<OutputPath>bin\ARM\Debug\</OutputPath>
+		<DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+		<NoWarn>;2008</NoWarn>
+		<DebugType>full</DebugType>
+		<PlatformTarget>ARM</PlatformTarget>
+		<UseVSHostingProcess>false</UseVSHostingProcess>
+		<ErrorReport>prompt</ErrorReport>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+		<PlatformTarget>ARM</PlatformTarget>
+		<OutputPath>bin\ARM\Release\</OutputPath>
+		<DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+		<Optimize>true</Optimize>
+		<NoWarn>;2008</NoWarn>
+		<DebugType>pdbonly</DebugType>
+		<PlatformTarget>ARM</PlatformTarget>
+		<UseVSHostingProcess>false</UseVSHostingProcess>
+		<ErrorReport>prompt</ErrorReport>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+		<PlatformTarget>x64</PlatformTarget>
+		<DebugSymbols>true</DebugSymbols>
+		<OutputPath>bin\x64\Debug\</OutputPath>
+		<DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+		<NoWarn>;2008</NoWarn>
+		<DebugType>full</DebugType>
+		<PlatformTarget>x64</PlatformTarget>
+		<UseVSHostingProcess>false</UseVSHostingProcess>
+		<ErrorReport>prompt</ErrorReport>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+		<PlatformTarget>x64</PlatformTarget>
+		<OutputPath>bin\x64\Release\</OutputPath>
+		<DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+		<Optimize>true</Optimize>
+		<NoWarn>;2008</NoWarn>
+		<DebugType>pdbonly</DebugType>
+		<PlatformTarget>x64</PlatformTarget>
+		<UseVSHostingProcess>false</UseVSHostingProcess>
+		<ErrorReport>prompt</ErrorReport>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+		<VisualStudioVersion>14.0</VisualStudioVersion>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release-Xml|AnyCPU'">
+		<OutputPath>bin\Release-Xml\</OutputPath>
+		<DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+		<Optimize>true</Optimize>
+		<NoStdLib>true</NoStdLib>
+		<DebugType>pdbonly</DebugType>
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<UseVSHostingProcess>false</UseVSHostingProcess>
+		<ErrorReport>prompt</ErrorReport>
+		<CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+		<DocumentationFile>bin\Release-Xml\Syncfusion.SampleBrowser.UWP.RichTextEditor.XML</DocumentationFile>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release-Xml|x86'">
+		<OutputPath>bin\x86\Release-Xml\</OutputPath>
+		<DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+		<Optimize>true</Optimize>
+		<NoWarn>;2008</NoWarn>
+		<NoStdLib>true</NoStdLib>
+		<DebugType>pdbonly</DebugType>
+		<PlatformTarget>x86</PlatformTarget>
+		<UseVSHostingProcess>false</UseVSHostingProcess>
+		<ErrorReport>prompt</ErrorReport>
+		<CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release-Xml|ARM'">
+		<OutputPath>bin\ARM\Release-Xml\</OutputPath>
+		<DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+		<Optimize>true</Optimize>
+		<NoWarn>;2008</NoWarn>
+		<NoStdLib>true</NoStdLib>
+		<DebugType>pdbonly</DebugType>
+		<PlatformTarget>ARM</PlatformTarget>
+		<UseVSHostingProcess>false</UseVSHostingProcess>
+		<ErrorReport>prompt</ErrorReport>
+		<CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release-Xml|x64'">
+		<OutputPath>bin\x64\Release-Xml\</OutputPath>
+		<DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+		<Optimize>true</Optimize>
+		<NoWarn>;2008</NoWarn>
+		<NoStdLib>true</NoStdLib>
+		<DebugType>pdbonly</DebugType>
+		<PlatformTarget>x64</PlatformTarget>
+		<UseVSHostingProcess>false</UseVSHostingProcess>
+		<ErrorReport>prompt</ErrorReport>
+		<CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+	</PropertyGroup>
+	<Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets"/>
+	<!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+	<ItemGroup>
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Include="App.xaml.cs">
+			<DependentUpon>App.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="Properties\AssemblyInfo.cs"/>
+	</ItemGroup>
+	<ItemGroup>
+		<AppxManifest Include="Package.appxmanifest">
+			<SubType>Designer</SubType>
+		</AppxManifest>
+		<Content Include="RTE\Assets\en_US.dic">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\People_Circle0.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\People_Circle14.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\People_Circle18.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\People_Circle2.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\People_Circle5.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\Phone_RibbonIcons\Insert\PageBreak.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\Phone_RibbonIcons\View\PrintMode.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\Phone_RibbonIcons\View\WebMode.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<EmbeddedResource Include="RTE\Assets\Records.xml"/>
+		<Content Include="RTE\Assets\RibbonIcons\Insert\PageBreak.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\RibbonQATIcons.ttf">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<EmbeddedResource Include="RTE\Assets\Letter.docx"/>
+		<None Include="Syncfusion.SampleBrowser.UWP.RichTextEditor_TemporaryKey.pfx"/>
+		<PackageReference Include="Syncfusion.SampleBrowser.UWP.Common" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfAccordion.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfInput.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfShared.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfTabControl.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfBarcode.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.Licensing" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.Calculate.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.Data.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.OfficeChart.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.Presentation.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.DocIO.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfBulletGraph.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfBusyIndicator.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfCarousel.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfChart.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfRadialMenu.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfColorPickers.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfDiagram.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfGauge.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfGrid.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.XlsIO.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfHubTile.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfMaps.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfRichTextBoxAdv.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfSchedule.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfTileView.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfTreeMap.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfTreeNavigator.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfRibbon.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfPdfViewer.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfProgressBar.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfGroupBar.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfMenu.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfGridCommon.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.ExcelChartToImageConverter.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfCellGrid.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfSpreadsheet.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfSpreadsheetHelper.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.PMML.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.Olap.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.PivotAnalysis.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfPivotChart.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfPivotGauge.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfPivotGrid.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfPullToRefresh.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfHeatMap.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfRotator.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfReportViewer.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfNavigationDrawer.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfSpellChecker.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfKanban.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfPivotShared.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfPivotClient.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfDockingManager.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfSunburstChart.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfGantt.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfImageEditor.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.SfSmithChart.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.OfficeChartToImageConverter.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.Pdf.UWP" Version="32.2.3"/>
+		<PackageReference Include="Syncfusion.DataGridExcelExport.UWP" Version="32.2.3"/>
+</ItemGroup>
+	<ItemGroup>
+		<Content Include="Properties\Default.rd.xml">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Assets\LockScreenLogo.scale-200.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Assets\SplashScreen.scale-200.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Assets\Square150x150Logo.scale-200.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Assets\Square44x44Logo.scale-200.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Assets\StoreLogo.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Assets\Wide310x150Logo.scale-200.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+	<ItemGroup>
+		<ApplicationDefinition Include="App.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</ApplicationDefinition>
+	</ItemGroup>
+	<ItemGroup>
+	</ItemGroup>
+	<ItemGroup>
+	</ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Include="RTE\Assets\GettingStarted.docx">
+			<CopyToOutputDirectory>False</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="RTE\Assets\InitialQuery.docx">
+			<CopyToOutputDirectory>False</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="RTE\Assets\ReplyContent.docx">
+			<CopyToOutputDirectory>False</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="RTE\Assets\GettingStarted_Phone.docx">
+			<CopyToOutputDirectory>False</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="RTE\Assets\Templates\Fax.docx">
+			<CopyToOutputDirectory>False</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="RTE\Assets\Templates\Letter.docx">
+			<CopyToOutputDirectory>False</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="RTE\Assets\Templates\Title.docx">
+			<CopyToOutputDirectory>False</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="RTE\Assets\Templates\ToDoList.docx">
+			<CopyToOutputDirectory>False</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="RTE\Assets\Templates\TakeATour.docx">
+			<CopyToOutputDirectory>False</CopyToOutputDirectory>
+		</EmbeddedResource>
+	</ItemGroup>
+	<ItemGroup>
+		<Content Include="RTE\Assets\RibbonIcons\Review\SpellChecker.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\Showcase\DocumentEditor_Desktop.jpg">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\Showcase\DocumentEditor_Phone.jpg">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RichTextEditor.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\CustomizedEditor.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\Forum.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\DocumentEditor.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\PostedBy.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\User32.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\User48.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Backstage\Exit.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Backstage\Help.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Backstage\Info.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Backstage\New.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Backstage\Open.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Backstage\Option.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Backstage\print.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Backstage\Recent.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Backstage\SaveAs.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Home\Bold.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Home\Bullet.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Home\Center.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Home\Copy.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Home\Cut.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Home\FontColor.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Home\FontFormat.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Home\HighlightColor.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Home\Italic.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Home\Justify.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Home\Left.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Home\Numbering.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Home\LeftToRight.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Home\RightToLeft.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Home\Paste.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Home\Redo.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Home\Right.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Home\Underline.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Home\Undo.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Home\Find.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Home\Replace.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Insert\Hyperlink.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Insert\InsertPicture.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Insert\InsertTable.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Review\DeleteComment.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Review\NewComment.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Review\NextComment.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Review\PreviousComment.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Review\ShowComments.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Table\AutoFitWindow.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Table\AutoFitContents.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Table\FixedColumnWidth.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Newqat.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Options.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Reset.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Security.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Sharing.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Start.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\Versions.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\View\PrintMode.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\View\WebMode.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\View\OnePage.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\View\PageWidth.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\RibbonIcons\View\Zoom100.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\Phone_RibbonIcons\Home\Bold.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\Phone_RibbonIcons\Home\Bullet.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\Phone_RibbonIcons\Home\Center.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\Phone_RibbonIcons\Home\Find.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\Phone_RibbonIcons\Home\FontColor.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\Phone_RibbonIcons\Home\HighlightColor.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\Phone_RibbonIcons\Home\Italic.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\Phone_RibbonIcons\Home\Justify.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\Phone_RibbonIcons\Home\Left.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\Phone_RibbonIcons\Home\Numbering.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\Phone_RibbonIcons\Home\LeftToRight.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\Phone_RibbonIcons\Home\RightToLeft.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\Phone_RibbonIcons\Home\Redo.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\Phone_RibbonIcons\Home\Right.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\Phone_RibbonIcons\Home\Underline.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\Phone_RibbonIcons\Home\Undo.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\Phone_RibbonIcons\Insert\Hyperlink.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\Phone_RibbonIcons\Insert\InsertPicture.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\Phone_RibbonIcons\Insert\InsertTable.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\Templates\Blank.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\Templates\Fax.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\Templates\Letter.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\Templates\Title.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\Templates\ToDoList.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\Templates\TakeATour.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\AddComment_Icon.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\Bold_Icon.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\Bookmark_Icon.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\Brush_Icon.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\DecreaseFont_Icon.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\Edit_Icon.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\Find_Icon.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\IncreaseFont_Icon.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\InsertImage_Icon.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\Italic_Icon.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\NavigateLeft_Icon.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\NavigateRight_Icon.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\Strike_Icon.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RTE\Assets\Underline_Icon.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Include="RTE\CreateLetters\CreateLetters.xaml.cs">
+			<DependentUpon>CreateLetters.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="RTE\CreateLetters\CustomerInfo.cs"/>
+		<Compile Include="RTE\HelperMethods.cs"/>
+		<Compile Include="SamplesConfiguration.cs"/>
+		<Compile Include="RTE\Binding\Converters.cs"/>
+		<Compile Include="RTE\Controls\FontFormatGrid.xaml.cs">
+			<DependentUpon>FontFormatGrid.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="RTE\Controls\HighlightColorPicker.xaml.cs">
+			<DependentUpon>HighlightColorPicker.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="RTE\Controls\InsertTableGrid.xaml.cs">
+			<DependentUpon>InsertTableGrid.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="RTE\Controls\ListFormatGrid.xaml.cs">
+			<DependentUpon>ListFormatGrid.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="RTE\Controls\ParaFormatGrid.xaml.cs">
+			<DependentUpon>ParaFormatGrid.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="RTE\Controls\ReviewOptionsGrid.xaml.cs">
+			<DependentUpon>ReviewOptionsGrid.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="RTE\Controls\SpacingsFormatGrid.xaml.cs">
+			<DependentUpon>SpacingsFormatGrid.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="RTE\CustomizedEditor\CustomizedEditor.xaml.cs">
+			<DependentUpon>CustomizedEditor.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="RTE\DocumentEditor.xaml.cs">
+			<DependentUpon>DocumentEditor.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="RTE\Forum\Forum.xaml.cs">
+			<DependentUpon>Forum.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="RTE\Forum\ForumPostControl.xaml.cs">
+			<DependentUpon>ForumPostControl.xaml</DependentUpon>
+		</Compile>
+		<Compile Include="RTE\Forum\ForumReplyControl.xaml.cs">
+			<DependentUpon>ForumReplyControl.xaml</DependentUpon>
+		</Compile>
+	</ItemGroup>
+	<ItemGroup>
+		<Page Include="Common\StandardStyles.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="RTE\Controls\FontFormatGrid.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="RTE\Controls\HighlightColorPicker.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="RTE\Controls\InsertTableGrid.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="RTE\Controls\ListFormatGrid.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="RTE\Controls\ParaFormatGrid.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="RTE\Controls\ReviewOptionsGrid.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="RTE\Controls\SpacingsFormatGrid.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="RTE\CreateLetters\CreateLetters.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="RTE\CustomizedEditor\CustomizedEditor.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="RTE\CustomizedEditor\DeviceFamily-Mobile\CustomizedEditor.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="RTE\DocumentEditor.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="RTE\DeviceFamily-Mobile\DocumentEditor.xaml">
+			<SubType>Designer</SubType>
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Include="RTE\Forum\Forum.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="RTE\Forum\ForumPostControl.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Include="RTE\Forum\ForumReplyControl.xaml">
+			<Generator>MSBuild:Compile</Generator>
+			<SubType>Designer</SubType>
+		</Page>
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
+			<Version>6.0.6</Version>
+		</PackageReference>
+	</ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Include="SyncfusionLicense.txt"/>
+	</ItemGroup>
+</Project>
