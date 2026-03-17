@@ -1,9 +1,0 @@
-Syncfusion.SampleBrowser.UWP.Common.dll
-Syncfusion.Licensing.dll
-Syncfusion.SfData.UWP.dll
-Syncfusion.SfShared.UWP.dll
-Syncfusion.SfGrid.UWP.dll
-Syncfusion.SfTabControl.UWP.dll
-Syncfusion.SfChart.UWP.dll
-Syncfusion.SfBusyIndicator.UWP.dll
-Syncfusion.PMML.UWP.dll
