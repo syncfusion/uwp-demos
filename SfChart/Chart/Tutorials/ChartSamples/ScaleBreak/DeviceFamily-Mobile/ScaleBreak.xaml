@@ -1,0 +1,262 @@
+﻿<common:SampleLayout
+    x:Class="Syncfusion.SampleBrowser.UWP.SfChart.ScaleBreak"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Syncfusion.SampleBrowser.UWP.SfChart"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:common="using:Common"
+    xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
+    xmlns:upDown="using:Syncfusion.UI.Xaml.Controls.Input"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+
+    <common:SampleLayout.Sample>
+        <ContentControl>
+            <Grid>
+                <Grid.DataContext>
+                    <local:ScalebreakViewModel></local:ScalebreakViewModel>
+                </Grid.DataContext>
+
+                <Grid.Resources>
+                    <DataTemplate x:Key="adornmentTemplate">
+                        <Border BorderBrush="Black" BorderThickness="0.5" Background="White" CornerRadius="2">
+                            <TextBlock Margin="2" FontSize="11"
+                               Foreground="Black" Text="{Binding}"></TextBlock>
+                        </Border>
+                    </DataTemplate>
+
+                    <Style x:Key="axisLineStyle" TargetType="Line">
+                        <Setter Property="Stroke" Value="#FFD1D3D4"/>
+                        <Setter Property="StrokeThickness" Value="1"/>
+                    </Style>
+
+                    <DataTemplate x:Key="headerTemplate">
+                        <TextBlock Text="{Binding}" FontSize="14" 
+                               VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    </DataTemplate>
+
+                    <DataTemplate x:Key="labelTemplate">
+                        <Grid>
+                            <TextBlock Text="{Binding Path=LabelContent}"
+                                   Foreground="Black" FontFamily="Segoe UI" 
+                                   FontSize="12"/>
+                        </Grid>
+                    </DataTemplate>
+                </Grid.Resources>
+
+
+
+                <chart:SfChart x:Name="ScaleBreakChart"  VerticalAlignment="Center" Margin="5,5,10,5"
+                               AreaBorderThickness="0,0.5,0.5,0"
+                              >
+
+                    <chart:SfChart.Header>
+                        <TextBlock FontSize="20" FontWeight="Normal"  Margin="20,0,0,10"
+                          >Mountains By Elevation</TextBlock>
+                    </chart:SfChart.Header>
+
+                    <chart:SfChart.PrimaryAxis>
+                        <chart:CategoryAxis Header="Mountains" 
+                                        AxisLineStyle="{StaticResource axisLineStyle}"
+                                        LabelTemplate="{StaticResource labelTemplate}"
+                                        HeaderTemplate="{StaticResource headerTemplate}"
+                                        ></chart:CategoryAxis>
+                    </chart:SfChart.PrimaryAxis>
+
+                    <chart:SfChart.SecondaryAxis>
+                        <chart:NumericalAxis x:Name="axis2" Header="Elevation (in metres)" 
+                                     AxisLineStyle="{StaticResource axisLineStyle}"
+                                     LabelTemplate="{StaticResource labelTemplate}"
+                                     HeaderTemplate="{StaticResource headerTemplate}">
+
+                            <chart:NumericalAxis.AxisScaleBreaks>
+
+                                <chart:ChartAxisScaleBreak Start="{Binding ElementName=start1, Path=Text,Mode=TwoWay}"
+                                                   End="{Binding ElementName=end1, Path=Text, Mode=TwoWay}"
+                                                   LineType="{Binding ElementName=linetype1, Path=SelectedItem, Mode=TwoWay}"
+                                                   StrokeThickness="{Binding ElementName=thickness1, Path=Value, Mode=TwoWay}"
+                                                   Fill="{Binding ElementName=color_picker1, Path=Brush, Mode=TwoWay}"
+                                                   BreakSpacing="{Binding ElementName=brk_spacing, Path=Text, Mode=TwoWay}"
+                                                   BreakPercent="{Binding ElementName=brk_percent, Path=Text, Mode=TwoWay}"
+                                                   >
+                                </chart:ChartAxisScaleBreak>
+                                <chart:ChartAxisScaleBreak Start="{Binding ElementName=start2, Path=Text,Mode=TwoWay}"
+                                                   End="{Binding ElementName=end2, Path=Text, Mode=TwoWay}"
+                                                   LineType="{Binding ElementName=linetype2, Path=SelectedItem, Mode=TwoWay}"
+                                                   StrokeThickness="{Binding ElementName=thickness2, Path=Value, Mode=TwoWay}"
+                                                   Fill="{Binding ElementName=color_picker2, Path=Brush, Mode=TwoWay}"
+                                                   BreakSpacing="{Binding ElementName=brk_spacing1, Path=Text, Mode=TwoWay}"
+                                                   BreakPercent="{Binding ElementName=brk_percent1, Path=Text, Mode=TwoWay}"
+                                                   >
+                                </chart:ChartAxisScaleBreak>
+
+                            </chart:NumericalAxis.AxisScaleBreaks>
+
+
+                        </chart:NumericalAxis>
+                    </chart:SfChart.SecondaryAxis>
+
+                    <chart:ColumnSeries  ItemsSource="{Binding ScalebreakDatas}" XBindingPath="XData"                                
+                                 YBindingPath="YData" ShowTooltip="True" >
+
+                    </chart:ColumnSeries>
+
+                </chart:SfChart>
+            </Grid>
+        </ContentControl>
+    </common:SampleLayout.Sample>
+
+    <common:SampleLayout.Setting>
+
+        <ContentControl Margin="20">
+
+            <ScrollViewer Margin="10">
+
+                <Grid>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+
+                    <TextBlock Margin="3" Grid.Row="0" VerticalAlignment="Center"
+                       Text="Break Position"/>
+                    <ComboBox Margin="3"  x:Name="brk_position"  Grid.Row="0" Grid.Column="1"                           
+                        SelectionChanged="brk_position_SelectionChanged" SelectedIndex="0" Width="130">
+                        <ComboBoxItem>Data Count</ComboBoxItem>
+                        <ComboBoxItem>Scale</ComboBoxItem>
+                        <ComboBoxItem>Percent</ComboBoxItem>
+                    </ComboBox>
+
+                    <TextBlock Margin="15" Grid.Row="1" HorizontalAlignment="Center" 
+                               Grid.ColumnSpan="2" FontWeight="Bold">Break 1</TextBlock>
+
+                    <TextBlock VerticalAlignment="Center" Margin="3" Grid.Row="3" 
+                               Grid.Column="0">Start</TextBlock>
+                    <TextBox Margin="3" Width="130" Text="2000" x:Name="start1" Grid.Row="3" 
+                             Grid.Column="1"/>
+
+                    <TextBlock VerticalAlignment="Center" Margin="3" Grid.Row="4" 
+                               Grid.Column="0">End</TextBlock>
+                    <TextBox Margin="3" Width="130" Text="7000" x:Name="end1" Grid.Row="4"
+                             Grid.Column="1"/>
+
+                    <TextBlock VerticalAlignment="Center" Margin="3" Grid.Row="5" 
+                               Grid.Column="0">Line Type</TextBlock>
+                    <ComboBox x:Name="linetype1" Grid.Row="5" Grid.Column="1" Margin="3" Width="130"
+                                      SelectedIndex="0" SelectionChanged="linetype1_SelectionChanged">
+                        <ComboBoxItem>Straight Line</ComboBoxItem>
+                        <ComboBoxItem>Wave</ComboBoxItem>
+                    </ComboBox>
+
+                    <TextBlock VerticalAlignment="Center" x:Name="brk_spacingText" Margin="3" 
+                               Grid.Row="6" Grid.Column="0" Text="Break Spacing" />
+                    <TextBox Text="5" x:Name="brk_spacing"  Grid.Row="6" Margin="3"
+                             Grid.Column="1" Width="130"/>
+
+                    <TextBlock VerticalAlignment="Center" x:Name="brk_percentText" Margin="3" 
+                               Grid.Row="7" Visibility="Collapsed"
+                               Text="Break Percent" Grid.Column="0"/>
+                    <TextBox Text="50" x:Name="brk_percent" Visibility="Collapsed" Margin="3"
+                                     Grid.Row="7" Grid.Column="1" Width="130"/>
+
+                    <TextBlock VerticalAlignment="Center" Margin="3" Grid.Row="8"
+                               Grid.Column="0">Stroke Thickness</TextBlock>
+                    <Slider x:Name="thickness1" Grid.Row="8" Grid.Column="1" Margin="3"
+                                    Minimum="1" Maximum="3" Width="130"/>
+
+                    <TextBlock VerticalAlignment="Center"  Margin="3" Grid.Row="9" 
+                               Grid.Column="0">Fill</TextBlock>
+                    <ComboBox Margin="3" Grid.Row="9" Grid.Column="1" x:Name="Fill1"
+                                      SelectionChanged="Fill_SelectionChanged" SelectedIndex="0"
+                                       Width="130" >
+                        <ComboBoxItem>White</ComboBoxItem>
+                        <ComboBoxItem>Orange</ComboBoxItem>
+                        <ComboBoxItem>Red</ComboBoxItem>
+                        <ComboBoxItem>Green</ComboBoxItem>
+                    </ComboBox>
+
+                    <TextBlock Margin="15" Grid.Row="11" HorizontalAlignment="Center" 
+                               Grid.ColumnSpan="2" FontWeight="Bold">Break 2</TextBlock>
+
+                    <TextBlock VerticalAlignment="Center"   Margin="3" Grid.Row="12" 
+                               Grid.Column="0">Start</TextBlock>
+                    <TextBox Margin="3" Text="300" Width="130" x:Name="start2" Grid.Row="12"
+                             Grid.Column="1"/>
+
+                    <TextBlock VerticalAlignment="Center" Margin="3" Grid.Row="13" 
+                               Grid.Column="0">End</TextBlock>
+                    <TextBox Margin="3" Width="130" Text="1500" x:Name="end2"
+                             Grid.Row="13" Grid.Column="1"/>
+
+                    <TextBlock VerticalAlignment="Center" Margin="3" Grid.Row="14"
+                               Grid.Column="0">Line Type</TextBlock>
+                    <ComboBox Margin="3" x:Name="linetype2" Grid.Row="14" Grid.Column="1" 
+                              SelectedIndex="0" SelectionChanged="linetype2_SelectionChanged"
+                              Width="130" >
+                        <ComboBoxItem>Straight Line</ComboBoxItem>
+                        <ComboBoxItem>Wave</ComboBoxItem>
+                    </ComboBox>
+
+                    <TextBlock VerticalAlignment="Center" x:Name="brk_spacingText1" Margin="3"
+                               Grid.Row="15" Text="Break Spacing" />
+                    <TextBox Text="5" x:Name="brk_spacing1" Margin="3" Grid.Row="15" 
+                             Grid.Column="1" Width="130"/>
+
+                    <TextBlock VerticalAlignment="Center" x:Name="brk_percentText1" 
+                               Margin="3" Grid.Row="16" Visibility="Collapsed"
+                               Text="Break Percent" Grid.Column="0"/>
+                    <TextBox Text="50" x:Name="brk_percent1" Visibility="Collapsed" Margin="3"
+                                     Grid.Row="16" Grid.Column="1" Width="130"/>
+
+                    <TextBlock VerticalAlignment="Center"  Margin="3" Grid.Row="17"
+                               Grid.Column="0">Stroke Thickness</TextBlock>
+                    <Slider x:Name="thickness2" Grid.Row="17" Grid.Column="1" Margin="3"
+                                    Minimum="1" Maximum="3" Width="130"/>
+
+                    <TextBlock VerticalAlignment="Center"  Margin="3" Grid.Row="18" Grid.Column="0">Fill</TextBlock>
+                    <ComboBox Margin="3" Grid.Row="18" Grid.Column="1" x:Name="Fill"
+                                      SelectionChanged="Fill_SelectionChanged1" SelectedIndex="0"
+                                       Width="130" >
+                        <ComboBoxItem>White</ComboBoxItem>
+                        <ComboBoxItem>Orange</ComboBoxItem>
+                        <ComboBoxItem>Red</ComboBoxItem>
+                        <ComboBoxItem>Green</ComboBoxItem>
+                    </ComboBox>
+
+                </Grid>
+
+            </ScrollViewer>
+
+        </ContentControl>
+        
+    </common:SampleLayout.Setting>
+    
+    
+</common:SampleLayout>

@@ -1,0 +1,143 @@
+﻿<View:SampleLayout x:Class="Syncfusion.SampleBrowser.UWP.SfTreeGrid.Filtering"
+                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                   xmlns:View="using:Common"
+                   xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                   xmlns:local="using:Syncfusion.SampleBrowser.UWP.SfTreeGrid"
+                   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                   xmlns:syncfusion="using:Syncfusion.UI.Xaml.TreeGrid"
+                   mc:Ignorable="d">
+    <UserControl.DataContext>
+        <local:EmployeeRepository />
+    </UserControl.DataContext>
+    <View:SampleLayout.Resources>
+        <ResourceDictionary>
+            <local:SearchConditionVisibilityConverter x:Key="searchConditionVisibilityConverter" />
+            <local:CurrencyFormatConverter x:Key="currencyFormatConverter" />
+            <local:FilterLevelConverter x:Key="filterLevelConverter" />
+        </ResourceDictionary>
+    </View:SampleLayout.Resources>
+
+    <View:SampleLayout.Sample>
+        <syncfusion:SfTreeGrid Name="treeGrid"
+                               Grid.Row="2"
+                               Margin="10,5,5,5"
+                               AllowSorting="True"
+                               AutoExpandMode="RootNodesExpanded"
+                               AutoGenerateColumns="False"
+                               ChildPropertyName="Children"
+                               ColumnSizer="None"
+                               FilterLevel="{Binding Path=SelectedIndex,
+                                                     ElementName=filterLevelComboBox,
+                                                     Converter={StaticResource filterLevelConverter}}"
+                               ItemsSource="{Binding EmployeeDetails}"
+                               LiveNodeUpdateMode="AllowDataShaping">
+
+            <syncfusion:SfTreeGrid.Columns>
+                <syncfusion:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
+                <syncfusion:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
+                <syncfusion:TreeGridTextColumn HeaderText="Employee ID" MappingName="EmployeeID" />
+                <syncfusion:TreeGridTextColumn HeaderText="Contact Number" MappingName="ContactNumber" />
+                <syncfusion:TreeGridTextColumn HeaderText="City" MappingName="City" />
+                <syncfusion:TreeGridTextColumn DisplayBinding="{Binding Salary, Converter={StaticResource currencyFormatConverter}}" MappingName="Salary" />
+            </syncfusion:SfTreeGrid.Columns>
+        </syncfusion:SfTreeGrid>
+
+    </View:SampleLayout.Sample>
+    <View:SampleLayout.Setting>
+        <ContentControl>
+            <StackPanel Orientation="Vertical">
+                <TextBlock Margin="3"
+                           VerticalAlignment="Center"
+                           FontSize="15"
+                           FontWeight="Normal"
+                           Text="Filter Level:" />
+
+                <ComboBox x:Name="filterLevelComboBox"
+                          Width="150"
+                          Margin="3"
+                          VerticalAlignment="Center"
+                          SelectedIndex="0">
+                    <ComboBoxItem Content="All" Tag="Filter will be applied to all the nodes in SfTreeGrid." />
+                    <ComboBoxItem Content="Root" Tag="Filter will be applied to root nodes only in SfTreeGrid." />
+                    <ComboBoxItem Content="Extended" Tag="Filter will be applied to all the nodes.If a node matches the filter condition, its all ancestors will also be displayed, even though parent node does not match the filter condition." />
+                </ComboBox>
+                <TextBlock Grid.Row="1"
+                           FontStyle="Italic"
+                           Foreground="Gray"
+                           Text="{Binding Path=SelectedItem.Tag,
+                                          ElementName=filterLevelComboBox,
+                                          Mode=TwoWay}"
+                           TextWrapping="Wrap" />
+                <TextBlock Margin="3"
+                           VerticalAlignment="Center"
+                           FontSize="16"
+                           FontWeight="Normal"
+                           Text="Find :" />
+                <TextBox x:Name="FilterBox"
+                         Width="150"
+                         Margin="3"
+                         HorizontalAlignment="Left"
+                         Text="{Binding FilterText,
+                                        UpdateSourceTrigger=PropertyChanged,
+                                        Mode=TwoWay}" />
+
+                <TextBlock Margin="3"
+                           VerticalAlignment="Center"
+                           FontSize="16"
+                           Text="Find from:" />
+
+                <ComboBox x:Name="columnComboBox"
+                          Width="150"
+                          Margin="10"
+                          local:FilteringComboBox.Command="{Binding FilterComboChanged}"
+                          SelectedIndex="0">
+                    <ComboBoxItem>All Columns</ComboBoxItem>
+                    <ComboBoxItem>First Name</ComboBoxItem>
+                    <ComboBoxItem>Last Name</ComboBoxItem>
+                    <ComboBoxItem>Employee ID</ComboBoxItem>
+                    <ComboBoxItem>Contact Number</ComboBoxItem>
+                    <ComboBoxItem>City</ComboBoxItem>
+                    <ComboBoxItem>Salary</ComboBoxItem>
+                </ComboBox>
+
+                <TextBlock Margin="3"
+                           VerticalAlignment="Center"
+                           FontSize="16"
+                           FontWeight="Normal"
+                           Text="Find by Condition :"
+                           Visibility="{Binding SelectedIndex,
+                                                ElementName=columnComboBox,
+                                                ConverterParameter=SearchCondition,
+                                                Converter={StaticResource searchConditionVisibilityConverter}}" />
+                <ComboBox x:Name="stringCombo"
+                          Width="150"
+                          Margin="10"
+                          local:FilteringComboBox.Command="{Binding ComboChanged}"
+                          SelectedIndex="0"
+                          Visibility="{Binding SelectedIndex,
+                                               ElementName=columnComboBox,
+                                               ConverterParameter=StringComboBox,
+                                               Converter={StaticResource searchConditionVisibilityConverter}}">
+                    <ComboBoxItem>Contains</ComboBoxItem>
+                    <ComboBoxItem>StartsWith</ComboBoxItem>
+                    <ComboBoxItem>EndsWith</ComboBoxItem>
+                </ComboBox>
+                <ComboBox x:Name="numericCombo"
+                          Width="150"
+                          Margin="10"
+                          local:FilteringComboBox.Command="{Binding ComboChanged}"
+                          SelectedIndex="0"
+                          Visibility="{Binding SelectedIndex,
+                                               ElementName=columnComboBox,
+                                               ConverterParameter=NumericComboBox,
+                                               Converter={StaticResource searchConditionVisibilityConverter}}">
+                    <ComboBoxItem>Equals</ComboBoxItem>
+                    <ComboBoxItem>Greater Than</ComboBoxItem>
+                    <ComboBoxItem>Less Than</ComboBoxItem>
+                    <ComboBoxItem>Not Equals</ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+        </ContentControl>
+    </View:SampleLayout.Setting>
+</View:SampleLayout>

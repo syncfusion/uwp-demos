@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Products>
+
+  <TileGroup Header="All Controls">
+
+    <Tile Header="PDF viewer" CategoryName="PDF viewer" Type="PdfViewer.MainPage" Assembly="SampleBrowser"
+       EnablePreview="false"  EnableUpdated="false"
+       Tags="data, visualization"
+       Description="Essential PDF viewer for UWP is a highly customizable control that is used to view, magnify and print the PDF documents in the UWP application."
+       Image="Assets/pdfviewer.png"/>
+    
+  </TileGroup>
+</Products>

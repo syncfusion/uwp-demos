@@ -1,0 +1,43 @@
+﻿<View:SampleLayout
+    x:Class="EssentialPresentation.CreateAnimationPresentation"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:EssentialPresentation" xmlns:View="using:Common"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <View:SampleLayout.Sample>
+        <ContentControl>
+            <Grid x:Name="CreateAnimation" Background="{StaticResource ApplicationPageBackgroundThemeBrush}" Padding="10,0,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock x:Name="emptyTextBlock1" Grid.Row="0" Grid.ColumnSpan="4" FontFamily="Segoe UI" FontSize="18"/>
+                <TextBlock x:Name="description" Grid.Row="1" Grid.ColumnSpan="4" TextWrapping="Wrap" Text="This sample demonstrates how to create a simple PowerPoint Presentation with animation effect." FontFamily="Segoe UI" FontSize="20" Foreground="#333333"/>
+                <TextBlock x:Name="emptyTextBlock2" Grid.Row="2" Grid.ColumnSpan="4" FontFamily="Segoe UI" FontSize="18"/>
+                <TextBlock x:Name="btn_Description" Grid.Row="3" Grid.ColumnSpan="4" TextWrapping="Wrap" Text="Please click the Generate button to save and view the generated PowerPoint Presentation with animation effect." FontFamily="Segoe UI" FontSize="16" Foreground="#333333"/>
+                <TextBlock x:Name="emptyTextBlock3" Grid.Row="4" Grid.ColumnSpan="4" FontFamily="Segoe UI" FontSize="16"/>
+                <TextBlock x:Name="emptyTextBlock4" Grid.Row="6" Grid.ColumnSpan="4" FontFamily="Segoe UI" FontSize="14"/>
+                <Button x:Name="Generate" Grid.Row="10" Grid.ColumnSpan="4" Content="Generate" Click="Button_Click_1" FontFamily="Segoe UI" FontSize="16" Foreground="#FFFFFF" Background="#656868" Padding="30,10,30,10"/>
+                <TextBlock x:Name="emptyTextBlock5" Grid.Row="11" Grid.ColumnSpan="4" FontFamily="Segoe UI" FontSize="16"/>
+            </Grid>
+        </ContentControl>
+    </View:SampleLayout.Sample>
+</View:SampleLayout>

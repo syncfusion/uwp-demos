@@ -1,0 +1,432 @@
+﻿<Page
+    x:Class="RTEDemo.DocumentEditor"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RTEDemo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:richTextBoxAdv="using:Syncfusion.UI.Xaml.RichTextBoxAdv"
+    xmlns:ribbon="using:Syncfusion.UI.Xaml.Controls.SfRibbon" 
+    xmlns:media="using:Syncfusion.UI.Xaml.Controls.Media">
+    <Page.Resources>
+        <Style x:Key="RTEBackButtonStyle" TargetType="ButtonBase">
+            <Setter Property="AutomationProperties.AutomationId" Value="BackButton"/>
+            <Setter Property="AutomationProperties.Name" Value="Back"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ButtonBase">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="0.3*"/>
+                                <RowDefinition Height="2*"/>
+                                <RowDefinition Height="0.3*"/>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="1" Name="backgroundGrid" Width="46" Height="46" Visibility="Visible">
+                                <Ellipse Name="Fill" Height="31.512" Opacity="1" Width="31.512" Fill="#19488A" Visibility="Visible" StrokeThickness="0" Stroke="#0071BC"/>
+                                <Path x:Name="pathFill" Height="31.512" Stretch="Fill" Width="31.512" Fill="#FFFFFF" Data="M14.264001,8.1849891 L15.820001,9.7409892 10.847007,14.714013 23.593,14.714013 23.593,16.913995 10.847007,16.913995 15.820001,21.886988 14.264001,23.442988 6.6349991,15.813989 z M15.756003,2.2010002 C8.2810016,2.2010002 2.2000003,8.2820013 2.2000003,15.756003 2.2000003,23.231005 8.2810016,29.312006 15.756003,29.312006 23.231004,29.312006 29.312006,23.231005 29.312006,15.756003 29.312006,8.2820013 23.231004,2.2010002 15.756003,2.2010002 z M15.756003,0 C24.444005,0 31.512006,7.068001 31.512006,15.756003 31.512006,24.444004 24.444005,31.512007 15.756003,31.512007 7.0680013,31.512007 0,24.444004 0,15.756003 0,7.068001 7.0680013,0 15.756003,0 z"/>
+                            </Grid>
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal" />
+                                    <VisualState x:Name="PointerOver">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Fill" Storyboard.TargetProperty="Fill">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource BackButtonPointerOverBackgroundThemeBrush}" />
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Pressed">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Fill" Storyboard.TargetProperty="Fill">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="#FFFFFF" />
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="pathFill" Storyboard.TargetProperty="Fill">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="#0071BC" />
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                                <VisualStateGroup x:Name="FocusStates">
+                                    <VisualState x:Name="Focused"/>
+                                    <VisualState x:Name="Unfocused"/>
+                                    <VisualState x:Name="PointerFocused"/>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+    <Grid x:Name="root" Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Grid x:Name="mainGrid">
+            <Grid.Resources>
+                <DataTemplate x:Key="myTaskTemplate">
+                    <Grid Margin="0,5,5,5">
+                        <Rectangle Fill="Transparent" Stroke="Red" />
+                        <StackPanel Width="190" Height="100" Margin="1,1,1,1" HorizontalAlignment="Left" Background="White" Orientation="Horizontal">
+                            <Grid Height="120" Background="White">
+                                <Image Grid.Row="0" Margin="-5 0 0 0" Width="190" Height="100" Stretch="Fill" HorizontalAlignment="Stretch" VerticalAlignment="Top" Source="{Binding Image}" />
+                                <TextBlock Margin="4,0,0,0" FontSize="16" Foreground="Red" Text="{Binding SNo}" />
+                                <TextBlock Margin="30 20 0 0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="10" Foreground="{Binding Foreground}" Text="{Binding ItemText}" TextAlignment="Center" />
+                            </Grid>
+                        </StackPanel>
+                    </Grid>
+                </DataTemplate>
+                <richTextBoxAdv:UnderlineToggleConverter x:Key="UnderlineToggleConverter" />
+                <richTextBoxAdv:LeftAlignmentToggleConverter x:Key="LeftAlignmentToggleConverter" />
+                <richTextBoxAdv:RightAlignmentToggleConverter x:Key="RightAlignmentToggleConverter" />
+                <richTextBoxAdv:CenterAlignmentToggleConverter x:Key="CenterAlignmentToggleConverter" />
+                <richTextBoxAdv:JustifyAlignmentToggleConverter x:Key="JustifyAlignmentToggleConverter" />
+                <richTextBoxAdv:FontFamilyStringConverter x:Key="FontFamilyStringConverter"/>
+                <local:DoubleStringConverter x:Key="DoubleStringConverter" />
+                <local:InverseBooleanConverter x:Key="InverseBooleanConverter" />
+                <x:Boolean x:Key="True">True</x:Boolean>
+                <x:Boolean x:Key="False">False</x:Boolean>
+            </Grid.Resources>
+            <ribbon:SfRibbonPage x:Name="ribbonPage">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <ribbon:SfRibbon Height="20" Background="White" x:Name="ribbon" BackStageHeader="FILE"
+                       TitleAlignment="Center" QATVisibility="Visible" TabPanelVisibility="Visible" Title="{Binding ElementName=richTextBox, Path=DocumentTitle, Mode=TwoWay}">
+                        <ribbon:SfRibbon.BackStage>
+                            <ribbon:SfBackstage>
+                                <ribbon:SfBackStageButton x:Name="openBackStageButton" Label="Open" Click="WordImport_Click" Icon="ms-appx:///RTE/Assets/RibbonIcons/Backstage/Open.png" />
+                                <ribbon:SfBackStageButton x:Name="saveAsBackStageButton" Label="Save As" Click="WordExport_Click" Icon="ms-appx:///RTE/Assets/RibbonIcons/Backstage/SaveAs.png"/>
+                                <ribbon:SfBackStageButton x:Name="printBackStageButton" Label="Print" Click="PrintDocument_OnClick" Command="{Binding ElementName=richTextBox, Path=PrintDocumentCommand, Mode=TwoWay}" Icon="ms-appx:///RTE/Assets/RibbonIcons/Backstage/print.png"/>
+                                <ribbon:SfBackStageButton x:Name="helpBackaStageButton" Label="Help" Click="HelpButton_Clicked" Icon="ms-appx:///RTE/Assets/RibbonIcons/Backstage/Help.png"/>
+                            </ribbon:SfBackstage>
+                        </ribbon:SfRibbon.BackStage>
+                        <ribbon:SfRibbon.QuickAccessToolBar>
+                            <ribbon:QuickAccessToolBar DisplayItemsCount="3">
+                                <ribbon:SfRibbonButton ribbon:RibbonCommandManager.SynchronizedItem="New" Height="50" FontIcon="N" FontIconFontFamily="ms-appx:///RTE/Assets/RibbonIcons/RibbonQATIcons.ttf#RibbonQATIcons" BorderBrush="Transparent" Command="{Binding ElementName=richTextBox, Path=NewDocumentCommand,Mode=TwoWay}" Click="NewDocumentButton_Click">
+                                    <ribbon:SfRibbonButton.ToolTip>
+                                        <StackPanel Orientation="Vertical" Margin="0 0 10 0">
+                                            <TextBlock Text="New Document" FontSize="15" Margin="0 5 0 5"/>
+                                            <TextBlock Margin="0 5 0 15" Text="Add new Document to the presentation."/>
+                                        </StackPanel>
+                                    </ribbon:SfRibbonButton.ToolTip>
+                                </ribbon:SfRibbonButton>
+                                <ribbon:SfRibbonButton ribbon:RibbonCommandManager.SynchronizedItem="Undo" Height="50" FontIcon="Z" FontIconFontFamily="ms-appx:///RTE/Assets/RibbonIcons/RibbonQATIcons.ttf#RibbonQATIcons" BorderBrush="Transparent" Command="{Binding ElementName=richTextBox, Path=UndoCommand, Mode=TwoWay}">
+                                    <ribbon:SfRibbonButton.ToolTip>
+                                        <StackPanel Orientation="Vertical" Margin="0 0 10 0">
+                                            <TextBlock Text="Undo (Ctrl+Z)" FontSize="15" Margin="0 5 0 5"/>
+                                            <TextBlock Margin="0 5 0 15" Text="Undo typed text."/>
+                                        </StackPanel>
+                                    </ribbon:SfRibbonButton.ToolTip>
+                                </ribbon:SfRibbonButton>
+                                <ribbon:SfRibbonButton ribbon:RibbonCommandManager.SynchronizedItem="Redo" Height="50" FontIcon="Y" FontIconFontFamily="ms-appx:///RTE/Assets/RibbonIcons/RibbonQATIcons.ttf#RibbonQATIcons" BorderBrush="Transparent" Command="{Binding ElementName=richTextBox,Path=RedoCommand,Mode=TwoWay}">
+                                    <ribbon:SfRibbonButton.ToolTip>
+                                        <StackPanel Orientation="Vertical" Margin="0 0 10 0">
+                                            <TextBlock Text="Redo (Ctrl+Y)" FontSize="15" Margin="0 5 0 5"/>
+                                            <TextBlock Margin="0 5 0 15" Text="Redo typed text."/>
+                                        </StackPanel>
+                                    </ribbon:SfRibbonButton.ToolTip>
+                                </ribbon:SfRibbonButton>
+                            </ribbon:QuickAccessToolBar>
+                        </ribbon:SfRibbon.QuickAccessToolBar>
+                        <ribbon:SfRibbonTab Caption="HOME" Background="White" FontSize="15">
+                            <ribbon:SfRibbonBar Header="Clipboard" SeparatorBrush="DarkGray" Background="Transparent">
+                                <ribbon:SfRibbonButton x:Name="cutCommand" SizeMode="Small" Label="Cut" Icon="ms-appx:///RTE/Assets/RibbonIcons/Home/Cut.png" Command="{Binding ElementName=richTextBox, Path=CutCommand,Mode=TwoWay}">
+                                    <ribbon:SfRibbonButton.ToolTip>
+                                        <StackPanel Orientation="Vertical" Margin="0 0 10 0">
+                                            <TextBlock Text="Cut (Ctrl+X)" FontSize="15" Margin="0 5 0 5"/>
+                                            <TextBlock Margin="0 5 0 0" Text="Remove the selection and put it on"/>
+                                            <TextBlock Margin="0 5 0 0" Text="the Clipboard so you can paste it"/>
+                                            <TextBlock Margin="0 5 0 15" Text="somewhere else"/>
+                                        </StackPanel>
+                                    </ribbon:SfRibbonButton.ToolTip>
+                                </ribbon:SfRibbonButton>
+                                <ribbon:SfRibbonButton Icon="ms-appx:///RTE/Assets/RibbonIcons/Home/Copy.png" Label="Copy" SizeMode="Small" Command="{Binding ElementName=richTextBox,Path=CopyCommand,Mode=TwoWay}">
+                                    <ribbon:SfRibbonButton.ToolTip>
+                                        <StackPanel Orientation="Vertical" Margin="0 0 10 0">
+                                            <TextBlock Text="Copy (Ctrl+C)" FontSize="15" Margin="0 5 0 5"/>
+                                            <TextBlock Margin="0 5 0 0" Text="Put a copy of the selection on the"/>
+                                            <TextBlock Margin="0 5 0 0" Text="Clipboard so you can paste it"/>
+                                            <TextBlock Margin="0 5 0 15" Text="somewhere else"/>
+                                        </StackPanel>
+                                    </ribbon:SfRibbonButton.ToolTip>
+                                </ribbon:SfRibbonButton>
+                                <ribbon:SfRibbonButton SizeMode="Small" Icon="ms-appx:///RTE/Assets/RibbonIcons/Home/Paste.png" Label="Paste" Command="{Binding ElementName=richTextBox,Path=PasteCommand,Mode=TwoWay}">
+                                    <ribbon:SfRibbonButton.ToolTip>
+                                        <StackPanel Orientation="Vertical" Margin="0 0 10 0">
+                                            <TextBlock Text="Paste (Ctrl+V)" FontSize="15" Margin="0 5 0 5"/>
+                                            <TextBlock Margin="0 5 0 0" Text="Add content on the Clipboard"/>
+                                            <TextBlock Margin="0 5 0 15" Text="to your document."/>
+                                        </StackPanel>
+                                    </ribbon:SfRibbonButton.ToolTip>
+                                </ribbon:SfRibbonButton>
+                            </ribbon:SfRibbonBar>
+                            <ribbon:SfRibbonBar Header="Font" SeparatorBrush="DarkGray" Background="Transparent">
+                                <Grid>
+                                    <TextBox IsTabStop="False" IsReadOnly="True" Canvas.ZIndex="4" FontSize="12" Padding="8 4 2 4" Text="{Binding ElementName=richTextBox, Path=Selection.CharacterFormat.FontFamily, Mode=OneWay, Converter={StaticResource FontFamilyStringConverter}}" Height="25" MinHeight="25" Width="140" MinWidth="30" Background="Transparent" Margin="0 0 20 0" BorderBrush="Transparent" BorderThickness="0" />
+                                    <ribbon:SfRibbonComboBox IsTabStop="False" x:Name="FontFamilyCombo" Height="27" Width="160" Background="Transparent" Foreground="Transparent" Margin="24 0" ItemsSource="{Binding ElementName=richTextBox,Path=FontNames}" SelectedValue="{Binding ElementName=richTextBox ,Path=Selection.CharacterFormat.FontFamily,Mode=TwoWay,Converter={StaticResource FontFamilyStringConverter}}">
+                                        <ribbon:SfRibbonComboBox.ToolTip>
+                                            <StackPanel Orientation="Vertical" Margin="0 0 10 0">
+                                                <TextBlock Text="Font" FontSize="15" Margin="0 5 0 5"/>
+                                                <TextBlock Margin="0 5 0 15" Text="Pick a new font for your text."/>
+                                            </StackPanel>
+                                        </ribbon:SfRibbonComboBox.ToolTip>
+                                    </ribbon:SfRibbonComboBox>
+                                </Grid>
+                                <Grid>
+                                    <TextBox IsTabStop="False" Canvas.ZIndex="4" IsReadOnly="True" FontSize="12" Padding="8 4 2 4" Text="{Binding ElementName=richTextBox, Path=Selection.CharacterFormat.FontSize, Mode=OneWay, Converter={StaticResource DoubleStringConverter}}" Height="25" MinHeight="25" Width="40" MinWidth="40" Background="Transparent" Margin="0 0 29 0" BorderBrush="Transparent" BorderThickness="0" />
+                                    <ribbon:SfRibbonComboBox IsTabStop="False" Height="27" Width="63" Background="Transparent" Foreground="Transparent" x:Name="FontSizeCombo" Margin="6 0 12 0" SelectedValue="{Binding ElementName=richTextBox, Path=Selection.CharacterFormat.FontSize, Mode=TwoWay}">
+                                        <ribbon:SfRibbonComboBox.ToolTip>
+                                            <StackPanel Orientation="Vertical" Margin="0 0 10 0">
+                                                <TextBlock Text="Font Size" FontSize="15" Margin="0 5 0 5"/>
+                                                <TextBlock Margin="0 5 0 15" Text="Change the size of your text."/>
+                                            </StackPanel>
+                                        </ribbon:SfRibbonComboBox.ToolTip>
+                                        <x:Double>8</x:Double>
+                                        <x:Double>12</x:Double>
+                                        <x:Double>14</x:Double>
+                                        <x:Double>16</x:Double>
+                                        <x:Double>18</x:Double>
+                                        <x:Double>20</x:Double>
+                                        <x:Double>22</x:Double>
+                                        <x:Double>24</x:Double>
+                                        <x:Double>26</x:Double>
+                                        <x:Double>28</x:Double>
+                                        <x:Double>30</x:Double>
+                                        <x:Double>34</x:Double>
+                                        <x:Double>38</x:Double>
+                                        <x:Double>42</x:Double>
+                                        <x:Double>46</x:Double>
+                                        <x:Double>50</x:Double>
+                                        <x:Double>54</x:Double>
+                                        <x:Double>58</x:Double>
+                                        <x:Double>60</x:Double>
+                                    </ribbon:SfRibbonComboBox>
+                                </Grid>
+                                <ribbon:SfRibbonToggleButton x:Name="boldButton" IsTabStop="False" Margin="0 0" SizeMode="Small" Icon="ms-appx:///RTE/Assets/RibbonIcons/Home/Bold.png" IsChecked="{Binding ElementName=richTextBox,Path=Selection.CharacterFormat.Bold,Mode=TwoWay}" />
+                                <ribbon:SfRibbonToggleButton x:Name="italicButton" IsTabStop="False" Margin="0 0" SizeMode="Small" Icon="ms-appx:///RTE/Assets/RibbonIcons/Home/Italic.png" IsChecked="{Binding ElementName=richTextBox,Path=Selection.CharacterFormat.Italic,Mode=TwoWay}" />
+                                <ribbon:SfRibbonToggleButton x:Name="underlineButton" IsTabStop="False" Margin="0 0" SizeMode="Small" Icon="ms-appx:///RTE/Assets/RibbonIcons/Home/Underline.png" IsChecked="{Binding ElementName=richTextBox,Path=Selection.CharacterFormat.Underline,Mode=TwoWay,Converter={StaticResource UnderlineToggleConverter}}" />
+                                <ribbon:SfDropDownButton IsTabStop="False" Margin="0 0" x:Name="fontColorDropDownButton" Icon="ms-appx:///RTE/Assets/RibbonIcons/Home/FontColor.png">
+                                    <ribbon:SfDropDownButton.ToolTip>
+                                        <StackPanel Orientation="Vertical" Margin="0 0 10 0">
+                                            <TextBlock Text="Font Color" FontSize="15" Margin="0 5 0 5"/>
+                                            <TextBlock Margin="0 5 0 15" Text="Applies font color to selected content."/>
+                                        </StackPanel>
+                                    </ribbon:SfDropDownButton.ToolTip>
+                                    <media:SfColorPicker x:Name="fontColorPicker" SelectedColor="{Binding ElementName=richTextBox, Path=Selection.CharacterFormat.FontColor, Mode=TwoWay}" Background="#FFFFFF" Foreground="#000000"/>
+                                </ribbon:SfDropDownButton>
+                                <ribbon:SfDropDownButton IsTabStop="False" x:Name="highlightColorDropDownButton" Margin="0 0 6 0" Icon="ms-appx:///RTE/Assets/RibbonIcons/Home/HighlightColor.png">
+                                    <ribbon:SfDropDownButton.ToolTip>
+                                        <StackPanel Orientation="Vertical" Margin="0 0 10 0">
+                                            <TextBlock Text="Highlight Color" FontSize="15" Margin="0 5 0 5"/>
+                                            <TextBlock Margin="0 5 0 15" Text="Applies highlight color to selected content."/>
+                                        </StackPanel>
+                                    </ribbon:SfDropDownButton.ToolTip>
+                                    <local:HighlightColorPicker x:Name="highlightcolorpicker" IsTabStop="False" HorizontalAlignment="Center"/>
+                                </ribbon:SfDropDownButton>
+                            </ribbon:SfRibbonBar>
+                            <ribbon:SfRibbonBar Header="Paragraph" SeparatorBrush="DarkGray" Background="Transparent">
+                                <ribbon:SfRibbonToggleButton x:Name="leftAlignButton" IsTabStop="False" Margin="6 0" SizeMode="Small" Icon="ms-appx:///RTE/Assets/RibbonIcons/Home/Left.png" IsChecked="{Binding ElementName=richTextBox,Path=Selection.ParagraphFormat.TextAlignment,Mode=TwoWay,Converter={StaticResource LeftAlignmentToggleConverter}}" />
+                                <ribbon:SfRibbonToggleButton x:Name="centerAlignButton" IsTabStop="False" Margin="0 0" SizeMode="Small" Icon="ms-appx:///RTE/Assets/RibbonIcons/Home/Center.png" IsChecked="{Binding ElementName=richTextBox,Path=Selection.ParagraphFormat.TextAlignment,Mode=TwoWay,Converter={StaticResource CenterAlignmentToggleConverter}}" />
+                                <ribbon:SfRibbonToggleButton x:Name="rightAlignButton" IsTabStop="False" Margin="0 0" SizeMode="Small" Icon="ms-appx:///RTE/Assets/RibbonIcons/Home/Right.png" IsChecked="{Binding ElementName=richTextBox,Path=Selection.ParagraphFormat.TextAlignment,Mode=TwoWay,Converter={StaticResource RightAlignmentToggleConverter}}" />
+                                <ribbon:SfRibbonToggleButton x:Name="justifyAlignButton" IsTabStop="False" Margin="0 0" SizeMode="Small" Icon="ms-appx:///RTE/Assets/RibbonIcons/Home/Justify.png" IsChecked="{Binding ElementName=richTextBox,Path=Selection.ParagraphFormat.TextAlignment,Mode=TwoWay,Converter={StaticResource JustifyAlignmentToggleConverter}}" />
+                                <ribbon:SfRibbonButton Margin="0 0" Label="Pencil" SizeMode="Small" Icon="ms-appx:///RTE/Assets/RibbonIcons/Home/Bullet.png" Click="BulletButton_Click" >
+                                    <ribbon:SfRibbonButton.ToolTip>
+                                        <StackPanel Orientation="Vertical" Margin="0 0 10 0">
+                                            <TextBlock Text="Applies Bulleted List" FontSize="15" Margin="0 5 0 5"/>
+                                            <TextBlock Margin="0 5 0 0" Text="Create a bulleted list."/>
+                                        </StackPanel>
+                                    </ribbon:SfRibbonButton.ToolTip>
+                                </ribbon:SfRibbonButton>
+                                <ribbon:SfRibbonButton Margin="0 0" Label="Pencil"  SizeMode="Small" Icon="ms-appx:///RTE/Assets/RibbonIcons/Home/Numbering.png" Click="NumberingButton_Click">
+                                    <ribbon:SfRibbonButton.ToolTip>
+                                        <StackPanel Orientation="Vertical" Margin="0 0 10 0">
+                                            <TextBlock Text="Applies Numbered List" FontSize="15" Margin="0 5 0 5"/>
+                                            <TextBlock Margin="0 5 0 0" Text="Create a numbered list."/>
+                                        </StackPanel>
+                                    </ribbon:SfRibbonButton.ToolTip>
+                                </ribbon:SfRibbonButton>
+                                <ribbon:SfRibbonToggleButton x:Name="leftToRight" Margin="0 0" IsTabStop="False" SizeMode="Small" Icon="ms-appx:///RTE/Assets/RibbonIcons/Home/LeftToRight.png" IsChecked="{Binding ElementName=richTextBox,Path=Selection.ParagraphFormat.Bidi,Mode=TwoWay,Converter={StaticResource InverseBooleanConverter},ConverterParameter={StaticResource False}}" >
+                                    <ribbon:SfRibbonToggleButton.ToolTip>
+                                        <StackPanel Orientation="Vertical" Margin="0 0 10 0">
+                                            <TextBlock Text="Left-to-Right Text Direction" FontSize="15" Margin="0 5 0 5"/>
+                                            <TextBlock Margin="0 5 0 0" Text="Set the text to read from left to right."/>
+                                        </StackPanel>
+                                    </ribbon:SfRibbonToggleButton.ToolTip>
+                                </ribbon:SfRibbonToggleButton>
+                                <ribbon:SfRibbonToggleButton x:Name="rightToLeft" IsTabStop="False" Margin="0 0 6 0"  SizeMode="Small" Icon="ms-appx:///RTE/Assets/RibbonIcons/Home/RightToLeft.png" IsChecked="{Binding ElementName=richTextBox,Path=Selection.ParagraphFormat.Bidi,Mode=TwoWay,Converter={StaticResource InverseBooleanConverter},ConverterParameter={StaticResource True}}" >
+                                    <ribbon:SfRibbonToggleButton.ToolTip>
+                                        <StackPanel Orientation="Vertical" Margin="0 0 10 0">
+                                            <TextBlock Text="Right-to-Left Text Direction" FontSize="15" Margin="0 5 0 5"/>
+                                            <TextBlock Margin="0 5 0 0" Text="Set the text to read from right to left."/>
+                                        </StackPanel>
+                                    </ribbon:SfRibbonToggleButton.ToolTip>
+                                </ribbon:SfRibbonToggleButton>
+                            </ribbon:SfRibbonBar>
+                            <ribbon:SfRibbonBar Header="Editing" SeparatorBrush="Transparent" Background="Transparent">
+                                <ribbon:SfRibbonButton Label="Find" ToolTipService.Placement="Left" Margin="6 0 0 0" SizeMode="Small" Icon="ms-appx:///RTE/Assets/RibbonIcons/Home/Find.png" Command="{Binding ElementName=richTextBox, Path=ShowOptionsPaneCommand, Mode=TwoWay}" >
+                                    <ribbon:SfRibbonButton.ToolTip>
+                                        <StackPanel Orientation="Vertical" Margin="0 0 10 0">
+                                            <TextBlock Text="Find (Ctrl+F)" FontSize="15" Margin="0 5 0 5"/>
+                                            <TextBlock Margin="0 5 0 15" Text="Find text or other content in the document."/>
+                                        </StackPanel>
+                                    </ribbon:SfRibbonButton.ToolTip>
+                                </ribbon:SfRibbonButton>
+                                <ribbon:SfRibbonButton Label="Replace" ToolTipService.Placement="Left" Margin="0 0" SizeMode="Small" Icon="ms-appx:///RTE/Assets/RibbonIcons/Home/Replace.png" Command="{Binding ElementName=richTextBox, Path=ShowOptionsPaneCommand, Mode=TwoWay}" CommandParameter="Replace">
+                                    <ribbon:SfRibbonButton.ToolTip>
+                                        <StackPanel Orientation="Vertical" Margin="0 0 10 0">
+                                            <TextBlock Text="Replace (Ctrl+H)" FontSize="15" Margin="0 5 0 5"/>
+                                            <TextBlock Margin="0 5 0 15" Text="Search for text you'd like to change, and replace it with something else."/>
+                                        </StackPanel>
+                                    </ribbon:SfRibbonButton.ToolTip>
+                                </ribbon:SfRibbonButton>
+                            </ribbon:SfRibbonBar>
+                        </ribbon:SfRibbonTab>
+                        <ribbon:SfRibbonTab Caption="INSERT" SelectedForeground="#FF19488A" Background="White" FontSize="15">
+                          <ribbon:SfRibbonBar Header="Pages" SeparatorBrush="Transparent"  Background="Transparent">
+                                <ribbon:SfRibbonButton x:Name="insertBreakbutton" Label="Page Break" SizeMode="Large" Icon="ms-appx:///RTE/Assets/RibbonIcons/Insert/PageBreak.png" Command="{Binding ElementName=richTextBox, Path=InsertBreakCommand, Mode=TwoWay}" CommandParameter="PageBreak">
+                                    <ribbon:SfRibbonButton.ToolTip>
+                                        <StackPanel Orientation="Vertical" Margin="0 0 10 0">
+                                            <TextBlock Text="Insert a Page Break (Ctrl+Return)" FontSize="15" Margin="0 5 0 5"/>
+                                            <TextBlock Margin="0 5 0 0" Text="End the current page here and move to the next page."/>
+                                        </StackPanel>
+                                    </ribbon:SfRibbonButton.ToolTip>
+                                </ribbon:SfRibbonButton>
+                            </ribbon:SfRibbonBar>
+                            <ribbon:SfRibbonBar Header="Tables" SeparatorBrush="Transparent"  Background="Transparent">
+                                <ribbon:SfDropDownButton x:Name="tabledropdown" Label="Table" SizeMode="Large" Icon="ms-appx:///RTE/Assets/RibbonIcons/Insert/InsertTable.png"  >
+                                    <ribbon:SfDropDownButton.ToolTip>
+                                        <StackPanel Orientation="Vertical" Margin="0 0 10 0">
+                                            <TextBlock Text="Add a Table" FontSize="15" Margin="0 5 0 5"/>
+                                            <TextBlock Margin="0 5 0 0" Text="A table is a great way to organize"/>
+                                            <TextBlock Margin="0 5 0 15" Text="information within your document."/>
+                                        </StackPanel>
+                                    </ribbon:SfDropDownButton.ToolTip>
+                                    <StackPanel>
+                                        <StackPanel.Resources>
+                                            <Style TargetType="TextBox">
+                                                <Setter Property="FontSize" Value="12"/>
+                                                <Setter Property="Margin" Value="10 5 0 0"/>
+                                                <Setter Property="Width" Value="200"/>
+                                                <Setter Property="Height" Value="20"/>
+                                                <Setter Property="BorderBrush" Value="DarkGray"/>
+                                            </Style>
+                                        </StackPanel.Resources>
+                                        <TextBlock Text="Insert Table" FontSize="14"  FontWeight="SemiBold" Margin="5 10 10 0"/>
+                                        <TextBlock Text="Column" Margin="10 5 0 0" FontSize="14"/>
+                                        <TextBox x:Name="columnSize" Text="" />
+                                        <TextBlock Text="Row" Margin="10 10 0 0" FontSize="14"/>
+                                        <TextBox x:Name="rowSize"  Text=""/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Button Content="Add" Margin="7" FontSize="13" BorderBrush="DarkGray" Foreground="Black" Click="TableAddButton_Click"/>
+                                            <Button Content="Cancel" Margin="7" FontSize="13" BorderBrush="DarkGray" Foreground="Black" Click="TableCancelButton_Click"/>
+                                        </StackPanel>
+                                    </StackPanel>
+                                </ribbon:SfDropDownButton>
+                            </ribbon:SfRibbonBar>
+                            <ribbon:SfRibbonBar Header="Illustrations" SeparatorBrush="Transparent"  Background="Transparent">
+                                <ribbon:SfRibbonButton x:Name="insertPicturebutton" Label="Picture" SizeMode="Large" Icon="ms-appx:///RTE/Assets/RibbonIcons/Insert/InsertPicture.png" Command="{Binding ElementName=richTextBox, Path=InsertPictureCommand, Mode=TwoWay}">
+                                    <ribbon:SfRibbonButton.ToolTip>
+                                        <StackPanel Orientation="Vertical" Margin="0 0 10 0">
+                                            <TextBlock Text="Add a Picture" FontSize="15" Margin="0 5 0 5"/>
+                                            <TextBlock Margin="0 5 0 0" Text="Insert picture from your computer."/>
+                                        </StackPanel>
+                                    </ribbon:SfRibbonButton.ToolTip>
+                                </ribbon:SfRibbonButton>
+                            </ribbon:SfRibbonBar>
+                            <ribbon:SfRibbonBar Header="Links" SeparatorBrush="Transparent"  Background="Transparent">
+                                <ribbon:SfRibbonButton x:Name="hyperlinkbutton" Label="Hyperlink" SizeMode="Large" Icon="ms-appx:///RTE/Assets/RibbonIcons/Insert/Hyperlink.png" Command="{Binding ElementName=richTextBox, Path=ShowHyperlinkDialogCommand, Mode=TwoWay}">
+                                    <ribbon:SfRibbonButton.ToolTip>
+                                        <StackPanel Orientation="Vertical" Margin="0 0 10 0">
+                                            <TextBlock Text="Add Hyperlink (Ctrl+K)" FontSize="15" Margin="0 5 0 5"/>
+                                            <TextBlock Margin="0 5 0 0" Text="Create a link in your document for"/>
+                                            <TextBlock Margin="0 5 0 15" Text="quick access to webpages and files."/>
+                                        </StackPanel>
+                                    </ribbon:SfRibbonButton.ToolTip>
+                                </ribbon:SfRibbonButton>
+                            </ribbon:SfRibbonBar>
+                        </ribbon:SfRibbonTab>
+                        <ribbon:SfRibbonTab Caption="VIEW" SelectedForeground="#FF19488A" Background="White" FontSize="15">
+                            <ribbon:SfRibbonBar Header="Views" SeparatorBrush="Transparent" Background="Transparent">
+                                <ribbon:SfRibbonButton Icon="ms-appx:///RTE/Assets/RibbonIcons/View/PrintMode.png" Label="Pages View" SizeMode="Large" Command="{Binding ElementName=richTextBox, Path=LayoutTypeCommand, Mode=TwoWay}">
+                                    <ribbon:SfRibbonButton.CommandParameter>
+                                        <richTextBoxAdv:LayoutType>Pages</richTextBoxAdv:LayoutType>
+                                    </ribbon:SfRibbonButton.CommandParameter>
+                                    <ribbon:SfRibbonButton.ToolTip>
+                                        <StackPanel Orientation="Vertical" Margin="0 0 10 0">
+                                            <TextBlock Text="Pages View" FontSize="15" Margin="0 5 0 5"/>
+                                            <TextBlock Text="Check out how your document will" Margin="0 5 0 5"/>
+                                            <TextBlock Text="look when it's printed." Margin="0 5 0 15"/>
+                                        </StackPanel>
+                                    </ribbon:SfRibbonButton.ToolTip>
+                                </ribbon:SfRibbonButton>
+                                <ribbon:SfRibbonButton SizeMode="Large" Icon="ms-appx:///RTE/Assets/RibbonIcons/View/WebMode.png" Label="Continuous" Command="{Binding ElementName=richTextBox, Path=LayoutTypeCommand, Mode=TwoWay}">
+                                    <ribbon:SfRibbonButton.CommandParameter>
+                                        <richTextBoxAdv:LayoutType>Continuous</richTextBoxAdv:LayoutType>
+                                    </ribbon:SfRibbonButton.CommandParameter>
+                                    <ribbon:SfRibbonButton.ToolTip>
+                                        <StackPanel Orientation="Vertical" Margin="0 0 10 0">
+                                            <TextBlock Text="Continuous View" FontSize="15" Margin="0 5 0 5"/>
+                                            <TextBlock Text="See how your document would look" Margin="0 5 0 5"/>
+                                            <TextBlock Text="as a webpage." Margin="0 5 0 15"/>
+                                        </StackPanel>
+                                    </ribbon:SfRibbonButton.ToolTip>
+                                </ribbon:SfRibbonButton>
+                            </ribbon:SfRibbonBar>
+                        </ribbon:SfRibbonTab>
+                        <ribbon:SfRibbonTab Caption="REVIEW" SelectedForeground="#FF19488A" Background="White" FontSize="15">
+                            <ribbon:SfRibbonBar Header="Comments" SeparatorBrush="Transparent" Background="Transparent">
+                                <ribbon:SfRibbonButton Icon="ms-appx:///RTE/Assets/RibbonIcons/Review/NewComment.png" Label="New Comment" SizeMode="Large" Command="{Binding ElementName=richTextBox, Path=NewCommentCommand, Mode=TwoWay}">
+                                    <ribbon:SfRibbonButton.ToolTip>
+                                        <StackPanel Orientation="Vertical" Margin="0 0 10 0">
+                                            <TextBlock Text="Insert a Comment" FontSize="15" Margin="0 5 0 5"/>
+                                            <TextBlock Text="Add a note about this part of the" Margin="0 5 0 5"/>
+                                            <TextBlock Text="document." Margin="0 5 0 15"/>
+                                        </StackPanel>
+                                    </ribbon:SfRibbonButton.ToolTip>
+                                </ribbon:SfRibbonButton>
+                                <ribbon:SfRibbonButton Icon="ms-appx:///RTE/Assets/RibbonIcons/Review/DeleteComment.png" Label="Delete" SizeMode="Large" Command="{Binding ElementName=richTextBox, Path=DeleteCommentCommand, Mode=TwoWay}">
+                                    <ribbon:SfRibbonButton.ToolTip>
+                                        <StackPanel Orientation="Vertical" Margin="0 0 10 0">
+                                            <TextBlock Text="Delete Comment" FontSize="15" Margin="0 5 0 5"/>
+                                            <TextBlock Text="Delete the selected comment." Margin="0 5 0 5"/>
+                                        </StackPanel>
+                                    </ribbon:SfRibbonButton.ToolTip>
+                                </ribbon:SfRibbonButton>
+                                <ribbon:SfRibbonButton Icon="ms-appx:///RTE/Assets/RibbonIcons/Review/PreviousComment.png" Label="Previous" SizeMode="Large" Command="{Binding ElementName=richTextBox, Path=PreviousCommentCommand, Mode=TwoWay}">
+                                    <ribbon:SfRibbonButton.ToolTip>
+                                        <StackPanel Orientation="Vertical" Margin="0 0 10 0">
+                                            <TextBlock Text="Previous Comment" FontSize="15" Margin="0 5 0 5"/>
+                                            <TextBlock Text="Jump to the previous comment." Margin="0 5 0 5"/>
+                                        </StackPanel>
+                                    </ribbon:SfRibbonButton.ToolTip>
+                                </ribbon:SfRibbonButton>
+                                <ribbon:SfRibbonButton Icon="ms-appx:///RTE/Assets/RibbonIcons/Review/NextComment.png" Label="Next" SizeMode="Large" Command="{Binding ElementName=richTextBox, Path=NextCommentCommand, Mode=TwoWay}">
+                                    <ribbon:SfRibbonButton.ToolTip>
+                                        <StackPanel Orientation="Vertical" Margin="0 0 10 0">
+                                            <TextBlock Text="Next Comment" FontSize="15" Margin="0 5 0 5"/>
+                                            <TextBlock Text="Jump to the next comment." Margin="0 5 0 5"/>
+                                        </StackPanel>
+                                    </ribbon:SfRibbonButton.ToolTip>
+                                </ribbon:SfRibbonButton>
+                                <ribbon:SfRibbonButton Icon="ms-appx:///RTE/Assets/RibbonIcons/Review/ShowComments.png" Label="Show Comments" SizeMode="Large" Command="{Binding ElementName=richTextBox, Path=ShowCommentsCommand, Mode=TwoWay}">
+                                    <ribbon:SfRibbonButton.ToolTip>
+                                        <StackPanel Orientation="Vertical" Margin="0 0 10 0">
+                                            <TextBlock Text="Show Comments" FontSize="15" Margin="0 5 0 5"/>
+                                            <TextBlock Text="See all the comments alongside the" Margin="0 5 0 5"/>
+                                            <TextBlock Text="document." Margin="0 5 0 15"/>
+                                        </StackPanel>
+                                    </ribbon:SfRibbonButton.ToolTip>
+                                </ribbon:SfRibbonButton>
+                            </ribbon:SfRibbonBar>
+                        </ribbon:SfRibbonTab>
+                    </ribbon:SfRibbon>
+                    <Grid Grid.Row="1">
+                        <ProgressBar x:Name="busy" Visibility="Collapsed" IsIndeterminate="True" Foreground="#0071BC" VerticalAlignment="Top" />
+                        <richTextBoxAdv:SfRichTextBoxAdv x:Name="richTextBox" ManipulationMode="All" IsZoomEnabled="True" Width="Auto" Height="Auto"  FontSize="14" FontFamily="Global User Interface" Background="#AACCCCCC" IsDoubleTapEnabled="True" EnableRadialMenu="False" AcceptsTab="True"/>
+                    </Grid>
+                </Grid>
+            </ribbon:SfRibbonPage>
+        </Grid>
+    </Grid>
+</Page>

@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="Syncfusion.SampleBrowser.UWP.PdfViewer.UWP_10786"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Syncfusion.SampleBrowser.UWP.PdfViewer"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:cc="using:Syncfusion.Windows.PdfViewer"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.Row="0">
+            <Button x:Name="loadBtn" Content="Load Pdf" Click="LoadBtn_Click"/>
+            <Button x:Name="ContinuousPageViewBtn" Content="ContinuousPageView" Click="ContinuousPageViewBtn_Click"/>
+            <Button x:Name="SinglePageViewBtn" Content="SinglePageView" Click="SinglePageViewBtn_Click"/>
+            <Button x:Name="gobBtn" Content="goto bookmark" Click="GobBtn_Click"/>
+        </StackPanel>
+
+        <cc:SfPdfViewerControl Grid.Row="1" x:Name="pdfViewer"/>
+    </Grid>
+</Page>

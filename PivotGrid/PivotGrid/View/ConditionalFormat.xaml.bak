@@ -1,0 +1,42 @@
+﻿<layout:SampleLayout x:Class="BI.PivotGrid.ConditionalFormat"
+                     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                     mc:Ignorable="d" xmlns:pivotGrid="using:Syncfusion.UI.Xaml.PivotGrid"
+                     xmlns:layout="using:Common">
+
+    <layout:SampleLayout.Sample>
+        <ContentControl>
+            <Grid>
+                <pivotGrid:SfPivotGrid x:Name="pivotGrid" Margin="5" ShowValueCellToolTip="True"
+                                       EnableConditionalFormat="{Binding ElementName=EnableConditionalFormatCheckBox,Path=IsChecked}">
+                    <pivotGrid:SfPivotGrid.ConditionalFormats>
+                        <pivotGrid:PivotGridDataConditionalFormat Name="Condition1">
+                            <pivotGrid:PivotGridDataConditionalFormat.CellStyle>
+                                <pivotGrid:PivotGridCellStyle Background="Green" Foreground="White" FontFamily="Calibri" FontSize="16" FontWeight="Normal"/>
+                            </pivotGrid:PivotGridDataConditionalFormat.CellStyle>
+                            <pivotGrid:PivotGridDataConditionalFormat.Conditions>
+                                <pivotGrid:PivotGridDataCondition ConditionType="LessThan" MeasureElement="Amount" Value = "500000" PredicateType="And"/>
+                            </pivotGrid:PivotGridDataConditionalFormat.Conditions>
+                        </pivotGrid:PivotGridDataConditionalFormat>
+                    </pivotGrid:SfPivotGrid.ConditionalFormats>
+                </pivotGrid:SfPivotGrid>
+                <Popup x:Name="ConditionalFormatEditorPopup"/>
+            </Grid>
+        </ContentControl>
+    </layout:SampleLayout.Sample>
+
+    <layout:SampleLayout.Setting>
+        <ContentControl>
+            <StackPanel Width="300">
+                <StackPanel Margin="10 7">
+                    <CheckBox x:Name="EnableConditionalFormatCheckBox" Margin="10 7" FontSize="12" Content="Enable Conditional Format" FontFamily="Segoe UI" IsChecked="True"/>
+                    <Button x:Name="ConditionalFormatEditorButton" Margin="10 7" FontSize="12" Content="Add Conditional Format" FontFamily="Segoe UI"
+                            Click="ConditionalFormatEditorButton_Click" Width="200" HorizontalAlignment="Center" HorizontalContentAlignment="Center"
+                            IsEnabled="{Binding ElementName=pivotGrid, Path=EnableConditionalFormat}"/>
+                </StackPanel>
+            </StackPanel>
+        </ContentControl>
+    </layout:SampleLayout.Setting>
+</layout:SampleLayout>

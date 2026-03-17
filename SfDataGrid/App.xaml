@@ -1,0 +1,10 @@
+﻿<Application
+    x:Class="Syncfusion.SampleBrowser.UWP.SfDataGrid.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Syncfusion.SampleBrowser.UWP.SfDataGrid"
+    xmlns:grid="using:Syncfusion.UI.Xaml.Grid"  
+     xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input"
+      xmlns:unboundrow="using:DataGrid"
+    RequestedTheme="Light">
+</Application>

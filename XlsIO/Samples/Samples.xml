@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Tiles>
+    <TileGroup Header="All Controls">
+
+   
+     <Tile Header="XlsIO" CategoryName="XlsIO" Type="EssentialXlsIO.MainPage" Assembly="SampleBrowser"
+	        
+          EnablePreview="false"
+          Image="Assets/Icons/xlsio.png"
+          Tags="excel, import, reporting, document, spreadsheet, pivot table, chart, worksheet, workbook, rtf, formula, formatting"
+          Description="Essential XlsIO is a powerful class library that enables your Windows store applications to read and write Microsoft Excel files. It exposes a very comprehensive object model that covers most of the functionality that Excel itself offers making it possible to create reports that contain even advanced elements like charts and pivot tables. All version of Excel from 97-2013 are supported."/>
+		
+     
+  </TileGroup>
+</Tiles>

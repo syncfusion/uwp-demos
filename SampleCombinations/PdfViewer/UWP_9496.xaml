@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="Syncfusion.SampleBrowser.UWP.PdfViewer.PdfViewer.UWP_9496"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Syncfusion.SampleBrowser.UWP.PdfViewer.PdfViewer"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:syncfusion="using:Syncfusion.Windows.PdfViewer"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Button Content="Add Signature" VerticalAlignment="Center" HorizontalAlignment="Center" Click="IncludeButton_Clicked"/>
+        </Grid>
+        <syncfusion:SfPdfViewerControl x:Name="pdfViewer" Grid.Row="1"/>
+        <ProgressRing x:Name="progressring"  Grid.Row="1" IsActive="false" HorizontalAlignment="Center" Height="50" Width="50" />
+        <local:SignatureView x:Name="signatureGrid" Visibility="Collapsed" Grid.Row="1"/>
+    </Grid>
+</Page>

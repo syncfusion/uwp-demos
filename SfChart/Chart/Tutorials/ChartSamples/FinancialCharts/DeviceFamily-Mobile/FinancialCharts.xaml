@@ -1,0 +1,119 @@
+﻿<common:SampleLayout
+    x:Class="Syncfusion.SampleBrowser.UWP.SfChart.FinancialCharts"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Syncfusion.SampleBrowser.UWP.SfChart"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:common="using:Common"
+    xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
+    mc:Ignorable="d">
+
+    <common:SampleLayout.Sample>
+        <ContentControl>
+            <Grid x:Name="grid" HorizontalAlignment="Left" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                <Grid.Resources>
+                    <Style x:Key="axisLineStyle" TargetType="Line">
+                        <Setter Property="Stroke" Value="#FFD1D3D4"/>
+                        <Setter Property="StrokeThickness" Value="1"/>
+                    </Style>
+
+                    <DataTemplate x:Key="headerTemplate">
+                        <TextBlock Text="{Binding}" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    </DataTemplate>
+                </Grid.Resources>
+
+                <Grid.DataContext>
+                    <local:HiLoChartViewModel/>
+                </Grid.DataContext>
+
+                <Hub>
+                    <HubSection Header="OHLC" Width="330">
+                        <DataTemplate>
+                            <chart:SfChart Margin="0,0,0,5" AreaBorderThickness="0,0.5,0.5,0" >
+
+                                <chart:SfChart.Behaviors>
+                                    <chart:ChartZoomPanBehavior/>
+                                </chart:SfChart.Behaviors>
+
+                                <chart:SfChart.PrimaryAxis>
+                                    <chart:CategoryAxis x:Name="Primary" LabelFormat="MMM dd" Header="Date"
+                                                HeaderTemplate="{StaticResource headerTemplate}" 
+                                                AxisLineStyle="{StaticResource axisLineStyle}"
+                                                MajorTickLineStyle="{StaticResource axisLineStyle}"/>
+                                </chart:SfChart.PrimaryAxis>
+
+                                <chart:SfChart.SecondaryAxis>
+                                    <chart:NumericalAxis RangePadding="Round" Header="Stock Price"
+                                                 StartRangeFromZero="False" 
+                                                 AxisLineStyle="{StaticResource axisLineStyle}"
+                                                 MajorTickLineStyle="{StaticResource axisLineStyle}"
+                                                 HeaderTemplate="{StaticResource headerTemplate}"/>
+                                </chart:SfChart.SecondaryAxis>
+
+                                <chart:HiLoOpenCloseSeries ItemsSource="{Binding StockPriceDetails}" XBindingPath="Date" High="High" 
+                                                   Low="Low" Open="Open" Close="Close"/>
+                            </chart:SfChart>
+                        </DataTemplate>
+                    </HubSection>
+
+                    <HubSection Header="Candle" Width="330">
+                        <DataTemplate>
+                            <chart:SfChart Margin="0,0,0,5" AreaBorderThickness="0,0.5,0.5,0" >
+
+                                <chart:SfChart.Behaviors>
+                                    <chart:ChartZoomPanBehavior/>
+                                </chart:SfChart.Behaviors>
+
+                                <chart:SfChart.PrimaryAxis>
+                                    <chart:CategoryAxis x:Name="Primary" LabelFormat="MMM dd" 
+                                                AxisLineStyle="{StaticResource axisLineStyle}"
+                                                MajorTickLineStyle="{StaticResource axisLineStyle}"
+                                                HeaderTemplate="{StaticResource headerTemplate}" 
+                                                Header="Date" />
+                                </chart:SfChart.PrimaryAxis>
+
+                                <chart:SfChart.SecondaryAxis>
+                                    <chart:NumericalAxis RangePadding="Round" StartRangeFromZero="False" 
+                                                 AxisLineStyle="{StaticResource axisLineStyle}"
+                                                 MajorTickLineStyle="{StaticResource axisLineStyle}"
+                                                 HeaderTemplate="{StaticResource headerTemplate}" Header="Stock Price"/>
+                                </chart:SfChart.SecondaryAxis>
+
+                                <chart:CandleSeries ItemsSource="{Binding StockPriceDetails}" 
+                                           XBindingPath="Date" High="High" Low="Low" Open="Open" Close="Close"/>
+                            </chart:SfChart>
+                        </DataTemplate>
+                    </HubSection>
+
+                    <HubSection Header="HiLo" Width="330">
+                        <DataTemplate>
+                            <chart:SfChart Margin="0,0,0,5" AreaBorderThickness="0,0.5,0.5,0" >
+
+                                <chart:SfChart.Behaviors>
+                                    <chart:ChartZoomPanBehavior/>
+                                </chart:SfChart.Behaviors>
+
+                                <chart:SfChart.PrimaryAxis>
+                                    <chart:CategoryAxis x:Name="Primary" LabelFormat="MMM dd" Header="Date"
+                                                HeaderTemplate="{StaticResource headerTemplate}" 
+                                                AxisLineStyle="{StaticResource axisLineStyle}"
+                                                MajorTickLineStyle="{StaticResource axisLineStyle}" />
+                                </chart:SfChart.PrimaryAxis>
+
+                                <chart:SfChart.SecondaryAxis>
+                                    <chart:NumericalAxis RangePadding="Round" StartRangeFromZero="False" Header="Stock Price"
+                                                 AxisLineStyle="{StaticResource axisLineStyle}"
+                                                 MajorTickLineStyle="{StaticResource axisLineStyle}"
+                                                 HeaderTemplate="{StaticResource headerTemplate}" />
+                                </chart:SfChart.SecondaryAxis>
+
+                                <chart:HiLoSeries ItemsSource="{Binding StockPriceDetails}" XBindingPath="Date" High="High" Low="Low" />
+                            </chart:SfChart>
+                        </DataTemplate>
+                    </HubSection>
+                </Hub>
+            </Grid>
+        </ContentControl>
+    </common:SampleLayout.Sample>
+</common:SampleLayout>

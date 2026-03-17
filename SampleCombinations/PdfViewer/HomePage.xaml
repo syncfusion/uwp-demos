@@ -1,0 +1,118 @@
+﻿<Page
+    x:Class="Syncfusion.SampleBrowser.UWP.PdfViewer.HomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Syncfusion.SampleBrowser.UWP.PdfViewer"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid HorizontalAlignment="Stretch" Margin="-4,0,4,0" VerticalAlignment="Stretch">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Button x:Name="GettingSarted" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Getting Started" Click="GettingStarted_Clicked"/>
+        <Button x:Name="UWP9102" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP9102" Click="UWP9102_Clicked"/>
+        <Button x:Name="UWP_10287" AutomationProperties.AutomationId="UWP_10287" Grid.Row="0" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10287" Click="UWP_10287_Click"/>
+        <Button x:Name="UWP_10320" AutomationProperties.AutomationId="UWP_10320" Grid.Row="0" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10320" Click="UWP_10320_Click"/>
+        <Button x:Name="UWP_10332" AutomationProperties.AutomationId="UWP_10332" Grid.Row="0" Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10332" Click="UWP_10332_Click"/>
+        <Button x:Name="UWP_10139" AutomationProperties.AutomationId="UWP_10139" Grid.Row="0" Grid.Column="5" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10139" Click="UWP_10139_Click"/>
+        <Button x:Name="UWP_10238" AutomationProperties.AutomationId="UWP_10238" Grid.Row="0" Grid.Column="6" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10238" Click="UWP_10238_Click"/>
+        <Button x:Name="UWP_10143" AutomationProperties.AutomationId="UWP_10143" Grid.Row="0" Grid.Column="7" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10143" Click="UWP_10143_Click"/>
+        <Button x:Name="UWP_10138" AutomationProperties.AutomationId="UWP_10138" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10138" Click="UWP_10138_Click"/>
+        <Button x:Name="UWP_10029" AutomationProperties.AutomationId="UWP_10029" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10029" Click="UWP_10029_Click"/>
+        <Button x:Name="UWP_9929" AutomationProperties.AutomationId="UWP_9929" Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_9929" Click="UWP_9929_Click"/>
+        <Button x:Name="UWP_10032" AutomationProperties.AutomationId="UWP_10032" Grid.Row="1" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10032" Click="UWP_10032_Click"/>
+        <Button x:Name="UWP_10026" AutomationProperties.AutomationId="UWP_10026" Grid.Row="1" Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10026" Click="UWP_10026_Click"/>
+        <Button x:Name="UWP_10023" AutomationProperties.AutomationId="UWP_10023" Grid.Row="1" Grid.Column="5" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10023" Click="UWP_10023_Click"/>
+        <Button x:Name="UWP_10014" AutomationProperties.AutomationId="UWP_10014" Grid.Row="1" Grid.Column="6" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10014" Click="UWP_10014_Click"/>
+        <Button x:Name="UWP_9496" AutomationProperties.AutomationId="UWP_9496" Grid.Row="1" Grid.Column="7" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_9496" Click="UWP_9496_Click"/>
+        <Button x:Name="UWP_9928" AutomationProperties.AutomationId="UWP_9928" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_9928" Click="UWP_9928_Click"/>
+        <Button x:Name="UWP_9740" AutomationProperties.AutomationId="UWP_9740" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_9740" Click="UWP_9740_Click"/>
+        <Button x:Name="UWP_9701" AutomationProperties.AutomationId="UWP_9701" Grid.Row="2" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_9701" Click="UWP_9701_Click"/>
+        <Button x:Name="UWP_7689" AutomationProperties.AutomationId="UWP_7689" Grid.Row="2" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_7689" Click="UWP_7689_Click"/>
+        <Button x:Name="UWP_10163" AutomationProperties.AutomationId="UWP_10163" Grid.Row="2" Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10163" Click="UWP_10163_Click"/>
+        <Button x:Name="UWP_10199" AutomationProperties.AutomationId="UWP_10199" Grid.Row="2" Grid.Column="5" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10199" Click="UWP_10199_Click"/>
+        <Button x:Name="UWP_10363" AutomationProperties.AutomationId="UWP_10363" Grid.Row="2" Grid.Column="6" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10363" Click="UWP_10363_Click"/>
+        <Button x:Name="UWP_10394" AutomationProperties.AutomationId="UWP_10394" Grid.Row="2" Grid.Column="7" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10394" Click="UWP_10394_Click"/>
+        <Button x:Name="UWP_10372" AutomationProperties.AutomationId="UWP_10372" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10372" Click="UWP_10372_Click"/>
+        <Button x:Name="UWP_10395" AutomationProperties.AutomationId="UWP_10395" Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10395" Click="UWP_10395_Click"/>
+        <Button x:Name="UWP_10400" AutomationProperties.AutomationId="UWP_10400" Grid.Row="3" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10400" Click="UWP_10400_Click"/>
+        <Button x:Name="UWP_10418" AutomationProperties.AutomationId="UWP_10418" Grid.Row="3" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10418" Click="UWP_10418_Click"/>
+        <Button x:Name="UWP_10406" AutomationProperties.AutomationId="UWP_10406" Grid.Row="3" Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10406" Click="UWP_10406_Click"/>
+        <Button x:Name="UWP_10445" AutomationProperties.AutomationId="UWP_10445" Grid.Row="3" Grid.Column="5" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10445" Click="UWP_10445_Click"/>
+        <Button x:Name="UWP_10458" AutomationProperties.AutomationId="UWP_10458" Grid.Row="3" Grid.Column="6" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10458" Click="UWP_10458_Click"/>
+        <Button x:Name="UWP_10494" AutomationProperties.AutomationId="UWP_10494" Grid.Row="3" Grid.Column="7" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10494" Click="UWP_10494_Click"/>
+        <Button x:Name="UWP_10449" AutomationProperties.AutomationId="UWP_10449" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10449" Click="UWP_10449_Click"/>
+        <Button x:Name="UWP_10478" AutomationProperties.AutomationId="UWP_10478" Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10478" Click="UWP_10478_Click"/>
+        <Button x:Name="UWP_10480" AutomationProperties.AutomationId="UWP_10480" Grid.Row="4" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10480" Click="UWP_10480_Click"/>
+        <Button x:Name="UWP_10528" AutomationProperties.AutomationId="UWP_10528" Grid.Row="4" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10528" Click="UWP_10528_Click"/>
+        <Button x:Name="UWP_10547" AutomationProperties.AutomationId="UWP_10547" Grid.Row="4" Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10547" Click="UWP_10547_Click"/>
+        <Button x:Name="UWP_10533" AutomationProperties.AutomationId="UWP_10533" Grid.Row="4" Grid.Column="5" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10533" Click="UWP_10533_Click"/>
+        <Button x:Name="UWP_10543" AutomationProperties.AutomationId="UWP_10543" Grid.Row="4" Grid.Column="6" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10543" Click="UWP_10543_Click"/>
+        <Button x:Name="UWP_10545" AutomationProperties.AutomationId="UWP_10545" Grid.Row="4" Grid.Column="7" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10545" Click="UWP_10545_Click"/>
+        <Button x:Name="UWP_10588" AutomationProperties.AutomationId="UWP_10588" Grid.Row="5" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10588" Click="UWP_10588_Click"/>
+        <Button x:Name="UWP_10544" AutomationProperties.AutomationId="UWP_10544" Grid.Row="5" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP-10544" Click="UWP_10544_Click"/>
+        <Button x:Name="UWP_10614" AutomationProperties.AutomationId="UWP_10614" Grid.Row="5" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP-10614" Click="UWP_10614_Click"/>
+        <Button x:Name="UWP_10649" AutomationProperties.AutomationId="UWP_10649" Grid.Row="5" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10649" Click="UWP_10649_Click"/>
+        <Button x:Name="UWP_10729" AutomationProperties.AutomationId="UWP_10729" Grid.Row="5" Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10729" Click="UWP_10729_Click"/>       
+        <Button x:Name="UWP_10740" AutomationProperties.AutomationId="UWP_10740" Grid.Row="5" Grid.Column="5" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10740" Click="UWP_10740_Click"/>
+        <Button x:Name="UWP_10714" AutomationProperties.AutomationId="UWP_10714" Grid.Row="5" Grid.Column="6" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10714" Click="UWP_10714_Click"/>
+        <Button x:Name="UWP_10713" AutomationProperties.AutomationId="UWP_10713" Grid.Row="5" Grid.Column="7" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10713" Click="UWP_10713_Click"/>
+        <Button x:Name="UWP_10767" AutomationProperties.AutomationId="UWP_10767" Grid.Row="6" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10767" Click="UWP_10767_Click"/>
+        <Button x:Name="UWP_10761" AutomationProperties.AutomationId="UWP_10761" Grid.Row="6" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10761" Click="UWP_10761_Click"/>
+        <Button x:Name="UWP_10760" AutomationProperties.AutomationId="UWP_10760" Grid.Row="6" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10760" Click="UWP_10760_Click"/>
+        <Button x:Name="UWP_10742" AutomationProperties.AutomationId="UWP_10742" Grid.Row="6" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10742" Click="UWP_10742_Click"/>
+        <Button x:Name="UWP_10746" AutomationProperties.AutomationId="UWP_10746" Grid.Row="6" Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10746" Click="UWP_10746_Click"/>
+        <Button x:Name="UWP_10756" AutomationProperties.AutomationId="UWP_10756" Grid.Row="6" Grid.Column="5" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10756" Click="UWP_10756_Click"/>
+        <Button x:Name="UWP_10733" AutomationProperties.AutomationId="UWP_10733" Grid.Row="6" Grid.Column="6" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10733" Click="UWP_10733_Click"/>
+        <Button x:Name="UWP_10739" AutomationProperties.AutomationId="UWP_10739" Grid.Row="6" Grid.Column="7" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10739" Click="UWP_10739_Click"/>
+        <Button x:Name="UWP_10745" AutomationProperties.AutomationId="UWP_10745" Grid.Row="7" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10745" Click="UWP_10745_Click"/>
+        <Button x:Name="UWP_10784" AutomationProperties.AutomationId="UWP_10784" Grid.Row="7" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10784" Click="UWP_10784_Click"/>
+        <Button x:Name="UWP_10775" AutomationProperties.AutomationId="UWP_10775" Grid.Row="7" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10775" Click="UWP_10775_Click"/>
+        <Button x:Name="UWP_10782" AutomationProperties.AutomationId="UWP_10782" Grid.Row="7" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10782" Click="UWP_10782_Click"/>
+        <Button x:Name="UWP_10778" AutomationProperties.AutomationId="UWP_10778" Grid.Row="7" Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10778" Click="UWP_10778_Click"/>
+        <Button x:Name="UWP_10783" AutomationProperties.AutomationId="UWP_10783" Grid.Row="7" Grid.Column="5" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10783" Click="UWP_10783_Click"/>
+        <Button x:Name="UWP_10787" AutomationProperties.AutomationId="UWP_10787" Grid.Row="7" Grid.Column="6" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10787" Click="UWP_10787_Click"/>
+        <Button x:Name="UWP_10671" AutomationProperties.AutomationId="UWP_10671" Grid.Row="7" Grid.Column="7" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10671" Click="UWP_10671_Click"/>
+        <Button x:Name="UWP_10786" AutomationProperties.AutomationId="UWP_10786" Grid.Row="8" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10786" Click="UWP_10786_Click"/>
+        <Button x:Name="UWP_10794" AutomationProperties.AutomationId="UWP_10794" Grid.Row="8" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10794" Click="UWP_10794_Click"/>
+        <Button x:Name="UWP_10793" AutomationProperties.AutomationId="UWP_10793" Grid.Row="8" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10793" Click="UWP_10793_Click"/>
+        <Button x:Name="UWP_10798" AutomationProperties.AutomationId="UWP_10798" Grid.Row="8" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10798" Click="UWP_10798_Click"/>
+        <Button x:Name="UWP_10796" AutomationProperties.AutomationId="UWP_10796" Grid.Row="8" Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10796" Click="UWP_10796_Click"/>
+        <Button x:Name="UWP_10820" AutomationProperties.AutomationId="UWP_10820" Grid.Row="8" Grid.Column="5" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10820" Click="UWP_10820_Click"/>
+        <Button x:Name="UWP_10848" AutomationProperties.AutomationId="UWP_10848" Grid.Row="8" Grid.Column="6" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10848" Click="UWP_10848_Click"/>
+        <Button x:Name="UWP_10857" AutomationProperties.AutomationId="UWP_10857" Grid.Row="8" Grid.Column="7" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10857" Click="UWP_10857_Click"/>
+        <Button x:Name="UWP_10860" AutomationProperties.AutomationId="UWP_10860" Grid.Row="9" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10860" Click="UWP_10860_Click"/>
+        <Button x:Name="UWP_10720" AutomationProperties.AutomationId="UWP_10720" Grid.Row="9" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10720" Click="UWP_10720_Click"/>
+        <Button x:Name="UWP_10874" AutomationProperties.AutomationId="UWP_10874" Grid.Row="9" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" Content="UWP_10874" Click="UWP_10874_Click"/>
+    </Grid>
+</Page>

@@ -1,0 +1,29 @@
+﻿<Page
+    x:Class="Syncfusion.SampleBrowser.UWP.PdfViewer.PdfViewer.UWP_10238"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Syncfusion.SampleBrowser.UWP.PdfViewer"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+  
+     xmlns:syncfusion="using:Syncfusion.Windows.PdfViewer"
+    xmlns:local1="using:Syncfusion.SampleBrowser.UWP.PdfViewer.PdfViewer"
+    Loaded="Page_Loaded">
+
+    <Page.DataContext>
+        <local1:PdfViewerViewModel/>
+    </Page.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid>
+            <Button Content="Load" Click="Button_Click"/>
+        </Grid>
+        <Grid Grid.Row="1">
+            <syncfusion:SfPdfViewerControl Name="pdfViewer" ItemsSource="{Binding PdfDocumentStream}"></syncfusion:SfPdfViewerControl>
+        </Grid>
+    </Grid>
+</Page>

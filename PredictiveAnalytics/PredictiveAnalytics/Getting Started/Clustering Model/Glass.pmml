@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<PMML version="4.2" xmlns="http://www.dmg.org/PMML-4_2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dmg.org/PMML-4_2 http://www.dmg.org/v4-2/pmml-4-2.xsd">
+ <Header copyright="Copyright (c) 2016 Syncfusion" description="KMeans cluster model">
+  <Extension name="user" value="Syncfusion" extender="Rattle/PMML"/>
+  <Application name="Rattle/PMML" version="1.4"/>
+  <Timestamp>2014-11-24 16:09:51</Timestamp>
+ </Header>
+ <DataDictionary numberOfFields="9">
+  <DataField name="RI" optype="continuous" dataType="double"/>
+  <DataField name="Na" optype="continuous" dataType="double"/>
+  <DataField name="Mg" optype="continuous" dataType="double"/>
+  <DataField name="Al" optype="continuous" dataType="double"/>
+  <DataField name="Si" optype="continuous" dataType="double"/>
+  <DataField name="K" optype="continuous" dataType="double"/>
+  <DataField name="Ca" optype="continuous" dataType="double"/>
+  <DataField name="Ba" optype="continuous" dataType="double"/>
+  <DataField name="Fe" optype="continuous" dataType="double"/>
+ </DataDictionary>
+ <ClusteringModel modelName="KMeans_Model" functionName="clustering" algorithmName="KMeans: Hartigan and Wong" modelClass="centerBased" numberOfClusters="6">
+  <MiningSchema>
+   <MiningField name="RI"/>
+   <MiningField name="Na"/>
+   <MiningField name="Mg"/>
+   <MiningField name="Al"/>
+   <MiningField name="Si"/>
+   <MiningField name="K"/>
+   <MiningField name="Ca"/>
+   <MiningField name="Ba"/>
+   <MiningField name="Fe"/>
+  </MiningSchema>
+  <Output>
+   <OutputField name="predictedValue" feature="predictedValue"/>
+   <OutputField name="clusterAffinity_1" feature="clusterAffinity" value="1"/>
+   <OutputField name="clusterAffinity_2" feature="clusterAffinity" value="2"/>
+   <OutputField name="clusterAffinity_3" feature="clusterAffinity" value="3"/>
+   <OutputField name="clusterAffinity_4" feature="clusterAffinity" value="4"/>
+   <OutputField name="clusterAffinity_5" feature="clusterAffinity" value="5"/>
+   <OutputField name="clusterAffinity_6" feature="clusterAffinity" value="6"/>
+  </Output>
+  <ComparisonMeasure kind="distance">
+   <squaredEuclidean/>
+  </ComparisonMeasure>
+  <ClusteringField field="RI" compareFunction="absDiff"/>
+  <ClusteringField field="Na" compareFunction="absDiff"/>
+  <ClusteringField field="Mg" compareFunction="absDiff"/>
+  <ClusteringField field="Al" compareFunction="absDiff"/>
+  <ClusteringField field="Si" compareFunction="absDiff"/>
+  <ClusteringField field="K" compareFunction="absDiff"/>
+  <ClusteringField field="Ca" compareFunction="absDiff"/>
+  <ClusteringField field="Ba" compareFunction="absDiff"/>
+  <ClusteringField field="Fe" compareFunction="absDiff"/>
+  <Cluster name="1" size="46" id="1">
+   <Array n="9" type="real">-1.65956521739133 13.1426086956522 3.48 1.54282608695652 72.8580434782609 0.594565217391304 8.13152173913043 0.00369565217391304 0.0569565217391304</Array>
+  </Cluster>
+  <Cluster name="2" size="26" id="2">
+   <Array n="9" type="real">3.94692307692306 13.6407692307692 3.20038461538461 1.01615384615385 71.9307692307692 0.225769230769231 9.75576923076923 0.0738461538461538 0.0803846153846154</Array>
+  </Cluster>
+  <Cluster name="3" size="26" id="3">
+   <Array n="9" type="real">-1.07000000000001 14.2353846153846 0.0984615384615385 2.08576923076923 73.2992307692308 0.242692307692308 9.17269230769231 0.782692307692308 0.0119230769230769</Array>
+  </Cluster>
+  <Cluster name="4" size="7" id="4">
+   <Array n="9" type="real">8.73000000000005 12.1957142857143 0.45 1.3 71.76 0.282857142857143 13.3571428571429 0.45 0.102857142857143</Array>
+  </Cluster>
+  <Cluster name="5" size="61" id="5">
+   <Array n="9" type="real">0.114426229508197 13.2701639344262 3.45737704918033 1.28491803278688 72.655737704918 0.524754098360656 8.58442622950819 0.0347540983606557 0.0642622950819672</Array>
+  </Cluster>
+  <Cluster name="6" size="5" id="6">
+   <Array n="9" type="real">-5.63599999999997 14.298 0.988 1.95 72.79 2.836 6.712 0.238 0</Array>
+  </Cluster>
+ </ClusteringModel>
+</PMML>

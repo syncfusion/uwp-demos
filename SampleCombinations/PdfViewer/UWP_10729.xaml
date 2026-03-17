@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="Syncfusion.SampleBrowser.UWP.PdfViewer.PdfViewer.UWP_10729"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Syncfusion.SampleBrowser.UWP.PdfViewer.PdfViewer"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:syncfusion="using:Syncfusion.Windows.PdfViewer"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Loaded="Grid_Loaded">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <Button x:Name="Enable" Content="InkMode" Click="Enable_Click"></Button>
+            <Button x:Name="Disable" Content="DisableInkMode" Click="Disable_Click"></Button>
+        </StackPanel>
+
+        <syncfusion:SfPdfViewerControl x:Name="pdfViewer" Grid.Row="1"/>
+    </Grid>
+</Page>

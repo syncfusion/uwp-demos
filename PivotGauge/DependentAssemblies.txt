@@ -1,0 +1,7 @@
+Syncfusion.Data.UWP.dll
+Syncfusion.Olap.UWP.dll
+Syncfusion.PivotAnalysis.UWP.dll
+Syncfusion.SampleBrowser.UWP.Common.dll
+Syncfusion.SfGauge.UWP.dll
+Syncfusion.SfPivotGauge.UWP.dll
+Syncfusion.Licensing.dll

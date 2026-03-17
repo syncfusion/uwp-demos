@@ -1,0 +1,10 @@
+Syncfusion.SampleBrowser.UWP.Common.dll
+Syncfusion.OfficeChart.UWP.dll
+Syncfusion.Presentation.UWP.dll
+Syncfusion.SfAccordion.UWP.dll
+Syncfusion.SfInput.UWP.dll
+Syncfusion.SfShared.UWP.dll
+Syncfusion.SfTabControl.UWP.dll
+Syncfusion.OfficeChartToImageConverter.UWP.dll
+Syncfusion.SfChart.UWP.dll
+Syncfusion.Licensing.dll

@@ -1,0 +1,81 @@
+﻿<Page
+    x:Class="UnitConverter.AreaView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UnitConverter"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" xmlns:syncfusion="using:Syncfusion.UI.Xaml.Controls.Input">
+    
+    <Page.Resources>
+        <local:AreaConverter x:Key='AreaConverter'/>
+        <Style TargetType="syncfusion:SfNumericTextBox" >
+            <Setter Property="Margin" Value="10 2 10 5"/>
+            <Setter Property="Width" Value="280"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="FontFamily" Value="{StaticResource ContentControlThemeFontFamily}"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontWeight" Value="Light"/>
+            <Setter Property="FormatString" Value="G"/>
+            <Setter Property="Background" Value="White"/>
+           
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="Margin" Value="10 0 10 10"/>
+            <Setter Property="FontFamily" Value="{StaticResource ContentControlThemeFontFamily}"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontWeight" Value="Light"/>
+            
+        </Style>
+    </Page.Resources>
+    <ScrollViewer VerticalScrollBarVisibility="Hidden" VerticalScrollMode="Enabled" HorizontalScrollMode="Disabled">
+        <StackPanel x:Name="MainStackPanel">
+            <Grid Margin="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="400"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <StackPanel Margin="10">
+                    <TextBlock Text="Square Meter"/>
+                    <syncfusion:SfNumericTextBox  BlockCharactersOnTextInput="True" Value="{Binding Area, Mode=TwoWay, Converter={StaticResource AreaConverter}}"/>
+                </StackPanel>
+                <StackPanel Margin="10" Grid.Row="1">
+                    <TextBlock Text="Square Feet"/>
+                    <syncfusion:SfNumericTextBox  BlockCharactersOnTextInput="True" Value="{Binding Area, Mode=TwoWay, Converter={StaticResource AreaConverter}, ConverterParameter=SF}" />
+                </StackPanel>
+                <StackPanel Margin="10" Grid.Row="2">
+                    <TextBlock Text="Square Inches"/>
+                    <syncfusion:SfNumericTextBox  BlockCharactersOnTextInput="True" Value="{Binding Area, Mode=TwoWay, Converter={StaticResource AreaConverter}, ConverterParameter=sin}"/>
+                </StackPanel>
+            </Grid>
+            <Grid Margin="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="400"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <StackPanel Margin="10" >
+                    <TextBlock Text="Square Centimeters"/>
+                    <syncfusion:SfNumericTextBox  BlockCharactersOnTextInput="True" Value="{Binding Area, Mode=TwoWay, Converter={StaticResource AreaConverter},ConverterParameter=SC}"/>
+                </StackPanel>
+                <StackPanel Margin="10" Grid.Row="1" >
+                    <TextBlock Text="Square Yards"/>
+                    <syncfusion:SfNumericTextBox  BlockCharactersOnTextInput="True" Value="{Binding Area, Mode=TwoWay, Converter={StaticResource AreaConverter}, ConverterParameter=SY}"/>
+                </StackPanel>
+                <StackPanel Margin="10" Grid.Row="2">
+                    <TextBlock Text="Square millimeters"/>
+                    <syncfusion:SfNumericTextBox  BlockCharactersOnTextInput="True" Value="{Binding Area, Mode=TwoWay, Converter={StaticResource AreaConverter}, ConverterParameter=smm}"/>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+    </ScrollViewer>
+</Page>

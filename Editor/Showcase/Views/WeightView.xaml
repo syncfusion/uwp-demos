@@ -1,0 +1,86 @@
+﻿<Page
+    x:Class="UnitConverter.WeightView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UnitConverter"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" xmlns:syncfusion="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <Page.Resources>
+        <local:WeightConverter x:Key='WeightConverter'/>
+        <Style TargetType="syncfusion:SfNumericTextBox" >
+            <Setter Property="Margin" Value="10 2 10 5"/>
+            <Setter Property="Width" Value="280"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="FontFamily" Value="{StaticResource ContentControlThemeFontFamily}"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FormatString" Value="N2"/>
+            <Setter Property="FontWeight" Value="Light"/>
+            <Setter Property="Background" Value="White"/>
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="Margin" Value="10 0 10 10"/>
+            <Setter Property="FontFamily" Value="{StaticResource ContentControlThemeFontFamily}"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontWeight" Value="Light"/>
+
+        </Style>
+    </Page.Resources>
+        <ScrollViewer VerticalScrollBarVisibility="Hidden" VerticalScrollMode="Enabled" HorizontalScrollMode="Disabled">
+            <StackPanel x:Name="MainStackPanel">
+        <Grid Margin="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="400"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <StackPanel Margin="10">
+                <TextBlock Text="Pounds (lb)"/>
+                    <syncfusion:SfNumericTextBox  BlockCharactersOnTextInput="True"
+                Value="{Binding Weight, Mode=TwoWay, Converter={StaticResource WeightConverter}, ConverterParameter=P}" />
+            </StackPanel>
+            <StackPanel Margin="10" Grid.Row="1">
+                <TextBlock Text="KiloGrams (kg)"/>
+                    <syncfusion:SfNumericTextBox  BlockCharactersOnTextInput="True"
+                Value="{Binding Weight, Mode=TwoWay, Converter={StaticResource WeightConverter}, ConverterParameter=KG}"/>
+            </StackPanel>
+            <StackPanel Margin="10" Grid.Row="2">
+                <TextBlock Text="US Tons (tn)"/>
+                    <syncfusion:SfNumericTextBox  BlockCharactersOnTextInput="True"
+                Value="{Binding Weight, Mode=TwoWay, Converter={StaticResource WeightConverter},ConverterParameter=Tons}"/>
+            </StackPanel>
+        </Grid>
+        <Grid Margin="0">
+                <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="400"/>
+            </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <StackPanel Margin="10" Grid.Column="1">
+                <TextBlock Text="Gram (g)"/>
+                    <syncfusion:SfNumericTextBox  BlockCharactersOnTextInput="True"
+                Value="{Binding Weight, Mode=TwoWay, Converter={StaticResource WeightConverter}}"/>
+            </StackPanel>
+            <StackPanel Margin="10" Grid.Row="1" Grid.Column="1">
+                <TextBlock Text="Ounces (oz)"/>
+                    <syncfusion:SfNumericTextBox  BlockCharactersOnTextInput="True"
+                Value="{Binding Weight, Mode=TwoWay, Converter={StaticResource WeightConverter}, ConverterParameter=Ounces}"/>
+            </StackPanel>
+            <StackPanel Margin="10" Grid.Row="2" Grid.Column="1">
+                <TextBlock Text="Milligram (mg)"/>
+                    <syncfusion:SfNumericTextBox  BlockCharactersOnTextInput="True"
+                Value="{Binding Weight, Mode=TwoWay, Converter={StaticResource WeightConverter}, ConverterParameter=mg}"/>
+            </StackPanel>
+        </Grid>
+    </StackPanel>
+    </ScrollViewer>
+</Page>

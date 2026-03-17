@@ -1,0 +1,180 @@
+<?xml version="1.0"?>
+<PMML version="4.1" xmlns="http://www.dmg.org/PMML-4_1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dmg.org/PMML-4_1 http://www.dmg.org/v4-1/pmml-4-1.xsd">
+ <Header copyright="Copyright (c) 2016 Syncfusion" description="NaiveBayes Model">
+  <Extension name="user" value="Syncfusion" extender="Rattle/PMML"/>
+  <Application name="Rattle/PMML" version="1.4"/>
+  <Timestamp>2014-07-17 15:06:59</Timestamp>
+ </Header>
+ <DataDictionary numberOfFields="10">
+  <DataField name="cens" optype="categorical" dataType="string">
+   <Value value="0"/>
+   <Value value="1"/>
+  </DataField>
+  <DataField name="horTh" optype="categorical" dataType="string">
+   <Value value="no"/>
+   <Value value="yes"/>
+  </DataField>
+  <DataField name="age" optype="continuous" dataType="double"/>
+  <DataField name="menostat" optype="categorical" dataType="string">
+   <Value value="Pre"/>
+   <Value value="Post"/>
+  </DataField>
+  <DataField name="tsize" optype="continuous" dataType="double"/>
+  <DataField name="tgrade" optype="categorical" dataType="string">
+   <Value value="I"/>
+   <Value value="II"/>
+   <Value value="III"/>
+  </DataField>
+  <DataField name="pnodes" optype="continuous" dataType="double"/>
+  <DataField name="progrec" optype="continuous" dataType="double"/>
+  <DataField name="estrec" optype="continuous" dataType="double"/>
+  <DataField name="time" optype="continuous" dataType="double"/>
+ </DataDictionary>
+ <NaiveBayesModel modelName="naiveBayes_Model" functionName="classification" threshold="0">
+  <MiningSchema>
+   <MiningField name="cens" usageType="predicted"/>
+   <MiningField name="horTh" usageType="active"/>
+   <MiningField name="age" usageType="active"/>
+   <MiningField name="menostat" usageType="active"/>
+   <MiningField name="tsize" usageType="active"/>
+   <MiningField name="tgrade" usageType="active"/>
+   <MiningField name="pnodes" usageType="active"/>
+   <MiningField name="progrec" usageType="active"/>
+   <MiningField name="estrec" usageType="active"/>
+   <MiningField name="time" usageType="active"/>
+  </MiningSchema>
+  <Output>
+   <OutputField name="Predicted_cens" feature="predictedValue"/>
+   <OutputField name="Probability_0" optype="continuous" dataType="double" feature="probability" value="0"/>
+   <OutputField name="Probability_1" optype="continuous" dataType="double" feature="probability" value="1"/>
+  </Output>
+  <BayesInputs>
+   <BayesInput fieldName="horTh">
+    <PairCounts value="no">
+     <TargetValueCounts>
+      <TargetValueCount value="0" count="176"/>
+      <TargetValueCount value="1" count="174"/>
+     </TargetValueCounts>
+    </PairCounts>
+    <PairCounts value="yes">
+     <TargetValueCounts>
+      <TargetValueCount value="0" count="120"/>
+      <TargetValueCount value="1" count="78"/>
+     </TargetValueCounts>
+    </PairCounts>
+   </BayesInput>
+   <Extension>
+    <BayesInput fieldName="age">
+     <TargetValueStats>
+      <TargetValueStat value="0">
+       <GaussianDistribution mean="53.597972972973" variance="93.4208772331654"/>
+      </TargetValueStat>
+      <TargetValueStat value="1">
+       <GaussianDistribution mean="53.5634920634921" variance="118.071649908303"/>
+      </TargetValueStat>
+     </TargetValueStats>
+    </BayesInput>
+   </Extension>
+   <BayesInput fieldName="menostat">
+    <PairCounts value="Pre">
+     <TargetValueCounts>
+      <TargetValueCount value="0" count="129"/>
+      <TargetValueCount value="1" count="98"/>
+     </TargetValueCounts>
+    </PairCounts>
+    <PairCounts value="Post">
+     <TargetValueCounts>
+      <TargetValueCount value="0" count="167"/>
+      <TargetValueCount value="1" count="154"/>
+     </TargetValueCounts>
+    </PairCounts>
+   </BayesInput>
+   <Extension>
+    <BayesInput fieldName="tsize">
+     <TargetValueStats>
+      <TargetValueStat value="0">
+       <GaussianDistribution mean="27.1925675675676" variance="160.31194457169"/>
+      </TargetValueStat>
+      <TargetValueStat value="1">
+       <GaussianDistribution mean="31.2301587301587" variance="254.13805097072"/>
+      </TargetValueStat>
+     </TargetValueStats>
+    </BayesInput>
+   </Extension>
+   <BayesInput fieldName="tgrade">
+    <PairCounts value="I">
+     <TargetValueCounts>
+      <TargetValueCount value="0" count="50"/>
+      <TargetValueCount value="1" count="14"/>
+     </TargetValueCounts>
+    </PairCounts>
+    <PairCounts value="II">
+     <TargetValueCounts>
+      <TargetValueCount value="0" count="184"/>
+      <TargetValueCount value="1" count="171"/>
+     </TargetValueCounts>
+    </PairCounts>
+    <PairCounts value="III">
+     <TargetValueCounts>
+      <TargetValueCount value="0" count="62"/>
+      <TargetValueCount value="1" count="67"/>
+     </TargetValueCounts>
+    </PairCounts>
+   </BayesInput>
+   <Extension>
+    <BayesInput fieldName="pnodes">
+     <TargetValueStats>
+      <TargetValueStat value="0">
+       <GaussianDistribution mean="3.89189189189189" variance="22.3001374255612"/>
+      </TargetValueStat>
+      <TargetValueStat value="1">
+       <GaussianDistribution mean="6.50396825396825" variance="39.2230917599444"/>
+      </TargetValueStat>
+     </TargetValueStats>
+    </BayesInput>
+   </Extension>
+   <Extension>
+    <BayesInput fieldName="progrec">
+     <TargetValueStats>
+      <TargetValueStat value="0">
+       <GaussianDistribution mean="146.682432432432" variance="65060.6174530463"/>
+      </TargetValueStat>
+      <TargetValueStat value="1">
+       <GaussianDistribution mean="68.5238095238095" variance="14822.1707455891"/>
+      </TargetValueStat>
+     </TargetValueStats>
+    </BayesInput>
+   </Extension>
+   <Extension>
+    <BayesInput fieldName="estrec">
+     <TargetValueStats>
+      <TargetValueStat value="0">
+       <GaussianDistribution mean="99.9864864864865" variance="20487.5862574439"/>
+      </TargetValueStat>
+      <TargetValueStat value="1">
+       <GaussianDistribution mean="82.7380952380952" variance="21358.672168469"/>
+      </TargetValueStat>
+     </TargetValueStats>
+    </BayesInput>
+   </Extension>
+   <Extension>
+    <BayesInput fieldName="time">
+     <TargetValueStats>
+      <TargetValueStat value="0">
+       <GaussianDistribution mean="1460.12837837838" variance="338084.512276683"/>
+      </TargetValueStat>
+      <TargetValueStat value="1">
+       <GaussianDistribution mean="805.674603174603" variance="260506.953456017"/>
+      </TargetValueStat>
+     </TargetValueStats>
+    </BayesInput>
+   </Extension>
+  </BayesInputs>
+  <BayesOutput fieldName="cens">
+   <TargetValueCounts>
+    <TargetValueCount value="0" count="296"/>
+    <TargetValueCount value="1" count="252"/>
+   </TargetValueCounts>
+  </BayesOutput>
+ </NaiveBayesModel>
+</PMML>

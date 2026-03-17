@@ -1,0 +1,75 @@
+﻿<View:SampleLayout
+    x:Class="EssentialXlsIO.Slicer"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:EssentialXlsIO" xmlns:View="using:Common"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" xmlns:syncfusion="using:Syncfusion.UI.Xaml.Controls">
+    <View:SampleLayout.Sample>
+        <ContentControl>
+        <Grid Name="grdMain" Margin="13,10,10,10" Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                 <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Name="textBox3" Grid.Row="0" Grid.ColumnSpan="2" FontSize="20" FontFamily="Segoe UI" Foreground="#333333" TextWrapping="Wrap"> 
+                 This example demonstrates how to add slicers in Excel worksheet.
+            </TextBlock>
+            <TextBlock Name="textBox4" Grid.Row="1" Grid.ColumnSpan="2" FontSize="18" FontFamily="Segoe UI"/>
+            <TextBlock Name="textBox1" Grid.Row="2" Grid.ColumnSpan="2" FontSize="16" FontFamily="Segoe UI" Foreground="#333333" TextWrapping="Wrap"/>
+            <TextBlock Name="textBox5" Grid.Row="3" Grid.ColumnSpan="2" FontSize="18" FontFamily="Segoe UI"/>
+            <TextBlock Name="textBox8" Grid.Row="4" Grid.ColumnSpan="2" FontSize="16" FontFamily="Segoe UI" Foreground="#333333" TextWrapping="Wrap"/>
+            <TextBlock Name="textBox9" Grid.Row="5" Grid.ColumnSpan="2" FontSize="18" FontFamily="Segoe UI"/>
+            <StackPanel Name="stackPnlOptions" Grid.Row="8" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Left">
+			<Grid Name="grd1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="140"/>
+                    <ColumnDefinition Width="140"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Name="textBox6" Grid.Row ="0" Grid.Column="0"  VerticalAlignment="Center" FontFamily="Segeo UI" Foreground="#333333" FontSize="16"  Width="133">Select Column</TextBlock>
+                <ComboBox Grid.Row ="0" Grid.Column="1" x:Name="comboBox1" Foreground="#333333" Width="130" Height="Auto" Loaded="ComboBox_Loaded" />
+            </Grid>
+            </StackPanel>
+            <StackPanel Name="stackPnlOptions_1" Margin="0,10,0,0" Grid.Row="11" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Left">
+            <Grid Name="grd2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="140"/>
+                    <ColumnDefinition Width="140"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Name="textBox7" Grid.Row ="0" Grid.Column="0"  VerticalAlignment="Center" FontFamily="Segeo UI" Foreground="#333333" FontSize="16"  Width="133">Select Column</TextBlock>
+                <ComboBox Grid.Row ="0" Grid.Column="1" x:Name="comboBox2" Foreground="#333333" Width="130" Height="Auto" Loaded="ComboBox_Loaded" />
+            </Grid>
+            </StackPanel>
+            <StackPanel Name="stackPnlOptions_2" Margin="0,10,0,0" Grid.Row="15" Grid.ColumnSpan="2" Orientation="Horizontal">
+            <Grid Name="grd3" Width="347" Height="45" VerticalAlignment="Top" RenderTransformOrigin="0.723,0.516">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="140"/>
+                    <ColumnDefinition Width="150"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" Click="btnInputExcel_Click" Content="Input Template" FontFamily="Segeo UI" FontSize="16" Foreground="#FFFFFF" Background="#656868" Height="Auto" Width="Auto"  Name="btnInputExcel" />
+                <Button Grid.Column="1" Click="btnOutputExcel_Click" Content="Create Document" FontFamily="Segeo UI" FontSize="16" Foreground="#FFFFFF" Background="#656868" Height="Auto" Width="Auto"  Name="btnOutputExcel" VerticalAlignment="Center"/>
+            </Grid>
+        </StackPanel>
+    </Grid>
+        </ContentControl>
+    </View:SampleLayout.Sample>
+</View:SampleLayout>

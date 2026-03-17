@@ -1,0 +1,116 @@
+﻿<View:SampleLayout
+    x:Class="DataGrid.CustomValidations"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:DataGrid"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Grid"
+    xmlns:View="using:Common"
+    mc:Ignorable="d">
+
+    <View:SampleLayout.Sample>
+        <ContentControl>
+            <Grid Margin="10,5,5,5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <StackPanel Margin="5">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="5"
+                               FontSize="14"
+                               FontWeight="Bold"
+                               Text="Cell Validation : " />
+                        <TextBlock Margin="5"
+                               FontSize="13"
+                               Text="Discount field should not exceed 40 percent."
+                               TextWrapping="Wrap" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="5"
+                               FontSize="14"
+                               FontWeight="Bold"
+                               Text="Row Validation : " />
+                        <TextBlock Margin="5"
+                               FontSize="13"
+                               Text="Sum of Expense and Freight should be a minimum of 3000."
+                               TextWrapping="Wrap" />
+                    </StackPanel>
+                </StackPanel>
+                <syncfusion:SfDataGrid x:Name="sfGrid"
+                                   Grid.Row="1"
+                                   AllowEditing="true"
+                                   AutoGenerateColumns="False"
+                                   CurrentCellValidating="OnSfDataGridCurrentCellValidating"
+                                   RowValidating="OnSfDataGridRowValidating">
+                    <syncfusion:SfDataGrid.Resources>
+                        <Style TargetType="syncfusion:VirtualizingCellsControl">
+                            <Setter Property="Background" Value="Transparent" />
+                            <Setter Property="BorderBrush" Value="Gray" />
+                            <Setter Property="BorderThickness" Value="0" />
+                            <Setter Property="RowHighlightBorderThickness" Value="0" />
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="syncfusion:VirtualizingCellsControl">
+                                        <Grid>
+                                            <VisualStateManager.VisualStateGroups>
+                                                <VisualStateGroup>
+                                                    <VisualState x:Name="HasError">
+                                                        <Storyboard>
+                                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_InValid" Storyboard.TargetProperty="(UIElement.Visibility)">
+                                                                <DiscreteObjectKeyFrame KeyTime="0">
+                                                                    <DiscreteObjectKeyFrame.Value>
+                                                                        <Visibility>Visible</Visibility>
+                                                                    </DiscreteObjectKeyFrame.Value>
+                                                                </DiscreteObjectKeyFrame>
+                                                            </ObjectAnimationUsingKeyFrames>
+                                                        </Storyboard>
+                                                    </VisualState>
+                                                    <VisualState x:Name="NoError" />
+                                                </VisualStateGroup>
+                                            </VisualStateManager.VisualStateGroups>
+                                            <Border Margin="1"
+                                                BorderBrush="{TemplateBinding RowHoverBackgroundBrush}"
+                                                BorderThickness="{TemplateBinding RowHighlightBorderThickness}"
+                                                Clip="{TemplateBinding HighlightBorderClipRect}"
+                                                Visibility="{TemplateBinding HighlightSelectionBorderVisiblity}" />
+                                            <Border Background="{TemplateBinding RowSelectionBrush}"
+                                                Clip="{TemplateBinding SelectionBorderClipRect}"
+                                                Visibility="{TemplateBinding SelectionBorderVisiblity}" />
+                                            <Border x:Name="PART_InValid"
+                                                Margin="0,0,0,1"
+                                                Background="Transparent"
+                                                BorderBrush="Red"
+                                                BorderThickness="1"
+                                                Clip="{TemplateBinding SelectionBorderClipRect}"
+                                                Visibility="Collapsed" />
+                                            <Border Background="{TemplateBinding Background}"
+                                                BorderBrush="{TemplateBinding BorderBrush}"
+                                                BorderThickness="{TemplateBinding BorderThickness}">
+                                                <ContentPresenter />
+                                            </Border>
+
+                                        </Grid>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </syncfusion:SfDataGrid.Resources>
+
+                    <syncfusion:SfDataGrid.Columns>
+                        <syncfusion:GridTextColumn HeaderText="Order ID" MappingName="OrderID" />
+                        <syncfusion:GridTextColumn MappingName="ShipCity"  HeaderText="Ship City"/>
+                        <syncfusion:GridNumericColumn FormatString="c" MappingName="Freight" />
+                        <syncfusion:GridNumericColumn FormatString="c" MappingName="Expense" />
+                        <syncfusion:GridNumericColumn FormatString="p"
+                                                  MappingName="Discount"
+                                                  ParsingMode="Double" />
+                        <syncfusion:GridTextColumn HeaderText="Ship Country" MappingName="ShipCountry" />
+                    </syncfusion:SfDataGrid.Columns>
+
+                </syncfusion:SfDataGrid>
+            </Grid>
+        </ContentControl>
+    </View:SampleLayout.Sample>
+</View:SampleLayout>
