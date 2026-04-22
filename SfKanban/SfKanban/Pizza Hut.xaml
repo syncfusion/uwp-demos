@@ -1,0 +1,110 @@
+﻿<common:SampleLayout
+    x:Class="Syncfusion.SampleBrowser.UWP.SfKanban.Pizza_Hut"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Syncfusion.SampleBrowser.UWP.SfKanban"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:common="using:Common"
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Kanban"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+    <common:SampleLayout.Sample>
+        <UserControl>
+            <Grid x:Name="grid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                <Grid.DataContext>
+                    <local:MenuDetails/>
+                </Grid.DataContext>
+
+                <Grid.Resources>
+                    <local:CardCountConverter x:Key="CardCounterConverter"/>
+                    
+                    <DataTemplate x:Key="columnHeaderTemplate">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="9*" />
+                                <ColumnDefinition Width="1*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="6*" />
+                                <RowDefinition Height="4*" />
+                            </Grid.RowDefinitions>
+
+                            <TextBlock x:Name="Header"  Text="{Binding Header}"
+                                           VerticalAlignment="Center"
+                                           FontWeight="Medium"
+                                           FontSize="16"
+                                           Foreground="#FF494949"
+                                           TextWrapping="NoWrap"
+                                           Grid.Row="0"
+                                           Margin="0,5,0,5"
+                                           Grid.ColumnSpan="1" />
+
+                            <StackPanel Grid.Row="1" x:Name="WIPPanel"
+                                            Grid.Column="0"
+                                            Orientation="Horizontal">
+
+                                <TextBlock Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent},
+                                           Converter={StaticResource CardCounterConverter}}"
+                                               Margin="0,2,0,5"
+                                               Foreground="#FF767980"
+                                               VerticalAlignment="Center"
+                                               FontWeight="Light"
+                                               FontSize="12"
+                                               TextWrapping="WrapWholeWords" />
+                                <TextBlock Text="{Binding CardCount}"
+                                   Margin="0,2,0,5"
+                                   Foreground="#FF767980"
+                                   VerticalAlignment="Center"
+                                   FontWeight="Light"
+                                   FontSize="12"
+                                   TextWrapping="WrapWholeWords" />
+
+                            </StackPanel>
+
+                            <Border Grid.Column="1" x:Name="CollapsedIcon" Background="Transparent"
+                                        Grid.Row="1">
+                                <Path Data="M172.444,310.778 L158.444,317.111 L171.222,324.222"
+                                          Stretch="Fill" HorizontalAlignment="Right"
+                                          Stroke="#FF595959"
+                                          StrokeThickness="2"
+                                          StrokeLineJoin="Miter"
+                                          UseLayoutRounding="False"
+                                          Width="7" Height="14">
+                                    <Path.RenderTransform>
+                                        <CompositeTransform x:Name="RotateTransform" 
+                                                                Rotation="0"/>
+                                    </Path.RenderTransform>
+                                </Path>
+                            </Border>
+                        </Grid>
+                    </DataTemplate>
+                </Grid.Resources>
+                <syncfusion:SfKanban x:Name="kanban"  AutoGenerateColumns="False"
+                             ItemsSource="{Binding PizzaShop}" CardDragStart="kanban_DragStart" 
+                             CardDragEnd="kanban_DragEnd" ColumnHeaderTemplate="{StaticResource columnHeaderTemplate}" >
+                    <syncfusion:SfKanban.Header>
+                        <Border Background="#FFD53130"  VerticalAlignment="Center" Height="50" 
+                        Width="2000" >
+                            <TextBlock Text="Pizza Shop" Foreground="White" FontWeight="Bold" FontSize="18"
+                               HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center"/>
+                        </Border>
+                    </syncfusion:SfKanban.Header>
+                    <syncfusion:SfKanban.PlaceholderStyle>
+                        <syncfusion:PlaceholderStyle  Fill="#FFFBC7AB" Foreground="White" FontSize="18"/>
+                    </syncfusion:SfKanban.PlaceholderStyle>
+
+                    <syncfusion:KanbanColumn Categories="Menu" Title="Menu"/>
+                    <syncfusion:KanbanColumn Categories="Dining,Delivery" Title="Order"/>
+                    <syncfusion:KanbanColumn Categories="Ready to Serve" Title="Ready to Serve" AllowDrag="False"/>
+
+
+                    <syncfusion:KanbanColumn Categories="Ready to Delivery" Title="Ready to Delivery" AllowDrag="False" />
+
+                </syncfusion:SfKanban>
+            </Grid>
+        </UserControl>
+    </common:SampleLayout.Sample>
+</common:SampleLayout>

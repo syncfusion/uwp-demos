@@ -1,0 +1,471 @@
+﻿<Page
+    x:Class="ScheduleUWP_Samples.Localization_WinRT"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ScheduleUWP_Samples"
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Schedule"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+    
+    <Grid>
+        <Grid.Resources>
+            <Style x:Key="Add" TargetType="Button">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Grid>
+                                <VisualStateManager.VisualStateGroups>
+                                    <VisualStateGroup x:Name="CommonStates">
+                                        <VisualState x:Name="Normal">
+                                            <Storyboard>
+                                                <ColorAnimation  Duration="0" To="White" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="path" />
+                                                <ColorAnimation Duration="0" To="Black" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="path1" />
+                                            </Storyboard>
+                                        </VisualState>
+
+                                        <VisualState x:Name="Pressed">
+                                            <Storyboard>
+                                                <ColorAnimation Duration="0" To="#FF42C4F5" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="path" />
+                                                <ColorAnimation Duration="0" To="White" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="path1" />
+                                            </Storyboard>
+                                        </VisualState>
+                                        <VisualState x:Name="Disabled"/>
+                                        <VisualState x:Name="PointerOver">
+                                            <Storyboard>
+                                                <ColorAnimation Duration="0" To="LightGray" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="path" />
+                                                <ColorAnimation Duration="0" To="Black" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="path1" />
+
+                                            </Storyboard>
+                                        </VisualState>
+                                    </VisualStateGroup>
+                                </VisualStateManager.VisualStateGroups>
+
+                                <Ellipse x:Name="path" Width="55.387" Stroke="#FF303030" Stretch="Fill" Height="55.387" Fill="White" />
+                                <Path x:Name="path1" Width="25" UseLayoutRounding="False" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Opacity="1" Height="25" Fill="White" Data="M19.833,0L32.5,0 32.5,19.833999 52.334,19.833999 52.334,32.500999 32.5,32.500999 32.5,52.333 19.833,52.333 19.833,32.500999 0,32.500999 0,19.833999 19.833,19.833999z"/>
+                            </Grid>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <Style x:Key="Drag" TargetType="Button">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Grid>
+                                <VisualStateManager.VisualStateGroups>
+                                    <VisualStateGroup x:Name="CommonStates">
+                                        <VisualState x:Name="Normal">
+                                            <Storyboard>
+                                                <ColorAnimation Duration="0" To="Black" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="path1" />
+                                            </Storyboard>
+                                        </VisualState>
+
+                                        <VisualState x:Name="Pressed">
+                                            <Storyboard>
+                                                <ColorAnimation Duration="0" To="#FF42C4F5" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="path" />
+                                                <ColorAnimation Duration="0" To="White" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="path1" />
+                                            </Storyboard>
+                                        </VisualState>
+                                        <VisualState x:Name="Disabled"/>
+                                        <VisualState x:Name="PointerOver">
+                                            <Storyboard>
+                                                <ColorAnimation Duration="0" To="LightGray" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="path" />
+                                                <ColorAnimation Duration="0" To="Black" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="path1" />
+
+                                            </Storyboard>
+                                        </VisualState>
+                                    </VisualStateGroup>
+                                </VisualStateManager.VisualStateGroups>
+                                <Ellipse x:Name="path" Width="55.387" Stroke="#FF303030" Stretch="Fill" Height="55.387" Fill="White" />
+                                <Path x:Name="path1" Width="22" Height="31" UseLayoutRounding="False" Stretch="Fill" RenderTransformOrigin="0.54,0.5" Opacity="1" Fill="White" Data="M15.981499,13.747002C18.05169,13.747002,19.73,15.426697,19.73,17.496992L19.73,29.981703 19.779463,29.852098C20.305013,28.579597 21.683165,27.672002 23.300499,27.672002 25.370689,27.672002 27.049,29.159006 27.049,30.994911L27.049,32.286549 27.098465,32.167931C27.624022,31.003298 29.002193,30.172002 30.619551,30.172002 32.689867,30.172002 34.368,31.533998 34.368,33.213693L34.368,42.065532 34.802896,37.581322C34.973396,35.815634 36.543791,34.521343 38.310686,34.693342 40.076281,34.862541 41.370577,36.435431 41.198677,38.201019L39.531998,55.4002 39.531998,56.770905C39.531998,60.763145,36.295256,64,32.301731,64L19.449066,64C16.080709,64,13.24998,61.695639,12.447613,58.577476L12.385349,58.30774 2.4728718,41.726652C1.7229061,40.474153 2.3947554,38.692953 3.9740238,37.750153 5.5534835,36.807454 7.4387784,37.057454 8.1887436,38.310053L12.233,45.075792 12.233,17.496992C12.232999,15.426697,13.91121,13.747002,15.981499,13.747002z M2.4651451,5.512001C3.0964394,5.512001,3.7279081,5.7528877,4.2096834,6.2346535L8.3473825,10.372528C9.3108721,11.336092 9.3108721,12.895937 8.3473825,13.859404 7.3840122,14.822868 5.821506,14.822868 4.8593559,13.859404L0.7216568,9.7214584C-0.2405529,8.7580528 -0.2405529,7.1982384 0.7216568,6.2346535 1.2027321,5.7528877 1.8338509,5.512001 2.4651451,5.512001z M29.787703,5.512001C30.419058,5.512001 31.050566,5.7528877 31.532339,6.2346535 32.495886,7.1982384 32.495886,8.7580528 31.532339,9.7214584L27.394133,13.859404C26.430585,14.822868 24.869307,14.822868 23.905759,13.859404 22.943411,12.895937 22.943411,11.336092 23.905759,10.372528L28.043965,6.2346535C28.525139,5.7528877,29.156345,5.512001,29.787703,5.512001z M16.182049,0C17.543967,0,18.648,1.1041412,18.647999,2.466156L18.647999,8.3178291C18.648,9.6823425 17.543967,10.784 16.182049,10.784 14.820132,10.784 13.715999,9.6823425 13.716,8.3178291L13.716,2.466156C13.715999,1.1041412,14.820132,0,16.182049,0z" Margin="19.5,11.5,22.5,12.5">
+                                    <Path.RenderTransform>
+                                        <CompositeTransform Rotation="-14.473"/>
+                                    </Path.RenderTransform>
+                                </Path>
+                            </Grid>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <Style x:Key="Delete" TargetType="Button">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Grid>
+                                <VisualStateManager.VisualStateGroups>
+                                    <VisualStateGroup x:Name="CommonStates">
+                                        <VisualState x:Name="Normal">
+                                            <Storyboard>
+                                                <ColorAnimation Duration="0" To="Black" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="path1" />
+                                            </Storyboard>
+                                        </VisualState>
+
+                                        <VisualState x:Name="Pressed">
+                                            <Storyboard>
+                                                <ColorAnimation Duration="0" To="#FF42C4F5" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="path" />
+                                                <ColorAnimation Duration="0" To="White" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="path1" />
+                                            </Storyboard>
+                                        </VisualState>
+                                        <VisualState x:Name="Disabled"/>
+                                        <VisualState x:Name="PointerOver">
+                                            <Storyboard>
+                                                <ColorAnimation Duration="0" To="LightGray" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="path" />
+                                                <ColorAnimation Duration="0" To="Black" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="path1" />
+
+                                            </Storyboard>
+                                        </VisualState>
+                                    </VisualStateGroup>
+                                </VisualStateManager.VisualStateGroups>
+                                <Ellipse x:Name="path" Width="55.387" Stroke="#FF303030" Stretch="Fill" Height="55.387" Fill="White" />
+                                <Path x:Name="path1" UseLayoutRounding="False" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Opacity="1" Height="25" Fill="White" Data="M33.977998,27.684L33.977998,58.102997 41.373998,58.102997 41.373998,27.684z M14.841999,27.684L14.841999,58.102997 22.237998,58.102997 22.237998,27.684z M4.0319996,22.433001L52.183,22.433001 52.183,63.999001 4.0319996,63.999001z M15.974,0L40.195001,0 40.195001,7.7260003 56.167001,7.7260003 56.167001,16.000999 0,16.000999 0,7.7260003 15.974,7.7260003z" Margin="23.5,14.5,23,15.5" />
+                            </Grid>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <Style x:Key="Edit" TargetType="Button">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Grid>
+                                <VisualStateManager.VisualStateGroups>
+                                    <VisualStateGroup x:Name="CommonStates">
+                                        <VisualState x:Name="Normal">
+                                            <Storyboard>
+                                                <ColorAnimation Duration="0" To="Black" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="path1" />
+                                            </Storyboard>
+                                        </VisualState>
+
+                                        <VisualState x:Name="Pressed">
+                                            <Storyboard>
+                                                <ColorAnimation Duration="0" To="#FF42C4F5" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="path" />
+                                                <ColorAnimation Duration="0" To="White" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="path1" />
+                                            </Storyboard>
+                                        </VisualState>
+                                        <VisualState x:Name="Disabled"/>
+                                        <VisualState x:Name="PointerOver">
+                                            <Storyboard>
+                                                <ColorAnimation Duration="0" To="LightGray" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="path" />
+                                                <ColorAnimation Duration="0" To="Black" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="path1" />
+
+                                            </Storyboard>
+                                        </VisualState>
+                                    </VisualStateGroup>
+                                </VisualStateManager.VisualStateGroups>
+                                <Ellipse x:Name="path" Width="55.387" Stroke="#FF303030" Stretch="Fill" Height="55.387" Fill="White" />
+                                <Path x:Name="path1" UseLayoutRounding="False" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Opacity="1" Height="25" Fill="White" Data="M0,44.439791L18.98951,54.569246 0.47998798,62.66881z M17.428029,12.359973L36.955557,23.568769 21.957478,49.686174 20.847757,46.346189 15.11851,45.756407 14.138656,42.166935 8.5292659,41.966761 6.9493899,38.037481 2.4399572,38.477377z M26.812517,0.0009765625C27.350616,-0.012230873,27.875986,0.10826397,28.348372,0.3782568L42.175028,8.3180408C43.85462,9.2780154,44.234529,11.777948,43.02482,13.89789L41.375219,16.767812 21.460039,5.3381228 23.10964,2.4582005C23.979116,0.941679,25.437378,0.034730911,26.812517,0.0009765625zz" Margin="29.167,15.5,25.286,14.5" />
+                            </Grid>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <Style x:Key="Copy" TargetType="Button">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Grid>
+                                <VisualStateManager.VisualStateGroups>
+                                    <VisualStateGroup x:Name="CommonStates">
+                                        <VisualState x:Name="Normal">
+                                            <Storyboard>
+                                                <ColorAnimation Duration="0" To="Black" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="path1" />
+                                            </Storyboard>
+                                        </VisualState>
+
+                                        <VisualState x:Name="Pressed">
+                                            <Storyboard>
+                                                <ColorAnimation Duration="0" To="#FF42C4F5" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="path" />
+                                                <ColorAnimation Duration="0" To="White" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="path1" />
+                                            </Storyboard>
+                                        </VisualState>
+                                        <VisualState x:Name="Disabled"/>
+                                        <VisualState x:Name="PointerOver">
+                                            <Storyboard>
+                                                <ColorAnimation Duration="0" To="LightGray" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="path" />
+                                                <ColorAnimation Duration="0" To="Black" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="path1" />
+                                            </Storyboard>
+                                        </VisualState>
+                                    </VisualStateGroup>
+                                </VisualStateManager.VisualStateGroups>
+                                <Ellipse x:Name="path" Width="55.387" Stroke="#FF303030" Stretch="Fill" Height="55.387" Fill="White" />
+                                <Path x:Name="path1" Width="20" UseLayoutRounding="False" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Opacity="1" Height="25" Fill="White" Data="M31.687001,23.116L31.687001,31.394341C31.687001,31.394341,31.526705,36.832023,25.52624,36.359949L18.506,36.388395 18.506,49.587002 18.506001,54.153999 18.506,59.292614C18.506,59.812107,18.929218,60.233997,19.448625,60.233997L45.808704,60.233997C46.326101,60.233997,46.749998,59.812107,46.749998,59.292614L46.749998,24.057384C46.749998,23.539322,46.326101,23.116,45.808704,23.116z M20.552001,4.5669994L20.552001,14.60861C20.552001,14.60861,20.358706,21.203206,13.080177,20.631915L4.565999,20.665694 4.565999,48.4459C4.566,49.076302,5.0797424,49.587002,5.7100554,49.587002L14.742001,49.587002 14.742001,35.400336 18.161097,31.792807 18.166127,31.774705 26.474542,22.972 26.521163,22.972 29.953973,19.349999 38.822001,19.349999 38.822001,5.7076302C38.822001,5.0806808,38.309198,4.5669994,37.680792,4.5669994z M18.449971,0L37.680651,0C40.833681,0,43.391001,2.5571156,43.391001,5.707489L43.391001,19.349999 45.80884,19.349999C48.409018,19.35,50.517,21.458894,50.517,24.05704L50.517,59.292992C50.517,61.893593,48.409018,64,45.80884,64L19.448812,64C16.849223,64,14.742,61.893593,14.742001,59.292992L14.742001,54.153999 5.709774,54.153999C2.555994,54.153999,0,51.599316,0,48.445534L0,19.465691 4.1473293,15.090039 4.1532602,15.068708 14.229262,4.3929996 14.286199,4.3929996z"/>
+                            </Grid>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <Style x:Key="Paste" TargetType="Button">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Grid>
+                                <VisualStateManager.VisualStateGroups>
+                                    <VisualStateGroup x:Name="CommonStates">
+                                        <VisualState x:Name="Normal">
+                                            <Storyboard>
+                                                <ColorAnimation Duration="0" To="Black" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="path1" />
+                                            </Storyboard>
+                                        </VisualState>
+
+                                        <VisualState x:Name="Pressed">
+                                            <Storyboard>
+                                                <ColorAnimation Duration="0" To="#FF42C4F5" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="path" />
+                                                <ColorAnimation Duration="0" To="White" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="path1" />
+                                            </Storyboard>
+                                        </VisualState>
+                                        <VisualState x:Name="Disabled"/>
+                                        <VisualState x:Name="PointerOver">
+                                            <Storyboard>
+                                                <ColorAnimation Duration="0" To="LightGray" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="path" />
+                                                <ColorAnimation Duration="0" To="Black" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="path1" />
+
+                                            </Storyboard>
+                                        </VisualState>
+                                    </VisualStateGroup>
+                                </VisualStateManager.VisualStateGroups>
+                                <Ellipse x:Name="path" Width="55.387" Stroke="#FF303030" Stretch="Fill" Height="55.387" Fill="White" />
+                                <Path x:Name="path1" Width="20" UseLayoutRounding="False" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Opacity="1" Height="24" Fill="White" Data="M31.948999,57.859001L45.188999,57.859001 45.188999,59.699001 31.948999,59.699001z M31.948999,51.950001L45.188999,51.950001 45.188999,53.791 31.948999,53.791z M28.396044,35.408001C28.009256,35.408001,27.689001,35.726357,27.689001,36.116974L27.689001,62.648006C27.689001,63.039406,28.009256,63.357002,28.396044,63.357002L48.248085,63.357002C48.638691,63.357002,48.957001,63.039406,48.957001,62.648006L48.957001,45.402447 43.671608,45.381203C39.153995,45.736,39.033001,41.642223,39.033001,41.642223L39.033001,35.408001z M28.395853,32.571999L40.336986,32.571999 42.92213,35.299999 42.958431,35.299999 49.212662,41.928822 49.216327,41.942017 51.790001,44.657917 51.790001,62.648022C51.790001,64.605804,50.204025,66.191002,48.247158,66.191002L28.395853,66.191002C26.438854,66.191002,24.853,64.605804,24.853,62.648022L24.853,36.116901C24.853,34.16061,26.438854,32.571999,28.395853,32.571999z M23.4165,2.7189999C21.472765,2.7190001 19.896,4.211246 19.896,6.0526261 19.896,7.8918042 21.472765,9.3859997 23.4165,9.3859997 25.360433,9.3859997 26.936998,7.8918042 26.936998,6.0526261 26.936998,4.211246 25.360433,2.7190001 23.4165,2.7189999z M23.4165,0C26.836176,0,29.627563,2.5418639,29.798687,5.7406974L29.806993,6.0519996 35.229999,6.0519996 35.229999,7.9879994 46.833999,7.9879994 46.833999,34.156097 41.895698,28.945999 41.695999,28.945999 41.695999,14.389 35.229999,14.389 35.229999,20.865 11.604001,20.865 11.604001,14.389 5.136998,14.389 5.136998,59.294998 21.228,59.294998 21.228,62.648151C21.228,63.142387,21.27823,63.625092,21.373855,64.091423L21.431106,64.338997 0,64.338997 0,7.9879994 11.604001,7.9879994 11.604001,6.0519996 17.026007,6.0519996 17.034315,5.7406974C17.205442,2.5418639,19.996919,0,23.4165,0z"/>
+                            </Grid>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+
+
+            <Style TargetType="syncfusion:DragDropControl">
+
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="syncfusion:DragDropControl">
+                            <Viewbox Height="140" Width="120">
+                                <Grid Height="200" Width="135" x:Name="popupgrid" >
+                                    <Grid.Resources>
+                                        <Storyboard x:Name="storyboard">
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="bg">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0.1">
+                                                    <EasingDoubleKeyFrame.EasingFunction>
+                                                        <CircleEase/>
+                                                    </EasingDoubleKeyFrame.EasingFunction>
+                                                </EasingDoubleKeyFrame>
+                                            </DoubleAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Add">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1">
+                                                    <EasingDoubleKeyFrame.EasingFunction>
+                                                        <CircleEase/>
+                                                    </EasingDoubleKeyFrame.EasingFunction>
+                                                </EasingDoubleKeyFrame>
+                                            </DoubleAnimationUsingKeyFrames>
+                                            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Control.Background).(SolidColorBrush.Color)" Storyboard.TargetName="Add">
+                                                <EasingColorKeyFrame KeyTime="0" Value="White"/>
+                                                <EasingColorKeyFrame KeyTime="0:0:0.1" Value="White"/>
+                                                <EasingColorKeyFrame KeyTime="0:0:0.2" Value="Transparent">
+                                                    <EasingColorKeyFrame.EasingFunction>
+                                                        <CircleEase/>
+                                                    </EasingColorKeyFrame.EasingFunction>
+                                                </EasingColorKeyFrame>
+                                            </ColorAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="Edit">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="-58.095"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-58.095"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0">
+                                                    <EasingDoubleKeyFrame.EasingFunction>
+                                                        <CircleEase/>
+                                                    </EasingDoubleKeyFrame.EasingFunction>
+                                                </EasingDoubleKeyFrame>
+                                            </DoubleAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="Edit">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="-34.286"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-34.286"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0">
+                                                    <EasingDoubleKeyFrame.EasingFunction>
+                                                        <CircleEase/>
+                                                    </EasingDoubleKeyFrame.EasingFunction>
+                                                </EasingDoubleKeyFrame>
+                                            </DoubleAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Edit">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="1">
+                                                    <EasingDoubleKeyFrame.EasingFunction>
+                                                        <CircleEase/>
+                                                    </EasingDoubleKeyFrame.EasingFunction>
+                                                </EasingDoubleKeyFrame>
+                                            </DoubleAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="Delete">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="-60"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-60"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0">
+                                                    <EasingDoubleKeyFrame.EasingFunction>
+                                                        <CircleEase/>
+                                                    </EasingDoubleKeyFrame.EasingFunction>
+                                                </EasingDoubleKeyFrame>
+                                            </DoubleAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Delete">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1">
+                                                    <EasingDoubleKeyFrame.EasingFunction>
+                                                        <CircleEase/>
+                                                    </EasingDoubleKeyFrame.EasingFunction>
+                                                </EasingDoubleKeyFrame>
+                                            </DoubleAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="Resize">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="57.143"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="57.143"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0">
+                                                    <EasingDoubleKeyFrame.EasingFunction>
+                                                        <CircleEase/>
+                                                    </EasingDoubleKeyFrame.EasingFunction>
+                                                </EasingDoubleKeyFrame>
+                                            </DoubleAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="Resize">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="-32.381"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-32.381"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0">
+                                                    <EasingDoubleKeyFrame.EasingFunction>
+                                                        <CircleEase/>
+                                                    </EasingDoubleKeyFrame.EasingFunction>
+                                                </EasingDoubleKeyFrame>
+                                            </DoubleAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Resize">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1">
+                                                    <EasingDoubleKeyFrame.EasingFunction>
+                                                        <CircleEase/>
+                                                    </EasingDoubleKeyFrame.EasingFunction>
+                                                </EasingDoubleKeyFrame>
+                                            </DoubleAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="Copy">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="-60"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="-60"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0">
+                                                    <EasingDoubleKeyFrame.EasingFunction>
+                                                        <CircleEase/>
+                                                    </EasingDoubleKeyFrame.EasingFunction>
+                                                </EasingDoubleKeyFrame>
+                                            </DoubleAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="Copy">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="-0.952"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="-0.952"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0">
+                                                    <EasingDoubleKeyFrame.EasingFunction>
+                                                        <CircleEase/>
+                                                    </EasingDoubleKeyFrame.EasingFunction>
+                                                </EasingDoubleKeyFrame>
+                                            </DoubleAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Copy">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1">
+                                                    <EasingDoubleKeyFrame.EasingFunction>
+                                                        <CircleEase/>
+                                                    </EasingDoubleKeyFrame.EasingFunction>
+                                                </EasingDoubleKeyFrame>
+                                            </DoubleAnimationUsingKeyFrames>
+                                        </Storyboard>
+
+                                    </Grid.Resources>
+                                    <Path x:Name="bg" Opacity="0.1" Data="F1M134.48,128.371L116.251,96.797 133.48,66.956 113.155,31.751 79.6,31.751 61.557,0.5 20.907,0.5 0.582,35.704 20.907,68.908 54.461,68.908 71.409,98.529 55.46,124.419 20.907,124.419 0.582,159.623 20.907,194.826 61.557,194.826 79.6,163.575 114.155,163.575z" Fill="#FFEAEAEA" Stroke="#FF898989" Width="135.057" UseLayoutRounding="False"  Margin="0,2,0,0"/>
+                                    <Button x:Name="Add" ToolTipService.ToolTip="Add" Margin="10,10,0,135"  Style="{StaticResource Add}" />
+                                    <Button  x:Name="Copy"  FlowDirection="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=ButtonFlowDirection}" ToolTipService.ToolTip="Copy"  Style="{StaticResource Copy}" Margin="-42,70,0,75" Width="172" RenderTransformOrigin="0.5,0.5"   >
+                                        <Button.RenderTransform>
+                                            <CompositeTransform/>
+                                        </Button.RenderTransform>
+                                    </Button>
+                                    <Button FlowDirection="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=ButtonFlowDirection}"  x:Name="Edit" ToolTipService.ToolTip="Edit"   Style="{StaticResource Edit}" Margin="64,43,0,102" RenderTransformOrigin="0.5,0.5" >
+                                        <Button.RenderTransform>
+                                            <CompositeTransform/>
+                                        </Button.RenderTransform>
+                                    </Button>
+                                    <Button  x:Name="Delete" ToolTipService.ToolTip="Delete"  Style="{StaticResource Delete}" Margin="64,103,0,42" RenderTransformOrigin="0.5,0.5" >
+                                        <Button.RenderTransform>
+                                            <CompositeTransform/>
+                                        </Button.RenderTransform>
+                                    </Button>
+                                    <Button FlowDirection="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=ButtonFlowDirection}" x:Name="Resize" ToolTipService.ToolTip="Resize"   Style="{StaticResource Drag}" Margin="10,135,0,10" RenderTransformOrigin="0.5,0.5" >
+                                        <Button.RenderTransform>
+                                            <CompositeTransform/>
+                                        </Button.RenderTransform>
+                                    </Button>
+                                </Grid>
+                            </Viewbox>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <Style TargetType="syncfusion:AddAppointmentControl">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="syncfusion:AddAppointmentControl">
+                            <Viewbox Height="100" Width="100">
+                                <Grid x:Name="grid" Height="100" Width="130">
+                                    <Grid.Resources>
+                                        <Storyboard x:Name="storyboard2">
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Add">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1">
+                                                    <EasingDoubleKeyFrame.EasingFunction>
+                                                        <CircleEase/>
+                                                    </EasingDoubleKeyFrame.EasingFunction>
+                                                </EasingDoubleKeyFrame>
+                                            </DoubleAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="Paste">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="-51.133"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="-51.133"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0">
+                                                    <EasingDoubleKeyFrame.EasingFunction>
+                                                        <CircleEase/>
+                                                    </EasingDoubleKeyFrame.EasingFunction>
+                                                </EasingDoubleKeyFrame>
+                                            </DoubleAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="Paste">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="-31.417"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="-31.417"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0">
+                                                    <EasingDoubleKeyFrame.EasingFunction>
+                                                        <CircleEase/>
+                                                    </EasingDoubleKeyFrame.EasingFunction>
+                                                </EasingDoubleKeyFrame>
+                                            </DoubleAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Paste">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1">
+                                                    <EasingDoubleKeyFrame.EasingFunction>
+                                                        <CircleEase/>
+                                                    </EasingDoubleKeyFrame.EasingFunction>
+                                                </EasingDoubleKeyFrame>
+                                            </DoubleAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </Grid.Resources>
+
+
+                                    <Button x:Name="Add" ToolTipService.ToolTip="Add" VerticalAlignment="Top"  Style="{StaticResource Add}" />
+
+                                    <Button x:Name="Paste" ToolTipService.ToolTip="Paste"  Style="{StaticResource Paste}" Margin="51,17,0,0" RenderTransformOrigin="0.5,0.5"  >
+                                        <Button.RenderTransform>
+                                            <CompositeTransform/>
+                                        </Button.RenderTransform>
+                                    </Button>
+
+                                </Grid>
+                            </Viewbox>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+        </Grid.Resources>
+        <Grid>
+            <syncfusion:SfSchedule Background="White" WorkEndHour="18" WorkStartHour="9" IsHighLightWorkingHours="True"  ScheduleType="Month" x:Name="schedule" IntervalHeight="30" TimeInterval="OneHour" />
+        </Grid>
+    </Grid>
+</Page>

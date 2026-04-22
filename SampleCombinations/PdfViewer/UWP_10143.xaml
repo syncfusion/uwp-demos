@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="Syncfusion.SampleBrowser.UWP.PdfViewer.PdfViewer.UWP_10143"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:Syncfusion.SampleBrowser.UWP.PdfViewer"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:sf="using:Syncfusion.Windows.PdfViewer"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    mc:Ignorable="d">
+
+    <Grid>
+        <sf:SfPdfViewerControl Name="pdfViewer" />
+        <StackPanel Orientation="Vertical">
+            <Button Click="OpenClicked" Content="Open" />
+            <Button Click="PrintClicked" Content="Print" />
+        </StackPanel>
+    </Grid>
+</Page>

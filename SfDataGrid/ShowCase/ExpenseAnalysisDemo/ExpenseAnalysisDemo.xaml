@@ -1,0 +1,264 @@
+﻿<Page x:Class="ExpenseAnalysisDemo.HomePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="using:ExpenseAnalysisDemo"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      x:Name="MainPage"
+      mc:Ignorable="d">
+
+    <Page.Resources>
+        <x:String x:Key="BackButtonGlyph">&#xE071;</x:String>
+        <!--  Style for Button  -->
+        <Style x:Key="BackButtonStyle" TargetType="Button">
+            <Setter Property="MinWidth" Value="0" />
+            <Setter Property="VerticalAlignment" Value="Bottom" />
+            <Setter Property="FontFamily" Value="Segoe UI Symbol" />
+            <Setter Property="FontWeight" Value="Normal" />
+            <Setter Property="FontSize" Value="56" />
+            <Setter Property="AutomationProperties.AutomationId" Value="BackButton" />
+            <Setter Property="AutomationProperties.Name" Value="Back" />
+            <Setter Property="AutomationProperties.ItemType" Value="Navigation Button" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid x:Name="RootGrid">
+                            <Grid Margin="0,-24,0,0">
+                                <TextBlock x:Name="BackgroundGlyph"
+                                           FontSize="68"
+                                           Foreground="#00FFFFFF"
+                                           Text="" />
+                                <TextBlock x:Name="NormalGlyph"
+                                           FontSize="68"
+                                           Foreground="#FFFFFFFF"
+                                           Text="{StaticResource BackButtonGlyph}" />
+                                <TextBlock x:Name="ArrowGlyph"
+                                           FontSize="68"
+                                           Foreground="#FF000000"
+                                           Opacity="0"
+                                           Text="" />
+                            </Grid>
+                            <Rectangle x:Name="FocusVisualWhite"
+                                       IsHitTestVisible="False"
+                                       Opacity="0"
+                                       Stroke="{StaticResource FocusVisualWhiteStrokeThemeBrush}"
+                                       StrokeDashArray="1,1"
+                                       StrokeDashOffset="1.5"
+                                       StrokeEndLineCap="Square" />
+                            <Rectangle x:Name="FocusVisualBlack"
+                                       IsHitTestVisible="False"
+                                       Opacity="0"
+                                       Stroke="{StaticResource FocusVisualBlackStrokeThemeBrush}"
+                                       StrokeDashArray="1,1"
+                                       StrokeDashOffset="0.5"
+                                       StrokeEndLineCap="Square" />
+
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal" />
+                                    <VisualState x:Name="PointerOver">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="BackgroundGlyph" Storyboard.TargetProperty="Foreground">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="#21FFFFFF" />
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalGlyph" Storyboard.TargetProperty="Foreground">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="#FFFFFFFF" />
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Pressed">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="BackgroundGlyph" Storyboard.TargetProperty="Foreground">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="#FFFFFFFF" />
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <DoubleAnimation Duration="0"
+                                                             Storyboard.TargetName="ArrowGlyph"
+                                                             Storyboard.TargetProperty="Opacity"
+                                                             To="1" />
+                                            <DoubleAnimation Duration="0"
+                                                             Storyboard.TargetName="NormalGlyph"
+                                                             Storyboard.TargetProperty="Opacity"
+                                                             To="0" />
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Disabled">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="Visibility">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed" />
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                                <VisualStateGroup x:Name="FocusStates">
+                                    <VisualState x:Name="Focused">
+                                        <Storyboard>
+                                            <DoubleAnimation Duration="0"
+                                                             Storyboard.TargetName="FocusVisualWhite"
+                                                             Storyboard.TargetProperty="Opacity"
+                                                             To="1" />
+                                            <DoubleAnimation Duration="0"
+                                                             Storyboard.TargetName="FocusVisualBlack"
+                                                             Storyboard.TargetProperty="Opacity"
+                                                             To="1" />
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Unfocused" />
+                                    <VisualState x:Name="PointerFocused" />
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <local:BoolToVisibilityConverter x:Key="boolToVisibilityConverter" />
+
+    </Page.Resources>
+
+    <Page.BottomAppBar>
+        <CommandBar IsOpen="True" IsSticky="True">
+            <AppBarButton Icon="Filter" Label="Filter">
+                <AppBarButton.Flyout>
+                    <MenuFlyout>
+                        <MenuFlyoutItem Command="{Binding FilterCommand}"
+                                        CommandParameter="All"
+                                        Text="All" />
+                        <MenuFlyoutItem Command="{Binding FilterCommand}"
+                                        CommandParameter="January"
+                                        Text="January" />
+                        <MenuFlyoutItem Command="{Binding FilterCommand}"
+                                        CommandParameter="February"
+                                        Text="February" />
+                        <MenuFlyoutItem Command="{Binding FilterCommand}"
+                                        CommandParameter="March"
+                                        Text="March" />
+                        <MenuFlyoutItem Command="{Binding FilterCommand}"
+                                        CommandParameter="April"
+                                        Text="April" />
+                        <MenuFlyoutItem Command="{Binding FilterCommand}"
+                                        CommandParameter="May"
+                                        Text="May" />
+                        <MenuFlyoutItem Command="{Binding FilterCommand}"
+                                        CommandParameter="June"
+                                        Text="June" />
+                        <MenuFlyoutItem Command="{Binding FilterCommand}"
+                                        CommandParameter="July"
+                                        Text="July" />
+                        <MenuFlyoutItem Command="{Binding FilterCommand}"
+                                        CommandParameter="August"
+                                        Text="August" />
+                        <MenuFlyoutItem Command="{Binding FilterCommand}"
+                                        CommandParameter="September"
+                                        Text="September" />
+                        <MenuFlyoutItem Command="{Binding FilterCommand}"
+                                        CommandParameter="October"
+                                        Text="October" />
+                        <MenuFlyoutItem Command="{Binding FilterCommand}"
+                                        CommandParameter="November"
+                                        Text="November" />
+                        <MenuFlyoutItem Command="{Binding FilterCommand}"
+                                        CommandParameter="December"
+                                        Text="December" />
+                    </MenuFlyout>
+                </AppBarButton.Flyout>
+            </AppBarButton>
+            <AppBarButton Command="{Binding ExportCommand}" Label="Export">
+                <AppBarButton.Icon>
+                    <BitmapIcon UriSource="ms-appx:///ShowCase/ExpenseAnalysisDemo/Assets/export2.png"/>
+                </AppBarButton.Icon>
+            </AppBarButton>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Frame x:Name="frame">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.18*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Border Background="#FF1ABC9C">
+                    <local:PersonInfoView Width="396" x:Name="personInfoView" Margin="10,0,0,0" HorizontalAlignment="Left" />
+                </Border>
+
+            </Grid>
+
+            <ScrollViewer x:Name="scrollArea"
+                          Grid.Row="1"
+                          HorizontalScrollBarVisibility="Visible"
+                         
+                          ScrollViewer.HorizontalScrollMode="Auto"
+                          ScrollViewer.VerticalScrollMode="Auto"
+                          ScrollViewer.ZoomMode="Disabled"
+                          VerticalScrollBarVisibility="Auto">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.Background>
+                        <ImageBrush ImageSource="Assets/backImage.jpg" />
+                    </Grid.Background>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Border Grid.Column="0" Margin="20,-50,10,50">
+                            <local:TransactionDetailsView x:Name="transactionDetailsView" HorizontalAlignment="Left" VerticalAlignment="Center" />
+                        </Border>
+
+                        <Border Grid.Column="1"
+                                Margin="50,0,50,50"
+                                BorderThickness="0">
+                            <ContentPresenter Name="contentHolder">
+                                <ContentPresenter.ContentTransitions>
+                                    <TransitionCollection>
+                                        <EntranceThemeTransition />
+                                    </TransitionCollection>
+                                </ContentPresenter.ContentTransitions>
+                                <ContentPresenter.Content>
+                                    <Grid>
+                                        <local:ChartView Margin="10,0,10,10" x:Name="chartView"
+                                                         Visibility="{Binding IsChecked, ElementName=ChartButton1, Converter={StaticResource boolToVisibilityConverter}}" />
+                                    </Grid>
+                                </ContentPresenter.Content>
+                            </ContentPresenter>
+                        </Border>
+                    </Grid>
+
+                    <Grid Grid.Column="1"
+                          Width="1200"
+                          Margin="50,10,0,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="70" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Border x:Name="headerText">
+                            <Viewbox HorizontalAlignment="Left" VerticalAlignment="Center">
+                                <TextBlock x:Name="textBlock"
+                                           HorizontalAlignment="Left"
+                                           VerticalAlignment="Center"
+                                           FontFamily="Segoe UI"
+                                           FontSize="16"
+                                           FontWeight="Light"
+                                           Foreground="#515151"
+                                           Padding="0,15"
+                                           Text="Transactions" />
+                            </Viewbox>
+                        </Border>
+
+
+                        <ContentPresenter Name="gridContentHolder" Grid.Row="1" Margin="0,0,0,100">
+                            <local:GridView x:Name="gridView"/>
+                        </ContentPresenter>
+                    </Grid>
+                </Grid>
+            </ScrollViewer>
+        </Grid>
+    </Frame>
+
+</Page>

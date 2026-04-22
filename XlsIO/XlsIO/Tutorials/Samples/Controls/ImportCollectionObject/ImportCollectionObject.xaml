@@ -1,0 +1,136 @@
+﻿<View:SampleLayout
+    x:Class="EssentialXlsIO.ImportCollectionObject"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:EssentialXlsIO" xmlns:View="using:Common"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" xmlns:syncfusion="using:Syncfusion.UI.Xaml.Controls" Margin="-9,0,9,0">
+    <View:SampleLayout.Sample>
+        <ContentControl>
+            <Grid Name="grdMain" Margin="10,10,10,10" Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2.5*"></RowDefinition>
+                    <RowDefinition Height="2*"></RowDefinition>
+                    <RowDefinition Height="15*"></RowDefinition>
+                    <RowDefinition Height="3*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Name="textBox2" Grid.Row="0" Grid.ColumnSpan="3" FontSize="20" FontFamily="Segoe UI" Foreground="#333333" TextWrapping="Wrap"> 
+                 This Sample allows you to import/export data from/to CLR Objects.
+                </TextBlock>
+                <TextBlock Name="textBox1" Margin="0,5,0,0" Grid.Row="1" Grid.ColumnSpan="3" FontSize="16" FontFamily="Segoe UI" Foreground="#333333" TextWrapping="Wrap"/>
+				<Border Grid.Row="2" Grid.ColumnSpan="3" Margin="0,10,0,0" BorderBrush="#C8C8C8" BorderThickness="1.3">
+					<Grid>
+						<Grid.RowDefinitions>
+							<RowDefinition Height="Auto"/>
+							<!-- frozen header -->
+							<RowDefinition Height="*"/>
+							<!-- scrolling rows -->
+						</Grid.RowDefinitions>
+						<!-- FROZEN HEADER (centered text, thin lines) -->
+						<Grid Grid.Row="0">
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="1*"/>
+								<ColumnDefinition Width="1*"/>
+								<ColumnDefinition Width="1*"/>
+							</Grid.ColumnDefinitions>
+							<Border Grid.Column="0" BorderBrush="#C8C8C8" BorderThickness="0,0,1.3,1.3" Padding="12,6">
+								<TextBlock Text="Brand" FontWeight="SemiBold"
+										   TextAlignment="Center" HorizontalAlignment="Center"/>
+							</Border>
+							<Border Grid.Column="1" BorderBrush="#C8C8C8" BorderThickness="0,0,1.3,1.3" Padding="12,6">
+								<TextBlock Text="Vehicle Type" FontWeight="SemiBold"
+										   TextAlignment="Center" HorizontalAlignment="Center"/>
+							</Border>
+							<Border Grid.Column="2" BorderBrush="#C8C8C8" BorderThickness="0,0,0,1.3" Padding="12,6">
+								<TextBlock Text="Model" FontWeight="SemiBold"
+										   TextAlignment="Center" HorizontalAlignment="Center"/>
+							</Border>
+						</Grid>
+
+						<!-- SCROLLING BODY (ListView WITHOUT Header) -->
+						<ListView Grid.Row="1"
+								  x:Name="grdViewExport"
+								  Padding="0"
+								  SelectionMode="Single"
+								  IsItemClickEnabled="False"
+								  ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+
+							<!-- Remove default spacing -->
+							<ListView.Resources>
+								<Thickness x:Key="ListViewHeaderPresenterMargin">0</Thickness>
+								<Thickness x:Key="ListViewHeaderPresenterPadding">0</Thickness>
+							</ListView.Resources>
+
+							<!-- Item container (read-only, row select only) -->
+							<ListView.ItemContainerStyle>
+								<Style TargetType="ListViewItem">
+									<Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+									<Setter Property="VerticalContentAlignment" Value="Center"/>
+									<Setter Property="Padding" Value="0"/>
+									<Setter Property="Margin" Value="0"/>
+									<Setter Property="MinHeight" Value="40"/>
+									<Setter Property="Height" Value="40"/>
+									<Setter Property="IsTabStop" Value="False"/>
+									<Setter Property="Background" Value="Transparent"/>
+									<Setter Property="Foreground" Value="{ThemeResource SystemControlForegroundBaseHighBrush}"/>
+									<Setter Property="Template">
+										<Setter.Value>
+											<ControlTemplate TargetType="ListViewItem">
+												<ListViewItemPresenter
+													ContentTransitions="{TemplateBinding ContentTransitions}"
+													ContentTemplate="{TemplateBinding ContentTemplate}"
+													Content="{TemplateBinding Content}"
+													HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+													VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+													Padding="{TemplateBinding Padding}"
+													SelectionCheckMarkVisualEnabled="False"
+													PointerOverBackground="{ThemeResource SystemControlHighlightListLowBrush}"
+													SelectedBackground="#E6D7F7"
+													SelectedPointerOverBackground="#D7C6F4"
+													PressedBackground="#CBB7F2"/>
+											</ControlTemplate>
+										</Setter.Value>
+									</Setter>
+								</Style>
+							</ListView.ItemContainerStyle>
+							<!-- Rows (thin grid lines) -->
+							<ListView.ItemTemplate>
+								<DataTemplate>
+									<Grid>
+										<Grid.ColumnDefinitions>
+											<ColumnDefinition Width="1*"/>
+											<ColumnDefinition Width="1*"/>
+											<ColumnDefinition Width="1*"/>
+										</Grid.ColumnDefinitions>
+
+										<Border Grid.Column="0" BorderBrush="#C8C8C8" BorderThickness="0,0,1.3,1.3" Padding="12,10">
+											<TextBlock Text="{Binding BrandName}"/>
+										</Border>
+										<Border Grid.Column="1" BorderBrush="#C8C8C8" BorderThickness="0,0,1.3,1.3" Padding="12,10">
+											<TextBlock Text="{Binding VehicleType.VehicleName}"/>
+										</Border>
+										<Border Grid.Column="2" BorderBrush="#C8C8C8" BorderThickness="0,0,0,1.3" Padding="12,10">
+											<TextBlock Text="{Binding VehicleType.Model.ModelName}"/>
+										</Border>
+									</Grid>
+								</DataTemplate>
+							</ListView.ItemTemplate>
+
+						</ListView>
+					</Grid>
+				</Border>
+                <Button Grid.Row="3" Margin="0,10,0,0"  Click="btnInput_Click" Content="Input Template" FontFamily="Segoe UI" Foreground="#FFFFFF" Background="#656868" FontSize="16" Name="btnInput" IsEnabled="True" HorizontalAlignment="Left" Grid.Column="0" VerticalAlignment="Bottom"/>
+                <Button Grid.Row="3" Margin="0,10,0,0" Click="btnImportData_Click" Content="Import From Excel" FontFamily="Segoe UI" Foreground="#FFFFFF" Background="#656868" FontSize="16" Name="btnImportData" IsEnabled="True" HorizontalAlignment="Center" Grid.Column="1" VerticalAlignment="Bottom"/>
+                <Button Grid.Row="3" Margin="0,10,0,0" Click="btnExportData_Click" Content="Export To Excel" FontFamily="Segoe UI" Foreground="#FFFFFF" Background="#656868" FontSize="16" Name="btnExportData" IsEnabled="False" HorizontalAlignment="Right" Grid.Column="2" VerticalAlignment="Bottom"/>
+            </Grid>
+
+        </ContentControl>
+    </View:SampleLayout.Sample>
+</View:SampleLayout>

@@ -1,0 +1,48 @@
+﻿<layout:SampleLayout x:Class="BI.PivotGrid.Exporting"
+                     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                     xmlns:notification="using:Syncfusion.UI.Xaml.Controls.Notification"
+                     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                     mc:Ignorable="d" xmlns:pivotGrid="using:Syncfusion.UI.Xaml.PivotGrid"
+                     xmlns:layout="using:Common" Header="PivotGrid">
+
+    <layout:SampleLayout.Sample>
+        <ContentControl>
+            <Grid x:Name="parentGrid">
+                <pivotGrid:SfPivotGrid x:Name="pivotGrid" Margin="5" Grid.Column="0">
+                </pivotGrid:SfPivotGrid>
+
+                <Grid Height="482" Width="900">
+                    <notification:SfBusyIndicator x:Name="busyIndicator" Foreground="#1685D4" AnimationType="SingleCircle" IsBusy="False" ViewboxHeight="80" ViewboxWidth="80" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
+            </Grid>
+        </ContentControl>
+    </layout:SampleLayout.Sample>
+
+    <layout:SampleLayout.Setting>
+        <ContentControl>
+            <StackPanel Width="300">
+                <StackPanel Margin="10 7">
+                    <TextBlock Text="Data Source" Margin="10 7" FontFamily="Segoe UI" FontSize="12" FontWeight="SemiBold"/>
+                    <RadioButton x:Name="rdBtnOlapDataSource" Margin="10 7" FontFamily="Segoe UI" FontSize="12" Content="OLAP"  Click="rdBtnOlapDataSource_Click"/>
+                    <RadioButton x:Name="rdBtnRelationalData" Margin="10 7" FontFamily="Segoe UI" FontSize="12" Content="Relational" IsChecked="True" Click="rdBtnRelationalData_Click"/>
+                </StackPanel>
+                
+                <StackPanel Margin="10 7">
+                    <TextBlock Text="Export" Margin="10 7" FontFamily="Segoe UI" FontSize="12" FontWeight="SemiBold"/>
+                    <StackPanel Orientation="Vertical" Margin="10 7">
+                        <Button x:Name="btnExportToExcel" Content="Export To Excel" Margin="10 7" FontFamily="Segoe UI" FontSize="12" Width="200" 
+                                HorizontalAlignment="Center" HorizontalContentAlignment="Center" Click="btnExportToExcel_Click"/>
+                        <Button x:Name="btnExportToCSV" Content="Export To CSV" Margin="10 7" FontFamily="Segoe UI" FontSize="12" Width="200" 
+                                HorizontalAlignment="Center" HorizontalContentAlignment="Center" Click="btnExportToCSV_Click"/>
+                        <Button x:Name="btnExportToPDF" Content="Export To PDF" Margin="10 7" FontFamily="Segoe UI" FontSize="12" Width="200" 
+                                HorizontalAlignment="Center" HorizontalContentAlignment="Center" Click="btnExportToPDF_Click"/>
+                        <Button x:Name="btnExportToWord" Content="Export To Word" Margin="10 7" FontFamily="Segoe UI" FontSize="12" Width="200" 
+                                HorizontalAlignment="Center" HorizontalContentAlignment="Center" Click="btnExportToWord_Click"/>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </ContentControl>
+    </layout:SampleLayout.Setting>
+</layout:SampleLayout>

@@ -1,0 +1,115 @@
+﻿<Page
+    x:Class="UnitConverter.CurrencyView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UnitConverter"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" xmlns:syncfusion="using:Syncfusion.UI.Xaml.Controls.Input"
+    xmlns:culture="using:System.Globalization">
+    
+    <Page.Resources>
+        <local:CurrencyConverter x:Key='CurrencyConverter'/>
+        <Style TargetType="syncfusion:SfNumericTextBox" >
+            <Setter Property="Margin" Value="10 2 10 5"/>
+            <Setter Property="Width" Value="280"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="FontFamily" Value="{StaticResource ContentControlThemeFontFamily}"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontWeight" Value="Light"/>
+            <Setter Property="Background" Value="White"/>
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="Margin" Value="10 0 10 10"/>
+            <Setter Property="FontFamily" Value="{StaticResource ContentControlThemeFontFamily}"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontWeight" Value="Light"/>
+            
+        </Style>
+    </Page.Resources>
+    <ScrollViewer VerticalScrollBarVisibility="Hidden" VerticalScrollMode="Enabled" HorizontalScrollMode="Disabled">
+        <StackPanel x:Name="MainStackPanel">
+            <Grid Margin="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="400"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <StackPanel Margin="10">
+                    <TextBlock Text="US Dollar"/>
+                    <syncfusion:SfNumericTextBox  BlockCharactersOnTextInput="True" Value="{Binding Currency, Converter={StaticResource CurrencyConverter}, Mode=TwoWay}" 
+            	FormatString="C" Culture="{Binding Culture.US}"/>
+                </StackPanel>
+                <StackPanel Margin="10" Grid.Row="1">
+                    <TextBlock Text="French Franc"/>
+                    <syncfusion:SfNumericTextBox  BlockCharactersOnTextInput="True" Value="{Binding Currency, Mode=TwoWay, 
+                                        Converter={StaticResource CurrencyConverter}, 
+                                        ConverterParameter=FR}"
+                                        FormatString="C" Culture="{Binding Culture.French}"/>
+                </StackPanel>
+                <StackPanel Margin="10" Grid.Row="2">
+                    <TextBlock Text="Chinese Yuan"/>
+                    <syncfusion:SfNumericTextBox  BlockCharactersOnTextInput="True" Value="{Binding Currency, Mode=TwoWay, 
+                                        Converter={StaticResource CurrencyConverter}, 
+                                        ConverterParameter=CH}"
+                                        FormatString="C" Culture="{Binding Culture.Chineese}"/>
+                </StackPanel>
+                <StackPanel Margin="10" Grid.Row="3">
+                    <TextBlock Text="Indian Rupee"/>
+                    <syncfusion:SfNumericTextBox  BlockCharactersOnTextInput="True" Value="{Binding Currency, Mode=TwoWay, 
+                                        Converter={StaticResource CurrencyConverter}, 
+                                        ConverterParameter=IN}"
+                                        FormatString="C" Culture="{Binding Culture.India}"/>
+                </StackPanel>
+            </Grid>
+            <Grid Margin="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="400"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <StackPanel Margin="10" Grid.Column="1">
+                    <TextBlock Text="Japanese Yen"/>
+                    <syncfusion:SfNumericTextBox  BlockCharactersOnTextInput="True" Value="{Binding Currency, Mode=TwoWay,
+                                        Converter={StaticResource CurrencyConverter}, 
+                                        ConverterParameter=Ja}"
+                                        FormatString="C" Culture="{Binding Culture.Japan}"/>
+                </StackPanel>
+                <StackPanel Margin="10" Grid.Row="1" Grid.Column="1">
+                    <TextBlock Text="German Euro"/>
+                    <syncfusion:SfNumericTextBox  BlockCharactersOnTextInput="True" Value="{Binding Currency, Mode=TwoWay, 
+                                        Converter={StaticResource CurrencyConverter}, 
+                                        ConverterParameter=GM}"
+                                        FormatString="C" Culture="{Binding Culture.German}"/>
+                </StackPanel>
+                <StackPanel Margin="10" Grid.Row="2" Grid.Column="1">
+                    <TextBlock Text="Britain pounds"/>
+                    <syncfusion:SfNumericTextBox  BlockCharactersOnTextInput="True" Value="{Binding Currency, Mode=TwoWay, 
+                                        Converter={StaticResource CurrencyConverter}, 
+                                        ConverterParameter=UK}"
+                                        FormatString="C" 
+                                        Culture="{Binding Culture.UK}"/>
+                </StackPanel>
+                <StackPanel Margin="10" Grid.Row="3" Grid.Column="1">
+                    <TextBlock Text="South African Rand"/>
+                    <syncfusion:SfNumericTextBox  BlockCharactersOnTextInput="True" Value="{Binding Currency, Mode=TwoWay,
+                                        Converter={StaticResource CurrencyConverter}, 
+                                        ConverterParameter=ZA}"
+                                        FormatString="C" 
+                                        Culture="{Binding Culture.SouthAfrica}"/>
+                </StackPanel>
+
+            </Grid>
+        </StackPanel>
+    </ScrollViewer>
+</Page>

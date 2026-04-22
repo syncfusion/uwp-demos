@@ -1,0 +1,78 @@
+﻿<View:SampleLayout
+    x:Class="Input.Calendar.AppointmentView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Input.Calendar" xmlns:View="using:Common"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:syncfusion="using:Syncfusion.UI.Xaml.Controls"   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input" Loaded="CalendarView_Loaded"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+     d:DesignHeight="800"
+    d:DesignWidth="1300">
+    <UserControl.Resources>
+        <SolidColorBrush x:Key="AccentBrush">#FF45ADEB</SolidColorBrush>
+        <local:CellConverter x:Key="Converter"/>
+
+        <local:DateConverter x:Key="DateConverter"/>
+
+        <local:CellDescriptionConverter x:Key="DateDesConverter"/>
+
+        <local:AppointmentSource x:Key="Appointments"/>
+
+        <DataTemplate x:Key="Celltemplate">
+            <Grid>
+                <TextBlock Text="{Binding Converter={StaticResource Converter}, ConverterParameter={StaticResource Appointments}}" 
+					   VerticalAlignment="Top" HorizontalAlignment="Right"
+					   Margin="3" FontSize="5" TextWrapping="Wrap"/>
+                <TextBlock Text="{Binding Day}" 
+					   VerticalAlignment="Bottom"
+					   Margin="3"/>
+            </Grid>
+        </DataTemplate>
+    </UserControl.Resources>
+    <View:SampleLayout.Sample>
+        <ContentControl HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center">
+            <Viewbox MaxWidth="500" MaxHeight="700">
+       <Grid Background="Transparent" Name="appointmentgrid" VerticalAlignment="Center" HorizontalAlignment="Center">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+          </Grid.RowDefinitions>
+
+                <Viewbox Name="viewbox" MaxHeight="700" MaxWidth="500" Margin="20">
+                <input:SfCalendar 
+                                 Margin="10 8" VerticalAlignment="Center" Width="380" MinHeight="260"
+                                   FontSize="9" HorizontalAlignment="Center" CellTemplate="{StaticResource Celltemplate}"
+                            x:Name="calendar"/>
+                </Viewbox>
+       
+        <syncfusion:TransitionContentControl Grid.Row="1" Margin="10 8"
+                                                 Content="{Binding ElementName=calendar, Path=SelectedDate}">
+            <syncfusion:TransitionContentControl.Transition>
+                <syncfusion:FadeTransition />
+            </syncfusion:TransitionContentControl.Transition>
+            <syncfusion:TransitionContentControl.ContentTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Text="{Binding Converter={StaticResource DateConverter}}"
+                                       FontSize="11" Margin="22 5 5 5 "/>
+                        <TextBlock Text="{Binding Converter={StaticResource Converter}, ConverterParameter={StaticResource Appointments}}"
+                                       FontSize="18" Margin="22 5 5 5 " Grid.Row="1"/>
+                        <TextBlock Text="{Binding Converter={StaticResource DateDesConverter}, ConverterParameter={StaticResource Appointments}}"
+                                       FontSize="12" Grid.Row="2" Margin="22 5 5 5 "
+                                       TextWrapping="Wrap"/>
+                    </Grid>
+                </DataTemplate>
+            </syncfusion:TransitionContentControl.ContentTemplate>
+
+        </syncfusion:TransitionContentControl>
+
+    </Grid>
+            </Viewbox>
+        </ContentControl>
+    </View:SampleLayout.Sample>
+</View:SampleLayout>

@@ -1,0 +1,146 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    >
+
+    <DataTemplate x:Key="Holiday">
+        <Grid>
+            <Image Source="ms-appx:///Calendar/Assets/smile.png" 
+                   VerticalAlignment="Top" 
+                   HorizontalAlignment="Right" Margin="5"
+                       Stretch="Uniform" Width="16"/>
+
+            <TextBlock Text="{Binding Day}" 
+					   VerticalAlignment="Bottom"
+					   Margin="3"/>
+        </Grid>
+    </DataTemplate>
+
+    <DataTemplate x:Key="Template0">
+        <Grid>
+            <Image Source="ms-appx:///Calendar/Assets/sun.png" 
+                   VerticalAlignment="Top" 
+                   HorizontalAlignment="Right" Margin="5"
+                      Stretch="Uniform" Width="16"/>
+
+            <TextBlock Text="{Binding Day}" 
+					   VerticalAlignment="Bottom"
+					   Margin="3"/>
+        </Grid>
+    </DataTemplate>
+
+    <DataTemplate x:Key="Template1">
+        <Grid>
+            <Image Source="ms-appx:///Calendar/Assets/gift.png" 
+                   VerticalAlignment="Top" 
+                   HorizontalAlignment="Right" Margin="5"
+                       Stretch="Uniform" Width="16"/>
+
+            <TextBlock Text="{Binding Day}" 
+					   VerticalAlignment="Bottom"
+					   Margin="3"/>
+        </Grid>
+    </DataTemplate>
+
+    <DataTemplate x:Key="Template3">
+        <Grid>
+            <Image Source="ms-appx:///Calendar/Assets/graduation.png" 
+                   VerticalAlignment="Top" 
+                   HorizontalAlignment="Right" Margin="5"
+                       Stretch="Uniform" Width="16"/>
+
+            <TextBlock Text="{Binding Day}" 
+					   VerticalAlignment="Bottom"
+					   Margin="3"/>
+        </Grid>
+    </DataTemplate>
+
+    <DataTemplate x:Key="Template4">
+        <Grid>
+            <Image Source="ms-appx:///Calendar/Assets/rain.png" 
+                   VerticalAlignment="Top" 
+                   HorizontalAlignment="Right" Margin="5"
+                       Stretch="Uniform" Width="16"/>
+
+            <TextBlock Text="{Binding Day}" 
+					   VerticalAlignment="Bottom"
+					   Margin="3"/>
+        </Grid>
+    </DataTemplate>
+
+    <DataTemplate x:Key="Template5">
+        <Grid>
+            <Image Source="ms-appx:///Calendar/Assets/suitcase.png" 
+                   VerticalAlignment="Top" 
+                   HorizontalAlignment="Right" Margin="5"
+                       Stretch="Uniform" Width="16"/>
+
+            <TextBlock Text="{Binding Day}" 
+					   VerticalAlignment="Bottom"
+					   Margin="3"/>
+        </Grid>
+    </DataTemplate>
+
+    <DataTemplate x:Key="Template6">
+        <Grid>
+            <Image Source="ms-appx:///Calendar/Assets/love.png" 
+                   VerticalAlignment="Top" 
+                   HorizontalAlignment="Right" Margin="5"
+                       Stretch="Uniform" Width="16"/>
+
+            <TextBlock Text="{Binding Day}" 
+					   VerticalAlignment="Bottom"
+					   Margin="3"/>
+        </Grid>
+    </DataTemplate>
+
+    <DataTemplate x:Key="Template7">
+        <Grid>
+            <Image Source="ms-appx:///Calendar/Assets/medal.png" 
+                   VerticalAlignment="Top" 
+                   HorizontalAlignment="Right" Margin="5"
+                       Stretch="Uniform" Width="16"/>
+
+            <TextBlock Text="{Binding Day}" 
+					   VerticalAlignment="Bottom"
+					   Margin="3"/>
+        </Grid>
+    </DataTemplate>
+
+    <DataTemplate x:Key="Template8">
+        <Grid>
+            <Image Source="ms-appx:///Calendar/Assets/rain.png" 
+                   VerticalAlignment="Top" 
+                   HorizontalAlignment="Right" Margin="5"
+                       Stretch="Uniform" Width="16"/>
+
+            <TextBlock Text="{Binding Day}" 
+					   VerticalAlignment="Bottom"
+					   Margin="3"/>
+        </Grid>
+    </DataTemplate>
+
+    <DataTemplate x:Key="Template2">
+        <Grid>
+            <Image Source="ms-appx:///Calendar/Assets/suitcase.png" 
+                   VerticalAlignment="Top" 
+                   HorizontalAlignment="Right" Margin="5"
+                       Stretch="Uniform" Width="16"/>
+
+            <TextBlock Text="{Binding Day}" 
+					   VerticalAlignment="Bottom"
+					   Margin="3"/>
+        </Grid>
+    </DataTemplate>
+
+    <DataTemplate x:Key="default">
+        <Grid>
+           
+
+            <TextBlock Text="{Binding Day}" 
+					   VerticalAlignment="Bottom"
+					   Margin="3"/>
+        </Grid>
+    </DataTemplate>
+
+</ResourceDictionary>

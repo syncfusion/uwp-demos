@@ -1,0 +1,290 @@
+<common:SampleLayout
+    x:Class="ScheduleUWP_Samples.CustomizationDemo_WinRT"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ScheduleUWP_Samples"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Schedule"
+    xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input"
+    xmlns:radialmenu="using:Syncfusion.UI.Xaml.Controls.Navigation"
+    xmlns:common="using:Common"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+    <common:SampleLayout.Sample>
+        <ContentControl>
+            <Grid>
+                <Grid.Resources>
+                    <local:TypeToImageConverterWinRT x:Key="imageconverter"/>
+                    <Style x:Key="Editor" TargetType="local:NewCustomEditorWinRT">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="local:NewCustomEditorWinRT">
+                                    <Grid Background="{TemplateBinding Background}" >
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="0.47*"/>
+                                            <ColumnDefinition Width="0.53*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <ScrollViewer x:Name="scroll" Grid.Column="0"  Height="{TemplateBinding Height}">
+                                            <Grid  Background="#FFF4F4F4">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition />
+                                                    <RowDefinition />
+                                                    <RowDefinition />
+                                                    <RowDefinition />
+                                                    <RowDefinition />
+                                                    <RowDefinition />
+                                                    <RowDefinition />
+                                                    <RowDefinition />
+                                                    <RowDefinition />
+                                                    <RowDefinition />
+                                                    <RowDefinition />
+                                                    <RowDefinition />
+                                                    <RowDefinition />
+                                                    <RowDefinition />
+                                                    <RowDefinition />
+                                                    <RowDefinition />
+                                                    <RowDefinition />
+                                                    <RowDefinition />
+                                                    <RowDefinition />
+                                                    <RowDefinition />
+                                                    <RowDefinition />
+                                                    <RowDefinition />
+                                                    <RowDefinition />
+                                                    <RowDefinition />
+                                                </Grid.RowDefinitions>
+                                                <TextBlock Grid.Row="1" Margin="50,0,0,0" FontWeight="Normal"  Foreground="#FF246BDE"  Text="Details" FontSize="29" />
+                                                <TextBlock Grid.Row="3" Margin="50,0,0,0" FontWeight="Light" Foreground="Black"  Text="When" FontSize="15" />
+                                                <input:SfDateTimeCombo  x:Name="editstartmonth"  Margin="50,0,0,0" Value="{Binding AppointmentWinRT.StartTime}"  FontWeight="Light" FormatString="MM,ddd,YYYY"  Grid.Row="4"/>
+                                                <TextBlock Grid.Row="5" Margin="50,0,0,0" FontWeight="Light" Foreground="Black" VerticalAlignment="Center"  Text="Start" FontSize="15" />
+                                                <input:SfDateTimeCombo x:Name="editstarttime" Margin="50,0,0,0" Value="{Binding AppointmentWinRT.StartTime}"  FontWeight="Light" FormatString="hh,mm,tt"  Grid.Row="6"/>
+                                                <TextBlock Grid.Row="7" Margin="50,0,0,0" FontWeight="Light" VerticalAlignment="Center" Foreground="Black"  Text="How Long" FontSize="15" />
+                                                <input:SfDateTimeCombo x:Name="editendmonth" Margin="50,0,0,0" Value="{Binding AppointmentWinRT.EndTime}"  FontWeight="Light" FormatString="MM,ddd,YYYY"  Grid.Row="8"/>
+                                                <input:SfDateTimeCombo x:Name="addstartmonth" Margin="50,0,0,0" Value="{Binding CurrentSelectedDate}"  FontWeight="Light" FormatString="MM,ddd,YYYY"  Grid.Row="4"/>
+                                                <input:SfDateTimeCombo x:Name="addstarttime" Margin="50,0,0,0" Value="{Binding CurrentSelectedDate}"  FontWeight="Light" FormatString="hh,mm,tt"  Grid.Row="6"/>
+                                                <input:SfDateTimeCombo x:Name="addendmonth" Margin="50,0,0,0"  FontWeight="Light" FormatString="MM,ddd,YYYY"  Grid.Row="8"/>
+                                                <input:SfDateTimeCombo x:Name="addendtime" Margin="50,0,0,0" FontWeight="Light" FormatString="hh,mm,tt"  Grid.Row="10"/>
+                                                <TextBlock Grid.Row="9" Margin="50,0,0,0" FontWeight="Light" Foreground="Black" VerticalAlignment="Center"  Text="End" FontSize="15" />
+                                                <input:SfDateTimeCombo x:Name="editendtime" Margin="50,0,0,0" Value="{Binding AppointmentWinRT.EndTime}"  FontWeight="Light" FormatString="hh,mm,tt"  Grid.Row="10"/>
+                                                <TextBlock Grid.Row="11" Margin="50,0,0,0" FontWeight="Light" Foreground="Black" VerticalAlignment="Center"  Text="Where" FontSize="15" />
+                                                <input:SfTextBoxExt x:Name="where"  Foreground="#FF454545" FontSize="15" Text="{Binding AppointmentWinRT.Location}" FontFamily="Segoe UI" Margin="50,0,75,0" FontWeight="Light" Grid.Row="12"/>
+                                                <StackPanel  Grid.Row="13" x:Name="showmorepanel" Grid.RowSpan="10">
+                                                    <TextBlock Margin="50,15,0,0" FontWeight="Light" Foreground="Black" VerticalAlignment="Center"  Text="Reminder" FontSize="15" />
+                                                    <ComboBox Margin="50,15,75,0" SelectedItem="{Binding AppointmentWinRT.ReminderTime}"  x:Name="reminder" />
+                                                    <ComboBox Margin="50,15,75,0" x:Name="addreminder" />
+                                                    <TextBlock Margin="50,15,0,0" FontWeight="Light" Foreground="Black" VerticalAlignment="Center"  Text="Appointment Type" FontSize="15" />
+                                                    <ComboBox Margin="50,15,75,0" SelectedItem="{Binding AppointmentWinRT.AppointmentTypeWinRT}" x:Name="AppType"  />
+                                                    <ComboBox Margin="50,15,75,0" x:Name="AddAppType" />
+                                                </StackPanel>
+                                            </Grid>
+                                        </ScrollViewer>
+                                        <Grid Grid.Column="1" Background="White">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="20"/>
+                                                <RowDefinition Height="0.1*"/>
+                                                <RowDefinition Height="5"/>
+                                                <RowDefinition Height="0.8*"/>
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="0.6*"/>
+                                                <ColumnDefinition Width="0.4*"/>
+                                            </Grid.ColumnDefinitions>
+                                            <input:SfTextBoxExt x:Name="sub" BorderThickness="0"  Grid.Column="0"  Margin="25,0,0,0" Grid.Row="1" Text="{Binding AppointmentWinRT.Subject}"  FontWeight="ExtraLight" FontSize="20"  Watermark="Subject"  VerticalAlignment="Center" TextWrapping="NoWrap"/>
+                                            <StackPanel HorizontalAlignment="Right" Margin="0,0,40,0"  Grid.Row="1" Grid.Column="1"  Orientation="Horizontal">
+                                                <Button x:Name="delete" Background="Transparent">
+                                                    <Button.Content>
+                                                        <Grid>
+                                                            <Grid Name="backgroundGrid" Width="40" Height="40" Visibility="Visible">
+                                                                <Path Data="M50.5,4.7500001C25.232973,4.75 4.75,25.232973 4.7500001,50.5 4.75,75.767029 25.232973,96.25 50.5,96.25 75.767029,96.25 96.25,75.767029 96.25,50.5 96.25,25.232973 75.767029,4.75 50.5,4.7500001z M50.5,0C78.390381,0 101,22.609621 101,50.5 101,78.390381 78.390381,101 50.5,101 22.609621,101 0,78.390381 0,50.5 0,22.609621 22.609621,0 50.5,0z" Stretch="Fill" Fill="#FF246BDE" Name="Stroke" Visibility="Visible" />
+                                                            </Grid>
+                                                            <Path Data="M33.977998,27.684L33.977998,58.102997 41.373998,58.102997 41.373998,27.684z M14.841999,27.684L14.841999,58.102997 22.237998,58.102997 22.237998,27.684z M4.0319996,22.433001L52.183,22.433001 52.183,63.999001 4.0319996,63.999001z M15.974,0L40.195001,0 40.195001,7.7260003 56.167001,7.7260003 56.167001,16.000999 0,16.000999 0,7.7260003 15.974,7.7260003z" Stretch="Uniform" Fill="#FF246BDE" Width="20" Height="20" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5">
+                                                                <Path.RenderTransform>
+                                                                    <TransformGroup>
+                                                                        <TransformGroup.Children>
+                                                                            <RotateTransform Angle="0" />
+                                                                            <ScaleTransform ScaleX="1" ScaleY="1" />
+                                                                        </TransformGroup.Children>
+                                                                    </TransformGroup>
+                                                                </Path.RenderTransform>
+                                                            </Path>
+                                                        </Grid>
+                                                    </Button.Content>
+                                                </Button>
+                                                <Button x:Name="save" Background="Transparent">
+                                                    <Button.Content>
+                                                        <Grid>
+                                                            <Grid  Width="40" Height="40" Visibility="Visible">
+                                                                <Path Data="M50.5,4.7500001C25.232973,4.75 4.75,25.232973 4.7500001,50.5 4.75,75.767029 25.232973,96.25 50.5,96.25 75.767029,96.25 96.25,75.767029 96.25,50.5 96.25,25.232973 75.767029,4.75 50.5,4.7500001z M50.5,0C78.390381,0 101,22.609621 101,50.5 101,78.390381 78.390381,101 50.5,101 22.609621,101 0,78.390381 0,50.5 0,22.609621 22.609621,0 50.5,0z" Stretch="Fill" Fill="#FF246BDE"  Visibility="Visible" />
+                                                            </Grid>
+                                                            <Path Data="M8.1099597,36.94997L8.1099597,41.793968 39.213959,41.793968 39.213959,36.94997z M12.42,0.049999889L18.4,0.049999889 18.4,12.252 12.42,12.252z M0,0L7.9001866,0 7.9001866,14.64218 39.210766,14.64218 39.210766,0 47.401001,0 47.401001,47.917 0,47.917z" Stretch="Uniform" Fill="#FF246BDE" Width="20" Height="20" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5">
+                                                                <Path.RenderTransform>
+                                                                    <TransformGroup>
+                                                                        <TransformGroup.Children>
+                                                                            <RotateTransform Angle="0" />
+                                                                            <ScaleTransform ScaleX="1" ScaleY="1" />
+                                                                        </TransformGroup.Children>
+                                                                    </TransformGroup>
+                                                                </Path.RenderTransform>
+                                                            </Path>
+                                                        </Grid>
+                                                    </Button.Content>
+                                                </Button>
+                                                <Button x:Name="close" Background="Transparent">
+                                                    <Button.Content>
+                                                        <Grid>
+                                                            <Grid  Width="40" Height="40" Visibility="Visible">
+                                                                <Path Data="M50.5,4.7500001C25.232973,4.75 4.75,25.232973 4.7500001,50.5 4.75,75.767029 25.232973,96.25 50.5,96.25 75.767029,96.25 96.25,75.767029 96.25,50.5 96.25,25.232973 75.767029,4.75 50.5,4.7500001z M50.5,0C78.390381,0 101,22.609621 101,50.5 101,78.390381 78.390381,101 50.5,101 22.609621,101 0,78.390381 0,50.5 0,22.609621 22.609621,0 50.5,0z" Stretch="Fill" Fill="#FF246BDE"  Visibility="Visible" />
+                                                            </Grid>
+                                                            <Path Data="F1M54.0573,47.8776L38.1771,31.9974 54.0547,16.1198C55.7604,14.4141 55.7604,11.6511 54.0573,9.94531 52.3516,8.23962 49.5859,8.23962 47.8802,9.94531L32.0026,25.8229 16.1224,9.94531C14.4167,8.23962 11.6511,8.23962 9.94794,9.94531 8.24219,11.6511 8.24219,14.4141 9.94794,16.1198L25.8255,32 9.94794,47.8776C8.24219,49.5834 8.24219,52.3477 9.94794,54.0534 11.6511,55.7572 14.4167,55.7585 16.1224,54.0534L32.0026,38.1745 47.8802,54.0534C49.5859,55.7585 52.3516,55.7572 54.0573,54.0534 55.7604,52.3477 55.763,49.5834 54.0573,47.8776z" Stretch="Uniform" Fill="#FF246BDE" Width="20" Height="20" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5">
+                                                                <Path.RenderTransform>
+                                                                    <TransformGroup>
+                                                                        <TransformGroup.Children>
+                                                                            <RotateTransform Angle="0" />
+                                                                            <ScaleTransform ScaleX="1" ScaleY="1" />
+                                                                        </TransformGroup.Children>
+                                                                    </TransformGroup>
+                                                                </Path.RenderTransform>
+                                                            </Path>
+                                                        </Grid>
+                                                    </Button.Content>
+                                                </Button>
+                                            </StackPanel>
+                                            <Line X1="0" X2="1" Grid.ColumnSpan="2" Margin="25,0,0,0" Stroke="#FF246BDE"   Stretch="Fill" Grid.Row="2" StrokeThickness="1"/>
+                                            <input:SfTextBoxExt x:Name="notes" BorderThickness="0"  Grid.ColumnSpan="2" Margin="25,50,0,0"  Text="{Binding AppointmentWinRT.Notes}" Grid.Row="3" FontWeight="ExtraLight"  FontSize="20"  VerticalAlignment="Top"  Watermark="Notes"  TextWrapping="Wrap"/>
+                                        </Grid>
+                                    </Grid>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+
+                </Grid.Resources>
+                <Grid Background="WhiteSmoke" >
+                    <Grid Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                        <TextBlock x:Name="headerText" FontSize="30" FontWeight="Normal"  Margin="50,0,0,0" Foreground="Gray" />
+                        <syncfusion:SfSchedule TimeInterval="OneHour" Grid.Row="1" Grid.ColumnSpan="2" x:Name="Schedule" ScheduleType="Week" Background="White" Margin="0,0,0,0" IntervalHeight="50">
+                            <syncfusion:SfSchedule.AppointmentTemplate>
+                                <DataTemplate>
+                                    <Grid>
+                                        <Rectangle VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Fill="{Binding AppointmentBackground}"/>
+                                        <Grid >
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="0.75*" />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="40*" />
+                                                <ColumnDefinition  Width="60*"/>
+                                            </Grid.ColumnDefinitions>
+                                            <TextBlock Margin="10,2,0,0" Text="{Binding Subject}" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" Foreground="White" FontWeight="Light" FontFamily="Segoe UI"/>
+                                            <Image Height="50" Width="50" Source="{Binding AppointmentType,Converter={StaticResource imageconverter}}" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                                            <TextBlock  Text="{Binding AppointmentTime}" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="17" Foreground="White" FontWeight="Light" FontFamily="Segoe UI" TextWrapping="NoWrap"/>
+                                        </Grid>
+                                    </Grid>
+                                </DataTemplate>
+                            </syncfusion:SfSchedule.AppointmentTemplate>
+                        </syncfusion:SfSchedule>
+
+                        <Popup x:Name="RadialPopup" Grid.ColumnSpan="2" IsOpen="False" Grid.Row="1">
+                            <radialmenu:SfRadialMenu x:Name="radialMenu" RimBackground="#FF28A5DB" RimRadiusFactor="0.9"
+                                         IsOpen="False" Padding="5" EnableFreeRotation="True"
+                                         Visibility="Visible" Background="White" RadiusX="100" RadiusY="100">
+                                <radialmenu:SfRadialMenu.RenderTransform>
+                                    <TranslateTransform x:Name="transform2"/>
+                                </radialmenu:SfRadialMenu.RenderTransform>
+                                <radialmenu:SfRadialMenu.Icon>
+                                    <Grid Background="Transparent"/>
+                                </radialmenu:SfRadialMenu.Icon>
+                                <radialmenu:SfRadialMenuItem  Click="addButton_Click"  >
+                                    <radialmenu:SfRadialMenuItem.Header>
+                                        <Border Background="Transparent" Padding="5">
+                                            <StackPanel>
+                                                <Image Stretch="Uniform" Height="25" Width="25" >
+                                                    <Image.Source>
+                                                        <BitmapImage   UriSource="ms-appx:///Schedule/Assets/AddNew.png"/>
+                                                    </Image.Source>
+                                                </Image>
+                                                <TextBlock Text="Add"/>
+                                            </StackPanel>
+                                        </Border>
+                                    </radialmenu:SfRadialMenuItem.Header>
+                                </radialmenu:SfRadialMenuItem>
+                                <radialmenu:SfRadialMenuItem  Click="editButton_Click" IsEnabled="True"   >
+                                    <radialmenu:SfRadialMenuItem.Header>
+                                        <Border Background="Transparent" Padding="5">
+                                            <StackPanel>
+                                                <Image Stretch="Uniform" Height="25" Width="25" >
+                                                    <Image.Source>
+                                                        <BitmapImage UriSource="ms-appx:///Schedule/Assets/Edit.png"/>
+                                                    </Image.Source>
+                                                </Image>
+                                                <TextBlock Text="Edit"/>
+                                            </StackPanel>
+                                        </Border>
+                                    </radialmenu:SfRadialMenuItem.Header>
+                                </radialmenu:SfRadialMenuItem>
+                                <radialmenu:SfRadialMenuItem Click="copyButton_Click"  >
+                                    <radialmenu:SfRadialMenuItem.Header>
+                                        <Border Background="Transparent" Padding="5">
+                                            <StackPanel>
+                                                <Image Stretch="Uniform" Height="25" Width="25" >
+                                                    <Image.Source>
+                                                        <BitmapImage UriSource="ms-appx:///Schedule/Assets/Copy.png" />
+                                                    </Image.Source>
+                                                </Image>
+                                                <TextBlock Text="Copy"/>
+                                            </StackPanel>
+                                        </Border>
+                                    </radialmenu:SfRadialMenuItem.Header>
+                                </radialmenu:SfRadialMenuItem>
+                                <radialmenu:SfRadialMenuItem   Click="pasteButton_Click" >
+                                    <radialmenu:SfRadialMenuItem.Header>
+                                        <Border Background="Transparent" Padding="5">
+                                            <StackPanel>
+                                                <Image Stretch="Uniform" Height="25" Width="25" >
+                                                    <Image.Source>
+                                                        <BitmapImage UriSource="ms-appx:///Schedule/Assets/Paste.png" />
+                                                    </Image.Source>
+                                                </Image>
+                                                <TextBlock Text="Paste"/>
+                                            </StackPanel>
+                                        </Border>
+                                    </radialmenu:SfRadialMenuItem.Header>
+                                </radialmenu:SfRadialMenuItem>
+                                <radialmenu:SfRadialMenuItem/>
+                                <radialmenu:SfRadialMenuItem  Click="deleteButton_Click"   >
+                                    <radialmenu:SfRadialMenuItem.Header>
+                                        <Border Background="Transparent" Padding="5">
+                                            <StackPanel>
+                                                <Image Stretch="Uniform" Height="25" Width="25" >
+                                                    <Image.Source>
+                                                        <BitmapImage UriSource="ms-appx:///Schedule/Assets/Delete.png" />
+                                                    </Image.Source>
+                                                </Image>
+                                                <TextBlock Text="Delete"/>
+                                            </StackPanel>
+                                        </Border>
+                                    </radialmenu:SfRadialMenuItem.Header>
+                                </radialmenu:SfRadialMenuItem>
+                            </radialmenu:SfRadialMenu>
+                        </Popup>
+
+
+                        <local:NewCustomEditorWinRT  x:Name="customeEditor" Grid.ColumnSpan="2" Grid.Row="1" Style="{StaticResource Editor}"/>
+
+                    </Grid>
+                </Grid>
+            </Grid>
+        </ContentControl>
+    </common:SampleLayout.Sample>
+   
+</common:SampleLayout>

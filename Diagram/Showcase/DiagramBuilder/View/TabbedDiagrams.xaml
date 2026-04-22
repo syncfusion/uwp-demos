@@ -1,0 +1,54 @@
+﻿<ItemsControl
+    x:Class="DiagramBuilder.View.TabbedDiagrams"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DiagramBuilder.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:util="using:DiagramBuilder.Utility"
+    xmlns:controls="using:Syncfusion.UI.Xaml.Diagram.Controls"
+    ItemsSource="{Binding Diagrams}"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+    <ItemsControl.Resources>
+        <util:BooleanToVisibility x:Key="BTV"/>
+    </ItemsControl.Resources>
+    <ItemsControl.Template>
+        <ControlTemplate>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <ItemsPresenter Grid.Row="1"/>
+            </Grid>
+        </ControlTemplate>
+    </ItemsControl.Template>
+    <ItemsControl.ItemsPanel>
+        <ItemsPanelTemplate>
+            <Grid/>
+        </ItemsPanelTemplate>
+    </ItemsControl.ItemsPanel>
+    <ItemsControl.ItemTemplate>
+        <DataTemplate>
+            <Grid>
+                <local:Diagram x:Name="diagrambuilder" Visibility="{Binding Path=IsSelected, Converter={StaticResource BTV}}"
+                               ExportSettings="{Binding ExportSettings}"
+                               PrintingService="{Binding PrintingService}"
+                               Tool="{Binding Tool, Mode=TwoWay}"
+                               DefaultConnectorType="{Binding DefaultConnectorType, Mode=TwoWay}"
+                               Nodes="{Binding NodeCollection}"
+                               Groups="{Binding GroupCollection}"
+                               Connectors="{Binding ConnectorCollection}"
+                               SelectedItems="{Binding SelectedItems}"
+                               PageSettings="{Binding PageSettings}"
+                               HorizontalRuler="{Binding HorizontalRuler}"
+                               VerticalRuler="{Binding VerticalRuler}"
+                               SnapSettings="{Binding SnapSettings}"
+                               PortVisibility="{Binding PortVisibility}">
+                </local:Diagram>
+            </Grid>
+        </DataTemplate>
+    </ItemsControl.ItemTemplate>
+</ItemsControl>

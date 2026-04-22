@@ -1,0 +1,37 @@
+﻿<common:SampleLayout
+    x:Class="Syncfusion.SampleBrowser.UWP.SfGantt.Stripline"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Syncfusion.SampleBrowser.UWP.SfGantt"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:common="using:Common"
+    xmlns:gantt="using:Syncfusion.UI.Xaml.Gantt"
+    mc:Ignorable="d">
+
+    <common:SampleLayout.Sample>
+        <UserControl>
+            <Grid x:Name="GridPanel" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                <Grid.DataContext>
+                    <local:ProjectTrackerViewModel/>
+                </Grid.DataContext>
+                <gantt:SfGantt x:Name="GanttControl" ItemsSource="{Binding TaskCollection}"
+                               TimescaleStartDate="01/26/2014" TimescaleEndDate="04/12/2014"
+                               ProjectResources="{Binding ResourceCollection}"
+                               EnableSelection="False"
+                               Striplines="{Binding StriplineCollection}">
+                    <gantt:SfGantt.TimescaleSettings>
+                        <gantt:TimescaleSettings x:Name="TimescaleSettings">
+                            <gantt:TimescaleSettings.TopTier>
+                                <gantt:TimescaleTier IntervalType="Weeks"/>
+                            </gantt:TimescaleSettings.TopTier>
+                            <gantt:TimescaleSettings.BottomTier>
+                                <gantt:TimescaleTier x:Name="BottomTier" IntervalType="Days"/>
+                            </gantt:TimescaleSettings.BottomTier>
+                        </gantt:TimescaleSettings>
+                    </gantt:SfGantt.TimescaleSettings>
+                </gantt:SfGantt>
+            </Grid>
+        </UserControl>
+    </common:SampleLayout.Sample>
+</common:SampleLayout>

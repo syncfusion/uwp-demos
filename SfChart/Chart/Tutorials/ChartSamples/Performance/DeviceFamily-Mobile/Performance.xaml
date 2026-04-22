@@ -1,0 +1,55 @@
+﻿<common:SampleLayout
+    x:Class="Syncfusion.SampleBrowser.UWP.SfChart.Performance"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Syncfusion.SampleBrowser.UWP.SfChart"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:common="using:Common"
+    xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
+    mc:Ignorable="d">
+
+    <common:SampleLayout.Sample>
+        <ContentControl>
+            <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                <Grid.Resources>
+                    <Style x:Key="axisLineStyle" TargetType="Line">
+                        <Setter Property="Stroke" Value="#FFD1D3D4"/>
+                        <Setter Property="StrokeThickness" Value="1"/>
+                    </Style>
+
+                    <DataTemplate x:Key="headerTemplate">
+                        <TextBlock Text="{Binding}" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    </DataTemplate>
+                </Grid.Resources>
+
+                <chart:SfChart x:Name="lineChart" Margin="8,5,10,5" AreaBorderThickness="0,0.5,0.5,0" >
+                    <chart:SfChart.Header>
+                        <TextBlock Text="Performance of loading(100K Points)" FontFamily="Seoge UI"  Margin="0,0,0,20" FontSize="17"/>
+                    </chart:SfChart.Header>
+
+                    <chart:SfChart.Behaviors>
+                        <chart:ChartZoomPanBehavior/>
+                    </chart:SfChart.Behaviors>
+
+                    <chart:SfChart.PrimaryAxis>
+                        <chart:CategoryAxis  ShowGridLines="False" LabelFormat="MM/dd" Header="Date"
+                                     HeaderTemplate="{StaticResource headerTemplate}"
+                                     AxisLineStyle="{StaticResource axisLineStyle}" 
+                                     MajorTickLineStyle="{StaticResource axisLineStyle}" />
+                    </chart:SfChart.PrimaryAxis>
+
+                    <chart:SfChart.SecondaryAxis>
+                        <chart:NumericalAxis RangePadding="Round" Header="Value"
+                                     HeaderTemplate="{StaticResource headerTemplate}"
+                                     AxisLineStyle="{StaticResource axisLineStyle}" 
+                                     MajorTickLineStyle="{StaticResource axisLineStyle}" >
+                        </chart:NumericalAxis>
+                    </chart:SfChart.SecondaryAxis>
+
+                    <chart:FastLineBitmapSeries EnableAntiAliasing="False" XBindingPath="Date" YBindingPath="Value"/>
+                </chart:SfChart>
+            </Grid>
+        </ContentControl>
+    </common:SampleLayout.Sample>
+</common:SampleLayout>
