@@ -1,3 +1,0 @@
-Syncfusion.SampleBrowser.UWP.Common.dll
-Syncfusion.SfGauge.UWP.dll
-Syncfusion.Licensing.dll
