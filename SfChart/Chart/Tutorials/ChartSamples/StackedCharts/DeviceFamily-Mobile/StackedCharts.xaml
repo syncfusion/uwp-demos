@@ -1,0 +1,298 @@
+﻿<common:SampleLayout
+    x:Class="Syncfusion.SampleBrowser.UWP.SfChart.StackedCharts"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Syncfusion.SampleBrowser.UWP.SfChart"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:common="using:Common"
+    xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
+    mc:Ignorable="d">
+
+    <common:SampleLayout.Sample>
+        <ContentControl>
+            <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                <Grid.Resources>
+                    <DataTemplate x:Key="DataLabelTemplate">
+                        <Grid>
+                            <TextBlock Text="{Binding}" Margin="2,2,10,0" FontSize="10" FontStretch="Expanded" 
+                                   Foreground="White" FontFamily="Segoeui" FontWeight="Light" 
+                                   VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        </Grid>
+                    </DataTemplate>
+
+                    <DataTemplate x:Key="AdornmentLabelTemplate">
+                        <Grid>
+                            <TextBlock Text="{Binding}" Margin="2,2,10,0" FontSize="10" FontStretch="Expanded" 
+                                   Foreground="Black" FontFamily="Segoeui" FontWeight="Light" 
+                                   VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        </Grid>
+                    </DataTemplate>
+
+                    <DataTemplate x:Key="adornment">
+                        <Grid>
+                            <Ellipse Fill="#FFF4F4F5" HorizontalAlignment="Stretch" Height="15" 
+                                 Stroke="#EE5A5A5A" VerticalAlignment="Stretch" Width="15"/>
+                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" 
+                                   TextWrapping="Wrap" Text="{Binding}" FontSize="8" Foreground="#FF585858" 
+                                   FontFamily="Segoe UI" FontWeight="Bold"/>
+                        </Grid>
+                    </DataTemplate>
+
+                    <Style x:Key="axisLineStyle" TargetType="Line">
+                        <Setter Property="Stroke" Value="#FFD1D3D4"/>
+                        <Setter Property="StrokeThickness" Value="1"/>
+                    </Style>
+
+                    <DataTemplate x:Key="headerTemplate">
+                        <TextBlock Text="{Binding}" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    </DataTemplate>
+                </Grid.Resources>
+
+                <Hub>
+                    <HubSection Header="Stacked Bar" Width="330">
+                        <DataTemplate>
+                            <chart:SfChart x:Name="stBarChart" Margin="0,0,0,5"  DataContext="{Binding BarChartViewModel}" 
+                                           AreaBorderThickness="0,0.5,0.5,0" >
+
+                                <chart:SfChart.Legend>
+                                    <chart:ChartLegend DockPosition="Top" />
+                                </chart:SfChart.Legend>
+
+                                <chart:SfChart.PrimaryAxis>
+                                    <chart:CategoryAxis Header="Year" PositionPath="ProdId" ContentPath="Prodname" 
+                                                LabelsSource="{Binding Products}"
+                                                HeaderTemplate="{StaticResource headerTemplate}"
+                                                AxisLineStyle="{StaticResource axisLineStyle}" 
+                                                MajorTickLineStyle="{StaticResource axisLineStyle}" />
+                                </chart:SfChart.PrimaryAxis>
+
+                                <chart:SfChart.SecondaryAxis>
+                                    <chart:NumericalAxis Header="Gold OZ (x1000)"
+                                                 HeaderTemplate="{StaticResource headerTemplate}"
+                                                 AxisLineStyle="{StaticResource axisLineStyle}" 
+                                                 MajorTickLineStyle="{StaticResource axisLineStyle}" />
+                                </chart:SfChart.SecondaryAxis>
+
+                                <chart:StackingBarSeries Label="Inferred" ItemsSource="{Binding GoldInventoryDetails}"
+                                         XBindingPath="Year" YBindingPath="Inferred" AdornmentsInfo="{Binding AdornmentInfo1}" />
+
+                                <chart:StackingBarSeries Label="Measured" ItemsSource="{Binding GoldInventoryDetails}"  
+                                         XBindingPath="Year" YBindingPath="Measured" AdornmentsInfo="{Binding AdornmentInfo11}" />
+
+                                <chart:StackingBarSeries Label="Reserves" ItemsSource="{Binding GoldInventoryDetails}" 
+                                         XBindingPath="Year" YBindingPath="Reserves"  AdornmentsInfo="{Binding AdornmentInfo12}"/>
+                            </chart:SfChart>
+                        </DataTemplate>
+                    </HubSection>
+
+                    <HubSection Header="Stacked Bar 100" Width="330">
+                        <DataTemplate>
+                            <chart:SfChart x:Name="stBar100Chart" Margin="0,0,0,5" DataContext="{Binding BarChartViewModel}" 
+                                           AreaBorderThickness="0,0.5,0.5,0" >
+
+                                <chart:SfChart.Legend>
+                                    <chart:ChartLegend/>
+                                </chart:SfChart.Legend>
+
+                                <chart:SfChart.PrimaryAxis>
+                                    <chart:CategoryAxis Header="Year" PositionPath="ProdId" ContentPath="Prodname"
+                                                LabelsSource="{Binding Products}"
+                                                HeaderTemplate="{StaticResource headerTemplate}"
+                                                AxisLineStyle="{StaticResource axisLineStyle}" 
+                                                MajorTickLineStyle="{StaticResource axisLineStyle}" />
+                                </chart:SfChart.PrimaryAxis>
+
+                                <chart:SfChart.SecondaryAxis>
+                                    <chart:NumericalAxis RangePadding="Round" Header="Gold OZ (Percentage)"
+                                                 HeaderTemplate="{StaticResource headerTemplate}"
+                                                 AxisLineStyle="{StaticResource axisLineStyle}" 
+                                                 MajorTickLineStyle="{StaticResource axisLineStyle}" />
+                                </chart:SfChart.SecondaryAxis>
+
+                                <chart:StackingBar100Series EnableAnimation="True" Label="Inferred" 
+                                            ItemsSource="{Binding GoldInventoryDetails}" AdornmentsInfo="{Binding AdornmentInfo10}"
+                                            XBindingPath="Year" YBindingPath="Inferred">
+                                </chart:StackingBar100Series>
+
+                                <chart:StackingBar100Series EnableAnimation="True" Label="Measured" 
+                                            ItemsSource="{Binding GoldInventoryDetails}" AdornmentsInfo="{Binding AdornmentInfo110}"
+                                            XBindingPath="Year" YBindingPath="Measured">
+                                </chart:StackingBar100Series>
+
+                                <chart:StackingBar100Series EnableAnimation="True" Label="Reserves" 
+                                            ItemsSource="{Binding GoldInventoryDetails}" AdornmentsInfo="{Binding AdornmentInfo120}"
+                                            XBindingPath="Year" YBindingPath="Reserves">
+                                </chart:StackingBar100Series>
+                            </chart:SfChart>
+                        </DataTemplate>
+                    </HubSection>
+
+                    <HubSection Header="Stacked Area" Width="330">
+                        <DataTemplate>
+                            <chart:SfChart x:Name="stAreaChart" Margin="0,0,0,5" DataContext="{Binding AreaChartViewModel}" 
+                                           AreaBorderThickness="0,0.5,0.5,0">
+
+                                <chart:SfChart.Legend>
+                                    <chart:ChartLegend />
+                                </chart:SfChart.Legend>
+
+                                <chart:SfChart.PrimaryAxis>
+                                    <chart:CategoryAxis Header="Years 2008-2013" 
+                                                HeaderTemplate="{StaticResource headerTemplate}"
+                                                AxisLineStyle="{StaticResource axisLineStyle}" 
+                                                MajorTickLineStyle="{StaticResource axisLineStyle}" />
+                                </chart:SfChart.PrimaryAxis>
+
+                                <chart:SfChart.SecondaryAxis>
+                                    <chart:NumericalAxis RangePadding="Round" Header="Temperature in Celsius"
+                                                 HeaderTemplate="{StaticResource headerTemplate}"
+                                                 AxisLineStyle="{StaticResource axisLineStyle}" 
+                                                 MajorTickLineStyle="{StaticResource axisLineStyle}" />
+                                </chart:SfChart.SecondaryAxis>
+
+                                <chart:StackingAreaSeries StrokeThickness="4" Interior="#851BA1E2" Stroke="#FF1BA1E2" 
+                                                          EnableAnimation="False" Label="Autumn" Canvas.ZIndex="3" 
+                                                          XBindingPath="Year" YBindingPath="Autumn" 
+                                                          AdornmentsInfo="{Binding AdornmentInfo2}"
+                                                          ItemsSource="{Binding TemperatureData}">
+                                </chart:StackingAreaSeries>
+
+                                <chart:StackingAreaSeries StrokeThickness="4" Interior="#8586BA35" Stroke="#FF86BA35"
+                                          EnableAnimation="False" Label="Spring" Canvas.ZIndex="2" 
+                                          XBindingPath="Year" YBindingPath="Spring" AdornmentsInfo="{Binding AdornmentInfo3}"
+                                          ItemsSource="{Binding TemperatureData}">
+                                </chart:StackingAreaSeries>
+
+                                <chart:StackingAreaSeries StrokeThickness="4" Interior="#85C3942B" Stroke="#C3942B" 
+                                          EnableAnimation="False" Label="Summer" XBindingPath="Year" AdornmentsInfo="{Binding AdornmentInfo4}"
+                                          YBindingPath="Summer" ItemsSource="{Binding TemperatureData}">
+                                </chart:StackingAreaSeries>
+                            </chart:SfChart>
+                        </DataTemplate>
+                    </HubSection>
+
+                    <HubSection Header="Stacked Area 100" Width="330">
+                        <DataTemplate>
+                            <chart:SfChart x:Name="stArea100Chart" AreaBorderThickness="0" Margin="0,0,0,5" 
+                                           DataContext="{Binding AreaChartViewModel}">
+
+                                <chart:SfChart.Legend>
+                                    <chart:ChartLegend/>
+                                </chart:SfChart.Legend>
+
+                                <chart:SfChart.PrimaryAxis>
+                                    <chart:CategoryAxis Header="Years 2008-2013"
+                                                HeaderTemplate="{StaticResource headerTemplate}"
+                                                AxisLineStyle="{StaticResource axisLineStyle}" 
+                                                MajorTickLineStyle="{StaticResource axisLineStyle}" />
+                                </chart:SfChart.PrimaryAxis>
+
+                                <chart:SfChart.SecondaryAxis>
+                                    <chart:NumericalAxis Header="Temperature in celsius"
+                                                 HeaderTemplate="{StaticResource headerTemplate}"
+                                                 AxisLineStyle="{StaticResource axisLineStyle}" 
+                                                 MajorTickLineStyle="{StaticResource axisLineStyle}" />
+                                </chart:SfChart.SecondaryAxis>
+
+                                <chart:StackingArea100Series StrokeThickness="4" Interior="#851BA1E2" Stroke="#FF1BA1E2" 
+                                             EnableAnimation="False" Label="Autumn" Canvas.ZIndex="3" 
+                                             XBindingPath="Year" YBindingPath="Autumn" AdornmentsInfo="{Binding AdornmentInfo11}"
+                                             ItemsSource="{Binding TemperatureData}">
+                                </chart:StackingArea100Series>
+
+                                <chart:StackingArea100Series StrokeThickness="4" Interior="#8586BA35" Stroke="#FF86BA35" 
+                                             EnableAnimation="False" Label="Spring" Canvas.ZIndex="2" 
+                                             XBindingPath="Year" YBindingPath="Spring"  AdornmentsInfo="{Binding AdornmentInfo12}"
+                                             ItemsSource="{Binding TemperatureData}">
+                                </chart:StackingArea100Series>
+
+                                <chart:StackingArea100Series StrokeThickness="4" Interior="#85C3942B" Stroke="#C3942B" 
+                                                             EnableAnimation="False" Label="Summer" XBindingPath="Year" 
+                                                             AdornmentsInfo="{Binding AdornmentInfo13}"
+                                                             YBindingPath="Summer" ItemsSource="{Binding TemperatureData}">
+                                </chart:StackingArea100Series>
+                            </chart:SfChart>
+                        </DataTemplate>
+                    </HubSection>
+
+                    <HubSection Header="Stacked Column" Width="330">
+                        <DataTemplate>
+                            <chart:SfChart x:Name="stColumnChart" Margin="0,0,0,5" DataContext="{Binding ColumnChartViewModel}" 
+                                           AreaBorderThickness="0,0.5,0.5,0">
+                                
+                                <chart:SfChart.Legend>
+                                    <chart:ChartLegend />
+                                </chart:SfChart.Legend>
+
+                                <chart:SfChart.PrimaryAxis>
+                                    <chart:CategoryAxis Header="Country"
+                                                HeaderTemplate="{StaticResource headerTemplate}"
+                                                AxisLineStyle="{StaticResource axisLineStyle}" 
+                                                MajorTickLineStyle="{StaticResource axisLineStyle}" />
+                                </chart:SfChart.PrimaryAxis>
+
+                                <chart:SfChart.SecondaryAxis>
+                                    <chart:NumericalAxis RangePadding="Round" Header="Number of Medals"
+                                                 HeaderTemplate="{StaticResource headerTemplate}"
+                                                 AxisLineStyle="{StaticResource axisLineStyle}" 
+                                                 MajorTickLineStyle="{StaticResource axisLineStyle}" />
+                                </chart:SfChart.SecondaryAxis>
+
+                                <chart:StackingColumnSeries EnableAnimation="True" LegendIcon="Circle" Interior="Gold" 
+                                            Label="Gold" XBindingPath="CountryName" YBindingPath="GoldMedals" 
+                                            ItemsSource="{Binding MedalDetails}" AdornmentsInfo="{Binding AdornmentInfo5}" />
+
+                                <chart:StackingColumnSeries EnableAnimation="True" LegendIcon="Circle" Interior="Silver" 
+                                            Label="Silver" XBindingPath="CountryName" YBindingPath="SilverMedals" 
+                                            ItemsSource="{Binding MedalDetails}" AdornmentsInfo="{Binding AdornmentInfo51}" />
+
+                                <chart:StackingColumnSeries EnableAnimation="True" LegendIcon="Circle" Interior="SandyBrown" 
+                                            Label="Bronze" XBindingPath="CountryName" YBindingPath="BronzeMedals" 
+                                            ItemsSource="{Binding MedalDetails}" AdornmentsInfo="{Binding AdornmentInfo52}" />
+                            </chart:SfChart>
+                        </DataTemplate>
+                    </HubSection>
+
+                    <HubSection Header="Stacked Column 100" Width="330">
+                        <DataTemplate>
+                            <chart:SfChart x:Name="stColumn100Chart" Margin="0,0,0,5" DataContext="{Binding ColumnChartViewModel}" 
+                                           AreaBorderThickness="0,0.5,0.5,0">
+
+                                <chart:SfChart.Legend>
+                                    <chart:ChartLegend/>
+                                </chart:SfChart.Legend>
+
+                                <chart:SfChart.PrimaryAxis>
+                                    <chart:CategoryAxis Header="Country"
+                                                HeaderTemplate="{StaticResource headerTemplate}"
+                                                AxisLineStyle="{StaticResource axisLineStyle}" 
+                                                MajorTickLineStyle="{StaticResource axisLineStyle}" />
+                                </chart:SfChart.PrimaryAxis>
+
+                                <chart:SfChart.SecondaryAxis>
+                                    <chart:NumericalAxis RangePadding="Round" Header="Number of Medals (Percentage)"
+                                                 HeaderTemplate="{StaticResource headerTemplate}"
+                                                 AxisLineStyle="{StaticResource axisLineStyle}" 
+                                                 MajorTickLineStyle="{StaticResource axisLineStyle}" />
+                                </chart:SfChart.SecondaryAxis>
+
+                                <chart:StackingColumn100Series EnableAnimation="True" LegendIcon="Circle" Interior="Gold" 
+                                               Label="Gold" XBindingPath="CountryName" YBindingPath="GoldMedals" 
+                                               ItemsSource="{Binding MedalDetails}" AdornmentsInfo="{Binding AdornmentInfo50}" />
+
+                                <chart:StackingColumn100Series EnableAnimation="True" LegendIcon="Circle" Interior="Silver" 
+                                               Label="Silver" XBindingPath="CountryName" YBindingPath="SilverMedals" 
+                                               ItemsSource="{Binding MedalDetails}" AdornmentsInfo="{Binding AdornmentInfo510}" />
+
+                                <chart:StackingColumn100Series EnableAnimation="True" LegendIcon="Circle" Interior="SandyBrown" 
+                                               Label="Bronze" XBindingPath="CountryName" YBindingPath="BronzeMedals" 
+                                               ItemsSource="{Binding MedalDetails}" AdornmentsInfo="{Binding AdornmentInfo520}" />
+                            </chart:SfChart>
+                        </DataTemplate>
+                    </HubSection>
+                </Hub>
+            </Grid>
+        </ContentControl>
+    </common:SampleLayout.Sample>
+</common:SampleLayout>

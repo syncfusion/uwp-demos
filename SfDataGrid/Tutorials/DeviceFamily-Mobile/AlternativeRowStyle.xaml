@@ -1,0 +1,79 @@
+﻿<View:SampleLayout x:Class="DataGrid.AlternativeRowStyle"
+                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"                  
+                    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                    xmlns:local="using:DataGrid"
+                    xmlns:View="using:Common" 
+                    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Grid"
+                    xmlns:run="using:Syncfusion.UI.Xaml.Utils"
+                    xmlns:media="using:Syncfusion.UI.Xaml.Controls.Media"
+                    xmlns:converter="using:Syncfusion.UI.Xaml.Converters"
+                    mc:Ignorable="d">
+
+    <View:SampleLayout.Resources>
+        <converter:ColorToBrushConverter x:Key="Brushconverter"/>
+        <Style x:Key="alternatingRowStyle" TargetType="syncfusion:VirtualizingCellsControl">
+            <Setter Property="run:SetterValueBindingHelper.PropertyBinding">
+                <Setter.Value>
+                    <run:SetterValueBindingHelper Property="Background" Binding="{Binding ElementName=alternatingRowBackgroundPicker, Path=SelectedColor, Converter={StaticResource Brushconverter}}" />
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="rowStyle" TargetType="syncfusion:VirtualizingCellsControl">
+            <Setter Property="run:SetterValueBindingHelper.PropertyBinding">
+                <Setter.Value>
+                    <run:SetterValueBindingHelper Property="Background" Binding="{Binding ElementName=rowBackgroundPicker, Path=SelectedColor, Converter={StaticResource Brushconverter}}" />
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </View:SampleLayout.Resources>
+    
+    <View:SampleLayout.Sample>
+        <syncfusion:SfDataGrid x:Name="SfDataGrid"
+                               AddNewRowPosition="Top"
+                               AllowEditing="False"
+                               AllowFiltering="True"
+                               Margin="10,5,5,5"
+                               AllowDraggingColumns="True"
+                               AllowGrouping="True"
+                               AutoGenerateColumns="True"
+                               Background="White"
+                               LiveDataUpdateMode="AllowDataShaping"
+                               AlternatingRowStyle="{StaticResource alternatingRowStyle}"
+                               RowStyle="{StaticResource rowStyle}"
+                               ShowGroupDropArea="True"
+                               ShowRowHeader="True">
+        </syncfusion:SfDataGrid>
+    </View:SampleLayout.Sample>
+    
+    <View:SampleLayout.Setting>
+        <ContentControl>
+            <StackPanel  Margin="5">
+                <TextBlock Margin="5,5,0,5"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Center"
+                 Text="Alternative Row Background: " />
+                <media:SfColorPicker x:Name="alternatingRowBackgroundPicker"
+                           Width="280"
+                           MinWidth="280"
+                           Height="150"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           SelectedColor="#EFEFEF" />
+                <TextBlock Margin="5,5,0,5"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Center"
+                 Text="Row Background: " />
+                <media:SfColorPicker x:Name="rowBackgroundPicker"
+                           Width="280"
+                           MinWidth="280"
+                           Height="150"  
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           SelectedColor="White" />
+
+            </StackPanel>
+        </ContentControl>
+    </View:SampleLayout.Setting>
+</View:SampleLayout>

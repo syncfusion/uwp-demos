@@ -1,0 +1,95 @@
+﻿<Page
+    x:Class="MapControlUWP_Samples.TicketBooking"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MapControlUWP_Samples"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Maps"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Margin="0,0,0,20" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="0.3*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock Text="&#x1F68D;" Foreground="Black" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock HorizontalAlignment="Center" Margin="5,0,0,0" VerticalAlignment="Center" Text="Ticketing System" FontSize="20" Foreground="Black" />
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="1" Margin="0,10,0,15">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.05*"/>
+                <ColumnDefinition Width="0.35*"/>
+                <ColumnDefinition Width="0.35*"/>
+                <ColumnDefinition Width="0.05*"/>
+            </Grid.ColumnDefinitions>
+            <Border Margin="0,0,0,15" Grid.Column="1" BorderThickness="5" BorderBrush="Gray" CornerRadius="8">
+                <syncfusion:SfMap x:Name="map" EnableZoom="False"  MapView="NormalView" Margin="20" MaxZoom="44">           
+            <syncfusion:SfMap.Layers>
+                        <syncfusion:ShapeFileLayer x:Name="shapelayer" EnableMultiSelection="True"  ShapesSelected="shapelayer_ShapesSelected" MapItemsVisibility="Collapsed" ShapeIDPath="SeatNumber" ShapeIDTableField="seatno" EnableSelection="True">
+                        <syncfusion:ShapeFileLayer.ShapeSettings>
+                                <syncfusion:ShapeSetting ShapeFill="Gray" ShapeValuePath="SeatNumber" ShapeColorValuePath="SeatNumber"
+                                                 ShapeStroke="#876732" ShapeStrokeThickness="1" SelectedShapeColor="#62AA5F">
+                                <syncfusion:ShapeSetting.FillSetting>
+                                    <syncfusion:ShapeFillSetting AutoFillColors="False">
+                                        <syncfusion:ShapeFillSetting.ColorMappings>
+                                            <syncfusion:EqualsColorMapping  Value="9" Color="#FFA500"/>
+                                            <syncfusion:EqualsColorMapping  Value="8"  Color="#FFA500"/>
+                                            <syncfusion:EqualsColorMapping  Value="1"  Color="#FFA500"/>
+                                            <syncfusion:EqualsColorMapping  Value="2"  Color="#FFA500"/>
+                                        </syncfusion:ShapeFillSetting.ColorMappings>
+                                    </syncfusion:ShapeFillSetting>
+                                </syncfusion:ShapeSetting.FillSetting>
+                            </syncfusion:ShapeSetting>
+                        </syncfusion:ShapeFileLayer.ShapeSettings>
+                    </syncfusion:ShapeFileLayer>
+            </syncfusion:SfMap.Layers>
+        </syncfusion:SfMap>
+            </Border>
+            <Grid Grid.Column="2" Margin="10,0,10,0" x:Name="grid">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Border Grid.Row="0" BorderThickness="0,0,0,1" BorderBrush="Black">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="0">
+                        <Rectangle Width="15" Height="15" Fill="Gray"/>
+                        <TextBlock Margin="5,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Available" FontSize="12" Foreground="Black" />
+                </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="1">
+                        <Rectangle Width="15" Height="15" Fill="#62AA5F"/>
+                        <TextBlock Margin="5,0,0,0" VerticalAlignment="Center" Text="Selected" FontSize="12" Foreground="Black" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="2">
+                        <Rectangle Width="15" Height="15" Fill="#FFA500"/>
+                        <TextBlock Margin="5,0,0,0" VerticalAlignment="Center" Text="Booked" FontSize="12" Foreground="Black" />
+                    </StackPanel>                   
+                </Grid>
+                </Border>
+                <Grid Grid.Row="1" Margin="10,0,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.3*"/>
+                        <RowDefinition Height="0.3*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                        <TextBlock Text="Seats Selected" Grid.Row="0" Margin="0,5,0,0" Foreground="#0041C2" FontSize="12" HorizontalAlignment="Center" />
+                        <TextBlock x:Name="SelectedLabelCount" Grid.Row="1" Margin="10,5,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="11"/>
+                        <TextBlock x:Name="SelectedLabel" FontSize="11" TextWrapping="Wrap" Margin="10,0,0,0" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    
+                </Grid>
+                <Button x:Name="clearButton" Click="clearButton_Click" FontSize="12" Grid.Row="2" Height="30" Width="{Binding ElementName=grid, Path=ActualWidth}" Content="Clear Selection"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

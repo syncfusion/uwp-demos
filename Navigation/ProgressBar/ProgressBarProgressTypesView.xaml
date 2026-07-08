@@ -1,0 +1,66 @@
+﻿<View:SampleLayout
+    x:Class="SampleBrowser.ProgressBar.ProgressBarProgressTypesView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SampleBrowser.ProgressBar" xmlns:View="using:Common"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" xmlns:notification="using:Syncfusion.UI.Xaml.Controls.Notification"
+    xmlns:converters="using:Syncfusion.UI.Xaml.Converters"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+    <UserControl.DataContext>
+        <local:ProgressTypesProperties/>
+    </UserControl.DataContext>
+    <UserControl.Resources>
+        <converters:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+        <converters:InverseBooleanToVisibilityConverter x:Key="InverseBooleanToVisibilityConverter"/>
+        <SolidColorBrush x:Key="AccentBrush" Color="#FF1196CD"/>
+    </UserControl.Resources>
+
+    <View:SampleLayout.Sample>
+        
+        <ContentControl HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center">
+            <Viewbox MaxWidth="250" MaxHeight="250">
+            <Grid x:Name="controlView" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <notification:SfProgressBar x:Name="defaultProgressBar" VerticalAlignment="Center" HorizontalAlignment="Center" Width="{Binding Width,Mode=TwoWay}"
+                                        ProgressType="{Binding ProgressType,Mode=TwoWay}" Value="{Binding Value,Mode=TwoWay}" Foreground="{StaticResource AccentBrush}"
+                                        FillDirection="{Binding FillDirection,Mode=TwoWay}" IsDirectionReversed="{Binding ElementName=reverseFill,Path=IsChecked}" DisplayContentMode="{Binding DisplayContentMode,Mode=TwoWay}" BackRimRadius="70" Radius="70"
+                                        FontSize="{Binding FontSize,Mode=TwoWay}" Shape="{Binding Shape,Mode=TwoWay}" CustomContent="Loading..." Height="{Binding Height,Mode=TwoWay}"/>
+      
+        </Grid>
+        </Viewbox>
+        </ContentControl>
+    </View:SampleLayout.Sample>
+    <View:SampleLayout.Setting>
+        <ContentControl>
+            <Grid Margin="10 0 10 10" x:Name="setting" Width="300">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <TextBlock Text="Progress Types" Margin="10 5"/>
+                <ComboBox Margin="10 5" Grid.Row="1" HorizontalAlignment="Stretch" Loaded="progressType_Loaded" SelectedItem="{Binding ProgressType,Mode=TwoWay}" x:Name="progressType"/>
+
+                <TextBlock Text="Display Content" Margin="10 5" Grid.Row="2" Visibility="{Binding IsShapes,Converter={StaticResource InverseBooleanToVisibilityConverter}}"/>
+                <ComboBox Margin="10 5" Grid.Row="3" HorizontalAlignment="Stretch" Loaded="displayContent_Loaded" SelectedItem="{Binding DisplayContentMode,Mode=TwoWay}" x:Name="displayContent" Visibility="{Binding IsShapes,Converter={StaticResource InverseBooleanToVisibilityConverter}}"/>
+
+                <TextBlock Text="Shapes" Margin="10 5" Grid.Row="4" Visibility="{Binding IsShapes,Converter={StaticResource BooleanToVisibilityConverter}}"/>
+                <ComboBox Margin="10 5" Grid.Row="5" Loaded="Shapes_Loaded" SelectedItem="{Binding Shape, Mode=TwoWay}" HorizontalAlignment="Stretch" x:Name="shapes" Visibility="{Binding IsShapes,Converter={StaticResource BooleanToVisibilityConverter}}" SelectionChanged="shapes_SelectionChanged"/>
+
+                <TextBlock Text="Fill Direction" Margin="10 5" Grid.Row="6" Visibility="{Binding IsShapes,Converter={StaticResource BooleanToVisibilityConverter}}"/>
+                <ComboBox Margin="10 5" Grid.Row="7" HorizontalAlignment="Stretch" Loaded="fillDirection_Loaded" SelectedItem="{Binding FillDirection,Mode=TwoWay}" x:Name="fillDirection" Visibility="{Binding IsShapes,Converter={StaticResource BooleanToVisibilityConverter}}"/>
+
+                <CheckBox Content="Reverse Fill" Margin="10 5" Grid.Row="8" IsChecked="False" x:Name="reverseFill" Visibility="{Binding IsShapes,Converter={StaticResource BooleanToVisibilityConverter}}"/>
+
+            </Grid>
+        </ContentControl>
+    </View:SampleLayout.Setting>
+</View:SampleLayout>

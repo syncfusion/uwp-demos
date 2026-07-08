@@ -1,0 +1,83 @@
+﻿<View:SampleLayout x:Class="DataGrid.SortBySummary"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="using:DataGrid"
+             xmlns:View="using:Common"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:syncfusion="using:Syncfusion.UI.Xaml.Grid"
+             mc:Ignorable="d">
+  <View:SampleLayout.Resources>
+    <ResourceDictionary>
+      <local:SumAggregateGroupComparer x:Key="groupComparer" />
+      <local:CurrencyFormatConverter x:Key="currencyFormatConverter"/>
+      <local:DateFormatConverter x:Key="dateFormatConverter"/>
+    </ResourceDictionary>
+  </View:SampleLayout.Resources>
+
+  <View:SampleLayout.Sample>
+        <syncfusion:SfDataGrid x:Name="sfGrid"
+                     AutoGenerateColumns="False"
+                     Margin="10,5,5,5"
+                     IsGroupDropAreaExpanded="True"
+                     ShowGroupDropArea="True"
+                     ShowColumnWhenGrouped="True"
+                     AllowFrozenGroupHeaders="True"
+                     SummaryGroupComparer="{StaticResource groupComparer}"
+                     LiveDataUpdateMode="AllowDataShaping"
+                     NavigationMode="Row">
+          <syncfusion:SfDataGrid.Columns>
+            <syncfusion:GridTextColumn HeaderText="Order ID"
+                         MappingName="OrderID"
+                         TextAlignment="Right" />
+            <syncfusion:GridTextColumn HeaderText="Customer ID" MappingName="CustomerID" />
+            <syncfusion:GridTextColumn DisplayBinding="{Binding Path=ShipCountry}" HeaderText="Ship Country" />
+            <syncfusion:GridTextColumn HeaderText="Ship Postal Code" MappingName="ShipPostalCode" />
+            <syncfusion:GridTextColumn DisplayBinding="{Binding Path=Shipping, Converter={StaticResource dateFormatConverter}}" HeaderText="Shipped Date" />
+            <syncfusion:GridTextColumn DisplayBinding="{Binding Path=Freight, Converter={StaticResource currencyFormatConverter}}" TextAlignment="Right" />
+          </syncfusion:SfDataGrid.Columns>
+          <syncfusion:SfDataGrid.GroupColumnDescriptions>
+            <syncfusion:GroupColumnDescription ColumnName="CustomerID" />
+          </syncfusion:SfDataGrid.GroupColumnDescriptions>
+          <syncfusion:SfDataGrid.CaptionSummaryRow>
+            <syncfusion:GridSummaryRow Title=" {ColumnName} : {Key}     Total Freight: {TotalFreight}    Avg UnitPrice: {AvgPrice}" ShowSummaryInRow="True">
+              <syncfusion:GridSummaryRow.SummaryColumns>
+                <syncfusion:GridSummaryColumn Name="TotalFreight"
+                            Format="'{Sum:c}'"
+                            MappingName="Freight"
+                            SummaryType="DoubleAggregate" />
+                <syncfusion:GridSummaryColumn Name="AvgPrice"
+                            Format="'{Average:c}'"
+                            MappingName="UnitPrice"
+                            SummaryType="DoubleAggregate" />
+              </syncfusion:GridSummaryRow.SummaryColumns>
+            </syncfusion:GridSummaryRow>
+          </syncfusion:SfDataGrid.CaptionSummaryRow>
+        </syncfusion:SfDataGrid>
+  </View:SampleLayout.Sample>
+  <View:SampleLayout.Setting>
+    <ContentControl>
+      <StackPanel>
+        <TextBlock Margin="5"
+         FontSize="12"
+         FontWeight="Bold"
+         Text="Sort Options" />
+        <RadioButton Name="SumAggregate"
+           Margin="15,5,5,0"
+           Checked="SumAggreGate_Checked"
+           Content="Sort by Total Freight"
+           FontSize="12"
+           FontWeight="Bold"
+           GroupName="ChangeSummary"
+           IsChecked="True" />
+        <RadioButton Name="AvgAggregate"
+           Margin="15,5,5,0"
+           Checked="AvgAggreGate_Checked"
+           Content="Sort by Average UnitPrice"
+           FontSize="12"
+           FontWeight="Bold"
+           GroupName="ChangeSummary" />
+      </StackPanel>
+    </ContentControl>
+  </View:SampleLayout.Setting>
+</View:SampleLayout>

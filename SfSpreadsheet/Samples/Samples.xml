@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Products>
+  <TileGroup Header="Showcase">
+    <Tile Header ="Spreadsheet" EnablePreview="false"
+       Type="SpreadsheetSamples.SpreadsheetShowcase"
+      Assembly="SampleBrowser" Color="#FF949F44"
+      ShowAppBar="True"
+      AppBarColor="#FFB51111"
+      Image="Assets/Images/SfSpreadsheet.png"/>
+  </TileGroup>
+  <TileGroup Header="All Controls">
+    <Tile Header="Getting Started" CategoryName="Spreadsheet" Type="SpreadsheetSamples.MainPage" Assembly="SampleBrowser"
+          EnablePreview="false"
+          Description="The Spreadsheet control allows you to create, view and edit various excel files with familiar excel like user interface"/>
+
+    <Tile Header="Data Visualization" CategoryName="Spreadsheet" Type="SpreadsheetSamples.MainPage" Assembly="SampleBrowser"
+          EnablePreview="false"
+          Description="The Spreadsheet control allows you to create, view and edit various excel files with familiar excel like user interface"/>
+
+    <Tile Header="Miscellaneous" CategoryName="Spreadsheet" Type="SpreadsheetSamples.MainPage" Assembly="SampleBrowser"
+          EnablePreview="false"
+          Description="The Spreadsheet control allows you to create, view and edit various excel files with familiar excel like user interface"/>
+  </TileGroup>
+</Products>

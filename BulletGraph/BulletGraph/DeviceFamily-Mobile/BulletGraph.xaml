@@ -1,0 +1,147 @@
+﻿<Common:SampleLayout
+    x:Class="BulletGraphUWP_Samples.BulletGraph"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SampleBrowser.BulletGraph"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.BulletGraph"
+    xmlns:Common="using:Common"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+    <Common:SampleLayout.Sample>
+        <ContentControl>
+            <Grid Background="White">
+                <Grid x:Name="bulletGraph">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Text="2005 YTD Actual Vs Budget" FontSize="20" FontFamily="Segoe UI" HorizontalAlignment="Center"/>
+
+                    <syncfusion:SfBulletGraph  ShowToolTip="False" VerticalAlignment="Center" QuantitativeScaleLength="180" Grid.Row="1" x:Name="SfBulletGraph1" QualitativeRangesSize="30" 
+                                      Orientation="Horizontal" Minimum="0" Maximum="300" Interval="50"
+                                      MajorTickSize="14" MinorTickSize="8" MajorTickStrokeThickness="1.5" MinorTickStrokeThickness="1.5"
+                                      MajorTickStroke="Black" MinorTickStroke="Black" LabelStroke="Black"
+                                      LabelSize="12" LabelOffset="5" EnableAnimation="False" 
+                                      MinorTicksPerInterval="{Binding Value, ElementName=sld_MinorTicksPerInterval, Mode=TwoWay}"
+                                      FlowDirection="{Binding SelectedItem, ElementName=cmb_FlowDirection, Mode=TwoWay}"
+                                      LabelPosition="{Binding SelectedItem, ElementName=cmb_LabelPosition, Mode=TwoWay}" 
+                                      CaptionPosition="{Binding SelectedItem, ElementName=cmb_CaptionPosition, Mode=TwoWay}" 
+                                      TickPosition="{Binding SelectedItem, ElementName=cmb_TickPosition, Mode=TwoWay}"
+                                      ComparativeMeasure="250" FeaturedMeasure="270" ComparativeMeasureSymbolStrokeThickness="5" FeaturedMeasureBarStrokeThickness="7"
+                                      ComparativeMeasureSymbolStroke="Black" FeaturedMeasureBarStroke="Black">
+                        <syncfusion:SfBulletGraph.Caption>
+                            <StackPanel Margin="-100,0,5,0" >
+                                <TextBlock FontSize="14" HorizontalAlignment="Center" Foreground="Black" Margin="2">Revenue</TextBlock>
+                                <TextBlock FontSize="14" HorizontalAlignment="Center" Foreground="Black" Margin="2">U.S. $ (1,000s)</TextBlock>
+                            </StackPanel>
+                        </syncfusion:SfBulletGraph.Caption>
+                        <syncfusion:SfBulletGraph.QualitativeRanges>
+                            <syncfusion:QualitativeRange RangeEnd="150" RangeStroke="#EBEBEB"></syncfusion:QualitativeRange>
+                            <syncfusion:QualitativeRange RangeEnd="225" RangeStroke="#D8D8D8"></syncfusion:QualitativeRange>
+                            <syncfusion:QualitativeRange RangeEnd="300" RangeStroke="#7F7F7F"></syncfusion:QualitativeRange>
+                        </syncfusion:SfBulletGraph.QualitativeRanges>
+                    </syncfusion:SfBulletGraph>
+
+                    <syncfusion:SfBulletGraph  Grid.Row="2" ShowToolTip="False" VerticalAlignment="Center" QuantitativeScaleLength="180" x:Name="SfBulletGraph2" QualitativeRangesSize="30" 
+                                      Orientation="Horizontal" Minimum="0" Maximum="150"
+                                      Interval="25" MajorTickSize="14" MinorTickSize="8" MajorTickStrokeThickness="1.5" MinorTickStrokeThickness="1.5"
+                                      MajorTickStroke="Black" MinorTickStroke="Black" LabelStroke="Black"
+                                      LabelSize="12" LabelOffset="5" EnableAnimation="False" 
+                                      MinorTicksPerInterval="{Binding Value, ElementName=sld_MinorTicksPerInterval, Mode=TwoWay}"
+                                      FlowDirection="{Binding SelectedItem, ElementName=cmb_FlowDirection, Mode=TwoWay}"
+                                      LabelPosition="{Binding SelectedItem, ElementName=cmb_LabelPosition, Mode=TwoWay}" 
+                                      CaptionPosition="{Binding SelectedItem, ElementName=cmb_CaptionPosition, Mode=TwoWay}" 
+                                      TickPosition="{Binding SelectedItem, ElementName=cmb_TickPosition, Mode=TwoWay}"
+                                      ComparativeMeasure="30" FeaturedMeasure="45" ComparativeMeasureSymbolStrokeThickness="5" FeaturedMeasureBarStrokeThickness="7"
+                                      ComparativeMeasureSymbolStroke="Black" FeaturedMeasureBarStroke="Black">
+                        <syncfusion:SfBulletGraph.Caption>
+                            <StackPanel Margin="-100,0,5,0" >
+                                <TextBlock FontSize="14" HorizontalAlignment="Center" Foreground="Black" Margin="2">Expenses</TextBlock>
+                                <TextBlock FontSize="14" HorizontalAlignment="Center" Foreground="Black" Margin="2">U.S. $ (1,000s)</TextBlock>
+                            </StackPanel>
+                        </syncfusion:SfBulletGraph.Caption>
+                        <syncfusion:SfBulletGraph.QualitativeRanges>
+                            <syncfusion:QualitativeRange RangeEnd="40" RangeStroke="#EBEBEB"></syncfusion:QualitativeRange>
+                            <syncfusion:QualitativeRange RangeEnd="80" RangeStroke="#D8D8D8"></syncfusion:QualitativeRange>
+                            <syncfusion:QualitativeRange RangeEnd="150" RangeStroke="#7F7F7F"></syncfusion:QualitativeRange>
+                        </syncfusion:SfBulletGraph.QualitativeRanges>
+                    </syncfusion:SfBulletGraph>
+
+                    <syncfusion:SfBulletGraph Grid.Row="3" ShowToolTip="False" VerticalAlignment="Center" QuantitativeScaleLength="180" x:Name="SfBulletGraph3" QualitativeRangesSize="30"  
+                                      Orientation="Horizontal" Interval="5" Minimum="0" Maximum="30"
+                                      MajorTickSize="14" MinorTickSize="8" MajorTickStrokeThickness="1.5" MinorTickStrokeThickness="1.5"
+                                      MajorTickStroke="Black" MinorTickStroke="Black" LabelStroke="Black"
+                                      LabelSize="12" LabelOffset="5" EnableAnimation="False"
+                                      MinorTicksPerInterval="{Binding Value, ElementName=sld_MinorTicksPerInterval, Mode=TwoWay}"
+                                      FlowDirection="{Binding SelectedItem, ElementName=cmb_FlowDirection, Mode=TwoWay}"
+                                      LabelPosition="{Binding SelectedItem, ElementName=cmb_LabelPosition, Mode=TwoWay}" 
+                                      CaptionPosition="{Binding SelectedItem, ElementName=cmb_CaptionPosition, Mode=TwoWay}" 
+                                      TickPosition="{Binding SelectedItem, ElementName=cmb_TickPosition, Mode=TwoWay}"
+                                      ComparativeMeasure="27" FeaturedMeasure="22.5" ComparativeMeasureSymbolStrokeThickness="5" FeaturedMeasureBarStrokeThickness="7"
+                                      ComparativeMeasureSymbolStroke="Black" FeaturedMeasureBarStroke="Black">
+                        <syncfusion:SfBulletGraph.Caption>
+                            <StackPanel Margin="-100,0,5,0" >
+                                <TextBlock FontSize="14" HorizontalAlignment="Center" Foreground="Black" Margin="2">Profit</TextBlock>
+                                <TextBlock FontSize="14" HorizontalAlignment="Center" Foreground="Black" Margin="2">Percentage (%)</TextBlock>
+                            </StackPanel>
+                        </syncfusion:SfBulletGraph.Caption>
+                        <syncfusion:SfBulletGraph.QualitativeRanges>
+                            <syncfusion:QualitativeRange RangeEnd="20" RangeStroke="#EBEBEB"></syncfusion:QualitativeRange>
+                            <syncfusion:QualitativeRange RangeEnd="25" RangeStroke="#D8D8D8"></syncfusion:QualitativeRange>
+                            <syncfusion:QualitativeRange RangeEnd="30" RangeStroke="#7F7F7F"></syncfusion:QualitativeRange>
+                        </syncfusion:SfBulletGraph.QualitativeRanges>
+                    </syncfusion:SfBulletGraph>
+
+                </Grid>
+
+            </Grid>
+        </ContentControl>
+    </Common:SampleLayout.Sample>
+    <Common:SampleLayout.Setting>
+        <ContentControl>
+    <Grid   x:Name="setting">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0" Margin="10 5" Text="Flow Direction"/>
+            <ComboBox Grid.Row="1" Margin="10 5" x:Name="cmb_FlowDirection"/>
+
+            <TextBlock Grid.Row="3" Margin="10 5" Text="Label Position"/>
+            <ComboBox Grid.Row="4" Margin="10 5" x:Name="cmb_LabelPosition"/>
+
+            <TextBlock Grid.Row="6" Margin="10 5" Text="Tick Position"/>
+            <ComboBox Grid.Row="7" Margin="10 5" x:Name="cmb_TickPosition"/>
+
+            <TextBlock Grid.Row="9" Margin="10 5" Text="MinorTicks Per Interval"/>
+            <Slider Grid.Row="10" Margin="10 5" Minimum="0" Value="3" Maximum="5" Name="sld_MinorTicksPerInterval"/>
+
+        </Grid>
+
+        </ContentControl>
+    </Common:SampleLayout.Setting>
+
+
+</Common:SampleLayout>

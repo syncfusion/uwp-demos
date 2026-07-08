@@ -1,0 +1,41 @@
+﻿<layout:SampleLayout x:Class="BI.PivotGrid.StatePersistence"
+                     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                     xmlns:notification="using:Syncfusion.UI.Xaml.Controls.Notification"
+                     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                     mc:Ignorable="d" xmlns:pivotGrid="using:Syncfusion.UI.Xaml.PivotGrid"
+                     xmlns:pivots="using:Syncfusion.PivotAnalysis.UWP"
+                     xmlns:layout="using:Common" Header="PivotGrid">
+    <layout:SampleLayout.Sample>
+        <ContentControl>
+            <Grid x:Name="RootLayout">
+                <pivotGrid:SfPivotGrid x:Name="pivotGrid1" Margin="5" ShowGroupingBar="True">
+                    <pivotGrid:SfPivotGrid.PivotRows>
+                        <pivots:PivotItem FieldCaption="Product" FieldMappingName="Product" TotalHeader="Total"/>
+                        <pivots:PivotItem FieldCaption="Date" FieldMappingName="Date" TotalHeader="Total"/>
+                    </pivotGrid:SfPivotGrid.PivotRows>
+                    <pivotGrid:SfPivotGrid.PivotColumns>
+                        <pivots:PivotItem FieldCaption="Country" FieldMappingName="Country" TotalHeader="Total"/>
+                        <pivots:PivotItem FieldCaption="State" FieldMappingName="State" TotalHeader="Total"/>
+                    </pivotGrid:SfPivotGrid.PivotColumns>
+                    <pivotGrid:SfPivotGrid.PivotCalculations>
+                        <pivots:PivotComputationInfo FieldCaption="Amount" FieldName="Amount" Format="C" SummaryType="DoubleTotalSum"/>
+                        <pivots:PivotComputationInfo FieldCaption="Quantity" FieldName="Quantity" Format="#.##" SummaryType="Count"/>
+                    </pivotGrid:SfPivotGrid.PivotCalculations>
+                </pivotGrid:SfPivotGrid>
+            </Grid>
+        </ContentControl>
+    </layout:SampleLayout.Sample>
+
+    <layout:SampleLayout.Setting>
+        <ContentControl>
+            <StackPanel Width="300">
+                <StackPanel Margin="10 7">
+                    <CheckBox x:Name="chkEnableStatePersistence" Margin="10 7" FontFamily="Segoe UI" FontSize="12" Content="Enable State Persistence"
+                              IsChecked="{Binding EnableStatePersistence, ElementName=pivotGrid1, Mode=TwoWay}"/>
+                </StackPanel>
+            </StackPanel>
+        </ContentControl>
+    </layout:SampleLayout.Setting>
+</layout:SampleLayout>

@@ -1,0 +1,86 @@
+﻿<UserControl
+    x:Class="MapControlUWP_Samples.ShapeLoading"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MapControlUWP_Samples"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" xmlns:syncfusion="using:Syncfusion.UI.Xaml.Maps"
+    xmlns:common="using:Common" >
+
+    <UserControl.Resources>
+        <local:MapViewModel x:Key="modelKey"/>
+    </UserControl.Resources>
+
+    <Grid x:Name="grid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid  DataContext="{Binding Source={StaticResource modelKey}}" Background="White"   >
+            
+
+            <syncfusion:SfMap  ShowCoords="False" BaseMapIndex="0" EnableZoom="True" x:Name="map" MaxZoom="44">
+                <syncfusion:SfMap.Header>
+                    <TextBlock Text="Shape File Loading- Continents " Margin="0,0,0,15" FontSize="20" FontFamily="Segoe UI" Foreground="Black"/>
+                </syncfusion:SfMap.Header>
+                <syncfusion:SfMap.Layers>
+                    <syncfusion:ShapeFileLayer EnableSelection="True" MapPopupVisibility="Collapsed" MapItemsVisibility="Collapsed"
+                                               ItemsSource="{Binding ContinentList}" ShapeIDPath="NAME" ShapeIDTableField="Continent"
+                                               Uri="Syncfusion.SampleBrowser.UWP.Maps.Assets.ShapeFiles.continent.shp"  >
+                        <syncfusion:ShapeFileLayer.ShapeSettings>
+                            <syncfusion:ShapeSetting  ShapeFill="#E5E5E5" ShapeStrokeThickness="1" />
+                        </syncfusion:ShapeFileLayer.ShapeSettings>
+                    </syncfusion:ShapeFileLayer>
+                    <syncfusion:ShapeFileLayer Name="shape"  Uri="Syncfusion.SampleBrowser.UWP.Maps.Assets.ShapeFiles.Africa.shp">
+                        <syncfusion:ShapeFileLayer.ShapeSettings>
+                            <syncfusion:ShapeSetting ShapeFill="#1196CD" ShapeStrokeThickness="1"/>
+                        </syncfusion:ShapeFileLayer.ShapeSettings>
+                    </syncfusion:ShapeFileLayer>
+                    <syncfusion:ShapeFileLayer  Uri="Syncfusion.SampleBrowser.UWP.Maps.Assets.ShapeFiles.Antarctica.shp">
+                        <syncfusion:ShapeFileLayer.ShapeSettings>
+                            <syncfusion:ShapeSetting ShapeFill="#1196CD" ShapeStrokeThickness="1"/>
+                        </syncfusion:ShapeFileLayer.ShapeSettings>
+                    </syncfusion:ShapeFileLayer>
+                    <syncfusion:ShapeFileLayer  Uri="Syncfusion.SampleBrowser.UWP.Maps.Assets.ShapeFiles.Asia.shp">
+                        <syncfusion:ShapeFileLayer.ShapeSettings>
+                            <syncfusion:ShapeSetting ShapeFill="#1196CD" ShapeStrokeThickness="1"/>
+                        </syncfusion:ShapeFileLayer.ShapeSettings>
+                    </syncfusion:ShapeFileLayer>
+                    <syncfusion:ShapeFileLayer  Uri="Syncfusion.SampleBrowser.UWP.Maps.Assets.ShapeFiles.Europe.shp">
+                        <syncfusion:ShapeFileLayer.ShapeSettings>
+                            <syncfusion:ShapeSetting ShapeFill="#1196CD" ShapeStrokeThickness="1"/>
+                        </syncfusion:ShapeFileLayer.ShapeSettings>
+                    </syncfusion:ShapeFileLayer>
+                    <syncfusion:ShapeFileLayer  Uri="Syncfusion.SampleBrowser.UWP.Maps.Assets.ShapeFiles.North America.shp">
+                        <syncfusion:ShapeFileLayer.ShapeSettings>
+                            <syncfusion:ShapeSetting ShapeFill="#1196CD" ShapeStrokeThickness="1"/>
+                        </syncfusion:ShapeFileLayer.ShapeSettings>
+                    </syncfusion:ShapeFileLayer>
+                    <syncfusion:ShapeFileLayer  Uri="Syncfusion.SampleBrowser.UWP.Maps.Assets.ShapeFiles.South America.shp">
+                        <syncfusion:ShapeFileLayer.ShapeSettings>
+                            <syncfusion:ShapeSetting ShapeFill="#1196CD" ShapeStrokeThickness="1"/>
+                        </syncfusion:ShapeFileLayer.ShapeSettings>
+                    </syncfusion:ShapeFileLayer>
+                    <syncfusion:ShapeFileLayer   Uri="Syncfusion.SampleBrowser.UWP.Maps.Assets.ShapeFiles.Oceania.shp">
+                        <syncfusion:ShapeFileLayer.ShapeSettings>
+                            <syncfusion:ShapeSetting ShapeFill="#1196CD" ShapeStrokeThickness="1"/>
+                        </syncfusion:ShapeFileLayer.ShapeSettings>
+                    </syncfusion:ShapeFileLayer>
+                </syncfusion:SfMap.Layers>
+            </syncfusion:SfMap>
+            <Grid VerticalAlignment="Bottom" Margin="30">
+                <Button x:Name="DrillUpButton" Background="#FFB5B5B6" ClickMode="Press" Click="DrillUpButton_Click_1" BorderBrush="#FF676767" BorderThickness="1"  Visibility="Collapsed" >
+                    <StackPanel Orientation="Horizontal">
+                        <Rectangle Height="15" Width="15" Fill="#FF333333" Margin="0,0,10,0" />
+                        <TextBlock Text="Back to World Map"  Foreground="#FF333333" FontSize="20" FontFamily="Segoe UI" FontWeight="Thin" />
+                    </StackPanel>
+                </Button>
+
+
+            </Grid>
+        </Grid>
+    </Grid>
+    
+    
+</UserControl>
