@@ -1,0 +1,11 @@
+Syncfusion.SampleBrowser.UWP.Common.dll
+Syncfusion.Licensing.dll
+Syncfusion.DocIO.UWP.dll
+Syncfusion.Markdown.dll
+Syncfusion.OfficeChart.UWP.dll
+Syncfusion.SfColorPickers.UWP.dll
+Syncfusion.SfInput.UWP.dll
+Syncfusion.SfRadialMenu.UWP.dll
+Syncfusion.SfRibbon.UWP.dll
+Syncfusion.SfRichTextBoxAdv.UWP.dll
+Syncfusion.SfShared.UWP.dll

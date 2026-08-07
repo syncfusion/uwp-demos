@@ -1,0 +1,1122 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:datapager="using:Syncfusion.UI.Xaml.Controls.DataPager"
+                    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Grid">
+
+    <syncfusion:BoolToVisiblityConverter x:Key="VisiblityConverter" />
+    <syncfusion:SortDirectionToVisibilityConverter x:Key="sortDirectionToVisibilityConverter" />
+    <syncfusion:SortDirectionToWidthConverter x:Key="sortDirectionToWidthConverter" />
+
+
+    <!--  TextBlock Style  -->
+    <Style TargetType="TextBlock">
+        <Setter Property="Margin" Value="5,0" />
+    </Style>
+
+    <!--  Grid Style  -->
+    <Style TargetType="syncfusion:SfDataGrid">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="BorderBrush" Value="#FFC8E3E3" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Margin" Value="10,0,30,30" />
+        <Setter Property="RowSelectionBrush" Value="#FFdff3f4" />
+        <Setter Property="GroupRowSelectionBrush" Value="#FFdff3f4" />
+    </Style>
+
+    <Style x:Key="FilterToggleButtonStyle" TargetType="ToggleButton">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ToggleButton">
+                    <Grid>
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="FilterStates">
+                                <VisualState x:Name="Filtered">
+                                    <Storyboard BeginTime="0">
+                                        <ObjectAnimationUsingKeyFrames BeginTime="0"
+                                                                       Duration="1"
+                                                                       Storyboard.TargetName="PART_FilterToggleButtonIndicator"
+                                                                       Storyboard.TargetProperty="Data">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="M2.1299944,9.9798575L55.945994,9.9798575 35.197562,34.081179 35.197562,62.672859 23.428433,55.942383 23.428433,33.52121z M1.3001332,0L56.635813,0C57.355887,0,57.935946,0.5891428,57.935946,1.3080959L57.935946,2.8258877C57.935946,3.5448422,57.355887,4.133985,56.635813,4.133985L1.3001332,4.133985C0.58005941,4.133985,-2.3841858E-07,3.5448422,0,2.8258877L0,1.3080959C-2.3841858E-07,0.5891428,0.58005941,0,1.3001332,0z" />
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="UnFiltered">
+                                    <Storyboard BeginTime="0">
+                                        <ObjectAnimationUsingKeyFrames BeginTime="0"
+                                                                       Duration="1"
+                                                                       Storyboard.TargetName="PART_FilterToggleButtonIndicator"
+                                                                       Storyboard.TargetProperty="Data">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="M0,0 L118.49799,0 L72.811813,53.068943 L72.811813,116.02525 L46.897243,101.20534 L46.897243,51.835941 z" />
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <Border Width="{TemplateBinding Width}"
+                                Height="{TemplateBinding Height}"
+                                Background="Transparent">
+                            <Path Name="PART_FilterToggleButtonIndicator"
+                                  Margin="4"
+                                  HorizontalAlignment="Right"
+                                  VerticalAlignment="Bottom"
+                                  Data="M0,0 L118.49799,0 L72.811813,53.068943 L72.811813,116.02525 L46.897243,101.20534 L46.897243,51.835941 z"
+                                  Fill="Gray"
+                                  Opacity="0.8"
+                                  Stretch="Fill" />
+                        </Border>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--  Header Cell Style  -->
+    <Style TargetType="syncfusion:GridHeaderCellControl">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="BorderBrush" Value="#FFCEE7E7" />
+        <Setter Property="BorderThickness" Value="0,0,1,0" />
+        <Setter Property="HorizontalContentAlignment" Value="Left" />
+        <Setter Property="Padding" Value="5,3,3,3" />
+        <Setter Property="FontFamily" Value="Segoe UI" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="Margin" Value="5,0,0,0" />
+        <Setter Property="Foreground" Value="#FF5E5B5C" />
+        <Setter Property="FontWeight" Value="SemiBold" />
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="syncfusion:GridHeaderCellControl">
+                    <Grid>
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="HiddenColumnsResizingStates">
+
+                                <VisualState x:Name="LastColumnHidden">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_HeaderCellBorder" Storyboard.TargetProperty="BorderThickness">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="0,0,3,3" />
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+
+                                <VisualState x:Name="HiddenState">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_HeaderCellBorder" Storyboard.TargetProperty="BorderThickness">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="3,0,3,3" />
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+
+                                <VisualState x:Name="PreviousColumnHidden">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_HeaderCellBorder" Storyboard.TargetProperty="BorderThickness">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="3,0,1,3" />
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+
+                                <!--VisualState name changed from Normal to NormalState as Normal state is used for providing MouseOver effect-->
+                                <VisualState x:Name="NormalState" />
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="PointerOver" />
+                                <VisualState x:Name="Normal" />
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="BorderStates">
+                                <VisualState x:Name="NormalCell">
+                                    <Storyboard BeginTime="0">
+                                        <ObjectAnimationUsingKeyFrames BeginTime="0"
+                                                                          Duration="1"
+                                                                          Storyboard.TargetName="PART_FooterCellBorder"
+                                                                          Storyboard.TargetProperty="BorderThickness">
+                                            <DiscreteObjectKeyFrame KeyTime="0"
+                                                                     Value="0,0,1,1"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="FrozenColumnCell">
+                                    <Storyboard BeginTime="0">
+                                        <ObjectAnimationUsingKeyFrames BeginTime="0"
+                                                                          Duration="1"
+                                                                          Storyboard.TargetName="PART_HeaderCellBorder"
+                                                                          Storyboard.TargetProperty="BorderThickness">
+                                            <DiscreteObjectKeyFrame KeyTime="0"
+                                                                     Value="0,0,1,1"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="FooterColumnCell">
+                                    <Storyboard BeginTime="0">
+                                        <ObjectAnimationUsingKeyFrames BeginTime="0"
+                                                                          Duration="1"
+                                                                          Storyboard.TargetName="PART_FooterCellBorder"
+                                                                          Storyboard.TargetProperty="BorderThickness">
+                                            <DiscreteObjectKeyFrame KeyTime="0"
+                                                                     Value="1,0,1,1"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="BeforeFooterColumnCell">
+                                    <Storyboard BeginTime="0">
+                                        <ObjectAnimationUsingKeyFrames BeginTime="0"
+                                                                          Duration="1"
+                                                                          Storyboard.TargetName="PART_FooterCellBorder"
+                                                                          Storyboard.TargetProperty="BorderThickness">
+                                            <DiscreteObjectKeyFrame KeyTime="0"
+                                                                     Value="0,0,0,1"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames BeginTime="0"
+                                                                          Duration="1"
+                                                                          Storyboard.TargetName="PART_HeaderCellBorder"
+                                                                          Storyboard.TargetProperty="BorderThickness">
+                                            <DiscreteObjectKeyFrame KeyTime="0"
+                                                                     Value="0,0,0,3"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <Border x:Name="PART_FooterCellBorder"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"/>
+                        <Border x:Name="PART_HeaderCellBorder"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            Padding="{TemplateBinding Padding}">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="0" MinWidth="{Binding Path=SortDirection, Mode=OneWay, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource sortDirectionToWidthConverter}}" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+
+                                <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalAlignment}"
+                                              VerticalAlignment="Center"
+                                              FontFamily="{TemplateBinding FontFamily}"
+                                              FontSize="{TemplateBinding FontSize}"
+                                              FontWeight="{TemplateBinding FontWeight}" />
+                                <Grid Grid.Column="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="18" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Path Width="10.84"
+                                      Height="9.87"
+                                      Margin="5,0,0,0"
+                                      HorizontalAlignment="Center"
+                                      VerticalAlignment="Center"
+                                      Data="F1M753.644,-13.0589L753.736,-12.9639 753.557,-12.7816 732.137,8.63641 732.137,29.7119 756.445,5.40851 764.094,-2.24384 764.275,-2.42352 771.834,5.1286 796.137,29.4372 796.137,8.36163 774.722,-13.0589 764.181,-23.5967 753.644,-13.0589z"
+                                      Fill="#FF5E5B5C"
+                                      Stretch="Fill"
+                                      Visibility="{Binding Path=SortDirection,
+                                                           RelativeSource={RelativeSource TemplatedParent},
+                                                           ConverterParameter=Ascending,
+                                                           Converter={StaticResource sortDirectionToVisibilityConverter}}">
+                                        <Path.RenderTransform>
+                                            <TransformGroup>
+                                                <TransformGroup.Children>
+                                                    <RotateTransform Angle="0" />
+                                                    <ScaleTransform ScaleX="1" ScaleY="1" />
+                                                </TransformGroup.Children>
+                                            </TransformGroup>
+                                        </Path.RenderTransform>
+                                    </Path>
+
+                                    <Path Width="10.84"
+                                      Height="9.87"
+                                      Margin="5,0,0,0"
+                                      HorizontalAlignment="Center"
+                                      VerticalAlignment="Center"
+                                      Data="F1M181.297,177.841L181.205,177.746 181.385,177.563 202.804,156.146 202.804,135.07 178.497,159.373 170.847,167.026 170.666,167.205 163.107,159.653 138.804,135.345 138.804,156.42 160.219,177.841 170.76,188.379 181.297,177.841z"
+                                      Fill="#FF5E5B5C"
+                                      Stretch="Fill"
+                                      Visibility="{Binding Path=SortDirection,
+                                                           RelativeSource={RelativeSource TemplatedParent},
+                                                           ConverterParameter=Decending,
+                                                           Converter={StaticResource sortDirectionToVisibilityConverter}}">
+                                        <Path.RenderTransform>
+                                            <TransformGroup>
+                                                <TransformGroup.Children>
+                                                    <RotateTransform Angle="0" />
+                                                    <ScaleTransform ScaleX="1" ScaleY="1" />
+                                                </TransformGroup.Children>
+                                            </TransformGroup>
+                                        </Path.RenderTransform>
+                                    </Path>
+
+                                    <TextBlock x:Name="NumberBlock"
+                                           Grid.Column="1"
+                                           Margin="0,-4,0,0"
+                                           VerticalAlignment="Center"
+                                           FontSize="10"
+                                           Foreground="{TemplateBinding Foreground}"
+                                           Text="{TemplateBinding SortNumber}"
+                                           Visibility="{TemplateBinding SortNumberVisibility}" />
+
+                                </Grid>
+                                <ToggleButton x:Name="PART_FilterToggleButton"
+                                          Grid.Column="2"
+                                          Width="28"
+                                          Height="28"
+                                          HorizontalAlignment="Stretch"
+                                          VerticalAlignment="Stretch"
+                                          Style="{StaticResource FilterToggleButtonStyle}"
+                                          Visibility="{TemplateBinding FilterIconVisiblity}" />
+                                <Border x:Name="PART_FilterPopUpPresenter" />
+
+                            </Grid>
+                        </Border>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+    </Style>
+
+
+    <!--  Header Row Style  -->
+    <Style TargetType="syncfusion:HeaderRowControl">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="BorderBrush" Value="#FF53C3D5" />
+        <Setter Property="BorderThickness" Value="1,0,0,3" />
+    </Style>
+
+    <!--  Row Style  -->
+    <Style TargetType="syncfusion:VirtualizingCellsControl">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="BorderBrush" Value="#FF7fd0de" />
+        <Setter Property="BorderThickness" Value="0" />
+    </Style>
+
+    <!--  UnBound Row Style  -->
+    <Style TargetType="syncfusion:UnBoundRowControl">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="BorderBrush" Value="#FF7fd0de" />
+        <Setter Property="BorderThickness" Value="0" />
+    </Style>
+
+    <!--  Group Caption Row Style  -->
+    <Style TargetType="syncfusion:CaptionSummaryRowControl">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="BorderBrush" Value="#FF7fd0de" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="Foreground" Value="#FF2A2A2A" />
+    </Style>
+
+    <!--  TableSummaryRow Control Row Style  -->
+    <Style TargetType="syncfusion:TableSummaryRowControl">
+        <Setter Property="BorderBrush" Value="#FF7fd0de" />
+        <Setter Property="BorderThickness" Value="0,1,0,0" />
+    </Style>
+
+    <!--  AddNewRow Control Row Style  -->
+    <Style TargetType="syncfusion:AddNewRowControl">
+        <Setter Property="BorderBrush" Value="#FF7fd0de" />
+    </Style>
+
+    <!--  GridCaptionSummaryCell Style  -->
+    <Style TargetType="syncfusion:GridCaptionSummaryCell">
+        <Setter Property="BorderBrush" Value="#FF7fd0de" />
+        <Setter Property="FontWeight" Value="Normal" />
+    </Style>
+
+
+    <!--  Group Summary Row control  -->
+    <Style TargetType="syncfusion:GroupSummaryRowControl">
+        <Setter Property="BorderBrush" Value="#FF7fd0de" />
+        <Setter Property="BorderThickness" Value="0" />
+    </Style>
+
+    <!--  Grid Group Summary Cell Style  -->
+    <Style TargetType="syncfusion:GridGroupSummaryCell">
+        <Setter Property="BorderBrush" Value="#FF7fd0de" />
+        <Setter Property="Foreground" Value="#FF2A2A2A" />
+    </Style>
+
+
+
+    <!--  Table Summary Cell Style  -->
+    <Style TargetType="syncfusion:GridTableSummaryCell">
+        <Setter Property="BorderBrush" Value="#FF7fd0de" />
+        <Setter Property="Foreground" Value="#FF2A2A2A" />
+        <Setter Property="Margin" Value="5 0" />
+    </Style>
+
+
+    <!--  Grid Cell Style  -->
+    <Style TargetType="syncfusion:GridCell">
+        <Setter Property="BorderBrush" Value="#FF7fd0de" />
+        <Setter Property="BorderThickness" Value="0,0,0,1" />
+        <Setter Property="Padding" Value="10,0,0,0" />
+        <Setter Property="FontFamily" Value=" Segoe UI" />
+        <Setter Property="Foreground" Value="#FF2A2A2A" />
+        <Setter Property="FontSize" Value="16" />
+    </Style>
+
+    <!--  Grid UnBoundRow Cell Style  -->
+    <Style TargetType="syncfusion:GridUnBoundRowCell">
+        <Setter Property="BorderBrush" Value="#FF7fd0de" />
+        <Setter Property="BorderThickness" Value="0,0,0,1" />
+        <Setter Property="Padding" Value="10,0,0,0" />
+        <Setter Property="FontFamily" Value=" Segoe UI" />
+        <Setter Property="Foreground" Value="#FF2A2A2A" />
+        <Setter Property="FontSize" Value="16" />
+    </Style>
+
+    <!--  Group Caption Control Style  -->
+    <Style TargetType="syncfusion:GridIndentCell">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="BorderBrush" Value="#FF7fd0de" />
+        <Setter Property="Foreground" Value="#FF2A2A2A" />
+    </Style>
+
+    <!--  GridHeaderIndentCell Styles  -->
+    <Style TargetType="syncfusion:GridHeaderIndentCell">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="BorderBrush" Value="#FFCEE7E7" />
+        <Setter Property="BorderThickness" Value="0,0,1,0" />
+    </Style>
+
+    <Style TargetType="syncfusion:GridExpanderCellControl">
+        <Setter Property="Width" Value="12" />
+        <Setter Property="Height" Value="12" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="syncfusion:GridExpanderCellControl">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}">
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="ExpansionStates">
+                                <VisualState x:Name="Expanded">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames BeginTime="00:00:00"
+                                                                       Duration="00:00:00"
+                                                                       Storyboard.TargetName="PART_GridExpanderCellPath"
+                                                                       Storyboard.TargetProperty="Path.RenderTransform">
+                                            <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <RotateTransform Angle="0" />
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Collapsed">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames BeginTime="00:00:00"
+                                                                       Duration="00:00:00"
+                                                                       Storyboard.TargetName="PART_GridExpanderCellPath"
+                                                                       Storyboard.TargetProperty="Path.RenderTransform">
+                                            <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <RotateTransform Angle="180" CenterX="5" CenterY="5" />
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <Path x:Name="PART_GridExpanderCellPath"
+                              Width="{TemplateBinding Width}"
+                              Height="{TemplateBinding Height}"
+                              HorizontalAlignment="Center"
+                              VerticalAlignment="Center"
+                              Data="F1M181.297,177.841L181.205,177.746 181.385,177.563 202.804,156.146 202.804,135.07 178.497,159.373 170.847,167.026 170.666,167.205 163.107,159.653 138.804,135.345 138.804,156.42 160.219,177.841 170.76,188.379 181.297,177.841z"
+                              Fill="#FF2A2A2A"
+                              Stretch="Uniform">
+                            <Path.RenderTransform>
+                                <TransformGroup>
+                                    <TransformGroup.Children>
+                                        <RotateTransform Angle="180" CenterX="5" CenterY="5" />
+                                        <ScaleTransform ScaleX="1" ScaleY="1" />
+                                    </TransformGroup.Children>
+                                </TransformGroup>
+                            </Path.RenderTransform>
+                        </Path>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <!--  Group area expander Toggle Button style  -->
+    <Style x:Key="ToggleButtonStyle" TargetType="ToggleButton">
+        <Setter Property="Foreground" Value="#FFA9E1EA" />
+    </Style>
+
+
+    <!--  GroupDropArea Style  -->
+    <Style TargetType="syncfusion:GroupDropArea">
+        <Setter Property="Background" Value="#FF53C3D5" />
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="BorderBrush" Value="#FFC8E3E3" />
+    </Style>
+
+    <!--  Group Drop Area Item Style  -->
+    <Style TargetType="syncfusion:GroupDropAreaItem">
+        <Setter Property="Foreground" Value="#FF53C3D5" />
+        <Setter Property="Background" Value="#FFFFFFFF" />
+        <Setter Property="BorderBrush" Value="#FFC0F1F3" />
+        <Setter Property="BorderThickness" Value="0" />
+    </Style>
+
+    <Style x:Key="HorizontalScrollBarStyle" TargetType="ScrollBar">
+        <Setter Property="MinWidth" Value="17" />
+        <Setter Property="MinHeight" Value="17" />
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="Foreground" Value="Transparent" />
+        <Setter Property="BorderBrush" Value="Transparent" />
+        <Setter Property="IsTabStop" Value="False" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ScrollBar">
+                    <Grid x:Name="Root">
+                        <Grid.Resources>
+                            <ControlTemplate x:Key="RepeatButtonTemplate" TargetType="RepeatButton">
+                                <Grid x:Name="Root"
+                                      Height="4"
+                                      Background="LightGray">
+                                    <VisualStateManager.VisualStateGroups>
+                                        <VisualStateGroup x:Name="CommonStates">
+                                            <VisualState x:Name="Normal" />
+                                        </VisualStateGroup>
+                                    </VisualStateManager.VisualStateGroups>
+                                </Grid>
+                            </ControlTemplate>
+                            <ControlTemplate x:Key="HorizontalThumbTemplate" TargetType="Thumb">
+                                <Grid Height="6">
+                                    <VisualStateManager.VisualStateGroups>
+                                        <VisualStateGroup x:Name="CommonStates">
+                                            <VisualState x:Name="Normal" />
+                                            <VisualState x:Name="PointerOver">
+                                                <Storyboard>
+                                                    <DoubleAnimation Duration="0:0:0"
+                                                                     Storyboard.TargetName="BackgroundPointerOver"
+                                                                     Storyboard.TargetProperty="Opacity"
+                                                                     To="1" />
+                                                    <DoubleAnimation Duration="0:0:0"
+                                                                     Storyboard.TargetName="Background"
+                                                                     Storyboard.TargetProperty="Opacity"
+                                                                     To="0" />
+                                                </Storyboard>
+                                            </VisualState>
+                                            <VisualState x:Name="Pressed">
+                                                <Storyboard>
+                                                    <DoubleAnimation Duration="0:0:0"
+                                                                     Storyboard.TargetName="BackgroundPressed"
+                                                                     Storyboard.TargetProperty="Opacity"
+                                                                     To="1" />
+                                                    <DoubleAnimation Duration="0:0:0"
+                                                                     Storyboard.TargetName="Background"
+                                                                     Storyboard.TargetProperty="Opacity"
+                                                                     To="0" />
+                                                </Storyboard>
+                                            </VisualState>
+                                            <VisualState x:Name="Disabled">
+                                                <Storyboard>
+                                                    <DoubleAnimation Duration="0:0:0"
+                                                                     Storyboard.TargetName="ThumbVisual"
+                                                                     Storyboard.TargetProperty="Opacity"
+                                                                     To="0" />
+                                                </Storyboard>
+                                            </VisualState>
+                                        </VisualStateGroup>
+                                    </VisualStateManager.VisualStateGroups>
+                                    <Grid x:Name="ThumbVisual"
+                                          Margin="0"
+                                          Background="LightSlateGray">
+                                        <Border x:Name="Background"
+                                                BorderBrush="{StaticResource ScrollBarThumbBorderThemeBrush}"
+                                                BorderThickness="1" />
+                                        <Border x:Name="BackgroundPointerOver"
+                                                Background="{StaticResource ScrollBarThumbPointerOverBackgroundThemeBrush}"
+                                                BorderBrush="{StaticResource ScrollBarThumbPointerOverBorderThemeBrush}"
+                                                BorderThickness="1"
+                                                Opacity="0" />
+                                        <Border x:Name="BackgroundPressed"
+                                                Background="{StaticResource ScrollBarThumbPressedBackgroundThemeBrush}"
+                                                BorderBrush="{StaticResource ScrollBarThumbPressedBorderThemeBrush}"
+                                                BorderThickness="1"
+                                                Opacity="0" />
+                                    </Grid>
+                                </Grid>
+                            </ControlTemplate>
+                        </Grid.Resources>
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal" />
+                                <VisualState x:Name="PointerOver" />
+                                <VisualState x:Name="Disabled">
+                                    <Storyboard>
+                                        <DoubleAnimation Duration="0"
+                                                         Storyboard.TargetName="Root"
+                                                         Storyboard.TargetProperty="Opacity"
+                                                         To="0.5" />
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="ScrollingIndicatorStates">
+                                <VisualState x:Name="TouchIndicator">
+                                    <Storyboard>
+                                        <FadeInThemeAnimation TargetName="HorizontalPanningRoot" />
+                                        <FadeOutThemeAnimation TargetName="HorizontalRoot" />
+                                        <ObjectAnimationUsingKeyFrames Duration="0"
+                                                                       Storyboard.TargetName="HorizontalRoot"
+                                                                       Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="0">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <Visibility>Collapsed</Visibility>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="MouseIndicator">
+                                    <Storyboard>
+                                        <FadeInThemeAnimation TargetName="HorizontalRoot" />
+                                        <FadeOutThemeAnimation TargetName="HorizontalPanningRoot" />
+                                        <ObjectAnimationUsingKeyFrames Duration="0"
+                                                                       Storyboard.TargetName="HorizontalPanningRoot"
+                                                                       Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="0">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <Visibility>Collapsed</Visibility>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="HorizontalRoot" Storyboard.TargetProperty="IsHitTestVisible">
+                                            <DiscreteObjectKeyFrame KeyTime="0">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <x:Boolean>True</x:Boolean>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="NoIndicator">
+                                    <Storyboard>
+                                        <FadeOutThemeAnimation BeginTime="0" TargetName="HorizontalPanningRoot" />
+                                        <FadeOutThemeAnimation BeginTime="0" TargetName="HorizontalRoot" />
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <Grid x:Name="HorizontalRoot" IsHitTestVisible="False">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <Rectangle Grid.ColumnSpan="5"
+                                       Height="2"
+                                       Margin="0"
+                                       Fill="{StaticResource ScrollBarTrackBackgroundThemeBrush}"
+                                       Stroke="{StaticResource ScrollBarTrackBorderThemeBrush}"
+                                       StrokeThickness="{StaticResource ScrollBarTrackBorderThemeThickness}" />
+                            <RepeatButton x:Name="HorizontalLargeDecrease"
+                                          Grid.Column="1"
+                                          Width="0"
+                                          Height="2"
+                                          HorizontalAlignment="Stretch"
+                                          VerticalAlignment="Stretch"
+                                          Interval="50"
+                                          IsTabStop="False"
+                                          Template="{StaticResource RepeatButtonTemplate}" />
+                            <Thumb x:Name="HorizontalThumb"
+                                   Grid.Column="2"
+                                   Height="10"
+                                   MinWidth="48"
+                                   Background="{TemplateBinding Background}"
+                                   Template="{StaticResource HorizontalThumbTemplate}" />
+                            <RepeatButton x:Name="HorizontalLargeIncrease"
+                                          Grid.Column="3"
+                                          Height="2"
+                                          HorizontalAlignment="Stretch"
+                                          VerticalAlignment="Stretch"
+                                          Interval="50"
+                                          IsTabStop="False"
+                                          Template="{StaticResource RepeatButtonTemplate}" />
+                        </Grid>
+                        <Grid x:Name="HorizontalPanningRoot"
+                              MinWidth="66"
+                              HorizontalAlignment="Left">
+                            <Border x:Name="HorizontalPanningThumb"
+                                    Height="4"
+                                    MinWidth="17"
+                                    Background="{StaticResource ScrollBarPanningBackgroundThemeBrush}"
+                                    BorderBrush="{StaticResource ScrollBarPanningBorderThemeBrush}"
+                                    BorderThickness="{StaticResource ScrollBarPanningBorderThemeThickness}" />
+                        </Grid>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="PagerScrollViewerStyle" TargetType="syncfusion:ScrollableContentViewer">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="syncfusion:ScrollableContentViewer">
+                    <Border BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="2">
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="ScrollingIndicatorStates">
+                                <VisualStateGroup.Transitions>
+                                    <VisualTransition From="MouseIndicator" To="NoIndicator">
+                                        <Storyboard>
+                                            <FadeOutThemeAnimation BeginTime="0:0:3" TargetName="PART_ScrollBarSeparator" />
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_VerticalScrollBar" Storyboard.TargetProperty="IndicatorMode">
+                                                <DiscreteObjectKeyFrame KeyTime="0:0:3">
+                                                    <DiscreteObjectKeyFrame.Value>
+                                                        <ScrollingIndicatorMode>None</ScrollingIndicatorMode>
+                                                    </DiscreteObjectKeyFrame.Value>
+                                                </DiscreteObjectKeyFrame>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_HorizontalScrollBar" Storyboard.TargetProperty="IndicatorMode">
+                                                <DiscreteObjectKeyFrame KeyTime="0:0:3">
+                                                    <DiscreteObjectKeyFrame.Value>
+                                                        <ScrollingIndicatorMode>None</ScrollingIndicatorMode>
+                                                    </DiscreteObjectKeyFrame.Value>
+                                                </DiscreteObjectKeyFrame>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualTransition>
+                                    <VisualTransition From="TouchIndicator" To="NoIndicator">
+                                        <Storyboard>
+                                            <FadeOutThemeAnimation TargetName="PART_ScrollBarSeparator" />
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_VerticalScrollBar" Storyboard.TargetProperty="IndicatorMode">
+                                                <DiscreteObjectKeyFrame KeyTime="0:0:0.5">
+                                                    <DiscreteObjectKeyFrame.Value>
+                                                        <ScrollingIndicatorMode>None</ScrollingIndicatorMode>
+                                                    </DiscreteObjectKeyFrame.Value>
+                                                </DiscreteObjectKeyFrame>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_HorizontalScrollBar" Storyboard.TargetProperty="IndicatorMode">
+                                                <DiscreteObjectKeyFrame KeyTime="0:0:0.5">
+                                                    <DiscreteObjectKeyFrame.Value>
+                                                        <ScrollingIndicatorMode>None</ScrollingIndicatorMode>
+                                                    </DiscreteObjectKeyFrame.Value>
+                                                </DiscreteObjectKeyFrame>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualTransition>
+                                </VisualStateGroup.Transitions>
+                                <VisualState x:Name="NoIndicator">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Duration="0"
+                                                                       Storyboard.TargetName="PART_ScrollBarSeparator"
+                                                                       Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="0">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <Visibility>Collapsed</Visibility>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Duration="0"
+                                                                       Storyboard.TargetName="PART_VerticalScrollBar"
+                                                                       Storyboard.TargetProperty="IndicatorMode">
+                                            <DiscreteObjectKeyFrame KeyTime="0">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <ScrollingIndicatorMode>None</ScrollingIndicatorMode>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Duration="0"
+                                                                       Storyboard.TargetName="PART_HorizontalScrollBar"
+                                                                       Storyboard.TargetProperty="IndicatorMode">
+                                            <DiscreteObjectKeyFrame KeyTime="0">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <ScrollingIndicatorMode>None</ScrollingIndicatorMode>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="TouchIndicator">
+                                    <Storyboard>
+                                        <FadeOutThemeAnimation TargetName="PART_ScrollBarSeparator" />
+                                        <ObjectAnimationUsingKeyFrames Duration="0"
+                                                                       Storyboard.TargetName="PART_VerticalScrollBar"
+                                                                       Storyboard.TargetProperty="IndicatorMode">
+                                            <DiscreteObjectKeyFrame KeyTime="0">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <ScrollingIndicatorMode>TouchIndicator</ScrollingIndicatorMode>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Duration="0"
+                                                                       Storyboard.TargetName="PART_HorizontalScrollBar"
+                                                                       Storyboard.TargetProperty="IndicatorMode">
+                                            <DiscreteObjectKeyFrame KeyTime="0">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <ScrollingIndicatorMode>TouchIndicator</ScrollingIndicatorMode>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="MouseIndicator">
+                                    <Storyboard>
+                                        <FadeInThemeAnimation TargetName="PART_ScrollBarSeparator" />
+                                        <ObjectAnimationUsingKeyFrames Duration="0"
+                                                                       Storyboard.TargetName="PART_VerticalScrollBar"
+                                                                       Storyboard.TargetProperty="IndicatorMode">
+                                            <DiscreteObjectKeyFrame KeyTime="0">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <ScrollingIndicatorMode>MouseIndicator</ScrollingIndicatorMode>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Duration="0"
+                                                                       Storyboard.TargetName="PART_HorizontalScrollBar"
+                                                                       Storyboard.TargetProperty="IndicatorMode">
+                                            <DiscreteObjectKeyFrame KeyTime="0">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <ScrollingIndicatorMode>MouseIndicator</ScrollingIndicatorMode>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <Grid Background="{TemplateBinding Background}">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <syncfusion:ScrollableContentPresenter x:Name="PART_ScrollContentPresenter"
+                                                                   Grid.RowSpan="2"
+                                                                   Grid.ColumnSpan="2"
+                                                                   Margin="0,10,0,0"
+                                                                   VerticalAlignment="Center"
+                                                                   ContentTemplate="{TemplateBinding ContentTemplate}"
+                                                                   TemplatedParent="{TemplateBinding Owner}" />
+                            <ScrollBar x:Name="PART_VerticalScrollBar"
+                                       Grid.Column="1"
+                                       HorizontalAlignment="Right"
+                                       IndicatorMode="None"
+                                       IsTabStop="False"
+                                       Maximum="{TemplateBinding ScrollableHeight}"
+                                       Minimum="0"
+                                       Orientation="Vertical"
+                                       ViewportSize="{TemplateBinding ViewportHeight}"
+                                       Visibility="{TemplateBinding ComputedVerticalScrollBarVisibility}"
+                                       Value="{TemplateBinding VerticalOffset}" />
+                            <ScrollBar x:Name="PART_HorizontalScrollBar"
+                                       Grid.Row="1"
+                                       VerticalAlignment="Bottom"
+                                       IndicatorMode="None"
+                                       IsTabStop="False"
+                                       Maximum="{TemplateBinding ScrollableWidth}"
+                                       Minimum="0"
+                                       Orientation="Horizontal"
+                                       Style="{StaticResource HorizontalScrollBarStyle}"
+                                       ViewportSize="{TemplateBinding ViewportWidth}"
+                                       Visibility="{TemplateBinding ComputedHorizontalScrollBarVisibility}"
+                                       Value="{TemplateBinding HorizontalOffset}" />
+                            <Border x:Name="PART_ScrollBarSeparator"
+                                    Grid.Row="1"
+                                    Grid.Column="1"
+                                    Background="{StaticResource ScrollBarTrackBackgroundThemeBrush}"
+                                    BorderBrush="{StaticResource ScrollBarTrackBorderThemeBrush}" />
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="NavigationButtonStyle" TargetType="Button">
+        <Setter Property="Background" Value="{StaticResource ButtonBackgroundThemeBrush}" />
+        <Setter Property="Foreground" Value="{StaticResource ButtonForegroundThemeBrush}" />
+        <Setter Property="BorderBrush" Value="{StaticResource ButtonBorderThemeBrush}" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="Padding" Value="12,4,12,4" />
+        <Setter Property="HorizontalAlignment" Value="Left" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="FontFamily" Value="{StaticResource ContentControlThemeFontFamily}" />
+        <Setter Property="FontWeight" Value="SemiBold" />
+        <Setter Property="FontSize" Value="{StaticResource ControlContentThemeFontSize}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal" />
+                                <VisualState x:Name="PointerOver">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Ellipse" Storyboard.TargetProperty="Fill">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ButtonPointerOverBackgroundThemeBrush}" />
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ButtonPointerOverForegroundThemeBrush}" />
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Pressed">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Ellipse" Storyboard.TargetProperty="Fill">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="#FFACACC1" />
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ButtonPressedForegroundThemeBrush}" />
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Disabled">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Ellipse" Storyboard.TargetProperty="Fill">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="#FFEEE2E2" />
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Ellipse" Storyboard.TargetProperty="Stroke">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ButtonDisabledBorderThemeBrush}" />
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                            <EasingDoubleKeyFrame KeyTime="0" Value="1" />
+                                            <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0.5" />
+                                        </DoubleAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="FocusStates">
+                                <VisualState x:Name="Focused">
+                                    <Storyboard>
+                                        <DoubleAnimation Duration="0"
+                                                         Storyboard.TargetName="FocusVisualWhite"
+                                                         Storyboard.TargetProperty="Opacity"
+                                                         To="1" />
+                                        <DoubleAnimation Duration="0"
+                                                         Storyboard.TargetName="FocusVisualBlack"
+                                                         Storyboard.TargetProperty="Opacity"
+                                                         To="1" />
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Unfocused" />
+                                <VisualState x:Name="PointerFocused" />
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <Ellipse x:Name="Ellipse"
+                                 Fill="{TemplateBinding Background}"
+                                 Stroke="{TemplateBinding BorderBrush}"
+                                 StrokeThickness="0" />
+
+                        <ContentPresenter x:Name="ContentPresenter"
+                                          Margin="{TemplateBinding Padding}"
+                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                          Content="{TemplateBinding Content}"
+                                          ContentTemplate="{TemplateBinding ContentTemplate}"
+                                          ContentTransitions="{TemplateBinding ContentTransitions}" />
+                        <Rectangle x:Name="FocusVisualWhite"
+                                   IsHitTestVisible="False"
+                                   Opacity="0"
+                                   Stroke="{StaticResource FocusVisualWhiteStrokeThemeBrush}"
+                                   StrokeDashArray="1,1"
+                                   StrokeDashOffset="1.5"
+                                   StrokeEndLineCap="Square" />
+                        <Rectangle x:Name="FocusVisualBlack"
+                                   IsHitTestVisible="False"
+                                   Opacity="0"
+                                   Stroke="{StaticResource FocusVisualBlackStrokeThemeBrush}"
+                                   StrokeDashArray="1,1"
+                                   StrokeDashOffset="0.5"
+                                   StrokeEndLineCap="Square" />
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="datapager:SfDataPager">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="datapager:SfDataPager">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}">
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="ButtonStates">
+                                <VisualState x:Name="Normal">
+                                    <Storyboard>
+                                        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PART_FirstPageButton" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                            <EasingDoubleKeyFrame KeyTime="0" Value="1" />
+                                        </DoubleAnimationUsingKeyFrames>
+                                        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PART_PreviousPageButton" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                            <EasingDoubleKeyFrame KeyTime="0" Value="1" />
+                                        </DoubleAnimationUsingKeyFrames>
+                                        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PART_NextPageButton" Storyboard.TargetProperty="(UIElement.Opacity)">
+
+                                            <EasingDoubleKeyFrame KeyTime="0" Value="1" />
+                                        </DoubleAnimationUsingKeyFrames>
+                                        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PART_LastPageButton" Storyboard.TargetProperty="(UIElement.Opacity)">
+
+                                            <EasingDoubleKeyFrame KeyTime="0" Value="1" />
+                                        </DoubleAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="PointerEnterd">
+                                    <Storyboard>
+                                        <FadeInThemeAnimation TargetName="PART_PreviousPageButton" />
+                                        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PART_PreviousPageButton" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                            <EasingDoubleKeyFrame KeyTime="0" Value="0" />
+                                            <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1" />
+                                        </DoubleAnimationUsingKeyFrames>
+                                        <FadeInThemeAnimation TargetName="PART_NextPageButton" />
+                                        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PART_NextPageButton" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                            <EasingDoubleKeyFrame KeyTime="0" Value="0" />
+                                            <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1" />
+                                        </DoubleAnimationUsingKeyFrames>
+                                    </Storyboard>
+
+                                </VisualState>
+                                <VisualState x:Name="PointerExited">
+                                    <Storyboard>
+                                        <FadeOutThemeAnimation TargetName="PART_PreviousPageButton" />
+                                        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PART_PreviousPageButton" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                            <EasingDoubleKeyFrame KeyTime="0" Value="1" />
+                                            <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+                                        </DoubleAnimationUsingKeyFrames>
+                                        <FadeOutThemeAnimation TargetName="PART_NextPageButton" />
+                                        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PART_NextPageButton" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                            <EasingDoubleKeyFrame KeyTime="0" Value="1" />
+                                            <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+                                        </DoubleAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <Grid Margin="5,0,0,0"
+                              HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                              VerticalAlignment="Center">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+
+                            <Border Height="{TemplateBinding Height}" Background="Transparent">
+                                <syncfusion:ScrollableContentViewer x:Name="PART_ScrollViewer"
+                                                                    VerticalAlignment="Center"
+                                                                    HorizontalScrollBarVisibility="Auto"
+                                                                    Style="{StaticResource PagerScrollViewerStyle}"
+                                                                    VerticalScrollBarVisibility="Hidden">
+                                    <datapager:NumericButtonPanel x:Name="PART_NumericButtonPanel" Background="Transparent" />
+                                </syncfusion:ScrollableContentViewer>
+                            </Border>
+                            <Grid Grid.Column="1">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+
+                                <Button x:Name="PART_FirstPageButton"
+                                        Width="40"
+                                        Height="40"
+                                        Margin="5"
+                                        Background="{TemplateBinding AccentBackground}"
+                                        BorderThickness="0"
+                                        Style="{StaticResource NavigationButtonStyle}">
+                                    <Button.Content>
+                                        <Path Width="12"
+                                              Height="12"
+                                              Margin="0,0,0,0"
+                                              Data="M186.84901,0.87000641 L270.861,0.87000641 143.59299,128.13806 271.861,256.40601 188.34901,256.40601 59.831,127.88806 z M0,0 L59.831,0 59.831,127.88806 59.831,256.406 0,256.406 z"
+                                              Fill="{StaticResource AppBarItemForegroundThemeBrush}"
+                                              Stretch="Uniform" />
+                                    </Button.Content>
+                                    <Button.RenderTransform>
+                                        <CompositeTransform />
+                                    </Button.RenderTransform>
+                                </Button>
+                                <Button x:Name="PART_PreviousPageButton"
+                                        Grid.Column="1"
+                                        Width="40"
+                                        Height="40"
+                                        Margin="5"
+                                        Background="{TemplateBinding AccentBackground}"
+                                        BorderThickness="0"
+                                        Opacity="0"
+                                        Style="{StaticResource NavigationButtonStyle}">
+                                    <Button.Content>
+                                        <Path Width="12"
+                                              Height="12"
+                                              Margin="0,0,0,0"
+                                              Data="F1M646.688,13.5518L646.783,13.4593 646.965,13.639 668.383,35.0583 689.459,35.0583 665.155,10.751 657.503,3.10126 657.323,2.92023 664.876,-4.63837 689.184,-28.9417 668.109,-28.9417 646.688,-7.52637 636.15,3.01398 646.688,13.5518z"
+                                              Fill="{StaticResource AppBarItemForegroundThemeBrush}"
+                                              Stretch="Uniform" />
+                                    </Button.Content>
+                                    <Button.RenderTransform>
+                                        <CompositeTransform />
+                                    </Button.RenderTransform>
+                                </Button>
+
+
+                                <Button x:Name="PART_NextPageButton"
+                                        Grid.Column="2"
+                                        Width="40"
+                                        Height="40"
+                                        Margin="5"
+                                        Background="{TemplateBinding AccentBackground}"
+                                        BorderThickness="0"
+                                        Opacity="0"
+                                        Style="{StaticResource NavigationButtonStyle}">
+                                    <Button.Content>
+                                        <Path Width="12"
+                                              Height="12"
+                                              Margin="0"
+                                              Data="F1M568.254,-7.43524L568.159,-7.34277 567.977,-7.52246 546.559,-28.9417 525.484,-28.9417 549.787,-4.63446 557.439,3.01532 557.619,3.19629 550.067,10.7549 525.758,35.0583 546.834,35.0583 568.254,13.6429 578.792,3.10254 568.254,-7.43524z"
+                                              Fill="{StaticResource AppBarItemForegroundThemeBrush}"
+                                              Stretch="Uniform" />
+                                    </Button.Content>
+
+                                    <Button.RenderTransform>
+                                        <CompositeTransform />
+                                    </Button.RenderTransform>
+                                </Button>
+
+                                <Button x:Name="PART_LastPageButton"
+                                        Grid.Column="3"
+                                        Width="40"
+                                        Height="40"
+                                        Margin="5"
+                                        Background="{TemplateBinding AccentBackground}"
+                                        BorderThickness="0"
+                                        Style="{StaticResource NavigationButtonStyle}">
+                                    <Button.Content>
+                                        <Path Width="12"
+                                              Height="12"
+                                              Margin="0,0,0,0"
+                                              Data="M212.02997,0 L271.86096,0 271.86096,256.40601 212.02997,256.40601 212.02997,128.51749 85.010976,255.53601 1.0000002,255.53601 128.26799,128.26744 0,4.0510441E-06 83.510976,4.0510441E-06 212.02997,128.5174 z"
+                                              Fill="{Binding Path=Foreground,
+                                                             ElementName=PART_LastPageButton}"
+                                              Stretch="UniformToFill" />
+                                    </Button.Content>
+                                    <Button.RenderTransform>
+                                        <CompositeTransform />
+                                    </Button.RenderTransform>
+                                </Button>
+                            </Grid>
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Height" Value="100" />
+        <Setter Property="BorderBrush" Value="{StaticResource AppBarItemForegroundThemeBrush}" />
+    </Style>
+
+</ResourceDictionary>

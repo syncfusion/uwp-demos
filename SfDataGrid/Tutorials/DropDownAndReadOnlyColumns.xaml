@@ -1,0 +1,83 @@
+﻿<View:SampleLayout
+    x:Class="DataGrid.DropDownAndReadOnlyColumns"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:DataGrid"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Grid"
+    xmlns:View="using:Common"
+    mc:Ignorable="d">
+
+    <View:SampleLayout.Resources>
+        <ResourceDictionary>
+            <local:CategoryRepository x:Key="categoryComboBox" />
+            <local:OrderInfoViewModel x:Key="viewmodel" />
+            <local:CurrencyFormatConverter x:Key="currencyFormatConverter" />
+        </ResourceDictionary>
+    </View:SampleLayout.Resources>
+    <View:SampleLayout.Sample>
+        <syncfusion:SfDataGrid x:Name="sfGrid"
+                               AllowEditing="True"
+                               AutoGenerateColumns="False"
+                               ColumnSizer="Star"
+                               Margin="10,13,10,15"
+                               EditTrigger="OnTap"
+                               ShowRowHeader="True">
+  
+            <syncfusion:SfDataGrid.Columns>
+                <syncfusion:GridMultiColumnDropDownList Width="175"
+                                                        AutoGenerateColumns="False"
+                                                        DisplayMember="OrderID"
+                                                        ItemsSource="{Binding OrdersListDetails,
+                                                                              Source={StaticResource viewmodel}}"
+                                                        MappingName="OrderID"
+                                                        TextAlignment="Right"
+                                                        ValueMember="OrderID">
+                    <syncfusion:GridMultiColumnDropDownList.Columns>
+                        <syncfusion:Columns>
+                            <syncfusion:GridTextColumn HeaderText="OrderID " MappingName="OrderID" />
+                            <syncfusion:GridTextColumn HeaderText="Customer ID" MappingName="EmployeeID" />
+                            <syncfusion:GridNumericColumn DisplayBinding="{Binding UnitPrice,
+                                                                                   Converter={StaticResource currencyFormatConverter}}"
+                                                          MappingName="UnitPrice"
+                                                          TextAlignment="Right" />
+                        </syncfusion:Columns>
+                    </syncfusion:GridMultiColumnDropDownList.Columns>
+                </syncfusion:GridMultiColumnDropDownList>
+                <syncfusion:GridDateTimeColumn Width="150"
+                                               FormatString="d"
+                                               HeaderText="Order Date"
+                                               MappingName="Shipping"
+                                               TextAlignment="Right" />
+                <syncfusion:GridComboBoxColumn HeaderText="Ship Country"
+                                               ItemsSource="{StaticResource categoryComboBox}"
+                                               MappingName="ShipCountry"
+                                               Padding="5" />
+                <syncfusion:GridTemplateColumn HeaderText="Customer ID"
+                                               MappingName="EmployeeID"
+                                               SetCellBoundValue="True">
+                    <syncfusion:GridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock HorizontalAlignment="Center"
+                                       VerticalAlignment="Center"
+                                       Text="{Binding Value}"
+                                       TextAlignment="Center" />
+                        </DataTemplate>
+                    </syncfusion:GridTemplateColumn.CellTemplate>
+                </syncfusion:GridTemplateColumn>
+                <syncfusion:GridHyperlinkColumn HeaderText=" Ship Link Address" MappingName="ShipCity" />
+            </syncfusion:SfDataGrid.Columns>
+            <syncfusion:SfDataGrid.StackedHeaderRows>
+                <syncfusion:StackedHeaderRow>
+                    <syncfusion:StackedHeaderRow.StackedColumns>
+                        <syncfusion:StackedColumn ChildColumns="OrderID,Shipping,ShipCountry" HeaderText="DropDown Columns" />
+                        <syncfusion:StackedColumn ChildColumns="EmployeeID,ShipCity" HeaderText="ReadOnly Columns" />
+                    </syncfusion:StackedHeaderRow.StackedColumns>
+                </syncfusion:StackedHeaderRow>
+
+            </syncfusion:SfDataGrid.StackedHeaderRows>
+        </syncfusion:SfDataGrid>
+    </View:SampleLayout.Sample>
+
+</View:SampleLayout>

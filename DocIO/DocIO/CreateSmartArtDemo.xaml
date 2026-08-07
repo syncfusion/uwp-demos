@@ -1,0 +1,54 @@
+﻿<View:SampleLayout
+    x:Class="EssentialDocIO.CreateSmartArtDemo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:EssentialDocIO" xmlns:View="using:Common"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <View:SampleLayout.Sample>
+        <ContentControl>
+            <Grid x:Name="CreateSmartArt" Background="{StaticResource ApplicationPageBackgroundThemeBrush}" Padding="10,0,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock x:Name="TextBlock1" Grid.Row="0" Grid.ColumnSpan="4" FontFamily="Segoe UI" FontSize="18"/>
+                <TextBlock x:Name="TextBlock2" Grid.Row="1" Grid.ColumnSpan="4" TextWrapping="Wrap" Text="This sample demonstrates how to create a Word document with SmartArt graphics using the .NET Word Library (DocIO). " FontFamily="Segoe UI" FontSize="20" Foreground="#333333"/>
+                <TextBlock x:Name="TextBlock3" Grid.Row="2" Grid.ColumnSpan="4" FontFamily="Segoe UI" FontSize="18"/>
+
+                <TextBlock x:Name="TextBlock4" Grid.Row="3" Grid.ColumnSpan="1" Text="Choose SmartArt Type: " />
+                <ComboBox x:Name="comboBox" Grid.Row="3" Grid.Column="4" Grid.RowSpan="1" Grid.ColumnSpan="3" SelectedIndex="0" Margin="170,-2,0,0" Foreground="#333333" Width="130">
+                    <ComboBoxItem Content="List"/>
+                    <ComboBoxItem Content="Process"/>
+                    <ComboBoxItem Content="Cycle"/>
+                    <ComboBoxItem Content="Hierarchy"/>
+                    <ComboBoxItem Content="Relationship"/>
+                    <ComboBoxItem Content="Matrix"/>
+                    <ComboBoxItem Content="Pyramid"/>
+                    <ComboBoxItem Content="Picture"/>
+                </ComboBox>
+                <TextBlock x:Name="TextBlock5" Grid.Row="4" Grid.ColumnSpan="4" FontFamily="Segoe UI" FontSize="18"/>
+
+                <Grid Grid.Row="5" >
+
+                    <Button x:Name="Button" Grid.Column="0" Content="Generate" Click="Button_Click" FontFamily="Segoe UI" FontSize="16" Foreground="#FFFFFF" Background="#656868" Padding="30,10,30,10"/>
+
+                </Grid>
+            </Grid>
+        </ContentControl>
+    </View:SampleLayout.Sample>
+</View:SampleLayout>  
