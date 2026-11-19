@@ -1,0 +1,85 @@
+﻿<common:SampleLayout
+    x:Class="Syncfusion.SampleBrowser.UWP.SfChart.MultipleLegendsDemo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Syncfusion.SampleBrowser.UWP.SfChart"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:common="using:Common"
+    xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
+    xmlns:navigation="using:Syncfusion.UI.Xaml.Controls.Layout"
+    mc:Ignorable="d">
+
+    <common:SampleLayout.Sample>
+        <ContentControl>
+            <Grid x:Name="grid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                <Grid.Resources>
+                    <Style x:Key="axisLineStyle" TargetType="Line">
+                        <Setter Property="Stroke" Value="#FFD1D3D4"/>
+                        <Setter Property="StrokeThickness" Value="1"/>
+                    </Style>
+
+                    <DataTemplate x:Key="headerTemplate">
+                        <TextBlock Text="{Binding}" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    </DataTemplate>
+                    <DataTemplate x:Key="legend">
+                        <StackPanel Orientation="Horizontal" >
+                            <CheckBox IsChecked="{Binding IsSeriesVisible,Mode=TwoWay}" MinHeight="0" MinWidth="0" RenderTransformOrigin="1,.5"  VerticalAlignment="Center" >
+                                <CheckBox.RenderTransform>
+                                    <ScaleTransform ScaleX="0.75" ScaleY="0.75" />
+                                </CheckBox.RenderTransform>
+                            </CheckBox>
+                            <Rectangle Fill="{Binding Interior}"  Height="14.5" Width="14.5" Margin="-1,0,0,0" VerticalAlignment="Center" />
+                            <TextBlock Text="{Binding Label}"  FontSize="16" Margin="3,-2,0,-1"  VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </Grid.Resources>
+
+                <chart:SfChart x:Name="Chart1" Margin="5" AreaBorderThickness="0,0.5,0.5,0">
+
+                    <chart:SfChart.ColumnDefinitions>
+                        <chart:ChartColumnDefinition/>
+                        <chart:ChartColumnDefinition/>
+                    </chart:SfChart.ColumnDefinitions>
+
+                    <chart:SfChart.DataContext>
+                        <local:ProductDetails5/>
+                    </chart:SfChart.DataContext>
+
+                    <chart:SfChart.Legend>
+                        <chart:ChartLegendCollection>
+                            <chart:ChartLegend chart:SfChart.Column="0"  ItemTemplate="{StaticResource legend}" />
+                            <chart:ChartLegend chart:SfChart.Column="1"  ItemTemplate="{StaticResource legend}" />
+                        </chart:ChartLegendCollection>
+                    </chart:SfChart.Legend>
+
+                    <chart:SfChart.PrimaryAxis>
+                        <chart:CategoryAxis LabelFormat="dd-MMM" FontSize="12" Header="Date"
+                                    EdgeLabelsDrawingMode="Shift" chart:SfChart.Column="0" 
+                                    AxisLineStyle="{StaticResource axisLineStyle}" 
+                                    MajorTickLineStyle="{StaticResource axisLineStyle}"
+                                    HeaderTemplate="{StaticResource headerTemplate}"/>
+                    </chart:SfChart.PrimaryAxis>
+
+                    <chart:SfChart.SecondaryAxis>
+                        <chart:NumericalAxis RangePadding="Round" FontSize="12" Header="Rate variation"
+                                     AxisLineStyle="{StaticResource axisLineStyle}" 
+                                     MajorTickLineStyle="{StaticResource axisLineStyle}"
+                                     HeaderTemplate="{StaticResource headerTemplate}"/>
+                    </chart:SfChart.SecondaryAxis>
+
+                    <chart:ColumnSeries Interior="#f39c12" Label="Product 1" ItemsSource="{Binding}" XBindingPath="Date" YBindingPath="Rate"/>
+
+                    <chart:LineSeries Label="Product 2" ItemsSource="{Binding}" XBindingPath="Date" YBindingPath="Rate">
+                        <chart:LineSeries.XAxis>
+                            <chart:CategoryAxis x:Name="catAxis" EdgeLabelsDrawingMode="Shift" LabelFormat="dd-MMM" 
+                                        FontSize="12" chart:SfChart.Column="1" 
+                                        AxisLineStyle="{StaticResource axisLineStyle}" 
+                                        MajorTickLineStyle="{StaticResource axisLineStyle}"/>
+                        </chart:LineSeries.XAxis>
+                    </chart:LineSeries>
+                </chart:SfChart>
+            </Grid>
+        </ContentControl>
+    </common:SampleLayout.Sample>
+</common:SampleLayout>

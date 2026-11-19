@@ -1,0 +1,4 @@
+Syncfusion.SampleBrowser.UWP.Common.dll
+Syncfusion.Licensing.dll
+Syncfusion.SfMaps.UWP.dll
+Syncfusion.Telemetry.dll

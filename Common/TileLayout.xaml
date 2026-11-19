@@ -1,0 +1,91 @@
+﻿<UserControl
+    x:Class="Common.TileLayout"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Common"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" 
+    xmlns:tile="using:Syncfusion.UI.Xaml.Controls.Notification"
+>
+    <UserControl.Resources>
+        <local:TagVisibility x:Key="Tagvisibilityconverter" />
+        <local:TagNameToColor x:Key="Tagcolorconverter" />
+        <local:TagEnumToString x:Key="Tagnameconverter" />
+        <SolidColorBrush Color="Transparent" x:Key="SystemControlBackgroundBaseHighBrush"/>
+        <local:StringToPathConverter x:Key="PathConverter"/>
+        <Style TargetType="GridViewItem">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="GridViewItem">
+                        <ListViewItemPresenter Margin="10,5"
+            ContentTransitions="{TemplateBinding ContentTransitions}"
+            SelectionCheckMarkVisualEnabled="True"
+            CheckBrush="{ThemeResource SystemControlForegroundBaseMediumHighBrush}"
+            CheckBoxBrush="{ThemeResource SystemControlBackgroundChromeMediumBrush}"
+            DragBackground="{ThemeResource ListViewItemDragBackgroundThemeBrush}"
+            DragForeground="{ThemeResource ListViewItemDragForegroundThemeBrush}"
+            FocusBorderBrush="{ThemeResource SystemControlForegroundAltHighBrush}"
+            FocusSecondaryBorderBrush="{ThemeResource SystemControlForegroundBaseHighBrush}"
+            PlaceholderBackground="{ThemeResource ListViewItemPlaceholderBackgroundThemeBrush}"
+            PointerOverBackground="#68EBF2"
+            PointerOverForeground="{ThemeResource SystemControlForegroundBaseHighBrush}"
+            SelectedBackground="#68EBF2"
+            SelectedForeground="{ThemeResource SystemControlForegroundBaseHighBrush}"
+            SelectedPointerOverBackground="{ThemeResource SystemControlHighlightListAccentMediumBrush}"
+            PressedBackground="#68EBF2"
+            SelectedPressedBackground="#68EBF2"
+            DisabledOpacity="{ThemeResource ListViewItemDisabledThemeOpacity}"
+            DragOpacity="{ThemeResource ListViewItemDragThemeOpacity}"
+            ReorderHintOffset="{ThemeResource GridViewItemReorderHintThemeOffset}"
+            HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+            VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+            ContentMargin="{TemplateBinding Padding}"
+            CheckMode="Overlay"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+    <ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden">
+        <Grid >
+            <GridView ScrollViewer.VerticalScrollMode="Disabled" BorderThickness="0" Margin="-10,0,0,0"  CanDragItems="True" AllowDrop="True" x:Name="gridview"
+                         CanReorderItems="True" 
+                        ItemsSource="{Binding}" 
+                        IsSwipeEnabled="False"
+                        IsItemClickEnabled="True"
+ItemClick="GridView_ItemClick" BorderBrush="Transparent"
+                        SelectionMode="None">
+                <GridView.ItemsPanel>
+                    <ItemsPanelTemplate>                        
+                        <VariableSizedWrapGrid  MaximumRowsOrColumns="9" HorizontalAlignment="Left" HorizontalChildrenAlignment="Left" Orientation="Vertical">
+                        </VariableSizedWrapGrid>
+                    </ItemsPanelTemplate>
+                </GridView.ItemsPanel>
+                <GridView.ItemTemplate>
+                    <DataTemplate>
+                        <Border  x:Name="tile" BorderThickness="1" CornerRadius="2" Height="48" Width="220" BorderBrush="#D8D8D8" Background="#F9F9F9">
+                            <Grid Margin="0,0,10,0">
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="36"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Path Data="{Binding Path=Name, Converter={StaticResource PathConverter}}" Stretch="Uniform" Fill="#4c4c4c" Width="18" Height="18" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                <!--<Image Stretch="Uniform" Width="17" Height="17" Source="{Binding Converter={StaticResource PathConverter}}" VerticalAlignment="Center" HorizontalAlignment="Center" />-->
+                                <TextBlock Text="{Binding Name}"  TextTrimming="CharacterEllipsis" ToolTipService.ToolTip="{Binding Name}" Margin="7,0,0,0" FontSize="13" FontWeight="Normal" FontFamily="Roboto Slab" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBlock>
+                                <Grid  Visibility="{Binding ProductTag, Converter={StaticResource Tagvisibilityconverter}}" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                    <Border CornerRadius="10" Margin="0,0,0,0"  Background="{Binding ProductTag, Converter={StaticResource Tagcolorconverter}}" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                        <TextBlock Margin="12,3,12,2" Text="{Binding ProductTag, Converter={StaticResource Tagnameconverter}}" FontFamily="Roboto Slab" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="9" FontWeight="SemiBold"   Foreground="White"/>
+                                    </Border>
+                                </Grid>
+
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </GridView.ItemTemplate>
+            </GridView>
+        </Grid>
+    </ScrollViewer>
+</UserControl>

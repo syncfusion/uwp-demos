@@ -1,0 +1,63 @@
+﻿<layout:SampleLayout x:Class="BI.PivotGrid.SummaryDisplay"
+                     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                     mc:Ignorable="d" d:DesignHeight="300" d:DesignWidth="400" 
+                     xmlns:pivots="using:Syncfusion.PivotAnalysis.UWP"
+                     xmlns:pivotGrid="using:Syncfusion.UI.Xaml.PivotGrid"
+                     xmlns:layout="using:Common" Header="PivotGrid">
+
+    <layout:SampleLayout.Sample>
+        <pivotGrid:SfPivotGrid x:Name="pivotGrid2" Margin="5">
+            <pivotGrid:SfPivotGrid.PivotRows>
+                <pivots:PivotItem FieldCaption="Product" FieldMappingName="Product" TotalHeader="Total"/>
+                <pivots:PivotItem FieldCaption="Date" FieldMappingName="Date" TotalHeader="Total"/>
+            </pivotGrid:SfPivotGrid.PivotRows>
+            <pivotGrid:SfPivotGrid.PivotColumns>
+                <pivots:PivotItem FieldCaption="Country" FieldMappingName="Country" TotalHeader="Total"/>
+                <pivots:PivotItem FieldCaption="State" FieldMappingName="State" TotalHeader="Total"/>
+            </pivotGrid:SfPivotGrid.PivotColumns>
+            <pivotGrid:SfPivotGrid.PivotCalculations>
+                <pivots:PivotComputationInfo FieldCaption="Amount" FieldName="Amount" Format="C" SummaryType="DoubleTotalSum"/>
+                <pivots:PivotComputationInfo FieldCaption="Quantity" FieldName="Quantity" Format="#.##" SummaryType="Count"/>
+            </pivotGrid:SfPivotGrid.PivotCalculations>
+        </pivotGrid:SfPivotGrid>
+    </layout:SampleLayout.Sample>
+
+    <layout:SampleLayout.Setting>
+        <ContentControl>
+            <StackPanel Width="300">
+                <StackPanel Margin="10 7">
+                    <TextBlock Margin="10 7" Text="Display Option for Amount"/>
+                    <ComboBox Name="DisplayOptionBox" Margin="10 7" SelectedIndex="1" HorizontalAlignment="Stretch"
+                              SelectionChanged="DisplayOptionBox_SelectionChanged">
+                        <ComboBoxItem>None</ComboBoxItem>
+                        <ComboBoxItem>All</ComboBoxItem>
+                        <ComboBoxItem>Summaries</ComboBoxItem>
+                        <ComboBoxItem>Calculations</ComboBoxItem>
+                        <ComboBoxItem>GrandTotals</ComboBoxItem>
+                        <ComboBoxItem>Summaries and  Calculations</ComboBoxItem>
+                        <ComboBoxItem>Summaries and  GrandTotals</ComboBoxItem>
+                        <ComboBoxItem>Calculations and GrandTotals</ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Margin="10 7">
+                    <TextBlock Margin="10 7" Text="Display Option for Quantity"/>
+                    <ComboBox Name="DisplayOptionBox1" Margin="10 7" SelectedIndex="1" HorizontalAlignment="Stretch"
+                              SelectionChanged="DisplayOptionBox_SelectionChanged">
+                        <ComboBoxItem>None</ComboBoxItem>
+                        <ComboBoxItem>All</ComboBoxItem>
+                        <ComboBoxItem>Summaries</ComboBoxItem>
+                        <ComboBoxItem>Calculations</ComboBoxItem>
+                        <ComboBoxItem>GrandTotals</ComboBoxItem>
+                        <ComboBoxItem>Summaries and  Calculations</ComboBoxItem>
+                        <ComboBoxItem>Summaries and  GrandTotals</ComboBoxItem>
+                        <ComboBoxItem>Calculations and GrandTotals</ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+            </StackPanel>
+        </ContentControl>
+    </layout:SampleLayout.Setting>
+</layout:SampleLayout>

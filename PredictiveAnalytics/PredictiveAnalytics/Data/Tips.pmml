@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<PMML version="4.1" xmlns="http://www.dmg.org/PMML-4_1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dmg.org/PMML-4_1 http://www.dmg.org/v4-1/pmml-4-1.xsd">
+ <Header copyright="Copyright (c) 2016 Syncfusion" description="Linear Regression Model">
+  <Extension name="user" value="Syncfusion" extender="Rattle/PMML"/>
+  <Application name="Rattle/PMML" version="1.4"/>
+  <Timestamp>2014-07-17 12:39:31</Timestamp>
+ </Header>
+ <DataDictionary numberOfFields="7">
+  <DataField name="tip" optype="continuous" dataType="double"/>
+  <DataField name="total_bill" optype="continuous" dataType="double"/>
+  <DataField name="sex" optype="categorical" dataType="string">
+   <Value value="Female"/>
+   <Value value="Male"/>
+  </DataField>
+  <DataField name="smoker" optype="categorical" dataType="string">
+   <Value value="No"/>
+   <Value value="Yes"/>
+  </DataField>
+  <DataField name="day" optype="categorical" dataType="string">
+   <Value value="Fri"/>
+   <Value value="Sat"/>
+   <Value value="Sun"/>
+   <Value value="Thur"/>
+  </DataField>
+  <DataField name="time" optype="categorical" dataType="string">
+   <Value value="Dinner"/>
+   <Value value="Lunch"/>
+  </DataField>
+  <DataField name="size" optype="continuous" dataType="double"/>
+ </DataDictionary>
+ <RegressionModel modelName="Linear_Regression_Model" functionName="regression" algorithmName="least squares">
+  <MiningSchema>
+   <MiningField name="tip" usageType="predicted"/>
+   <MiningField name="total_bill" usageType="active"/>
+   <MiningField name="sex" usageType="active"/>
+   <MiningField name="smoker" usageType="active"/>
+   <MiningField name="day" usageType="active"/>
+   <MiningField name="time" usageType="active"/>
+   <MiningField name="size" usageType="active"/>
+  </MiningSchema>
+  <Output>
+   <OutputField name="Predicted_tip" feature="predictedValue"/>
+  </Output>
+  <RegressionTable intercept="0.62896081740357">
+   <NumericPredictor name="total_bill" exponent="1" coefficient="0.0917106108446424"/>
+   <NumericPredictor name="size" exponent="1" coefficient="0.181722496519031"/>
+   <CategoricalPredictor name="sex" value="Female" coefficient="0"/>
+   <CategoricalPredictor name="sex" value="Male" coefficient="0.00905882946326745"/>
+   <CategoricalPredictor name="smoker" value="No" coefficient="0"/>
+   <CategoricalPredictor name="smoker" value="Yes" coefficient="0.144915304501965"/>
+   <CategoricalPredictor name="day" value="Fri" coefficient="0"/>
+   <CategoricalPredictor name="day" value="Sat" coefficient="0.111426675156273"/>
+   <CategoricalPredictor name="day" value="Sun" coefficient="0.103029976221616"/>
+   <CategoricalPredictor name="day" value="Thur" coefficient="0.0393712780606241"/>
+   <CategoricalPredictor name="time" value="Dinner" coefficient="0"/>
+   <CategoricalPredictor name="time" value="Lunch" coefficient="0"/>
+  </RegressionTable>
+ </RegressionModel>
+</PMML>

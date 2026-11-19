@@ -1,0 +1,9 @@
+Syncfusion.SampleBrowser.UWP.Common.dll
+Syncfusion.Licensing.dll
+Syncfusion.SfAccordion.UWP.dll
+Syncfusion.SfInput.UWP.dll
+Syncfusion.SfShared.UWP.dll
+Syncfusion.SfTabControl.UWP.dll
+Syncfusion.SfGrid.UWP.dll
+Syncfusion.Data.UWP.dll
+Syncfusion.XlsIO.UWP.dll

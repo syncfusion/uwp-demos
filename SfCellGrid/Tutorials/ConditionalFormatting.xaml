@@ -1,0 +1,14 @@
+﻿<Layout:SampleLayout x:Class="CellGridSamples.ConditionalFormatting"
+                     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                     xmlns:Layout="using:Common"
+                     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                     xmlns:local="using:CellGridSamples"
+                     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                     xmlns:syncfusion="using:Syncfusion.UI.Xaml.CellGrid"
+                     mc:Ignorable="d">
+
+    <Grid x:Name="parentGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <syncfusion:SfCellGrid x:Name="grid" />
+    </Grid>
+</Layout:SampleLayout>

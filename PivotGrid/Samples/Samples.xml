@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Products>
+  <TileGroup Header="Showcase">
+    
+
+    
+    <Tile Header="Stock Analysis"
+            Type="StockAnalysis.StockAnalysis"
+            Assembly="SampleBrowser" Color="#FF949F44"
+            ShowAppBar="True"
+            AppBarColor="#FF292C2A"
+            Image="Images/stock_tile.jpg"
+           Description="This sample analyzes the historical stock prices of several companies."/>
+
+    <Tile Header="Organizational Chart"
+         Type="OrganizationalChartDemo.MainPage"
+         Assembly="SampleBrowser"
+         Color="#FF67CFDD"
+          ShowAppBar="True"
+           ShowinWP="False"
+          AppBarColor="#FF33AEB7"
+         Image="Images/organisation.png"
+   Description="This sample displays an organizational chart that can be expanded and collapsed as required."/>
+
+    <Tile Header="Diagram Builder"
+        Type="DiagramBuilder.MainPage"
+        Assembly="SampleBrowser" Color="#FF949F44"
+        ShowAppBar="True"
+        AppBarColor="#FF087196"
+      ShowinWP="False"
+        Image="Images/Diagrambuilder.png"
+  Description="This samples displays Diagram builder."/>
+
+    
+
+    <Tile Header="Floor Planner"
+        Type="FloorPlannerDemo.MainPage"
+        Assembly="SampleBrowser" Color="#FF949F44"
+        ShowAppBar="True"
+        AppBarColor="#FF087196"
+      ShowinWP="False"
+        Image="Images/floor-planner-tile.png"
+  Description="This sample displays an floor plan designer."/>
+
+    <Tile Header="Workflow Editor"
+         Type="WorkFlowEditor.MainPage"
+         Assembly="SampleBrowser"
+         Color="#FF67CFDD"
+          ShowAppBar="True"
+          AppBarColor="#FF33AEB7"
+          RowSpan="2"
+           ShowinWP="False"
+         Image="Images/work-flow.png"
+   Description="This sample displays an workflow editor for process automation."/>
+
+    <Tile Header="UML Diagramming"
+         Type="UMLDiagramDesigner.MainPage"
+         Assembly="SampleBrowser"
+         Color="#FF67CFDD"
+         AppBarColor="#FF949F44"
+          ShowinWP="False"
+         Image="Images/uml.png"
+   Description="This sample lets uses create and save UML diagrams using the diagram controls touch interface."/>
+
+    <Tile Header="Expense Analysis"
+          Type="ExpenseAnalysisDemo.HomePage"
+          Assembly="SampleBrowser" Color="#FF949F44"
+          Image="Images/ExpenseDetails.png"
+          ShowAppBar="True"
+          AppBarColor="#FFB51111"
+        Description="This sample simulates a Expense Analysis that  would use to compare actuals to budgets . "/>
+
+   <!--<Tile Header="Mind Map"
+       Type="MindMapDemo.MainPage"
+       Assembly="SampleBrowser"
+       Color="#FF67CFDD"
+        ShowAppBar="True"
+        AppBarColor="#FF33AEB7"
+          ShowinWP="False"
+       Image="Images/mind-map.png"
+ Description="This sample displays mind map concept."/>-->
+
+    <Tile Header="Invoice generator"
+            Type="Invoice.MainPage"
+            Assembly="SampleBrowser" Color="#FF949F44"
+            ShowAppBar="True"
+            AppBarColor="#FF087196"
+            Image="Images/invoice.png"
+      Description="This samples lets users generate an invoice in Excel, Word and PDF file formats."/>
+
+   
+
+    <Tile Header="Unit Converter"
+            Type="UnitConverter.SamplePage"
+          ShowAppBar="True"
+         AppBarColor="#FF939D46"
+            Assembly="SampleBrowser" Color="#FF949F44"
+            Image="Images/unit.png"
+      Description="This sample lets uses convert data between several commonly used units."/>
+    <Tile Header="Sales Analysis"
+           Type="SalesAnalysis_Demo.SalesAnalysisDemo"
+           Assembly="SampleBrowser" Color="#FF949F44"
+           ShowAppBar="True"
+           AppBarColor="#FF292C2A"
+           Image="Images/sales.png" RowSpan="2"
+    Description="This sample simulates a sales analysis dashboard that can be used to analyze the sales vs. target data."/>
+    <Tile Header="Car Dashboard" ShowinWP="True"
+        Type="SampleBrowser.Gauge.SpeedTrackDemo"
+       Assembly="SampleBrowser" Color="#FF949F44"
+           ShowAppBar="True"
+          AppBarColor="#FF292C2A"
+       Image="Images/speed.png" Description="This sample simulates the radial gauges in a car dashboard."/>
+
+    <Tile Header="Document Editor"
+        Type="RTEDemo.DocumentEditor" ShowinWP="False"
+        Assembly="SampleBrowser" Color="#FF949F44"
+        ShowAppBar="True"
+        AppBarColor="#FF292C2A"
+        Image="Images/document_tile.jpg"
+        Description=""/>
+
+    <Tile Header="Wireframe Studio"
+       Type="Mockup.MainPage"
+       Assembly="SampleBrowser"
+       Color="#FF67CFDD"
+       ShowAppBar="True"
+       AppBarColor="#FF33AEB7"
+       ShowinWP="False"
+       Image="Images/Mockup.png"
+ Description="This sample displays a Mockup."/>
+
+  </TileGroup>
+
+  <TileGroup Header="All Controls">
+    
+    <Tile Header="Relational" CategoryName="PivotGrid" Type="PivotGrid.MainPage" Assembly="SampleBrowser"
+         EnablePreview="false"
+         EnableUpdated="false"
+         Description="PivotGrid is used to visualize a large set of records in a meaningful order."
+         Image="Assets/Icons/PivotGrid.png"/>
+        <Tile Header="OLAP" CategoryName="PivotGrid" Type="PivotGrid.MainPage" Assembly="SampleBrowser"
+         EnablePreview="false"
+         EnableUpdated="false"
+         Image="Assets/Icons/PivotGrid.png"/>
+         <Tile Header="Common" CategoryName="PivotGrid" Type="PivotGrid.MainPage" Assembly="SampleBrowser"
+         EnablePreview="false"
+         EnableUpdated="false"
+         Image="Assets/Icons/PivotGrid.png"/>
+   
+  </TileGroup>
+</Products>

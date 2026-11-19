@@ -1,0 +1,4 @@
+Syncfusion.SampleBrowser.UWP.Common.dll
+Syncfusion.SfKanban.UWP.dll
+Syncfusion.Licensing.dll
+Syncfusion.Telemetry.dll

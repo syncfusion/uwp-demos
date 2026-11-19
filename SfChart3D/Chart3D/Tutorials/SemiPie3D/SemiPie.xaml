@@ -1,0 +1,56 @@
+﻿<common:SampleLayout
+    x:Class="SampleBrowser.Chart3D.SemiPie"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SampleBrowser.Chart3D"
+    xmlns:common="using:Common"
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Charts"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <common:SampleLayout.Sample>
+        <ContentControl>
+            <Grid>
+                <Grid.DataContext>
+                    <local:DataViewModel/>
+                </Grid.DataContext>
+
+                <syncfusion:SfChart3D x:Name="PieChart" Rotation="-11" Tilt="-32" 
+                              PerspectiveAngle="90" Depth="30" EnableRotation="True">
+
+                    <syncfusion:SfChart3D.Header>
+                        <TextBlock Margin="40,30" Text="Application Performance Metrics" HorizontalAlignment="Center"
+                           VerticalAlignment="Center" FontFamily="Seoge UI" FontSize="22"/>
+                    </syncfusion:SfChart3D.Header>
+
+                    <!--PieSeries3D customized with start and end angle and custom color model-->
+                    <syncfusion:PieSeries3D x:Name="PieSeries" x:FieldModifier="public" StartAngle="180"
+                                    EndAngle="360" Palette="Custom" ConnectorType="Bezier" 
+                                    EnableSmartLabels="True" LabelPosition="Outside" XBindingPath="Utilization" 
+                                    YBindingPath="ResponseTime" ItemsSource="{Binding}">
+                        <syncfusion:PieSeries3D.ColorModel>
+                            <syncfusion:ChartColorModel>
+                                <syncfusion:ChartColorModel.CustomBrushes>
+                                    <SolidColorBrush Color="#FFC65C5C"/>
+                                    <SolidColorBrush Color="#FF443D3D"/>
+                                    <SolidColorBrush Color="#FF56A898"/>
+                                    <SolidColorBrush Color="#8e44ad"/>
+                                    <SolidColorBrush Color="#FFBC84B2"/>
+                                    <SolidColorBrush Color="#f1c40f"/>
+                                    <SolidColorBrush Color="#FF8CAA65"/>
+                                </syncfusion:ChartColorModel.CustomBrushes>
+                            </syncfusion:ChartColorModel>
+                        </syncfusion:PieSeries3D.ColorModel>
+                        <syncfusion:PieSeries3D.AdornmentsInfo>
+                            <syncfusion:ChartAdornmentInfo3D SegmentLabelContent="Percentage" SegmentLabelFormat="##.#"
+                                                     ShowLabel="True" ShowConnectorLine="True" AdornmentsPosition="Bottom" 
+                                                     HorizontalAlignment="Center" VerticalAlignment="Center" 
+                                                     UseSeriesPalette="True" ConnectorHeight="35"/>
+                        </syncfusion:PieSeries3D.AdornmentsInfo>
+                    </syncfusion:PieSeries3D>
+                </syncfusion:SfChart3D>
+            </Grid>
+        </ContentControl>
+    </common:SampleLayout.Sample>
+</common:SampleLayout>

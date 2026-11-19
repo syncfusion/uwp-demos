@@ -1,0 +1,48 @@
+﻿<UserControl
+    x:Class="SampleBrowser.GroupBar.NoteView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SampleBrowser.GroupBar"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" >
+
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+        <Border BorderBrush="LightGray" VerticalAlignment="Stretch" BorderThickness="0 1 1 1">
+            <Grid VerticalAlignment="Stretch">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="28"></RowDefinition>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <ListBox VerticalAlignment="Top" VerticalContentAlignment="Top" Margin="5 0 0 0" Grid.Row="1" ItemsSource="{Binding Notes}" Background="Transparent">
+                    <ListBox.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel Orientation="Horizontal"/>
+                        </ItemsPanelTemplate>
+                    </ListBox.ItemsPanel>
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Height="90" Width="100">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="60"/>
+                                    <RowDefinition Height="30"/>
+                                </Grid.RowDefinitions>
+                                <ContentControl Height="40" Width="40" Margin="3 0" >
+                                    <ContentControl.Content>
+                                        <Viewbox Stretch="Fill">
+                                            <Grid >
+                                                <Path Fill="#FFFFFA58" Stretch="Fill" Stroke="#FF333333" StrokeEndLineCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeStartLineCap="Flat" StrokeThickness="1" Data="M87.5,39.5L87.5,55.5L96.5,55.5L96.5,64.5L112.5,64.5L112.5,39.5L87.5,39.5z"/>
+                                                <Path Fill="#FFFFFA58" Stretch="Fill" Stroke="#FF333333" StrokeEndLineCap="Flat" StrokeLineJoin="Miter" StrokeMiterLimit="10" StrokeStartLineCap="Flat" StrokeThickness="1" HorizontalAlignment="Left" Margin="0.5,0,0,0.5" VerticalAlignment="Bottom" Width="8.5" Height="8.5" Data="M95.5,64L95.5,56.5L88,56.5L95.5,64z"/>
+                                            </Grid>
+                                        </Viewbox>
+                                    </ContentControl.Content>
+                                </ContentControl>
+                                <TextBlock TextTrimming="CharacterEllipsis" Grid.Row="1" Margin="2 0" Text="{Binding Message}"/>
+                            </Grid>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

@@ -1,0 +1,51 @@
+﻿<UserControl
+    x:Class="MapControlUWP_Samples.BubbleVisualization"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MapControlUWP_Samples"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" xmlns:syncfusion="using:Syncfusion.UI.Xaml.Maps"
+    >
+
+    <UserControl.Resources>
+        <local:MapViewModel x:Key="modelKey"/>
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid x:Name="grid" DataContext="{Binding Source={StaticResource modelKey}}" Background="White" >
+           
+            <syncfusion:SfMap x:Name="map"  MaxZoom="44">
+                <syncfusion:SfMap.Header>
+                    <TextBlock Text="Bubble Visualization - World Population" Margin="30,20,0,20" FontSize="16" FontFamily="Segoe UI" Foreground="Black"/>
+                </syncfusion:SfMap.Header>
+                <syncfusion:SfMap.Layers>
+                    <syncfusion:ShapeFileLayer  x:Name="shapelayer" Background="White" EnableSelection="False" ItemsSource="{Binding Countries1}" ShapeIDPath="NAME"  ShapeIDTableField="NAME" >
+                        <syncfusion:ShapeFileLayer.BubbleMarkerSetting>
+                            <syncfusion:BubbleMarkerSetting AutoFillColor="False" MaxSize="100" MinSize="50" StrokeThickness="0" ValuePath="Population" ColorValuePath="Population">
+                                <syncfusion:BubbleMarkerSetting.ColorMappings>
+                                    <syncfusion:RangeColorMapping Color="#7F20BCEE" To="1347350000" From="314623001"/>
+                                    <syncfusion:RangeColorMapping Color="#7FA7CE38" To="314623001" From="143228301"/>
+                                    <syncfusion:RangeColorMapping Color="#7FF1B21A" To="143228301" From="82724090"/>
+                                    <syncfusion:RangeColorMapping Color="#7F1DA249" To="50586757" From="22789702"/>
+                                    <syncfusion:RangeColorMapping Color="#7FEB737C" To="22789702" From="0"/>
+                                    <syncfusion:RangeColorMapping Color="#7FED2D95" To="82724090" From="50586757"/>
+                                </syncfusion:BubbleMarkerSetting.ColorMappings>
+                            </syncfusion:BubbleMarkerSetting>
+                        </syncfusion:ShapeFileLayer.BubbleMarkerSetting>
+                        <syncfusion:ShapeFileLayer.ItemsTemplate>
+                            <DataTemplate>
+                                <Border Background="Transparent">
+                                    <TextBlock FontFamily="Segoe UI" FontSize="12" Foreground="#FF333333" Text="{Binding Data.PopulationFormat}"/>
+                                </Border>
+                            </DataTemplate>
+                        </syncfusion:ShapeFileLayer.ItemsTemplate>
+                        <syncfusion:ShapeFileLayer.ShapeSettings>
+                            <syncfusion:ShapeSetting ShapeStroke="#C1C1C1" ShapeStrokeThickness="0.5" ShapeValuePath="Population" ShapeFill="#E5E5E5"/>
+                        </syncfusion:ShapeFileLayer.ShapeSettings>
+                    </syncfusion:ShapeFileLayer>
+                </syncfusion:SfMap.Layers>
+            </syncfusion:SfMap>
+        </Grid>
+    </Grid>
+</UserControl>
