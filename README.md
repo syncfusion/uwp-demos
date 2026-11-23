@@ -13,7 +13,7 @@ This section guides you to use the Syncfusion UWP samples in your applications.
 
 ## <a name="requirements-to-run-the-demo"></a>Requirements to run the demo ##
 
-The samples requires Windows 10 and Visual Studio 2015 or higher to build, test and deploy. Syncfusion controls supports “Build 10240 (Windows 10, version 1507)” and higher versions.  
+The samples requires VS (2022/2026) to build, test and deploy. Syncfusion controls supports Windows 10/11 builds and higher versions.  
 
 ## <a name="documentation"></a>Documentation ## 
 
@@ -291,10 +291,6 @@ The easiest way to use these samples without using Git is to download the zip fi
 <td>
 <a href="RichTextEditor">RichTextBox</a>
 </td>
-
-<td>
-<a href="PdfViewer">PDF Viewer</a>
-</td>
 </tr>
 
 <tr>
@@ -317,7 +313,7 @@ The easiest way to use these samples without using Git is to download the zip fi
 
 <tr>
     <td colspan="3" rowspan="1">
-    <b>FILE FORMATS<b>
+    <b>Document SDK<b>
     </td>
 </tr>  
 <tr>
@@ -337,19 +333,6 @@ The easiest way to use these samples without using Git is to download the zip fi
 </td>
   <td/>
   <td/>
-</tr>
-
-<tr>
- <td colspan="3" rowspan="1">
-  <b>REPORTING<b>
- </td>
-</tr>
-<tr>
-<td>
-<a href="ReportViewer">Report Viewer</a>
-</td>
-<td/>
-<td/>
 </tr>
 
 <tr>
